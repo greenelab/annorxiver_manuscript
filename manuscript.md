@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/8b9b5ced2c7c963bf3ea5afb8f31f9a4a54ab697/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/233e8f6706e5bcd1afc83e9539d2176db821c26c/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8b9b5ced2c7c963bf3ea5afb8f31f9a4a54ab697/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/233e8f6706e5bcd1afc83e9539d2176db821c26c/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8b9b5ced2c7c963bf3ea5afb8f31f9a4a54ab697/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/233e8f6706e5bcd1afc83e9539d2176db821c26c/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/8b9b5ced2c7c963bf3ea5afb8f31f9a4a54ab697/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/233e8f6706e5bcd1afc83e9539d2176db821c26c/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@8b9b5ce](https://github.com/greenelab/annorxiver_manuscript/tree/8b9b5ced2c7c963bf3ea5afb8f31f9a4a54ab697)
+from [greenelab/annorxiver_manuscript@233e8f6](https://github.com/greenelab/annorxiver_manuscript/tree/233e8f6706e5bcd1afc83e9539d2176db821c26c)
 on May 13, 2020.
 </em></small>
 
