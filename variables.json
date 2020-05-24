@@ -1,18 +1,20 @@
 {
   "pandoc": {
-    "title": "Manuscript Title",
+    "title": "Linguistic Analysis of the bioRxiv Preprint Landscape",
     "keywords": [
-      "markdown",
-      "publishing",
-      "manubot"
+      "biorxiv",
+      "preprints",
+      "pubmed central",
+      "natural language processing",
+      "descriptive linguistics"
     ],
     "lang": "en-US",
-    "date-meta": "2020-05-13",
+    "date-meta": "2020-05-24",
     "author-meta": [
-      "John Doe",
+      "David N. Nicholson",
       "Jane Roe"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Manuscript Title\" />\n<meta name=\"citation_title\" content=\"Manuscript Title\" />\n<meta property=\"og:title\" content=\"Manuscript Title\" />\n<meta property=\"twitter:title\" content=\"Manuscript Title\" />\n<meta name=\"dc.date\" content=\"2020-05-13\" />\n<meta name=\"citation_publication_date\" content=\"2020-05-13\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"John Doe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@johndoe\" />\n<meta name=\"citation_author\" content=\"Jane Roe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_institution\" content=\"Department of Whatever, University of Something\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://greenelab.github.io/annorxiver_manuscript/\" />\n<meta property=\"og:url\" content=\"https://greenelab.github.io/annorxiver_manuscript/\" />\n<meta property=\"twitter:url\" content=\"https://greenelab.github.io/annorxiver_manuscript/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://greenelab.github.io/annorxiver_manuscript/\" />\n<meta name=\"citation_pdf_url\" content=\"https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://greenelab.github.io/annorxiver_manuscript/v/5bc84ecdcfdbbc1112e76a9e7d50937b3e8e3ca7/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://greenelab.github.io/annorxiver_manuscript/v/5bc84ecdcfdbbc1112e76a9e7d50937b3e8e3ca7/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://greenelab.github.io/annorxiver_manuscript/v/5bc84ecdcfdbbc1112e76a9e7d50937b3e8e3ca7/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Linguistic Analysis of the bioRxiv Preprint Landscape\" />\n<meta name=\"citation_title\" content=\"Linguistic Analysis of the bioRxiv Preprint Landscape\" />\n<meta property=\"og:title\" content=\"Linguistic Analysis of the bioRxiv Preprint Landscape\" />\n<meta property=\"twitter:title\" content=\"Linguistic Analysis of the bioRxiv Preprint Landscape\" />\n<meta name=\"dc.date\" content=\"2020-05-24\" />\n<meta name=\"citation_publication_date\" content=\"2020-05-24\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"David N. Nicholson\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0002-5761\" />\n<meta name=\"twitter:creator\" content=\"@None\" />\n<meta name=\"citation_author\" content=\"Jane Roe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_institution\" content=\"Department of Whatever, University of Something\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://greenelab.github.io/annorxiver_manuscript/\" />\n<meta property=\"og:url\" content=\"https://greenelab.github.io/annorxiver_manuscript/\" />\n<meta property=\"twitter:url\" content=\"https://greenelab.github.io/annorxiver_manuscript/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://greenelab.github.io/annorxiver_manuscript/\" />\n<meta name=\"citation_pdf_url\" content=\"https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://greenelab.github.io/annorxiver_manuscript/v/28cc3118f87472d30995a33761f91cd6534393bc/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://greenelab.github.io/annorxiver_manuscript/v/28cc3118f87472d30995a33761f91cd6534393bc/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://greenelab.github.io/annorxiver_manuscript/v/28cc3118f87472d30995a33761f91cd6534393bc/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -22,20 +24,21 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "May 13, 2020",
+    "date": "May 24, 2020",
     "authors": [
       {
-        "github": "johndoe",
-        "name": "John Doe",
-        "initials": "JD",
-        "orcid": "XXXX-XXXX-XXXX-XXXX",
-        "twitter": "johndoe",
-        "email": "john.doe@something.com",
+        "github": "danich1",
+        "name": "David N. Nicholson",
+        "initials": "DNN",
+        "orcid": "0000-0003-0002-5761",
+        "twitter": null,
+        "email": "dnicholson329@gmail.com",
         "affiliations": [
-          "Department of Something, University of Whatever"
+          "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania"
         ],
         "funders": [
-          "Grant XXXXXXXX"
+          "GBMF4552",
+          "T32 HG00046"
         ],
         "affiliation_numbers": [
           1
@@ -52,19 +55,23 @@
           "Department of Whatever, University of Something"
         ],
         "affiliation_numbers": [
-          1,
-          2
+          2,
+          3
         ]
       }
     ],
     "affiliations": [
       {
-        "affiliation": "Department of Something, University of Whatever",
+        "affiliation": "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania",
         "affiliation_number": 1
       },
       {
-        "affiliation": "Department of Whatever, University of Something",
+        "affiliation": "Department of Something, University of Whatever",
         "affiliation_number": 2
+      },
+      {
+        "affiliation": "Department of Whatever, University of Something",
+        "affiliation_number": 3
       }
     ],
     "ci_source": {
@@ -72,19 +79,19 @@
       "repo_slug": "greenelab/annorxiver_manuscript",
       "repo_owner": "greenelab",
       "repo_name": "annorxiver_manuscript",
-      "commit": "5bc84ecdcfdbbc1112e76a9e7d50937b3e8e3ca7",
-      "triggering_commit": "5bc84ecdcfdbbc1112e76a9e7d50937b3e8e3ca7",
-      "build_url": "https://github.com/greenelab/annorxiver_manuscript/commit/5bc84ecdcfdbbc1112e76a9e7d50937b3e8e3ca7/checks",
+      "commit": "28cc3118f87472d30995a33761f91cd6534393bc",
+      "triggering_commit": "28cc3118f87472d30995a33761f91cd6534393bc",
+      "build_url": "https://github.com/greenelab/annorxiver_manuscript/commit/28cc3118f87472d30995a33761f91cd6534393bc/checks",
       "job_url": "https://github.com/greenelab/annorxiver_manuscript/runs/run3"
     },
     "html_url": "https://greenelab.github.io/annorxiver_manuscript/",
     "pdf_url": "https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf",
-    "html_url_versioned": "https://greenelab.github.io/annorxiver_manuscript/v/5bc84ecdcfdbbc1112e76a9e7d50937b3e8e3ca7/",
-    "pdf_url_versioned": "https://greenelab.github.io/annorxiver_manuscript/v/5bc84ecdcfdbbc1112e76a9e7d50937b3e8e3ca7/manuscript.pdf",
+    "html_url_versioned": "https://greenelab.github.io/annorxiver_manuscript/v/28cc3118f87472d30995a33761f91cd6534393bc/",
+    "pdf_url_versioned": "https://greenelab.github.io/annorxiver_manuscript/v/28cc3118f87472d30995a33761f91cd6534393bc/manuscript.pdf",
     "manubot_version": "0.3.1",
     "rootstock_commit": "8b9b5ced2c7c963bf3ea5afb8f31f9a4a54ab697",
     "manuscript_stats": {
-      "word_count": 246
+      "word_count": 687
     }
   }
 }
