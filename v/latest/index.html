@@ -51,9 +51,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/13c70239475669859bc5944559ff399078d68350/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/13c70239475669859bc5944559ff399078d68350/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/13c70239475669859bc5944559ff399078d68350/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/8fd66bab1d3b5144aca3b13a0977c48d0d766fae/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8fd66bab1d3b5144aca3b13a0977c48d0d766fae/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8fd66bab1d3b5144aca3b13a0977c48d0d766fae/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/annorxiver_manuscript/v/13c70239475669859bc5944559ff399078d68350/">permalink</a>)
+(<a href="https://greenelab.github.io/annorxiver_manuscript/v/8fd66bab1d3b5144aca3b13a0977c48d0d766fae/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/13c70239475669859bc5944559ff399078d68350">greenelab/annorxiver_manuscript@13c7023</a>
+from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/8fd66bab1d3b5144aca3b13a0977c48d0d766fae">greenelab/annorxiver_manuscript@8fd66ba</a>
 on June 5, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -126,12 +126,13 @@ Out of these 5 million articles, about 3 million were open access and available 
 We downloaded a snapshot of this open access subset on January 31, 2020.
 This snapshot contains papers such as literature reviews, book reviews, editorials, case reports, research articles and more; however, we used only the research articles.</p>
 <h3 id="comparing-corpora">Comparing Corpora</h3>
-<ol type="1">
-<li>Spacy to process text via - Lemmatization, removal of stop words</li>
-<li>Describe counting frequencies of each lemma</li>
-<li>Describe using chi-square test</li>
-<li>Describe how to calculate the likelihood and log odds ratio</li>
-</ol>
+<p>We used gensim <span class="citation" data-cites="Gc4hOzur">[<a href="#ref-Gc4hOzur" role="doc-biblioref">6</a>]</span> (version 3.8.1) to preprocess the bioRxiv and PubMed Central corpora.
+We removed the 337 gensim-provided stopwords.
+Throughout our analysis we encountered non-word symbols (e.g., <span class="math inline">\(\pm\)</span>), so we refer to words and symbols as tokens to avoid confusion.</p>
+<p>Following the cleaning process, we calculated the frequency of every token shared between both corpora.
+Because many tokens were unique to one set or the other and observed at low frequency, we used the union of the top 100 most frequent tokens from each corpus to compare them.
+We generated a contingency table and calculated the odds ratio for each token.
+Furthermore, we also calculated the 95% confidence interval for each odds ratio <span class="citation" data-cites="https://www.ncbi.nlm.nih.gov/books/NBK431098">[<span class="citeproc-not-found" data-reference-id="https://www.ncbi.nlm.nih.gov/books/NBK431098"><strong>???</strong></span>/]</span>.</p>
 <h3 id="visualizing-the-preprint-landscape">Visualizing the Preprint Landscape</h3>
 <h4 id="generate-document-representation">Generate Document Representation</h4>
 <ol type="1">
@@ -212,6 +213,11 @@ DOI: <a href="https://doi.org/10.1093/bioinformatics/btz070">10.1093/bioinformat
 Chih-Hsuan Wei, Alexis Allot, Robert Leaman, Zhiyong Lu<br />
 <em>Nucleic Acids Research</em> (2019-07-02) <a href="https://doi.org/ggzfsc">https://doi.org/ggzfsc</a><br />
 DOI: <a href="https://doi.org/10.1093/nar/gkz389">10.1093/nar/gkz389</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31114887">31114887</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6602571">PMC6602571</a></p>
+</div>
+<div id="ref-Gc4hOzur">
+<p>6. <strong>Software Framework for Topic Modelling with Large Corpora</strong><br />
+Radim Řehůřek, Petr Sojka<br />
+<em>Proceedings of the LREC 2010 Workshop on New Challenges for NLP Frameworks</em> (2010-05-22)</p>
 </div>
 </div>
 <!-- default theme -->
