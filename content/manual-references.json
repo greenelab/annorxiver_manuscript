@@ -47,5 +47,31 @@
       "publisher-place": "Valletta, Malta",
       "title": "<span class=\"nocase\">Software Framework for Topic Modelling with Large Corpora</span>",
       "type": "paper-conference"
-    }
+    },
+    {
+    "author": [
+      {
+        "family": "Maaten",
+        "given": "Laurens van der"
+      },
+      {
+        "family": "Hinton",
+        "given": "Geoffrey"
+      }
+    ],
+    "container-title": "Journal of machine learning research",
+    "id": "tsne_Maaten",
+    "issue": "Nov",
+    "issued": {
+      "date-parts": [
+        [
+          2008
+        ]
+      ]
+    },
+    "page": "2579-2605",
+    "title": "Visualizing data using t-sne",
+    "type": "article-journal",
+    "volume": "9"
+  }
 ]
