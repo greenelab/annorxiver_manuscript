@@ -18,5 +18,34 @@
       "family": "Himmelstein"
     }
   ]
-}
+},
+{
+      "author": [
+        {
+          "family": "Řehůřek",
+          "given": "Radim"
+        },
+        {
+          "family": "Sojka",
+          "given": "Petr"
+        }
+      ],
+      "container-title": "<span class=\"nocase\">Proceedings of the LREC 2010 Workshop on New Challenges for NLP Frameworks</span>",
+      "id": "rehurek_lrec",
+      "issued": {
+        "date-parts": [
+          [
+            2010,
+            5,
+            22
+          ]
+        ]
+      },
+      "note": "<http://is.muni.cz/publication/884893/en>",
+      "page": "45-50",
+      "publisher": "ELRA",
+      "publisher-place": "Valletta, Malta",
+      "title": "<span class=\"nocase\">Software Framework for Topic Modelling with Large Corpora</span>",
+      "type": "paper-conference"
+    }
 ]
