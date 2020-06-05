@@ -1,7 +1,8 @@
 Acknowledgements
 analysing
 arxiv
-biorxiv
+bioRxiv
+bioRxiv’s
 danich
 Datasets
 Dimensionality
@@ -10,8 +11,9 @@ GBMF
 janeroe
 Lemmatization
 medrxiv
+NIH’s
 PCA
-Preprint
+preprint
 preprints
 scatterplot
 Spacy

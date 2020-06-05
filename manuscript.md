@@ -4,7 +4,7 @@ author-meta:
 - Jane Roe
 bibliography:
 - content/manual-references.json
-date-meta: '2020-05-24'
+date-meta: '2020-06-05'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -23,9 +23,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2020-05-24" />
+  <meta name="dc.date" content="2020-06-05" />
 
-  <meta name="citation_publication_date" content="2020-05-24" />
+  <meta name="citation_publication_date" content="2020-06-05" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/28cc3118f87472d30995a33761f91cd6534393bc/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/13c70239475669859bc5944559ff399078d68350/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/28cc3118f87472d30995a33761f91cd6534393bc/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/13c70239475669859bc5944559ff399078d68350/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/28cc3118f87472d30995a33761f91cd6534393bc/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/13c70239475669859bc5944559ff399078d68350/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,10 +105,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/28cc3118f87472d30995a33761f91cd6534393bc/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/13c70239475669859bc5944559ff399078d68350/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@28cc311](https://github.com/greenelab/annorxiver_manuscript/tree/28cc3118f87472d30995a33761f91cd6534393bc)
-on May 24, 2020.
+from [greenelab/annorxiver_manuscript@13c7023](https://github.com/greenelab/annorxiver_manuscript/tree/13c70239475669859bc5944559ff399078d68350)
+on June 5, 2020.
 </em></small>
 
 ## Authors
@@ -157,13 +157,27 @@ on May 24, 2020.
 
 ### Datasets
 
-#### bioRxiv
-1. Describe how bioRxiv was obtained
-2. Describe metadata statistics on bioRxiv (number of preprints, number of preprints with multiple versions)
+#### BioRxiv
+BioRxiv [@doi:10.1101/833400] is a repository of biological and biomedical research preprints.
+We downloaded an xml snapshot of this repository on February 3, 2020 from   bioRxiv's Amazon S3 resource [@https://www.biorxiv.org/tdm] that contained the full text and image content of 98,023 preprints.
+Preprints on bioRxiv are versioned, and in our snapshot 26,905 of 98,023 contained more than one version.
+When preprints had multiple versions, we used only the latest one. 
+Preprints in this snapshot were grouped into one of twenty-nine different categories.
+Each preprint was also classified as a new result, confirmatory finding, or contradictory finding.
+Some preprints in this snapshot have been withdrawn from bioRxiv.
+When a preprint is withdrawn, its content is replaced with the reason for withdrawal.
+Because we used the latest version, withdrawn preprints in our analysis contained only statements indicating their removal.
 
 #### PubMed Central
-1. Describe how PubMed central was obtained
-2. Describe metadata statistics on PubMed central (number of articles, how many articles were processed
+PubMed Central (PMC) [@doi:10.1073/pnas.98.2.381] is a repository that contains free-to-read articles.
+PMC contains two types of contributions: closed access articles from research funded by the United States National Institutes of Health (NIH) appearing after an embargo period and articles published under Gold Open Access [@doi:10.1007/s12471-017-1064-2] publishing schemes.
+Paper availability within PMC is largely dependent on the journal's participation level [@https://www.ncbi.nlm.nih.gov/pmc/about/submission-methods/].
+Individual journals have can fully participate in submitting articles to PMC, selectively participate sending only a few few of papers to PMC, only submit papers according to NIH's public access policy [@https://grants.nih.gov/grants/policy/nihgps/html5/section_8/8.2.2_nih_public_access_policy.htm], or not participate at all.
+As of September 2019, PMC had 5,725,819 articles available [@https://www.ncbi.nlm.nih.gov/pmc/about/intro/].
+Out of these 5 million articles, about 3 million were open access and available for text processing systems [@doi:10.1093/bioinformatics/btz070;@doi:10.1093/nar/gkz389].
+We downloaded a snapshot of this open access subset on January 31, 2020.
+This snapshot contains papers such as literature reviews, book reviews, editorials, case reports, research articles and more; however, we used only the research articles.
+
 
 ### Comparing Corpora
 1. Spacy to process text via - Lemmatization, removal of stop words
