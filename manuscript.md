@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/13c70239475669859bc5944559ff399078d68350/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/8fd66bab1d3b5144aca3b13a0977c48d0d766fae/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/13c70239475669859bc5944559ff399078d68350/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8fd66bab1d3b5144aca3b13a0977c48d0d766fae/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/13c70239475669859bc5944559ff399078d68350/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8fd66bab1d3b5144aca3b13a0977c48d0d766fae/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,9 +105,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/13c70239475669859bc5944559ff399078d68350/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/8fd66bab1d3b5144aca3b13a0977c48d0d766fae/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@13c7023](https://github.com/greenelab/annorxiver_manuscript/tree/13c70239475669859bc5944559ff399078d68350)
+from [greenelab/annorxiver_manuscript@8fd66ba](https://github.com/greenelab/annorxiver_manuscript/tree/8fd66bab1d3b5144aca3b13a0977c48d0d766fae)
 on June 5, 2020.
 </em></small>
 
@@ -178,12 +178,15 @@ Out of these 5 million articles, about 3 million were open access and available 
 We downloaded a snapshot of this open access subset on January 31, 2020.
 This snapshot contains papers such as literature reviews, book reviews, editorials, case reports, research articles and more; however, we used only the research articles.
 
-
 ### Comparing Corpora
-1. Spacy to process text via - Lemmatization, removal of stop words
-2. Describe counting frequencies of each lemma
-3. Describe using chi-square test
-4. Describe how to calculate the likelihood and log odds ratio
+We used gensim [@raw:rehurek_lrec] (version 3.8.1) to preprocess the bioRxiv and PubMed Central corpora.
+We removed the 337 gensim-provided stopwords.
+Throughout our analysis we encountered non-word symbols (e.g., $\pm$), so we refer to words and symbols as tokens to avoid confusion.
+
+Following the cleaning process, we calculated the frequency of every token shared between both corpora.
+Because many tokens were unique to one set or the other and observed at low frequency, we used the union of the top 100 most frequent tokens from each corpus to compare them.
+We generated a contingency table and calculated the odds ratio for each token.
+Furthermore, we also calculated the 95% confidence interval for each odds ratio [@https://www.ncbi.nlm.nih.gov/books/NBK431098/].
 
 ### Visualizing the Preprint Landscape
 
