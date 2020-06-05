@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/8fd66bab1d3b5144aca3b13a0977c48d0d766fae/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/f128b0a8abcddff8f3779668bf98560370380ae7/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8fd66bab1d3b5144aca3b13a0977c48d0d766fae/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/f128b0a8abcddff8f3779668bf98560370380ae7/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8fd66bab1d3b5144aca3b13a0977c48d0d766fae/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/f128b0a8abcddff8f3779668bf98560370380ae7/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,9 +105,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/8fd66bab1d3b5144aca3b13a0977c48d0d766fae/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/f128b0a8abcddff8f3779668bf98560370380ae7/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@8fd66ba](https://github.com/greenelab/annorxiver_manuscript/tree/8fd66bab1d3b5144aca3b13a0977c48d0d766fae)
+from [greenelab/annorxiver_manuscript@f128b0a](https://github.com/greenelab/annorxiver_manuscript/tree/f128b0a8abcddff8f3779668bf98560370380ae7)
 on June 5, 2020.
 </em></small>
 
@@ -171,9 +171,9 @@ Because we used the latest version, withdrawn preprints in our analysis containe
 #### PubMed Central
 PubMed Central (PMC) [@doi:10.1073/pnas.98.2.381] is a repository that contains free-to-read articles.
 PMC contains two types of contributions: closed access articles from research funded by the United States National Institutes of Health (NIH) appearing after an embargo period and articles published under Gold Open Access [@doi:10.1007/s12471-017-1064-2] publishing schemes.
-Paper availability within PMC is largely dependent on the journal's participation level [@https://www.ncbi.nlm.nih.gov/pmc/about/submission-methods/].
-Individual journals have can fully participate in submitting articles to PMC, selectively participate sending only a few few of papers to PMC, only submit papers according to NIH's public access policy [@https://grants.nih.gov/grants/policy/nihgps/html5/section_8/8.2.2_nih_public_access_policy.htm], or not participate at all.
-As of September 2019, PMC had 5,725,819 articles available [@https://www.ncbi.nlm.nih.gov/pmc/about/intro/].
+Paper availability within PMC is largely dependent on the journal's participation level [@url:https://www.ncbi.nlm.nih.gov/pmc/about/submission-methods/].
+Individual journals have can fully participate in submitting articles to PMC, selectively participate sending only a few few of papers to PMC, only submit papers according to NIH's public access policy [@url:https://grants.nih.gov/grants/policy/nihgps/html5/section_8/8.2.2_nih_public_access_policy.htm], or not participate at all.
+As of September 2019, PMC had 5,725,819 articles available [@url:https://www.ncbi.nlm.nih.gov/pmc/about/intro/].
 Out of these 5 million articles, about 3 million were open access and available for text processing systems [@doi:10.1093/bioinformatics/btz070;@doi:10.1093/nar/gkz389].
 We downloaded a snapshot of this open access subset on January 31, 2020.
 This snapshot contains papers such as literature reviews, book reviews, editorials, case reports, research articles and more; however, we used only the research articles.
@@ -191,9 +191,11 @@ Furthermore, we also calculated the 95% confidence interval for each odds ratio 
 ### Visualizing the Preprint Landscape
 
 #### Generate Document Representation
-1. Describe how word2vec works
-2. Talk about training word2vec on entire biorxiv repository
-3. Discuss how to generate a document representation using word2vec model
+We used gensim [@raw:rehurek_lrec] (version 3.8.1) to train a word2vec continuous bag of words (CBOW) [@arxiv:1301.3781] model over the bioRxiv corpus. 
+Our neural network architecture had 300 hidden nodes, and we trained this model for 20 epochs.
+We set a fixed random seed and otherwise used gensim's default settings.
+Following training, we generated a document vector for every article within bioRxiv and PubMed Central.
+This document vector is calculated by taking the average of every token present within a given article, ignoring those that were absent from the word2vec model.
 
 #### Dimensionality Reduction of Document Embeddings
 1. Explain how tSNE works (paragraph one)
