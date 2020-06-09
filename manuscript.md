@@ -4,7 +4,7 @@ author-meta:
 - Jane Roe
 bibliography:
 - content/manual-references.json
-date-meta: '2020-06-05'
+date-meta: '2020-06-09'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -23,9 +23,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2020-06-05" />
+  <meta name="dc.date" content="2020-06-09" />
 
-  <meta name="citation_publication_date" content="2020-06-05" />
+  <meta name="citation_publication_date" content="2020-06-09" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/f128b0a8abcddff8f3779668bf98560370380ae7/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/8ac7f50080b96037c8c731daa169a232a6f43dcc/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/f128b0a8abcddff8f3779668bf98560370380ae7/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8ac7f50080b96037c8c731daa169a232a6f43dcc/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/f128b0a8abcddff8f3779668bf98560370380ae7/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8ac7f50080b96037c8c731daa169a232a6f43dcc/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,10 +105,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/f128b0a8abcddff8f3779668bf98560370380ae7/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/8ac7f50080b96037c8c731daa169a232a6f43dcc/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@f128b0a](https://github.com/greenelab/annorxiver_manuscript/tree/f128b0a8abcddff8f3779668bf98560370380ae7)
-on June 5, 2020.
+from [greenelab/annorxiver_manuscript@8ac7f50](https://github.com/greenelab/annorxiver_manuscript/tree/8ac7f50080b96037c8c731daa169a232a6f43dcc)
+on June 9, 2020.
 </em></small>
 
 ## Authors
@@ -198,10 +198,10 @@ Following training, we generated a document vector for every article within bioR
 This document vector is calculated by taking the average of every token present within a given article, ignoring those that were absent from the word2vec model.
 
 #### Dimensionality Reduction of Document Embeddings
-1. Explain how tSNE works (paragraph one)
-2. Explain how PCA works  (paragraph two)
-3. Discuss how words were mapped onto PC components via cosine similarity
-4. ^ Explain cosine similarity
+We used principal component analysis (PCA) [@doi:10.1111/1467-9868.00196] to project bioRxiv document vectors into a low dimensional space.
+We trained this model using scikit-learn's [@raw:scikit-learn] implementation of a randomized solver [@arxiv:0909.4061] with a random seed of 100, output of 50 principal components, and default settings for all other parameters.
+For each principal component we calculated its cosine similarity with  all tokens in our word2vec model's vocabulary.
+We report the top 100 positive and negative scoring tokens in the form of  word clouds, where the size of each word corresponds to the magnitude of similarity and color represents positive (blue) or negative (orange) association.
 
 ### Recommending Journals/ bioRxiv Audience Analysis
 1. This title will update as analysis is completed

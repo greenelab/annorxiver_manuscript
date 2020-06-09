@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="David N. Nicholson" />
   <meta name="author" content="Jane Roe" />
-  <meta name="dcterms.date" content="2020-06-05" />
+  <meta name="dcterms.date" content="2020-06-09" />
   <meta name="keywords" content="biorxiv, preprints, pubmed central, natural language processing, descriptive linguistics" />
   <title>Linguistic Analysis of the bioRxiv Preprint Landscape</title>
   <style>
@@ -29,8 +29,8 @@
   <meta name="citation_title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
   <meta property="og:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
-  <meta name="dc.date" content="2020-06-05" />
-  <meta name="citation_publication_date" content="2020-06-05" />
+  <meta name="dc.date" content="2020-06-09" />
+  <meta name="citation_publication_date" content="2020-06-09" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/f128b0a8abcddff8f3779668bf98560370380ae7/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/f128b0a8abcddff8f3779668bf98560370380ae7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/f128b0a8abcddff8f3779668bf98560370380ae7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/8ac7f50080b96037c8c731daa169a232a6f43dcc/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8ac7f50080b96037c8c731daa169a232a6f43dcc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8ac7f50080b96037c8c731daa169a232a6f43dcc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,10 +67,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/annorxiver_manuscript/v/f128b0a8abcddff8f3779668bf98560370380ae7/">permalink</a>)
+(<a href="https://greenelab.github.io/annorxiver_manuscript/v/8ac7f50080b96037c8c731daa169a232a6f43dcc/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/f128b0a8abcddff8f3779668bf98560370380ae7">greenelab/annorxiver_manuscript@f128b0a</a>
-on June 5, 2020.
+from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/8ac7f50080b96037c8c731daa169a232a6f43dcc">greenelab/annorxiver_manuscript@8ac7f50</a>
+on June 9, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -141,12 +141,10 @@ We set a fixed random seed and otherwise used gensim’s default settings.
 Following training, we generated a document vector for every article within bioRxiv and PubMed Central.
 This document vector is calculated by taking the average of every token present within a given article, ignoring those that were absent from the word2vec model.</p>
 <h4 id="dimensionality-reduction-of-document-embeddings">Dimensionality Reduction of Document Embeddings</h4>
-<ol type="1">
-<li>Explain how tSNE works (paragraph one)</li>
-<li>Explain how PCA works (paragraph two)</li>
-<li>Discuss how words were mapped onto PC components via cosine similarity</li>
-<li>^ Explain cosine similarity</li>
-</ol>
+<p>We used principal component analysis (PCA) <span class="citation" data-cites="qkjVrvqt">[<a href="#ref-qkjVrvqt" role="doc-biblioref">11</a>]</span> to project bioRxiv document vectors into a low dimensional space.
+We trained this model using scikit-learn’s <span class="citation" data-cites="QrtjCwXA">[<a href="#ref-QrtjCwXA" role="doc-biblioref">12</a>]</span> implementation of a randomized solver <span class="citation" data-cites="7tMTyalf">[<a href="#ref-7tMTyalf" role="doc-biblioref">13</a>]</span> with a random seed of 100, output of 50 principal components, and default settings for all other parameters.
+For each principal component we calculated its cosine similarity with all tokens in our word2vec model’s vocabulary.
+We report the top 100 positive and negative scoring tokens in the form of word clouds, where the size of each word corresponds to the magnitude of similarity and color represents positive (blue) or negative (orange) association.</p>
 <h3 id="recommending-journals-biorxiv-audience-analysis">Recommending Journals/ bioRxiv Audience Analysis</h3>
 <ol type="1">
 <li>This title will update as analysis is completed</li>
@@ -232,6 +230,22 @@ Radim Řehůřek, Petr Sojka<br />
 <p>10. <strong>Efficient Estimation of Word Representations in Vector Space</strong><br />
 Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean<br />
 <em>arXiv</em> (2013-09-10) <a href="https://arxiv.org/abs/1301.3781">https://arxiv.org/abs/1301.3781</a></p>
+</div>
+<div id="ref-qkjVrvqt">
+<p>11. <strong>Probabilistic Principal Component Analysis</strong><br />
+Michael E. Tipping, Christopher M. Bishop<br />
+<em>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</em> (1999-08) <a href="https://doi.org/b3hjwt">https://doi.org/b3hjwt</a><br />
+DOI: <a href="https://doi.org/10.1111/1467-9868.00196">10.1111/1467-9868.00196</a></p>
+</div>
+<div id="ref-QrtjCwXA">
+<p>12. <strong>Scikit-learn: Machine learning in Python</strong><br />
+F. Pedregosa, G. Varoquaux, A. Gramfort, V. Michel, B. Thirion, O. Grisel, M. Blondel, P. Prettenhofer, R. Weiss, V. Dubourg, … E. Duchesnay<br />
+<em>Journal of Machine Learning Research</em> (2011)</p>
+</div>
+<div id="ref-7tMTyalf">
+<p>13. <strong>Finding structure with randomness: Probabilistic algorithms for constructing approximate matrix decompositions</strong><br />
+Nathan Halko, Per-Gunnar Martinsson, Joel A. Tropp<br />
+<em>arXiv</em> (2014-04-29) <a href="https://arxiv.org/abs/0909.4061">https://arxiv.org/abs/0909.4061</a></p>
 </div>
 </div>
 <!-- default theme -->

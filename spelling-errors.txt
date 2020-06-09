@@ -1,7 +1,7 @@
 Acknowledgements
 analysing
 arxiv
-bioRxiv
+biorxiv
 bioRxiv’s
 CBOW
 danich
@@ -12,13 +12,15 @@ GBMF
 gensim
 gensim’s
 janeroe
+learn’s
 medrxiv
 NIH’s
 PCA
 preprint
-Preprints
+preprints
 preprocess
 scatterplot
+scikit
 stopwords
 Translational
 treemap
