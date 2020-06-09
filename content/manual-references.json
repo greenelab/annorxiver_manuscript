@@ -47,5 +47,87 @@
       "publisher-place": "Valletta, Malta",
       "title": "<span class=\"nocase\">Software Framework for Topic Modelling with Large Corpora</span>",
       "type": "paper-conference"
-    }
+  },
+  {
+    "author": [
+      {
+        "family": "Pedregosa",
+        "given": "F."
+      },
+      {
+        "family": "Varoquaux",
+        "given": "G."
+      },
+      {
+        "family": "Gramfort",
+        "given": "A."
+      },
+      {
+        "family": "Michel",
+        "given": "V."
+      },
+      {
+        "family": "Thirion",
+        "given": "B."
+      },
+      {
+        "family": "Grisel",
+        "given": "O."
+      },
+      {
+        "family": "Blondel",
+        "given": "M."
+      },
+      {
+        "family": "Prettenhofer",
+        "given": "P."
+      },
+      {
+        "family": "Weiss",
+        "given": "R."
+      },
+      {
+        "family": "Dubourg",
+        "given": "V."
+      },
+      {
+        "family": "Vanderplas",
+        "given": "J."
+      },
+      {
+        "family": "Passos",
+        "given": "A."
+      },
+      {
+        "family": "Cournapeau",
+        "given": "D."
+      },
+      {
+        "family": "Brucher",
+        "given": "M."
+      },
+      {
+        "family": "Perrot",
+        "given": "M."
+      },
+      {
+        "family": "Duchesnay",
+        "given": "E."
+      }
+    ],
+    "container-title": "Journal of Machine Learning Research",
+    "id": "scikit-learn",
+    "issued": {
+      "date-parts": [
+        [
+          2011
+        ]
+      ]
+    },
+    "page": "2825-2830",
+    "title": "Scikit-learn: Machine learning in Python",
+    "title-short": "Scikit-learn",
+    "type": "article-journal",
+    "volume": "12"
+  }
 ]
