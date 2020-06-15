@@ -1,13 +1,16 @@
 Acknowledgements
 analysing
 arxiv
-biorxiv
+bioRxiv
 bioRxiv’s
 CBOW
+centroid
+centroids
 danich
+dataset
 Datasets
 Dimensionality
-Embeddings
+embeddings
 GBMF
 gensim
 gensim’s
@@ -15,6 +18,7 @@ janeroe
 learn’s
 medrxiv
 NIH’s
+overrepresentation
 PCA
 preprint
 preprints
