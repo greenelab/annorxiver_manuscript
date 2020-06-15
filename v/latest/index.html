@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="David N. Nicholson" />
   <meta name="author" content="Jane Roe" />
-  <meta name="dcterms.date" content="2020-06-09" />
+  <meta name="dcterms.date" content="2020-06-15" />
   <meta name="keywords" content="biorxiv, preprints, pubmed central, natural language processing, descriptive linguistics" />
   <title>Linguistic Analysis of the bioRxiv Preprint Landscape</title>
   <style>
@@ -29,8 +29,8 @@
   <meta name="citation_title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
   <meta property="og:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
-  <meta name="dc.date" content="2020-06-09" />
-  <meta name="citation_publication_date" content="2020-06-09" />
+  <meta name="dc.date" content="2020-06-15" />
+  <meta name="citation_publication_date" content="2020-06-15" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/8ac7f50080b96037c8c731daa169a232a6f43dcc/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8ac7f50080b96037c8c731daa169a232a6f43dcc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8ac7f50080b96037c8c731daa169a232a6f43dcc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/cc616aa4ff90cdf461ed78592fadde9b7b2bcbfb/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/cc616aa4ff90cdf461ed78592fadde9b7b2bcbfb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/cc616aa4ff90cdf461ed78592fadde9b7b2bcbfb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,10 +67,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/annorxiver_manuscript/v/8ac7f50080b96037c8c731daa169a232a6f43dcc/">permalink</a>)
+(<a href="https://greenelab.github.io/annorxiver_manuscript/v/cc616aa4ff90cdf461ed78592fadde9b7b2bcbfb/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/8ac7f50080b96037c8c731daa169a232a6f43dcc">greenelab/annorxiver_manuscript@8ac7f50</a>
-on June 9, 2020.
+from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/cc616aa4ff90cdf461ed78592fadde9b7b2bcbfb">greenelab/annorxiver_manuscript@cc616aa</a>
+on June 15, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -145,11 +145,30 @@ This document vector is calculated by taking the average of every token present 
 We trained this model using scikit-learn’s <span class="citation" data-cites="QrtjCwXA">[<a href="#ref-QrtjCwXA" role="doc-biblioref">12</a>]</span> implementation of a randomized solver <span class="citation" data-cites="7tMTyalf">[<a href="#ref-7tMTyalf" role="doc-biblioref">13</a>]</span> with a random seed of 100, output of 50 principal components, and default settings for all other parameters.
 For each principal component we calculated its cosine similarity with all tokens in our word2vec model’s vocabulary.
 We report the top 100 positive and negative scoring tokens in the form of word clouds, where the size of each word corresponds to the magnitude of similarity and color represents positive (blue) or negative (orange) association.</p>
-<h3 id="recommending-journals-biorxiv-audience-analysis">Recommending Journals/ bioRxiv Audience Analysis</h3>
-<ol type="1">
-<li>This title will update as analysis is completed</li>
-<li>This section will describe how the above process is conducted</li>
-</ol>
+<h3 id="journal-recommendation">Journal Recommendation</h3>
+<p>We aimed to predict the journal a paper would eventually be published in based on its embedding representation.
+We illustrate our recommendations as a short list along with a network visualization available at <a href="link%20goes%20here%20when%20live">website link here once available</a>.
+Since we sought to examine if embeddings were related to publication venue, we used a simple k-nearest neighbors approach with Euclidean distance to recommend journals.</p>
+<p>First, we filtered all journals that had fewer than 100 papers in the PMC dataset.
+A subset of our PMC corpus was directly linked to papers in bioRxiv as they had been published as open access articles.
+We held out this subset and treated it as our gold standard test set.
+We used the remainder of the PMC corpus for training and initial evaluation via cross validation.
+We considered a list of ten journal suggestions to be an appropriate number and we considered a prediction to be a true positive if the correct journal appeared within the ten closest neighbors of the query article.</p>
+<p>Certain journals publish articles in a focused topic area, while others publish articles that cover many topics.
+Likewise, some journals have a publication rate of at most hundreds of papers per year while others publish at a rate of at least ten-thousand papers per year.
+Accounting for these characteristics, we designed two approaches for recommending journals.</p>
+<p>The first approach is based on individual paper proximity, which enabled us to provide an example of the specific article or articles that led to the prediction.
+Conversely, predictions using this technique could be biased due to the overrepresentation of general topic journals.
+We call this approach the paper-based classifier.
+This classifier takes a query article that has been projected onto the embedding space trained on bioRxiv preprints as input and reports the journals of the top ten closest papers.
+The number of journals returned via this method could be less than ten as multiple papers in close proximity to query article may belong to the same journal.</p>
+<p>The second approach is based on close proximity to a journal’s centroid.
+This technique provides recommendations that are more focused on domain-specific publication venues.
+We call this approach the journal-based classifier.
+This classifier was trained by computing journal centroids via taking the average embedding of all papers published in each journal.
+Following the centroid calculation, this classifier takes a query article projected onto the same embedding space as above for input and reports the top ten nearest journals centroids.
+Both the paper-based classifier and the journal-based classifier were optimized via 10-fold cross validation.
+Lastly, we evaluated performance of both classifiers on our gold standard test set of published preprints.</p>
 <h2 id="results">Results</h2>
 <h3 id="comparing-biorxiv-to-pubmed-central">Comparing bioRxiv to PubMed Central</h3>
 <h4 id="global-view">Global View</h4>
