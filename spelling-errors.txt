@@ -1,7 +1,8 @@
 Acknowledgements
 analysing
 arxiv
-bioRxiv
+barchart
+biorxiv
 bioRxiv’s
 CBOW
 centroid
@@ -20,8 +21,10 @@ medrxiv
 NIH’s
 overrepresentation
 PCA
-preprint
+pre
+Preprint
 preprints
+preprint’s
 preprocess
 scatterplot
 scikit

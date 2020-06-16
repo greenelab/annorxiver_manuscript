@@ -4,7 +4,7 @@ author-meta:
 - Jane Roe
 bibliography:
 - content/manual-references.json
-date-meta: '2020-06-15'
+date-meta: '2020-06-16'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -23,9 +23,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2020-06-15" />
+  <meta name="dc.date" content="2020-06-16" />
 
-  <meta name="citation_publication_date" content="2020-06-15" />
+  <meta name="citation_publication_date" content="2020-06-16" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/cc616aa4ff90cdf461ed78592fadde9b7b2bcbfb/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/59f2035487118ccd70e2728868eef74978a180d2/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/cc616aa4ff90cdf461ed78592fadde9b7b2bcbfb/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/59f2035487118ccd70e2728868eef74978a180d2/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/cc616aa4ff90cdf461ed78592fadde9b7b2bcbfb/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/59f2035487118ccd70e2728868eef74978a180d2/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,10 +105,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/cc616aa4ff90cdf461ed78592fadde9b7b2bcbfb/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/59f2035487118ccd70e2728868eef74978a180d2/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@cc616aa](https://github.com/greenelab/annorxiver_manuscript/tree/cc616aa4ff90cdf461ed78592fadde9b7b2bcbfb)
-on June 15, 2020.
+from [greenelab/annorxiver_manuscript@59f2035](https://github.com/greenelab/annorxiver_manuscript/tree/59f2035487118ccd70e2728868eef74978a180d2)
+on June 16, 2020.
 </em></small>
 
 ## Authors
@@ -242,7 +242,18 @@ Lastly, we evaluated performance of both classifiers on our gold standard test s
 1. Create a treemap visualization of top X terms that are different between bioRxiv and PubMed Central (based on odds ratio)
 
 #### Published Preprint Differences
-1. Create a treemap visualization of top X terms that are different between Preprint and Published documents (based on odds ratio)
+![
+Top scoring tokens for preprints are focused on figure citations whereas their published versions are more focused on data availability.
+The plot on the left (A) is a point range plot of the odds ratio with respect to preprints.
+Values greater than one indicate a high association with preprints while values less than one indicate a high association with published articles.
+The dotted line provides a breaking point between both categories.
+The plot on the right (B) is a barchart of token frequency appearing in preprints and published versions of preprints respectively.
+](https://raw.githubusercontent.com/greenelab/annorxiver/e32661b855cc6622cc1138fcd1606ef3500f0ff9/biorxiv/corpora_comparison/output/figures/preprint_published_comparison.png){#fig:biorxiv_pmc_pre_published_comp}
+
+A preprint's linguistic style can change once a preprint has undergone the revision process prior to being published.
+We quantified this linguistic difference by calculating the odds ratio of tokens appearing in the union in bioRxiv preprints and their published counterparts within PMC.
+Tokens with an odds ratio greater than one are mainly centered on paper/figure references and research specific terms (Figure {@fig: biorxiv_pmc_pre_published_comp}).
+Tokens with an odds ratio of less than one are focused on data availability, and research measurements such as number of cases and controls or significance testing (Figure {@fig: biorxiv_pmc_pre_published_comp}).
 
 ### The bioRxiv Preprint Landscape
 1. Provide the tSNE figure of the bioRxiv 
