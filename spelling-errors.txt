@@ -2,6 +2,7 @@ Acknowledgements
 analysing
 arxiv
 barchart
+bioinformatics
 biorxiv
 bioRxiv’s
 CBOW
@@ -18,11 +19,12 @@ gensim’s
 janeroe
 learn’s
 medrxiv
+neuroscience
 NIH’s
 overrepresentation
 PCA
 pre
-Preprint
+preprint
 preprints
 preprint’s
 preprocess

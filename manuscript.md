@@ -4,7 +4,7 @@ author-meta:
 - Jane Roe
 bibliography:
 - content/manual-references.json
-date-meta: '2020-06-16'
+date-meta: '2020-06-24'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -23,9 +23,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2020-06-16" />
+  <meta name="dc.date" content="2020-06-24" />
 
-  <meta name="citation_publication_date" content="2020-06-16" />
+  <meta name="citation_publication_date" content="2020-06-24" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/59f2035487118ccd70e2728868eef74978a180d2/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/6a3d0fe401b756856d9528eb20bc672c951048c5/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/59f2035487118ccd70e2728868eef74978a180d2/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/6a3d0fe401b756856d9528eb20bc672c951048c5/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/59f2035487118ccd70e2728868eef74978a180d2/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/6a3d0fe401b756856d9528eb20bc672c951048c5/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,10 +105,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/59f2035487118ccd70e2728868eef74978a180d2/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/6a3d0fe401b756856d9528eb20bc672c951048c5/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@59f2035](https://github.com/greenelab/annorxiver_manuscript/tree/59f2035487118ccd70e2728868eef74978a180d2)
-on June 16, 2020.
+from [greenelab/annorxiver_manuscript@6a3d0fe](https://github.com/greenelab/annorxiver_manuscript/tree/6a3d0fe401b756856d9528eb20bc672c951048c5)
+on June 24, 2020.
 </em></small>
 
 ## Authors
@@ -237,6 +237,26 @@ Lastly, we evaluated performance of both classifiers on our gold standard test s
 ## Results
 
 ### Comparing bioRxiv to PubMed Central
+
+#### bioRxiv Repository
+
+![
+Neuroscience and bioinformatics are the two most common topics for preprints on bioRxiv.
+This bar chart depicts the number of preprints that fall into each author-selected topic area.
+](https://raw.githubusercontent.com/greenelab/annorxiver/35d3ea0de3c9c78e3c524736bbaada00928c88fb/biorxiv/exploratory_data_analysis/output/figures/preprint_category.png){#fig:biorxiv_categories}
+
+![
+Most of bioRxiv's preprints report new research findings.
+
+This bar chart depicts the number of articles categorized based on author-selected article types.
+](https://raw.githubusercontent.com/greenelab/annorxiver/94874e0f1e35bd667bf3b7c3dc6416068779444f/biorxiv/exploratory_data_analysis/output/figures/preprint_headings.png){#fig:biorxiv_headings}
+
+Each preprint on bioRxiv has an author-selected topic area, and the predominant area in past reports has been neuroscience [@doi:10.7554/eLife.45133].
+Our analysis of the full text release of bioRxiv confirms this previous finding (Figure {@fig:biorxiv_categories}).
+The author-selected topic area abundances that we found in the full text largely matched previous studies [@doi:10.7554/eLife.45133; @doi:10.1001/jama.2017.21168].
+One exception was microbiology, which has a larger share of preprints than in a previous report from 2018 [@doi:10.7554/eLife.45133] (Figure {@fig:biorxiv_categories}).
+Authors also select from three article types when they upload their preprints.
+We found that most preprints are categorized as new results (Figure {@fig:biorxiv_headings}), which is consistent with previous findings [@doi:10.1001/jama.2017.21168].
 
 #### Global View
 1. Create a treemap visualization of top X terms that are different between bioRxiv and PubMed Central (based on odds ratio)
