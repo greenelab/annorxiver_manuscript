@@ -4,7 +4,7 @@ author-meta:
 - Jane Roe
 bibliography:
 - content/manual-references.json
-date-meta: '2020-06-24'
+date-meta: '2020-06-30'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -23,9 +23,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2020-06-24" />
+  <meta name="dc.date" content="2020-06-30" />
 
-  <meta name="citation_publication_date" content="2020-06-24" />
+  <meta name="citation_publication_date" content="2020-06-30" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/6a3d0fe401b756856d9528eb20bc672c951048c5/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/4e88bc3505328e1b0dcaaf20059aacaaabd5137a/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/6a3d0fe401b756856d9528eb20bc672c951048c5/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/4e88bc3505328e1b0dcaaf20059aacaaabd5137a/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/6a3d0fe401b756856d9528eb20bc672c951048c5/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/4e88bc3505328e1b0dcaaf20059aacaaabd5137a/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,10 +105,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/6a3d0fe401b756856d9528eb20bc672c951048c5/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/4e88bc3505328e1b0dcaaf20059aacaaabd5137a/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@6a3d0fe](https://github.com/greenelab/annorxiver_manuscript/tree/6a3d0fe401b756856d9528eb20bc672c951048c5)
-on June 24, 2020.
+from [greenelab/annorxiver_manuscript@4e88bc3](https://github.com/greenelab/annorxiver_manuscript/tree/4e88bc3505328e1b0dcaaf20059aacaaabd5137a)
+on June 30, 2020.
 </em></small>
 
 ## Authors
@@ -247,7 +247,6 @@ This bar chart depicts the number of preprints that fall into each author-select
 
 ![
 Most of bioRxiv's preprints report new research findings.
-
 This bar chart depicts the number of articles categorized based on author-selected article types.
 ](https://raw.githubusercontent.com/greenelab/annorxiver/94874e0f1e35bd667bf3b7c3dc6416068779444f/biorxiv/exploratory_data_analysis/output/figures/preprint_headings.png){#fig:biorxiv_headings}
 
@@ -258,10 +257,27 @@ One exception was microbiology, which has a larger share of preprints than in a 
 Authors also select from three article types when they upload their preprints.
 We found that most preprints are categorized as new results (Figure {@fig:biorxiv_headings}), which is consistent with previous findings [@doi:10.1001/jama.2017.21168].
 
-#### Global View
-1. Create a treemap visualization of top X terms that are different between bioRxiv and PubMed Central (based on odds ratio)
+#### Global Comparison of bioRxiv and PubMed Central 
+
+![
+BioRxiv is more focused on biological discoveries rather than disease treatments and clinical trials.
+The plot on the left (A) is a point range plot of the odds ratio with respect to bioRxiv.
+Values greater than one indicate a high association with bioRxiv whereas values less than one indicate high association with PubMed Central.
+The dotted line provides a breaking point between both categories.
+The plot on the right (B) is a bar chart of token frequency appearing in bioRxiv and PMC respectively.
+](https://raw.githubusercontent.com/danich1/annorxiver/f5d6c2d04e2fef0d38eaee77ef6c2a0b19ef6358/biorxiv/corpora_comparison/output/figures/biorxiv_vs_pubmed_central.png){#fig:biorxiv_pmc_global_comparison}
+
+The linguistic style of the bioRxiv corpus differs from the PMC corpus.
+We compared preprints in bioRxiv with published manuscripts in PMC.
+We found that tokens such as "neuron", "genome", "RNA" and "network" had a high odds ratio, indicating enrichment in bioRxiv (Figure {@fig:biorxiv_pmc_global_comparison}).
+Likewise, we found tokens such as "patient", "health", $\plusminus$, and "ml" to have a low odds ratio, indicating enrichment in PMC (Figure {@fig:biorxiv_pmc_global_comparison}).
+This separation of tokens suggests a prevalence of articles focused on clinical trials and patient research within PMC compared to bioRxiv.
+Furthermore, bioRxiv has a predominance of neuroscience and bioinformatic topics.
+In regard to writing, citation styles diversify from the familiar "et al." form as preprints transition through the publication process.
+Additionally, published articles have an increase of typesetting ($\plusminus$) and measurement symbols ("ml", "age") compared to preprints. 
 
 #### Published Preprint Differences
+
 ![
 Top scoring tokens for preprints are focused on figure citations whereas their published versions are more focused on data availability.
 The plot on the left (A) is a point range plot of the odds ratio with respect to preprints.
