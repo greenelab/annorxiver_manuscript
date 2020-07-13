@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="David N. Nicholson" />
   <meta name="author" content="Jane Roe" />
-  <meta name="dcterms.date" content="2020-06-30" />
+  <meta name="dcterms.date" content="2020-07-13" />
   <meta name="keywords" content="biorxiv, preprints, pubmed central, natural language processing, descriptive linguistics" />
   <title>Linguistic Analysis of the bioRxiv Preprint Landscape</title>
   <style>
@@ -29,8 +29,8 @@
   <meta name="citation_title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
   <meta property="og:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
-  <meta name="dc.date" content="2020-06-30" />
-  <meta name="citation_publication_date" content="2020-06-30" />
+  <meta name="dc.date" content="2020-07-13" />
+  <meta name="citation_publication_date" content="2020-07-13" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/4e88bc3505328e1b0dcaaf20059aacaaabd5137a/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/4e88bc3505328e1b0dcaaf20059aacaaabd5137a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/4e88bc3505328e1b0dcaaf20059aacaaabd5137a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/8feae133ce648db8f38705e0df23ad9af1785845/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8feae133ce648db8f38705e0df23ad9af1785845/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8feae133ce648db8f38705e0df23ad9af1785845/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,10 +67,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/annorxiver_manuscript/v/4e88bc3505328e1b0dcaaf20059aacaaabd5137a/">permalink</a>)
+(<a href="https://greenelab.github.io/annorxiver_manuscript/v/8feae133ce648db8f38705e0df23ad9af1785845/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/4e88bc3505328e1b0dcaaf20059aacaaabd5137a">greenelab/annorxiver_manuscript@4e88bc3</a>
-on June 30, 2020.
+from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/8feae133ce648db8f38705e0df23ad9af1785845">greenelab/annorxiver_manuscript@8feae13</a>
+on July 13, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -145,9 +145,28 @@ This document vector is calculated by taking the average of every token present 
 We trained this model using scikit-learn’s <span class="citation" data-cites="QrtjCwXA">[<a href="#ref-QrtjCwXA" role="doc-biblioref">12</a>]</span> implementation of a randomized solver <span class="citation" data-cites="7tMTyalf">[<a href="#ref-7tMTyalf" role="doc-biblioref">13</a>]</span> with a random seed of 100, output of 50 principal components, and default settings for all other parameters.
 For each principal component we calculated its cosine similarity with all tokens in our word2vec model’s vocabulary.
 We report the top 100 positive and negative scoring tokens in the form of word clouds, where the size of each word corresponds to the magnitude of similarity and color represents positive (blue) or negative (orange) association.</p>
+<h3 id="discovering-unannotated-preprint-publication-relationships">Discovering Unannotated Preprint-Publication Relationships</h3>
+<p>Automated procedures are in place to link preprints to peer reviewed versions and many journals require authors to update preprints with a link to the published version.
+However, automated procedures at <em>bioRxiv</em> are often based on exact matching of certain attributes and authors can forget to establish a link after publication.
+For example, authors can change the title between a preprint and published version (e.g., <span class="citation" data-cites="1Bpwk7s3x">[<a href="#ref-1Bpwk7s3x" role="doc-biblioref">14</a>]</span> and <span class="citation" data-cites="iBFkqblV">[<a href="#ref-iBFkqblV" role="doc-biblioref">15</a>]</span>), which prevents <em>bioRxiv</em> from automatically establishing a link.
+If the authors do not report the publication to <em>bioRxiv</em>, the preprint and the published version are treated as distinct entities despite representing the same underlying research.
+We recognized that the distance in embedding space could reveal preprint to published version links that were missed by existing automated processes.
+First, we used CrossRef <span class="citation" data-cites="XnHb341s">[<a href="#ref-XnHb341s" role="doc-biblioref">16</a>]</span> to identify bioRxiv preprints that were linked to a corresponding published article.
+We filtered out links that contained papers not in PubMed Central’s Open Access corpus.
+Following the preprocessing step, we calculated the distribution of known preprint to published distances by taking the Euclidean distance between the preprint’s embedding coordinates and the coordinates of the published version.
+We also calculated a background distribution, which consisted of the distance between each preprint with an annotated publication and a randomly selected article from the same journal the published version.
+Next, we calculated distances between preprints without a published version link with PubMed Central articles that weren’t matched with a corresponding preprint.
+We filtered any potential links with distances that were greater than the minimum value of the background distribution to reduce the curation burden.
+Lastly, we binned the remaining pairs based on percentiles from the annotated pairs at the [0,25th percentile), [25th percentile, 50th percentile), [50th percentile, 75th percentile), and [75th percentile, minimum background distance).
+We randomly sampled 50 articles from each bin for manual annotation.
+We shuffled these four sets to produce a list of 200 potential preprint-published pairs with a randomized order.
+We supplied these candidates to two scientists to manually determine if each link between a preprint and a putative matched version was correct or incorrect.
+After the curation process we encountered eight mismatches.
+These mismatches were supplied to a third scientist, who carefully reviewed each case and made a final determination.
+Lastly, we used this curated set to evaluate the extent to which distance in the embedding space revealed true but unannotated links between preprints and their published verisons.</p>
 <h3 id="journal-recommendation">Journal Recommendation</h3>
 <p>We aimed to predict the journal a paper would eventually be published in based on its embedding representation.
-We illustrate our recommendations as a short list along with a network visualization available at <a href="link%20goes%20here%20when%20live">website link here once available</a>.
+We illustrate our recommendations as a short list along with a network visualization available at <a href="https://greenelab.github.io/annorxiver-journal-recommender/">https://greenelab.github.io/annorxiver-journal-recommender/</a>.
 Since we sought to examine if embeddings were related to publication venue, we used a simple k-nearest neighbors approach with Euclidean distance to recommend journals.</p>
 <p>First, we filtered all journals that had fewer than 100 papers in the PMC dataset.
 A subset of our PMC corpus was directly linked to papers in bioRxiv as they had been published as open access articles.
@@ -184,12 +203,12 @@ This bar chart depicts the number of preprints that fall into each author-select
 This bar chart depicts the number of articles categorized based on author-selected article types.</figcaption>
 </figure>
 </div>
-<p>Each preprint on bioRxiv has an author-selected topic area, and the predominant area in past reports has been neuroscience <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">14</a>]</span>.
+<p>Each preprint on bioRxiv has an author-selected topic area, and the predominant area in past reports has been neuroscience <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">17</a>]</span>.
 Our analysis of the full text release of bioRxiv confirms this previous finding (Figure <a href="#fig:biorxiv_categories">1</a>).
-The author-selected topic area abundances that we found in the full text largely matched previous studies <span class="citation" data-cites="iPnRRJya mTE5h91z">[<a href="#ref-iPnRRJya" role="doc-biblioref">14</a>,<a href="#ref-mTE5h91z" role="doc-biblioref">15</a>]</span>.
-One exception was microbiology, which has a larger share of preprints than in a previous report from 2018 <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">14</a>]</span> (Figure <a href="#fig:biorxiv_categories">1</a>).
+The author-selected topic area abundances that we found in the full text largely matched previous studies <span class="citation" data-cites="iPnRRJya mTE5h91z">[<a href="#ref-iPnRRJya" role="doc-biblioref">17</a>,<a href="#ref-mTE5h91z" role="doc-biblioref">18</a>]</span>.
+One exception was microbiology, which has a larger share of preprints than in a previous report from 2018 <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">17</a>]</span> (Figure <a href="#fig:biorxiv_categories">1</a>).
 Authors also select from three article types when they upload their preprints.
-We found that most preprints are categorized as new results (Figure <a href="#fig:biorxiv_headings">2</a>), which is consistent with previous findings <span class="citation" data-cites="mTE5h91z">[<a href="#ref-mTE5h91z" role="doc-biblioref">15</a>]</span>.</p>
+We found that most preprints are categorized as new results (Figure <a href="#fig:biorxiv_headings">2</a>), which is consistent with previous findings <span class="citation" data-cites="mTE5h91z">[<a href="#ref-mTE5h91z" role="doc-biblioref">18</a>]</span>.</p>
 <h4 id="global-comparison-of-biorxiv-and-pubmed-central">Global Comparison of bioRxiv and PubMed Central</h4>
 <div id="fig:biorxiv_pmc_global_comparison" class="fignos">
 <figure>
@@ -309,14 +328,32 @@ F. Pedregosa, G. Varoquaux, A. Gramfort, V. Michel, B. Thirion, O. Grisel, M. Bl
 Nathan Halko, Per-Gunnar Martinsson, Joel A. Tropp<br />
 <em>arXiv</em> (2014-04-29) <a href="https://arxiv.org/abs/0909.4061">https://arxiv.org/abs/0909.4061</a></p>
 </div>
+<div id="ref-1Bpwk7s3x">
+<p>14. <strong>The <em>Drosophila</em> Cortactin Binding Protein 2 homolog, Nausicaa, regulates lamellipodial actin dynamics in a Cortactin-dependent manner</strong><br />
+Meghan E. O’Connell, Divya Sridharan, Tristan Driscoll, Ipsita Krishnamurthy, Wick G. Perry, Derek A. Applewhite<br />
+<em>bioRxiv</em> (2018-07-24) <a href="https://doi.org/gg4hp7">https://doi.org/gg4hp7</a><br />
+DOI: <a href="https://doi.org/10.1101/376665">10.1101/376665</a></p>
+</div>
+<div id="ref-iBFkqblV">
+<p>15. <strong>The <em>Drosophila</em> protein, Nausicaa, regulates lamellipodial actin dynamics in a Cortactin-dependent manner</strong><br />
+Meghan E. O’Connell, Divya Sridharan, Tristan Driscoll, Ipsita Krishnamurthy, Wick G. Perry, Derek A. Applewhite<br />
+<em>Biology Open</em> (2019-06-15) <a href="https://doi.org/gg4hp8">https://doi.org/gg4hp8</a><br />
+DOI: <a href="https://doi.org/10.1242/bio.038232">10.1242/bio.038232</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31164339">31164339</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6602326">PMC6602326</a></p>
+</div>
+<div id="ref-XnHb341s">
+<p>16. <strong>CrossRef Text and Data Mining Services</strong><br />
+Rachael Lammey<br />
+<em>Insights the UKSG journal</em> (2015-07-07) <a href="https://doi.org/gg4hp9">https://doi.org/gg4hp9</a><br />
+DOI: <a href="https://doi.org/10.1629/uksg.233">10.1629/uksg.233</a></p>
+</div>
 <div id="ref-iPnRRJya">
-<p>14. <strong>Tracking the popularity and outcomes of all bioRxiv preprints</strong><br />
+<p>17. <strong>Tracking the popularity and outcomes of all bioRxiv preprints</strong><br />
 Richard J Abdill, Ran Blekhman<br />
 <em>eLife</em> (2019-04-24) <a href="https://doi.org/gf2str">https://doi.org/gf2str</a><br />
 DOI: <a href="https://doi.org/10.7554/elife.45133">10.7554/elife.45133</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31017570">31017570</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6510536">PMC6510536</a></p>
 </div>
 <div id="ref-mTE5h91z">
-<p>15. <strong>Altmetric Scores, Citations, and Publication of Studies Posted as Preprints</strong><br />
+<p>18. <strong>Altmetric Scores, Citations, and Publication of Studies Posted as Preprints</strong><br />
 Stylianos Serghiou, John P. A. Ioannidis<br />
 <em>JAMA</em> (2018-01-23) <a href="https://doi.org/gftc69">https://doi.org/gftc69</a><br />
 DOI: <a href="https://doi.org/10.1001/jama.2017.21168">10.1001/jama.2017.21168</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29362788">29362788</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5833561">PMC5833561</a></p>
