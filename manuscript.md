@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/5624e41bb72e37c76606180b9afdea4d986ef21a/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/fc9f5ff2e9cda3e6c661b3012957c939cbd3bedc/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/5624e41bb72e37c76606180b9afdea4d986ef21a/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/fc9f5ff2e9cda3e6c661b3012957c939cbd3bedc/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/5624e41bb72e37c76606180b9afdea4d986ef21a/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/fc9f5ff2e9cda3e6c661b3012957c939cbd3bedc/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,9 +105,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/5624e41bb72e37c76606180b9afdea4d986ef21a/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/fc9f5ff2e9cda3e6c661b3012957c939cbd3bedc/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@5624e41](https://github.com/greenelab/annorxiver_manuscript/tree/5624e41bb72e37c76606180b9afdea4d986ef21a)
+from [greenelab/annorxiver_manuscript@fc9f5ff](https://github.com/greenelab/annorxiver_manuscript/tree/fc9f5ff2e9cda3e6c661b3012957c939cbd3bedc)
 on September 9, 2020.
 </em></small>
 
@@ -179,14 +179,15 @@ We downloaded a snapshot of this open access subset on January 31, 2020.
 This snapshot contains papers such as literature reviews, book reviews, editorials, case reports, research articles and more; however, we used only the research articles.
 
 ### Comparing Corpora
-We used gensim [@raw:rehurek_lrec] (version 3.8.1) to preprocess the bioRxiv and PubMed Central corpora.
-We removed the 337 gensim-provided stopwords.
-Throughout our analysis we encountered non-word symbols (e.g., $\pm$), so we refer to words and symbols as tokens to avoid confusion.
+We compared bioRxiv against Pubmed Central's Open Access corpus (PMCOA) and the New York Times Annotated corpus (NYTAC) [@raw:sandhaus2008new] to assess the similarities and differences between bioRxiv, PMCOA and NYTAC.
+Throughout our analysis we encountered non-word symbols (e.g., $\pm$), so we refer words and symbols as tokens to avoid confusion.
+We calculated the following statistics for each corpus: the number of documents, the number of sentences, the total number of tokens, the number of stopwords, the average length of a document, the average length of a sentence, the number of negations, the number of coordinating conjunctions, the number of pronouns and the number of past tense verbs.
+Next, we used spaCy's "en_core_web_sm" model [@raw:spacy2] (version 2.2.3) to preprocess all corpora and filtered out 326 spaCy-provided stopwords.  
 
-Following the cleaning process, we calculated the frequency of every token shared between both corpora.
+Following the cleaning process, we calculated the frequency of every token across all corpora.
 Because many tokens were unique to one set or the other and observed at low frequency, we used the union of the top 100 most frequent tokens from each corpus to compare them.
-We generated a contingency table and calculated the odds ratio for each token.
-Furthermore, we also calculated the 95% confidence interval for each odds ratio [@url:https://www.ncbi.nlm.nih.gov/books/NBK431098/].
+We generated a contingency table for each token and calculated the odds ratio from every generated table.
+We also calculated the 95% confidence interval for each token's odds ratio [@https://www.ncbi.nlm.nih.gov/books/NBK431098/] and measured corpus similarity by calculating the KL divergence across all three corpora.
 
 ### Visualizing the Preprint Landscape
 
