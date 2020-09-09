@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/greenelab/annorxiver_manuscript/tree/gh-pages) branch hosts the contents of this directory at <https://greenelab.github.io/annorxiver_manuscript/>.
-The permalink for this webpage version is <https://greenelab.github.io/annorxiver_manuscript/v/5624e41bb72e37c76606180b9afdea4d986ef21a/>.
+The permalink for this webpage version is <https://greenelab.github.io/annorxiver_manuscript/v/fc9f5ff2e9cda3e6c661b3012957c939cbd3bedc/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://greenelab.github.io/annorxiver_manuscript/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`5624e41bb72e37c76606180b9afdea4d986ef21a`](https://github.com/greenelab/annorxiver_manuscript/commit/5624e41bb72e37c76606180b9afdea4d986ef21a).
+[`fc9f5ff2e9cda3e6c661b3012957c939cbd3bedc`](https://github.com/greenelab/annorxiver_manuscript/commit/fc9f5ff2e9cda3e6c661b3012957c939cbd3bedc).

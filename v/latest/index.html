@@ -51,9 +51,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/5624e41bb72e37c76606180b9afdea4d986ef21a/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/5624e41bb72e37c76606180b9afdea4d986ef21a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/5624e41bb72e37c76606180b9afdea4d986ef21a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/fc9f5ff2e9cda3e6c661b3012957c939cbd3bedc/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/fc9f5ff2e9cda3e6c661b3012957c939cbd3bedc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/fc9f5ff2e9cda3e6c661b3012957c939cbd3bedc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/annorxiver_manuscript/v/5624e41bb72e37c76606180b9afdea4d986ef21a/">permalink</a>)
+(<a href="https://greenelab.github.io/annorxiver_manuscript/v/fc9f5ff2e9cda3e6c661b3012957c939cbd3bedc/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/5624e41bb72e37c76606180b9afdea4d986ef21a">greenelab/annorxiver_manuscript@5624e41</a>
+from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/fc9f5ff2e9cda3e6c661b3012957c939cbd3bedc">greenelab/annorxiver_manuscript@fc9f5ff</a>
 on September 9, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -126,16 +126,17 @@ Out of these 5 million articles, about 3 million were open access and available 
 We downloaded a snapshot of this open access subset on January 31, 2020.
 This snapshot contains papers such as literature reviews, book reviews, editorials, case reports, research articles and more; however, we used only the research articles.</p>
 <h3 id="comparing-corpora">Comparing Corpora</h3>
-<p>We used gensim <span class="citation" data-cites="Gc4hOzur">[<a href="#ref-Gc4hOzur" role="doc-biblioref">10</a>]</span> (version 3.8.1) to preprocess the bioRxiv and PubMed Central corpora.
-We removed the 337 gensim-provided stopwords.
-Throughout our analysis we encountered non-word symbols (e.g., <span class="math inline">\(\pm\)</span>), so we refer to words and symbols as tokens to avoid confusion.</p>
-<p>Following the cleaning process, we calculated the frequency of every token shared between both corpora.
+<p>We compared bioRxiv against Pubmed Central’s Open Access corpus (PMCOA) and the New York Times Annotated corpus (NYTAC) <span class="citation" data-cites="x0knW0CT">[<a href="#ref-x0knW0CT" role="doc-biblioref">10</a>]</span> to assess the similarities and differences between bioRxiv, PMCOA and NYTAC.
+Throughout our analysis we encountered non-word symbols (e.g., <span class="math inline">\(\pm\)</span>), so we refer words and symbols as tokens to avoid confusion.
+We calculated the following statistics for each corpus: the number of documents, the number of sentences, the total number of tokens, the number of stopwords, the average length of a document, the average length of a sentence, the number of negations, the number of coordinating conjunctions, the number of pronouns and the number of past tense verbs.
+Next, we used spaCy’s “en_core_web_sm” model <span class="citation" data-cites="SvGadRGC">[<a href="#ref-SvGadRGC" role="doc-biblioref">11</a>]</span> (version 2.2.3) to preprocess all corpora and filtered out 326 spaCy-provided stopwords.</p>
+<p>Following the cleaning process, we calculated the frequency of every token across all corpora.
 Because many tokens were unique to one set or the other and observed at low frequency, we used the union of the top 100 most frequent tokens from each corpus to compare them.
-We generated a contingency table and calculated the odds ratio for each token.
-Furthermore, we also calculated the 95% confidence interval for each odds ratio <span class="citation" data-cites="Lgm5q6mO">[<a href="#ref-Lgm5q6mO" role="doc-biblioref">11</a>]</span>.</p>
+We generated a contingency table for each token and calculated the odds ratio from every generated table.
+We also calculated the 95% confidence interval for each token’s odds ratio <span class="citation" data-cites="https://www.ncbi.nlm.nih.gov/books/NBK431098">[<span class="citeproc-not-found" data-reference-id="https://www.ncbi.nlm.nih.gov/books/NBK431098"><strong>???</strong></span>/]</span> and measured corpus similarity by calculating the KL divergence across all three corpora.</p>
 <h3 id="visualizing-the-preprint-landscape">Visualizing the Preprint Landscape</h3>
 <h4 id="generate-document-representation">Generate Document Representation</h4>
-<p>We used gensim <span class="citation" data-cites="Gc4hOzur">[<a href="#ref-Gc4hOzur" role="doc-biblioref">10</a>]</span> (version 3.8.1) to train a word2vec continuous bag of words (CBOW) <span class="citation" data-cites="1GhHIDxuW">[<a href="#ref-1GhHIDxuW" role="doc-biblioref">12</a>]</span> model over the bioRxiv corpus.
+<p>We used gensim <span class="citation" data-cites="Gc4hOzur">[<span class="citeproc-not-found" data-reference-id="Gc4hOzur"><strong>???</strong></span>]</span> (version 3.8.1) to train a word2vec continuous bag of words (CBOW) <span class="citation" data-cites="1GhHIDxuW">[<a href="#ref-1GhHIDxuW" role="doc-biblioref">12</a>]</span> model over the bioRxiv corpus.
 Our neural network architecture had 300 hidden nodes, and we trained this model for 20 epochs.
 We set a fixed random seed and otherwise used gensim’s default settings.
 Following training, we generated a document vector for every article within bioRxiv and PubMed Central.
@@ -422,15 +423,15 @@ Chih-Hsuan Wei, Alexis Allot, Robert Leaman, Zhiyong Lu<br />
 <em>Nucleic Acids Research</em> (2019-07-02) <a href="https://doi.org/ggzfsc">https://doi.org/ggzfsc</a><br />
 DOI: <a href="https://doi.org/10.1093/nar/gkz389">10.1093/nar/gkz389</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31114887">31114887</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6602571">PMC6602571</a></p>
 </div>
-<div id="ref-Gc4hOzur">
-<p>10. <strong>Software Framework for Topic Modelling with Large Corpora</strong><br />
-Radim Řehůřek, Petr Sojka<br />
-<em>Proceedings of the LREC 2010 Workshop on New Challenges for NLP Frameworks</em> (2010-05-22)</p>
+<div id="ref-x0knW0CT">
+<p>10. <strong>The new york times annotated corpus</strong><br />
+Evan Sandhaus<br />
+<em>Linguistic Data Consortium, Philadelphia</em> (2008)</p>
 </div>
-<div id="ref-Lgm5q6mO">
-<p>11. <strong>Odds Ratio (OR)</strong><br />
-Steven Tenny, Mary R. Hoffman<br />
-<em>StatPearls</em> (2020) <a href="http://www.ncbi.nlm.nih.gov/books/NBK431098/">http://www.ncbi.nlm.nih.gov/books/NBK431098/</a></p>
+<div id="ref-SvGadRGC">
+<p>11. <strong>spaCy 2: Natural language understanding with Bloom embeddings, convolutional neural networks and incremental parsing</strong><br />
+Matthew Honnibal, Ines Montani<br />
+(2017)</p>
 </div>
 <div id="ref-1GhHIDxuW">
 <p>12. <strong>Efficient Estimation of Word Representations in Vector Space</strong><br />
