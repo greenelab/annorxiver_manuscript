@@ -51,9 +51,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/8e5b1765f0c8f4ac45ba1517d0eca98fcb41c213/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8e5b1765f0c8f4ac45ba1517d0eca98fcb41c213/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8e5b1765f0c8f4ac45ba1517d0eca98fcb41c213/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/5624e41bb72e37c76606180b9afdea4d986ef21a/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/5624e41bb72e37c76606180b9afdea4d986ef21a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/5624e41bb72e37c76606180b9afdea4d986ef21a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/annorxiver_manuscript/v/8e5b1765f0c8f4ac45ba1517d0eca98fcb41c213/">permalink</a>)
+(<a href="https://greenelab.github.io/annorxiver_manuscript/v/5624e41bb72e37c76606180b9afdea4d986ef21a/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/8e5b1765f0c8f4ac45ba1517d0eca98fcb41c213">greenelab/annorxiver_manuscript@8e5b176</a>
+from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/5624e41bb72e37c76606180b9afdea4d986ef21a">greenelab/annorxiver_manuscript@5624e41</a>
 on September 9, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -187,7 +187,11 @@ We call this approach the journal-based classifier.
 This classifier was trained by computing journal centroids via taking the average embedding of all papers published in each journal.
 Following the centroid calculation, this classifier takes a query article projected onto the same embedding space as above for input and reports the top ten nearest journals centroids.
 Both the paper-based classifier and the journal-based classifier were optimized via 10-fold cross validation.
-Lastly, we evaluated performance of both classifiers on our gold standard test set of published preprints.</p>
+We evaluated performance of both classifiers on our gold standard test set of published preprints.</p>
+<p>We used SAUCIE <span class="citation" data-cites="LxhnWcbN">[<a href="#ref-LxhnWcbN" role="doc-biblioref">19</a>]</span> to train a model that uses the latent space of a neural network to learn an embedding suitable for visualization.
+This model enabled us to visualized the PMC corpus and to efficiently embed new papers and preprints with the space.
+We trained this model using a learning rate of 0.001, lambda_b of 0, lambda_c of 0.001, and lambda_d of 0.001 for 2000 iterations.
+We used the fully trained model to project user-requested <em>bioRxiv</em> preprints onto the generated landscape to enable users to see where their preprint falls along the landscape.</p>
 <h2 id="results">Results</h2>
 <h3 id="comparing-biorxiv-to-pubmed-central">Comparing bioRxiv to PubMed Central</h3>
 <h4 id="biorxiv-repository">bioRxiv Repository</h4>
@@ -203,12 +207,12 @@ This bar chart depicts the number of preprints that fall into each author-select
 This bar chart depicts the number of articles categorized based on author-selected article types.</figcaption>
 </figure>
 </div>
-<p>Each preprint on bioRxiv has an author-selected topic area, and the predominant area in past reports has been neuroscience <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">19</a>]</span>.
+<p>Each preprint on bioRxiv has an author-selected topic area, and the predominant area in past reports has been neuroscience <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">20</a>]</span>.
 Our analysis of the full text release of bioRxiv confirms this previous finding (Figure <a href="#fig:biorxiv_categories">1</a>).
-The author-selected topic area abundances that we found in the full text largely matched previous studies <span class="citation" data-cites="iPnRRJya mTE5h91z">[<a href="#ref-iPnRRJya" role="doc-biblioref">19</a>,<a href="#ref-mTE5h91z" role="doc-biblioref">20</a>]</span>.
-One exception was microbiology, which has a larger share of preprints than in a previous report from 2018 <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">19</a>]</span> (Figure <a href="#fig:biorxiv_categories">1</a>).
+The author-selected topic area abundances that we found in the full text largely matched previous studies <span class="citation" data-cites="iPnRRJya mTE5h91z">[<a href="#ref-iPnRRJya" role="doc-biblioref">20</a>,<a href="#ref-mTE5h91z" role="doc-biblioref">21</a>]</span>.
+One exception was microbiology, which has a larger share of preprints than in a previous report from 2018 <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">20</a>]</span> (Figure <a href="#fig:biorxiv_categories">1</a>).
 Authors also select from three article types when they upload their preprints.
-We found that most preprints are categorized as new results (Figure <a href="#fig:biorxiv_headings">2</a>), which is consistent with previous findings <span class="citation" data-cites="mTE5h91z">[<a href="#ref-mTE5h91z" role="doc-biblioref">20</a>]</span>.</p>
+We found that most preprints are categorized as new results (Figure <a href="#fig:biorxiv_headings">2</a>), which is consistent with previous findings <span class="citation" data-cites="mTE5h91z">[<a href="#ref-mTE5h91z" role="doc-biblioref">21</a>]</span>.</p>
 <h4 id="global-comparison-of-biorxiv-and-pubmed-central">Global Comparison of bioRxiv and PubMed Central</h4>
 <div id="fig:biorxiv_pmc_global_comparison" class="fignos">
 <figure>
@@ -285,31 +289,31 @@ Negative values indicate neuroscience concepts, while positive values indicate b
 </thead>
 <tbody>
 <tr class="odd">
-<td>Conditional Robust Calibration (CRC): a new computational Bayesian methodology for model parameters estimation and identifiability analysis <span class="citation" data-cites="ddvF5sXo">[<a href="#ref-ddvF5sXo" role="doc-biblioref">21</a>]</span></td>
+<td>Conditional Robust Calibration (CRC): a new computational Bayesian methodology for model parameters estimation and identifiability analysis <span class="citation" data-cites="ddvF5sXo">[<a href="#ref-ddvF5sXo" role="doc-biblioref">22</a>]</span></td>
 <td>4.700554908074704</td>
 <td>None</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2017/10/02/197400/F1.large.jpg</td>
 </tr>
 <tr class="even">
-<td>Machine learning of stochastic gene network phenotypes <span class="citation" data-cites="18dTP7Wfc">[<a href="#ref-18dTP7Wfc" role="doc-biblioref">22</a>]</span></td>
+<td>Machine learning of stochastic gene network phenotypes <span class="citation" data-cites="18dTP7Wfc">[<a href="#ref-18dTP7Wfc" role="doc-biblioref">23</a>]</span></td>
 <td>4.410660604449826</td>
 <td>CC-BY-NC-ND</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2019/10/31/825943/F5.large.jpg</td>
 </tr>
 <tr class="odd">
-<td>Notions of similarity for computational biology models <span class="citation" data-cites="UmFNlo8W">[<a href="#ref-UmFNlo8W" role="doc-biblioref">23</a>]</span></td>
+<td>Notions of similarity for computational biology models <span class="citation" data-cites="UmFNlo8W">[<a href="#ref-UmFNlo8W" role="doc-biblioref">24</a>]</span></td>
 <td>4.355295926618207</td>
 <td>CC-BY-NC-ND</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2016/03/21/044818/F1.large.jpg</td>
 </tr>
 <tr class="even">
-<td>GpABC: a Julia package for approximate Bayesian computation with Gaussian process emulation <span class="citation" data-cites="16tWubqOj">[<a href="#ref-16tWubqOj" role="doc-biblioref">24</a>]</span></td>
+<td>GpABC: a Julia package for approximate Bayesian computation with Gaussian process emulation <span class="citation" data-cites="16tWubqOj">[<a href="#ref-16tWubqOj" role="doc-biblioref">25</a>]</span></td>
 <td>4.351517618262304</td>
 <td>CC-BY-NC-ND</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2019/09/18/769299/F1.large.jpg</td>
 </tr>
 <tr class="odd">
-<td>SBpipe: a collection of pipelines for automating repetitive simulation and analysis tasks <span class="citation" data-cites="6gfAR2hM">[<a href="#ref-6gfAR2hM" role="doc-biblioref">25</a>]</span></td>
+<td>SBpipe: a collection of pipelines for automating repetitive simulation and analysis tasks <span class="citation" data-cites="6gfAR2hM">[<a href="#ref-6gfAR2hM" role="doc-biblioref">26</a>]</span></td>
 <td>4.321847854182741</td>
 <td>CC-BY-NC-ND</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2017/02/09/107250/F1.large.jpg</td>
@@ -321,31 +325,31 @@ Negative values indicate neuroscience concepts, while positive values indicate b
 <td></td>
 </tr>
 <tr class="odd">
-<td>Spatiotemporal proteomics uncovers cathepsin-dependent host cell death during bacterial infection <span class="citation" data-cites="2V2BJL87">[<a href="#ref-2V2BJL87" role="doc-biblioref">26</a>]</span></td>
+<td>Spatiotemporal proteomics uncovers cathepsin-dependent host cell death during bacterial infection <span class="citation" data-cites="2V2BJL87">[<a href="#ref-2V2BJL87" role="doc-biblioref">27</a>]</span></td>
 <td>-4.263964235099807</td>
 <td>CC-BY-ND</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2018/11/07/455048/F1.large.jpg</td>
 </tr>
 <tr class="even">
-<td>Systems analysis by mass cytometry identifies susceptibility of latent HIV-infected T cells to targeting of p38 and mTOR pathways <span class="citation" data-cites="4BUSt1jK">[<a href="#ref-4BUSt1jK" role="doc-biblioref">27</a>]</span></td>
+<td>Systems analysis by mass cytometry identifies susceptibility of latent HIV-infected T cells to targeting of p38 and mTOR pathways <span class="citation" data-cites="4BUSt1jK">[<a href="#ref-4BUSt1jK" role="doc-biblioref">28</a>]</span></td>
 <td>-4.279016673409032</td>
 <td>CC-BY-NC-ND</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2018/07/19/371922/F1.large.jpg</td>
 </tr>
 <tr class="odd">
-<td>NADPH consumption by L-cystine reduction creates a metabolic vulnerability upon glucose deprivation <span class="citation" data-cites="nzDb3Lvn">[<a href="#ref-nzDb3Lvn" role="doc-biblioref">28</a>]</span></td>
+<td>NADPH consumption by L-cystine reduction creates a metabolic vulnerability upon glucose deprivation <span class="citation" data-cites="nzDb3Lvn">[<a href="#ref-nzDb3Lvn" role="doc-biblioref">29</a>]</span></td>
 <td>-4.592209988884236</td>
 <td>None</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2019/08/13/733162/F1.large.jpg</td>
 </tr>
 <tr class="even">
-<td>Inhibition of Bruton’s tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease <span class="citation" data-cites="1CM9H3mFb">[<a href="#ref-1CM9H3mFb" role="doc-biblioref">29</a>]</span></td>
+<td>Inhibition of Bruton’s tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease <span class="citation" data-cites="1CM9H3mFb">[<a href="#ref-1CM9H3mFb" role="doc-biblioref">30</a>]</span></td>
 <td>-4.736613689905791</td>
 <td>None</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2019/08/28/745943/F1.large.jpg</td>
 </tr>
 <tr class="odd">
-<td>AKT but not MYC promotes reactive oxygen species-mediated cell death in oxidative culture <span class="citation" data-cites="jmFU2eta">[<a href="#ref-jmFU2eta" role="doc-biblioref">30</a>]</span></td>
+<td>AKT but not MYC promotes reactive oxygen species-mediated cell death in oxidative culture <span class="citation" data-cites="jmFU2eta">[<a href="#ref-jmFU2eta" role="doc-biblioref">31</a>]</span></td>
 <td>-4.826793742506695</td>
 <td>None</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2019/09/01/754572/F1.large.jpg</td>
@@ -467,134 +471,140 @@ Rachael Lammey<br />
 <em>Insights the UKSG journal</em> (2015-07-07) <a href="https://doi.org/gg4hp9">https://doi.org/gg4hp9</a><br />
 DOI: <a href="https://doi.org/10.1629/uksg.233">10.1629/uksg.233</a></p>
 </div>
+<div id="ref-LxhnWcbN">
+<p>19. <strong>Assessing the Heterogeneity of Cardiac Non-myocytes and the Effect of Cell Culture with Integrative Single Cell Analysis</strong><br />
+Brian S. Iskra, Logan Davis, Henry E. Miller, Yu-Chiao Chiu, Alexander R. Bishop, Yidong Chen, Gregory J. Aune<br />
+<em>bioRxiv</em> (2020-03-05) <a href="https://doi.org/gg9353">https://doi.org/gg9353</a><br />
+DOI: <a href="https://doi.org/10.1101/2020.03.04.975177">10.1101/2020.03.04.975177</a></p>
+</div>
 <div id="ref-iPnRRJya">
-<p>19. <strong>Tracking the popularity and outcomes of all bioRxiv preprints</strong><br />
+<p>20. <strong>Tracking the popularity and outcomes of all bioRxiv preprints</strong><br />
 Richard J Abdill, Ran Blekhman<br />
 <em>eLife</em> (2019-04-24) <a href="https://doi.org/gf2str">https://doi.org/gf2str</a><br />
 DOI: <a href="https://doi.org/10.7554/elife.45133">10.7554/elife.45133</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31017570">31017570</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6510536">PMC6510536</a></p>
 </div>
 <div id="ref-mTE5h91z">
-<p>20. <strong>Altmetric Scores, Citations, and Publication of Studies Posted as Preprints</strong><br />
+<p>21. <strong>Altmetric Scores, Citations, and Publication of Studies Posted as Preprints</strong><br />
 Stylianos Serghiou, John P. A. Ioannidis<br />
 <em>JAMA</em> (2018-01-23) <a href="https://doi.org/gftc69">https://doi.org/gftc69</a><br />
 DOI: <a href="https://doi.org/10.1001/jama.2017.21168">10.1001/jama.2017.21168</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29362788">29362788</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5833561">PMC5833561</a></p>
 </div>
 <div id="ref-ddvF5sXo">
-<p>21. <strong>Conditional Robust Calibration (CRC): a new computational Bayesian methodology for model parameters estimation and identifiability analysis</strong><br />
+<p>22. <strong>Conditional Robust Calibration (CRC): a new computational Bayesian methodology for model parameters estimation and identifiability analysis</strong><br />
 Fortunato Bianconi, Chiara Antonini, Lorenzo Tomassoni, Paolo Valigi<br />
 <em>bioRxiv</em> (2017-10-02) <a href="https://doi.org/gg9393">https://doi.org/gg9393</a><br />
 DOI: <a href="https://doi.org/10.1101/197400">10.1101/197400</a></p>
 </div>
 <div id="ref-18dTP7Wfc">
-<p>22. <strong>Machine learning of stochastic gene network phenotypes</strong><br />
+<p>23. <strong>Machine learning of stochastic gene network phenotypes</strong><br />
 Kyemyung Park, Thorsten Prüstel, Yong Lu, John S. Tsang<br />
 <em>bioRxiv</em> (2019-10-31) <a href="https://doi.org/gg94bm">https://doi.org/gg94bm</a><br />
 DOI: <a href="https://doi.org/10.1101/825943">10.1101/825943</a></p>
 </div>
 <div id="ref-UmFNlo8W">
-<p>23. <strong>Notions of similarity for computational biology models</strong><br />
+<p>24. <strong>Notions of similarity for computational biology models</strong><br />
 Ron Henkel, Robert Hoehndorf, Tim Kacprowski, Christian Knüpfer, Wolfram Liebermeister, Dagmar Waltemath<br />
 <em>bioRxiv</em> (2016-03-21) <a href="https://doi.org/gg939z">https://doi.org/gg939z</a><br />
 DOI: <a href="https://doi.org/10.1101/044818">10.1101/044818</a></p>
 </div>
 <div id="ref-16tWubqOj">
-<p>24. <strong>GpABC: a Julia package for approximate Bayesian computation with Gaussian process emulation</strong><br />
+<p>25. <strong>GpABC: a Julia package for approximate Bayesian computation with Gaussian process emulation</strong><br />
 Evgeny Tankhilevich, Jonathan Ish-Horowicz, Tara Hameed, Elisabeth Roesch, Istvan Kleijn, Michael PH Stumpf, Fei He<br />
 <em>bioRxiv</em> (2019-09-18) <a href="https://doi.org/gg94bj">https://doi.org/gg94bj</a><br />
 DOI: <a href="https://doi.org/10.1101/769299">10.1101/769299</a></p>
 </div>
 <div id="ref-6gfAR2hM">
-<p>25. <strong>SBpipe: a collection of pipelines for automating repetitive simulation and analysis tasks</strong><br />
+<p>26. <strong>SBpipe: a collection of pipelines for automating repetitive simulation and analysis tasks</strong><br />
 Piero Dalle Pezze, Nicolas Le Novère<br />
 <em>bioRxiv</em> (2017-02-09) <a href="https://doi.org/gg9392">https://doi.org/gg9392</a><br />
 DOI: <a href="https://doi.org/10.1101/107250">10.1101/107250</a></p>
 </div>
 <div id="ref-2V2BJL87">
-<p>26. <strong>Spatiotemporal proteomics uncovers cathepsin-dependent host cell death during bacterial infection</strong><br />
+<p>27. <strong>Spatiotemporal proteomics uncovers cathepsin-dependent host cell death during bacterial infection</strong><br />
 Joel Selkrig, Nan Li, Jacob Bobonis, Annika Hausmann, Anna Sueki, Haruna Imamura, Bachir El Debs, Gianluca Sigismondo, Bogdan I. Florea, Herman S. Overkleeft, … Athanasios Typas<br />
 <em>bioRxiv</em> (2018-11-07) <a href="https://doi.org/gg94bc">https://doi.org/gg94bc</a><br />
 DOI: <a href="https://doi.org/10.1101/455048">10.1101/455048</a></p>
 </div>
 <div id="ref-4BUSt1jK">
-<p>27. <strong>Systems analysis by mass cytometry identifies susceptibility of latent HIV-infected T cells to targeting of p38 and mTOR pathways</strong><br />
+<p>28. <strong>Systems analysis by mass cytometry identifies susceptibility of latent HIV-infected T cells to targeting of p38 and mTOR pathways</strong><br />
 Linda E. Fong, Victor L. Bass, Serena Spudich, Kathryn Miller-Jensen<br />
 <em>bioRxiv</em> (2018-07-19) <a href="https://doi.org/gg9398">https://doi.org/gg9398</a><br />
 DOI: <a href="https://doi.org/10.1101/371922">10.1101/371922</a></p>
 </div>
 <div id="ref-nzDb3Lvn">
-<p>28. <strong>NADPH consumption by L-cystine reduction creates a metabolic vulnerability upon glucose deprivation</strong><br />
+<p>29. <strong>NADPH consumption by L-cystine reduction creates a metabolic vulnerability upon glucose deprivation</strong><br />
 James H. Joly, Alireza Delfarah, Philip S. Phung, Sydney Parrish, Nicholas A. Graham<br />
 <em>bioRxiv</em> (2019-08-13) <a href="https://doi.org/gg94bf">https://doi.org/gg94bf</a><br />
 DOI: <a href="https://doi.org/10.1101/733162">10.1101/733162</a></p>
 </div>
 <div id="ref-1CM9H3mFb">
-<p>29. <strong>Inhibition of Bruton’s tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease</strong><br />
+<p>30. <strong>Inhibition of Bruton’s tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease</strong><br />
 Gareth S. D. Purvis, Massimo Collino, Haidee M. A. Tavio, Fausto Chiazza, Caroline E. O’Riodan, Lynda Zeboudj, Nick Guisot, Peter Bunyard, David R. Greaves, Christoph Thiemermann<br />
 <em>bioRxiv</em> (2019-08-28) <a href="https://doi.org/gg94bg">https://doi.org/gg94bg</a><br />
 DOI: <a href="https://doi.org/10.1101/745943">10.1101/745943</a></p>
 </div>
 <div id="ref-jmFU2eta">
-<p>30. <strong>AKT but not MYC promotes reactive oxygen species-mediated cell death in oxidative culture</strong><br />
+<p>31. <strong>AKT but not MYC promotes reactive oxygen species-mediated cell death in oxidative culture</strong><br />
 Dongqing Zheng, Jonathan H. Sussman, Matthew P. Jeon, Sydney T. Parrish, Alireza Delfarah, Nicholas A. Graham<br />
 <em>bioRxiv</em> (2019-09-01) <a href="https://doi.org/gg94bh">https://doi.org/gg94bh</a><br />
 DOI: <a href="https://doi.org/10.1101/754572">10.1101/754572</a></p>
 </div>
 <div id="ref-xq8RfP8M">
-<p>31. <strong>Pangenome Analysis of Enterobacteria Reveals Richness of Secondary Metabolite Gene Clusters and their Associated Gene Sets</strong><br />
+<p>32. <strong>Pangenome Analysis of Enterobacteria Reveals Richness of Secondary Metabolite Gene Clusters and their Associated Gene Sets</strong><br />
 Omkar S. Mohite, Colton J. Lloyd, Jonathan M. Monk, Tilmann Weber, Bernhard O. Palsson<br />
 <em>bioRxiv</em> (2019-09-25) <a href="https://doi.org/gg94bk">https://doi.org/gg94bk</a><br />
 DOI: <a href="https://doi.org/10.1101/781328">10.1101/781328</a></p>
 </div>
 <div id="ref-18IbfyQMk">
-<p>32. <strong>QTG-Finder: a machine-learning based algorithm to prioritize causal genes of quantitative trait loci</strong><br />
+<p>33. <strong>QTG-Finder: a machine-learning based algorithm to prioritize causal genes of quantitative trait loci</strong><br />
 Fan Lin, Jue Fan, Seung Y. Rhee<br />
 <em>bioRxiv</em> (2019-04-29) <a href="https://doi.org/gg94bd">https://doi.org/gg94bd</a><br />
 DOI: <a href="https://doi.org/10.1101/484204">10.1101/484204</a></p>
 </div>
 <div id="ref-TcV6ekeM">
-<p>33. <strong>Identification of candidate genes underlying nodulation-specific phenotypes in <em>Medicago truncotula</em> through integration of genome-wide association studies and co-expression networks</strong><br />
+<p>34. <strong>Identification of candidate genes underlying nodulation-specific phenotypes in <em>Medicago truncotula</em> through integration of genome-wide association studies and co-expression networks</strong><br />
 Jean-Michel Michno, Liana T. Burghardt, Junqi Liu, Joseph R. Jeffers, Peter Tiffin, Robert M. Stupar, Chad L. Myers<br />
 <em>bioRxiv</em> (2018-08-16) <a href="https://doi.org/gg94bb">https://doi.org/gg94bb</a><br />
 DOI: <a href="https://doi.org/10.1101/392779">10.1101/392779</a></p>
 </div>
 <div id="ref-1GhuF05Hx">
-<p>34. <strong>Raw sequence to target gene prediction: An integrated inference pipeline for ChIP-seq and RNA-seq datasets</strong><br />
+<p>35. <strong>Raw sequence to target gene prediction: An integrated inference pipeline for ChIP-seq and RNA-seq datasets</strong><br />
 Nisar Wani, Khalid Raza<br />
 <em>bioRxiv</em> (2017-11-16) <a href="https://doi.org/gg9394">https://doi.org/gg9394</a><br />
 DOI: <a href="https://doi.org/10.1101/220152">10.1101/220152</a></p>
 </div>
 <div id="ref-111HFfchz">
-<p>35. <strong>The y-ome defines the thirty-four percent of <em>Escherichia coli</em> genes that lack experimental evidence of function</strong><br />
+<p>36. <strong>The y-ome defines the thirty-four percent of <em>Escherichia coli</em> genes that lack experimental evidence of function</strong><br />
 Sankha Ghatak, Zachary A. King, Anand Sastry, Bernhard O. Palsson<br />
 <em>bioRxiv</em> (2018-12-03) <a href="https://doi.org/gg9396">https://doi.org/gg9396</a><br />
 DOI: <a href="https://doi.org/10.1101/328591">10.1101/328591</a></p>
 </div>
 <div id="ref-17Byktk2J">
-<p>36. <strong>The effects of time-varying temperature on delays in genetic networks</strong><br />
+<p>37. <strong>The effects of time-varying temperature on delays in genetic networks</strong><br />
 Marcella M Gomez, Richard M Murray, Matthew R Bennett<br />
 <em>bioRxiv</em> (2015-09-24) <a href="https://doi.org/gg939x">https://doi.org/gg939x</a><br />
 DOI: <a href="https://doi.org/10.1101/019687">10.1101/019687</a></p>
 </div>
 <div id="ref-INo8d1Br">
-<p>37. <strong>An analog to digital converter creates nuclear localization pulses in yeast calcium signaling</strong><br />
+<p>38. <strong>An analog to digital converter creates nuclear localization pulses in yeast calcium signaling</strong><br />
 Ian S Hsu, Bob Strome, Sergey Plotnikov, Alan M Moses<br />
 <em>bioRxiv</em> (2018-06-28) <a href="https://doi.org/gg9397">https://doi.org/gg9397</a><br />
 DOI: <a href="https://doi.org/10.1101/357939">10.1101/357939</a></p>
 </div>
 <div id="ref-wkaMFZ7G">
-<p>38. <strong>Nicotinic modulation of hierarchal inhibitory control over prefrontal cortex resting state dynamics: modeling of genetic modification and schizophreniarelated pathology</strong><br />
+<p>39. <strong>Nicotinic modulation of hierarchal inhibitory control over prefrontal cortex resting state dynamics: modeling of genetic modification and schizophreniarelated pathology</strong><br />
 Marie Rooy, Fani Koukouli, Uwe Maskos, Boris Gutkin<br />
 <em>bioRxiv</em> (2018-04-13) <a href="https://doi.org/gg9395">https://doi.org/gg9395</a><br />
 DOI: <a href="https://doi.org/10.1101/301051">10.1101/301051</a></p>
 </div>
 <div id="ref-17z6IVXTN">
-<p>39. <strong>Electrical propagation of vasodilatory signals in capillary networks</strong><br />
+<p>40. <strong>Electrical propagation of vasodilatory signals in capillary networks</strong><br />
 Pilhwa Lee<br />
 <em>bioRxiv</em> (2019-11-13) <a href="https://doi.org/gg94bn">https://doi.org/gg94bn</a><br />
 DOI: <a href="https://doi.org/10.1101/840280">10.1101/840280</a></p>
 </div>
 <div id="ref-WOFoFT9Q">
-<p>40. <strong>Dendritic spine geometry and spine apparatus organization govern the spatiotemporal dynamics of calcium</strong><br />
+<p>41. <strong>Dendritic spine geometry and spine apparatus organization govern the spatiotemporal dynamics of calcium</strong><br />
 Miriam Bell, Tom Bartol, Terrence Sejnowski, Padmini Rangamani<br />
 <em>bioRxiv</em> (2019-05-29) <a href="https://doi.org/gg9399">https://doi.org/gg9399</a><br />
 DOI: <a href="https://doi.org/10.1101/386367">10.1101/386367</a></p>
@@ -620,31 +630,31 @@ DOI: <a href="https://doi.org/10.1101/386367">10.1101/386367</a></p>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Pangenome Analysis of Enterobacteria Reveals Richness of Secondary Metabolite Gene Clusters and their Associated Gene Sets <span class="citation" data-cites="xq8RfP8M">[<a href="#ref-xq8RfP8M" role="doc-biblioref">31</a>]</span></td>
+<td>Pangenome Analysis of Enterobacteria Reveals Richness of Secondary Metabolite Gene Clusters and their Associated Gene Sets <span class="citation" data-cites="xq8RfP8M">[<a href="#ref-xq8RfP8M" role="doc-biblioref">32</a>]</span></td>
 <td>3.5865702659438883</td>
 <td>CC-BY-ND</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2019/09/25/781328/F1.large.jpg</td>
 </tr>
 <tr class="even">
-<td>QTG-Finder: a machine-learning based algorithm to prioritize causal genes of quantitative trait loci <span class="citation" data-cites="18IbfyQMk">[<a href="#ref-18IbfyQMk" role="doc-biblioref">32</a>]</span></td>
+<td>QTG-Finder: a machine-learning based algorithm to prioritize causal genes of quantitative trait loci <span class="citation" data-cites="18IbfyQMk">[<a href="#ref-18IbfyQMk" role="doc-biblioref">33</a>]</span></td>
 <td>3.470388383023157</td>
 <td>None</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2019/04/29/484204/F1.large.jpg</td>
 </tr>
 <tr class="odd">
-<td>Identification of candidate genes underlying nodulation-specific phenotypes in Medicago truncotula through integration of genome-wide association studies and co-expression networks <span class="citation" data-cites="TcV6ekeM">[<a href="#ref-TcV6ekeM" role="doc-biblioref">33</a>]</span></td>
+<td>Identification of candidate genes underlying nodulation-specific phenotypes in Medicago truncotula through integration of genome-wide association studies and co-expression networks <span class="citation" data-cites="TcV6ekeM">[<a href="#ref-TcV6ekeM" role="doc-biblioref">34</a>]</span></td>
 <td>3.3814906334073953</td>
 <td>CC-BY-NC-ND</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2018/08/16/392779/F1.large.jpg</td>
 </tr>
 <tr class="even">
-<td>Raw sequence to target gene prediction: An integrated inference pipeline for ChIP-seq and RNA-seq datasets <span class="citation" data-cites="1GhuF05Hx">[<a href="#ref-1GhuF05Hx" role="doc-biblioref">34</a>]</span></td>
+<td>Raw sequence to target gene prediction: An integrated inference pipeline for ChIP-seq and RNA-seq datasets <span class="citation" data-cites="1GhuF05Hx">[<a href="#ref-1GhuF05Hx" role="doc-biblioref">35</a>]</span></td>
 <td>3.3632576028389742</td>
 <td>None</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2017/11/16/220152/F3.large.jpg</td>
 </tr>
 <tr class="odd">
-<td>The y-ome defines the thirty-four percent of Escherichia coli genes that lack experimental evidence of function <span class="citation" data-cites="111HFfchz">[<a href="#ref-111HFfchz" role="doc-biblioref">35</a>]</span></td>
+<td>The y-ome defines the thirty-four percent of Escherichia coli genes that lack experimental evidence of function <span class="citation" data-cites="111HFfchz">[<a href="#ref-111HFfchz" role="doc-biblioref">36</a>]</span></td>
 <td>3.28742786641417</td>
 <td>CC-BY</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2018/12/03/328591/F1.large.jpg</td>
@@ -656,31 +666,31 @@ DOI: <a href="https://doi.org/10.1101/386367">10.1101/386367</a></p>
 <td></td>
 </tr>
 <tr class="odd">
-<td>The effects of time-varying temperature on delays in genetic networks <span class="citation" data-cites="17Byktk2J">[<a href="#ref-17Byktk2J" role="doc-biblioref">36</a>]</span></td>
+<td>The effects of time-varying temperature on delays in genetic networks <span class="citation" data-cites="17Byktk2J">[<a href="#ref-17Byktk2J" role="doc-biblioref">37</a>]</span></td>
 <td>-2.7047102478958056</td>
 <td>None</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2015/09/24/019687/F1.large.jpg</td>
 </tr>
 <tr class="even">
-<td>An analog to digital converter creates nuclear localization pulses in yeast calcium signaling <span class="citation" data-cites="INo8d1Br">[<a href="#ref-INo8d1Br" role="doc-biblioref">37</a>]</span></td>
+<td>An analog to digital converter creates nuclear localization pulses in yeast calcium signaling <span class="citation" data-cites="INo8d1Br">[<a href="#ref-INo8d1Br" role="doc-biblioref">38</a>]</span></td>
 <td>-2.775745000260895</td>
 <td>None</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2018/06/28/357939/F1.large.jpg</td>
 </tr>
 <tr class="odd">
-<td>Nicotinic modulation of hierarchal inhibitory control over prefrontal cortex resting state dynamics: modeling of genetic modification and schizophreniarelated pathology <span class="citation" data-cites="wkaMFZ7G">[<a href="#ref-wkaMFZ7G" role="doc-biblioref">38</a>]</span></td>
+<td>Nicotinic modulation of hierarchal inhibitory control over prefrontal cortex resting state dynamics: modeling of genetic modification and schizophreniarelated pathology <span class="citation" data-cites="wkaMFZ7G">[<a href="#ref-wkaMFZ7G" role="doc-biblioref">39</a>]</span></td>
 <td>-3.047342382798414</td>
 <td>None</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2018/04/13/301051/F1.large.jpg</td>
 </tr>
 <tr class="even">
-<td>Electrical propagation of vasodilatory signals in capillary networks <span class="citation" data-cites="17z6IVXTN">[<a href="#ref-17z6IVXTN" role="doc-biblioref">39</a>]</span></td>
+<td>Electrical propagation of vasodilatory signals in capillary networks <span class="citation" data-cites="17z6IVXTN">[<a href="#ref-17z6IVXTN" role="doc-biblioref">40</a>]</span></td>
 <td>-3.107715578793087</td>
 <td>CC-BY-NC-ND</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2019/11/13/840280/F1.large.jpg</td>
 </tr>
 <tr class="odd">
-<td>Dendritic spine geometry and spine apparatus organization govern the spatiotemporal dynamics of calcium <span class="citation" data-cites="WOFoFT9Q">[<a href="#ref-WOFoFT9Q" role="doc-biblioref">40</a>]</span></td>
+<td>Dendritic spine geometry and spine apparatus organization govern the spatiotemporal dynamics of calcium <span class="citation" data-cites="WOFoFT9Q">[<a href="#ref-WOFoFT9Q" role="doc-biblioref">41</a>]</span></td>
 <td>-3.21533499072831</td>
 <td>CC-BY-NC-ND</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2019/05/29/386367/F1.large.jpg</td>
