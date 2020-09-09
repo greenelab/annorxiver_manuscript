@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/8e5b1765f0c8f4ac45ba1517d0eca98fcb41c213/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/5624e41bb72e37c76606180b9afdea4d986ef21a/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8e5b1765f0c8f4ac45ba1517d0eca98fcb41c213/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/5624e41bb72e37c76606180b9afdea4d986ef21a/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8e5b1765f0c8f4ac45ba1517d0eca98fcb41c213/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/5624e41bb72e37c76606180b9afdea4d986ef21a/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,9 +105,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/8e5b1765f0c8f4ac45ba1517d0eca98fcb41c213/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/5624e41bb72e37c76606180b9afdea4d986ef21a/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@8e5b176](https://github.com/greenelab/annorxiver_manuscript/tree/8e5b1765f0c8f4ac45ba1517d0eca98fcb41c213)
+from [greenelab/annorxiver_manuscript@5624e41](https://github.com/greenelab/annorxiver_manuscript/tree/5624e41bb72e37c76606180b9afdea4d986ef21a)
 on September 9, 2020.
 </em></small>
 
@@ -252,7 +252,12 @@ We call this approach the journal-based classifier.
 This classifier was trained by computing journal centroids via taking the average embedding of all papers published in each journal.
 Following the centroid calculation, this classifier takes a query article projected onto the same embedding space as above for input and reports the top ten nearest journals centroids.
 Both the paper-based classifier and the journal-based classifier were optimized via 10-fold cross validation.
-Lastly, we evaluated performance of both classifiers on our gold standard test set of published preprints.
+We evaluated performance of both classifiers on our gold standard test set of published preprints.
+
+We used SAUCIE [@doi:10.1101/2020.03.04.975177] to train a model that uses the latent space of a neural network to learn an embedding suitable for visualization.
+This model enabled us to visualized the PMC corpus and to efficiently embed new papers and preprints with the space.
+We trained this model using a learning rate of 0.001, lambda_b of 0, lambda_c of 0.001, and lambda_d of 0.001 for 2000 iterations.
+We used the fully trained model to project user-requested _bioRxiv_ preprints onto the generated landscape to enable users to see where their preprint falls along the landscape.
 
 
 ## Results

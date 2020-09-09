@@ -42,7 +42,7 @@ microvascular
 mTOR
 MYC
 NADPH
-Neuroscience
+neuroscience
 Nicotinic
 NIH’s
 NLRP
@@ -54,7 +54,7 @@ pca
 phenotypes
 pointplot
 pre
-preprint
+Preprint
 Preprints
 preprint’s
 preprocess
@@ -62,15 +62,16 @@ preprocessing
 proteomics
 QTG
 recommender
+SAUCIE
 SBpipe
 schizophreniarelated
 scikit
-spatiotemporal
+Spatiotemporal
 stopwords
 Translational
 truncotula
 tyrosine
-unannotated
+Unannotated
 vasodilatory
 vec
 verisons
