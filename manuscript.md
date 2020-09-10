@@ -4,7 +4,7 @@ author-meta:
 - Jane Roe
 bibliography:
 - content/manual-references.json
-date-meta: '2020-09-09'
+date-meta: '2020-09-10'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -23,9 +23,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2020-09-09" />
+  <meta name="dc.date" content="2020-09-10" />
 
-  <meta name="citation_publication_date" content="2020-09-09" />
+  <meta name="citation_publication_date" content="2020-09-10" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/fc9f5ff2e9cda3e6c661b3012957c939cbd3bedc/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/18ca8d3bf9acd93066e4f6686442dd03f95f9f32/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/fc9f5ff2e9cda3e6c661b3012957c939cbd3bedc/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/18ca8d3bf9acd93066e4f6686442dd03f95f9f32/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/fc9f5ff2e9cda3e6c661b3012957c939cbd3bedc/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/18ca8d3bf9acd93066e4f6686442dd03f95f9f32/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,10 +105,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/fc9f5ff2e9cda3e6c661b3012957c939cbd3bedc/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/18ca8d3bf9acd93066e4f6686442dd03f95f9f32/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@fc9f5ff](https://github.com/greenelab/annorxiver_manuscript/tree/fc9f5ff2e9cda3e6c661b3012957c939cbd3bedc)
-on September 9, 2020.
+from [greenelab/annorxiver_manuscript@18ca8d3](https://github.com/greenelab/annorxiver_manuscript/tree/18ca8d3bf9acd93066e4f6686442dd03f95f9f32)
+on September 10, 2020.
 </em></small>
 
 ## Authors
@@ -286,20 +286,47 @@ We found that most preprints are categorized as new results (Figure {@fig:biorxi
 
 #### Global Comparison of bioRxiv and PubMed Central 
 
+| Metric                     | bioRxiv     | PMC           | NYTAC         | 
+|----------------------------|-------------|---------------|---------------| 
+| document count             | 71,118      | 1,977,647     | 1,855,658     | 
+| sentence count             | 22,195,739  | 480,489,811   | 72,171,037    | 
+| token count                | 420,969,930 | 8,597,101,167 | 1,218,673,384 | 
+| stopword count            | 158,429,441 | 3,153,077,263 | 559,391,073   | 
+| avg. document length        | 312.10      | 242.96        | 38.89         | 
+| avg. sentence length        | 22.71       | 21.46         | 19.89         | 
+| negatives                  | 1,148,382   | 24,928,801    | 7,272,401     | 
+| coordinating conjunctions  | 14,295,736  | 307,082,313   | 38,730,053    | 
+| coordinating conjunctions% | 3.40%       | 3.57%         | 3.18%         | 
+| pronouns                   | 4,604,432   | 74,994,125    | 46,712,553    | 
+| pronouns%                  | 1.09%        | 0.87%         | 3.83%         | 
+| passives                   | 15,012,441  | 342,407,363   | 19,472,053    | 
+| passive%                   | 3.57%       | 3.98%         | 1.60%         | 
+
+Table: Generated corpora statistics for all corpus used in this project. {#tbl:corpora_stats}
+
+![
+BioRxiv is more similar to PubMed Central than to the reference corpus.
+This barplot represents the KL divergence between bioRxiv, Pubmed Central and the reference corpus.
+The y-axis is the KL divergence metric where lower values indicates similar distributions and vice versa for higher values.
+The x-axis represents the number of highly occuring tokens used to calculate the KL divergence.
+](https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/corpora_comparison/output/figures/corpora_kl_divergence.png){#fig:kl_divergence}
+
 ![
 BioRxiv is more focused on biological discoveries rather than disease treatments and clinical trials.
 The plot on the left (A) is a point range plot of the odds ratio with respect to bioRxiv.
 Values greater than one indicate a high association with bioRxiv whereas values less than one indicate high association with PubMed Central.
 The dotted line provides a breaking point between both categories.
 The plot on the right (B) is a bar chart of token frequency appearing in bioRxiv and PMC respectively.
-](https://raw.githubusercontent.com/danich1/annorxiver/f5d6c2d04e2fef0d38eaee77ef6c2a0b19ef6358/biorxiv/corpora_comparison/output/figures/biorxiv_vs_pubmed_central.png){#fig:biorxiv_pmc_global_comparison}
+](https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/corpora_comparison/output/figures/biorxiv_vs_pubmed_central.png){#fig:biorxiv_pmc_global_comparison}
 
 The linguistic style of the bioRxiv corpus differs from the PMC corpus.
-We compared preprints in bioRxiv with published manuscripts in PMC.
-We found that tokens such as "neuron", "genome", "RNA" and "network" had a high odds ratio, indicating enrichment in bioRxiv (Figure {@fig:biorxiv_pmc_global_comparison}).
-Likewise, we found tokens such as "patient", "health", $\pm$, and "ml" to have a low odds ratio, indicating enrichment in PMC (Figure {@fig:biorxiv_pmc_global_comparison}).
-This separation of tokens suggests a prevalence of articles focused on clinical trials and patient research within PMC compared to bioRxiv.
-Furthermore, bioRxiv has a predominance of neuroscience and bioinformatic topics.
+We compared and contrasted preprints in bioRxiv, published manuscripts in PMC and newspaper articles from the New York Times (NYTAC) against eachother.
+We refer to NYTAC as our reference corpus for the following analysis.
+We found that bioRxiv is more similar to PMC than to the reference in terms of token frequencies and corpora statistics (Figure {@fig:kl_divergence} and Table {@tbl:corpora_stats}).
+When comparing bioRxiv and PMC to the reference, topic associated and measurement related tokens appear highly enriched (Supplemental Figures {@fig:biorxiv_v_reference} and {@fig:pmc_v_reference}).
+Furthermore, we found that tokens such as "neuron", "genome", "RNA" and "network" had a high odds ratio, while tokens such as "patient", "health", $\pm$, and "ml" to have a low odds ratio when comparing bioRxiv to PMC (Figure {@fig:biorxiv_pmc_global_comparison}).
+This separation of tokens suggests that articles focused on clinical trials and patient research are more prevalent in PMC than to bioRxiv.
+This separation also suggests that bioRxiv has a predominance of neuroscience and bioinformatic topics.
 In regard to writing, citation styles diversify from the familiar "et al." form as preprints transition through the publication process.
 Additionally, published articles have an increase of typesetting ($\pm$) and measurement symbols ("ml", "age") compared to preprints. 
 
@@ -311,12 +338,13 @@ The plot on the left (A) is a point range plot of the odds ratio with respect to
 Values greater than one indicate a high association with preprints while values less than one indicate a high association with published articles.
 The dotted line provides a breaking point between both categories.
 The plot on the right (B) is a barchart of token frequency appearing in preprints and published versions of preprints respectively.
-](https://raw.githubusercontent.com/danich1/annorxiver/f5d6c2d04e2fef0d38eaee77ef6c2a0b19ef6358/biorxiv/corpora_comparison/output/figures/preprint_published_comparison.png){#fig:biorxiv_pmc_pre_published_comp}
+](https://raw.githubusercontent.com/danich1/annorxiver/9611653a8c8a98a7371915a017b7ffe91cb7d88e/biorxiv/corpora_comparison/output/figures/preprint_published_comparison.png){#fig:pre_published_comp}
 
 A preprint's linguistic style can change once a preprint has undergone the revision process prior to being published.
-We quantified this linguistic difference by calculating the odds ratio of tokens appearing in the union in bioRxiv preprints and their published counterparts within PMC.
-Tokens with an odds ratio greater than one are mainly centered on paper/figure references and research specific terms (Figure {@fig:biorxiv_pmc_pre_published_comp}).
-Tokens with an odds ratio of less than one are focused on data availability, and research measurements such as number of cases and controls or significance testing (Figure {@fig:biorxiv_pmc_pre_published_comp}).
+We quantified this linguistic difference by calculating the odds ratio of tokens appearing in the union of bioRxiv preprints and their published counterparts within PMC.
+Tokens with an odds ratio greater than one are mainly centered on paper/figure references and research specific terms (Figure {@fig:pre_published_comp}).
+Tokens with an odds ratio of less than one are focused on data availability, and research measurements such as number of cases and controls or significance testing (Figure {@fig:pre_published_comp}).
+This enrichment suggests that a key piece in the publication process is verifying that essential parts of research (e.g. data availability, specific measurements) are obvious to future readers within the scientific community.
 
 ### Topic Analysis of bioRxiv's Principal Components
 
@@ -391,6 +419,24 @@ More principal component word clouds can be found on our journal recommender web
 <div id="refs"></div>
 
 
+## Supplemental Figures
+
+![
+Topic associated tokens are highly enriched when comparing bioRxiv to the New York Times.
+The plot on the left (A) is a point range plot of the odds ratio with respect to bioRxiv.
+Values greater than one indicate a high association with bioRxiv whereas values less than one indicate high association with the New York Times.
+The dotted line provides a breaking point between both categories.
+The plot on the right (B) is a bar chart of token frequency appearing in bioRxiv and New York Times respectively.
+](https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/corpora_comparison/output/figures/biorxiv_vs_reference.png){#fig:biorxiv_v_reference}
+
+![
+Typesetting symbols and biologically relevant tokens are highly enriched when comparing PubMed Central (PMC) to the New York Times.
+The plot on the left (A) is a point range plot of the odds ratio with respect to PMC.
+Values greater than one indicate a high association with PMC whereas values less than one indicate high association with the New York Times.
+The dotted line provides a breaking point between both categories.
+The plot on the right (B) is a bar chart of token frequency appearing in PMC and New York Times respectively.
+](https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/corpora_comparison/output/figures/pmc_vs_reference.png){#fig:pmc_v_reference}
+
 ## Supplemental Tables
 
 | Title [citation]                                                                                                                                                                                           | PC_2               | License      | Figure Link |
@@ -408,3 +454,4 @@ More principal component word clouds can be found on our journal recommender web
 | Dendritic spine geometry and spine apparatus organization govern the spatiotemporal dynamics of calcium [@doi:10.1101/386367]                                                                  | -3.21533499072831   |  CC-BY-NC-ND  | https://www.biorxiv.org/content/biorxiv/early/2019/05/29/386367/F1.large.jpg|
 
 Table: Top five and bottom five systems biology preprints projected onto the PC2 direction. These preprints contain bioinformatis and neuroscience concepts respectively. {#tbl:five_pc2_table}
+
