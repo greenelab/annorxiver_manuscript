@@ -20,35 +20,6 @@
     ]
   },
   {
-      "author": [
-        {
-          "family": "Řehůřek",
-          "given": "Radim"
-        },
-        {
-          "family": "Sojka",
-          "given": "Petr"
-        }
-      ],
-      "container-title": "<span class=\"nocase\">Proceedings of the LREC 2010 Workshop on New Challenges for NLP Frameworks</span>",
-      "id": "rehurek_lrec",
-      "issued": {
-        "date-parts": [
-          [
-            2010,
-            5,
-            22
-          ]
-        ]
-      },
-      "note": "<http://is.muni.cz/publication/884893/en>",
-      "page": "45-50",
-      "publisher": "ELRA",
-      "publisher-place": "Valletta, Malta",
-      "title": "<span class=\"nocase\">Software Framework for Topic Modelling with Large Corpora</span>",
-      "type": "paper-conference"
-  },
-  {
     "author": [
       {
         "family": "Pedregosa",
@@ -129,5 +100,51 @@
     "title-short": "Scikit-learn",
     "type": "article-journal",
     "volume": "12"
+  },
+  {
+    "id": "sandhaus2008new",
+    "author": [
+      {
+        "family": "Sandhaus",
+        "given": "Evan"
+      }
+    ],
+    "container-title": "Linguistic Data Consortium, Philadelphia",
+    "issue": "12",
+    "issued": {
+      "date-parts": [
+        [
+          2008
+        ]
+      ]
+    },
+    "page": "e26752",
+    "title": "The new york times annotated corpus",
+    "type": "article-journal",
+    "volume": "6"
+  },
+  {
+    "author": [
+      {
+        "family": "Honnibal",
+        "given": "Matthew"
+      },
+      {
+        "family": "Montani",
+        "given": "Ines"
+      }
+    ],
+    "id": "spacy2",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "note": "To appear",
+    "title": "<span class=\"nocase\">spaCy 2</span>: Natural language understanding with Bloom embeddings, convolutional neural networks and incremental parsing",
+    "title-short": "<span class=\"nocase\">spaCy 2</span>",
+    "type": "manuscript"
   }
 ]
