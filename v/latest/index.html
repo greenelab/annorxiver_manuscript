@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="David N. Nicholson" />
   <meta name="author" content="Jane Roe" />
-  <meta name="dcterms.date" content="2020-09-10" />
+  <meta name="dcterms.date" content="2020-09-14" />
   <meta name="keywords" content="biorxiv, preprints, pubmed central, natural language processing, descriptive linguistics" />
   <title>Linguistic Analysis of the bioRxiv Preprint Landscape</title>
   <style>
@@ -29,8 +29,8 @@
   <meta name="citation_title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
   <meta property="og:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
-  <meta name="dc.date" content="2020-09-10" />
-  <meta name="citation_publication_date" content="2020-09-10" />
+  <meta name="dc.date" content="2020-09-14" />
+  <meta name="citation_publication_date" content="2020-09-14" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/18ca8d3bf9acd93066e4f6686442dd03f95f9f32/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/18ca8d3bf9acd93066e4f6686442dd03f95f9f32/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/18ca8d3bf9acd93066e4f6686442dd03f95f9f32/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/cce2f8c11477d14721c5122df33b40570289d969/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/cce2f8c11477d14721c5122df33b40570289d969/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/cce2f8c11477d14721c5122df33b40570289d969/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,10 +67,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/annorxiver_manuscript/v/18ca8d3bf9acd93066e4f6686442dd03f95f9f32/">permalink</a>)
+(<a href="https://greenelab.github.io/annorxiver_manuscript/v/cce2f8c11477d14721c5122df33b40570289d969/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/18ca8d3bf9acd93066e4f6686442dd03f95f9f32">greenelab/annorxiver_manuscript@18ca8d3</a>
-on September 10, 2020.
+from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/cce2f8c11477d14721c5122df33b40570289d969">greenelab/annorxiver_manuscript@cce2f8c</a>
+on September 14, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -329,7 +329,7 @@ The plot on the right (B) is a bar chart of token frequency appearing in bioRxiv
 We compared and contrasted preprints in bioRxiv, published manuscripts in PMC and newspaper articles from the New York Times (NYTAC) against eachother.
 We refer to NYTAC as our reference corpus for the following analysis.
 We found that bioRxiv is more similar to PMC than to the reference in terms of token frequencies and corpora statistics (Figure <a href="#fig:kl_divergence">3</a> and Table <a href="#tbl:corpora_stats">1</a>).
-When comparing bioRxiv and PMC to the reference, topic associated and measurement related tokens appear highly enriched (Supplemental Figures <a href="#fig:biorxiv_v_reference">9</a> and <a href="#fig:pmc_v_reference">10</a>).
+When comparing bioRxiv and PMC to the reference, topic associated and measurement related tokens appear highly enriched (Supplemental Figures <a href="#fig:biorxiv_v_reference">12</a> and <a href="#fig:pmc_v_reference">13</a>).
 Furthermore, we found that tokens such as “neuron”, “genome”, “RNA” and “network” had a high odds ratio, while tokens such as “patient”, “health”, <span class="math inline">\(\pm\)</span>, and “ml” to have a low odds ratio when comparing bioRxiv to PMC (Figure <a href="#fig:biorxiv_pmc_global_comparison">4</a>).
 This separation of tokens suggests that articles focused on clinical trials and patient research are more prevalent in PMC than to bioRxiv.
 This separation also suggests that bioRxiv has a predominance of neuroscience and bioinformatic topics.
@@ -474,6 +474,43 @@ This principal component suggests that the bulk of preprints within bioRxiv are 
 This split is evident in Figure <a href="#fig:pca2_pointplot">8</a> as enriched categories along this principal component are quite related to neuroscience (negative end) or bioinformatics (positive end).
 As with the first principal component we provide example preprints from the systems biology category to reinforce this concept (Supplemental Table <a href="#tbl:five_pc2_table">3</a>).
 More principal component word clouds can be found on our journal recommender website (<a href="https://greenelab.github.io/annorxiver-journal-recommender/">greenelab.github.io/annorxiver-journal-recommender</a>) and within our online repository (see Data Availability).</p>
+<h3 id="identifying-preprints-that-were-not-linked-with-their-corresponding-publications">Identifying preprints that were not linked with their corresponding publications</h3>
+<div id="fig:article_distance_distributions" class="fignos">
+<figure>
+<img src="https://raw.githubusercontent.com/greenelab/annorxiver/131dcac75d179cb36992af4a31188031800c0958/biorxiv/article_distances/output/figures/biorxiv_article_distance.svg" alt="" /><figcaption><span>Figure 9:</span> The distances between preprints and their published version was on average lower than the distance between preprints and a randomly selected published article in the same journal.
+This violin plot shows the distribution of distances between both categories.</figcaption>
+</figure>
+</div>
+<div id="fig:article_bin_accuracy" class="fignos">
+<figure>
+<img src="https://raw.githubusercontent.com/greenelab/annorxiver/131dcac75d179cb36992af4a31188031800c0958/biorxiv/article_distances/output/figures/distance_bin_accuracy.svg" alt="" /><figcaption><span>Figure 10:</span> The proportion of publication-preprint pairs decreased as the distance for publication-preprint pairs increased.
+This bar chart depicts the fraction of true positives over the total number of pairs in each bin.
+Each bin contains a total of 200 annotated pairs and is based on the percentiles of the preprint-published distribution.</figcaption>
+</figure>
+</div>
+<p>Many journals require that authors update preprints with links to the published version of their article.
+This is accomplished in two ways: <em>bioRxiv</em> may detect the link and automatically add it or authors may notify <em>bioRxiv</em> that their preprint was published.
+Missing preprint-publication links can make it more difficult to identify the latest version of scientific manuscripts and estimate the fraction of articles that are eventually published <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">20</a>]</span>.
+We used distance in the document space to identify preprints without an annotated publication but contained very similar content to published articles.
+We found that distances between preprints and their corresponding published versions were lower than preprints paired with a random article published in the same journal (Figure <a href="#fig:article_distance_distributions">9</a>).
+This observation suggests that pairs with low embedding distances could be considered a true match, so we separated articles into quantiles based on the distribution of distances between true preprint-publication pairs.
+We curated 50 potential preprint-publication pairs from each of four quantiles in duplicate, and found a high inter-rater reliability for this task achieving a Cohen’s Kappa <span class="citation" data-cites="oeGSw37I">[<a href="#ref-oeGSw37I" role="doc-biblioref">32</a>]</span> of 91.7%.
+Out of these two hundred pairs we found that approximately 98% of pairs with an embedding distance in the 0-25th and 25th-50th percentile bins were true matches (Figure <a href="#fig:article_bin_accuracy">10</a>).
+These two bins contained 1,720 preprint-article pairs, suggesting that many preprints have been published but not previously connected with their published versions.</p>
+<div id="fig:updated_pub_rate" class="fignos">
+<figure>
+<img src="https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/article_distances/output/figures/publication_rate.png" alt="" /><figcaption><span>Figure 11:</span> The overall fraction of published preprints is higher than originally estimated in <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">20</a>]</span>.
+This line plot shows the publication rate of preprints since bioRxiv first started.
+The x-axis represents months since bioRxiv started and the y-axis represents the proportion of preprints published.
+The light blue line represents the publication rate estimated by Abdill et al. <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">20</a>]</span>.
+The dark blue line represents the updated publication rate without missing links added while the dark green line is the updated publication rate with missing links added.
+The horizontal lines represent the overall proportion of preprints that are published.</figcaption>
+</figure>
+</div>
+<p>We overlaid these new annotations onto existing annotations to reassess the overall preprint publication rate reported by Abdill et al. <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">20</a>]</span>.
+Our filtering criteria were intentionally stringent, so the increased estimate of publication rate amounts to a few percent (Figure <a href="#fig:updated_pub_rate">11</a>).
+Many of these missed annotations were for preprints posted in the 2017-2018 interval.
+As opposed to those published in 2019 and later, these preprints are old enough that they are likely to have been published but it was interesting that the rate was not observed to be higher for older preprints.</p>
 <h3 id="journal-recommendationsaudience-associations">Journal Recommendations/Audience Associations</h3>
 <ol type="1">
 <li>Title will change once analysis is finished</li>
@@ -492,7 +529,7 @@ Richard Sever, Ted Roeder, Samantha Hindle, Linda Sussman, Kevin-John Black, Jan
 DOI: <a href="https://doi.org/10.1101/833400">10.1101/833400</a></p>
 </div>
 <div id="ref-9gVmEi52">
-<p>2. <strong>Machine access and text/data mining resources | bioRxiv</strong><a href="https://www.biorxiv.org/tdm">https://www.biorxiv.org/tdm</a></p>
+<p>2. <a href="https://www.biorxiv.org/tdm">https://www.biorxiv.org/tdm</a></p>
 </div>
 <div id="ref-u294RvPz">
 <p>3. <strong>PubMed Central: The GenBank of the published literature</strong><br />
@@ -654,62 +691,68 @@ Dongqing Zheng, Jonathan H. Sussman, Matthew P. Jeon, Sydney T. Parrish, Alireza
 <em>bioRxiv</em> (2019-09-01) <a href="https://doi.org/gg94bh">https://doi.org/gg94bh</a><br />
 DOI: <a href="https://doi.org/10.1101/754572">10.1101/754572</a></p>
 </div>
+<div id="ref-oeGSw37I">
+<p>32. <strong>A Coefficient of Agreement for Nominal Scales</strong><br />
+Jacob Cohen<br />
+<em>Educational and Psychological Measurement</em> (2016-07-02) <a href="https://doi.org/dghsrr">https://doi.org/dghsrr</a><br />
+DOI: <a href="https://doi.org/10.1177/001316446002000104">10.1177/001316446002000104</a></p>
+</div>
 <div id="ref-xq8RfP8M">
-<p>32. <strong>Pangenome Analysis of Enterobacteria Reveals Richness of Secondary Metabolite Gene Clusters and their Associated Gene Sets</strong><br />
+<p>33. <strong>Pangenome Analysis of Enterobacteria Reveals Richness of Secondary Metabolite Gene Clusters and their Associated Gene Sets</strong><br />
 Omkar S. Mohite, Colton J. Lloyd, Jonathan M. Monk, Tilmann Weber, Bernhard O. Palsson<br />
 <em>bioRxiv</em> (2019-09-25) <a href="https://doi.org/gg94bk">https://doi.org/gg94bk</a><br />
 DOI: <a href="https://doi.org/10.1101/781328">10.1101/781328</a></p>
 </div>
 <div id="ref-18IbfyQMk">
-<p>33. <strong>QTG-Finder: a machine-learning based algorithm to prioritize causal genes of quantitative trait loci</strong><br />
+<p>34. <strong>QTG-Finder: a machine-learning based algorithm to prioritize causal genes of quantitative trait loci</strong><br />
 Fan Lin, Jue Fan, Seung Y. Rhee<br />
 <em>bioRxiv</em> (2019-04-29) <a href="https://doi.org/gg94bd">https://doi.org/gg94bd</a><br />
 DOI: <a href="https://doi.org/10.1101/484204">10.1101/484204</a></p>
 </div>
 <div id="ref-TcV6ekeM">
-<p>34. <strong>Identification of candidate genes underlying nodulation-specific phenotypes in <em>Medicago truncotula</em> through integration of genome-wide association studies and co-expression networks</strong><br />
+<p>35. <strong>Identification of candidate genes underlying nodulation-specific phenotypes in <em>Medicago truncotula</em> through integration of genome-wide association studies and co-expression networks</strong><br />
 Jean-Michel Michno, Liana T. Burghardt, Junqi Liu, Joseph R. Jeffers, Peter Tiffin, Robert M. Stupar, Chad L. Myers<br />
 <em>bioRxiv</em> (2018-08-16) <a href="https://doi.org/gg94bb">https://doi.org/gg94bb</a><br />
 DOI: <a href="https://doi.org/10.1101/392779">10.1101/392779</a></p>
 </div>
 <div id="ref-1GhuF05Hx">
-<p>35. <strong>Raw sequence to target gene prediction: An integrated inference pipeline for ChIP-seq and RNA-seq datasets</strong><br />
+<p>36. <strong>Raw sequence to target gene prediction: An integrated inference pipeline for ChIP-seq and RNA-seq datasets</strong><br />
 Nisar Wani, Khalid Raza<br />
 <em>bioRxiv</em> (2017-11-16) <a href="https://doi.org/gg9394">https://doi.org/gg9394</a><br />
 DOI: <a href="https://doi.org/10.1101/220152">10.1101/220152</a></p>
 </div>
 <div id="ref-111HFfchz">
-<p>36. <strong>The y-ome defines the thirty-four percent of <em>Escherichia coli</em> genes that lack experimental evidence of function</strong><br />
+<p>37. <strong>The y-ome defines the thirty-four percent of <em>Escherichia coli</em> genes that lack experimental evidence of function</strong><br />
 Sankha Ghatak, Zachary A. King, Anand Sastry, Bernhard O. Palsson<br />
 <em>bioRxiv</em> (2018-12-03) <a href="https://doi.org/gg9396">https://doi.org/gg9396</a><br />
 DOI: <a href="https://doi.org/10.1101/328591">10.1101/328591</a></p>
 </div>
 <div id="ref-17Byktk2J">
-<p>37. <strong>The effects of time-varying temperature on delays in genetic networks</strong><br />
+<p>38. <strong>The effects of time-varying temperature on delays in genetic networks</strong><br />
 Marcella M Gomez, Richard M Murray, Matthew R Bennett<br />
 <em>bioRxiv</em> (2015-09-24) <a href="https://doi.org/gg939x">https://doi.org/gg939x</a><br />
 DOI: <a href="https://doi.org/10.1101/019687">10.1101/019687</a></p>
 </div>
 <div id="ref-INo8d1Br">
-<p>38. <strong>An analog to digital converter creates nuclear localization pulses in yeast calcium signaling</strong><br />
+<p>39. <strong>An analog to digital converter creates nuclear localization pulses in yeast calcium signaling</strong><br />
 Ian S Hsu, Bob Strome, Sergey Plotnikov, Alan M Moses<br />
 <em>bioRxiv</em> (2018-06-28) <a href="https://doi.org/gg9397">https://doi.org/gg9397</a><br />
 DOI: <a href="https://doi.org/10.1101/357939">10.1101/357939</a></p>
 </div>
 <div id="ref-wkaMFZ7G">
-<p>39. <strong>Nicotinic modulation of hierarchal inhibitory control over prefrontal cortex resting state dynamics: modeling of genetic modification and schizophreniarelated pathology</strong><br />
+<p>40. <strong>Nicotinic modulation of hierarchal inhibitory control over prefrontal cortex resting state dynamics: modeling of genetic modification and schizophreniarelated pathology</strong><br />
 Marie Rooy, Fani Koukouli, Uwe Maskos, Boris Gutkin<br />
 <em>bioRxiv</em> (2018-04-13) <a href="https://doi.org/gg9395">https://doi.org/gg9395</a><br />
 DOI: <a href="https://doi.org/10.1101/301051">10.1101/301051</a></p>
 </div>
 <div id="ref-17z6IVXTN">
-<p>40. <strong>Electrical propagation of vasodilatory signals in capillary networks</strong><br />
+<p>41. <strong>Electrical propagation of vasodilatory signals in capillary networks</strong><br />
 Pilhwa Lee<br />
 <em>bioRxiv</em> (2019-11-13) <a href="https://doi.org/gg94bn">https://doi.org/gg94bn</a><br />
 DOI: <a href="https://doi.org/10.1101/840280">10.1101/840280</a></p>
 </div>
 <div id="ref-WOFoFT9Q">
-<p>41. <strong>Dendritic spine geometry and spine apparatus organization govern the spatiotemporal dynamics of calcium</strong><br />
+<p>42. <strong>Dendritic spine geometry and spine apparatus organization govern the spatiotemporal dynamics of calcium</strong><br />
 Miriam Bell, Tom Bartol, Terrence Sejnowski, Padmini Rangamani<br />
 <em>bioRxiv</em> (2019-05-29) <a href="https://doi.org/gg9399">https://doi.org/gg9399</a><br />
 DOI: <a href="https://doi.org/10.1101/386367">10.1101/386367</a></p>
@@ -718,7 +761,7 @@ DOI: <a href="https://doi.org/10.1101/386367">10.1101/386367</a></p>
 <h2 id="supplemental-figures">Supplemental Figures</h2>
 <div id="fig:biorxiv_v_reference" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/corpora_comparison/output/figures/biorxiv_vs_reference.png" alt="" /><figcaption><span>Figure 9:</span> Topic associated tokens are highly enriched when comparing bioRxiv to the New York Times.
+<img src="https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/corpora_comparison/output/figures/biorxiv_vs_reference.png" alt="" /><figcaption><span>Figure 12:</span> Topic associated tokens are highly enriched when comparing bioRxiv to the New York Times.
 The plot on the left (A) is a point range plot of the odds ratio with respect to bioRxiv.
 Values greater than one indicate a high association with bioRxiv whereas values less than one indicate high association with the New York Times.
 The dotted line provides a breaking point between both categories.
@@ -727,7 +770,7 @@ The plot on the right (B) is a bar chart of token frequency appearing in bioRxiv
 </div>
 <div id="fig:pmc_v_reference" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/corpora_comparison/output/figures/pmc_vs_reference.png" alt="" /><figcaption><span>Figure 10:</span> Typesetting symbols and biologically relevant tokens are highly enriched when comparing PubMed Central (PMC) to the New York Times.
+<img src="https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/corpora_comparison/output/figures/pmc_vs_reference.png" alt="" /><figcaption><span>Figure 13:</span> Typesetting symbols and biologically relevant tokens are highly enriched when comparing PubMed Central (PMC) to the New York Times.
 The plot on the left (A) is a point range plot of the odds ratio with respect to PMC.
 Values greater than one indicate a high association with PMC whereas values less than one indicate high association with the New York Times.
 The dotted line provides a breaking point between both categories.
@@ -754,31 +797,31 @@ The plot on the right (B) is a bar chart of token frequency appearing in PMC and
 </thead>
 <tbody>
 <tr class="odd">
-<td>Pangenome Analysis of Enterobacteria Reveals Richness of Secondary Metabolite Gene Clusters and their Associated Gene Sets <span class="citation" data-cites="xq8RfP8M">[<a href="#ref-xq8RfP8M" role="doc-biblioref">32</a>]</span></td>
+<td>Pangenome Analysis of Enterobacteria Reveals Richness of Secondary Metabolite Gene Clusters and their Associated Gene Sets <span class="citation" data-cites="xq8RfP8M">[<a href="#ref-xq8RfP8M" role="doc-biblioref">33</a>]</span></td>
 <td>3.5865702659438883</td>
 <td>CC-BY-ND</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2019/09/25/781328/F1.large.jpg</td>
 </tr>
 <tr class="even">
-<td>QTG-Finder: a machine-learning based algorithm to prioritize causal genes of quantitative trait loci <span class="citation" data-cites="18IbfyQMk">[<a href="#ref-18IbfyQMk" role="doc-biblioref">33</a>]</span></td>
+<td>QTG-Finder: a machine-learning based algorithm to prioritize causal genes of quantitative trait loci <span class="citation" data-cites="18IbfyQMk">[<a href="#ref-18IbfyQMk" role="doc-biblioref">34</a>]</span></td>
 <td>3.470388383023157</td>
 <td>None</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2019/04/29/484204/F1.large.jpg</td>
 </tr>
 <tr class="odd">
-<td>Identification of candidate genes underlying nodulation-specific phenotypes in Medicago truncotula through integration of genome-wide association studies and co-expression networks <span class="citation" data-cites="TcV6ekeM">[<a href="#ref-TcV6ekeM" role="doc-biblioref">34</a>]</span></td>
+<td>Identification of candidate genes underlying nodulation-specific phenotypes in Medicago truncotula through integration of genome-wide association studies and co-expression networks <span class="citation" data-cites="TcV6ekeM">[<a href="#ref-TcV6ekeM" role="doc-biblioref">35</a>]</span></td>
 <td>3.3814906334073953</td>
 <td>CC-BY-NC-ND</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2018/08/16/392779/F1.large.jpg</td>
 </tr>
 <tr class="even">
-<td>Raw sequence to target gene prediction: An integrated inference pipeline for ChIP-seq and RNA-seq datasets <span class="citation" data-cites="1GhuF05Hx">[<a href="#ref-1GhuF05Hx" role="doc-biblioref">35</a>]</span></td>
+<td>Raw sequence to target gene prediction: An integrated inference pipeline for ChIP-seq and RNA-seq datasets <span class="citation" data-cites="1GhuF05Hx">[<a href="#ref-1GhuF05Hx" role="doc-biblioref">36</a>]</span></td>
 <td>3.3632576028389742</td>
 <td>None</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2017/11/16/220152/F3.large.jpg</td>
 </tr>
 <tr class="odd">
-<td>The y-ome defines the thirty-four percent of Escherichia coli genes that lack experimental evidence of function <span class="citation" data-cites="111HFfchz">[<a href="#ref-111HFfchz" role="doc-biblioref">36</a>]</span></td>
+<td>The y-ome defines the thirty-four percent of Escherichia coli genes that lack experimental evidence of function <span class="citation" data-cites="111HFfchz">[<a href="#ref-111HFfchz" role="doc-biblioref">37</a>]</span></td>
 <td>3.28742786641417</td>
 <td>CC-BY</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2018/12/03/328591/F1.large.jpg</td>
@@ -790,31 +833,31 @@ The plot on the right (B) is a bar chart of token frequency appearing in PMC and
 <td></td>
 </tr>
 <tr class="odd">
-<td>The effects of time-varying temperature on delays in genetic networks <span class="citation" data-cites="17Byktk2J">[<a href="#ref-17Byktk2J" role="doc-biblioref">37</a>]</span></td>
+<td>The effects of time-varying temperature on delays in genetic networks <span class="citation" data-cites="17Byktk2J">[<a href="#ref-17Byktk2J" role="doc-biblioref">38</a>]</span></td>
 <td>-2.7047102478958056</td>
 <td>None</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2015/09/24/019687/F1.large.jpg</td>
 </tr>
 <tr class="even">
-<td>An analog to digital converter creates nuclear localization pulses in yeast calcium signaling <span class="citation" data-cites="INo8d1Br">[<a href="#ref-INo8d1Br" role="doc-biblioref">38</a>]</span></td>
+<td>An analog to digital converter creates nuclear localization pulses in yeast calcium signaling <span class="citation" data-cites="INo8d1Br">[<a href="#ref-INo8d1Br" role="doc-biblioref">39</a>]</span></td>
 <td>-2.775745000260895</td>
 <td>None</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2018/06/28/357939/F1.large.jpg</td>
 </tr>
 <tr class="odd">
-<td>Nicotinic modulation of hierarchal inhibitory control over prefrontal cortex resting state dynamics: modeling of genetic modification and schizophreniarelated pathology <span class="citation" data-cites="wkaMFZ7G">[<a href="#ref-wkaMFZ7G" role="doc-biblioref">39</a>]</span></td>
+<td>Nicotinic modulation of hierarchal inhibitory control over prefrontal cortex resting state dynamics: modeling of genetic modification and schizophreniarelated pathology <span class="citation" data-cites="wkaMFZ7G">[<a href="#ref-wkaMFZ7G" role="doc-biblioref">40</a>]</span></td>
 <td>-3.047342382798414</td>
 <td>None</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2018/04/13/301051/F1.large.jpg</td>
 </tr>
 <tr class="even">
-<td>Electrical propagation of vasodilatory signals in capillary networks <span class="citation" data-cites="17z6IVXTN">[<a href="#ref-17z6IVXTN" role="doc-biblioref">40</a>]</span></td>
+<td>Electrical propagation of vasodilatory signals in capillary networks <span class="citation" data-cites="17z6IVXTN">[<a href="#ref-17z6IVXTN" role="doc-biblioref">41</a>]</span></td>
 <td>-3.107715578793087</td>
 <td>CC-BY-NC-ND</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2019/11/13/840280/F1.large.jpg</td>
 </tr>
 <tr class="odd">
-<td>Dendritic spine geometry and spine apparatus organization govern the spatiotemporal dynamics of calcium <span class="citation" data-cites="WOFoFT9Q">[<a href="#ref-WOFoFT9Q" role="doc-biblioref">41</a>]</span></td>
+<td>Dendritic spine geometry and spine apparatus organization govern the spatiotemporal dynamics of calcium <span class="citation" data-cites="WOFoFT9Q">[<a href="#ref-WOFoFT9Q" role="doc-biblioref">42</a>]</span></td>
 <td>-3.21533499072831</td>
 <td>CC-BY-NC-ND</td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2019/05/29/386367/F1.large.jpg</td>
