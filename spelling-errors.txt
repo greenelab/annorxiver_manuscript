@@ -1,3 +1,4 @@
+Abdill
 Acknowledgements
 AKT
 analysing
@@ -22,11 +23,11 @@ cystine
 cytometry
 danich
 dataset
-Datasets
+datasets
 Dendritic
 Dimensionality
 eachother
-Embeddings
+embeddings
 Enterobacteria
 GBMF
 gensim
@@ -44,7 +45,7 @@ microvascular
 mTOR
 MYC
 NADPH
-Neuroscience
+neuroscience
 Nicotinic
 NIH’s
 NLRP
@@ -66,6 +67,7 @@ preprocess
 preprocessing
 proteomics
 QTG
+quantiles
 recommender
 SAUCIE
 SBpipe
@@ -73,13 +75,13 @@ schizophreniarelated
 scikit
 spaCy
 spaCy’s
-spatiotemporal
+Spatiotemporal
 stopword
 stopwords
 Translational
 truncotula
 tyrosine
-unannotated
+Unannotated
 vasodilatory
 vec
 verisons

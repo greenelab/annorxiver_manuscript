@@ -4,7 +4,7 @@ author-meta:
 - Jane Roe
 bibliography:
 - content/manual-references.json
-date-meta: '2020-09-10'
+date-meta: '2020-09-14'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -23,9 +23,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2020-09-10" />
+  <meta name="dc.date" content="2020-09-14" />
 
-  <meta name="citation_publication_date" content="2020-09-10" />
+  <meta name="citation_publication_date" content="2020-09-14" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/18ca8d3bf9acd93066e4f6686442dd03f95f9f32/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/cce2f8c11477d14721c5122df33b40570289d969/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/18ca8d3bf9acd93066e4f6686442dd03f95f9f32/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/cce2f8c11477d14721c5122df33b40570289d969/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/18ca8d3bf9acd93066e4f6686442dd03f95f9f32/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/cce2f8c11477d14721c5122df33b40570289d969/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,10 +105,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/18ca8d3bf9acd93066e4f6686442dd03f95f9f32/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/cce2f8c11477d14721c5122df33b40570289d969/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@18ca8d3](https://github.com/greenelab/annorxiver_manuscript/tree/18ca8d3bf9acd93066e4f6686442dd03f95f9f32)
-on September 10, 2020.
+from [greenelab/annorxiver_manuscript@cce2f8c](https://github.com/greenelab/annorxiver_manuscript/tree/cce2f8c11477d14721c5122df33b40570289d969)
+on September 14, 2020.
 </em></small>
 
 ## Authors
@@ -398,6 +398,43 @@ This principal component suggests that the bulk of preprints within bioRxiv are 
 This split is evident in Figure {@fig:pca2_pointplot} as enriched categories along this principal component are quite related to neuroscience (negative end) or bioinformatics (positive end).
 As with the first principal component we provide example preprints from the systems biology category to reinforce this concept (Supplemental Table {@tbl:five_pc2_table}). 
 More principal component word clouds can be found on our journal recommender website ([greenelab.github.io/annorxiver-journal-recommender](https://greenelab.github.io/annorxiver-journal-recommender/)) and within our online repository (see Data Availability).
+
+### Identifying preprints that were not linked with their corresponding publications
+
+![
+The distances between preprints and their published version was on average lower than the distance between preprints and a randomly selected published article in the same journal.
+This violin plot shows the distribution of distances between both categories.
+](https://raw.githubusercontent.com/greenelab/annorxiver/131dcac75d179cb36992af4a31188031800c0958/biorxiv/article_distances/output/figures/biorxiv_article_distance.svg){#fig:article_distance_distributions}
+
+![
+The proportion of publication-preprint pairs decreased as the distance for publication-preprint pairs increased.
+This bar chart depicts the fraction of true positives over the total number of pairs in each bin.
+Each bin contains a total of 200 annotated pairs and is based on the percentiles of the preprint-published distribution.
+](https://raw.githubusercontent.com/greenelab/annorxiver/131dcac75d179cb36992af4a31188031800c0958/biorxiv/article_distances/output/figures/distance_bin_accuracy.svg){#fig:article_bin_accuracy}
+
+Many journals require that authors update preprints with links to the published version of their article.
+This is accomplished in two ways: _bioRxiv_ may detect the link and automatically add it or authors may notify _bioRxiv_ that their preprint was published.
+Missing preprint-publication links can make it more difficult to identify the latest version of scientific manuscripts and estimate the fraction of articles that are eventually published [@doi:10.7554/eLife.45133].
+We used distance in the document space to identify preprints without an annotated publication but contained very similar content to published articles.
+We found that distances between preprints and their corresponding published versions were lower than preprints paired with a random article published in the same journal (Figure {@fig:article_distance_distributions}).
+This observation suggests that pairs with low embedding distances could be considered a true match, so we separated articles into quantiles based on the distribution of distances between true preprint-publication pairs.
+We curated 50 potential preprint-publication pairs from each of four quantiles in duplicate, and found a high inter-rater reliability for this task achieving a Cohen's Kappa [@doi:10.1177/001316446002000104] of 91.7%.
+Out of these two hundred pairs we found that approximately 98% of pairs with an embedding distance in the 0-25th and 25th-50th percentile bins were true matches (Figure {@fig:article_bin_accuracy}).
+These two bins contained 1,720 preprint-article pairs, suggesting that many preprints have been published but not previously connected with their published versions.
+
+![
+The overall fraction of published preprints is higher than originally estimated in [@doi:10.7554/eLife.45133].
+This line plot shows the publication rate of preprints since bioRxiv first started.
+The x-axis represents months since bioRxiv started and the y-axis represents the proportion of preprints published.
+The light blue line represents the publication rate estimated by Abdill et al. [@doi:10.7554/eLife.45133]. 
+The dark blue line represents the updated publication rate without missing links added while the dark green line is the updated publication rate with missing links added.
+The horizontal lines represent the overall proportion of preprints  that are published.
+](https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/article_distances/output/figures/publication_rate.png){#fig:updated_pub_rate}
+
+We overlaid these new annotations onto existing annotations to reassess the overall preprint publication rate reported by Abdill et al. [@doi:10.7554/eLife.45133].
+Our filtering criteria were intentionally stringent, so the increased estimate of publication rate amounts to a few percent (Figure {@fig:updated_pub_rate}).
+Many of these missed annotations were for preprints posted in the 2017-2018 interval.
+As opposed to those published in 2019 and later, these preprints are old enough that they are likely to have been published but it was interesting that the rate was not observed to be higher for older preprints.
 
 ### Journal Recommendations/Audience Associations
 1. Title will change once analysis is finished 
