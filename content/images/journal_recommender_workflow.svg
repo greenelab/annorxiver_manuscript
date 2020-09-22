@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1280 720" width="1280" height="720">
 
+<g transform="translate(50, 20)">
 <!-- Homepage section -->
 <image href="homescreen_doi.png" height="300" width="300" x="0" y="0"/>
 <image href="https://openclipart.org/download/202801/long-arrow-right.svg" height="100" width="100" x="310" y="120" />
@@ -21,6 +22,8 @@
 <text x="70" y="670">Pubmed Central Landscape (D)</text>
 
 <!-- Word Odds Ratio section -->
-<!--<image href="word-odds-ratio.png" height="300" width="300" x="700" y="400"/>
-<text x="850" y="320">Journal Centroid Recommendations</text>-->
+<image href="bin-properties.png" height="300" width="300" x="420" y="350"/>
+<text x="450" y="670">Square Bin Properties (E)</text>
+
+</g>
 </svg>
