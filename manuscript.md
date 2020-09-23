@@ -4,7 +4,7 @@ author-meta:
 - Jane Roe
 bibliography:
 - content/manual-references.json
-date-meta: '2020-09-14'
+date-meta: '2020-09-23'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -23,9 +23,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2020-09-14" />
+  <meta name="dc.date" content="2020-09-23" />
 
-  <meta name="citation_publication_date" content="2020-09-14" />
+  <meta name="citation_publication_date" content="2020-09-23" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/cce2f8c11477d14721c5122df33b40570289d969/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/2037954d87447614e434e6e435e77a9a95016b6a/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/cce2f8c11477d14721c5122df33b40570289d969/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/2037954d87447614e434e6e435e77a9a95016b6a/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/cce2f8c11477d14721c5122df33b40570289d969/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/2037954d87447614e434e6e435e77a9a95016b6a/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,10 +105,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/cce2f8c11477d14721c5122df33b40570289d969/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/2037954d87447614e434e6e435e77a9a95016b6a/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@cce2f8c](https://github.com/greenelab/annorxiver_manuscript/tree/cce2f8c11477d14721c5122df33b40570289d969)
-on September 14, 2020.
+from [greenelab/annorxiver_manuscript@2037954](https://github.com/greenelab/annorxiver_manuscript/tree/2037954d87447614e434e6e435e77a9a95016b6a)
+on September 23, 2020.
 </em></small>
 
 ## Authors
@@ -162,7 +162,7 @@ BioRxiv [@doi:10.1101/833400] is a repository of biological and biomedical resea
 We downloaded an xml snapshot of this repository on February 3, 2020 from   bioRxiv's Amazon S3 resource [@url:https://www.biorxiv.org/tdm] that contained the full text and image content of 98,023 preprints.
 Preprints on bioRxiv are versioned, and in our snapshot 26,905 of 98,023 contained more than one version.
 When preprints had multiple versions, we used only the latest one. 
-Preprints in this snapshot were grouped into one of twenty-nine different categories.
+Preprints in this snapshot were grouped by researchers submitting to _bioRxiv_ into one of twenty-nine different categories.
 Each preprint was also classified as a new result, confirmatory finding, or contradictory finding.
 Some preprints in this snapshot have been withdrawn from bioRxiv.
 When a preprint is withdrawn, its content is replaced with the reason for withdrawal.
@@ -221,13 +221,14 @@ Lastly, we binned the remaining pairs based on percentiles from the annotated pa
 We randomly sampled 50 articles from each bin for manual annotation.
 We shuffled these four sets to produce a list of 200 potential preprint-published pairs with a randomized order.
 We supplied these candidates to two scientists to manually determine if each link between a preprint and a putative matched version was correct or incorrect.
-After the curation process we encountered eight mismatches.
-These mismatches were supplied to a third scientist, who carefully reviewed each case and made a final determination.
+After the curation process, we encountered eight disagreements between reviewers.
+The preprint-publication pairs on which reviewers disagreed were supplied to a third scientist, who carefully reviewed each case and made a final determination.
 Lastly, we used this curated set to evaluate the extent to which distance in the embedding space revealed true but unannotated links between preprints and their published verisons.
 
 ### Journal Recommendation
 
-We aimed to predict the journal a paper would eventually be published in based on its embedding representation.
+Determining the best journal venue for a preprint is a non-trivial task as there are too many options for authors to decide.
+We sought to provide a resource that recommends journals based on a preprint's embedding representation.
 We illustrate our recommendations as a short list along with a network visualization available at [https://greenelab.github.io/annorxiver-journal-recommender/](https://greenelab.github.io/annorxiver-journal-recommender/).
 Since we sought to examine if embeddings were related to publication venue, we used a simple k-nearest neighbors approach with Euclidean distance to recommend journals.
 
@@ -272,17 +273,13 @@ Neuroscience and bioinformatics are the two most common topics for preprints on 
 This bar chart depicts the number of preprints that fall into each author-selected topic area.
 ](https://raw.githubusercontent.com/greenelab/annorxiver/35d3ea0de3c9c78e3c524736bbaada00928c88fb/biorxiv/exploratory_data_analysis/output/figures/preprint_category.png){#fig:biorxiv_categories}
 
-![
-Most of bioRxiv's preprints report new research findings.
-This bar chart depicts the number of articles categorized based on author-selected article types.
-](https://raw.githubusercontent.com/greenelab/annorxiver/94874e0f1e35bd667bf3b7c3dc6416068779444f/biorxiv/exploratory_data_analysis/output/figures/preprint_headings.png){#fig:biorxiv_headings}
 
 Each preprint on bioRxiv has an author-selected topic area, and the predominant area in past reports has been neuroscience [@doi:10.7554/eLife.45133].
 Our analysis of the full text release of bioRxiv confirms this previous finding (Figure {@fig:biorxiv_categories}).
 The author-selected topic area abundances that we found in the full text largely matched previous studies [@doi:10.7554/eLife.45133; @doi:10.1001/jama.2017.21168].
 One exception was microbiology, which has a larger share of preprints than in a previous report from 2018 [@doi:10.7554/eLife.45133] (Figure {@fig:biorxiv_categories}).
 Authors also select from three article types when they upload their preprints.
-We found that most preprints are categorized as new results (Figure {@fig:biorxiv_headings}), which is consistent with previous findings [@doi:10.1001/jama.2017.21168].
+We found that nearly all preprints were categorized as new results, which is consistent with previous findings [@doi:10.1001/jama.2017.21168].
 
 #### Global Comparison of bioRxiv and PubMed Central 
 
@@ -399,6 +396,7 @@ This split is evident in Figure {@fig:pca2_pointplot} as enriched categories alo
 As with the first principal component we provide example preprints from the systems biology category to reinforce this concept (Supplemental Table {@tbl:five_pc2_table}). 
 More principal component word clouds can be found on our journal recommender website ([greenelab.github.io/annorxiver-journal-recommender](https://greenelab.github.io/annorxiver-journal-recommender/)) and within our online repository (see Data Availability).
 
+
 ### Identifying preprints that were not linked with their corresponding publications
 
 ![
@@ -436,9 +434,37 @@ Our filtering criteria were intentionally stringent, so the increased estimate o
 Many of these missed annotations were for preprints posted in the 2017-2018 interval.
 As opposed to those published in 2019 and later, these preprints are old enough that they are likely to have been published but it was interesting that the rate was not observed to be higher for older preprints.
 
-### Journal Recommendations/Audience Associations
-1. Title will change once analysis is finished 
-2. Provide key figure for this section and take-home message
+### Recommending Journals Based on Preprint Representation
+
+![
+Both classifiers outperform the randomized baseline when predicting a paper's journal endpoint.
+This bargraph shows each model's accuracy in respect to predicting the training and test set.
+](https://raw.githubusercontent.com/greenelab/annorxiver/1e98a3d18ba755a87c206931c922231d64dbec2a/pmc/journal_recommendation/output/figures/knn_result.png){@fig:knn_auc}
+
+We sought to identify journals that might publish a preprint based on the text of a paper.
+We trained two different classifiers to predict the journal endpoints for already published papers. 
+One classifier uses the nearest journal centroids, which attempts to capture the topic area of a journal.
+The other classifier aims to be more granular and uses the journals that published the nearest papers.
+Both classifiers outperformed a randomized baseline.
+A classifier that aimed to predict centroids performed better on the held out test set compared than the nearest paper classifier (Figure {#fig:knn_auc}).
+There are 2516 journals in our dataset, so the baseline performance of a classifier is quite low.
+We were able to achieve a substantial increase with respect to random performance at predicting the journals that a paper was published in.
+However, the predictor is not perfect (Figure {#fig:knn_auc}), which we should expect because there are multiple journals that cover certain topic areas and others have a very broad set of covered topic areas.
+Still, our software provides a starting point for authors to use the text of their preprints to identify potentially suitable publication venues.
+
+
+![
+Here is the workflow of the journal recommender web-app.
+Starting with the homescreen users can paste in a _bioRxiv_ or _medRxiv_ doi, which sends a request to biorxiv or medrxiv (A).
+Next our app preprocesses the preprint and returns a listing of the top ten most similar papers (B) and the top ten closest journals to the query (C).
+Following the listing, our app manually plots the preprint query onto the Pubmed Central Landscape (D).
+Lastly, users can click on a square within the landscape, which will show bin statistics as well as associated word-odd ratios (E).
+](images/journal_recommender_workflow.png){@fig:journal_rec_workflow}
+
+We constructed an online app that provides users with journal suggestions based on their preprint content.
+Users supply DOIs from _bioRxiv_ or _medRxiv_.
+The application then downloads the article, converts the PDF to text, calculates a document embedding score, and returns the ten papers and journals with the most similar representations in the embedding space.
+It also embeds the document into the overall PMC landscape for visualization and allows the user to examine principal components and term enrichment for each bin within the landscape (Figure {#fig:journal_rec_workflow}).
 
 
 ## Discussion

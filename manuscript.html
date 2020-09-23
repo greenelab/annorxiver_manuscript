@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="David N. Nicholson" />
   <meta name="author" content="Jane Roe" />
-  <meta name="dcterms.date" content="2020-09-14" />
+  <meta name="dcterms.date" content="2020-09-23" />
   <meta name="keywords" content="biorxiv, preprints, pubmed central, natural language processing, descriptive linguistics" />
   <title>Linguistic Analysis of the bioRxiv Preprint Landscape</title>
   <style>
@@ -29,8 +29,8 @@
   <meta name="citation_title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
   <meta property="og:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
-  <meta name="dc.date" content="2020-09-14" />
-  <meta name="citation_publication_date" content="2020-09-14" />
+  <meta name="dc.date" content="2020-09-23" />
+  <meta name="citation_publication_date" content="2020-09-23" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/cce2f8c11477d14721c5122df33b40570289d969/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/cce2f8c11477d14721c5122df33b40570289d969/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/cce2f8c11477d14721c5122df33b40570289d969/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/2037954d87447614e434e6e435e77a9a95016b6a/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/2037954d87447614e434e6e435e77a9a95016b6a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/2037954d87447614e434e6e435e77a9a95016b6a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,10 +67,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/annorxiver_manuscript/v/cce2f8c11477d14721c5122df33b40570289d969/">permalink</a>)
+(<a href="https://greenelab.github.io/annorxiver_manuscript/v/2037954d87447614e434e6e435e77a9a95016b6a/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/cce2f8c11477d14721c5122df33b40570289d969">greenelab/annorxiver_manuscript@cce2f8c</a>
-on September 14, 2020.
+from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/2037954d87447614e434e6e435e77a9a95016b6a">greenelab/annorxiver_manuscript@2037954</a>
+on September 23, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -111,7 +111,7 @@ Department of Something, University of Whatever; Department of Whatever, Univers
 We downloaded an xml snapshot of this repository on February 3, 2020 from bioRxiv’s Amazon S3 resource <span class="citation" data-cites="9gVmEi52">[<a href="#ref-9gVmEi52" role="doc-biblioref">2</a>]</span> that contained the full text and image content of 98,023 preprints.
 Preprints on bioRxiv are versioned, and in our snapshot 26,905 of 98,023 contained more than one version.
 When preprints had multiple versions, we used only the latest one.
-Preprints in this snapshot were grouped into one of twenty-nine different categories.
+Preprints in this snapshot were grouped by researchers submitting to <em>bioRxiv</em> into one of twenty-nine different categories.
 Each preprint was also classified as a new result, confirmatory finding, or contradictory finding.
 Some preprints in this snapshot have been withdrawn from bioRxiv.
 When a preprint is withdrawn, its content is replaced with the reason for withdrawal.
@@ -162,11 +162,12 @@ Lastly, we binned the remaining pairs based on percentiles from the annotated pa
 We randomly sampled 50 articles from each bin for manual annotation.
 We shuffled these four sets to produce a list of 200 potential preprint-published pairs with a randomized order.
 We supplied these candidates to two scientists to manually determine if each link between a preprint and a putative matched version was correct or incorrect.
-After the curation process we encountered eight mismatches.
-These mismatches were supplied to a third scientist, who carefully reviewed each case and made a final determination.
+After the curation process, we encountered eight disagreements between reviewers.
+The preprint-publication pairs on which reviewers disagreed were supplied to a third scientist, who carefully reviewed each case and made a final determination.
 Lastly, we used this curated set to evaluate the extent to which distance in the embedding space revealed true but unannotated links between preprints and their published verisons.</p>
 <h3 id="journal-recommendation">Journal Recommendation</h3>
-<p>We aimed to predict the journal a paper would eventually be published in based on its embedding representation.
+<p>Determining the best journal venue for a preprint is a non-trivial task as there are too many options for authors to decide.
+We sought to provide a resource that recommends journals based on a preprint’s embedding representation.
 We illustrate our recommendations as a short list along with a network visualization available at <a href="https://greenelab.github.io/annorxiver-journal-recommender/">https://greenelab.github.io/annorxiver-journal-recommender/</a>.
 Since we sought to examine if embeddings were related to publication venue, we used a simple k-nearest neighbors approach with Euclidean distance to recommend journals.</p>
 <p>First, we filtered all journals that had fewer than 100 papers in the PMC dataset.
@@ -202,18 +203,12 @@ We used the fully trained model to project user-requested <em>bioRxiv</em> prepr
 This bar chart depicts the number of preprints that fall into each author-selected topic area.</figcaption>
 </figure>
 </div>
-<div id="fig:biorxiv_headings" class="fignos">
-<figure>
-<img src="https://raw.githubusercontent.com/greenelab/annorxiver/94874e0f1e35bd667bf3b7c3dc6416068779444f/biorxiv/exploratory_data_analysis/output/figures/preprint_headings.png" alt="" /><figcaption><span>Figure 2:</span> Most of bioRxiv’s preprints report new research findings.
-This bar chart depicts the number of articles categorized based on author-selected article types.</figcaption>
-</figure>
-</div>
 <p>Each preprint on bioRxiv has an author-selected topic area, and the predominant area in past reports has been neuroscience <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">20</a>]</span>.
 Our analysis of the full text release of bioRxiv confirms this previous finding (Figure <a href="#fig:biorxiv_categories">1</a>).
 The author-selected topic area abundances that we found in the full text largely matched previous studies <span class="citation" data-cites="iPnRRJya mTE5h91z">[<a href="#ref-iPnRRJya" role="doc-biblioref">20</a>,<a href="#ref-mTE5h91z" role="doc-biblioref">21</a>]</span>.
 One exception was microbiology, which has a larger share of preprints than in a previous report from 2018 <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">20</a>]</span> (Figure <a href="#fig:biorxiv_categories">1</a>).
 Authors also select from three article types when they upload their preprints.
-We found that most preprints are categorized as new results (Figure <a href="#fig:biorxiv_headings">2</a>), which is consistent with previous findings <span class="citation" data-cites="mTE5h91z">[<a href="#ref-mTE5h91z" role="doc-biblioref">21</a>]</span>.</p>
+We found that nearly all preprints were categorized as new results, which is consistent with previous findings <span class="citation" data-cites="mTE5h91z">[<a href="#ref-mTE5h91z" role="doc-biblioref">21</a>]</span>.</p>
 <h4 id="global-comparison-of-biorxiv-and-pubmed-central">Global Comparison of bioRxiv and PubMed Central</h4>
 <div id="tbl:corpora_stats" class="tablenos">
 <table>
@@ -310,7 +305,7 @@ We found that most preprints are categorized as new results (Figure <a href="#fi
 </div>
 <div id="fig:kl_divergence" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/corpora_comparison/output/figures/corpora_kl_divergence.png" alt="" /><figcaption><span>Figure 3:</span> BioRxiv is more similar to PubMed Central than to the reference corpus.
+<img src="https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/corpora_comparison/output/figures/corpora_kl_divergence.png" alt="" /><figcaption><span>Figure 2:</span> BioRxiv is more similar to PubMed Central than to the reference corpus.
 This barplot represents the KL divergence between bioRxiv, Pubmed Central and the reference corpus.
 The y-axis is the KL divergence metric where lower values indicates similar distributions and vice versa for higher values.
 The x-axis represents the number of highly occuring tokens used to calculate the KL divergence.</figcaption>
@@ -318,7 +313,7 @@ The x-axis represents the number of highly occuring tokens used to calculate the
 </div>
 <div id="fig:biorxiv_pmc_global_comparison" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/corpora_comparison/output/figures/biorxiv_vs_pubmed_central.png" alt="" /><figcaption><span>Figure 4:</span> BioRxiv is more focused on biological discoveries rather than disease treatments and clinical trials.
+<img src="https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/corpora_comparison/output/figures/biorxiv_vs_pubmed_central.png" alt="" /><figcaption><span>Figure 3:</span> BioRxiv is more focused on biological discoveries rather than disease treatments and clinical trials.
 The plot on the left (A) is a point range plot of the odds ratio with respect to bioRxiv.
 Values greater than one indicate a high association with bioRxiv whereas values less than one indicate high association with PubMed Central.
 The dotted line provides a breaking point between both categories.
@@ -328,9 +323,9 @@ The plot on the right (B) is a bar chart of token frequency appearing in bioRxiv
 <p>The linguistic style of the bioRxiv corpus differs from the PMC corpus.
 We compared and contrasted preprints in bioRxiv, published manuscripts in PMC and newspaper articles from the New York Times (NYTAC) against eachother.
 We refer to NYTAC as our reference corpus for the following analysis.
-We found that bioRxiv is more similar to PMC than to the reference in terms of token frequencies and corpora statistics (Figure <a href="#fig:kl_divergence">3</a> and Table <a href="#tbl:corpora_stats">1</a>).
-When comparing bioRxiv and PMC to the reference, topic associated and measurement related tokens appear highly enriched (Supplemental Figures <a href="#fig:biorxiv_v_reference">12</a> and <a href="#fig:pmc_v_reference">13</a>).
-Furthermore, we found that tokens such as “neuron”, “genome”, “RNA” and “network” had a high odds ratio, while tokens such as “patient”, “health”, <span class="math inline">\(\pm\)</span>, and “ml” to have a low odds ratio when comparing bioRxiv to PMC (Figure <a href="#fig:biorxiv_pmc_global_comparison">4</a>).
+We found that bioRxiv is more similar to PMC than to the reference in terms of token frequencies and corpora statistics (Figure <a href="#fig:kl_divergence">2</a> and Table <a href="#tbl:corpora_stats">1</a>).
+When comparing bioRxiv and PMC to the reference, topic associated and measurement related tokens appear highly enriched (Supplemental Figures <a href="#fig:biorxiv_v_reference">11</a> and <a href="#fig:pmc_v_reference">12</a>).
+Furthermore, we found that tokens such as “neuron”, “genome”, “RNA” and “network” had a high odds ratio, while tokens such as “patient”, “health”, <span class="math inline">\(\pm\)</span>, and “ml” to have a low odds ratio when comparing bioRxiv to PMC (Figure <a href="#fig:biorxiv_pmc_global_comparison">3</a>).
 This separation of tokens suggests that articles focused on clinical trials and patient research are more prevalent in PMC than to bioRxiv.
 This separation also suggests that bioRxiv has a predominance of neuroscience and bioinformatic topics.
 In regard to writing, citation styles diversify from the familiar “et al.” form as preprints transition through the publication process.
@@ -338,7 +333,7 @@ Additionally, published articles have an increase of typesetting (<span class="m
 <h4 id="published-preprint-differences">Published Preprint Differences</h4>
 <div id="fig:pre_published_comp" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/danich1/annorxiver/9611653a8c8a98a7371915a017b7ffe91cb7d88e/biorxiv/corpora_comparison/output/figures/preprint_published_comparison.png" alt="" /><figcaption><span>Figure 5:</span> Top scoring tokens for preprints are focused on figure citations whereas their published versions are more focused on data availability.
+<img src="https://raw.githubusercontent.com/danich1/annorxiver/9611653a8c8a98a7371915a017b7ffe91cb7d88e/biorxiv/corpora_comparison/output/figures/preprint_published_comparison.png" alt="" /><figcaption><span>Figure 4:</span> Top scoring tokens for preprints are focused on figure citations whereas their published versions are more focused on data availability.
 The plot on the left (A) is a point range plot of the odds ratio with respect to preprints.
 Values greater than one indicate a high association with preprints while values less than one indicate a high association with published articles.
 The dotted line provides a breaking point between both categories.
@@ -347,13 +342,13 @@ The plot on the right (B) is a barchart of token frequency appearing in preprint
 </div>
 <p>A preprint’s linguistic style can change once a preprint has undergone the revision process prior to being published.
 We quantified this linguistic difference by calculating the odds ratio of tokens appearing in the union of bioRxiv preprints and their published counterparts within PMC.
-Tokens with an odds ratio greater than one are mainly centered on paper/figure references and research specific terms (Figure <a href="#fig:pre_published_comp">5</a>).
-Tokens with an odds ratio of less than one are focused on data availability, and research measurements such as number of cases and controls or significance testing (Figure <a href="#fig:pre_published_comp">5</a>).
+Tokens with an odds ratio greater than one are mainly centered on paper/figure references and research specific terms (Figure <a href="#fig:pre_published_comp">4</a>).
+Tokens with an odds ratio of less than one are focused on data availability, and research measurements such as number of cases and controls or significance testing (Figure <a href="#fig:pre_published_comp">4</a>).
 This enrichment suggests that a key piece in the publication process is verifying that essential parts of research (e.g. data availability, specific measurements) are obvious to future readers within the scientific community.</p>
 <h3 id="topic-analysis-of-biorxivs-principal-components">Topic Analysis of bioRxiv’s Principal Components</h3>
 <div id="fig:pca_word_cloud_plot" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/greenelab/annorxiver/35d3ea0de3c9c78e3c524736bbaada00928c88fb/biorxiv/pca_association_experiment/output/pca_plots/figures/pca01_v_pca02_figure.png" alt="" /><figcaption><span>Figure 6:</span> The top two principal components (PCs) appear to capture the concepts of molecular biology vs quantitative biology (PC1) and neuroscience vs bioinformatics (PC2).
+<img src="https://raw.githubusercontent.com/greenelab/annorxiver/35d3ea0de3c9c78e3c524736bbaada00928c88fb/biorxiv/pca_association_experiment/output/pca_plots/figures/pca01_v_pca02_figure.png" alt="" /><figcaption><span>Figure 5:</span> The top two principal components (PCs) appear to capture the concepts of molecular biology vs quantitative biology (PC1) and neuroscience vs bioinformatics (PC2).
 The word clouds (A, C) depict the cosine similarity score between tokens and the first two PCs.
 Tokens in orange are most similar to a PC’s positive direction while tokens in blue are most similar to a PC’s negative direction.
 The size of each token indicates the magnitude of the similarity score.
@@ -363,14 +358,14 @@ Article categories were hand-picked based on the concepts captured by each PC.</
 </div>
 <div id="fig:pca1_pointplot" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/danich1/annorxiver/4e0c90c590dd7958dc424a1b4fefcecccb3c28ad/biorxiv/pca_association_experiment/output/pca_plots/figures/category_box_plot_pc1.svg" alt="" /><figcaption><span>Figure 7:</span> Preprint categories have a diverse spread of quantitative and molecular biology results.
+<img src="https://raw.githubusercontent.com/danich1/annorxiver/4e0c90c590dd7958dc424a1b4fefcecccb3c28ad/biorxiv/pca_association_experiment/output/pca_plots/figures/category_box_plot_pc1.svg" alt="" /><figcaption><span>Figure 6:</span> Preprint categories have a diverse spread of quantitative and molecular biology results.
 This is box plot shows preprints in each article category projected along the PC1 direction.
 Negative values indicate molecular biology concepts, while positive values indicate quantitative biology concepts.</figcaption>
 </figure>
 </div>
 <div id="fig:pca2_pointplot" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/danich1/annorxiver/4e0c90c590dd7958dc424a1b4fefcecccb3c28ad/biorxiv/pca_association_experiment/output/pca_plots/figures/category_box_plot_pc2.svg" alt="" /><figcaption><span>Figure 8:</span> The second PC groups neuroscience related preprint categories and bioinformatics related preprint categories together.
+<img src="https://raw.githubusercontent.com/danich1/annorxiver/4e0c90c590dd7958dc424a1b4fefcecccb3c28ad/biorxiv/pca_association_experiment/output/pca_plots/figures/category_box_plot_pc2.svg" alt="" /><figcaption><span>Figure 7:</span> The second PC groups neuroscience related preprint categories and bioinformatics related preprint categories together.
 This is box plot shows preprints in each article category projected along the PC2 direction.
 Negative values indicate neuroscience concepts, while positive values indicate bioinformatic concepts.</figcaption>
 </figure>
@@ -463,27 +458,27 @@ Negative values indicate neuroscience concepts, while positive values indicate b
 </table>
 </div>
 <p>We explored the primary differences between the full text of bioRxiv preprints by performing principal components analysis on generated document embeddings.
-We visualized the correspondence between tokens and the loadings for each principal component (Figure {<a href="#fig:pca_word_cloud_plot">6</a>)A,C).
-We also visualized documents projected on selected principal components (Figure {<a href="#fig:pca_word_cloud_plot">6</a>)B).
-The first principal component separates bioRxiv preprints that encompass molecular biology results with preprints that contain quantitative biology results (Figure {<a href="#fig:pca_word_cloud_plot">6</a>)C).
+We visualized the correspondence between tokens and the loadings for each principal component (Figure {<a href="#fig:pca_word_cloud_plot">5</a>)A,C).
+We also visualized documents projected on selected principal components (Figure {<a href="#fig:pca_word_cloud_plot">5</a>)B).
+The first principal component separates bioRxiv preprints that encompass molecular biology results with preprints that contain quantitative biology results (Figure {<a href="#fig:pca_word_cloud_plot">5</a>)C).
 This highlights the bisection of biomedical research where majority of results can be categorized under the molecular biology category or the quantitative biology category.
-Furthermore, this bisecting trend is evident across individual preprint categories as most categories lie on either side of the first principal component (Figure <a href="#fig:pca1_pointplot">7</a>).
+Furthermore, this bisecting trend is evident across individual preprint categories as most categories lie on either side of the first principal component (Figure <a href="#fig:pca1_pointplot">6</a>).
 We also provide example preprints from the systems biology category to reinforce this concept (Table <a href="#tbl:five_pc1_table">2</a>).</p>
-<p>The second principal component represents the concept of neuroscience vs bioinformatics (Figure {<a href="#fig:pca_word_cloud_plot">6</a>)A).
+<p>The second principal component represents the concept of neuroscience vs bioinformatics (Figure {<a href="#fig:pca_word_cloud_plot">5</a>)A).
 This principal component suggests that the bulk of preprints within bioRxiv are largely focused around neuroscience and bioinformatic concepts.
-This split is evident in Figure <a href="#fig:pca2_pointplot">8</a> as enriched categories along this principal component are quite related to neuroscience (negative end) or bioinformatics (positive end).
+This split is evident in Figure <a href="#fig:pca2_pointplot">7</a> as enriched categories along this principal component are quite related to neuroscience (negative end) or bioinformatics (positive end).
 As with the first principal component we provide example preprints from the systems biology category to reinforce this concept (Supplemental Table <a href="#tbl:five_pc2_table">3</a>).
 More principal component word clouds can be found on our journal recommender website (<a href="https://greenelab.github.io/annorxiver-journal-recommender/">greenelab.github.io/annorxiver-journal-recommender</a>) and within our online repository (see Data Availability).</p>
 <h3 id="identifying-preprints-that-were-not-linked-with-their-corresponding-publications">Identifying preprints that were not linked with their corresponding publications</h3>
 <div id="fig:article_distance_distributions" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/greenelab/annorxiver/131dcac75d179cb36992af4a31188031800c0958/biorxiv/article_distances/output/figures/biorxiv_article_distance.svg" alt="" /><figcaption><span>Figure 9:</span> The distances between preprints and their published version was on average lower than the distance between preprints and a randomly selected published article in the same journal.
+<img src="https://raw.githubusercontent.com/greenelab/annorxiver/131dcac75d179cb36992af4a31188031800c0958/biorxiv/article_distances/output/figures/biorxiv_article_distance.svg" alt="" /><figcaption><span>Figure 8:</span> The distances between preprints and their published version was on average lower than the distance between preprints and a randomly selected published article in the same journal.
 This violin plot shows the distribution of distances between both categories.</figcaption>
 </figure>
 </div>
 <div id="fig:article_bin_accuracy" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/greenelab/annorxiver/131dcac75d179cb36992af4a31188031800c0958/biorxiv/article_distances/output/figures/distance_bin_accuracy.svg" alt="" /><figcaption><span>Figure 10:</span> The proportion of publication-preprint pairs decreased as the distance for publication-preprint pairs increased.
+<img src="https://raw.githubusercontent.com/greenelab/annorxiver/131dcac75d179cb36992af4a31188031800c0958/biorxiv/article_distances/output/figures/distance_bin_accuracy.svg" alt="" /><figcaption><span>Figure 9:</span> The proportion of publication-preprint pairs decreased as the distance for publication-preprint pairs increased.
 This bar chart depicts the fraction of true positives over the total number of pairs in each bin.
 Each bin contains a total of 200 annotated pairs and is based on the percentiles of the preprint-published distribution.</figcaption>
 </figure>
@@ -492,14 +487,14 @@ Each bin contains a total of 200 annotated pairs and is based on the percentiles
 This is accomplished in two ways: <em>bioRxiv</em> may detect the link and automatically add it or authors may notify <em>bioRxiv</em> that their preprint was published.
 Missing preprint-publication links can make it more difficult to identify the latest version of scientific manuscripts and estimate the fraction of articles that are eventually published <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">20</a>]</span>.
 We used distance in the document space to identify preprints without an annotated publication but contained very similar content to published articles.
-We found that distances between preprints and their corresponding published versions were lower than preprints paired with a random article published in the same journal (Figure <a href="#fig:article_distance_distributions">9</a>).
+We found that distances between preprints and their corresponding published versions were lower than preprints paired with a random article published in the same journal (Figure <a href="#fig:article_distance_distributions">8</a>).
 This observation suggests that pairs with low embedding distances could be considered a true match, so we separated articles into quantiles based on the distribution of distances between true preprint-publication pairs.
 We curated 50 potential preprint-publication pairs from each of four quantiles in duplicate, and found a high inter-rater reliability for this task achieving a Cohen’s Kappa <span class="citation" data-cites="oeGSw37I">[<a href="#ref-oeGSw37I" role="doc-biblioref">32</a>]</span> of 91.7%.
-Out of these two hundred pairs we found that approximately 98% of pairs with an embedding distance in the 0-25th and 25th-50th percentile bins were true matches (Figure <a href="#fig:article_bin_accuracy">10</a>).
+Out of these two hundred pairs we found that approximately 98% of pairs with an embedding distance in the 0-25th and 25th-50th percentile bins were true matches (Figure <a href="#fig:article_bin_accuracy">9</a>).
 These two bins contained 1,720 preprint-article pairs, suggesting that many preprints have been published but not previously connected with their published versions.</p>
 <div id="fig:updated_pub_rate" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/article_distances/output/figures/publication_rate.png" alt="" /><figcaption><span>Figure 11:</span> The overall fraction of published preprints is higher than originally estimated in <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">20</a>]</span>.
+<img src="https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/article_distances/output/figures/publication_rate.png" alt="" /><figcaption><span>Figure 10:</span> The overall fraction of published preprints is higher than originally estimated in <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">20</a>]</span>.
 This line plot shows the publication rate of preprints since bioRxiv first started.
 The x-axis represents months since bioRxiv started and the y-axis represents the proportion of preprints published.
 The light blue line represents the publication rate estimated by Abdill et al. <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">20</a>]</span>.
@@ -508,14 +503,35 @@ The horizontal lines represent the overall proportion of preprints that are publ
 </figure>
 </div>
 <p>We overlaid these new annotations onto existing annotations to reassess the overall preprint publication rate reported by Abdill et al. <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">20</a>]</span>.
-Our filtering criteria were intentionally stringent, so the increased estimate of publication rate amounts to a few percent (Figure <a href="#fig:updated_pub_rate">11</a>).
+Our filtering criteria were intentionally stringent, so the increased estimate of publication rate amounts to a few percent (Figure <a href="#fig:updated_pub_rate">10</a>).
 Many of these missed annotations were for preprints posted in the 2017-2018 interval.
 As opposed to those published in 2019 and later, these preprints are old enough that they are likely to have been published but it was interesting that the rate was not observed to be higher for older preprints.</p>
-<h3 id="journal-recommendationsaudience-associations">Journal Recommendations/Audience Associations</h3>
-<ol type="1">
-<li>Title will change once analysis is finished</li>
-<li>Provide key figure for this section and take-home message</li>
-</ol>
+<h3 id="recommending-journals-based-on-preprint-representation">Recommending Journals Based on Preprint Representation</h3>
+<figure>
+<img src="https://raw.githubusercontent.com/greenelab/annorxiver/1e98a3d18ba755a87c206931c922231d64dbec2a/pmc/journal_recommendation/output/figures/knn_result.png" class="@fig:knn_auc" alt="" /><figcaption>Both classifiers outperform the randomized baseline when predicting a paper’s journal endpoint.
+This bargraph shows each model’s accuracy in respect to predicting the training and test set.</figcaption>
+</figure>
+<p>We sought to identify journals that might publish a preprint based on the text of a paper.
+We trained two different classifiers to predict the journal endpoints for already published papers.
+One classifier uses the nearest journal centroids, which attempts to capture the topic area of a journal.
+The other classifier aims to be more granular and uses the journals that published the nearest papers.
+Both classifiers outperformed a randomized baseline.
+A classifier that aimed to predict centroids performed better on the held out test set compared than the nearest paper classifier (Figure {#fig:knn_auc}).
+There are 2516 journals in our dataset, so the baseline performance of a classifier is quite low.
+We were able to achieve a substantial increase with respect to random performance at predicting the journals that a paper was published in.
+However, the predictor is not perfect (Figure {#fig:knn_auc}), which we should expect because there are multiple journals that cover certain topic areas and others have a very broad set of covered topic areas.
+Still, our software provides a starting point for authors to use the text of their preprints to identify potentially suitable publication venues.</p>
+<figure>
+<img src="images/journal_recommender_workflow.png" class="@fig:journal_rec_workflow" alt="" /><figcaption>Here is the workflow of the journal recommender web-app.
+Starting with the homescreen users can paste in a <em>bioRxiv</em> or <em>medRxiv</em> doi, which sends a request to biorxiv or medrxiv (A).
+Next our app preprocesses the preprint and returns a listing of the top ten most similar papers (B) and the top ten closest journals to the query (C).
+Following the listing, our app manually plots the preprint query onto the Pubmed Central Landscape (D).
+Lastly, users can click on a square within the landscape, which will show bin statistics as well as associated word-odd ratios (E).</figcaption>
+</figure>
+<p>We constructed an online app that provides users with journal suggestions based on their preprint content.
+Users supply DOIs from <em>bioRxiv</em> or <em>medRxiv</em>.
+The application then downloads the article, converts the PDF to text, calculates a document embedding score, and returns the ten papers and journals with the most similar representations in the embedding space.
+It also embeds the document into the overall PMC landscape for visualization and allows the user to examine principal components and term enrichment for each bin within the landscape (Figure {#fig:journal_rec_workflow}).</p>
 <h2 id="discussion">Discussion</h2>
 <h2 id="conclusion">Conclusion</h2>
 <h2 id="acknowledgements">Acknowledgements</h2>
@@ -529,7 +545,7 @@ Richard Sever, Ted Roeder, Samantha Hindle, Linda Sussman, Kevin-John Black, Jan
 DOI: <a href="https://doi.org/10.1101/833400">10.1101/833400</a></p>
 </div>
 <div id="ref-9gVmEi52">
-<p>2. <a href="https://www.biorxiv.org/tdm">https://www.biorxiv.org/tdm</a></p>
+<p>2. <strong>Machine access and text/data mining resources | bioRxiv</strong><a href="https://www.biorxiv.org/tdm">https://www.biorxiv.org/tdm</a></p>
 </div>
 <div id="ref-u294RvPz">
 <p>3. <strong>PubMed Central: The GenBank of the published literature</strong><br />
@@ -761,7 +777,7 @@ DOI: <a href="https://doi.org/10.1101/386367">10.1101/386367</a></p>
 <h2 id="supplemental-figures">Supplemental Figures</h2>
 <div id="fig:biorxiv_v_reference" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/corpora_comparison/output/figures/biorxiv_vs_reference.png" alt="" /><figcaption><span>Figure 12:</span> Topic associated tokens are highly enriched when comparing bioRxiv to the New York Times.
+<img src="https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/corpora_comparison/output/figures/biorxiv_vs_reference.png" alt="" /><figcaption><span>Figure 11:</span> Topic associated tokens are highly enriched when comparing bioRxiv to the New York Times.
 The plot on the left (A) is a point range plot of the odds ratio with respect to bioRxiv.
 Values greater than one indicate a high association with bioRxiv whereas values less than one indicate high association with the New York Times.
 The dotted line provides a breaking point between both categories.
@@ -770,7 +786,7 @@ The plot on the right (B) is a bar chart of token frequency appearing in bioRxiv
 </div>
 <div id="fig:pmc_v_reference" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/corpora_comparison/output/figures/pmc_vs_reference.png" alt="" /><figcaption><span>Figure 13:</span> Typesetting symbols and biologically relevant tokens are highly enriched when comparing PubMed Central (PMC) to the New York Times.
+<img src="https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/corpora_comparison/output/figures/pmc_vs_reference.png" alt="" /><figcaption><span>Figure 12:</span> Typesetting symbols and biologically relevant tokens are highly enriched when comparing PubMed Central (PMC) to the New York Times.
 The plot on the left (A) is a point range plot of the odds ratio with respect to PMC.
 Values greater than one indicate a high association with PMC whereas values less than one indicate high association with the New York Times.
 The dotted line provides a breaking point between both categories.
