@@ -8,7 +8,8 @@ keywords:
   - descriptive linguistics
 lang: en-US
 authors:
-  - github: danich1
+  - 
+    github: danich1
     name: David N. Nicholson
     initials: DNN
     orcid: 0000-0003-0002-5761
@@ -16,9 +17,19 @@ authors:
     email: dnicholson329@gmail.com
     affiliations:
       - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
-    funders:
-      - GBMF4552
-      - T32 HG00046
+     funders:
+      - The Gordon and Betty Moore Foundation (GBMF4552)
+      - The National Institutes of Health (T32 HG000046)
+    contributions:
+      - Conceptualization
+      - Data Curation
+      - Funding Acquisition
+      - Investigation
+      - Methodology
+      - Validation
+      - Writing - Original Draft
+      - Visualization
+ 
   - github: janeroe
     name: Jane Roe
     initials: JR
