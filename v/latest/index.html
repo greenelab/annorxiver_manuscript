@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="David N. Nicholson" />
   <meta name="author" content="Jane Roe" />
-  <meta name="dcterms.date" content="2020-09-23" />
+  <meta name="dcterms.date" content="2020-10-08" />
   <meta name="keywords" content="biorxiv, preprints, pubmed central, natural language processing, descriptive linguistics" />
   <title>Linguistic Analysis of the bioRxiv Preprint Landscape</title>
   <style>
@@ -29,8 +29,8 @@
   <meta name="citation_title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
   <meta property="og:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
-  <meta name="dc.date" content="2020-09-23" />
-  <meta name="citation_publication_date" content="2020-09-23" />
+  <meta name="dc.date" content="2020-10-08" />
+  <meta name="citation_publication_date" content="2020-10-08" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,9 +51,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/2037954d87447614e434e6e435e77a9a95016b6a/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/2037954d87447614e434e6e435e77a9a95016b6a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/2037954d87447614e434e6e435e77a9a95016b6a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/17498d63fbf9b6f82d9c238d55601909f352ea4b/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/17498d63fbf9b6f82d9c238d55601909f352ea4b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/17498d63fbf9b6f82d9c238d55601909f352ea4b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,10 +67,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/annorxiver_manuscript/v/2037954d87447614e434e6e435e77a9a95016b6a/">permalink</a>)
+(<a href="https://greenelab.github.io/annorxiver_manuscript/v/17498d63fbf9b6f82d9c238d55601909f352ea4b/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/2037954d87447614e434e6e435e77a9a95016b6a">greenelab/annorxiver_manuscript@2037954</a>
-on September 23, 2020.
+from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/17498d63fbf9b6f82d9c238d55601909f352ea4b">greenelab/annorxiver_manuscript@17498d6</a>
+on October 8, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -533,7 +533,12 @@ Users supply DOIs from <em>bioRxiv</em> or <em>medRxiv</em>.
 The application then downloads the article, converts the PDF to text, calculates a document embedding score, and returns the ten papers and journals with the most similar representations in the embedding space.
 It also embeds the document into the overall PMC landscape for visualization and allows the user to examine principal components and term enrichment for each bin within the landscape (Figure {#fig:journal_rec_workflow}).</p>
 <h2 id="discussion">Discussion</h2>
-<h2 id="conclusion">Conclusion</h2>
+<h2 id="conclusion-and-future-directions">Conclusion and Future Directions</h2>
+<p>Our linguistic analysis did not reveal substantial changes in the language during the peer-reviewed publishing process.
+The tokens most strongly associated with the peer reviewed form, as opposed to the preprint form, were associated with data availability and statistical reporting.
+We found that embeddings of preprints and publications could be compared and that distance in this space was meaningful in terms of topic area and the journal of eventual publication.
+Being able to identify similar preprints and publications using text content makes it feasible to begin tackling more detailed questions, and our analytical software is all open source to enable others to build upon them.
+The analysis of preprints’ full text can support new tools that accelerate publishing, integrity checks, and other critically important contributions.</p>
 <h2 id="acknowledgements">Acknowledgements</h2>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
