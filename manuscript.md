@@ -4,7 +4,7 @@ author-meta:
 - Jane Roe
 bibliography:
 - content/manual-references.json
-date-meta: '2020-09-23'
+date-meta: '2020-10-08'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -23,9 +23,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2020-09-23" />
+  <meta name="dc.date" content="2020-10-08" />
 
-  <meta name="citation_publication_date" content="2020-09-23" />
+  <meta name="citation_publication_date" content="2020-10-08" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/2037954d87447614e434e6e435e77a9a95016b6a/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/17498d63fbf9b6f82d9c238d55601909f352ea4b/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/2037954d87447614e434e6e435e77a9a95016b6a/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/17498d63fbf9b6f82d9c238d55601909f352ea4b/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/2037954d87447614e434e6e435e77a9a95016b6a/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/17498d63fbf9b6f82d9c238d55601909f352ea4b/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,10 +105,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/2037954d87447614e434e6e435e77a9a95016b6a/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/17498d63fbf9b6f82d9c238d55601909f352ea4b/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@2037954](https://github.com/greenelab/annorxiver_manuscript/tree/2037954d87447614e434e6e435e77a9a95016b6a)
-on September 23, 2020.
+from [greenelab/annorxiver_manuscript@17498d6](https://github.com/greenelab/annorxiver_manuscript/tree/17498d63fbf9b6f82d9c238d55601909f352ea4b)
+on October 8, 2020.
 </em></small>
 
 ## Authors
@@ -470,7 +470,13 @@ It also embeds the document into the overall PMC landscape for visualization and
 ## Discussion
 
 
-## Conclusion
+## Conclusion and Future Directions
+
+Our linguistic analysis did not reveal substantial changes in the language during the peer-reviewed publishing process.
+The tokens most strongly associated with the peer reviewed form, as opposed to the preprint form, were associated with data availability and statistical reporting.
+We found that embeddings of preprints and publications could be compared and that distance in this space was meaningful in terms of topic area and the journal of eventual publication.
+Being able to identify similar preprints and publications using text content makes it feasible to begin tackling more detailed questions, and our analytical software is all open source to enable others to build upon them.
+The analysis of preprints' full text can support new tools that accelerate publishing, integrity checks, and other critically important contributions.
 
 
 ## Acknowledgements

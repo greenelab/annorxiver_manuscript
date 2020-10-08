@@ -10,7 +10,7 @@ barplot
 bioinformatic
 bioinformatics
 bioinformatis
-biorxiv
+bioRxiv
 bioRxiv’s
 Bruton’s
 cathepsin
@@ -30,7 +30,7 @@ Dendritic
 Dimensionality
 DOIs
 eachother
-Embeddings
+embeddings
 Enterobacteria
 GBMF
 gensim
@@ -50,7 +50,7 @@ microvascular
 mTOR
 MYC
 NADPH
-neuroscience
+Neuroscience
 Nicotinic
 NIH’s
 NLRP
@@ -60,7 +60,7 @@ occuring
 ome
 overrepresentation
 Pangenome
-PCA
+pca
 phenotypes
 PMCOA
 pointplot
@@ -87,7 +87,7 @@ stopwords
 Translational
 truncotula
 tyrosine
-unannotated
+Unannotated
 vasodilatory
 vec
 verisons
