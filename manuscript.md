@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/17498d63fbf9b6f82d9c238d55601909f352ea4b/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/f11b3ec828414636fb535109f0a9521b6efb61f6/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/17498d63fbf9b6f82d9c238d55601909f352ea4b/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/f11b3ec828414636fb535109f0a9521b6efb61f6/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/17498d63fbf9b6f82d9c238d55601909f352ea4b/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/f11b3ec828414636fb535109f0a9521b6efb61f6/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,9 +105,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/17498d63fbf9b6f82d9c238d55601909f352ea4b/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/f11b3ec828414636fb535109f0a9521b6efb61f6/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@17498d6](https://github.com/greenelab/annorxiver_manuscript/tree/17498d63fbf9b6f82d9c238d55601909f352ea4b)
+from [greenelab/annorxiver_manuscript@f11b3ec](https://github.com/greenelab/annorxiver_manuscript/tree/f11b3ec828414636fb535109f0a9521b6efb61f6)
 on October 8, 2020.
 </em></small>
 
@@ -122,7 +122,7 @@ on October 8, 2020.
     [danich1](https://github.com/danich1)<br>
   <small>
      Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
-     · Funded by GBMF4552; T32 HG00046
+     · Funded by The Gordon and Betty Moore Foundation (GBMF4552); The National Institutes of Health (T32 HG000046)
   </small>
 
 + **Jane Roe**<br>
@@ -479,7 +479,20 @@ Being able to identify similar preprints and publications using text content mak
 The analysis of preprints' full text can support new tools that accelerate publishing, integrity checks, and other critically important contributions.
 
 
+## Software and Data Availability
+
+An online version of this manuscript is available under a Creative Commons Attribution License at [https://greenelab.github.io/annorxiver_manuscript/](https://greenelab.github.io/annorxiver_manuscript/). 
+Source for the research portions of this project is dual licensed under the BSD 3-Clause and Creative Commons Public Domain Dedication Licenses at [https://github.com/greenelab/annorxiver](https://github.com/greenelab/annorxiver).
+The journal recommendation website can be found at [https://greenelab.github.io/annorxiver-journal-recommender/](https://greenelab.github.io/annorxiver-journal-recommender/) and code for the website is available under a BSD-2-Clause Plus Patent License at [https://github.com/greenelab/annorxiver-journal-recommender](https://github.com/greenelab/annorxiver-journal-recommender).
+Full text access for the bioRxiv repository is available at [https://www.biorxiv.org/tdm](https://www.biorxiv.org/tdm).
+Access to PubMed Central's Open Access subset is available on NCBI's FTP server at [https://www.ncbi.nlm.nih.gov/pmc/tools/ftp/](https://www.ncbi.nlm.nih.gov/pmc/tools/ftp/).
+Access to the New York Times Annotated Corpus (NYTAC) is available upon request with the Linguistic Data Consortium at [https://catalog.ldc.upenn.edu/LDC2008T19](https://catalog.ldc.upenn.edu/LDC2008T19).
+
 ## Acknowledgements
+
+The authors would like to thank Ariel Hippen Anderson for evaluating potential missing preprint to published version links.
+We also would like to thank Richard Sever and the _bioRxiv_ team for their assistance with access to and support with questions about preprint full text downloaded from _bioRxiv_. 
+This work was supported by [Grant GBMF4552](https://www.moore.org/grant-detail?grantId=GBMF4552) from the Gordon Betty Moore Foundation and by NIH T32HG00046, Computational Genomics training grant, from the National Human Genome Reserach Institute (NHGRI).
 
 
 ## References {.page_break_before}

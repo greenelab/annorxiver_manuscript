@@ -10,7 +10,7 @@ barplot
 bioinformatic
 bioinformatics
 bioinformatis
-bioRxiv
+biorxiv
 bioRxiv’s
 Bruton’s
 cathepsin
@@ -37,6 +37,7 @@ gensim
 gensim’s
 GpABC
 hierarchal
+Hippen
 homescreen
 identifiability
 inflammasome
@@ -50,7 +51,9 @@ microvascular
 mTOR
 MYC
 NADPH
+NCBI’s
 Neuroscience
+NHGRI
 Nicotinic
 NIH’s
 NLRP
@@ -65,7 +68,7 @@ phenotypes
 PMCOA
 pointplot
 pre
-preprint
+Preprint
 Preprints
 preprint’s
 preprocess
@@ -75,13 +78,14 @@ proteomics
 QTG
 quantiles
 recommender
+Reserach
 SAUCIE
 SBpipe
 schizophreniarelated
 scikit
 spaCy
 spaCy’s
-spatiotemporal
+Spatiotemporal
 stopword
 stopwords
 Translational
