@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/f11b3ec828414636fb535109f0a9521b6efb61f6/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/8faae392e5398bf36fd7e0d92121e4106c588132/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/f11b3ec828414636fb535109f0a9521b6efb61f6/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8faae392e5398bf36fd7e0d92121e4106c588132/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/f11b3ec828414636fb535109f0a9521b6efb61f6/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8faae392e5398bf36fd7e0d92121e4106c588132/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,9 +105,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/f11b3ec828414636fb535109f0a9521b6efb61f6/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/8faae392e5398bf36fd7e0d92121e4106c588132/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@f11b3ec](https://github.com/greenelab/annorxiver_manuscript/tree/f11b3ec828414636fb535109f0a9521b6efb61f6)
+from [greenelab/annorxiver_manuscript@8faae39](https://github.com/greenelab/annorxiver_manuscript/tree/8faae392e5398bf36fd7e0d92121e4106c588132)
 on October 8, 2020.
 </em></small>
 
@@ -439,17 +439,17 @@ As opposed to those published in 2019 and later, these preprints are old enough 
 ![
 Both classifiers outperform the randomized baseline when predicting a paper's journal endpoint.
 This bargraph shows each model's accuracy in respect to predicting the training and test set.
-](https://raw.githubusercontent.com/greenelab/annorxiver/1e98a3d18ba755a87c206931c922231d64dbec2a/pmc/journal_recommendation/output/figures/knn_result.png){@fig:knn_auc}
+](https://raw.githubusercontent.com/greenelab/annorxiver/1e98a3d18ba755a87c206931c922231d64dbec2a/pmc/journal_recommendation/output/figures/knn_result.png){#fig:knn_auc}
 
 We sought to identify journals that might publish a preprint based on the text of a paper.
 We trained two different classifiers to predict the journal endpoints for already published papers. 
 One classifier uses the nearest journal centroids, which attempts to capture the topic area of a journal.
 The other classifier aims to be more granular and uses the journals that published the nearest papers.
 Both classifiers outperformed a randomized baseline.
-A classifier that aimed to predict centroids performed better on the held out test set compared than the nearest paper classifier (Figure {#fig:knn_auc}).
+A classifier that aimed to predict centroids performed better on the held out test set compared than the nearest paper classifier (Figure {@fig:knn_auc}).
 There are 2516 journals in our dataset, so the baseline performance of a classifier is quite low.
 We were able to achieve a substantial increase with respect to random performance at predicting the journals that a paper was published in.
-However, the predictor is not perfect (Figure {#fig:knn_auc}), which we should expect because there are multiple journals that cover certain topic areas and others have a very broad set of covered topic areas.
+However, the predictor is not perfect (Figure {@fig:knn_auc}), which we should expect because there are multiple journals that cover certain topic areas and others have a very broad set of covered topic areas.
 Still, our software provides a starting point for authors to use the text of their preprints to identify potentially suitable publication venues.
 
 
@@ -459,15 +459,26 @@ Starting with the homescreen users can paste in a _bioRxiv_ or _medRxiv_ doi, wh
 Next our app preprocesses the preprint and returns a listing of the top ten most similar papers (B) and the top ten closest journals to the query (C).
 Following the listing, our app manually plots the preprint query onto the Pubmed Central Landscape (D).
 Lastly, users can click on a square within the landscape, which will show bin statistics as well as associated word-odd ratios (E).
-](images/journal_recommender_workflow.png){@fig:journal_rec_workflow}
+](images/journal_recommender_workflow.png){#fig:journal_rec_workflow}
 
 We constructed an online app that provides users with journal suggestions based on their preprint content.
 Users supply DOIs from _bioRxiv_ or _medRxiv_.
 The application then downloads the article, converts the PDF to text, calculates a document embedding score, and returns the ten papers and journals with the most similar representations in the embedding space.
-It also embeds the document into the overall PMC landscape for visualization and allows the user to examine principal components and term enrichment for each bin within the landscape (Figure {#fig:journal_rec_workflow}).
+It also embeds the document into the overall PMC landscape for visualization and allows the user to examine principal components and term enrichment for each bin within the landscape (Figure {@fig:journal_rec_workflow}).
 
 
 ## Discussion
+
+We analyzed the language contained used in preprints and examined how it changes through the publication process.  
+We found that bioRxiv and PubMed Central (PMC) have similar word frequency distributions, which suggests that the overall manner of writing is consistent with the biomedical literature. 
+At the token level, those most strongly associated with bioRxiv are related to neuroscience and bioinformatics, which are also fields that have seen high uptake of preprinting [@doi:10.7554/eLife.45133].
+We noticed that a multitude of preprints highly associated with the first principal component have restrictive or no copyright license (Table {#tbl:five_pc1_table}).
+This finding highlights the ongoing problem of restricted access within the scientific community [@doi:10.1038/nature.2017.22161; @url:https://blog.dhimmel.com/biorxiv-licenses/].
+We also found that the second principal component for our language embedding differentiated neuroscience and bioinformatics papers.
+
+We examined preprints that were textually similar to published articles and found numerous preprints that had been published and not previously linked, which led us to find that the life sciences preprint publication rate is higher than previously estimated.
+Preprint-publication similarity also predicts the journals that will publish a manuscript.
+This observation enabled us to provide a web application that allows users to identify the papers and journals that are most similar to a _bioRxiv_ or _medRxiv_ preprint.
 
 
 ## Conclusion and Future Directions

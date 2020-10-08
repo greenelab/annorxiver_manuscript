@@ -10,7 +10,7 @@ barplot
 bioinformatic
 bioinformatics
 bioinformatis
-biorxiv
+bioRxiv
 bioRxiv’s
 Bruton’s
 cathepsin
@@ -68,8 +68,9 @@ phenotypes
 PMCOA
 pointplot
 pre
-Preprint
-Preprints
+preprint
+preprinting
+preprints
 preprint’s
 preprocess
 preprocesses
@@ -85,13 +86,13 @@ schizophreniarelated
 scikit
 spaCy
 spaCy’s
-Spatiotemporal
+spatiotemporal
 stopword
 stopwords
 Translational
 truncotula
 tyrosine
-Unannotated
+unannotated
 vasodilatory
 vec
 verisons
