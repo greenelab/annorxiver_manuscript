@@ -1,8 +1,7 @@
 Abdill
 Acknowledgements
 AKT
-analysing
-arxiv
+arXiv
 auc
 barchart
 bargraph
@@ -10,7 +9,7 @@ barplot
 bioinformatic
 bioinformatics
 bioinformatis
-bioRxiv
+biorxiv
 bioRxiv’s
 Bruton’s
 cathepsin
@@ -25,7 +24,7 @@ cystine
 cytometry
 danich
 dataset
-Datasets
+datasets
 Dendritic
 Dimensionality
 DOIs
@@ -46,13 +45,13 @@ knn
 learn’s
 loadings
 Medicago
-medrxiv
+medRxiv
 microvascular
 mTOR
 MYC
 NADPH
 NCBI’s
-Neuroscience
+neuroscience
 NHGRI
 Nicotinic
 NIH’s
@@ -86,7 +85,7 @@ schizophreniarelated
 scikit
 spaCy
 spaCy’s
-spatiotemporal
+Spatiotemporal
 stopword
 stopwords
 Translational
@@ -96,4 +95,5 @@ unannotated
 vasodilatory
 vec
 verisons
+webserver
 XXXX
