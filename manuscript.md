@@ -4,7 +4,7 @@ author-meta:
 - Jane Roe
 bibliography:
 - content/manual-references.json
-date-meta: '2020-10-09'
+date-meta: '2020-10-13'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -23,9 +23,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2020-10-09" />
+  <meta name="dc.date" content="2020-10-13" />
 
-  <meta name="citation_publication_date" content="2020-10-09" />
+  <meta name="citation_publication_date" content="2020-10-13" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/6eb08a5f270891e5264d050449e59322e165950a/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/19b093022ebde26ec075a1b731b9648c2533c106/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/6eb08a5f270891e5264d050449e59322e165950a/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/19b093022ebde26ec075a1b731b9648c2533c106/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/6eb08a5f270891e5264d050449e59322e165950a/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/19b093022ebde26ec075a1b731b9648c2533c106/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,10 +105,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/6eb08a5f270891e5264d050449e59322e165950a/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/19b093022ebde26ec075a1b731b9648c2533c106/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@6eb08a5](https://github.com/greenelab/annorxiver_manuscript/tree/6eb08a5f270891e5264d050449e59322e165950a)
-on October 9, 2020.
+from [greenelab/annorxiver_manuscript@19b0930](https://github.com/greenelab/annorxiver_manuscript/tree/19b093022ebde26ec075a1b731b9648c2533c106)
+on October 13, 2020.
 </em></small>
 
 ## Authors
@@ -144,28 +144,32 @@ on October 9, 2020.
 ## Introduction
 
 Preprints are scholarly works that are shared before they have been formally peer reviewed and published.
-The practice of sharing manuscripts before peer review has a long history [@doi:10.1371/journal.pbio.2003995].
-The longest use on an ongoing basis started with physicists in the 1990s [@doi:10.15252/embj.201695531] and have become an essential tool for the scientific community [@doi:10.1038/530265a; @doi:10.1016/j.bpj.2016.06.035; @doi:10.1126/science.aaf9133; @doi:10.1038/s41557-020-0477-5].
-Preprints were used in the life sciences in the 1960s before publisher pressure stopped the practice [@doi:10.1371/journal.pbio.2003995].
-Life sciences preprints have made a resurgence within the past decade [@doi:10.1101/833400; @doi:10.7554/eLife.45133.001].
-Common preprint repositories include arXiv [@doi:10.1108/14666180010345564], bioRxiv [@doi:10.1101/833400] and medRxiv [@url:https://www.medrxiv.org/]; however, there are over 60 different preprint repositories [@url:https://scholarlykitchen.sspnet.org/2019/10/16/the-second-wave-of-preprint-servers-how-can-publishers-keep-afloat/].
-Preprints are becoming widely accepted and used within the life sciences community [@doi:10.1371/journal.pmed.1002549; @doi:10.1038/530265a; @doi:10.1371/journal.pbio.3000151; @doi:10.1099/mgen.0.000259], providing an opportunity to examine their impact.
+The practice of sharing preprints before peer review has a long history [@doi:10.1371/journal.pbio.2003995].
+The longest ongoing use started with physicists in the 1990s [@doi:10.15252/embj.201695531] and have become an essential tool for the scientific community [@doi:10.1038/530265a; @doi:10.1016/j.bpj.2016.06.035; @doi:10.1126/science.aaf9133; @doi:10.1038/s41557-020-0477-5].
+Preprints were used in the life sciences community during the 1960s before publisher pressure stopped the practice [@doi:10.1371/journal.pbio.2003995].
+Over the past decade preprints have made a resurgence within the life sciences community [@doi:10.1101/833400; @doi:10.7554/eLife.45133.001].
+Common preprint repositories include arXiv [@doi:10.1108/14666180010345564], bioRxiv [@doi:10.1101/833400] and medRxiv [@url:https://www.medrxiv.org/]; however, there are over 60 different repositories available [@url:https://scholarlykitchen.sspnet.org/2019/10/16/the-second-wave-of-preprint-servers-how-can-publishers-keep-afloat/].
+Generally, preprints are becoming widely accepted and used within the life sciences community [@doi:10.1371/journal.pmed.1002549; @doi:10.1038/530265a; @doi:10.1371/journal.pbio.3000151; @doi:10.1099/mgen.0.000259], which provides an opportunity to examine their impact.
 
 The scientific community has begun to analyze the impact of preprints in the life sciences.
-Studies have found that preprints are being posted at a high rate [@doi:10.1371/journal.pbio.3000269] and are rapidly shared on social media, routinely downloaded, and cited often [@doi:10.1371/journal.pone.0047523].
+Studies have found that preprints are being posted at a high rate [@doi:10.1371/journal.pbio.3000269]. 
+Studies have also found that preprints are rapidly shared on social media, routinely downloaded, and cited often [@doi:10.1371/journal.pone.0047523].
+Articles with matching preprint versions were cited and discussed more often than articles without them [@doi:10.1162/qss_a_00043; @doi:10.7554/eLife.52646].
 Certain categories of preprints seem to be read and shared differently by both scientists and non-scientists [@doi:10.1101/2020.03.06.981589].
-Across preprint servers, analyses suggest that between two thirds and three quarters of preprints are eventually published [@doi:10.7554/eLife.45133.001; @doi:10.1002/pra2.175].
-Time required for a preprint to be published can vary from preprint to preprint; however, studies have found that preprints with a single version take less time than preprints with multiple versions [@doi:10.2139/ssrn.3455146].
-Articles with preprints were more cited and more discussed than those without them [@doi:10.1162/qss_a_00043; @doi:10.7554/eLife.52646].
+Across preprint servers, analyses suggest that between two-thirds to three-quarters of preprints are eventually published [@doi:10.7554/eLife.45133.001; @doi:10.1002/pra2.175].
+Time required for a preprint to be published can vary from preprint to preprint; however, studies have found that preprints with a single version often take less time than preprints with multiple versions [@doi:10.2139/ssrn.3455146].
 
 Existing work largely focuses on the metadata associated with life sciences preprints.
-There is still a gap in understanding the language authors use in preprints and examining how language shifts between preprint and peer reviewed manuscript provides a unique opportunity to examine how the publishing process impacts the scholarly literature.
+There is still a gap in understanding the language authors use in preprints and how that language shifts during the peer review process.
+Examining this shift will provide a unique opportunity to ascertain parts of the publishing process and how it impacts the scholarly literature.
 We sought to understand the language landscape of preprints by performing a linguistic analysis of the _bioRxiv_ corpus.
-We also examine textual differences between preprints and published literature by comparing the entire corpus of preprints with that available in the open access PubMed Central repository as well as a restricted set of preprint-published pairs.
-We find that neural-network derived document embeddings provide a useful space for determining the textual similarity of preprints.
-Preprints' nearest neighbors in this space are likely to share an eventual publishing venue with the preprint, so we created a webserver that will display these neighbors for any preprint on _bioRxiv_ or _medRxiv_.
-Proximity in this space also reveals preprint-publication pairs that earlier analyses have been unable to identify.
-Our linguistic analysis reveals the impact of the publishing process, introduces a method to identify similar preprints, demonstrates that the text content of preprints is related to their eventual publication venue, and provides a more complete picture of the fraction of preprint that are eventually published.
+We examined textual differences between preprints and published literature by comparing the entire corpus of preprints with articles available in the open access PubMed Central repository.
+We also examined linguistic differences between preprints and their corresponding published pairs.
+We found that neural-network derived document embeddings provide a useful space for determining the textual similarity of preprints.
+In this space a preprint's nearest neighbors are likely to share an eventual publishing venue with the preprint itself.
+We created a webserver that will display these neighbors for any preprint on _bioRxiv_ or _medRxiv_.
+Close proximity within this space also revealed missing preprint-publication pairs that earlier analyses have been unable to identify.
+Overall, our linguistic analysis reveals the impact of the publishing process, introduces a method to identify matching preprint-published article pairs, demonstrates that the text content of preprints is related to their eventual publication venue, and provides a more complete picture of the fraction of preprints that are eventually published.
 
 
 ## Methods

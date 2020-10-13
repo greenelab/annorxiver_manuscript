@@ -29,7 +29,7 @@ Dendritic
 Dimensionality
 DOIs
 eachother
-embeddings
+Embeddings
 Enterobacteria
 GBMF
 gensim
@@ -45,7 +45,7 @@ knn
 learn’s
 loadings
 Medicago
-medRxiv
+medrxiv
 microvascular
 mTOR
 MYC
@@ -85,7 +85,7 @@ schizophreniarelated
 scikit
 spaCy
 spaCy’s
-Spatiotemporal
+spatiotemporal
 stopword
 stopwords
 Translational
