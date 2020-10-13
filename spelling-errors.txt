@@ -24,12 +24,12 @@ cystine
 cytometry
 danich
 dataset
-Datasets
+datasets
 Dendritic
 Dimensionality
 DOIs
 eachother
-embeddings
+Embeddings
 Enterobacteria
 GBMF
 gensim
@@ -46,7 +46,7 @@ knn
 learn’s
 loadings
 Medicago
-medRxiv
+medrxiv
 microvascular
 mTOR
 MYC
@@ -58,7 +58,6 @@ Nicotinic
 NIH’s
 NLRP
 nodulation
-notiy
 NYTAC
 occuring
 ome
@@ -77,8 +76,6 @@ preprocess
 preprocesses
 preprocessing
 proteomics
-publcation
-publsihed
 QTG
 quantiles
 recommender
@@ -89,14 +86,13 @@ schizophreniarelated
 scikit
 spaCy
 spaCy’s
-spatiotemporal
-Sproadically
+Spatiotemporal
 stopword
 stopwords
 Translational
 truncotula
 tyrosine
-Unannotated
+unannotated
 vasodilatory
 vec
 verisons

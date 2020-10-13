@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/110749ae3f5e347f201372516d4348c4e83dd71f/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/9a9ce964f4d174d068257deea7754cc0a316ab1f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/110749ae3f5e347f201372516d4348c4e83dd71f/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/9a9ce964f4d174d068257deea7754cc0a316ab1f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/110749ae3f5e347f201372516d4348c4e83dd71f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/9a9ce964f4d174d068257deea7754cc0a316ab1f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,9 +105,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/110749ae3f5e347f201372516d4348c4e83dd71f/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/9a9ce964f4d174d068257deea7754cc0a316ab1f/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@110749a](https://github.com/greenelab/annorxiver_manuscript/tree/110749ae3f5e347f201372516d4348c4e83dd71f)
+from [greenelab/annorxiver_manuscript@9a9ce96](https://github.com/greenelab/annorxiver_manuscript/tree/9a9ce964f4d174d068257deea7754cc0a316ab1f)
 on October 13, 2020.
 </em></small>
 
@@ -290,17 +290,18 @@ Neuroscience and bioinformatics are the two most common topics for preprints on 
 This bar chart depicts the number of preprints that fall into each author-selected topic area.
 ](https://raw.githubusercontent.com/greenelab/annorxiver/35d3ea0de3c9c78e3c524736bbaada00928c88fb/biorxiv/exploratory_data_analysis/output/figures/preprint_category.png){#fig:biorxiv_categories}
 
-Each preprint on bioRxiv has an author-selected topic area and the predominant area in past reports has been neuroscience [@doi:10.7554/eLife.45133].
+
+Each preprint on bioRxiv has an author-selected topic area, and the predominant area in past reports has been neuroscience [@doi:10.7554/eLife.45133].
 Our analysis of the full text release of bioRxiv confirms this previous finding (Figure {@fig:biorxiv_categories}).
 The author-selected topic area abundances that we found in the full text largely matched previous studies [@doi:10.7554/eLife.45133; @doi:10.1001/jama.2017.21168].
 One exception was microbiology, which has a larger share of preprints than in a previous report from 2018 [@doi:10.7554/eLife.45133] (Figure {@fig:biorxiv_categories}).
-When authors upload their preprints, they select from three result category types: new results, confirmatory results or contradictory results.
+Authors also select from three article types when they upload their preprints.
 We found that nearly all preprints were categorized as new results, which is consistent with previous findings [@doi:10.1001/jama.2017.21168].
 
 #### Global Comparison of bioRxiv and PubMed Central 
 
-| Metric                | bioRxiv     | PMC           | NYTAC         | 
-|-----------------------|-------------|---------------|---------------| 
+| Metric                     | bioRxiv     | PMC           | NYTAC         | 
+|----------------------------|-------------|---------------|---------------| 
 | document count             | 71,118      | 1,977,647     | 1,855,658     | 
 | sentence count             | 22,195,739  | 480,489,811   | 72,171,037    | 
 | token count                | 420,969,930 | 8,597,101,167 | 1,218,673,384 | 
@@ -339,7 +340,7 @@ We found that bioRxiv is more similar to PMC than to the reference in terms of t
 When comparing bioRxiv and PMC to the reference, topic associated and measurement related tokens appear highly enriched (Supplemental Figures {@fig:biorxiv_v_reference} and {@fig:pmc_v_reference}).
 Furthermore, we found that tokens such as "neuron", "genome", "RNA" and "network" had a high odds ratio, while tokens such as "patient", "health", $\pm$, and "ml" to have a low odds ratio when comparing bioRxiv to PMC (Figure {@fig:biorxiv_pmc_global_comparison}).
 This separation of tokens suggests that articles focused on clinical trials and patient research are more prevalent in PMC than to bioRxiv.
-This separation also suggests that bioRxiv has a predominance of preprints focused on neuroscience and bioinformatic topics.
+This separation also suggests that bioRxiv has a predominance of neuroscience and bioinformatic topics.
 In regard to writing, citation styles diversify from the familiar "et al." form as preprints transition through the publication process.
 Additionally, published articles have an increase of typesetting ($\pm$) and measurement symbols ("ml", "age") compared to preprints. 
 
@@ -382,19 +383,36 @@ This is box plot shows preprints in each article category projected along the PC
 Negative values indicate neuroscience concepts, while positive values indicate bioinformatic concepts.
 ](https://raw.githubusercontent.com/danich1/annorxiver/4e0c90c590dd7958dc424a1b4fefcecccb3c28ad/biorxiv/pca_association_experiment/output/pca_plots/figures/category_box_plot_pc2.svg){#fig:pca2_pointplot}
 
+| Title [citation]                                                                                                                                                  | PC_1              | License      | Figure Link |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|--------------|------|
+| Conditional Robust Calibration (CRC): a new computational Bayesian methodology for model parameters estimation and identifiability analysis [@doi:10.1101/197400] | 4.700554908074704 | None         | https://www.biorxiv.org/content/biorxiv/early/2017/10/02/197400/F1.large.jpg |
+| Machine learning of stochastic gene network phenotypes [@doi:10.1101/825943]                                                                                      | 4.410660604449826 | CC-BY-NC-ND  | https://www.biorxiv.org/content/biorxiv/early/2019/10/31/825943/F5.large.jpg |
+| Notions of similarity for computational biology models [@doi:10.1101/044818]                                                                                      | 4.355295926618207 | CC-BY-NC-ND  | https://www.biorxiv.org/content/biorxiv/early/2016/03/21/044818/F1.large.jpg |
+| GpABC: a Julia package for approximate Bayesian computation with Gaussian process emulation [@doi:10.1101/769299]                                                 | 4.351517618262304 | CC-BY-NC-ND  | https://www.biorxiv.org/content/biorxiv/early/2019/09/18/769299/F1.large.jpg |
+| SBpipe: a collection of pipelines for automating repetitive simulation and analysis tasks [@doi:10.1101/107250]                                                   | 4.321847854182741 |  CC-BY-NC-ND | https://www.biorxiv.org/content/biorxiv/early/2017/02/09/107250/F1.large.jpg |
+| | | | | |
+| Spatiotemporal proteomics uncovers cathepsin-dependent host cell death during bacterial infection [@doi:10.1101/455048]                                           | -4.263964235099807 |  CC-BY-ND   | https://www.biorxiv.org/content/biorxiv/early/2018/11/07/455048/F1.large.jpg |
+| Systems analysis by mass cytometry identifies susceptibility of latent HIV-infected T cells to targeting of p38 and mTOR pathways [@doi:10.1101/371922]           | -4.279016673409032 | CC-BY-NC-ND | https://www.biorxiv.org/content/biorxiv/early/2018/07/19/371922/F1.large.jpg |
+| NADPH consumption by L-cystine reduction creates a metabolic vulnerability upon glucose deprivation [@doi:10.1101/733162]                                         | -4.592209988884236 | None        | https://www.biorxiv.org/content/biorxiv/early/2019/08/13/733162/F1.large.jpg |
+| Inhibition of Bruton’s tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease [@doi:10.1101/745943] | -4.736613689905791 | None        | https://www.biorxiv.org/content/biorxiv/early/2019/08/28/745943/F1.large.jpg |
+| AKT but not MYC promotes reactive oxygen species-mediated cell death in oxidative culture [@doi:10.1101/754572]                                                   | -4.826793742506695 | None        | https://www.biorxiv.org/content/biorxiv/early/2019/09/01/754572/F1.large.jpg |
+
+Table: Top five and bottom five systems biology preprints projected onto the PC1 direction. These preprints contain quantitative and molecular biology concepts respectively. {#tbl:five_pc1_table}
+
 We explored the primary differences between the full text of bioRxiv preprints by performing principal components analysis on generated document embeddings.
-We visualized the correspondence between tokens and the loadings for each principal component (Figure {@fig:pca_word_cloud_plot}A,C).
-We also visualized documents projected on selected principal components (Figure {@fig:pca_word_cloud_plot}B).
-The first principal component separates bioRxiv preprints that encompass molecular biology results with preprints that contain quantitative biology results (Figure {@fig:pca_word_cloud_plot}C).
+We visualized the correspondence between tokens and the loadings for each principal component (Figure {@fig:pca_word_cloud_plot)A,C).
+We also visualized documents projected on selected principal components (Figure {@fig:pca_word_cloud_plot)B).
+The first principal component separates bioRxiv preprints that encompass molecular biology results with preprints that contain quantitative biology results (Figure {@fig:pca_word_cloud_plot)C).
 This highlights the bisection of biomedical research where majority of results can be categorized under the molecular biology category or the quantitative biology category.
 Furthermore, this bisecting trend is evident across individual preprint categories as most categories lie on either side of the first principal component (Figure {@fig:pca1_pointplot}).
-We also provide example preprints from the systems biology category to reinforce this concept (Supplemental Table {@tbl:five_pc1_table}).
+We also provide example preprints from the systems biology category to reinforce this concept (Table {@tbl:five_pc1_table}).
  
-The second principal component represents the concept of neuroscience vs bioinformatics (Figure {@fig:pca_word_cloud_plot}A).
+The second principal component represents the concept of neuroscience vs bioinformatics (Figure {@fig:pca_word_cloud_plot)A).
 This principal component suggests that the bulk of preprints within bioRxiv are largely focused around neuroscience and bioinformatic concepts.
 This split is evident in Figure {@fig:pca2_pointplot} as enriched categories along this principal component are quite related to neuroscience (negative end) or bioinformatics (positive end).
 As with the first principal component we provide example preprints from the systems biology category to reinforce this concept (Supplemental Table {@tbl:five_pc2_table}). 
-More principal component word clouds can be found on our journal recommender website and within our online repository (see Software and Data Availability).
+More principal component word clouds can be found on our journal recommender website ([greenelab.github.io/annorxiver-journal-recommender](https://greenelab.github.io/annorxiver-journal-recommender/)) and within our online repository (see Data Availability).
+
 
 ### Identifying preprints that were not linked with their corresponding publications
 
@@ -404,19 +422,18 @@ This violin plot shows the distribution of distances between both categories.
 ](https://raw.githubusercontent.com/greenelab/annorxiver/131dcac75d179cb36992af4a31188031800c0958/biorxiv/article_distances/output/figures/biorxiv_article_distance.svg){#fig:article_distance_distributions}
 
 ![
-The preprint-published pairs with smaller distances have a high change of being a true match.
+The proportion of publication-preprint pairs decreased as the distance for publication-preprint pairs increased.
 This bar chart depicts the fraction of true positives over the total number of pairs in each bin.
 Each bin contains a total of 200 annotated pairs and is based on the percentiles of the preprint-published distribution.
 ](https://raw.githubusercontent.com/greenelab/annorxiver/131dcac75d179cb36992af4a31188031800c0958/biorxiv/article_distances/output/figures/distance_bin_accuracy.svg){#fig:article_bin_accuracy}
 
 Many journals require that authors update preprints with links to the published version of their article.
 This is accomplished in two ways: _bioRxiv_ may detect the link and automatically add it or authors may notify _bioRxiv_ that their preprint was published.
-Sproadically, there are cases where _bioRxiv_ may miss detecting a link or authors may forget to notiy _bioRxiv_ of their recent publcation.
-These missing links can make it more difficult to identify the latest version of scientific manuscripts and estimate the fraction of articles that are eventually published [@doi:10.7554/eLife.45133].
+Missing preprint-publication links can make it more difficult to identify the latest version of scientific manuscripts and estimate the fraction of articles that are eventually published [@doi:10.7554/eLife.45133].
 We used distance in the document space to identify preprints without an annotated publication but contained very similar content to published articles.
 We found that distances between preprints and their corresponding published versions were lower than preprints paired with a random article published in the same journal (Figure {@fig:article_distance_distributions}).
 This observation suggests that pairs with low embedding distances could be considered a true match, so we separated articles into quantiles based on the distribution of distances between true preprint-publication pairs.
-We curated 50 potential preprint-publication pairs from each of four quantiles and achieved a high inter-rater reliability of 91.7% (Cohen's Kappa [@doi:10.1177/001316446002000104]) for this task.
+We curated 50 potential preprint-publication pairs from each of four quantiles in duplicate, and found a high inter-rater reliability for this task achieving a Cohen's Kappa [@doi:10.1177/001316446002000104] of 91.7%.
 Out of these two hundred pairs we found that approximately 98% of pairs with an embedding distance in the 0-25th and 25th-50th percentile bins were true matches (Figure {@fig:article_bin_accuracy}).
 These two bins contained 1,720 preprint-article pairs, suggesting that many preprints have been published but not previously connected with their published versions.
 
@@ -432,7 +449,7 @@ The horizontal lines represent the overall proportion of preprints  that are pub
 We overlaid these new annotations onto existing annotations to reassess the overall preprint publication rate reported by Abdill et al. [@doi:10.7554/eLife.45133].
 Our filtering criteria were intentionally stringent, so the increased estimate of publication rate amounts to a few percent (Figure {@fig:updated_pub_rate}).
 Many of these missed annotations were for preprints posted in the 2017-2018 interval.
-Compared to preprints published in 2019 and later, the preprints posted in 2017-2018 are old enough to have a high chance of being published; however, it is interesting that the rate for older preprints was not observed to be higher.
+As opposed to those published in 2019 and later, these preprints are old enough that they are likely to have been published but it was interesting that the rate was not observed to be higher for older preprints.
 
 ### Recommending Journals Based on Preprint Representation
 
@@ -444,15 +461,18 @@ This bargraph shows each model's accuracy in respect to predicting the training 
 We sought to identify journals that might publish a preprint based on the text of a paper.
 We trained two different classifiers to predict the journal endpoints for already published papers. 
 One classifier uses the nearest journal centroids, which attempts to capture the topic area of a journal.
-The other classifier aims to be more granular and recommends journals based on close proximity of individual papers.
-Both classifiers achieved a substantial increase over the random baseline; however, our predictors are not perfect (Figure {@fig:knn_auc}).
-This is expected as our dataset contains 2516 different journals where some journals publish papers that cover very specific topic while others publish papers that have a broad set of covered topics.
-Our journal centroid classifier performed better than the nearest paper classifier on the held out test set (Figure {@fig:knn_auc}).
-Overall, our software provides a starting point for authors to use the text of their preprints to identify potentially suitable publication venues.
+The other classifier aims to be more granular and uses the journals that published the nearest papers.
+Both classifiers outperformed a randomized baseline.
+A classifier that aimed to predict centroids performed better on the held out test set compared than the nearest paper classifier (Figure {@fig:knn_auc}).
+There are 2516 journals in our dataset, so the baseline performance of a classifier is quite low.
+We were able to achieve a substantial increase with respect to random performance at predicting the journals that a paper was published in.
+However, the predictor is not perfect (Figure {@fig:knn_auc}), which we should expect because there are multiple journals that cover certain topic areas and others have a very broad set of covered topic areas.
+Still, our software provides a starting point for authors to use the text of their preprints to identify potentially suitable publication venues.
+
 
 ![
 Here is the workflow of the journal recommender web-app.
-Starting with the homescreen users can paste in a _bioRxiv_ or _medRxiv_ DOI, which sends a request to biorxiv or medrxiv (A).
+Starting with the homescreen users can paste in a _bioRxiv_ or _medRxiv_ doi, which sends a request to biorxiv or medrxiv (A).
 Next our app preprocesses the preprint and returns a listing of the top ten most similar papers (B) and the top ten closest journals to the query (C).
 Following the listing, our app manually plots the preprint query onto the Pubmed Central Landscape (D).
 Lastly, users can click on a square within the landscape, which will show bin statistics as well as associated word-odd ratios (E).
@@ -466,16 +486,15 @@ It also embeds the document into the overall PMC landscape for visualization and
 
 ## Discussion
 
-We analyzed the language contained used in preprints and examined how it changes through the publication process.
+We analyzed the language contained used in preprints and examined how it changes through the publication process.  
 We found that bioRxiv and PubMed Central (PMC) have similar word frequency distributions, which suggests that the overall manner of writing is consistent with the biomedical literature. 
 At the token level, those most strongly associated with bioRxiv are related to neuroscience and bioinformatics, which are also fields that have seen high uptake of preprinting [@doi:10.7554/eLife.45133].
-We noticed that a multitude of preprints highly associated with the first principal component have restrictive or no copyright license (Supplemental Table {@tbl:five_pc1_table}).
+We noticed that a multitude of preprints highly associated with the first principal component have restrictive or no copyright license (Table {#tbl:five_pc1_table}).
 This finding highlights the ongoing problem of restricted access within the scientific community [@doi:10.1038/nature.2017.22161; @url:https://blog.dhimmel.com/biorxiv-licenses/].
 We also found that the second principal component for our language embedding differentiated neuroscience and bioinformatics papers.
 
-We examined preprints that were textually similar to published articles and found numerous missing links between preprints and their publsihed counterparts.
-This observation led us to find that the life sciences preprint publication rate is higher than previously estimated (Figure {@fig:updated_pub_rate}).
-Preprint-publication similarity also predicts journal endpoints with modest performance for already published articles. 
+We examined preprints that were textually similar to published articles and found numerous preprints that had been published and not previously linked, which led us to find that the life sciences preprint publication rate is higher than previously estimated.
+Preprint-publication similarity also predicts the journals that will publish a manuscript.
 This observation enabled us to provide a web application that allows users to identify the papers and journals that are most similar to a _bioRxiv_ or _medRxiv_ preprint.
 
 
@@ -530,35 +549,19 @@ The plot on the right (B) is a bar chart of token frequency appearing in PMC and
 
 ## Supplemental Tables
 
-| Title [citation]     | PC_1  | License | Figure Thumbnail | Figure Link |
-|--------------------------------|-------------------|------------|----------|-------------|
-| Conditional Robust Calibration (CRC): a new computational Bayesian methodology for model parameters estimation and identifiability analysis [@doi:10.1101/197400] | 4.700554908074704 | None         | ![](images/paper-thumbnails/pc1/197400_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2017/10/02/197400/F1.large.jpg |
-| Machine learning of stochastic gene network phenotypes [@doi:10.1101/825943]                                                                                      | 4.410660604449826 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc1/825943_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2019/10/31/825943/F5.large.jpg |
-| Notions of similarity for computational biology models [@doi:10.1101/044818]                                                                                      | 4.355295926618207 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc1/044818_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2016/03/21/044818/F1.large.jpg |
-| GpABC: a Julia package for approximate Bayesian computation with Gaussian process emulation [@doi:10.1101/769299]                                                 | 4.351517618262304 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc1/769299_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2019/09/18/769299/F1.large.jpg |
-| SBpipe: a collection of pipelines for automating repetitive simulation and analysis tasks [@doi:10.1101/107250]                                                   | 4.321847854182741 |  CC-BY-NC-ND |  ![](images/paper-thumbnails/pc1/107250_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2017/02/09/107250/F1.large.jpg |
+| Title [citation]                                                                                                                                                                                           | PC_2               | License      | Figure Link |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|--------------|-----|
+| Pangenome Analysis of Enterobacteria Reveals Richness of Secondary Metabolite Gene Clusters and their Associated Gene Sets [@doi:10.1101/781328]                                                           | 3.5865702659438883 |  CC-BY-ND    | https://www.biorxiv.org/content/biorxiv/early/2019/09/25/781328/F1.large.jpg |
+| QTG-Finder: a machine-learning based algorithm to prioritize causal genes of quantitative trait loci [@doi:10.1101/484204]                                                                                 | 3.470388383023157  | None         | https://www.biorxiv.org/content/biorxiv/early/2019/04/29/484204/F1.large.jpg |
+| Identification of candidate genes underlying nodulation-specific phenotypes in Medicago truncotula through integration of genome-wide association studies and co-expression networks [@doi:10.1101/392779] | 3.3814906334073953 |  CC-BY-NC-ND | https://www.biorxiv.org/content/biorxiv/early/2018/08/16/392779/F1.large.jpg |
+| Raw sequence to target gene prediction: An integrated inference pipeline for ChIP-seq and RNA-seq datasets [@doi:10.1101/220152]                                                                           | 3.3632576028389742 | None         | https://www.biorxiv.org/content/biorxiv/early/2017/11/16/220152/F3.large.jpg |
+| The y-ome defines the thirty-four percent of Escherichia coli genes that lack experimental evidence of function [@doi:10.1101/328591]                                                                      | 3.28742786641417   | CC-BY        | https://www.biorxiv.org/content/biorxiv/early/2018/12/03/328591/F1.large.jpg |
 | | | | | |
-| Spatiotemporal proteomics uncovers cathepsin-dependent host cell death during bacterial infection [@doi:10.1101/455048]                                           | -4.263964235099807 |  CC-BY-ND   | ![](images/paper-thumbnails/pc1/455048_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2018/11/07/455048/F1.large.jpg |
-| Systems analysis by mass cytometry identifies susceptibility of latent HIV-infected T cells to targeting of p38 and mTOR pathways [@doi:10.1101/371922]           | -4.279016673409032 | CC-BY-NC-ND | ![](images/paper-thumbnails/pc1/371922_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2018/07/19/371922/F1.large.jpg |
-| NADPH consumption by L-cystine reduction creates a metabolic vulnerability upon glucose deprivation [@doi:10.1101/733162]                                         | -4.592209988884236 | None        | ![](images/paper-thumbnails/pc1/733162_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2019/08/13/733162/F1.large.jpg |
-| Inhibition of Bruton’s tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease [@doi:10.1101/745943] | -4.736613689905791 | None        |  ![](images/paper-thumbnails/pc1/745943_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2019/08/28/745943/F1.large.jpg |
-| AKT but not MYC promotes reactive oxygen species-mediated cell death in oxidative culture [@doi:10.1101/754572]                                                   | -4.826793742506695 | None        |  ![](images/paper-thumbnails/pc1/754572_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2019/09/01/754572/F1.large.jpg |
+| The effects of time-varying temperature on delays in genetic networks [@doi:10.1101/019687]                                                                                                    | -2.7047102478958056 | None          | https://www.biorxiv.org/content/biorxiv/early/2015/09/24/019687/F1.large.jpg |
+| An analog to digital converter creates nuclear localization pulses in yeast calcium signaling [@doi:10.1101/357939]                                                                            | -2.775745000260895  | None          | https://www.biorxiv.org/content/biorxiv/early/2018/06/28/357939/F1.large.jpg |
+| Nicotinic modulation of hierarchal inhibitory control over prefrontal cortex resting state dynamics: modeling of genetic modification and schizophreniarelated pathology [@doi:10.1101/301051] | -3.047342382798414  | None          | https://www.biorxiv.org/content/biorxiv/early/2018/04/13/301051/F1.large.jpg |
+| Electrical propagation of vasodilatory signals in capillary networks [@doi:10.1101/840280]                                                                                                     | -3.107715578793087  |  CC-BY-NC-ND  | https://www.biorxiv.org/content/biorxiv/early/2019/11/13/840280/F1.large.jpg |
+| Dendritic spine geometry and spine apparatus organization govern the spatiotemporal dynamics of calcium [@doi:10.1101/386367]                                                                  | -3.21533499072831   |  CC-BY-NC-ND  | https://www.biorxiv.org/content/biorxiv/early/2019/05/29/386367/F1.large.jpg|
 
-Table: Top and bottom five systems biology preprints projected onto the PC1 direction. These preprints contain quantitative and molecular biology concepts respectively. {#tbl:five_pc1_table}
-
-| Title [citation]   | PC_2  | License  | Figure Thumbnail | Figure Link |
-|--------------------------------|--------------|-------------------|----------|----------|
-| Pangenome Analysis of Enterobacteria Reveals Richness of Secondary Metabolite Gene Clusters and their Associated Gene Sets [@doi:10.1101/781328]                                                           | 3.5865702659438883 |  CC-BY-ND    | ![](images/paper-thumbnails/pc2/781328_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2019/09/25/781328/F1.large.jpg |
-| QTG-Finder: a machine-learning based algorithm to prioritize causal genes of quantitative trait loci [@doi:10.1101/484204]                                                                                 | 3.470388383023157  | None         |  ![](images/paper-thumbnails/pc2/484204_thumbnail.png)  | https://www.biorxiv.org/content/biorxiv/early/2019/04/29/484204/F1.large.jpg |
-| Identification of candidate genes underlying nodulation-specific phenotypes in Medicago truncotula through integration of genome-wide association studies and co-expression networks [@doi:10.1101/392779] | 3.3814906334073953 |  CC-BY-NC-ND |  ![](images/paper-thumbnails/pc2/392779_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2018/08/16/392779/F1.large.jpg |
-| Raw sequence to target gene prediction: An integrated inference pipeline for ChIP-seq and RNA-seq datasets [@doi:10.1101/220152]                                                                           | 3.3632576028389742 | None         |  ![](images/paper-thumbnails/pc2/220152_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2017/11/16/220152/F3.large.jpg |
-| The y-ome defines the thirty-four percent of Escherichia coli genes that lack experimental evidence of function [@doi:10.1101/328591]                                                                      | 3.28742786641417   | CC-BY        | ![](images/paper-thumbnails/pc2/328591_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2018/12/03/328591/F1.large.jpg |
-| | | | | |
-| The effects of time-varying temperature on delays in genetic networks [@doi:10.1101/019687]                                                                                                    | -2.7047102478958056 | None          | ![](images/paper-thumbnails/pc2/019687_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2015/09/24/019687/F1.large.jpg |
-| An analog to digital converter creates nuclear localization pulses in yeast calcium signaling [@doi:10.1101/357939]                                                                            | -2.775745000260895  | None          | ![](images/paper-thumbnails/pc2/357939_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2018/06/28/357939/F1.large.jpg |
-| Nicotinic modulation of hierarchal inhibitory control over prefrontal cortex resting state dynamics: modeling of genetic modification and schizophreniarelated pathology [@doi:10.1101/301051] | -3.047342382798414  | None          | ![](images/paper-thumbnails/pc2/301051_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2018/04/13/301051/F1.large.jpg |
-| Electrical propagation of vasodilatory signals in capillary networks [@doi:10.1101/840280]                                                                                                     | -3.107715578793087  |  CC-BY-NC-ND  | ![](images/paper-thumbnails/pc2/840280_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2019/11/13/840280/F1.large.jpg |
-| Dendritic spine geometry and spine apparatus organization govern the spatiotemporal dynamics of calcium [@doi:10.1101/386367]                                                                  | -3.21533499072831   |  CC-BY-NC-ND  | ![](images/paper-thumbnails/pc2/386367_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2019/05/29/386367/F1.large.jpg |
-
-Table: Top and bottom five systems biology preprints projected onto the PC2 direction. These preprints contain bioinformatis and neuroscience concepts respectively. {#tbl:five_pc2_table}
+Table: Top five and bottom five systems biology preprints projected onto the PC2 direction. These preprints contain bioinformatis and neuroscience concepts respectively. {#tbl:five_pc2_table}
 
