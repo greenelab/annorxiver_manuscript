@@ -9,7 +9,7 @@ barplot
 bioinformatic
 bioinformatics
 bioinformatis
-bioRxiv
+biorxiv
 bioRxiv’s
 Bruton’s
 cathepsin
@@ -46,7 +46,7 @@ knn
 learn’s
 loadings
 Medicago
-medrxiv
+medRxiv
 microvascular
 mTOR
 MYC
@@ -58,12 +58,13 @@ Nicotinic
 NIH’s
 NLRP
 nodulation
+notiy
 NYTAC
 occuring
 ome
 overrepresentation
 Pangenome
-PCA
+pca
 phenotypes
 PMCOA
 pointplot
@@ -76,6 +77,7 @@ preprocess
 preprocesses
 preprocessing
 proteomics
+publcation
 QTG
 quantiles
 recommender
@@ -87,12 +89,13 @@ scikit
 spaCy
 spaCy’s
 Spatiotemporal
+Sproadically
 stopword
 stopwords
 Translational
 truncotula
 tyrosine
-unannotated
+Unannotated
 vasodilatory
 vec
 verisons
