@@ -1,6 +1,7 @@
 Abdill
 Acknowledgements
 AKT
+appveyor
 arXiv
 auc
 barchart
@@ -9,7 +10,7 @@ barplot
 bioinformatic
 bioinformatics
 bioinformatis
-biorxiv
+bioRxiv
 bioRxiv’s
 Bruton’s
 cathepsin
@@ -29,7 +30,7 @@ Dendritic
 Dimensionality
 DOIs
 eachother
-Embeddings
+embeddings
 Enterobacteria
 GBMF
 gensim
@@ -46,13 +47,13 @@ knn
 learn’s
 loadings
 Medicago
-medRxiv
+medrxiv
 microvascular
 mTOR
 MYC
 NADPH
 NCBI’s
-neuroscience
+Neuroscience
 NHGRI
 Nicotinic
 NIH’s
@@ -78,6 +79,7 @@ preprocesses
 preprocessing
 proteomics
 publcation
+publsihed
 QTG
 quantiles
 recommender
@@ -88,14 +90,14 @@ schizophreniarelated
 scikit
 spaCy
 spaCy’s
-Spatiotemporal
+spatiotemporal
 Sproadically
 stopword
 stopwords
 Translational
 truncotula
 tyrosine
-Unannotated
+unannotated
 vasodilatory
 vec
 verisons

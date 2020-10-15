@@ -1,3 +1,5 @@
+content/00.front-matter.md:14:appveyor
+content/01.abstract.md:3:appveyor
 content/02.introduction.md:3:Preprints
 content/02.introduction.md:4:preprints
 content/02.introduction.md:6:Preprints
@@ -282,11 +284,12 @@ content/05.discussion.md:6:preprints
 content/05.discussion.md:7:biorxiv
 content/05.discussion.md:8:bioinformatics
 content/05.discussion.md:8:neuroscience
-content/05.discussion.md:10:preprint
 content/05.discussion.md:10:preprints
 content/05.discussion.md:10:preprints
-content/05.discussion.md:11:Preprint
-content/05.discussion.md:12:preprint
+content/05.discussion.md:10:publsihed
+content/05.discussion.md:11:preprint
+content/05.discussion.md:12:Preprint
+content/05.discussion.md:13:preprint
 content/06.conclusion.md:4:preprint
 content/06.conclusion.md:5:embeddings
 content/06.conclusion.md:5:preprints

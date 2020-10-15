@@ -4,7 +4,7 @@ author-meta:
 - Jane Roe
 bibliography:
 - content/manual-references.json
-date-meta: '2020-10-14'
+date-meta: '2020-10-15'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -23,9 +23,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2020-10-14" />
+  <meta name="dc.date" content="2020-10-15" />
 
-  <meta name="citation_publication_date" content="2020-10-14" />
+  <meta name="citation_publication_date" content="2020-10-15" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/138b704bad1b308af763322ffa630d327220f401/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/29c7654340ce3ce71f7d34b64dc2fda9fc445634/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/138b704bad1b308af763322ffa630d327220f401/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/29c7654340ce3ce71f7d34b64dc2fda9fc445634/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/138b704bad1b308af763322ffa630d327220f401/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/29c7654340ce3ce71f7d34b64dc2fda9fc445634/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,10 +105,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/138b704bad1b308af763322ffa630d327220f401/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/29c7654340ce3ce71f7d34b64dc2fda9fc445634/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@138b704](https://github.com/greenelab/annorxiver_manuscript/tree/138b704bad1b308af763322ffa630d327220f401)
-on October 14, 2020.
+from [greenelab/annorxiver_manuscript@29c7654](https://github.com/greenelab/annorxiver_manuscript/tree/29c7654340ce3ce71f7d34b64dc2fda9fc445634)
+on October 15, 2020.
 </em></small>
 
 ## Authors
@@ -138,7 +138,7 @@ on October 14, 2020.
 
 ## Abstract {.page_break_before}
 
-
+This is the abstract. Trigger appveyor.
 
 
 ## Introduction
@@ -466,15 +466,16 @@ It also embeds the document into the overall PMC landscape for visualization and
 
 ## Discussion
 
-We analyzed the language contained used in preprints and examined how it changes through the publication process.  
+We analyzed the language contained used in preprints and examined how it changes through the publication process.
 We found that bioRxiv and PubMed Central (PMC) have similar word frequency distributions, which suggests that the overall manner of writing is consistent with the biomedical literature. 
 At the token level, those most strongly associated with bioRxiv are related to neuroscience and bioinformatics, which are also fields that have seen high uptake of preprinting [@doi:10.7554/eLife.45133].
-We noticed that a multitude of preprints highly associated with the first principal component have restrictive or no copyright license (Table {#tbl:five_pc1_table}).
+We noticed that a multitude of preprints highly associated with the first principal component have restrictive or no copyright license (Supplemental Table {@tbl:five_pc1_table}).
 This finding highlights the ongoing problem of restricted access within the scientific community [@doi:10.1038/nature.2017.22161; @url:https://blog.dhimmel.com/biorxiv-licenses/].
 We also found that the second principal component for our language embedding differentiated neuroscience and bioinformatics papers.
 
-We examined preprints that were textually similar to published articles and found numerous preprints that had been published and not previously linked, which led us to find that the life sciences preprint publication rate is higher than previously estimated.
-Preprint-publication similarity also predicts the journals that will publish a manuscript.
+We examined preprints that were textually similar to published articles and found numerous missing links between preprints and their publsihed counterparts.
+This observation led us to find that the life sciences preprint publication rate is higher than previously estimated (Figure {@fig:updated_pub_rate}).
+Preprint-publication similarity also predicts journal endpoints with modest performance for already published articles. 
 This observation enabled us to provide a web application that allows users to identify the papers and journals that are most similar to a _bioRxiv_ or _medRxiv_ preprint.
 
 
