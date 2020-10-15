@@ -25,3 +25,6 @@ preprint
 preprints
 bioRxiv
 medRxiv
+centroid
+CrossRef
+SAUCIE
