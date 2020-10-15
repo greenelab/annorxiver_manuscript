@@ -21,3 +21,7 @@ svgs
 tbl
 unicode
 wikidata
+preprint
+preprints
+bioRxiv
+medRxiv
