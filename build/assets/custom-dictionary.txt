@@ -28,3 +28,4 @@ medRxiv
 centroid
 CrossRef
 SAUCIE
+arXiv
