@@ -51,9 +51,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/29c7654340ce3ce71f7d34b64dc2fda9fc445634/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/29c7654340ce3ce71f7d34b64dc2fda9fc445634/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/29c7654340ce3ce71f7d34b64dc2fda9fc445634/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/c4de41578e283340ae3e2539b31955cef860df58/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/c4de41578e283340ae3e2539b31955cef860df58/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/c4de41578e283340ae3e2539b31955cef860df58/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/annorxiver_manuscript/v/29c7654340ce3ce71f7d34b64dc2fda9fc445634/">permalink</a>)
+(<a href="https://greenelab.github.io/annorxiver_manuscript/v/c4de41578e283340ae3e2539b31955cef860df58/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/29c7654340ce3ce71f7d34b64dc2fda9fc445634">greenelab/annorxiver_manuscript@29c7654</a>
+from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/c4de41578e283340ae3e2539b31955cef860df58">greenelab/annorxiver_manuscript@c4de415</a>
 on October 15, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -140,33 +140,33 @@ Out of these 5 million articles, about 3 million were open access and available 
 We downloaded a snapshot of this open access subset on January 31, 2020.
 This snapshot contains papers such as literature reviews, book reviews, editorials, case reports, research articles and more; however, we used only research articles.</p>
 <h3 id="comparing-corpora">Comparing Corpora</h3>
-<p>We compared bioRxiv against Pubmed Central’s Open Access corpus (PMCOA) and the New York Times Annotated corpus (NYTAC) <span class="citation" data-cites="x0knW0CT">[<a href="#ref-x0knW0CT" role="doc-biblioref">30</a>]</span> to assess the similarities and differences between bioRxiv, PMCOA and NYTAC.
+<p>We compared bioRxiv against Pubmed Central’s Open Access corpus (PMCOA) and the New York Times Annotated corpus (NYTAC) <span class="citation" data-cites="raw:sandhaus2008new">[<span class="citeproc-not-found" data-reference-id="raw:sandhaus2008new"><strong>???</strong></span>]</span> to assess the similarities and differences between bioRxiv, PMCOA and NYTAC.
 Throughout our analysis we encountered non-word symbols (e.g., <span class="math inline">\(\pm\)</span>), so we refer words and symbols as tokens to avoid confusion.
 We calculated the following statistics for each corpus: the number of documents, the number of sentences, the total number of tokens, the number of stopwords, the average length of a document, the average length of a sentence, the number of negations, the number of coordinating conjunctions, the number of pronouns and the number of past tense verbs.
-Next, we used spaCy’s “en_core_web_sm” model <span class="citation" data-cites="SvGadRGC">[<a href="#ref-SvGadRGC" role="doc-biblioref">31</a>]</span> (version 2.2.3) to preprocess all corpora and filtered out 326 spaCy-provided stopwords.</p>
+Next, we used spaCy’s “en_core_web_sm” model <span class="citation" data-cites="raw:spacy2">[<span class="citeproc-not-found" data-reference-id="raw:spacy2"><strong>???</strong></span>]</span> (version 2.2.3) to preprocess all corpora and filtered out 326 spaCy-provided stopwords.</p>
 <p>Following the cleaning process, we calculated the frequency of every token across all corpora.
 Because many tokens were unique to one set or the other and observed at low frequency, we used the union of the top 100 most frequent tokens from each corpus to compare them.
 We generated a contingency table for each token and calculated the odds ratio from each generated table.
-We also calculated the 95% confidence interval for each token’s odds ratio <span class="citation" data-cites="Lgm5q6mO">[<a href="#ref-Lgm5q6mO" role="doc-biblioref">32</a>]</span> and measured corpus similarity by calculating the KL divergence across all three corpora.</p>
+We also calculated the 95% confidence interval for each token’s odds ratio <span class="citation" data-cites="Lgm5q6mO">[<a href="#ref-Lgm5q6mO" role="doc-biblioref">30</a>]</span> and measured corpus similarity by calculating the KL divergence across all three corpora.</p>
 <h3 id="visualizing-the-preprint-landscape">Visualizing the Preprint Landscape</h3>
 <h4 id="generate-document-representation">Generate Document Representation</h4>
-<p>We used gensim <span class="citation" data-cites="Gc4hOzur">[<a href="#ref-Gc4hOzur" role="doc-biblioref">33</a>]</span> (version 3.8.1) to train a word2vec continuous bag of words (CBOW) <span class="citation" data-cites="1GhHIDxuW">[<a href="#ref-1GhHIDxuW" role="doc-biblioref">34</a>]</span> model over the bioRxiv corpus.
+<p>We used gensim <span class="citation" data-cites="raw:rehurek_lrec">[<span class="citeproc-not-found" data-reference-id="raw:rehurek_lrec"><strong>???</strong></span>]</span> (version 3.8.1) to train a word2vec continuous bag of words (CBOW) <span class="citation" data-cites="1GhHIDxuW">[<a href="#ref-1GhHIDxuW" role="doc-biblioref">31</a>]</span> model over the bioRxiv corpus.
 Our neural network architecture had 300 hidden nodes, and we trained this model for 20 epochs.
 We set a fixed random seed and used gensim’s default settings for all other hyperparameters.
 Following training, we generated a document vector for every article within bioRxiv and PubMed Central.
 This document vector is calculated by taking the average of every token present within a given article, ignoring those that were absent from the word2vec model.</p>
 <h4 id="dimensionality-reduction-of-document-embeddings">Dimensionality Reduction of Document Embeddings</h4>
-<p>We used principal component analysis (PCA) <span class="citation" data-cites="qkjVrvqt">[<a href="#ref-qkjVrvqt" role="doc-biblioref">35</a>]</span> to project bioRxiv document vectors into a low dimensional space.
-We trained this model using scikit-learn’s <span class="citation" data-cites="QrtjCwXA">[<a href="#ref-QrtjCwXA" role="doc-biblioref">36</a>]</span> implementation of a randomized solver <span class="citation" data-cites="7tMTyalf">[<a href="#ref-7tMTyalf" role="doc-biblioref">37</a>]</span> with a random seed of 100, output of 50 principal components, and default settings for all other hyperparameters.
+<p>We used principal component analysis (PCA) <span class="citation" data-cites="qkjVrvqt">[<a href="#ref-qkjVrvqt" role="doc-biblioref">32</a>]</span> to project bioRxiv document vectors into a low dimensional space.
+We trained this model using scikit-learn’s <span class="citation" data-cites="raw:scikit-learn">[<span class="citeproc-not-found" data-reference-id="raw:scikit-learn"><strong>???</strong></span>]</span> implementation of a randomized solver <span class="citation" data-cites="7tMTyalf">[<a href="#ref-7tMTyalf" role="doc-biblioref">33</a>]</span> with a random seed of 100, output of 50 principal components, and default settings for all other hyperparameters.
 For each principal component we calculated its cosine similarity with all tokens in our word2vec model’s vocabulary.
 We report the top 100 positive and negative scoring tokens in the form of word clouds, where the size of each word corresponds to the magnitude of similarity and color represents positive (orange) or negative (blue) association.</p>
 <h3 id="discovering-unannotated-preprint-publication-relationships">Discovering Unannotated Preprint-Publication Relationships</h3>
 <p>Automated procedures are in place to link preprints to peer reviewed versions and many journals require authors to update preprints with a link to the published version.
 However, automated procedures at <em>bioRxiv</em> are often based on exact matching of certain attributes and authors can forget to establish a link after publication.
-For example, authors can change the title between a preprint and published version (e.g., <span class="citation" data-cites="1Bpwk7s3x">[<a href="#ref-1Bpwk7s3x" role="doc-biblioref">38</a>]</span> and <span class="citation" data-cites="iBFkqblV">[<a href="#ref-iBFkqblV" role="doc-biblioref">39</a>]</span>), which prevents <em>bioRxiv</em> from automatically establishing a link.
+For example, authors can change the title between a preprint and published version (e.g., <span class="citation" data-cites="1Bpwk7s3x">[<a href="#ref-1Bpwk7s3x" role="doc-biblioref">34</a>]</span> and <span class="citation" data-cites="iBFkqblV">[<a href="#ref-iBFkqblV" role="doc-biblioref">35</a>]</span>), which prevents <em>bioRxiv</em> from automatically establishing a link.
 If the authors do not report the publication to <em>bioRxiv</em>, the preprint and the published version are treated as distinct entities despite representing the same underlying research.
 We recognized that close proximity in the embedding space could reveal preprint to published version links that were missed by existing automated processes.
-First, we used CrossRef <span class="citation" data-cites="XnHb341s">[<a href="#ref-XnHb341s" role="doc-biblioref">40</a>]</span> to identify bioRxiv preprints that were linked to a corresponding published article.
+First, we used CrossRef <span class="citation" data-cites="XnHb341s">[<a href="#ref-XnHb341s" role="doc-biblioref">36</a>]</span> to identify bioRxiv preprints that were linked to a corresponding published article.
 We filtered out links that contained papers not in PubMed Central’s Open Access corpus.
 Following the preprocessing step, we calculated the distribution of known preprint to published distances by taking the Euclidean distance between the preprint’s embedding coordinates and the coordinates of its corresponding published version.
 We also calculated a background distribution, which consisted of the distance between each preprint with an annotated publication and a randomly selected article from the same journal.
@@ -204,7 +204,7 @@ This classifier was trained by computing journal centroids via taking the averag
 Following the centroid calculation, this classifier takes a query article projected onto the same embedding space as above for input and reports the top ten nearest journals centroids.
 Both the paper-based classifier and the journal-based classifier were optimized via 10-fold cross validation.
 We evaluated performance of both classifiers on our gold standard test set of published preprints.</p>
-<p>We used SAUCIE <span class="citation" data-cites="LxhnWcbN">[<a href="#ref-LxhnWcbN" role="doc-biblioref">41</a>]</span> to train a model that uses the latent space of a neural network to learn an embedding suitable for visualization.
+<p>We used SAUCIE <span class="citation" data-cites="LxhnWcbN">[<a href="#ref-LxhnWcbN" role="doc-biblioref">37</a>]</span> to train a model that uses the latent space of a neural network to learn an embedding suitable for visualization.
 This model enabled us to visualized the PMC corpus and to efficiently embed new papers and preprints within this space.
 We trained this model using a learning rate of 0.001, lambda_b of 0, lambda_c of 0.001, and lambda_d of 0.001 for 2000 iterations.
 We used the fully trained model to project user-requested <em>bioRxiv</em> preprints onto the generated landscape to enable users to see where their preprint falls along the landscape.</p>
@@ -217,12 +217,12 @@ We used the fully trained model to project user-requested <em>bioRxiv</em> prepr
 This bar chart depicts the number of preprints that fall into each author-selected topic area.</figcaption>
 </figure>
 </div>
-<p>Each preprint on bioRxiv has an author-selected topic area and the predominant area in past reports has been neuroscience <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">42</a>]</span>.
+<p>Each preprint on bioRxiv has an author-selected topic area and the predominant area in past reports has been neuroscience <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">38</a>]</span>.
 Our analysis of the full text release of bioRxiv confirms this previous finding (Figure <a href="#fig:biorxiv_categories">1</a>).
-The author-selected topic area abundances that we found in the full text largely matched previous studies <span class="citation" data-cites="iPnRRJya mTE5h91z">[<a href="#ref-iPnRRJya" role="doc-biblioref">42</a>,<a href="#ref-mTE5h91z" role="doc-biblioref">43</a>]</span>.
-One exception was microbiology, which has a larger share of preprints than in a previous report from 2018 <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">42</a>]</span> (Figure <a href="#fig:biorxiv_categories">1</a>).
+The author-selected topic area abundances that we found in the full text largely matched previous studies <span class="citation" data-cites="iPnRRJya mTE5h91z">[<a href="#ref-iPnRRJya" role="doc-biblioref">38</a>,<a href="#ref-mTE5h91z" role="doc-biblioref">39</a>]</span>.
+One exception was microbiology, which has a larger share of preprints than in a previous report from 2018 <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">38</a>]</span> (Figure <a href="#fig:biorxiv_categories">1</a>).
 When authors upload their preprints, they select from three result category types: new results, confirmatory results or contradictory results.
-We found that nearly all preprints were categorized as new results, which is consistent with previous findings <span class="citation" data-cites="mTE5h91z">[<a href="#ref-mTE5h91z" role="doc-biblioref">43</a>]</span>.</p>
+We found that nearly all preprints were categorized as new results, which is consistent with previous findings <span class="citation" data-cites="mTE5h91z">[<a href="#ref-mTE5h91z" role="doc-biblioref">39</a>]</span>.</p>
 <h4 id="global-comparison-of-biorxiv-and-pubmed-central">Global Comparison of bioRxiv and PubMed Central</h4>
 <div id="tbl:corpora_stats" class="tablenos">
 <table>
@@ -413,24 +413,24 @@ Each bin contains a total of 200 annotated pairs and is based on the percentiles
 <p>Many journals require that authors update preprints with links to the published version of their article.
 This is accomplished in two ways: <em>bioRxiv</em> may detect the link and automatically add it or authors may notify <em>bioRxiv</em> that their preprint was published.
 Sproadically, there are cases where <em>bioRxiv</em> may miss detecting a link or authors may forget to notiy <em>bioRxiv</em> of their recent publcation.
-These missing links can make it more difficult to identify the latest version of scientific manuscripts and estimate the fraction of articles that are eventually published <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">42</a>]</span>.
+These missing links can make it more difficult to identify the latest version of scientific manuscripts and estimate the fraction of articles that are eventually published <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">38</a>]</span>.
 We used distance in the document space to identify preprints without an annotated publication but contained very similar content to published articles.
 We found that distances between preprints and their corresponding published versions were lower than preprints paired with a random article published in the same journal (Figure <a href="#fig:article_distance_distributions">8</a>).
 This observation suggests that pairs with low embedding distances could be considered a true match, so we separated articles into quantiles based on the distribution of distances between true preprint-publication pairs.
-We curated 50 potential preprint-publication pairs from each of four quantiles and achieved a high inter-rater reliability of 91.7% (Cohen’s Kappa <span class="citation" data-cites="oeGSw37I">[<a href="#ref-oeGSw37I" role="doc-biblioref">44</a>]</span>) for this task.
+We curated 50 potential preprint-publication pairs from each of four quantiles and achieved a high inter-rater reliability of 91.7% (Cohen’s Kappa <span class="citation" data-cites="oeGSw37I">[<a href="#ref-oeGSw37I" role="doc-biblioref">40</a>]</span>) for this task.
 Out of these two hundred pairs we found that approximately 98% of pairs with an embedding distance in the 0-25th and 25th-50th percentile bins were true matches (Figure <a href="#fig:article_bin_accuracy">9</a>).
 These two bins contained 1,720 preprint-article pairs, suggesting that many preprints have been published but not previously connected with their published versions.</p>
 <div id="fig:updated_pub_rate" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/article_distances/output/figures/publication_rate.png" alt="" /><figcaption><span>Figure 10:</span> The overall fraction of published preprints is higher than originally estimated in <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">42</a>]</span>.
+<img src="https://raw.githubusercontent.com/greenelab/annorxiver/8dbc3f8e248ff3e7958c3420363443f0c61b2cc1/biorxiv/article_distances/output/figures/publication_rate.png" alt="" /><figcaption><span>Figure 10:</span> The overall fraction of published preprints is higher than originally estimated in <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">38</a>]</span>.
 This line plot shows the publication rate of preprints since bioRxiv first started.
 The x-axis represents months since bioRxiv started and the y-axis represents the proportion of preprints published.
-The light blue line represents the publication rate estimated by Abdill et al. <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">42</a>]</span>.
+The light blue line represents the publication rate estimated by Abdill et al. <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">38</a>]</span>.
 The dark blue line represents the updated publication rate without missing links added while the dark green line is the updated publication rate with missing links added.
 The horizontal lines represent the overall proportion of preprints that are published.</figcaption>
 </figure>
 </div>
-<p>We overlaid these new annotations onto existing annotations to reassess the overall preprint publication rate reported by Abdill et al. <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">42</a>]</span>.
+<p>We overlaid these new annotations onto existing annotations to reassess the overall preprint publication rate reported by Abdill et al. <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">38</a>]</span>.
 Our filtering criteria were intentionally stringent, so the increased estimate of publication rate amounts to a few percent (Figure <a href="#fig:updated_pub_rate">10</a>).
 Many of these missed annotations were for preprints posted in the 2017-2018 interval.
 Compared to preprints published in 2019 and later, the preprints posted in 2017-2018 are old enough to have a high chance of being published; however, it is interesting that the rate for older preprints was not observed to be higher.</p>
@@ -465,9 +465,9 @@ It also embeds the document into the overall PMC landscape for visualization and
 <h2 id="discussion">Discussion</h2>
 <p>We analyzed the language contained used in preprints and examined how it changes through the publication process.
 We found that bioRxiv and PubMed Central (PMC) have similar word frequency distributions, which suggests that the overall manner of writing is consistent with the biomedical literature.
-At the token level, those most strongly associated with bioRxiv are related to neuroscience and bioinformatics, which are also fields that have seen high uptake of preprinting <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">42</a>]</span>.
+At the token level, those most strongly associated with bioRxiv are related to neuroscience and bioinformatics, which are also fields that have seen high uptake of preprinting <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">38</a>]</span>.
 We noticed that a multitude of preprints highly associated with the first principal component have restrictive or no copyright license (Supplemental Table <a href="#tbl:five_pc1_table">2</a>).
-This finding highlights the ongoing problem of restricted access within the scientific community <span class="citation" data-cites="1FHYUCO1v 11GpiE0CN">[<a href="#ref-1FHYUCO1v" role="doc-biblioref">45</a>,<a href="#ref-11GpiE0CN" role="doc-biblioref">46</a>]</span>.
+This finding highlights the ongoing problem of restricted access within the scientific community <span class="citation" data-cites="1FHYUCO1v 11GpiE0CN">[<a href="#ref-1FHYUCO1v" role="doc-biblioref">41</a>,<a href="#ref-11GpiE0CN" role="doc-biblioref">42</a>]</span>.
 We also found that the second principal component for our language embedding differentiated neuroscience and bioinformatics papers.</p>
 <p>We examined preprints that were textually similar to published articles and found numerous missing links between preprints and their publsihed counterparts.
 This observation led us to find that the life sciences preprint publication rate is higher than previously estimated (Figure <a href="#fig:updated_pub_rate">10</a>).
@@ -494,375 +494,355 @@ This work was supported by <a href="https://www.moore.org/grant-detail?grantId=G
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
 <div id="ref-ePmdRbmq">
-<p>1. <strong>The prehistory of biology preprints: A forgotten experiment from the 1960s</strong><br />
+<p>1. <strong>The prehistory of biology preprints: A forgotten experiment from the 1960s</strong> <br />
 Matthew Cobb<br />
-<em>PLOS Biology</em> (2017-11-16) <a href="https://doi.org/c6wv">https://doi.org/c6wv</a><br />
+<em>PLOS Biology</em> (2017-11-16) <a href="https://doi.org/c6wv">https://doi.org/c6wv</a> <br />
 DOI: <a href="https://doi.org/10.1371/journal.pbio.2003995">10.1371/journal.pbio.2003995</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29145518">29145518</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5690419">PMC5690419</a></p>
 </div>
 <div id="ref-lN9ljhid">
-<p>2. <strong>Preprint Déjà Vu</strong><br />
+<p>2. <strong>Preprint Déjà Vu</strong> <br />
 Paul Ginsparg<br />
-<em>The EMBO Journal</em> (2016-10-19) <a href="https://doi.org/f3r9vf">https://doi.org/f3r9vf</a><br />
+<em>The EMBO Journal</em> (2016-10-19) <a href="https://doi.org/f3r9vf">https://doi.org/f3r9vf</a> <br />
 DOI: <a href="https://doi.org/10.15252/embj.201695531">10.15252/embj.201695531</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27760783">27760783</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5167339">PMC5167339</a></p>
 </div>
 <div id="ref-PmF48i62">
-<p>3. <strong>Biologists urged to hug a preprint</strong><br />
+<p>3. <strong>Biologists urged to hug a preprint</strong> <br />
 Ewen Callaway, Kendall Powell<br />
-<em>Nature</em> (2016-02-16) <a href="https://doi.org/ghdd62">https://doi.org/ghdd62</a><br />
+<em>Nature</em> (2016-02-16) <a href="https://doi.org/ghdd62">https://doi.org/ghdd62</a> <br />
 DOI: <a href="https://doi.org/10.1038/530265a">10.1038/530265a</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26887471">26887471</a></p>
 </div>
 <div id="ref-1EwmaUwf9">
-<p>4. <strong>Peer Review and bioRxiv</strong><br />
+<p>4. <strong>Peer Review and bioRxiv</strong> <br />
 Leslie M. Loew<br />
-<em>Biophysical Journal</em> (2016-08) <a href="https://doi.org/ghdd6x">https://doi.org/ghdd6x</a><br />
+<em>Biophysical Journal</em> (2016-08) <a href="https://doi.org/ghdd6x">https://doi.org/ghdd6x</a> <br />
 DOI: <a href="https://doi.org/10.1016/j.bpj.2016.06.035">10.1016/j.bpj.2016.06.035</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27508451">27508451</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4982934">PMC4982934</a></p>
 </div>
 <div id="ref-XqZPlHz7">
-<p>5. <strong>Preprints for the life sciences</strong><br />
+<p>5. <strong>Preprints for the life sciences</strong> <br />
 J. M. Berg, N. Bhalla, P. E. Bourne, M. Chalfie, D. G. Drubin, J. S. Fraser, C. W. Greider, M. Hendricks, C. Jones, R. Kiley, … C. Wolberger<br />
-<em>Science</em> (2016-05-19) <a href="https://doi.org/bmp7">https://doi.org/bmp7</a><br />
+<em>Science</em> (2016-05-19) <a href="https://doi.org/bmp7">https://doi.org/bmp7</a> <br />
 DOI: <a href="https://doi.org/10.1126/science.aaf9133">10.1126/science.aaf9133</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27199406">27199406</a></p>
 </div>
 <div id="ref-IyRO6uC">
-<p>6. <strong>The rise of preprints in chemistry</strong><br />
+<p>6. <strong>The rise of preprints in chemistry</strong> <br />
 François-Xavier Coudert<br />
-<em>Nature Chemistry</em> (2020-05-18) <a href="https://doi.org/ghdd64">https://doi.org/ghdd64</a><br />
+<em>Nature Chemistry</em> (2020-05-18) <a href="https://doi.org/ghdd64">https://doi.org/ghdd64</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41557-020-0477-5">10.1038/s41557-020-0477-5</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32424256">32424256</a></p>
 </div>
 <div id="ref-i9BKPuqb">
-<p>7. <strong>bioRxiv: the preprint server for biology</strong><br />
+<p>7. <strong>bioRxiv: the preprint server for biology</strong> <br />
 Richard Sever, Ted Roeder, Samantha Hindle, Linda Sussman, Kevin-John Black, Janet Argentine, Wayne Manos, John R. Inglis<br />
-<em>bioRxiv</em> (2019-11-06) <a href="https://doi.org/ggc46z">https://doi.org/ggc46z</a><br />
+<em>bioRxiv</em> (2019-11-06) <a href="https://doi.org/ggc46z">https://doi.org/ggc46z</a> <br />
 DOI: <a href="https://doi.org/10.1101/833400">10.1101/833400</a></p>
 </div>
 <div id="ref-QHX7Bezs">
-<p>8. <strong>Abstract</strong><br />
+<p>8. <strong>Abstract</strong> <br />
 eLife Sciences Publications, Ltd<br />
-(2019-05-09) <a href="https://doi.org/gf5cqt">https://doi.org/gf5cqt</a><br />
+(2019-05-09) <a href="https://doi.org/gf5cqt">https://doi.org/gf5cqt</a> <br />
 DOI: <a href="https://doi.org/10.7554/elife.45133.001">10.7554/elife.45133.001</a></p>
 </div>
 <div id="ref-ZTyQYlDz">
-<p>9. <strong>arXiv.org: the Los Alamos National Laboratory e‐print server</strong><br />
+<p>9. <strong>arXiv.org: the Los Alamos National Laboratory e‐print server</strong> <br />
 Gerry McKiernan<br />
-<em>International Journal on Grey Literature</em> (2000-09) <a href="https://doi.org/fg8pw7">https://doi.org/fg8pw7</a><br />
+<em>International Journal on Grey Literature</em> (2000-09) <a href="https://doi.org/fg8pw7">https://doi.org/fg8pw7</a> <br />
 DOI: <a href="https://doi.org/10.1108/14666180010345564">10.1108/14666180010345564</a></p>
 </div>
 <div id="ref-NKHNs9j3">
-<p>10. <strong>medRxiv.org - the preprint server for Health Sciences</strong><a href="https://www.medrxiv.org/">https://www.medrxiv.org/</a></p>
+<p>10. <strong>medRxiv.org - the preprint server for Health Sciences</strong> <a href="https://www.medrxiv.org/">https://www.medrxiv.org/</a></p>
 </div>
 <div id="ref-lMj4YzIP">
-<p>11. <strong>The Second Wave of Preprint Servers: How Can Publishers Keep Afloat?</strong><br />
+<p>11. <strong>The Second Wave of Preprint Servers: How Can Publishers Keep Afloat?</strong> <br />
 By<br />
 <em>The Scholarly Kitchen</em> (2019-10-16) <a href="https://scholarlykitchen.sspnet.org/2019/10/16/the-second-wave-of-preprint-servers-how-can-publishers-keep-afloat/">https://scholarlykitchen.sspnet.org/2019/10/16/the-second-wave-of-preprint-servers-how-can-publishers-keep-afloat/</a></p>
 </div>
 <div id="ref-Cy352E90">
-<p>12. <strong>Preprints: An underutilized mechanism to accelerate outbreak science</strong><br />
+<p>12. <strong>Preprints: An underutilized mechanism to accelerate outbreak science</strong> <br />
 Michael A. Johansson, Nicholas G. Reich, Lauren Ancel Meyers, Marc Lipsitch<br />
-<em>PLOS Medicine</em> (2018-04-03) <a href="https://doi.org/gg922h">https://doi.org/gg922h</a><br />
+<em>PLOS Medicine</em> (2018-04-03) <a href="https://doi.org/gg922h">https://doi.org/gg922h</a> <br />
 DOI: <a href="https://doi.org/10.1371/journal.pmed.1002549">10.1371/journal.pmed.1002549</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29614073">29614073</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5882117">PMC5882117</a></p>
 </div>
 <div id="ref-jXP4z24U">
-<p>13. <strong>On the value of preprints: An early career researcher perspective</strong><br />
+<p>13. <strong>On the value of preprints: An early career researcher perspective</strong> <br />
 Sarvenaz Sarabipour, Humberto J. Debat, Edward Emmott, Steven J. Burgess, Benjamin Schwessinger, Zach Hensel<br />
-<em>PLOS Biology</em> (2019-02-21) <a href="https://doi.org/gfw8hd">https://doi.org/gfw8hd</a><br />
+<em>PLOS Biology</em> (2019-02-21) <a href="https://doi.org/gfw8hd">https://doi.org/gfw8hd</a> <br />
 DOI: <a href="https://doi.org/10.1371/journal.pbio.3000151">10.1371/journal.pbio.3000151</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30789895">30789895</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6400415">PMC6400415</a></p>
 </div>
 <div id="ref-YmvKU4HJ">
-<p>14. <strong>In praise of preprints</strong><br />
+<p>14. <strong>In praise of preprints</strong> <br />
 Norman K. Fry, Helina Marshall, Tasha Mellins-Cohen<br />
-<em>Microbial Genomics</em> (2019-04-01) <a href="https://doi.org/gg3bxc">https://doi.org/gg3bxc</a><br />
+<em>Microbial Genomics</em> (2019-04-01) <a href="https://doi.org/gg3bxc">https://doi.org/gg3bxc</a> <br />
 DOI: <a href="https://doi.org/10.1099/mgen.0.000259">10.1099/mgen.0.000259</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30938670">30938670</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6521583">PMC6521583</a></p>
 </div>
 <div id="ref-1DCEzEMkZ">
-<p>15. <strong>Rxivist.org: Sorting biology preprints using social media and readership metrics</strong><br />
+<p>15. <strong>Rxivist.org: Sorting biology preprints using social media and readership metrics</strong> <br />
 Richard J. Abdill, Ran Blekhman<br />
-<em>PLOS Biology</em> (2019-05-21) <a href="https://doi.org/dm27">https://doi.org/dm27</a><br />
+<em>PLOS Biology</em> (2019-05-21) <a href="https://doi.org/dm27">https://doi.org/dm27</a> <br />
 DOI: <a href="https://doi.org/10.1371/journal.pbio.3000269">10.1371/journal.pbio.3000269</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31112533">31112533</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6546241">PMC6546241</a></p>
 </div>
 <div id="ref-PJwR7lcq">
-<p>16. <strong>How the Scientific Community Reacts to Newly Submitted Preprints: Article Downloads, Twitter Mentions, and Citations</strong><br />
+<p>16. <strong>How the Scientific Community Reacts to Newly Submitted Preprints: Article Downloads, Twitter Mentions, and Citations</strong> <br />
 Xin Shuai, Alberto Pepe, Johan Bollen<br />
-<em>PLoS ONE</em> (2012-11-01) <a href="https://doi.org/f4cw6r">https://doi.org/f4cw6r</a><br />
+<em>PLoS ONE</em> (2012-11-01) <a href="https://doi.org/f4cw6r">https://doi.org/f4cw6r</a> <br />
 DOI: <a href="https://doi.org/10.1371/journal.pone.0047523">10.1371/journal.pone.0047523</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23133597">23133597</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3486871">PMC3486871</a></p>
 </div>
 <div id="ref-13dwNbYs7">
-<p>17. <strong>The relationship between bioRxiv preprints, citations and altmetrics</strong><br />
+<p>17. <strong>The relationship between bioRxiv preprints, citations and altmetrics</strong> <br />
 Nicholas Fraser, Fakhri Momeni, Philipp Mayr, Isabella Peters<br />
-<em>Quantitative Science Studies</em> (2020-04-01) <a href="https://doi.org/gg2cz3">https://doi.org/gg2cz3</a><br />
+<em>Quantitative Science Studies</em> (2020-04-01) <a href="https://doi.org/gg2cz3">https://doi.org/gg2cz3</a> <br />
 DOI: <a href="https://doi.org/10.1162/qss_a_00043">10.1162/qss_a_00043</a></p>
 </div>
 <div id="ref-49GeQtua">
-<p>18. <strong>Releasing a preprint is associated with more attention and citations for the peer-reviewed article</strong><br />
+<p>18. <strong>Releasing a preprint is associated with more attention and citations for the peer-reviewed article</strong> <br />
 Darwin Y Fu, Jacob J Hughey<br />
-<em>eLife</em> (2019-12-06) <a href="https://doi.org/ghd3mv">https://doi.org/ghd3mv</a><br />
+<em>eLife</em> (2019-12-06) <a href="https://doi.org/ghd3mv">https://doi.org/ghd3mv</a> <br />
 DOI: <a href="https://doi.org/10.7554/elife.52646">10.7554/elife.52646</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31808742">31808742</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6914335">PMC6914335</a></p>
 </div>
 <div id="ref-tbWPLbOF">
-<p>19. <strong>Quantifying and contextualizing the impact of bioRxiv preprints through automated social media audience segmentation</strong><br />
+<p>19. <strong>Quantifying and contextualizing the impact of bioRxiv preprints through automated social media audience segmentation</strong> <br />
 Jedidiah Carlson, Kelley Harris<br />
-<em>Cold Spring Harbor Laboratory</em> (2020-03-10) <a href="https://doi.org/ghdd66">https://doi.org/ghdd66</a><br />
+<em>Cold Spring Harbor Laboratory</em> (2020-03-10) <a href="https://doi.org/ghdd66">https://doi.org/ghdd66</a> <br />
 DOI: <a href="https://doi.org/10.1101/2020.03.06.981589">10.1101/2020.03.06.981589</a></p>
 </div>
 <div id="ref-LcHjf487">
-<p>20. <strong>An analysis of published journals for papers posted on bioR <sub>X</sub> iv</strong><br />
+<p>20. <strong>An analysis of published journals for papers posted on bioR <sub>X</sub> iv</strong> <br />
 Hiroyuki Tsunoda, Yuan Sun, Masaki Nishizawa, Xiaomin Liu, Kou Amano<br />
-<em>Proceedings of the Association for Information Science and Technology</em> (2019-10-18) <a href="https://doi.org/ggz7f9">https://doi.org/ggz7f9</a><br />
+<em>Proceedings of the Association for Information Science and Technology</em> (2019-10-18) <a href="https://doi.org/ggz7f9">https://doi.org/ggz7f9</a> <br />
 DOI: <a href="https://doi.org/10.1002/pra2.175">10.1002/pra2.175</a></p>
 </div>
 <div id="ref-tTgEr7g1">
-<p>21. <strong>The Need for Speed: How Quickly Do Preprints Become Published Articles?</strong><br />
+<p>21. <strong>The Need for Speed: How Quickly Do Preprints Become Published Articles?</strong> <br />
 Rachel Herbert, Kate Gasson, Alex Ponsford<br />
-<em>SSRN Electronic Journal</em> (2019) <a href="https://doi.org/ghd3mt">https://doi.org/ghd3mt</a><br />
+<em>SSRN Electronic Journal</em> (2019) <a href="https://doi.org/ghd3mt">https://doi.org/ghd3mt</a> <br />
 DOI: <a href="https://doi.org/10.2139/ssrn.3455146">10.2139/ssrn.3455146</a></p>
 </div>
 <div id="ref-9gVmEi52">
-<p>22. <strong>Machine access and text/data mining resources | bioRxiv</strong><a href="https://www.biorxiv.org/tdm">https://www.biorxiv.org/tdm</a></p>
+<p>22. <strong>Machine access and text/data mining resources | bioRxiv</strong> <a href="https://www.biorxiv.org/tdm">https://www.biorxiv.org/tdm</a></p>
 </div>
 <div id="ref-u294RvPz">
-<p>23. <strong>PubMed Central: The GenBank of the published literature</strong><br />
+<p>23. <strong>PubMed Central: The GenBank of the published literature</strong> <br />
 R. J. Roberts<br />
-<em>Proceedings of the National Academy of Sciences</em> (2001-01-16) <a href="https://doi.org/bbn9k8">https://doi.org/bbn9k8</a><br />
+<em>Proceedings of the National Academy of Sciences</em> (2001-01-16) <a href="https://doi.org/bbn9k8">https://doi.org/bbn9k8</a> <br />
 DOI: <a href="https://doi.org/10.1073/pnas.98.2.381">10.1073/pnas.98.2.381</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/11209037">11209037</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC33354">PMC33354</a></p>
 </div>
 <div id="ref-iyblQx2M">
-<p>24. <strong>Gold open access: the best of both worlds</strong><br />
+<p>24. <strong>Gold open access: the best of both worlds</strong> <br />
 M. A. G. van der Heyden, T. A. B. van Veen<br />
-<em>Netherlands Heart Journal</em> (2017-12-01) <a href="https://doi.org/ggzfr9">https://doi.org/ggzfr9</a><br />
+<em>Netherlands Heart Journal</em> (2017-12-01) <a href="https://doi.org/ggzfr9">https://doi.org/ggzfr9</a> <br />
 DOI: <a href="https://doi.org/10.1007/s12471-017-1064-2">10.1007/s12471-017-1064-2</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29196877">29196877</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5758455">PMC5758455</a></p>
 </div>
 <div id="ref-lBh7pyRc">
-<p>25. <strong>How Papers Get Into PMC</strong><a href="https://www.ncbi.nlm.nih.gov/pmc/about/submission-methods/">https://www.ncbi.nlm.nih.gov/pmc/about/submission-methods/</a></p>
+<p>25. <strong>How Papers Get Into PMC</strong> <a href="https://www.ncbi.nlm.nih.gov/pmc/about/submission-methods/">https://www.ncbi.nlm.nih.gov/pmc/about/submission-methods/</a></p>
 </div>
 <div id="ref-vGaAJBqg">
-<p>26. <strong>8.2.2 NIH Public Access Policy</strong><a href="https://grants.nih.gov/grants/policy/nihgps/html5/section_8/8.2.2_nih_public_access_policy.htm">https://grants.nih.gov/grants/policy/nihgps/html5/section_8/8.2.2_nih_public_access_policy.htm</a></p>
+<p>26. <strong>8.2.2 NIH Public Access Policy</strong> <a href="https://grants.nih.gov/grants/policy/nihgps/html5/section_8/8.2.2_nih_public_access_policy.htm">https://grants.nih.gov/grants/policy/nihgps/html5/section_8/8.2.2_nih_public_access_policy.htm</a></p>
 </div>
 <div id="ref-rzmpIYmn">
-<p>27. <strong>PMC Overview</strong><a href="https://www.ncbi.nlm.nih.gov/pmc/about/intro/">https://www.ncbi.nlm.nih.gov/pmc/about/intro/</a></p>
+<p>27. <strong>PMC Overview</strong> <a href="https://www.ncbi.nlm.nih.gov/pmc/about/intro/">https://www.ncbi.nlm.nih.gov/pmc/about/intro/</a></p>
 </div>
 <div id="ref-rURwqquJ">
-<p>28. <strong>PMC text mining subset in BioC: about three million full-text articles and growing</strong><br />
+<p>28. <strong>PMC text mining subset in BioC: about three million full-text articles and growing</strong> <br />
 Donald C Comeau, Chih-Hsuan Wei, Rezarta Islamaj Doğan, Zhiyong Lu<br />
-<em>Bioinformatics</em> (2019-09-15) <a href="https://doi.org/ggzfsb">https://doi.org/ggzfsb</a><br />
+<em>Bioinformatics</em> (2019-09-15) <a href="https://doi.org/ggzfsb">https://doi.org/ggzfsb</a> <br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btz070">10.1093/bioinformatics/btz070</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30715220">30715220</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6748740">PMC6748740</a></p>
 </div>
 <div id="ref-18ZyyTcTe">
-<p>29. <strong>PubTator central: automated concept annotation for biomedical full text articles</strong><br />
+<p>29. <strong>PubTator central: automated concept annotation for biomedical full text articles</strong> <br />
 Chih-Hsuan Wei, Alexis Allot, Robert Leaman, Zhiyong Lu<br />
-<em>Nucleic Acids Research</em> (2019-07-02) <a href="https://doi.org/ggzfsc">https://doi.org/ggzfsc</a><br />
+<em>Nucleic Acids Research</em> (2019-07-02) <a href="https://doi.org/ggzfsc">https://doi.org/ggzfsc</a> <br />
 DOI: <a href="https://doi.org/10.1093/nar/gkz389">10.1093/nar/gkz389</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31114887">31114887</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6602571">PMC6602571</a></p>
 </div>
-<div id="ref-x0knW0CT">
-<p>30. <strong>The new york times annotated corpus</strong><br />
-Evan Sandhaus<br />
-<em>Linguistic Data Consortium, Philadelphia</em> (2008)</p>
-</div>
-<div id="ref-SvGadRGC">
-<p>31. <strong>spaCy 2: Natural language understanding with Bloom embeddings, convolutional neural networks and incremental parsing</strong><br />
-Matthew Honnibal, Ines Montani<br />
-(2017)</p>
-</div>
 <div id="ref-Lgm5q6mO">
-<p>32. <strong>Odds Ratio (OR)</strong><br />
+<p>30. <strong>Odds Ratio (OR)</strong> <br />
 Steven Tenny, Mary R. Hoffman<br />
 <em>StatPearls</em> (2020) <a href="http://www.ncbi.nlm.nih.gov/books/NBK431098/">http://www.ncbi.nlm.nih.gov/books/NBK431098/</a></p>
 </div>
-<div id="ref-Gc4hOzur">
-<p>33. <strong>Software Framework for Topic Modelling with Large Corpora</strong><br />
-Radim Řehůřek, Petr Sojka<br />
-<em>Proceedings of the LREC 2010 Workshop on New Challenges for NLP Frameworks</em> (2010-05-22)</p>
-</div>
 <div id="ref-1GhHIDxuW">
-<p>34. <strong>Efficient Estimation of Word Representations in Vector Space</strong><br />
+<p>31. <strong>Efficient Estimation of Word Representations in Vector Space</strong> <br />
 Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean<br />
 <em>arXiv</em> (2013-09-10) <a href="https://arxiv.org/abs/1301.3781">https://arxiv.org/abs/1301.3781</a></p>
 </div>
 <div id="ref-qkjVrvqt">
-<p>35. <strong>Probabilistic Principal Component Analysis</strong><br />
+<p>32. <strong>Probabilistic Principal Component Analysis</strong> <br />
 Michael E. Tipping, Christopher M. Bishop<br />
-<em>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</em> (1999-08) <a href="https://doi.org/b3hjwt">https://doi.org/b3hjwt</a><br />
+<em>Journal of the Royal Statistical Society: Series B (Statistical Methodology)</em> (1999-08) <a href="https://doi.org/b3hjwt">https://doi.org/b3hjwt</a> <br />
 DOI: <a href="https://doi.org/10.1111/1467-9868.00196">10.1111/1467-9868.00196</a></p>
 </div>
-<div id="ref-QrtjCwXA">
-<p>36. <strong>Scikit-learn: Machine learning in Python</strong><br />
-F. Pedregosa, G. Varoquaux, A. Gramfort, V. Michel, B. Thirion, O. Grisel, M. Blondel, P. Prettenhofer, R. Weiss, V. Dubourg, … E. Duchesnay<br />
-<em>Journal of Machine Learning Research</em> (2011)</p>
-</div>
 <div id="ref-7tMTyalf">
-<p>37. <strong>Finding structure with randomness: Probabilistic algorithms for constructing approximate matrix decompositions</strong><br />
+<p>33. <strong>Finding structure with randomness: Probabilistic algorithms for constructing approximate matrix decompositions</strong> <br />
 Nathan Halko, Per-Gunnar Martinsson, Joel A. Tropp<br />
 <em>arXiv</em> (2014-04-29) <a href="https://arxiv.org/abs/0909.4061">https://arxiv.org/abs/0909.4061</a></p>
 </div>
 <div id="ref-1Bpwk7s3x">
-<p>38. <strong>The <em>Drosophila</em> Cortactin Binding Protein 2 homolog, Nausicaa, regulates lamellipodial actin dynamics in a Cortactin-dependent manner</strong><br />
+<p>34. <strong>The <em>Drosophila</em> Cortactin Binding Protein 2 homolog, Nausicaa, regulates lamellipodial actin dynamics in a Cortactin-dependent manner</strong> <br />
 Meghan E. O’Connell, Divya Sridharan, Tristan Driscoll, Ipsita Krishnamurthy, Wick G. Perry, Derek A. Applewhite<br />
-<em>bioRxiv</em> (2018-07-24) <a href="https://doi.org/gg4hp7">https://doi.org/gg4hp7</a><br />
+<em>bioRxiv</em> (2018-07-24) <a href="https://doi.org/gg4hp7">https://doi.org/gg4hp7</a> <br />
 DOI: <a href="https://doi.org/10.1101/376665">10.1101/376665</a></p>
 </div>
 <div id="ref-iBFkqblV">
-<p>39. <strong>The <em>Drosophila</em> protein, Nausicaa, regulates lamellipodial actin dynamics in a Cortactin-dependent manner</strong><br />
+<p>35. <strong>The <em>Drosophila</em> protein, Nausicaa, regulates lamellipodial actin dynamics in a Cortactin-dependent manner</strong> <br />
 Meghan E. O’Connell, Divya Sridharan, Tristan Driscoll, Ipsita Krishnamurthy, Wick G. Perry, Derek A. Applewhite<br />
-<em>Biology Open</em> (2019-06-15) <a href="https://doi.org/gg4hp8">https://doi.org/gg4hp8</a><br />
+<em>Biology Open</em> (2019-06-15) <a href="https://doi.org/gg4hp8">https://doi.org/gg4hp8</a> <br />
 DOI: <a href="https://doi.org/10.1242/bio.038232">10.1242/bio.038232</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31164339">31164339</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6602326">PMC6602326</a></p>
 </div>
 <div id="ref-XnHb341s">
-<p>40. <strong>CrossRef Text and Data Mining Services</strong><br />
+<p>36. <strong>CrossRef Text and Data Mining Services</strong> <br />
 Rachael Lammey<br />
-<em>Insights the UKSG journal</em> (2015-07-07) <a href="https://doi.org/gg4hp9">https://doi.org/gg4hp9</a><br />
+<em>Insights the UKSG journal</em> (2015-07-07) <a href="https://doi.org/gg4hp9">https://doi.org/gg4hp9</a> <br />
 DOI: <a href="https://doi.org/10.1629/uksg.233">10.1629/uksg.233</a></p>
 </div>
 <div id="ref-LxhnWcbN">
-<p>41. <strong>Assessing the Heterogeneity of Cardiac Non-myocytes and the Effect of Cell Culture with Integrative Single Cell Analysis</strong><br />
+<p>37. <strong>Assessing the Heterogeneity of Cardiac Non-myocytes and the Effect of Cell Culture with Integrative Single Cell Analysis</strong> <br />
 Brian S. Iskra, Logan Davis, Henry E. Miller, Yu-Chiao Chiu, Alexander R. Bishop, Yidong Chen, Gregory J. Aune<br />
-<em>bioRxiv</em> (2020-03-05) <a href="https://doi.org/gg9353">https://doi.org/gg9353</a><br />
+<em>bioRxiv</em> (2020-03-05) <a href="https://doi.org/gg9353">https://doi.org/gg9353</a> <br />
 DOI: <a href="https://doi.org/10.1101/2020.03.04.975177">10.1101/2020.03.04.975177</a></p>
 </div>
 <div id="ref-iPnRRJya">
-<p>42. <strong>Tracking the popularity and outcomes of all bioRxiv preprints</strong><br />
+<p>38. <strong>Tracking the popularity and outcomes of all bioRxiv preprints</strong> <br />
 Richard J Abdill, Ran Blekhman<br />
-<em>eLife</em> (2019-04-24) <a href="https://doi.org/gf2str">https://doi.org/gf2str</a><br />
+<em>eLife</em> (2019-04-24) <a href="https://doi.org/gf2str">https://doi.org/gf2str</a> <br />
 DOI: <a href="https://doi.org/10.7554/elife.45133">10.7554/elife.45133</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31017570">31017570</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6510536">PMC6510536</a></p>
 </div>
 <div id="ref-mTE5h91z">
-<p>43. <strong>Altmetric Scores, Citations, and Publication of Studies Posted as Preprints</strong><br />
+<p>39. <strong>Altmetric Scores, Citations, and Publication of Studies Posted as Preprints</strong> <br />
 Stylianos Serghiou, John P. A. Ioannidis<br />
-<em>JAMA</em> (2018-01-23) <a href="https://doi.org/gftc69">https://doi.org/gftc69</a><br />
+<em>JAMA</em> (2018-01-23) <a href="https://doi.org/gftc69">https://doi.org/gftc69</a> <br />
 DOI: <a href="https://doi.org/10.1001/jama.2017.21168">10.1001/jama.2017.21168</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29362788">29362788</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5833561">PMC5833561</a></p>
 </div>
 <div id="ref-oeGSw37I">
-<p>44. <strong>A Coefficient of Agreement for Nominal Scales</strong><br />
+<p>40. <strong>A Coefficient of Agreement for Nominal Scales</strong> <br />
 Jacob Cohen<br />
-<em>Educational and Psychological Measurement</em> (2016-07-02) <a href="https://doi.org/dghsrr">https://doi.org/dghsrr</a><br />
+<em>Educational and Psychological Measurement</em> (2016-07-02) <a href="https://doi.org/dghsrr">https://doi.org/dghsrr</a> <br />
 DOI: <a href="https://doi.org/10.1177/001316446002000104">10.1177/001316446002000104</a></p>
 </div>
 <div id="ref-1FHYUCO1v">
-<p>45. <strong>Biologists debate how to license preprints</strong><br />
+<p>41. <strong>Biologists debate how to license preprints</strong> <br />
 Lindsay McKenzie<br />
-<em>Nature</em> (2017-06-16) <a href="https://doi.org/b9fb">https://doi.org/b9fb</a><br />
+<em>Nature</em> (2017-06-16) <a href="https://doi.org/b9fb">https://doi.org/b9fb</a> <br />
 DOI: <a href="https://doi.org/10.1038/nature.2017.22161">10.1038/nature.2017.22161</a></p>
 </div>
 <div id="ref-11GpiE0CN">
-<p>46. <strong>The licensing of <em>bioRxiv</em> preprints</strong><br />
+<p>42. <strong>The licensing of <em>bioRxiv</em> preprints</strong> <br />
 Daniel Himmelstein<br />
 <em>Satoshi Village</em> (2016-12-05) <a href="https://blog.dhimmel.com/biorxiv-licenses/">https://blog.dhimmel.com/biorxiv-licenses/</a></p>
 </div>
 <div id="ref-ddvF5sXo">
-<p>47. <strong>Conditional Robust Calibration (CRC): a new computational Bayesian methodology for model parameters estimation and identifiability analysis</strong><br />
+<p>43. <strong>Conditional Robust Calibration (CRC): a new computational Bayesian methodology for model parameters estimation and identifiability analysis</strong> <br />
 Fortunato Bianconi, Chiara Antonini, Lorenzo Tomassoni, Paolo Valigi<br />
-<em>bioRxiv</em> (2017-10-02) <a href="https://doi.org/gg9393">https://doi.org/gg9393</a><br />
+<em>bioRxiv</em> (2017-10-02) <a href="https://doi.org/gg9393">https://doi.org/gg9393</a> <br />
 DOI: <a href="https://doi.org/10.1101/197400">10.1101/197400</a></p>
 </div>
 <div id="ref-18dTP7Wfc">
-<p>48. <strong>Machine learning of stochastic gene network phenotypes</strong><br />
+<p>44. <strong>Machine learning of stochastic gene network phenotypes</strong> <br />
 Kyemyung Park, Thorsten Prüstel, Yong Lu, John S. Tsang<br />
-<em>bioRxiv</em> (2019-10-31) <a href="https://doi.org/gg94bm">https://doi.org/gg94bm</a><br />
+<em>bioRxiv</em> (2019-10-31) <a href="https://doi.org/gg94bm">https://doi.org/gg94bm</a> <br />
 DOI: <a href="https://doi.org/10.1101/825943">10.1101/825943</a></p>
 </div>
 <div id="ref-UmFNlo8W">
-<p>49. <strong>Notions of similarity for computational biology models</strong><br />
+<p>45. <strong>Notions of similarity for computational biology models</strong> <br />
 Ron Henkel, Robert Hoehndorf, Tim Kacprowski, Christian Knüpfer, Wolfram Liebermeister, Dagmar Waltemath<br />
-<em>bioRxiv</em> (2016-03-21) <a href="https://doi.org/gg939z">https://doi.org/gg939z</a><br />
+<em>bioRxiv</em> (2016-03-21) <a href="https://doi.org/gg939z">https://doi.org/gg939z</a> <br />
 DOI: <a href="https://doi.org/10.1101/044818">10.1101/044818</a></p>
 </div>
 <div id="ref-16tWubqOj">
-<p>50. <strong>GpABC: a Julia package for approximate Bayesian computation with Gaussian process emulation</strong><br />
+<p>46. <strong>GpABC: a Julia package for approximate Bayesian computation with Gaussian process emulation</strong> <br />
 Evgeny Tankhilevich, Jonathan Ish-Horowicz, Tara Hameed, Elisabeth Roesch, Istvan Kleijn, Michael PH Stumpf, Fei He<br />
-<em>bioRxiv</em> (2019-09-18) <a href="https://doi.org/gg94bj">https://doi.org/gg94bj</a><br />
+<em>bioRxiv</em> (2019-09-18) <a href="https://doi.org/gg94bj">https://doi.org/gg94bj</a> <br />
 DOI: <a href="https://doi.org/10.1101/769299">10.1101/769299</a></p>
 </div>
 <div id="ref-6gfAR2hM">
-<p>51. <strong>SBpipe: a collection of pipelines for automating repetitive simulation and analysis tasks</strong><br />
+<p>47. <strong>SBpipe: a collection of pipelines for automating repetitive simulation and analysis tasks</strong> <br />
 Piero Dalle Pezze, Nicolas Le Novère<br />
-<em>bioRxiv</em> (2017-02-09) <a href="https://doi.org/gg9392">https://doi.org/gg9392</a><br />
+<em>bioRxiv</em> (2017-02-09) <a href="https://doi.org/gg9392">https://doi.org/gg9392</a> <br />
 DOI: <a href="https://doi.org/10.1101/107250">10.1101/107250</a></p>
 </div>
 <div id="ref-2V2BJL87">
-<p>52. <strong>Spatiotemporal proteomics uncovers cathepsin-dependent host cell death during bacterial infection</strong><br />
+<p>48. <strong>Spatiotemporal proteomics uncovers cathepsin-dependent host cell death during bacterial infection</strong> <br />
 Joel Selkrig, Nan Li, Jacob Bobonis, Annika Hausmann, Anna Sueki, Haruna Imamura, Bachir El Debs, Gianluca Sigismondo, Bogdan I. Florea, Herman S. Overkleeft, … Athanasios Typas<br />
-<em>bioRxiv</em> (2018-11-07) <a href="https://doi.org/gg94bc">https://doi.org/gg94bc</a><br />
+<em>bioRxiv</em> (2018-11-07) <a href="https://doi.org/gg94bc">https://doi.org/gg94bc</a> <br />
 DOI: <a href="https://doi.org/10.1101/455048">10.1101/455048</a></p>
 </div>
 <div id="ref-4BUSt1jK">
-<p>53. <strong>Systems analysis by mass cytometry identifies susceptibility of latent HIV-infected T cells to targeting of p38 and mTOR pathways</strong><br />
+<p>49. <strong>Systems analysis by mass cytometry identifies susceptibility of latent HIV-infected T cells to targeting of p38 and mTOR pathways</strong> <br />
 Linda E. Fong, Victor L. Bass, Serena Spudich, Kathryn Miller-Jensen<br />
-<em>bioRxiv</em> (2018-07-19) <a href="https://doi.org/gg9398">https://doi.org/gg9398</a><br />
+<em>bioRxiv</em> (2018-07-19) <a href="https://doi.org/gg9398">https://doi.org/gg9398</a> <br />
 DOI: <a href="https://doi.org/10.1101/371922">10.1101/371922</a></p>
 </div>
 <div id="ref-nzDb3Lvn">
-<p>54. <strong>NADPH consumption by L-cystine reduction creates a metabolic vulnerability upon glucose deprivation</strong><br />
+<p>50. <strong>NADPH consumption by L-cystine reduction creates a metabolic vulnerability upon glucose deprivation</strong> <br />
 James H. Joly, Alireza Delfarah, Philip S. Phung, Sydney Parrish, Nicholas A. Graham<br />
-<em>bioRxiv</em> (2019-08-13) <a href="https://doi.org/gg94bf">https://doi.org/gg94bf</a><br />
+<em>bioRxiv</em> (2019-08-13) <a href="https://doi.org/gg94bf">https://doi.org/gg94bf</a> <br />
 DOI: <a href="https://doi.org/10.1101/733162">10.1101/733162</a></p>
 </div>
 <div id="ref-1CM9H3mFb">
-<p>55. <strong>Inhibition of Bruton’s tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease</strong><br />
+<p>51. <strong>Inhibition of Bruton’s tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease</strong> <br />
 Gareth S. D. Purvis, Massimo Collino, Haidee M. A. Tavio, Fausto Chiazza, Caroline E. O’Riodan, Lynda Zeboudj, Nick Guisot, Peter Bunyard, David R. Greaves, Christoph Thiemermann<br />
-<em>bioRxiv</em> (2019-08-28) <a href="https://doi.org/gg94bg">https://doi.org/gg94bg</a><br />
+<em>bioRxiv</em> (2019-08-28) <a href="https://doi.org/gg94bg">https://doi.org/gg94bg</a> <br />
 DOI: <a href="https://doi.org/10.1101/745943">10.1101/745943</a></p>
 </div>
 <div id="ref-jmFU2eta">
-<p>56. <strong>AKT but not MYC promotes reactive oxygen species-mediated cell death in oxidative culture</strong><br />
+<p>52. <strong>AKT but not MYC promotes reactive oxygen species-mediated cell death in oxidative culture</strong> <br />
 Dongqing Zheng, Jonathan H. Sussman, Matthew P. Jeon, Sydney T. Parrish, Alireza Delfarah, Nicholas A. Graham<br />
-<em>bioRxiv</em> (2019-09-01) <a href="https://doi.org/gg94bh">https://doi.org/gg94bh</a><br />
+<em>bioRxiv</em> (2019-09-01) <a href="https://doi.org/gg94bh">https://doi.org/gg94bh</a> <br />
 DOI: <a href="https://doi.org/10.1101/754572">10.1101/754572</a></p>
 </div>
 <div id="ref-xq8RfP8M">
-<p>57. <strong>Pangenome Analysis of Enterobacteria Reveals Richness of Secondary Metabolite Gene Clusters and their Associated Gene Sets</strong><br />
+<p>53. <strong>Pangenome Analysis of Enterobacteria Reveals Richness of Secondary Metabolite Gene Clusters and their Associated Gene Sets</strong> <br />
 Omkar S. Mohite, Colton J. Lloyd, Jonathan M. Monk, Tilmann Weber, Bernhard O. Palsson<br />
-<em>bioRxiv</em> (2019-09-25) <a href="https://doi.org/gg94bk">https://doi.org/gg94bk</a><br />
+<em>bioRxiv</em> (2019-09-25) <a href="https://doi.org/gg94bk">https://doi.org/gg94bk</a> <br />
 DOI: <a href="https://doi.org/10.1101/781328">10.1101/781328</a></p>
 </div>
 <div id="ref-18IbfyQMk">
-<p>58. <strong>QTG-Finder: a machine-learning based algorithm to prioritize causal genes of quantitative trait loci</strong><br />
+<p>54. <strong>QTG-Finder: a machine-learning based algorithm to prioritize causal genes of quantitative trait loci</strong> <br />
 Fan Lin, Jue Fan, Seung Y. Rhee<br />
-<em>bioRxiv</em> (2019-04-29) <a href="https://doi.org/gg94bd">https://doi.org/gg94bd</a><br />
+<em>bioRxiv</em> (2019-04-29) <a href="https://doi.org/gg94bd">https://doi.org/gg94bd</a> <br />
 DOI: <a href="https://doi.org/10.1101/484204">10.1101/484204</a></p>
 </div>
 <div id="ref-TcV6ekeM">
-<p>59. <strong>Identification of candidate genes underlying nodulation-specific phenotypes in <em>Medicago truncotula</em> through integration of genome-wide association studies and co-expression networks</strong><br />
+<p>55. <strong>Identification of candidate genes underlying nodulation-specific phenotypes in <em>Medicago truncotula</em> through integration of genome-wide association studies and co-expression networks</strong> <br />
 Jean-Michel Michno, Liana T. Burghardt, Junqi Liu, Joseph R. Jeffers, Peter Tiffin, Robert M. Stupar, Chad L. Myers<br />
-<em>bioRxiv</em> (2018-08-16) <a href="https://doi.org/gg94bb">https://doi.org/gg94bb</a><br />
+<em>bioRxiv</em> (2018-08-16) <a href="https://doi.org/gg94bb">https://doi.org/gg94bb</a> <br />
 DOI: <a href="https://doi.org/10.1101/392779">10.1101/392779</a></p>
 </div>
 <div id="ref-1GhuF05Hx">
-<p>60. <strong>Raw sequence to target gene prediction: An integrated inference pipeline for ChIP-seq and RNA-seq datasets</strong><br />
+<p>56. <strong>Raw sequence to target gene prediction: An integrated inference pipeline for ChIP-seq and RNA-seq datasets</strong> <br />
 Nisar Wani, Khalid Raza<br />
-<em>bioRxiv</em> (2017-11-16) <a href="https://doi.org/gg9394">https://doi.org/gg9394</a><br />
+<em>bioRxiv</em> (2017-11-16) <a href="https://doi.org/gg9394">https://doi.org/gg9394</a> <br />
 DOI: <a href="https://doi.org/10.1101/220152">10.1101/220152</a></p>
 </div>
 <div id="ref-111HFfchz">
-<p>61. <strong>The y-ome defines the thirty-four percent of <em>Escherichia coli</em> genes that lack experimental evidence of function</strong><br />
+<p>57. <strong>The y-ome defines the thirty-four percent of <em>Escherichia coli</em> genes that lack experimental evidence of function</strong> <br />
 Sankha Ghatak, Zachary A. King, Anand Sastry, Bernhard O. Palsson<br />
-<em>bioRxiv</em> (2018-12-03) <a href="https://doi.org/gg9396">https://doi.org/gg9396</a><br />
+<em>bioRxiv</em> (2018-12-03) <a href="https://doi.org/gg9396">https://doi.org/gg9396</a> <br />
 DOI: <a href="https://doi.org/10.1101/328591">10.1101/328591</a></p>
 </div>
 <div id="ref-17Byktk2J">
-<p>62. <strong>The effects of time-varying temperature on delays in genetic networks</strong><br />
+<p>58. <strong>The effects of time-varying temperature on delays in genetic networks</strong> <br />
 Marcella M Gomez, Richard M Murray, Matthew R Bennett<br />
-<em>bioRxiv</em> (2015-09-24) <a href="https://doi.org/gg939x">https://doi.org/gg939x</a><br />
+<em>bioRxiv</em> (2015-09-24) <a href="https://doi.org/gg939x">https://doi.org/gg939x</a> <br />
 DOI: <a href="https://doi.org/10.1101/019687">10.1101/019687</a></p>
 </div>
 <div id="ref-INo8d1Br">
-<p>63. <strong>An analog to digital converter creates nuclear localization pulses in yeast calcium signaling</strong><br />
+<p>59. <strong>An analog to digital converter creates nuclear localization pulses in yeast calcium signaling</strong> <br />
 Ian S Hsu, Bob Strome, Sergey Plotnikov, Alan M Moses<br />
-<em>bioRxiv</em> (2018-06-28) <a href="https://doi.org/gg9397">https://doi.org/gg9397</a><br />
+<em>bioRxiv</em> (2018-06-28) <a href="https://doi.org/gg9397">https://doi.org/gg9397</a> <br />
 DOI: <a href="https://doi.org/10.1101/357939">10.1101/357939</a></p>
 </div>
 <div id="ref-wkaMFZ7G">
-<p>64. <strong>Nicotinic modulation of hierarchal inhibitory control over prefrontal cortex resting state dynamics: modeling of genetic modification and schizophreniarelated pathology</strong><br />
+<p>60. <strong>Nicotinic modulation of hierarchal inhibitory control over prefrontal cortex resting state dynamics: modeling of genetic modification and schizophreniarelated pathology</strong> <br />
 Marie Rooy, Fani Koukouli, Uwe Maskos, Boris Gutkin<br />
-<em>bioRxiv</em> (2018-04-13) <a href="https://doi.org/gg9395">https://doi.org/gg9395</a><br />
+<em>bioRxiv</em> (2018-04-13) <a href="https://doi.org/gg9395">https://doi.org/gg9395</a> <br />
 DOI: <a href="https://doi.org/10.1101/301051">10.1101/301051</a></p>
 </div>
 <div id="ref-17z6IVXTN">
-<p>65. <strong>Electrical propagation of vasodilatory signals in capillary networks</strong><br />
+<p>61. <strong>Electrical propagation of vasodilatory signals in capillary networks</strong> <br />
 Pilhwa Lee<br />
-<em>bioRxiv</em> (2019-11-13) <a href="https://doi.org/gg94bn">https://doi.org/gg94bn</a><br />
+<em>bioRxiv</em> (2019-11-13) <a href="https://doi.org/gg94bn">https://doi.org/gg94bn</a> <br />
 DOI: <a href="https://doi.org/10.1101/840280">10.1101/840280</a></p>
 </div>
 <div id="ref-WOFoFT9Q">
-<p>66. <strong>Dendritic spine geometry and spine apparatus organization govern the spatiotemporal dynamics of calcium</strong><br />
+<p>62. <strong>Dendritic spine geometry and spine apparatus organization govern the spatiotemporal dynamics of calcium</strong> <br />
 Miriam Bell, Tom Bartol, Terrence Sejnowski, Padmini Rangamani<br />
-<em>bioRxiv</em> (2019-05-29) <a href="https://doi.org/gg9399">https://doi.org/gg9399</a><br />
+<em>bioRxiv</em> (2019-05-29) <a href="https://doi.org/gg9399">https://doi.org/gg9399</a> <br />
 DOI: <a href="https://doi.org/10.1101/386367">10.1101/386367</a></p>
 </div>
 </div>
@@ -907,35 +887,35 @@ The plot on the right (B) is a bar chart of token frequency appearing in PMC and
 </thead>
 <tbody>
 <tr class="odd">
-<td>Conditional Robust Calibration (CRC): a new computational Bayesian methodology for model parameters estimation and identifiability analysis <span class="citation" data-cites="ddvF5sXo">[<a href="#ref-ddvF5sXo" role="doc-biblioref">47</a>]</span></td>
+<td>Conditional Robust Calibration (CRC): a new computational Bayesian methodology for model parameters estimation and identifiability analysis <span class="citation" data-cites="ddvF5sXo">[<a href="#ref-ddvF5sXo" role="doc-biblioref">43</a>]</span></td>
 <td>4.700554908074704</td>
 <td>None</td>
 <td><img src="images/paper-thumbnails/pc1/197400_thumbnail.png" title="fig:" /></td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2017/10/02/197400/F1.large.jpg</td>
 </tr>
 <tr class="even">
-<td>Machine learning of stochastic gene network phenotypes <span class="citation" data-cites="18dTP7Wfc">[<a href="#ref-18dTP7Wfc" role="doc-biblioref">48</a>]</span></td>
+<td>Machine learning of stochastic gene network phenotypes <span class="citation" data-cites="18dTP7Wfc">[<a href="#ref-18dTP7Wfc" role="doc-biblioref">44</a>]</span></td>
 <td>4.410660604449826</td>
 <td>CC-BY-NC-ND</td>
 <td><img src="images/paper-thumbnails/pc1/825943_thumbnail.png" title="fig:" /></td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2019/10/31/825943/F5.large.jpg</td>
 </tr>
 <tr class="odd">
-<td>Notions of similarity for computational biology models <span class="citation" data-cites="UmFNlo8W">[<a href="#ref-UmFNlo8W" role="doc-biblioref">49</a>]</span></td>
+<td>Notions of similarity for computational biology models <span class="citation" data-cites="UmFNlo8W">[<a href="#ref-UmFNlo8W" role="doc-biblioref">45</a>]</span></td>
 <td>4.355295926618207</td>
 <td>CC-BY-NC-ND</td>
 <td><img src="images/paper-thumbnails/pc1/044818_thumbnail.png" title="fig:" /></td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2016/03/21/044818/F1.large.jpg</td>
 </tr>
 <tr class="even">
-<td>GpABC: a Julia package for approximate Bayesian computation with Gaussian process emulation <span class="citation" data-cites="16tWubqOj">[<a href="#ref-16tWubqOj" role="doc-biblioref">50</a>]</span></td>
+<td>GpABC: a Julia package for approximate Bayesian computation with Gaussian process emulation <span class="citation" data-cites="16tWubqOj">[<a href="#ref-16tWubqOj" role="doc-biblioref">46</a>]</span></td>
 <td>4.351517618262304</td>
 <td>CC-BY-NC-ND</td>
 <td><img src="images/paper-thumbnails/pc1/769299_thumbnail.png" title="fig:" /></td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2019/09/18/769299/F1.large.jpg</td>
 </tr>
 <tr class="odd">
-<td>SBpipe: a collection of pipelines for automating repetitive simulation and analysis tasks <span class="citation" data-cites="6gfAR2hM">[<a href="#ref-6gfAR2hM" role="doc-biblioref">51</a>]</span></td>
+<td>SBpipe: a collection of pipelines for automating repetitive simulation and analysis tasks <span class="citation" data-cites="6gfAR2hM">[<a href="#ref-6gfAR2hM" role="doc-biblioref">47</a>]</span></td>
 <td>4.321847854182741</td>
 <td>CC-BY-NC-ND</td>
 <td><img src="images/paper-thumbnails/pc1/107250_thumbnail.png" title="fig:" /></td>
@@ -949,35 +929,35 @@ The plot on the right (B) is a bar chart of token frequency appearing in PMC and
 <td></td>
 </tr>
 <tr class="odd">
-<td>Spatiotemporal proteomics uncovers cathepsin-dependent host cell death during bacterial infection <span class="citation" data-cites="2V2BJL87">[<a href="#ref-2V2BJL87" role="doc-biblioref">52</a>]</span></td>
+<td>Spatiotemporal proteomics uncovers cathepsin-dependent host cell death during bacterial infection <span class="citation" data-cites="2V2BJL87">[<a href="#ref-2V2BJL87" role="doc-biblioref">48</a>]</span></td>
 <td>-4.263964235099807</td>
 <td>CC-BY-ND</td>
 <td><img src="images/paper-thumbnails/pc1/455048_thumbnail.png" title="fig:" /></td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2018/11/07/455048/F1.large.jpg</td>
 </tr>
 <tr class="even">
-<td>Systems analysis by mass cytometry identifies susceptibility of latent HIV-infected T cells to targeting of p38 and mTOR pathways <span class="citation" data-cites="4BUSt1jK">[<a href="#ref-4BUSt1jK" role="doc-biblioref">53</a>]</span></td>
+<td>Systems analysis by mass cytometry identifies susceptibility of latent HIV-infected T cells to targeting of p38 and mTOR pathways <span class="citation" data-cites="4BUSt1jK">[<a href="#ref-4BUSt1jK" role="doc-biblioref">49</a>]</span></td>
 <td>-4.279016673409032</td>
 <td>CC-BY-NC-ND</td>
 <td><img src="images/paper-thumbnails/pc1/371922_thumbnail.png" title="fig:" /></td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2018/07/19/371922/F1.large.jpg</td>
 </tr>
 <tr class="odd">
-<td>NADPH consumption by L-cystine reduction creates a metabolic vulnerability upon glucose deprivation <span class="citation" data-cites="nzDb3Lvn">[<a href="#ref-nzDb3Lvn" role="doc-biblioref">54</a>]</span></td>
+<td>NADPH consumption by L-cystine reduction creates a metabolic vulnerability upon glucose deprivation <span class="citation" data-cites="nzDb3Lvn">[<a href="#ref-nzDb3Lvn" role="doc-biblioref">50</a>]</span></td>
 <td>-4.592209988884236</td>
 <td>None</td>
 <td><img src="images/paper-thumbnails/pc1/733162_thumbnail.png" title="fig:" /></td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2019/08/13/733162/F1.large.jpg</td>
 </tr>
 <tr class="even">
-<td>Inhibition of Bruton’s tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease <span class="citation" data-cites="1CM9H3mFb">[<a href="#ref-1CM9H3mFb" role="doc-biblioref">55</a>]</span></td>
+<td>Inhibition of Bruton’s tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease <span class="citation" data-cites="1CM9H3mFb">[<a href="#ref-1CM9H3mFb" role="doc-biblioref">51</a>]</span></td>
 <td>-4.736613689905791</td>
 <td>None</td>
 <td><img src="images/paper-thumbnails/pc1/745943_thumbnail.png" title="fig:" /></td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2019/08/28/745943/F1.large.jpg</td>
 </tr>
 <tr class="odd">
-<td>AKT but not MYC promotes reactive oxygen species-mediated cell death in oxidative culture <span class="citation" data-cites="jmFU2eta">[<a href="#ref-jmFU2eta" role="doc-biblioref">56</a>]</span></td>
+<td>AKT but not MYC promotes reactive oxygen species-mediated cell death in oxidative culture <span class="citation" data-cites="jmFU2eta">[<a href="#ref-jmFU2eta" role="doc-biblioref">52</a>]</span></td>
 <td>-4.826793742506695</td>
 <td>None</td>
 <td><img src="images/paper-thumbnails/pc1/754572_thumbnail.png" title="fig:" /></td>
@@ -1007,35 +987,35 @@ The plot on the right (B) is a bar chart of token frequency appearing in PMC and
 </thead>
 <tbody>
 <tr class="odd">
-<td>Pangenome Analysis of Enterobacteria Reveals Richness of Secondary Metabolite Gene Clusters and their Associated Gene Sets <span class="citation" data-cites="xq8RfP8M">[<a href="#ref-xq8RfP8M" role="doc-biblioref">57</a>]</span></td>
+<td>Pangenome Analysis of Enterobacteria Reveals Richness of Secondary Metabolite Gene Clusters and their Associated Gene Sets <span class="citation" data-cites="xq8RfP8M">[<a href="#ref-xq8RfP8M" role="doc-biblioref">53</a>]</span></td>
 <td>3.5865702659438883</td>
 <td>CC-BY-ND</td>
 <td><img src="images/paper-thumbnails/pc2/781328_thumbnail.png" title="fig:" /></td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2019/09/25/781328/F1.large.jpg</td>
 </tr>
 <tr class="even">
-<td>QTG-Finder: a machine-learning based algorithm to prioritize causal genes of quantitative trait loci <span class="citation" data-cites="18IbfyQMk">[<a href="#ref-18IbfyQMk" role="doc-biblioref">58</a>]</span></td>
+<td>QTG-Finder: a machine-learning based algorithm to prioritize causal genes of quantitative trait loci <span class="citation" data-cites="18IbfyQMk">[<a href="#ref-18IbfyQMk" role="doc-biblioref">54</a>]</span></td>
 <td>3.470388383023157</td>
 <td>None</td>
 <td><img src="images/paper-thumbnails/pc2/484204_thumbnail.png" title="fig:" /></td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2019/04/29/484204/F1.large.jpg</td>
 </tr>
 <tr class="odd">
-<td>Identification of candidate genes underlying nodulation-specific phenotypes in Medicago truncotula through integration of genome-wide association studies and co-expression networks <span class="citation" data-cites="TcV6ekeM">[<a href="#ref-TcV6ekeM" role="doc-biblioref">59</a>]</span></td>
+<td>Identification of candidate genes underlying nodulation-specific phenotypes in Medicago truncotula through integration of genome-wide association studies and co-expression networks <span class="citation" data-cites="TcV6ekeM">[<a href="#ref-TcV6ekeM" role="doc-biblioref">55</a>]</span></td>
 <td>3.3814906334073953</td>
 <td>CC-BY-NC-ND</td>
 <td><img src="images/paper-thumbnails/pc2/392779_thumbnail.png" title="fig:" /></td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2018/08/16/392779/F1.large.jpg</td>
 </tr>
 <tr class="even">
-<td>Raw sequence to target gene prediction: An integrated inference pipeline for ChIP-seq and RNA-seq datasets <span class="citation" data-cites="1GhuF05Hx">[<a href="#ref-1GhuF05Hx" role="doc-biblioref">60</a>]</span></td>
+<td>Raw sequence to target gene prediction: An integrated inference pipeline for ChIP-seq and RNA-seq datasets <span class="citation" data-cites="1GhuF05Hx">[<a href="#ref-1GhuF05Hx" role="doc-biblioref">56</a>]</span></td>
 <td>3.3632576028389742</td>
 <td>None</td>
 <td><img src="images/paper-thumbnails/pc2/220152_thumbnail.png" title="fig:" /></td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2017/11/16/220152/F3.large.jpg</td>
 </tr>
 <tr class="odd">
-<td>The y-ome defines the thirty-four percent of Escherichia coli genes that lack experimental evidence of function <span class="citation" data-cites="111HFfchz">[<a href="#ref-111HFfchz" role="doc-biblioref">61</a>]</span></td>
+<td>The y-ome defines the thirty-four percent of Escherichia coli genes that lack experimental evidence of function <span class="citation" data-cites="111HFfchz">[<a href="#ref-111HFfchz" role="doc-biblioref">57</a>]</span></td>
 <td>3.28742786641417</td>
 <td>CC-BY</td>
 <td><img src="images/paper-thumbnails/pc2/328591_thumbnail.png" title="fig:" /></td>
@@ -1049,35 +1029,35 @@ The plot on the right (B) is a bar chart of token frequency appearing in PMC and
 <td></td>
 </tr>
 <tr class="odd">
-<td>The effects of time-varying temperature on delays in genetic networks <span class="citation" data-cites="17Byktk2J">[<a href="#ref-17Byktk2J" role="doc-biblioref">62</a>]</span></td>
+<td>The effects of time-varying temperature on delays in genetic networks <span class="citation" data-cites="17Byktk2J">[<a href="#ref-17Byktk2J" role="doc-biblioref">58</a>]</span></td>
 <td>-2.7047102478958056</td>
 <td>None</td>
 <td><img src="images/paper-thumbnails/pc2/019687_thumbnail.png" title="fig:" /></td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2015/09/24/019687/F1.large.jpg</td>
 </tr>
 <tr class="even">
-<td>An analog to digital converter creates nuclear localization pulses in yeast calcium signaling <span class="citation" data-cites="INo8d1Br">[<a href="#ref-INo8d1Br" role="doc-biblioref">63</a>]</span></td>
+<td>An analog to digital converter creates nuclear localization pulses in yeast calcium signaling <span class="citation" data-cites="INo8d1Br">[<a href="#ref-INo8d1Br" role="doc-biblioref">59</a>]</span></td>
 <td>-2.775745000260895</td>
 <td>None</td>
 <td><img src="images/paper-thumbnails/pc2/357939_thumbnail.png" title="fig:" /></td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2018/06/28/357939/F1.large.jpg</td>
 </tr>
 <tr class="odd">
-<td>Nicotinic modulation of hierarchal inhibitory control over prefrontal cortex resting state dynamics: modeling of genetic modification and schizophreniarelated pathology <span class="citation" data-cites="wkaMFZ7G">[<a href="#ref-wkaMFZ7G" role="doc-biblioref">64</a>]</span></td>
+<td>Nicotinic modulation of hierarchal inhibitory control over prefrontal cortex resting state dynamics: modeling of genetic modification and schizophreniarelated pathology <span class="citation" data-cites="wkaMFZ7G">[<a href="#ref-wkaMFZ7G" role="doc-biblioref">60</a>]</span></td>
 <td>-3.047342382798414</td>
 <td>None</td>
 <td><img src="images/paper-thumbnails/pc2/301051_thumbnail.png" title="fig:" /></td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2018/04/13/301051/F1.large.jpg</td>
 </tr>
 <tr class="even">
-<td>Electrical propagation of vasodilatory signals in capillary networks <span class="citation" data-cites="17z6IVXTN">[<a href="#ref-17z6IVXTN" role="doc-biblioref">65</a>]</span></td>
+<td>Electrical propagation of vasodilatory signals in capillary networks <span class="citation" data-cites="17z6IVXTN">[<a href="#ref-17z6IVXTN" role="doc-biblioref">61</a>]</span></td>
 <td>-3.107715578793087</td>
 <td>CC-BY-NC-ND</td>
 <td><img src="images/paper-thumbnails/pc2/840280_thumbnail.png" title="fig:" /></td>
 <td>https://www.biorxiv.org/content/biorxiv/early/2019/11/13/840280/F1.large.jpg</td>
 </tr>
 <tr class="odd">
-<td>Dendritic spine geometry and spine apparatus organization govern the spatiotemporal dynamics of calcium <span class="citation" data-cites="WOFoFT9Q">[<a href="#ref-WOFoFT9Q" role="doc-biblioref">66</a>]</span></td>
+<td>Dendritic spine geometry and spine apparatus organization govern the spatiotemporal dynamics of calcium <span class="citation" data-cites="WOFoFT9Q">[<a href="#ref-WOFoFT9Q" role="doc-biblioref">62</a>]</span></td>
 <td>-3.21533499072831</td>
 <td>CC-BY-NC-ND</td>
 <td><img src="images/paper-thumbnails/pc2/386367_thumbnail.png" title="fig:" /></td>
@@ -1166,6 +1146,26 @@ The plot on the right (B) is a bar chart of token frequency appearing in PMC and
         margin-top: 30px;
         padding-bottom: 5px;
         border-bottom: solid 1px #bdbdbd;
+    }
+
+    /* heading font sizes */
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3{
+        font-size: 1.35em;
+    }
+    h4 {
+        font-size: 1.25em;
+    }
+    h5 {
+        font-size: 1.15em;
+    }
+    h6 {
+        font-size: 1em;
     }
 
     /* -------------------------------------------------- */
@@ -1599,22 +1599,6 @@ The plot on the right (B) is a bar chart of token frequency appearing in PMC and
         h5,
         h6 {
             margin: 15px 0;
-        }
-
-        /* heading 1 */
-        h1 {
-            font-size: 1.75em;
-        }
-
-        /* heading 2 */
-        h2 {
-            font-size: 1.25em;
-            margin-top: 0;
-        }
-
-        /* heading 3 */
-        h3 {
-            font-size: 1.10em;
         }
 
         /* figures and tables */
@@ -2270,10 +2254,39 @@ The plot on the right (B) is a bar chart of token frequency appearing in PMC and
     /* hypothesis (annotations) plugin */
     /* -------------------------------------------------- */
 
+    /* hypothesis activation button */
+    #hypothesis_button {
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        background: #ffffff;
+        border-radius: 0;
+        border-left: solid 1px #bdbdbd;
+        border-bottom: solid 1px #bdbdbd;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+        z-index: 2;
+    }
+
+    /* hypothesis button svg */
+    #hypothesis_button > svg {
+        position: relative;
+        top: -4px;
+    }
+
+    /* hypothesis annotation count */
+    #hypothesis_count {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 5px;
+    }
+
     /* side panel */
     .annotator-frame {
         width: 280px !important;
-        z-index: 0 !important;
     }
 
     /* match highlight color to rest of theme */
@@ -2291,8 +2304,12 @@ The plot on the right (B) is a bar chart of token frequency appearing in PMC and
         background: #f5f5f5 !important;
     }
 
-    /* always hide toolbar and tooltip on print */
+    /* always hide button, toolbar, and tooltip on print */
     @media only print {
+        #hypothesis_button {
+            display: none;
+        }
+
         .annotator-frame {
             display: none !important;
         }
@@ -3788,8 +3805,6 @@ The plot on the right (B) is a bar chart of token frequency appearing in PMC and
             window.addEventListener('load', start);
     })();
 </script>
-<!-- table of contents plugin -->
-
 <script>
     (function() {
         // /////////////////////////
@@ -3812,10 +3827,13 @@ The plot on the right (B) is a bar chart of token frequency appearing in PMC and
             // which types of elements to add links for, in
             // "document.querySelector" format
             typesQuery: 'h1, h2, h3',
-            // whether default behavior is to be closed ('false'), open
-            // ('true'), or only open when screen wide enough to fit panel
-            // ('auto'). note: still always starts closed when page loads.
-            open: 'auto',
+            // whether toc starts open. use 'true' or 'false', or 'auto' to
+            // use 'true' behavior when screen wide enough and 'false' when not
+            startOpen: 'false',
+            // whether toc closes when clicking on toc link. use 'true' or
+            // 'false', or 'auto' to use 'false' behavior when screen wide
+            // enough and 'true' when not
+            clickClose: 'auto',
             // if list item is more than this many characters, text will be
             // truncated
             charLimit: '50',
@@ -3840,13 +3858,21 @@ The plot on the right (B) is a bar chart of token frequency appearing in PMC and
             if (!panel)
                 return;
             makeEntries(panel);
+            // attach panel to document after making entries, so 'toc' heading
+            // in panel isn't included in toc
             document.body.insertBefore(panel, document.body.firstChild);
 
-            closePanel();
+            // initial panel state
+            if (
+                options.startOpen === 'true' ||
+                (options.startOpen === 'auto' && !isSmallScreen())
+            )
+                openPanel();
+            else
+                closePanel();
 
             // attach click, scroll, and hash change listeners to window
             window.addEventListener('click', onClick);
-            window.addEventListener('touchstart', onClick);
             window.addEventListener('scroll', onScroll);
             window.addEventListener('hashchange', onScroll);
             window.addEventListener('keyup', onKeyUp);
@@ -3864,25 +3890,10 @@ The plot on the right (B) is a bar chart of token frequency appearing in PMC and
             return window.innerWidth < 816 + 260 * 2;
         }
 
-        // open/close panel based on option and screen size
-        function openOrClosePanel() {
-            if (
-                options.open === 'true' ||
-                (options.open === 'auto' && !isSmallScreen())
-            )
-                openPanel();
-            else
-                closePanel();
-        }
-
         // when mouse is clicked anywhere in window
         function onClick() {
-            const panel = document.getElementById('toc_panel');
-            if (!panel)
-                return;
-
-            if (panel.dataset.open === 'true')
-                openOrClosePanel();
+            if (isSmallScreen())
+                closePanel();
         }
 
         // when window is scrolled or hash changed
@@ -3959,13 +3970,12 @@ The plot on the right (B) is a bar chart of token frequency appearing in PMC and
             // create toc button
             const button = document.createElement('button');
             button.id = 'toc_button';
-            button.innerHTML = document.querySelector(
-                '.icon_th_list'
-            ).innerHTML;
+            button.innerHTML = document.querySelector('.icon_th_list').innerHTML;
+            button.title = 'Table of Contents';
             button.classList.add('icon_button');
 
             // create header text
-            const text = document.createElement('h3');
+            const text = document.createElement('h4');
             text.innerHTML = 'Table of Contents';
 
             // create container for toc list
@@ -4043,8 +4053,14 @@ The plot on the right (B) is a bar chart of token frequency appearing in PMC and
         }
 
         // when link is clicked
-        function onLinkClick() {
-            openOrClosePanel();
+        function onLinkClick(event) {
+            if (
+                options.clickClose === 'true' ||
+                (options.clickClose === 'auto' && isSmallScreen())
+            )
+                closePanel();
+            else
+                openPanel();
         }
 
         // open panel if closed, close if opened
@@ -4877,9 +4893,19 @@ The plot on the right (B) is a bar chart of token frequency appearing in PMC and
 
     // https://www.mathjax.org/
 </script>
-<!-- annotations plugin configuration -->
+<!-- annotations plugin -->
 
 <script>
+    // /////////////////////////
+    // DESCRIPTION
+    // /////////////////////////
+
+    // This third-party plugin 'Hypothesis' allows public annotation of the
+    // manuscript.
+
+    // https://web.hypothes.is/
+
+    // plugin configuration
     window.hypothesisConfig = function() {
         return {
             branding: {
@@ -4892,20 +4918,85 @@ The plot on the right (B) is a bar chart of token frequency appearing in PMC and
             }
         };
     };
+
+    // hypothesis client script
+    const embed = 'https://hypothes.is/embed.js';
+    // hypothesis annotation count query url
+    const query = 'https://api.hypothes.is/api/search?limit=0&url='
+
+    
+    // start script
+    function start() {
+        const button = makeButton();
+        document.body.insertBefore(button, document.body.firstChild);
+        insertCount(button);
+    }
+
+    // make button
+    function makeButton() {
+        // create button
+        const button = document.createElement('button');
+        button.id = 'hypothesis_button';
+        button.innerHTML = document.querySelector('.icon_hypothesis').innerHTML;
+        button.title = 'Hypothesis annotations';
+        button.classList.add('icon_button');
+
+        function onClick(event) {
+            onButtonClick(event, button);
+        }
+
+        // attach click listeners
+        button.addEventListener('click', onClick);
+
+        return button;
+    }
+
+    // insert annotations count
+    async function insertCount(button) {
+        // get annotation count from Hypothesis based on url
+        let count = '-';
+        try {
+            const canonical = document.querySelector('link[rel="canonical"]');
+            const location = window.location;
+            const url = encodeURIComponent((canonical || location).href);
+            const response = await fetch(query + url);
+            const json = await response.json();
+            count = json.total || '-';
+        } catch(error) {
+            console.log(error);
+        }
+        
+        // put count into button
+        const counter = document.createElement('span');
+        counter.id = 'hypothesis_count';
+        counter.innerHTML = count;
+        button.title = 'View ' + count + ' Hypothesis annotations';
+        button.append(counter);
+    }
+
+    // when button is clicked
+    function onButtonClick(event, button) {
+        const script = document.createElement('script');
+        script.src = embed;
+        document.body.append(script);
+        button.remove();
+    }
+
+    window.addEventListener('load', start);
 </script>
 
-<!-- annotations plugin -->
+<!-- hypothesis icon -->
 
-<script src='https://hypothes.is/embed.js'>
-    // /////////////////////////
-    // DESCRIPTION
-    // /////////////////////////
-
-    // This third-party plugin 'Hypothesis' allows public annotation of the
-    // manuscript.
-
-    // https://web.hypothes.is/
-</script>
+<template class="icon_hypothesis">
+    <!-- modified from: https://simpleicons.org/icons/hypothesis.svg / https://git.io/Jf1VB -->
+    <svg width="16" height="16" viewBox="0 0 24 24" tabindex="-1">
+        <path
+            fill="currentColor"
+            d="M3.43 0C2.5 0 1.72 .768 1.72 1.72V18.86C1.72 19.8 2.5 20.57 3.43 20.57H9.38L12 24L14.62 20.57H20.57C21.5 20.57 22.29 19.8 22.29 18.86V1.72C22.29 .77 21.5 0 20.57 0H3.43M5.14 3.43H7.72V9.43S8.58 7.72 10.28 7.72C12 7.72 13.74 8.57 13.74 11.24V17.14H11.16V12C11.16 10.61 10.28 10.07 9.43 10.29C8.57 10.5 7.72 11.41 7.72 13.29V17.14H5.14V3.43M18 13.72C18.95 13.72 19.72 14.5 19.72 15.42A1.71 1.71 0 0 1 18 17.13A1.71 1.71 0 0 1 16.29 15.42C16.29 14.5 17.05 13.71 18 13.71Z"
+            tabindex="-1"
+        ></path>
+    </svg>
+</template>
 <!-- analytics plugin -->
 
 <!-- copy and paste code from Google Analytics or similar service here -->

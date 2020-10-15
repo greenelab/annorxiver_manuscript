@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/29c7654340ce3ce71f7d34b64dc2fda9fc445634/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/c4de41578e283340ae3e2539b31955cef860df58/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/29c7654340ce3ce71f7d34b64dc2fda9fc445634/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/c4de41578e283340ae3e2539b31955cef860df58/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/29c7654340ce3ce71f7d34b64dc2fda9fc445634/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/c4de41578e283340ae3e2539b31955cef860df58/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,9 +105,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/29c7654340ce3ce71f7d34b64dc2fda9fc445634/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/c4de41578e283340ae3e2539b31955cef860df58/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@29c7654](https://github.com/greenelab/annorxiver_manuscript/tree/29c7654340ce3ce71f7d34b64dc2fda9fc445634)
+from [greenelab/annorxiver_manuscript@c4de415](https://github.com/greenelab/annorxiver_manuscript/tree/c4de41578e283340ae3e2539b31955cef860df58)
 on October 15, 2020.
 </em></small>
 
