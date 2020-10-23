@@ -4,7 +4,7 @@ author-meta:
 - Jane Roe
 bibliography:
 - content/manual-references.json
-date-meta: '2020-10-15'
+date-meta: '2020-10-23'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -23,9 +23,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2020-10-15" />
+  <meta name="dc.date" content="2020-10-23" />
 
-  <meta name="citation_publication_date" content="2020-10-15" />
+  <meta name="citation_publication_date" content="2020-10-23" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/c719082793a44f5aad50d8582805fbf09cc17ffd/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/4476f1f3f108e851fc562eaf2987a7bcd0011c28/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/c719082793a44f5aad50d8582805fbf09cc17ffd/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/4476f1f3f108e851fc562eaf2987a7bcd0011c28/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/c719082793a44f5aad50d8582805fbf09cc17ffd/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/4476f1f3f108e851fc562eaf2987a7bcd0011c28/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,10 +105,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/c719082793a44f5aad50d8582805fbf09cc17ffd/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/4476f1f3f108e851fc562eaf2987a7bcd0011c28/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@c719082](https://github.com/greenelab/annorxiver_manuscript/tree/c719082793a44f5aad50d8582805fbf09cc17ffd)
-on October 15, 2020.
+from [greenelab/annorxiver_manuscript@4476f1f](https://github.com/greenelab/annorxiver_manuscript/tree/4476f1f3f108e851fc562eaf2987a7bcd0011c28)
+on October 23, 2020.
 </em></small>
 
 ## Authors
@@ -172,110 +172,142 @@ We provide a webserver that will displays neighboring journals and articles for 
 Our linguistic analysis, the first of the bioRxiv corpus, reveals the impact of the life sciences publishing process, introduces a method to identify matching preprint-published article pairs, demonstrates that the text content of preprints is related to their eventual publication venue, and provides a more complete picture of the fraction of preprints that are eventually published.
 
 
-## Methods
+## Materials and Methods
 
-### Datasets
+### Corpora Examined
 
-#### BioRxiv
-BioRxiv [@doi:10.1101/833400] is a repository for biological and biomedical research preprints.
-We downloaded an xml snapshot of this repository on February 3, 2020 from   bioRxiv's Amazon S3 resource [@url:https://www.biorxiv.org/tdm] that contained the full text and image content of 98,023 preprints.
+#### BioRxiv Corpus
+
+BioRxiv [@doi:10.1101/833400] is a repository for life sciences preprints.
+We downloaded an xml snapshot of this repository on February 3, 2020 from bioRxiv's Amazon S3 bucket [@url:https://www.biorxiv.org/tdm].
+This snapshot contained the full text and image content of 98,023 preprints.
 Preprints on bioRxiv are versioned, and in our snapshot 26,905 out of 98,023 contained more than one version.
-When preprints had multiple versions, we used only the latest one. 
-Preprints in this snapshot were grouped into one of twenty-nine different categories by researchers submitting to _bioRxiv_.
-Each preprint was also classified either as a new result, confirmatory finding, or contradictory finding.
-Some preprints in this snapshot were withdrawn from bioRxiv: when this happens their content is replaced with the reason for withdrawal.
+When preprints had multiple versions, we used the latest one unless otherwise noted.
+Authors submitting preprints to _bioRxiv_ select one of twenty-nine different categories.
+Researchers also select an article type, which can be a new result, confirmatory finding, or contradictory finding.
+Some preprints in this snapshot were withdrawn from bioRxiv: when this happens their content is replaced with the reason for withdrawal. 
+As there were very few withdrawn preprints, we did not treat these as a special case.
 
-#### PubMed Central
+#### PubMed Central Open Access Corpus
+
 PubMed Central (PMC) [@doi:10.1073/pnas.98.2.381] is a repository that contains free-to-read articles.
-PMC contains two types of contributions: closed access articles from research funded by the United States National Institutes of Health (NIH) appearing after an embargo period and articles published under Gold Open Access [@doi:10.1007/s12471-017-1064-2] publishing schemes.
+PMC articles can be closed access ones from research funded by the United States National Institutes of Health (NIH) appearing after an embargo period or those published under Gold Open Access [@doi:10.1007/s12471-017-1064-2] publishing schemes.
 Paper availability within PMC is largely dependent on the journal's participation level [@url:https://www.ncbi.nlm.nih.gov/pmc/about/submission-methods/].
 Individual journals can fully participate in submitting articles to PMC, selectively participate sending only a few papers to PMC, only submit papers according to NIH's public access policy [@url:https://grants.nih.gov/grants/policy/nihgps/html5/section_8/8.2.2_nih_public_access_policy.htm], or not participate at all.
 As of September 2019, PMC had 5,725,819 articles available [@url:https://www.ncbi.nlm.nih.gov/pmc/about/intro/].
-Out of these 5 million articles, about 3 million were open access and available for text processing systems [@doi:10.1093/bioinformatics/btz070;@doi:10.1093/nar/gkz389].
+Out of these 5 million articles, about 3 million were open access and available for text processing systems [@doi:10.1093/bioinformatics/btz070; @doi:10.1093/nar/gkz389].
 We downloaded a snapshot of this open access subset on January 31, 2020.
-This snapshot contains papers such as literature reviews, book reviews, editorials, case reports, research articles and more; however, we used only research articles.
+This snapshot contained many types of papers: literature reviews, book reviews, editorials, case reports, research articles and more.
+We used only research articles, which aligns with the intended role of _bioRxiv_, and we refer to these articles as the PMCOA Corpus.
+
+#### The New York Times Annotated Corpus
+
+The New York Times Annotated Corpus (NYTAC) is [@raw:sandhaus2008new] is collection of newspaper articles from the New York Times dating from January 1, 1987  to June 19, 2007.
+This collection contains over 1.8 million articles where 1.5 million of those articles have undergone manual entity tagged by library scientists [@raw:sandhaus2008new].
+We downloaded this collection on August 3rd, 2020 from the Linguistic Data Consortium (see Software and Data Availability section) and used the entire collection for our corpora comparison analysis.
 
 ### Comparing Corpora
-We compared bioRxiv against Pubmed Central's Open Access corpus (PMCOA) and the New York Times Annotated corpus (NYTAC) [@raw:sandhaus2008new] to assess the similarities and differences between bioRxiv, PMCOA and NYTAC.
-Throughout our analysis we encountered non-word symbols (e.g., $\pm$), so we refer words and symbols as tokens to avoid confusion.
+
+We compared the bioRxiv, PMCOA, and NYTAC corpora to assess the similarities and differences between them.
+We use the NYTAC as an out-group to assess the similarity of two life sciences repositories when compared with non-life sciences text.
+The corpora contain both words and non-word symbols (e.g., $\pm$), which we refer to together as tokens to avoid confusion.
 We calculated the following statistics for each corpus: the number of documents, the number of sentences, the total number of tokens, the number of stopwords, the average length of a document, the average length of a sentence, the number of negations, the number of coordinating conjunctions, the number of pronouns and the number of past tense verbs.
 Next, we used spaCy's "en_core_web_sm" model [@raw:spacy2] (version 2.2.3) to preprocess all corpora and filtered out 326 spaCy-provided stopwords.  
 
-Following the cleaning process, we calculated the frequency of every token across all corpora.
-Because many tokens were unique to one set or the other and observed at low frequency, we used the union of the top 100 most frequent tokens from each corpus to compare them.
-We generated a contingency table for each token and calculated the odds ratio from each generated table.
-We also calculated the 95% confidence interval for each token's odds ratio [@url:https://www.ncbi.nlm.nih.gov/books/NBK431098/] and measured corpus similarity by calculating the KL divergence across all three corpora.
+Following cleaning, we calculated the frequency of every token across all corpora.
+Because many tokens were unique to one set or the other and observed at low frequency, we used the union of the top 100 most frequent tokens from each pair of corpora to compare them.
+We generated a contingency table for each token in this union and calculated the odds ratio and 95% confidence interval [@url:https://www.ncbi.nlm.nih.gov/books/NBK431098/].
+We measured corpus similarity by calculating the KL divergence across all three corpora, which focuses on token distribution differences as opposed to token-level differences.
 
-### Visualizing the Preprint Landscape
+### Constructing a Document Representation for Life Sciences Text
 
-#### Generate Document Representation
-We used gensim [@raw:rehurek_lrec] (version 3.8.1) to train a word2vec continuous bag of words (CBOW) [@arxiv:1301.3781] model over the bioRxiv corpus. 
+We sought to build a model that would capture the linguistic similarity of articles.
+Word2vec is a suite of neural networks designed to model linguistic features of words based on their appearance in text.
+These models are trained to either predict a word based on its sentence context as a continuous bag of words (CBOW) or predict the context based on a given word in a skipgram model [@arxiv:1301.3781].
+Through these prediction tasks the networks learn latent features that can be used for downstream tasks such as identifying similar words.
+We used gensim [@raw:rehurek_lrec] (version 3.8.1) to train a word2vec continuous bag of words (CBOW) [@arxiv:1301.3781] model over the _bioRxiv_ corpus.
 Our neural network architecture had 300 hidden nodes, and we trained this model for 20 epochs.
 We set a fixed random seed and used gensim's default settings for all other hyperparameters.
-Following training, we generated a document vector for every article within bioRxiv and PubMed Central.
-This document vector is calculated by taking the average of every token present within a given article, ignoring those that were absent from the word2vec model.
+Following training, we generated a document vector for every article within _bioRxiv_ and PubMed Central.
+We calculated the document vector by taking the average of every token present within a given article [@arxiv:1405.4053].
+Words absent from the word2vec model were ignored.
 
-#### Dimensionality Reduction of Document Embeddings
-We used principal component analysis (PCA) [@doi:10.1111/1467-9868.00196] to project bioRxiv document vectors into a low dimensional space.
-We trained this model using scikit-learn's [@raw:scikit-learn] implementation of a randomized solver [@arxiv:0909.4061] with a random seed of 100, output of 50 principal components, and default settings for all other hyperparameters.
-For each principal component we calculated its cosine similarity with  all tokens in our word2vec model's vocabulary.
-We report the top 100 positive and negative scoring tokens in the form of  word clouds, where the size of each word corresponds to the magnitude of similarity and color represents positive (orange) or negative (blue) association.
+### Visualizing and Characterizing Preprint Representations
+
+We sought to visualize the landscape of preprints and determine the extent to which their representation as document vectors corresponded to author-supplied document labels.
+We used principal component analysis (PCA) [@doi:10.1111/1467-9868.00196] to project _bioRxiv_ document vectors into a low dimensional space.
+We trained this model using the scikit-learn [@raw:scikit-learn] implementation of a randomized solver [@arxiv:0909.4061] with a random seed of 100, output of 50 principal components (PCs), and default settings for all other hyperparameters.
+After fitting, each preprint has a score for each PC.
+To visualize the tokens associated with each PC, we calculated the cosine similarity of each PC to all tokens in our word2vec model's vocabulary.
+We report the top 100 positive and negative scoring tokens in the form of word clouds, where the size of each word corresponds to the magnitude of similarity and color represents positive (orange) or negative (blue) association.
 
 ### Discovering Unannotated Preprint-Publication Relationships
 
-Automated procedures are in place to link preprints to peer reviewed versions and many journals require authors to update preprints with a link to the published version.
-However, automated procedures at _bioRxiv_ are often based on exact matching of certain attributes and authors can forget to establish a link after publication.
-For example, authors can change the title between a preprint and published version (e.g., [@doi:10.1101/376665] and [@doi:10.1242/bio.038232]), which prevents _bioRxiv_ from automatically establishing a link.
-If the authors do not report the publication to _bioRxiv_, the preprint and the published version are treated as distinct entities despite representing the same underlying research. 
+The _bioRxiv_ maintainers have automated procedures to link preprints to peer reviewed versions and many journals require authors to update preprints with a link to the published version.
+However, this automation is largely based on exact matching of certain attributes, and authors can forget to establish a link after publication.
+Authors can change the title between a preprint and published version (e.g., [@doi:10.1101/376665] and [@doi:10.1242/bio.038232]), which prevents _bioRxiv_ from automatically establishing a link.
+If the authors do not report the publication to _bioRxiv_, the preprint and the published version are treated as distinct entities despite representing the same underlying research.
 We recognized that close proximity in the embedding space could reveal preprint to published version links that were missed by existing automated processes.
 First, we used CrossRef [@doi:10.1629/uksg.233] to identify bioRxiv preprints that were linked to a corresponding published article.
-We filtered out links that contained papers not in PubMed Central's Open Access corpus.
-Following the preprocessing step, we calculated the distribution of known preprint to published distances by taking the Euclidean distance between the preprint's embedding coordinates and the coordinates of its corresponding published version.
+We ignored pairs that contained papers not in the PMCOA corpus.
+We calculated the distribution of known preprint to published distances by taking the Euclidean distance between the preprint's embedding coordinates and the coordinates of its corresponding published version.
 We also calculated a background distribution, which consisted of the distance between each preprint with an annotated publication and a randomly selected article from the same journal.
 Next, we calculated distances between preprints without a published version link with PubMed Central articles that weren't matched with a corresponding preprint.
 We filtered any potential links with distances that were greater than the minimum value of the background distribution to reduce the curation burden.
 Lastly, we binned the remaining pairs based on percentiles from the annotated pairs distribution at the [0,25th percentile), [25th percentile, 50th percentile), [50th percentile, 75th percentile), and [75th percentile, minimum background distance).
 We randomly sampled 50 articles from each bin for manual annotation.
 We shuffled these four sets to produce a list of 200 potential preprint-published pairs with a randomized order.
-We supplied these candidates to two scientists to manually determine if each link between a preprint and a putative matched version was correct or incorrect.
-After the curation process, we encountered eight disagreements between reviewers.
-The preprint-publication pairs on which reviewers disagreed were supplied to a third scientist, who carefully reviewed each case and made a final determination.
-Lastly, we used this curated set to evaluate the extent to which distance in the embedding space revealed true but unannotated links between preprints and their published verisons.
+We supplied these pairs to two co-authors to manually determine if each link between a preprint and a putative matched version was correct or incorrect.
+After the curation process, we encountered eight disagreements between the reviewers.
+We supplied the preprint-publication pairs on which reviewers disagreed to a third scientist, who carefully reviewed each case and made a final determination.
+We used this curated set to evaluate the extent to which distance in the embedding space revealed true but unannotated links between preprints and their published versions.
 
-### Journal Recommendation
+### Building Journal Venue Classifiers
 
-Determining the best journal venue for a preprint is a non-trivial task as there are too many options for authors to decide.
-We sought to provide a resource that recommends journals based on a preprint's embedding representation.
-We illustrate our recommendations as a short list along with a network visualization available at [https://greenelab.github.io/annorxiver-journal-recommender/](https://greenelab.github.io/annorxiver-journal-recommender/).
-We used a simple k-nearest neighbors approach with Euclidean distance to recommend journals as we sought to examine if embeddings were related to publication venue.
-
-First, we filtered all journals that had fewer than 100 papers in the PMC dataset.
-A subset of our PMC corpus was directly linked to papers in bioRxiv as they had been published as open access articles.
-We held out this subset and treated it as our gold standard test set.
-We used the remainder of the PMC corpus for training and initial evaluation via cross validation.
-We considered a list of ten journal suggestions to be an appropriate number and we considered a prediction to be a true positive if the correct journal appeared within the ten closest neighbors of the query article.
+We hypothesized that preprints would be more likely to be published in journals that contained similar content to the work in question.
+To test this hypothesis, we designed an experiment examining document and journal representations.
+First, we removed all journals that had fewer than 100 papers in the PMCOA corpus.
+A subset of our PMCOA corpus was directly linked to papers in bioRxiv as they had been published as open access articles.
+We held out this subset and treated it as a gold standard test set.
+We used the remainder of the PMCOA corpus for training and initial evaluation via cross validation.
+We imagined a use case of prioritizing relevant journals for preprint authors, and considered a list of ten journal suggestions to be an appropriate number and we considered a prediction to be a true positive if the correct journal appeared within the ten closest neighbors of the query article.
 
 Certain journals publish articles in a focused topic area, while others publish articles that cover many topics.
 Likewise, some journals have a publication rate of at most hundreds of papers per year while others publish at a rate of at least ten-thousand papers per year.
-Accounting for these characteristics, we designed two approaches for recommending journals.
+Accounting for these characteristics, we designed two approaches - one centered on manuscripts and another centered on journals.
 
-The first approach is based on individual paper proximity, which enabled us to provide an example of the specific article or articles that led to the prediction.
-Conversely, predictions using this technique could be biased due to the overrepresentation of general topic journals.
-We call this approach the paper-based classifier.
-This classifier takes a query article that has been projected onto the embedding space constructed by our word2vec model as input and reports the journals of the top ten closest papers.
-The number of journals returned via this method could be less than ten as multiple papers in close proximity to query article may belong to the same journal. 
+For the manuscript-centric approach, we identified the ten most similar published manuscripts and evaluated where the documents were published.
+We embedded each query article into the space defined by the word2vec model as described for preprints.
+We selected the ten manuscripts that were nearest by Euclidean distance in the embedding space and returned the journal in which they were published.
+The number of journals returned via this method could be less than ten as multiple papers in close proximity to query article may belong to the same journal.
+Because this approach was based on paper proximity, we could return the articles that led to each journal being returned.
+However, journals that publish more papers are more frequently recommended in this framing.
 
-The second approach is based on close proximity to a journal's centroid.
-This technique provides recommendations that are more focused on domain-specific publication venues.
-We call this approach the journal-based classifier.
-This classifier was trained by computing journal centroids via taking the average embedding of all papers published in each journal.
-Following the centroid calculation, this classifier takes a query article projected onto the same embedding space as above for input and reports the top ten nearest journals centroids.
-Both the paper-based classifier and the journal-based classifier were optimized via 10-fold cross validation.
+For the journal-centric approach, we identified the ten most similar journals by constructing a journal representation in the same embedding space.
+We computed journal centroids as the average embedding of all published papers in the journal.
+We then project a query article into the same space and return the ten closest journal centroids by Euclidean distance.
+This technique guaranteed that at least ten distinct journals were returned and prevented journals that publish many papers from being heavily overrepresented.
+
+In both cases, we set the number of neighbors for each model to be 10 and then evaluated both models via 10-fold cross validation.
 We evaluated performance of both classifiers on our gold standard test set of published preprints.
 
-We used SAUCIE [@doi:10.1101/2020.03.04.975177] to train a model that uses the latent space of a neural network to learn an embedding suitable for visualization.
-This model enabled us to visualized the PMC corpus and to efficiently embed new papers and preprints within this space.
-We trained this model using a learning rate of 0.001, lambda_b of 0, lambda_c of 0.001, and lambda_d of 0.001 for 2000 iterations.
+### Web Application for Discovering Similar Preprints and Journals
+
+We developed a web application that identifies similar papers and journals for any _bioRxiv_ and _medRxiv_ preprint and that places the preprint into the overall document landscape.
+Our web application downloads a pdf version of a preprint hosted on the  _bioRxiv_ or _medRxiv_ server.
+We use pdfminer [@url:https://pdfminersix.readthedocs.io/en/latest/index.html] to extract text from the downloaded pdf.
+The extracted text is then fed into our word2vec model to construct a document embedding representation.
+We pass this representation onto our journal and manuscript search to identify journals based on the ten closest neighbors of individual papers as well as journal centroids.
+We implemented this search using sklearn's implementation of k-d trees.
+To run cost effectively on AWS, we sharded the k-d trees into four trees.
+
+Accompanying these recommendations, we also provide a neural network derived visualization of our training set and the article's position within it.
+We used SAUCIE [@doi:10.1101/2020.03.04.975177], an autoencoder designed to cluster single cell RNA-seq data, to build a two-dimensional embedding space that could be applied to newly generated preprints without retraining, a limitation of other approaches that we explored for visualizing entities expected to lie on a nonlinear manifold.
+We trained this model on document embeddings of PMCOA articles that did not contain a matching preprint version.
+We used the following parameters to train the model: a hidden size of 2, a learning rate of 0.001, lambda_b of 0, lambda_c of 0.001, and lambda_d of 0.001 for 2000 iterations.
+When a user requests a new document, we can then project the document on the pre-trained model to generate a visualization in two-dimensional space.
+We illustrate our recommendations as a short list and provide access to our network visualization at [https://greenelab.github.io/annorxiver-journal-recommender/](https://greenelab.github.io/annorxiver-journal-recommender/).
+
 We used the fully trained model to project user-requested _bioRxiv_ preprints onto the generated landscape to enable users to see where their preprint falls along the landscape.
 
 
