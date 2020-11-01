@@ -1,28 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1280 720" width="1280" height="720">
 
-<g transform="translate(50, 20)">
+<g transform="translate(50, 10)">
 <!-- Homepage section -->
-<image href="homescreen_doi.png" height="300" width="300" x="0" y="0"/>
+<image href="figure-pieces/homescreen_doi.png" height="300" width="300" x="0" y="0"/>
 <image href="https://openclipart.org/download/202801/long-arrow-right.svg" height="100" width="100" x="310" y="120" />
 <text x="100" y="310">Home Screen (A)</text>
 
 <!-- Most Similar Papers section -->
-<image href="most-similar-papers.png" height="300" width="300" x="420" y="0"/>
+<image href="figure-pieces/most-similar-papers.png" height="300" width="300" x="420" y="0"/>
 <image href="https://openclipart.org/download/202801/long-arrow-right.svg" height="100" width="100" x="700" y="120" />
 <text x="480" y="312">Most Similar Papers Screen (B)</text>
 
 <!-- Journal Centroids section -->
-<image href="journal-centroids.png" height="300" width="300" x="820" y="0"/>
+<image href="figure-pieces/journal-centroids.png" height="300" width="300" x="820" y="0"/>
 <image href="https://openclipart.org/download/202801/long-arrow-right.svg" height="100" width="100" x="1100" y="120" />
 <text x="820" y="310">Journal Centroid Recommendations (C)</text>
 
 <!-- Preprint Mapped on PMC section -->
-<image href="pmc-map.png" height="300" width="300" x="0" y="350"/>
+<image href="figure-pieces/pmc-map.png" height="300" width="300" x="0" y="350"/>
 <image href="https://openclipart.org/download/202801/long-arrow-right.svg" height="100" width="100" x="310" y="470" />
 <text x="70" y="670">Pubmed Central Landscape (D)</text>
 
 <!-- Word Odds Ratio section -->
-<image href="bin-properties.png" height="300" width="300" x="420" y="350"/>
+<image href="figure-pieces/bin-properties.png" height="300" width="300" x="420" y="350"/>
 <text x="450" y="670">Square Bin Properties (E)</text>
 
 </g>
