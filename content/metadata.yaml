@@ -30,8 +30,43 @@ authors:
       - Visualization
 
   - github: janeroe
-    name: Jane Roe
+    name: Vince
     initials: JR
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: jane.roe@whatever.edu
+    affiliations:
+      - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
+
+  - github: janeroe
+    name: Dongbo
+    initials: JR
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: jane.roe@whatever.edu
+    affiliations:
+      - Department of Something, University of Whatever
+      - Department of Whatever, University of Something
+
+  - github: janeroe
+    name: Marvin
+    initials: JR
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: jane.roe@whatever.edu
+    affiliations:
+      - Department of Something, University of Whatever
+      - Department of Whatever, University of Something
+
+  - github: janeroe
+    name: Larry
+    initials: JR
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: jane.roe@whatever.edu
+    affiliations:
+      - Department of Something, University of Whatever
+      - Department of Whatever, University of Something
+
+  - github: janeroe
+    name: Casey
+    initials: CSG
     orcid: XXXX-XXXX-XXXX-XXXX
     email: jane.roe@whatever.edu
     affiliations:
