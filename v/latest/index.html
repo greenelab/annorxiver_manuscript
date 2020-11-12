@@ -51,9 +51,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/f010f117247369216a5c387d087bc7ab41cb3d0b/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/f010f117247369216a5c387d087bc7ab41cb3d0b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/f010f117247369216a5c387d087bc7ab41cb3d0b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/7c4693e7f1676236b5e82fb7f81b464067ec2a70/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/7c4693e7f1676236b5e82fb7f81b464067ec2a70/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/7c4693e7f1676236b5e82fb7f81b464067ec2a70/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,9 +67,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/annorxiver_manuscript/v/f010f117247369216a5c387d087bc7ab41cb3d0b/">permalink</a>)
+(<a href="https://greenelab.github.io/annorxiver_manuscript/v/7c4693e7f1676236b5e82fb7f81b464067ec2a70/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/f010f117247369216a5c387d087bc7ab41cb3d0b">greenelab/annorxiver_manuscript@f010f11</a>
+from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/7c4693e7f1676236b5e82fb7f81b464067ec2a70">greenelab/annorxiver_manuscript@7c4693e</a>
 on November 12, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -248,20 +248,21 @@ When a user requests a new document, we can then project the document on the pre
 We illustrate our recommendations as a short list and provide access to our network visualization at <a href="https://greenelab.github.io/annorxiver-journal-recommender/">https://greenelab.github.io/annorxiver-journal-recommender/</a>.</p>
 <p>We used the fully trained model to project user-requested <em>bioRxiv</em> preprints onto the generated landscape to enable users to see where their preprint falls along the landscape.</p>
 <h2 id="results">Results</h2>
-<h3 id="comparing-biorxiv-to-pubmed-central">Comparing bioRxiv to PubMed Central</h3>
-<h4 id="biorxiv-repository">bioRxiv Repository</h4>
+<h3 id="comparing-biorxiv-to-other-corpora">Comparing bioRxiv to other corpora</h3>
+<h4 id="biorxiv-metadata-statistics">bioRxiv Metadata Statistics</h4>
+<!-- since this is largely recapitulating prior findings, i'd strongly consider moving this to the supplement or arrange it into a small panel of a figure -->
 <div id="fig:biorxiv_categories" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/greenelab/annorxiver/35d3ea0de3c9c78e3c524736bbaada00928c88fb/biorxiv/exploratory_data_analysis/output/figures/preprint_category.png" alt="" /><figcaption><span>Figure 1:</span> Neuroscience and bioinformatics are the two most common topics for preprints on bioRxiv.
-This bar chart depicts the number of preprints that fall into each author-selected topic area.</figcaption>
+<img src="https://raw.githubusercontent.com/greenelab/annorxiver/35d3ea0de3c9c78e3c524736bbaada00928c88fb/biorxiv/exploratory_data_analysis/output/figures/preprint_category.png" alt="" /><figcaption><span>Figure 1:</span> Neuroscience and bioinformatics are the two most common author-selected topics for bioRxiv preprints.</figcaption>
 </figure>
 </div>
-<p>Each preprint on bioRxiv has an author-selected topic area and the predominant area in past reports has been neuroscience <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">43</a>]</span>.
-Our analysis of the full text release of bioRxiv confirms this previous finding (Figure <a href="#fig:biorxiv_categories">1</a>).
-The author-selected topic area abundances that we found in the full text largely matched previous studies <span class="citation" data-cites="iPnRRJya mTE5h91z">[<a href="#ref-iPnRRJya" role="doc-biblioref">43</a>,<a href="#ref-mTE5h91z" role="doc-biblioref">44</a>]</span>.
-One exception was microbiology, which has a larger share of preprints than in a previous report from 2018 <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">43</a>]</span> (Figure <a href="#fig:biorxiv_categories">1</a>).
+<p>The preprint landscape is rapidly changing, and the number of bioRxiv preprints in our data download (71,118) was nearly double that of a recent study that reported on a snapshot with 37,648 preprints <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">43</a>]</span>.
+Because the rate of change is rapid, we first analyzed category data and compared our results with previous findings.
+As in previous reports <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">43</a>]</span>, neuroscience remains the most common category of preprint followed by bioinformatics (Figure <a href="#fig:biorxiv_categories">1</a>).
+Microbiology, which was fifth in the most recent report <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">43</a>]</span>, has now surpassed evolutionary biology and genomics to move into third.
 When authors upload their preprints, they select from three result category types: new results, confirmatory results or contradictory results.
-We found that nearly all preprints were categorized as new results, which is consistent with previous findings <span class="citation" data-cites="mTE5h91z">[<a href="#ref-mTE5h91z" role="doc-biblioref">44</a>]</span>.</p>
+We found that nearly all preprints (97.5%) were categorized as new results, which is consistent with reports on a smaller set <span class="citation" data-cites="mTE5h91z">[<a href="#ref-mTE5h91z" role="doc-biblioref">44</a>]</span>.
+Taken together, the results suggest that while bioRxiv has experienced dramatic growth, the way in which it is being used appears to have remained consistent in recent years.</p>
 <h4 id="global-comparison-of-biorxiv-and-pubmed-central">Global Comparison of bioRxiv and PubMed Central</h4>
 <div id="tbl:corpora_stats" class="tablenos">
 <table>
