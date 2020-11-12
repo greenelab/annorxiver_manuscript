@@ -4,7 +4,7 @@ author-meta:
 - Jane Roe
 bibliography:
 - content/manual-references.json
-date-meta: '2020-10-23'
+date-meta: '2020-11-12'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -23,9 +23,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2020-10-23" />
+  <meta name="dc.date" content="2020-11-12" />
 
-  <meta name="citation_publication_date" content="2020-10-23" />
+  <meta name="citation_publication_date" content="2020-11-12" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/4476f1f3f108e851fc562eaf2987a7bcd0011c28/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/20f7469318e007a51c0a2edf915df6862ccfff6a/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/4476f1f3f108e851fc562eaf2987a7bcd0011c28/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/20f7469318e007a51c0a2edf915df6862ccfff6a/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/4476f1f3f108e851fc562eaf2987a7bcd0011c28/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/20f7469318e007a51c0a2edf915df6862ccfff6a/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,10 +105,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/4476f1f3f108e851fc562eaf2987a7bcd0011c28/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/20f7469318e007a51c0a2edf915df6862ccfff6a/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@4476f1f](https://github.com/greenelab/annorxiver_manuscript/tree/4476f1f3f108e851fc562eaf2987a7bcd0011c28)
-on October 23, 2020.
+from [greenelab/annorxiver_manuscript@20f7469](https://github.com/greenelab/annorxiver_manuscript/tree/20f7469318e007a51c0a2edf915df6862ccfff6a)
+on November 12, 2020.
 </em></small>
 
 ## Authors
