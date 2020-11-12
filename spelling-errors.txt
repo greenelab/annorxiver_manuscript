@@ -26,12 +26,15 @@ Enterobacteria
 GBMF
 gensim’s
 GpABC
+halflife
 hierarchal
 Hippen
 homescreen
 identifiability
 inflammasome
 janeroe
+Kaplan
+KaplanMeierFitter
 knn
 loadings
 Medicago
@@ -49,6 +52,7 @@ nodulation
 notiy
 occuring
 ome
+OmnesRes
 overrepresented
 Pangenome
 pdfminer
@@ -71,6 +75,7 @@ sklearn’s
 spaCy’s
 spatiotemporal
 Sproadically
+squarebin
 stopword
 Translational
 truncotula

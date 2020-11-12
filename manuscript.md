@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/20f7469318e007a51c0a2edf915df6862ccfff6a/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/f010f117247369216a5c387d087bc7ab41cb3d0b/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/20f7469318e007a51c0a2edf915df6862ccfff6a/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/f010f117247369216a5c387d087bc7ab41cb3d0b/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/20f7469318e007a51c0a2edf915df6862ccfff6a/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/f010f117247369216a5c387d087bc7ab41cb3d0b/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -105,9 +105,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/20f7469318e007a51c0a2edf915df6862ccfff6a/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/f010f117247369216a5c387d087bc7ab41cb3d0b/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@20f7469](https://github.com/greenelab/annorxiver_manuscript/tree/20f7469318e007a51c0a2edf915df6862ccfff6a)
+from [greenelab/annorxiver_manuscript@f010f11](https://github.com/greenelab/annorxiver_manuscript/tree/f010f117247369216a5c387d087bc7ab41cb3d0b)
 on November 12, 2020.
 </em></small>
 
@@ -261,6 +261,27 @@ We supplied these pairs to two co-authors to manually determine if each link bet
 After the curation process, we encountered eight disagreements between the reviewers.
 We supplied the preprint-publication pairs on which reviewers disagreed to a third scientist, who carefully reviewed each case and made a final determination.
 We used this curated set to evaluate the extent to which distance in the embedding space revealed true but unannotated links between preprints and their published versions.
+
+### Measuring Time Duration for Preprint Publication Process
+
+We measured the time required for preprints to be published in the peer reviewed literature and compared this time within fields and as a function of the extent to which documents changed between the preprint and publication.
+We queried bioRxiv’s application programming interface (API) to obtain the date a preprint was posted onto bioRxiv as well as the date a preprint was accepted for publication.
+We calculated the difference between the date at which a preprint was first posted and its publication date to provide a publication interval, and we also recorded the number of preprint versions posted onto bioRxiv.
+To measure the amount of textual difference, we calculated the Euclidean distance between the document representation of each preprint and the corresponding published version. 
+We performed linear regression to model the relationship between preprint version count and a preprint's time to publication as well as the relationship between document representation distances and a preprint's time to publication.
+We visualized results as square bin plots.
+We observed a limited number of cases in which authors appeared to post preprints after the date of publication, which results in preprints receiving a negative time difference, as previously reported [@url:https://medium.com/@OmnesRes/the-biorxiv-wall-of-shame-aa3d9cfc4cd7].
+We did not remove preprints that had a negative time publication in our linear regression analysis as it was not strictly necessary, but we removed them in our survival curve analysis where they were incompatible with the analytical approach.
+In practice, the number with negative publication times and the short lead time between publication and preprint has a minimal impact on results.
+
+Document distances can be difficult to understand, so we sought to contextualize the meaning of a distance unit.
+We selected preprints within the Bioinformatics topic area, which was well-represented on bioRxiv.
+For preprints submitted to the Bioinformatics topic area, we sampled a pair of preprints and calculated their differences 1000 times and reported the mean.
+
+In addition to contextualizing the document distance, we also wanted to contextualize differences in the time to publication.
+We examined time to publication for each topic area using the Kaplan-Meier estimator [@doi:10.4103/0974-7788.76794] on preprints within bioRxiv, treating preprints not yet published as survival.
+We generated these curves using the KaplanMeierFitter function from the lifelines [@doi:10.5281/zenodo.4136578] (version 0.25.6) python package.
+We reported the half-life of each bioRxiv preprint category.
 
 ### Building Journal Venue Classifiers
 
@@ -465,6 +486,44 @@ We overlaid these new annotations onto existing annotations to reassess the over
 Our filtering criteria were intentionally stringent, so the increased estimate of publication rate amounts to a few percent (Figure {@fig:updated_pub_rate}).
 Many of these missed annotations were for preprints posted in the 2017-2018 interval.
 Compared to preprints published in 2019 and later, the preprints posted in 2017-2018 are old enough to have a high chance of being published; however, it is interesting that the rate for older preprints was not observed to be higher.
+
+### Factors that affect the time between preprinting and publication
+
+![
+On average it takes 16 days for authors to make changes based on peer-review feedback.
+This squarebin plot depicts the amount of time it takes a preprint to be published against the distances of a preprint's first version and its corresponding published version.
+The x-axis represents the Euclidean distance between document representations, while the y-axis represents the number of days elapsed between a preprint posted on bioRxiv and the time a preprint is published.
+The color bar on the right represents the density of each square-bin in this plot where more dense regions have a brighter color compared to their counterparts.
+](https://raw.githubusercontent.com/danich1/annorxiver/1efd5a4652c2331212a16dbc844f5323476eb5ff/biorxiv/publication_delay_experiment/output/article_distance_vs_publication_time.svg){#fig:distance_publication_time}
+
+![
+It takes on average 51-days for a new version of a preprint to be posted onto bioRxiv.
+This squarebin plot depicts the amount of time it takes a preprint to be published against the number of versions posted for a specific preprint.
+The x-axis represents the number of different versions a preprint has on bioRxiv, while the y-axis represents the number of days elapsed between a preprint posted on bioRxiv and the time a preprint is published.
+The color bar on the right represents the density of each square-bin in this plot where more dense regions have a brighter color compared to their counterparts.
+](https://raw.githubusercontent.com/danich1/annorxiver/1efd5a4652c2331212a16dbc844f5323476eb5ff/biorxiv/publication_delay_experiment/output/version_count_vs_publication_time.svg){#fig:version_publication_time}
+
+![
+All preprint categories take at least 124 days to publish half of their total respective preprints.
+This bargraph depicts the amount of time it takes to get half of the total number of preprints published.
+The x-axis reprints days until 50% of preprints are published and the y-axis reprints the different preprint categories.
+](https://raw.githubusercontent.com/danich1/annorxiver/1efd5a4652c2331212a16dbc844f5323476eb5ff/biorxiv/time_to_publication/output/preprint_category_halflife.svg){#fig:category_halflife}
+
+Preprints undergo multiple review checkpoints before they are published within a journal [@doi:10.1002/nop2.51].
+Oftentimes these checkpoints may result in rejection or revisions requested by a reviewer [@doi:10.1002/nop2.51].
+These negative outcomes result in authors may having to drastically edit their preprint, which greatly impedes a preprint reaching a published endpoint.
+We sought to quantify the extent to which preprints are stalled when faced with a setback from the peer-review process.
+On average preprints are delayed approximately 16 days for every distance unit change (Figure {@#fig:distance_publication_time}).
+We found that the average distance between two preprints' in the bioinformatics category was 5.068, which suggests that a single distance unit represents a fifth of a preprint's total text being changed.
+Sometimes preprints have to undergo drastic revisions that result in a new version being created.
+We found that on average it takes 51 days for authors to construct a new version of a preprint (Figure {@fig:version_publication_time}).
+Both the document distance trend and the version number trend confirm that the larger the revision the longer it takes for a preprint to be published.
+
+Preprints in certain categories take less time to publish than others.
+we sought to quantify the time each category takes to publish half their total number of preprints.
+Every preprint category takes at least 124 days to publish half of their respective preprints (Figure {@fig:category_halflife}).
+Categories that took the least amount of time were microbiology and zoology, while scientific communication and education took the most time (Figure {@fig:category_halflife}).
+Overall, this suggests that preprints in the microbiology and zoology categories may face less peer-review setbacks compared to other categories.
 
 ### Recommending Journals Based on Preprint Representation
 
