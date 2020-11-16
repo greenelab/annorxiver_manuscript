@@ -3,9 +3,9 @@ title: "Linguistic Analysis of the bioRxiv Preprint Landscape"
 keywords:
   - biorxiv
   - preprints
-  - pubmed central
-  - natural language processing
-  - descriptive linguistics
+  - pubmed-central
+  - natural-language-processing
+  - descriptive-linguistics
 lang: en-US
 authors:
   - github: danich1
@@ -26,49 +26,75 @@ authors:
       - Investigation
       - Methodology
       - Validation
-      - Writing - Original Draft
       - Visualization
+      - Writing - Original Draft
 
   - github: janeroe
     name: Vince
     initials: JR
     orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: null
     email: jane.roe@whatever.edu
     affiliations:
       - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
+    contributions:
+      - Resources
+      - Software
+      - Visualization
+      - Writing - Review and Editing
+
 
   - github: janeroe
     name: Dongbo
     initials: JR
     orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: null
     email: jane.roe@whatever.edu
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
+    contributions:
+      - Resources
+      - Software
+      - Visualization
+      - Writing - Review and Editing
 
   - github: janeroe
     name: Marvin
     initials: JR
     orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: null
     email: jane.roe@whatever.edu
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Elsevier stub here
+    contributions:
+      - Conceptualization
+      - Data Curation
+      - Formal Analysis
+      - Methodology
+      - Writing - Review and Editing
 
   - github: janeroe
     name: Larry
     initials: JR
     orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: null
     email: jane.roe@whatever.edu
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Center for Computational Pharmacology, University of Colorado Denver School of Medicine, Aurora, CO, USA
+    contribution:
+      - Conceptualization
+      - Writing - Review and Editing
 
   - github: janeroe
     name: Casey
     initials: CSG
     orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: null
     email: jane.roe@whatever.edu
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
+    contributions:
+      - Conceptualization
+      - Funding Acquisition
+      - Supervision
+      - Writing - Review & Editing
