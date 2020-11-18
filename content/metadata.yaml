@@ -29,12 +29,12 @@ authors:
       - Visualization
       - Writing - Original Draft
 
-  - github: janeroe
-    name: Vince
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: null
-    email: jane.roe@whatever.edu
+  - github: vincerubinetti 
+    name: Vincent Rubinetti
+    initials: VR
+    orcid: null
+    twitter: vincerubinetti
+    email: vince@vincentrubinetti.com
     affiliations:
       - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
     contributions:
@@ -43,13 +43,12 @@ authors:
       - Visualization
       - Writing - Review and Editing
 
-
-  - github: janeroe
-    name: Dongbo
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
+  - github: dongbohu
+    name: Dongbo Hu
+    initials: DH
+    orcid: null
     twitter: null
-    email: jane.roe@whatever.edu
+    email: dongbo.hu@gmail.com
     affiliations:
       - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
     contributions:
@@ -58,14 +57,14 @@ authors:
       - Visualization
       - Writing - Review and Editing
 
-  - github: janeroe
-    name: Marvin
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
+  - github: MarvinT
+    name: Marvin Thielk 
+    initials: MT
+    orcid: 0000-0002-0751-3664
     twitter: null
-    email: jane.roe@whatever.edu
+    email: m.thielk@elsevier.com
     affiliations:
-      - Elsevier stub here
+      - Elsevier
     contributions:
       - Conceptualization
       - Data Curation
@@ -73,12 +72,12 @@ authors:
       - Methodology
       - Writing - Review and Editing
 
-  - github: janeroe
-    name: Larry
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
+  - github: LEHunter
+    name: Lawrence E. Hunter 
+    initials: LEH
+    orcid: 0000-0003-1455-3370
     twitter: null
-    email: jane.roe@whatever.edu
+    email: Larry.Hunter@cuanschutz.edu
     affiliations:
       - Center for Computational Pharmacology, University of Colorado Denver School of Medicine, Aurora, CO, USA
     contribution:
@@ -90,7 +89,7 @@ authors:
     initials: CSG
     orcid: 0000-0001-8713-9213
     twitter: null
-    email: jane.roe@whatever.edu
+    email: greenescientist@gmail.com
     affiliations:
       - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
     contributions:
