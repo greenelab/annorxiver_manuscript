@@ -10,6 +10,7 @@ barplot
 bioinformatic
 bioinformatis
 bioRxiv’s
+boxplot
 Bruton’s
 cathepsin
 centric
@@ -29,7 +30,7 @@ Enterobacteria
 GBMF
 gensim’s
 GpABC
-halflife
+hexbin
 hierarchal
 Hippen
 homescreen
@@ -49,7 +50,7 @@ mTOR
 MYC
 NADPH
 NCBI’s
-Neuroscience
+neuroscience
 NHGRI
 Nicotinic
 NIH’s
@@ -63,7 +64,6 @@ overrepresented
 Pangenome
 pdfminer
 phenotypes
-pointplot
 pre
 preprinting
 preprocesses
@@ -80,9 +80,8 @@ sharded
 skipgram
 sklearn’s
 spaCy’s
-Spatiotemporal
+spatiotemporal
 Sproadically
-squarebin
 stopword
 Thielk
 Translational
