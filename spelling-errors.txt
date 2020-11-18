@@ -1,7 +1,6 @@
 Abdill
 Acknowledgements
 AKT
-appveyor
 auc
 autoencoder
 AWS
@@ -14,6 +13,7 @@ bioRxiv’s
 Bruton’s
 cathepsin
 centric
+cgreene
 coli
 CRC
 cystine
@@ -21,7 +21,10 @@ cytometry
 danich
 Dendritic
 DOIs
+Dongbo
+dongbohu
 eachother
+Elsevier
 Enterobacteria
 GBMF
 gensim’s
@@ -30,13 +33,16 @@ halflife
 hierarchal
 Hippen
 homescreen
+Hu
+idenitfy
 identifiability
 inflammasome
-janeroe
 Kaplan
 KaplanMeierFitter
 knn
+LEHunter
 loadings
+MarvinT
 Medicago
 microvascular
 mTOR
@@ -67,6 +73,7 @@ publsihed
 QTG
 quantiles
 Reserach
+Rubinetti
 SBpipe
 schizophreniarelated
 sharded
@@ -77,9 +84,10 @@ Spatiotemporal
 Sproadically
 squarebin
 stopword
+Thielk
 Translational
 truncotula
 tyrosine
 vasodilatory
 vec
-XXXX
+vincerubinetti

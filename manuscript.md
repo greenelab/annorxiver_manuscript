@@ -1,10 +1,14 @@
 ---
 author-meta:
 - David N. Nicholson
-- Jane Roe
+- Vincent Rubinetti
+- Dongbo Hu
+- Marvin Thielk
+- Lawrence E. Hunter
+- Casey S. Greene
 bibliography:
 - content/manual-references.json
-date-meta: '2020-11-12'
+date-meta: '2020-11-18'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -23,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2020-11-12" />
+  <meta name="dc.date" content="2020-11-18" />
 
-  <meta name="citation_publication_date" content="2020-11-12" />
+  <meta name="citation_publication_date" content="2020-11-18" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -47,13 +51,45 @@ header-includes: '<!--
 
   <meta name="twitter:creator" content="@None" />
 
-  <meta name="citation_author" content="Jane Roe" />
+  <meta name="citation_author" content="Vincent Rubinetti" />
 
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania" />
 
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
+  <meta name="citation_author_orcid" content="None" />
 
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="twitter:creator" content="@vincerubinetti" />
+
+  <meta name="citation_author" content="Dongbo Hu" />
+
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania" />
+
+  <meta name="citation_author_orcid" content="None" />
+
+  <meta name="twitter:creator" content="@None" />
+
+  <meta name="citation_author" content="Marvin Thielk" />
+
+  <meta name="citation_author_institution" content="Elsevier" />
+
+  <meta name="citation_author_orcid" content="0000-0002-0751-3664" />
+
+  <meta name="twitter:creator" content="@None" />
+
+  <meta name="citation_author" content="Lawrence E. Hunter" />
+
+  <meta name="citation_author_institution" content="Center for Computational Pharmacology, University of Colorado Denver School of Medicine, Aurora, CO, USA" />
+
+  <meta name="citation_author_orcid" content="0000-0003-1455-3370" />
+
+  <meta name="twitter:creator" content="@None" />
+
+  <meta name="citation_author" content="Casey S. Greene" />
+
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania" />
+
+  <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
+
+  <meta name="twitter:creator" content="@None" />
 
   <link rel="canonical" href="https://greenelab.github.io/annorxiver_manuscript/" />
 
@@ -67,11 +103,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/7c4693e7f1676236b5e82fb7f81b464067ec2a70/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/e07ceb366438d63d925b1782469a36dc08a41eb4/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/7c4693e7f1676236b5e82fb7f81b464067ec2a70/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/e07ceb366438d63d925b1782469a36dc08a41eb4/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/7c4693e7f1676236b5e82fb7f81b464067ec2a70/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/e07ceb366438d63d925b1782469a36dc08a41eb4/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -87,9 +123,9 @@ header-includes: '<!--
 keywords:
 - biorxiv
 - preprints
-- pubmed central
-- natural language processing
-- descriptive linguistics
+- pubmed-central
+- natural-language-processing
+- descriptive-linguistics
 lang: en-US
 manubot-clear-requests-cache: false
 manubot-output-bibliography: output/references.json
@@ -105,10 +141,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/7c4693e7f1676236b5e82fb7f81b464067ec2a70/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/e07ceb366438d63d925b1782469a36dc08a41eb4/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@7c4693e](https://github.com/greenelab/annorxiver_manuscript/tree/7c4693e7f1676236b5e82fb7f81b464067ec2a70)
-on November 12, 2020.
+from [greenelab/annorxiver_manuscript@e07ceb3](https://github.com/greenelab/annorxiver_manuscript/tree/e07ceb366438d63d925b1782469a36dc08a41eb4)
+on November 18, 2020.
 </em></small>
 
 ## Authors
@@ -125,20 +161,64 @@ on November 12, 2020.
      · Funded by The Gordon and Betty Moore Foundation (GBMF4552); The National Institutes of Health (T32 HG000046)
   </small>
 
-+ **Jane Roe**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
++ **Vincent Rubinetti**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [janeroe](https://github.com/janeroe)<br>
+    [vincerubinetti](https://github.com/vincerubinetti)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [vincerubinetti](https://twitter.com/vincerubinetti)<br>
   <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
+     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
+  </small>
+
++ **Dongbo Hu**<br>
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [dongbohu](https://github.com/dongbohu)<br>
+  <small>
+     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
+  </small>
+
++ **Marvin Thielk**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0002-0751-3664](https://orcid.org/0000-0002-0751-3664)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [MarvinT](https://github.com/MarvinT)<br>
+  <small>
+     Elsevier
+  </small>
+
++ **Lawrence E. Hunter**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0003-1455-3370](https://orcid.org/0000-0003-1455-3370)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [LEHunter](https://github.com/LEHunter)<br>
+  <small>
+     Center for Computational Pharmacology, University of Colorado Denver School of Medicine, Aurora, CO, USA
+  </small>
+
++ **Casey S. Greene**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0001-8713-9213](https://orcid.org/0000-0001-8713-9213)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [cgreene](https://github.com/cgreene)<br>
+  <small>
+     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
   </small>
 
 
 
 ## Abstract {.page_break_before}
 
-This is the abstract. Trigger appveyor.
+Preprints allow researchers to make their results quickly and widely accessible to the scientific community. 
+These are scholarly works that have yet to undergo the peer review process and are often hosted within open access repositories such as bioRxiv. 
+The majority of studies involving bioRxiv have focused on preprint metadata; however, a fundamental piece that is missing is an understanding of the language contained within preprints and how it changes through the peer review process.   
+We sought to compare and contrast linguistic features within bioRxiv preprints to their published counterparts within Pubmed Central’s Open Access corpus (PMC).  
+We quantified the time delay preprints face while undergoing the peer review process.
+We generated document embeddings for every article within bioRxiv and PMC.
+We used these embeddings to idenitfy missing preprint-publication links along with training machine learning models to predict journal endpoints for published articles.
+We found that topic-specific terms such as “genome”, “neuron” and “network” were enriched within bioRxiv compared to PMC, reflecting bioRxiv’s uptake in bioinformatics and neuroscience preprints. 
+We found that the leading source of linguistic variation among preprints captured the distinction between quantitative and cellular biology.
+We discovered that preprints are delayed an average of 16 days as changes are requested from the peer review process.
+Lastly, we created a web app allows anyone to input a bioRxiv or medRxiv preprint and receive a set of the most linguistically similar journals and articles to serve as potential publication venues for their work.
 
 
 ## Introduction
@@ -202,8 +282,8 @@ We used only research articles, which aligns with the intended role of _bioRxiv_
 
 #### The New York Times Annotated Corpus
 
-The New York Times Annotated Corpus (NYTAC) is [@raw:sandhaus2008new] is collection of newspaper articles from the New York Times dating from January 1, 1987  to June 19, 2007.
-This collection contains over 1.8 million articles where 1.5 million of those articles have undergone manual entity tagged by library scientists [@raw:sandhaus2008new].
+The New York Times Annotated Corpus (NYTAC) is [@sandhaus2008new] is collection of newspaper articles from the New York Times dating from January 1, 1987  to June 19, 2007.
+This collection contains over 1.8 million articles where 1.5 million of those articles have undergone manual entity tagged by library scientists [@sandhaus2008new].
 We downloaded this collection on August 3rd, 2020 from the Linguistic Data Consortium (see Software and Data Availability section) and used the entire collection for our corpora comparison analysis.
 
 ### Comparing Corpora
@@ -212,7 +292,7 @@ We compared the bioRxiv, PMCOA, and NYTAC corpora to assess the similarities and
 We use the NYTAC as an out-group to assess the similarity of two life sciences repositories when compared with non-life sciences text.
 The corpora contain both words and non-word symbols (e.g., $\pm$), which we refer to together as tokens to avoid confusion.
 We calculated the following statistics for each corpus: the number of documents, the number of sentences, the total number of tokens, the number of stopwords, the average length of a document, the average length of a sentence, the number of negations, the number of coordinating conjunctions, the number of pronouns and the number of past tense verbs.
-Next, we used spaCy's "en_core_web_sm" model [@raw:spacy2] (version 2.2.3) to preprocess all corpora and filtered out 326 spaCy-provided stopwords.  
+Next, we used spaCy's "en_core_web_sm" model [@spacy2] (version 2.2.3) to preprocess all corpora and filtered out 326 spaCy-provided stopwords.  
 
 Following cleaning, we calculated the frequency of every token across all corpora.
 Because many tokens were unique to one set or the other and observed at low frequency, we used the union of the top 100 most frequent tokens from each pair of corpora to compare them.
@@ -225,7 +305,7 @@ We sought to build a model that would capture the linguistic similarity of artic
 Word2vec is a suite of neural networks designed to model linguistic features of words based on their appearance in text.
 These models are trained to either predict a word based on its sentence context as a continuous bag of words (CBOW) or predict the context based on a given word in a skipgram model [@arxiv:1301.3781].
 Through these prediction tasks the networks learn latent features that can be used for downstream tasks such as identifying similar words.
-We used gensim [@raw:rehurek_lrec] (version 3.8.1) to train a word2vec continuous bag of words (CBOW) [@arxiv:1301.3781] model over the _bioRxiv_ corpus.
+We used gensim [@rehurek_lrec] (version 3.8.1) to train a word2vec continuous bag of words (CBOW) [@arxiv:1301.3781] model over the _bioRxiv_ corpus.
 Our neural network architecture had 300 hidden nodes, and we trained this model for 20 epochs.
 We set a fixed random seed and used gensim's default settings for all other hyperparameters.
 Following training, we generated a document vector for every article within _bioRxiv_ and PubMed Central.
@@ -236,7 +316,7 @@ Words absent from the word2vec model were ignored.
 
 We sought to visualize the landscape of preprints and determine the extent to which their representation as document vectors corresponded to author-supplied document labels.
 We used principal component analysis (PCA) [@doi:10.1111/1467-9868.00196] to project _bioRxiv_ document vectors into a low dimensional space.
-We trained this model using the scikit-learn [@raw:scikit-learn] implementation of a randomized solver [@arxiv:0909.4061] with a random seed of 100, output of 50 principal components (PCs), and default settings for all other hyperparameters.
+We trained this model using the scikit-learn [@scikit-learn] implementation of a randomized solver [@arxiv:0909.4061] with a random seed of 100, output of 50 principal components (PCs), and default settings for all other hyperparameters.
 After fitting, each preprint has a score for each PC.
 To visualize the tokens associated with each PC, we calculated the cosine similarity of each PC to all tokens in our word2vec model's vocabulary.
 We report the top 100 positive and negative scoring tokens in the form of word clouds, where the size of each word corresponds to the magnitude of similarity and color represents positive (orange) or negative (blue) association.
@@ -594,6 +674,10 @@ Access to the New York Times Annotated Corpus (NYTAC) is available upon request 
 The authors would like to thank Ariel Hippen Anderson for evaluating potential missing preprint to published version links.
 We also would like to thank Richard Sever and the _bioRxiv_ team for their assistance with access to and support with questions about preprint full text downloaded from _bioRxiv_. 
 This work was supported by [Grant GBMF4552](https://www.moore.org/grant-detail?grantId=GBMF4552) from the Gordon Betty Moore Foundation and by NIH T32HG00046, Computational Genomics training grant, from the National Human Genome Reserach Institute (NHGRI).
+
+## Competing Interest
+
+Need to note here.
 
 
 ## References {.page_break_before}
