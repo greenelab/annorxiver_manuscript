@@ -8,7 +8,7 @@ author-meta:
 - Casey S. Greene
 bibliography:
 - content/manual-references.json
-date-meta: '2020-11-23'
+date-meta: '2020-11-24'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2020-11-23" />
+  <meta name="dc.date" content="2020-11-24" />
 
-  <meta name="citation_publication_date" content="2020-11-23" />
+  <meta name="citation_publication_date" content="2020-11-24" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -45,7 +45,7 @@ header-includes: '<!--
 
   <meta name="citation_author" content="David N. Nicholson" />
 
-  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania" />
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA" />
 
   <meta name="citation_author_orcid" content="0000-0003-0002-5761" />
 
@@ -53,7 +53,7 @@ header-includes: '<!--
 
   <meta name="citation_author" content="Vincent Rubinetti" />
 
-  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania" />
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA" />
 
   <meta name="citation_author_orcid" content="None" />
 
@@ -61,7 +61,7 @@ header-includes: '<!--
 
   <meta name="citation_author" content="Dongbo Hu" />
 
-  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania" />
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA" />
 
   <meta name="citation_author_orcid" content="None" />
 
@@ -73,23 +73,25 @@ header-includes: '<!--
 
   <meta name="citation_author_orcid" content="0000-0002-0751-3664" />
 
-  <meta name="twitter:creator" content="@None" />
+  <meta name="twitter:creator" content="@TheNeuralCoder" />
 
   <meta name="citation_author" content="Lawrence E. Hunter" />
 
-  <meta name="citation_author_institution" content="Center for Computational Pharmacology, University of Colorado Denver School of Medicine, Aurora, CO, USA" />
+  <meta name="citation_author_institution" content="Center for Computational Pharmacology, University of Colorado School of Medicine, Aurora CO, USA" />
 
   <meta name="citation_author_orcid" content="0000-0003-1455-3370" />
 
-  <meta name="twitter:creator" content="@None" />
+  <meta name="twitter:creator" content="@ProfLHunter" />
 
   <meta name="citation_author" content="Casey S. Greene" />
 
-  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania" />
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA" />
+
+  <meta name="citation_author_institution" content="Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora CO, USA" />
 
   <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
 
-  <meta name="twitter:creator" content="@None" />
+  <meta name="twitter:creator" content="@greenescientist" />
 
   <link rel="canonical" href="https://greenelab.github.io/annorxiver_manuscript/" />
 
@@ -103,11 +105,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/d682ac48c52f3113ea647d6dce99eaa3a3fc5d61/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/285a70e541c3652c8288746dca41aec9a5dc22ed/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/d682ac48c52f3113ea647d6dce99eaa3a3fc5d61/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/285a70e541c3652c8288746dca41aec9a5dc22ed/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/d682ac48c52f3113ea647d6dce99eaa3a3fc5d61/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/285a70e541c3652c8288746dca41aec9a5dc22ed/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -141,10 +143,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/d682ac48c52f3113ea647d6dce99eaa3a3fc5d61/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/285a70e541c3652c8288746dca41aec9a5dc22ed/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@d682ac4](https://github.com/greenelab/annorxiver_manuscript/tree/d682ac48c52f3113ea647d6dce99eaa3a3fc5d61)
-on November 23, 2020.
+from [greenelab/annorxiver_manuscript@285a70e](https://github.com/greenelab/annorxiver_manuscript/tree/285a70e541c3652c8288746dca41aec9a5dc22ed)
+on November 24, 2020.
 </em></small>
 
 ## Authors
@@ -157,7 +159,7 @@ on November 23, 2020.
     · ![GitHub icon](images/github.svg){.inline_icon}
     [danich1](https://github.com/danich1)<br>
   <small>
-     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
+     Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA
      · Funded by The Gordon and Betty Moore Foundation (GBMF4552); The National Institutes of Health (T32 HG000046)
   </small>
 
@@ -167,21 +169,25 @@ on November 23, 2020.
     · ![Twitter icon](images/twitter.svg){.inline_icon}
     [vincerubinetti](https://twitter.com/vincerubinetti)<br>
   <small>
-     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
+     Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA
+     · Funded by The Gordon and Betty Moore Foundation (GBMF4552); The National Institutes of Health (T32 HG010067)
   </small>
 
 + **Dongbo Hu**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
     [dongbohu](https://github.com/dongbohu)<br>
   <small>
-     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
+     Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA
+     · Funded by The Gordon and Betty Moore Foundation (GBMF4552); The National Institutes of Health (T32 HG010067)
   </small>
 
 + **Marvin Thielk**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [0000-0002-0751-3664](https://orcid.org/0000-0002-0751-3664)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [MarvinT](https://github.com/MarvinT)<br>
+    [MarvinT](https://github.com/MarvinT)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [TheNeuralCoder](https://twitter.com/TheNeuralCoder)<br>
   <small>
      Elsevier
   </small>
@@ -190,35 +196,41 @@ on November 23, 2020.
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [0000-0003-1455-3370](https://orcid.org/0000-0003-1455-3370)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [LEHunter](https://github.com/LEHunter)<br>
+    [LEHunter](https://github.com/LEHunter)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [ProfLHunter](https://twitter.com/ProfLHunter)<br>
   <small>
-     Center for Computational Pharmacology, University of Colorado Denver School of Medicine, Aurora, CO, USA
+     Center for Computational Pharmacology, University of Colorado School of Medicine, Aurora CO, USA
+     · Funded by The Gordon and Betty Moore Foundation (GBMF4552)
   </small>
 
 + **Casey S. Greene**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [0000-0001-8713-9213](https://orcid.org/0000-0001-8713-9213)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [cgreene](https://github.com/cgreene)<br>
+    [cgreene](https://github.com/cgreene)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [greenescientist](https://twitter.com/greenescientist)<br>
   <small>
-     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
+     Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA; Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora CO, USA
+     · Funded by The Gordon and Betty Moore Foundation (GBMF4552); The National Institutes of Health (T32 HG010067)
   </small>
 
 
 
 ## Abstract {.page_break_before}
 
-Preprints allow researchers to make their results quickly and widely accessible to the scientific community. 
-These are scholarly works that have yet to undergo the peer review process and are often hosted within open access repositories such as bioRxiv. 
-The majority of studies involving bioRxiv have focused on preprint metadata; however, a fundamental piece that is missing is an understanding of the language contained within preprints and how it changes through the peer review process.   
-We sought to compare and contrast linguistic features within bioRxiv preprints to their published counterparts within Pubmed Central’s Open Access corpus (PMC).  
-We quantified the time delay preprints face while undergoing the peer review process.
-We generated document embeddings for every article within bioRxiv and PMC.
-We used these embeddings to idenitfy missing preprint-publication links along with training machine learning models to predict journal endpoints for published articles.
-We found that topic-specific terms such as “genome”, “neuron” and “network” were enriched within bioRxiv compared to PMC, reflecting bioRxiv’s uptake in bioinformatics and neuroscience preprints. 
-We found that the leading source of linguistic variation among preprints captured the distinction between quantitative and cellular biology.
-We discovered that preprints are delayed an average of 16 days as changes are requested from the peer review process.
-Lastly, we created a web app allows anyone to input a bioRxiv or medRxiv preprint and receive a set of the most linguistically similar journals and articles to serve as potential publication venues for their work.
+Preprints allow researchers to make their findings available to the scientific community before they have undergone peer review.
+This provides an opportunity to understand life sciences peer review and publishing practices.
+Studies of bioRxiv to date have been largely focused on article metadata, and have examined how preprints are downloaded, cited, published, and discussed online.
+A missing element has been examining the language contained within preprints.
+Comparing preprints with peer reviewed manuscripts provides an opportunity to examine how peer review changes these documents.   
+We sought to compare and contrast linguistic features within bioRxiv preprints to biomedical text as a whole and also their published counterparts.
+The most prevalent elements that changed appeared to be associated with typesetting and mentions of supplementary or additional files.
+We created document embeddings derived from a bioRxiv-trained word2vec model and found that they revealed different scientific approaches, linked unannotated preprint-peer reviewed article pairs, and were associated with the journal where a preprint would eventually be published.
+We examined factors associated with the time elapsed between the posting of a first preprint and the appearance of a peer reviewed publication and found that preprints with more versions posted and also those with more textual changes, assessed via document embeddings, took longer to publish.
+The full text landscape of bioRxiv provides an opportunity to explore scientific language and how peer review alters articles.
+We provide a web application with which users can explore how a bioRxiv or medRxiv preprint is positioned within the landscape and identify the journals and articles that are most similar.
 
 
 ## Introduction
@@ -241,14 +253,14 @@ The time required for a preprint to be published can vary from preprint to prepr
 
 Studies of life sciences preprints have primarily focused on the metadata associated with these articles; however, their textual content remains unexamined.
 
-We sought to understand the language landscape of preprints by performing a linguistic analysis of the _bioRxiv_ corpus.
+We sought to understand the language landscape of preprints by performing a linguistic analysis of the bioRxiv corpus.
 We examined textual differences between preprints and published literature by comparing the entire corpus of preprints with articles available in the open access PubMed Central repository.
 We also examined linguistic differences between preprints and their corresponding published pairs.
 Examining this shift will provide a unique opportunity to ascertain parts of the peer review and publishing process and how it impacts the scholarly literature.
 Neural-network derived document embeddings provide a useful space for determining the textual similarity of preprints, which enables us to extend this work beyond word frequencies.
 Examining articles with particularly close proximity in this space reveals unannotated preprint-publication pairs that earlier analyses could not consider.
 In this space a preprint's nearest neighbors are also more likely than distant articles to share an eventual publishing venue with the preprint itself.
-We provide a webserver that will displays neighboring journals and articles for any preprint on _bioRxiv_ or _medRxiv_, which can help authors identify similar papers or suitable journals.
+We provide a webserver that will displays neighboring journals and articles for any preprint on bioRxiv or medRxiv, which can help authors identify similar papers or suitable journals.
 Our linguistic analysis, the first of the bioRxiv corpus, reveals the impact of the life sciences publishing process, introduces a method to identify matching preprint-published article pairs, demonstrates that the text content of preprints is related to their eventual publication venue, and provides a more complete picture of the fraction of preprints that are eventually published.
 
 
@@ -263,7 +275,7 @@ We downloaded an xml snapshot of this repository on February 3, 2020 from bioRxi
 This snapshot contained the full text and image content of 98,023 preprints.
 Preprints on bioRxiv are versioned, and in our snapshot 26,905 out of 98,023 contained more than one version.
 When preprints had multiple versions, we used the latest one unless otherwise noted.
-Authors submitting preprints to _bioRxiv_ select one of twenty-nine different categories.
+Authors submitting preprints to bioRxiv select one of twenty-nine different categories.
 Researchers also select an article type, which can be a new result, confirmatory finding, or contradictory finding.
 Some preprints in this snapshot were withdrawn from bioRxiv: when this happens their content is replaced with the reason for withdrawal.
 As there were very few withdrawn preprints, we did not treat these as a special case.
@@ -278,7 +290,7 @@ As of September 2019, PMC had 5,725,819 articles available [@url:https://www.ncb
 Out of these 5 million articles, about 3 million were open access and available for text processing systems [@doi:10.1093/bioinformatics/btz070; @doi:10.1093/nar/gkz389].
 We downloaded a snapshot of this open access subset on January 31, 2020.
 This snapshot contained many types of papers: literature reviews, book reviews, editorials, case reports, research articles and more.
-We used only research articles, which aligns with the intended role of _bioRxiv_, and we refer to these articles as the PMC Corpus.
+We used only research articles, which aligns with the intended role of bioRxiv, and we refer to these articles as the PMC Corpus.
 
 #### The New York Times Annotated Corpus
 
@@ -305,17 +317,17 @@ We sought to build a model that would capture the linguistic similarity of artic
 Word2vec is a suite of neural networks designed to model linguistic features of words based on their appearance in text.
 These models are trained to either predict a word based on its sentence context as a continuous bag of words (CBOW) or predict the context based on a given word in a skipgram model [@arxiv:1301.3781].
 Through these prediction tasks the networks learn latent features that can be used for downstream tasks such as identifying similar words.
-We used gensim [@rehurek_lrec] (version 3.8.1) to train a word2vec continuous bag of words (CBOW) [@arxiv:1301.3781] model over the _bioRxiv_ corpus.
+We used gensim [@rehurek_lrec] (version 3.8.1) to train a word2vec continuous bag of words (CBOW) [@arxiv:1301.3781] model over the bioRxiv corpus.
 Our neural network architecture had 300 hidden nodes, and we trained this model for 20 epochs.
 We set a fixed random seed and used gensim's default settings for all other hyperparameters.
-Following training, we generated a document vector for every article within _bioRxiv_ and PubMed Central.
+Following training, we generated a document vector for every article within bioRxiv and PubMed Central.
 We calculated the document vector by taking the average of every token present within a given article [@arxiv:1405.4053].
 Words absent from the word2vec model were ignored.
 
 ### Visualizing and Characterizing Preprint Representations
 
 We sought to visualize the landscape of preprints and determine the extent to which their representation as document vectors corresponded to author-supplied document labels.
-We used principal component analysis (PCA) [@doi:10.1111/1467-9868.00196] to project _bioRxiv_ document vectors into a low dimensional space.
+We used principal component analysis (PCA) [@doi:10.1111/1467-9868.00196] to project bioRxiv document vectors into a low dimensional space.
 We trained this model using the scikit-learn [@scikit-learn] implementation of a randomized solver [@arxiv:0909.4061] with a random seed of 100, output of 50 principal components (PCs), and default settings for all other hyperparameters.
 After fitting, each preprint has a score for each PC.
 To visualize the tokens associated with each PC, we calculated the cosine similarity of each PC to all tokens in our word2vec model's vocabulary.
@@ -323,10 +335,10 @@ We report the top 100 positive and negative scoring tokens in the form of word c
 
 ### Discovering Unannotated Preprint-Publication Relationships
 
-The _bioRxiv_ maintainers have automated procedures to link preprints to peer reviewed versions and many journals require authors to update preprints with a link to the published version.
+The bioRxiv maintainers have automated procedures to link preprints to peer reviewed versions and many journals require authors to update preprints with a link to the published version.
 However, this automation is largely based on exact matching of certain attributes, and authors can forget to establish a link after publication.
-Authors can change the title between a preprint and published version (e.g., [@doi:10.1101/376665] and [@doi:10.1242/bio.038232]), which prevents _bioRxiv_ from automatically establishing a link.
-If the authors do not report the publication to _bioRxiv_, the preprint and the published version are treated as distinct entities despite representing the same underlying research.
+Authors can change the title between a preprint and published version (e.g., [@doi:10.1101/376665] and [@doi:10.1242/bio.038232]), which prevents bioRxiv from automatically establishing a link.
+If the authors do not report the publication to bioRxiv, the preprint and the published version are treated as distinct entities despite representing the same underlying research.
 We recognized that close proximity in the embedding space could reveal preprint to published version links that were missed by existing automated processes.
 First, we used CrossRef [@doi:10.1629/uksg.233] to identify bioRxiv preprints that were linked to a corresponding published article.
 We ignored pairs that contained papers not in the PMC corpus.
@@ -370,21 +382,21 @@ To test this hypothesis, we designed an experiment examining document and journa
 First, we removed all journals that had fewer than 100 papers in the PMC corpus.
 A subset of our PMC corpus was directly linked to papers in bioRxiv as they had been published as open access articles.
 We held out this subset and treated it as a gold standard test set.
-We used the remainder of the PMC corpus for training and initial evaluation via cross validation using the sklearn k-Nearest Neighbors implementation [@arXiv:1201.0490].
+We used the remainder of the PMC corpus for training and initial evaluation via cross validation using the scikit-learn k-Nearest Neighbors implementation [@arXiv:1201.0490].
 We imagined a use case of prioritizing relevant journals for preprint authors, and considered a list of ten journal suggestions to be an appropriate number and we considered a prediction to be a true positive if the correct journal appeared within the ten closest neighbors of the query article.
 
 Certain journals publish articles in a focused topic area, while others publish articles that cover many topics.
 Likewise, some journals have a publication rate of at most hundreds of papers per year while others publish at a rate of at least ten-thousand papers per year.
 Accounting for these characteristics, we designed two approaches - one centered on manuscripts and another centered on journals.
 
-For the manuscript-centric approach, we identified the ten most similar published manuscripts and evaluated where the documents were published.
+For the manuscript-based approach, we identified the ten most similar published manuscripts and evaluated where the documents were published.
 We embedded each query article into the space defined by the word2vec model as described for preprints.
 We selected the ten manuscripts that were nearest by Euclidean distance in the embedding space and returned the journal in which they were published.
 The number of journals returned via this method could be less than ten as multiple papers in close proximity to query article may belong to the same journal.
 Because this approach was based on paper proximity, we could return the articles that led to each journal being returned.
 However, journals that publish more papers are more frequently recommended in this framing.
 
-For the journal-centric approach, we identified the ten most similar journals by constructing a journal representation in the same embedding space.
+For the journal-based approach, we identified the ten most similar journals by constructing a journal representation in the same embedding space.
 We computed journal centroids as the average embedding of all published papers in the journal.
 We then project a query article into the same space and return the ten closest journal centroids by Euclidean distance.
 This technique guaranteed that at least ten distinct journals were returned and prevented journals that publish many papers from being heavily overrepresented.
@@ -394,22 +406,22 @@ We evaluated performance of both classifiers on our gold standard test set of pu
 
 ### Web Application for Discovering Similar Preprints and Journals
 
-We developed a web application that identifies similar papers and journals for any _bioRxiv_ and _medRxiv_ preprint and that places the preprint into the overall document landscape.
-Our web application downloads a pdf version of a preprint hosted on the  _bioRxiv_ or _medRxiv_ server.
+We developed a web application that identifies similar papers and journals for any bioRxiv and medRxiv preprint and that places the preprint into the overall document landscape.
+Our web application downloads a pdf version of a preprint hosted on the  bioRxiv or medRxiv server.
 We use pdfminer [@url:https://pdfminersix.readthedocs.io/en/latest/index.html] to extract text from the downloaded pdf.
 The extracted text is then fed into our word2vec model to construct a document embedding representation.
 We pass this representation onto our journal and manuscript search to identify journals based on the ten closest neighbors of individual papers as well as journal centroids.
-We implemented this search using sklearn's implementation of k-d trees.
-To run cost effectively on AWS, we sharded the k-d trees into four trees.
+We implemented this search using the scikit-learn implementation of k-d trees.
+To run cost effectively on Amazon Web Services, we sharded the k-d trees into four trees.
 
 Accompanying these recommendations, we also provide a neural network derived visualization of our training set and the article's position within it.
 We used SAUCIE [@doi:10.1101/2020.03.04.975177], an autoencoder designed to cluster single cell RNA-seq data, to build a two-dimensional embedding space that could be applied to newly generated preprints without retraining, a limitation of other approaches that we explored for visualizing entities expected to lie on a nonlinear manifold.
 We trained this model on document embeddings of PMC articles that did not contain a matching preprint version.
 We used the following parameters to train the model: a hidden size of 2, a learning rate of 0.001, lambda_b of 0, lambda_c of 0.001, and lambda_d of 0.001 for 2000 iterations.
-When a user requests a new document, we can then project the document on the pre-trained model to generate a visualization in two-dimensional space.
+When a user requests a new document, we can then project the document on the pretrained model to generate a visualization in two-dimensional space.
 We illustrate our recommendations as a short list and provide access to our network visualization at [https://greenelab.github.io/annorxiver-journal-recommender/](https://greenelab.github.io/annorxiver-journal-recommender/).
 
-We used the fully trained model to project user-requested _bioRxiv_ preprints onto the generated landscape to enable users to see where their preprint falls along the landscape.
+We used the fully trained model to project user-requested bioRxiv preprints onto the generated landscape to enable users to see where their preprint falls along the landscape.
 
 
 ## Results
@@ -511,13 +523,10 @@ We found that the first two PCs separated articles from different author-selecte
 We sought to understand the token patterns that drove these overall differences between documents.
 We identified the tokens most similar to a PC by calculating the cosine similarity score between tokens' embeddings in the word2vec space and each PC.
 Visualizing token-PC similarity revealed tokens associated with certain research approaches (Figures {@fig:topic_analysis_panels}B and {@fig:topic_analysis_panels}C).
-
 Examining the value for PC1 across all author-selected categories revealed an ordering of fields from cell biology to informatics-related disciplines (Figure {@fig:topic_analysis_panels}D).
 
 While the PC1 value range for each author-selected category was high, these results suggested that a primary driver in the variability of language use on bioRxiv could be the divide between data science approaches and cell biology ones.
 A similar analysis for PC2 suggested that neuroscience and genomics present a similar language continuum (Figure {@fig:topic_analysis_panels}E).
-
-
 For both of the top two PCs, the submitter-selected category of systems biology preprints was near the middle of the distribution and had a relatively large interquartile range when compared with other categories (Figure {@fig:topic_analysis_panels}D and {@fig:topic_analysis_panels}E).
 
 We examined the preprints that had the highest and lowest values for PC1 within systems biology (Table {#tbl:five_pc1_table}).
@@ -536,7 +545,7 @@ We provide the top 50 PCs of bioRxiv embeddings within our online repository (se
 | Spatiotemporal proteomics uncovers cathepsin-dependent host cell death during bacterial infection [@doi:10.1101/455048]                                           | -4.263964235099807 |  CC-BY-ND   | ![](images/paper-thumbnails/pc1/455048_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2018/11/07/455048/F1.large.jpg |
 | Systems analysis by mass cytometry identifies susceptibility of latent HIV-infected T cells to targeting of p38 and mTOR pathways [@doi:10.1101/371922]           | -4.279016673409032 | CC-BY-NC-ND | ![](images/paper-thumbnails/pc1/371922_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2018/07/19/371922/F1.large.jpg |
 | NADPH consumption by L-cystine reduction creates a metabolic vulnerability upon glucose deprivation [@doi:10.1101/733162]                                         | -4.592209988884236 | None        | ![](images/paper-thumbnails/pc1/733162_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2019/08/13/733162/F1.large.jpg |
-| Inhibition of Bruton’s tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease [@doi:10.1101/745943] | -4.736613689905791 | None        |  ![](images/paper-thumbnails/pc1/745943_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2019/08/28/745943/F1.large.jpg |
+| Inhibition of Bruton's tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease [@doi:10.1101/745943] | -4.736613689905791 | None        |  ![](images/paper-thumbnails/pc1/745943_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2019/08/28/745943/F1.large.jpg |
 | AKT but not MYC promotes reactive oxygen species-mediated cell death in oxidative culture [@doi:10.1101/754572]                                                   | -4.826793742506695 | None        |  ![](images/paper-thumbnails/pc1/754572_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2019/09/01/754572/F1.large.jpg |
 
 Table: PC1 divided the author-selected category of systems biology preprints along an axis from computational to molecular approaches. {#tbl:five_pc1_table}
@@ -545,9 +554,9 @@ Table: PC1 divided the author-selected category of systems biology preprints alo
 
 Metaresearch into bioRxiv, including our own, relies on annotations of preprints that have been published to their corresponding peer reviewed publication.
 Many journals require that authors update preprints with links to the published version of their article.
-This is accomplished in two ways: _bioRxiv_ may detect the link and automatically add it or authors may notify _bioRxiv_ that their preprint was published.
-However, _bioRxiv_ establishes these links based on consistency in metadata (i.e., title, author names, etc).
-Article titles, author lists, and other elements may change as a result of the peer review process. In these cases, if authors do not notify _bioRxiv_ that the preprint has since been published then the scientific record remains incomplete.
+This is accomplished in two ways: bioRxiv may detect the link and automatically add it or authors may notify bioRxiv that their preprint was published.
+However, bioRxiv establishes these links based on consistency in metadata (i.e., title, author names, etc).
+Article titles, author lists, and other elements may change as a result of the peer review process. In these cases, if authors do not notify bioRxiv that the preprint has since been published then the scientific record remains incomplete.
 
 Based on our finding that document embeddings captured fields and subfields, we expected that preprint-publication pairs with similar embedding values may represent the same document.
 We examined the extent to which annotated preprint-publication pairs were closer in this space that preprints were to a random paper published in the same journal in which the preprint was eventually published using already annotated pairs.
@@ -574,6 +583,7 @@ Across the entire list we found a high inter-rater reliability of with a Cohen's
 In the case of disagreements, a third scientist more carefully examined the pairs and made a final determination.
 Of the 200 pairs that we examined, approximately 98% of pairs with an embedding distance in the 0-25th and 25th-50th percentile bins were scored as true matches (Figure {@fig:preprint_links_panels}B).
 These two bins contained 1,720 preprint-article pairs, suggesting that many preprints have been published but not previously connected with their published versions.
+
 We overlaid these new annotations onto existing annotations to reassess the overall preprint publication rate reported by Abdill et al. [@doi:10.7554/eLife.45133].
 Our filtering criteria were intentionally stringent, so the increased estimate of publication rate amounts to a few percent (Figure {@fig:preprint_links_panels}C).
 We noticed that there was a particular enrichment of unannotated but published preprints in the 2017-2018 interval.
@@ -630,7 +640,7 @@ We used a k-nearest neighbor classifier trained on the remaining PMC documents t
 We found an enrichment of papers published within the same journal among the neighbors of the target paper.
 
 We developed an online app that returns the nearest published papers and journals that are nearest to a preprint.
-Users supply DOIs from bioRxiv or medRxiv. 
+Users supply digital object identifiers (DOIs) from bioRxiv or medRxiv.
 The application downloads the article from the preprint repository, converts the PDF to text, calculates a document embedding score, and returns the ten papers and journals with the most similar representations in the embedding space (Figure {@fig:journal_rec_workflow}).
 We also sought to display the position of each preprint in the overall landscape.
 We required an embedding that could be rapidly calculated for new documents, so we used the Sparse Autoencoder for Unsupervised Clustering, Imputation, and Embedding (SAUCIE) approach previously described for the analysis of single-cell gene expression data [@doi:10.1038/s41592-019-0576-7].
@@ -659,13 +669,10 @@ Using the full text of documents to correct these missing annotations provides a
 Importantly, this only accounts for papers that are published open access, so our analysis should be considered to raise the lower bound but the truly published fraction is likely to be higher.
 
 Our work presents a first step towards understanding the process by which peer review alters life sciences papers through an analysis of the full text of preprints and their corresponding publication.
-
 Our broad-based examination suggests certain changes, but the scale of changes appears modest.
 We lay the groundwork for future work that aims to identify sentences and claims that are altered during review.
 Our finding that document embeddings reveal manuscripts with similar outcomes is likely to be important to new tools that accelerate publishing, including those that automatically perform integrity checks and other critically important contributions.
-
 We also found that document embeddings captured many elements of how authors use language in preprints.
-
 Fields were separated first on an informatics / molecular axis, and author-selected categories could be distinguished based on embeddings.
 Document embeddings were also associated with the eventual journal at which the work was published.
 Based on this observation, we supply a web application that returns the papers and journals that are most similar to a bioRxiv or medRxiv preprint.
@@ -673,22 +680,25 @@ Based on this observation, we supply a web application that returns the papers a
 
 ## Software and Data Availability
 
-An online version of this manuscript is available under a Creative Commons Attribution License at [https://greenelab.github.io/annorxiver_manuscript/](https://greenelab.github.io/annorxiver_manuscript/). 
+An online version of this manuscript is available under a Creative Commons Attribution License at [https://greenelab.github.io/annorxiver_manuscript/](https://greenelab.github.io/annorxiver_manuscript/).
 Source for the research portions of this project is dual licensed under the BSD 3-Clause and Creative Commons Public Domain Dedication Licenses at [https://github.com/greenelab/annorxiver](https://github.com/greenelab/annorxiver).
-The journal recommendation website can be found at [https://greenelab.github.io/annorxiver-journal-recommender/](https://greenelab.github.io/annorxiver-journal-recommender/) and code for the website is available under a BSD-2-Clause Plus Patent License at [https://github.com/greenelab/annorxiver-journal-recommender](https://github.com/greenelab/annorxiver-journal-recommender).
+The journal recommendation website can be found at [https://greenelab.github.io/annorxiver-journal-recommender/](https://greenelab.github.io/annorxiver-journal-recommender/), and code for the website is available under a BSD-2-Clause Plus Patent License at [https://github.com/greenelab/annorxiver-journal-recommender](https://github.com/greenelab/annorxiver-journal-recommender).
 Full text access for the bioRxiv repository is available at [https://www.biorxiv.org/tdm](https://www.biorxiv.org/tdm).
 Access to PubMed Central's Open Access subset is available on NCBI's FTP server at [https://www.ncbi.nlm.nih.gov/pmc/tools/ftp/](https://www.ncbi.nlm.nih.gov/pmc/tools/ftp/).
 Access to the New York Times Annotated Corpus (NYTAC) is available upon request with the Linguistic Data Consortium at [https://catalog.ldc.upenn.edu/LDC2008T19](https://catalog.ldc.upenn.edu/LDC2008T19).
 
-## Acknowledgements
+## Acknowledgments
 
 The authors would like to thank Ariel Hippen Anderson for evaluating potential missing preprint to published version links.
-We also would like to thank Richard Sever and the _bioRxiv_ team for their assistance with access to and support with questions about preprint full text downloaded from _bioRxiv_. 
-This work was supported by [Grant GBMF4552](https://www.moore.org/grant-detail?grantId=GBMF4552) from the Gordon Betty Moore Foundation and by NIH T32HG00046, Computational Genomics training grant, from the National Human Genome Reserach Institute (NHGRI).
+We also would like to thank Richard Sever and the bioRxiv team for their assistance with access to and support with questions about preprint full text downloaded from bioRxiv.
 
-## Competing Interest
+## Funding
 
-Need to note here.
+This work was supported by grants from the Gordon Betty Moore Foundation (GBMF4552) and the National Institutes of Health's National Human Genome Research Institute (NHGRI) under awards T32 HG00046 and R01 HG010067.
+
+## Competing Interests
+
+Need to note Marvin's employer here.
 
 
 ## References {.page_break_before}
