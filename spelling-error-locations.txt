@@ -86,10 +86,6 @@ content/04.results.md:219:DOIs
 content/04.results.md:222:Autoencoder
 content/04.results.md:230:preprocesses
 content/04.results.md:233:png
-content/05.discussion.md:5:neuroscience
-content/05.discussion.md:5:preprinting
-content/05.discussion.md:8:neuroscience
-content/05.discussion.md:10:publsihed
 content/07.acknowledgements.md:7:NCBI's
 content/07.acknowledgements.md:10:Acknowledgements
 content/07.acknowledgements.md:12:Hippen

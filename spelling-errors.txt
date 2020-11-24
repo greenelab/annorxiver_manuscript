@@ -2,7 +2,7 @@ Abdill
 Acknowledgements
 AKT
 auc
-autoencoder
+Autoencoder
 AWS
 bargraph
 bioRxiv’s
@@ -43,7 +43,7 @@ mTOR
 MYC
 NADPH
 NCBI’s
-Neuroscience
+neuroscience
 NHGRI
 NIH’s
 NLRP
@@ -58,7 +58,6 @@ preprinted
 preprinting
 preprocesses
 proteomics
-publsihed
 quantile
 quantiles
 Reserach

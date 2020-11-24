@@ -71,9 +71,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/4a059c667a2b65f4aa0490fd7b3f650fdc6b52be/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/4a059c667a2b65f4aa0490fd7b3f650fdc6b52be/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/4a059c667a2b65f4aa0490fd7b3f650fdc6b52be/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/d682ac48c52f3113ea647d6dce99eaa3a3fc5d61/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/d682ac48c52f3113ea647d6dce99eaa3a3fc5d61/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/d682ac48c52f3113ea647d6dce99eaa3a3fc5d61/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -87,9 +87,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/annorxiver_manuscript/v/4a059c667a2b65f4aa0490fd7b3f650fdc6b52be/">permalink</a>)
+(<a href="https://greenelab.github.io/annorxiver_manuscript/v/d682ac48c52f3113ea647d6dce99eaa3a3fc5d61/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/4a059c667a2b65f4aa0490fd7b3f650fdc6b52be">greenelab/annorxiver_manuscript@4a059c6</a>
+from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/d682ac48c52f3113ea647d6dce99eaa3a3fc5d61">greenelab/annorxiver_manuscript@d682ac4</a>
 on November 23, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -674,23 +674,22 @@ A. Starting with the home screen, users can paste in a bioRxiv or medRxiv DOI, w
 D. The app also displays the location of the query preprint in PMC.
 E. Users can select a square within the landscape to examine statistics associated with the square including the top journals by article count in that square and the odds ratio of tokens.
 ](images/journal_recommender_workflow.png){#fig:journal_rec_workflow width=“100%”}</p>
-<h2 id="discussion">Discussion</h2>
-<p>We analyzed the language contained used in preprints and examined how it changes through the publication process.
-We found that bioRxiv and PubMed Central (PMC) have similar word frequency distributions, which suggests that the overall manner of writing is consistent with the biomedical literature.
-At the token level, those most strongly associated with bioRxiv are related to neuroscience and bioinformatics, which are also fields that have seen high uptake of preprinting <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">48</a>]</span>.
-We noticed that a multitude of preprints highly associated with the first principal component have restrictive or no copyright license (Supplemental Table <a href="#tbl:five_pc1_table">2</a>).
-This finding highlights the ongoing problem of restricted access within the scientific community <span class="citation" data-cites="1FHYUCO1v 11GpiE0CN">[<a href="#ref-1FHYUCO1v" role="doc-biblioref">65</a>,<a href="#ref-11GpiE0CN" role="doc-biblioref">66</a>]</span>.
-We also found that the second principal component for our language embedding differentiated neuroscience and bioinformatics papers.</p>
-<p>We examined preprints that were textually similar to published articles and found numerous missing links between preprints and their publsihed counterparts.
-This observation led us to find that the life sciences preprint publication rate is higher than previously estimated (Figure ??).
-Preprint-publication similarity also predicts journal endpoints with modest performance for already published articles.
-This observation enabled us to provide a web application that allows users to identify the papers and journals that are most similar to a <em>bioRxiv</em> or <em>medRxiv</em> preprint.</p>
-<h2 id="conclusion-and-future-directions">Conclusion and Future Directions</h2>
-<p>Our linguistic analysis did not reveal substantial changes in the language during the peer-reviewed publishing process.
-The tokens most strongly associated with the peer reviewed form, as opposed to the preprint form, were associated with data availability and statistical reporting.
-We found that embeddings of preprints and publications could be compared and that distance in this space was meaningful in terms of topic area and the journal of eventual publication.
-Being able to identify similar preprints and publications using text content makes it feasible to begin tackling more detailed questions, and our analytical software is all open source to enable others to build upon them.
-The analysis of preprints’ full text can support new tools that accelerate publishing, integrity checks, and other critically important contributions.</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>We analyzed the full text of bioRxiv, comparing it with the open access portion of PMC, and found that the overall manner of writing is consistent with the biomedical literature.
+A benefit of analyzing bioRxiv text is that we can compare preprint and published versions to examine the influence of the publication process.
+Token-level analyses suggest that differences between corpora are driven by fields, while comparisons of preprints with their corresponding publication reveals differences in typesetting and supplementary materials.</p>
+<p>Previous analyses have focused on article metadata, including which papers are heavily downloaded and discussed <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">48</a>]</span> and by which communities discuss them <span class="citation" data-cites="QM87Cg3q">[<a href="#ref-QM87Cg3q" role="doc-biblioref">65</a>]</span>.
+We found that some preprints are high similar to published articles within the PMC open access corpus, and a detailed examination revealed that many preprints were published but not previously annotated.
+Using the full text of documents to correct these missing annotations provides a comprehensive understanding of the extent to which preprints are published and this correction resulted in a publication rate that is higher than previously estimated.
+Importantly, this only accounts for papers that are published open access, so our analysis should be considered to raise the lower bound but the truly published fraction is likely to be higher.</p>
+<p>Our work presents a first step towards understanding the process by which peer review alters life sciences papers through an analysis of the full text of preprints and their corresponding publication.</p>
+<p>Our broad-based examination suggests certain changes, but the scale of changes appears modest.
+We lay the groundwork for future work that aims to identify sentences and claims that are altered during review.
+Our finding that document embeddings reveal manuscripts with similar outcomes is likely to be important to new tools that accelerate publishing, including those that automatically perform integrity checks and other critically important contributions.</p>
+<p>We also found that document embeddings captured many elements of how authors use language in preprints.</p>
+<p>Fields were separated first on an informatics / molecular axis, and author-selected categories could be distinguished based on embeddings.
+Document embeddings were also associated with the eventual journal at which the work was published.
+Based on this observation, we supply a web application that returns the papers and journals that are most similar to a bioRxiv or medRxiv preprint.</p>
 <h2 id="software-and-data-availability">Software and Data Availability</h2>
 <p>An online version of this manuscript is available under a Creative Commons Attribution License at <a href="https://greenelab.github.io/annorxiver_manuscript/">https://greenelab.github.io/annorxiver_manuscript/</a>.
 Source for the research portions of this project is dual licensed under the BSD 3-Clause and Creative Commons Public Domain Dedication Licenses at <a href="https://github.com/greenelab/annorxiver">https://github.com/greenelab/annorxiver</a>.
@@ -1060,16 +1059,11 @@ Matthew Amodio, David van Dijk, Krishnan Srinivasan, William S. Chen, Hussein Mo
 <em>Nature Methods</em> (2019-10-07) <a href="https://doi.org/gf9rsg">https://doi.org/gf9rsg</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41592-019-0576-7">10.1038/s41592-019-0576-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31591579">31591579</a></p>
 </div>
-<div id="ref-1FHYUCO1v">
-<p>65. <strong>Biologists debate how to license preprints</strong> <br />
-Lindsay McKenzie<br />
-<em>Nature</em> (2017-06-16) <a href="https://doi.org/b9fb">https://doi.org/b9fb</a> <br />
-DOI: <a href="https://doi.org/10.1038/nature.2017.22161">10.1038/nature.2017.22161</a></p>
-</div>
-<div id="ref-11GpiE0CN">
-<p>66. <strong>The licensing of <em>bioRxiv</em> preprints</strong> <br />
-Daniel Himmelstein<br />
-<em>Satoshi Village</em> (2016-12-05) <a href="https://blog.dhimmel.com/biorxiv-licenses/">https://blog.dhimmel.com/biorxiv-licenses/</a></p>
+<div id="ref-QM87Cg3q">
+<p>65. <strong>Quantifying and contextualizing the impact of bioRxiv preprints through automated social media audience segmentation</strong> <br />
+Jedidiah Carlson, Kelley Harris<br />
+<em>PLOS Biology</em> (2020-09-22) <a href="https://doi.org/ghk53x">https://doi.org/ghk53x</a> <br />
+DOI: <a href="https://doi.org/10.1371/journal.pbio.3000860">10.1371/journal.pbio.3000860</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32960891">32960891</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7508356">PMC7508356</a></p>
 </div>
 </div>
 <h2 id="supplemental-figures">Supplemental Figures</h2>
