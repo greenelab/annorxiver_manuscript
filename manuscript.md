@@ -105,11 +105,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/285a70e541c3652c8288746dca41aec9a5dc22ed/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/76314f03bb34b969362f054c9940ba062d2ab5e2/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/285a70e541c3652c8288746dca41aec9a5dc22ed/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/76314f03bb34b969362f054c9940ba062d2ab5e2/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/285a70e541c3652c8288746dca41aec9a5dc22ed/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/76314f03bb34b969362f054c9940ba062d2ab5e2/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -143,9 +143,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/285a70e541c3652c8288746dca41aec9a5dc22ed/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/76314f03bb34b969362f054c9940ba062d2ab5e2/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@285a70e](https://github.com/greenelab/annorxiver_manuscript/tree/285a70e541c3652c8288746dca41aec9a5dc22ed)
+from [greenelab/annorxiver_manuscript@76314f0](https://github.com/greenelab/annorxiver_manuscript/tree/76314f03bb34b969362f054c9940ba062d2ab5e2)
 on November 24, 2020.
 </em></small>
 
@@ -298,6 +298,13 @@ The New York Times Annotated Corpus (NYTAC) is [@sandhaus2008new] is collection 
 This collection contains over 1.8 million articles where 1.5 million of those articles have undergone manual entity tagged by library scientists [@sandhaus2008new].
 We downloaded this collection on August 3rd, 2020 from the Linguistic Data Consortium (see Software and Data Availability section) and used the entire collection for our corpora comparison analysis.
 
+### Mapping bioRxiv preprints to their published counterparts
+
+We used CrossRef [@doi:10.1629/uksg.233] to identify bioRxiv preprints that were linked to a corresponding published article.
+We accessed CrossRef on July 7th, 2020 and were able to successfully link 23,271 preprint to their published counterparts.
+Out of those 23,271 preprint-published pairs only 17,952 pairs had a published version present within the PMC open access corpus. 
+For our analyses that invovled published links we only focused on the subset of preprints-published pairs that contained a published article within PMC. 
+
 ### Comparing Corpora
 
 We compared the bioRxiv, PMC, and NYTAC corpora to assess the similarities and differences between them.
@@ -340,9 +347,7 @@ However, this automation is largely based on exact matching of certain attribute
 Authors can change the title between a preprint and published version (e.g., [@doi:10.1101/376665] and [@doi:10.1242/bio.038232]), which prevents bioRxiv from automatically establishing a link.
 If the authors do not report the publication to bioRxiv, the preprint and the published version are treated as distinct entities despite representing the same underlying research.
 We recognized that close proximity in the embedding space could reveal preprint to published version links that were missed by existing automated processes.
-First, we used CrossRef [@doi:10.1629/uksg.233] to identify bioRxiv preprints that were linked to a corresponding published article.
-We ignored pairs that contained papers not in the PMC corpus.
-We calculated the distribution of known preprint to published distances by taking the Euclidean distance between the preprint's embedding coordinates and the coordinates of its corresponding published version.
+We used the subset of paper-preprint pairs annotated in CrossRef as described above to calculate the distribution of known preprint to published distances, which we calculated as the Euclidean distance between the preprint's embedding coordinates and the coordinates of its corresponding published version.
 We also calculated a background distribution, which consisted of the distance between each preprint with an annotated publication and a randomly selected article from the same journal.
 Next, we calculated distances between preprints without a published version link with PubMed Central articles that weren't matched with a corresponding preprint.
 We filtered any potential links with distances that were greater than the minimum value of the background distribution to reduce the curation burden.
@@ -380,7 +385,7 @@ We reported the half-life of each bioRxiv preprint category.
 We hypothesized that preprints would be more likely to be published in journals that contained similar content to the work in question.
 To test this hypothesis, we designed an experiment examining document and journal representations.
 First, we removed all journals that had fewer than 100 papers in the PMC corpus.
-A subset of our PMC corpus was directly linked to papers in bioRxiv as they had been published as open access articles.
+Certain manuscripts in the PMC corpus were annotated to their corresponding bioRxiv preprints through CrossRef as previously noted.
 We held out this subset and treated it as a gold standard test set.
 We used the remainder of the PMC corpus for training and initial evaluation via cross validation using the scikit-learn k-Nearest Neighbors implementation [@arXiv:1201.0490].
 We imagined a use case of prioritizing relevant journals for preprint authors, and considered a list of ten journal suggestions to be an appropriate number and we considered a prediction to be a true positive if the correct journal appeared within the ten closest neighbors of the query article.
@@ -467,11 +472,10 @@ C. Of the terms that differ between bioRxiv and PMC, the most abundant in bioRxi
 D. The major differences in token frequencies for preprints and their corresponding published version often appear to be associated with typesetting and supplementary or additional materials.
 Points indicate the log_2(OR) for each token and error bars indicate the 95% confidence intervals.
 E. The tokens with the largest absolute differences in abundance appear to be stylistic.
-](https://raw.githubusercontent.com/greenelab/annorxiver/472d9b2abd42aecff339fe21c8378f9a556b80d8/figure_generation/output/figure_one_panels.svg){#fig:corpora_comparison_panels, width="100%"}
+](https://raw.githubusercontent.com/danich1/annorxiver/e61dff8efe2216852a6b2a9ff0ec921a54356ad7/figure_generation/output/figure_one_panels.svg){#fig:corpora_comparison_panels width="100%"}
 
 We first compared the overall text of bioRxiv with PMC, adding a corpus of professionally written but non-biomedical text (NYTAC) as a control.
 Documents on bioRxiv were slightly longer than those on PMC, but both were much longer than those from NYTAC (Table {@tbl:corpora_stats}).
-<!--IS THERE AN INCREASE IN PMC DOCUMENT LENGTH OVER TIME? ARE MODERN PAPERS THE SAME LENGTH AS PREPRINTS? Also could be a function of the field or similar. Don't think we need to answer this now - could leave it for the future unless we are asked to look into this.-->
 Other than length, both corpora were otherwise quite similar.
 The average sentence length, fraction of pronouns, and the use of the passive voice were all more similar between bioRxiv and PMC than they were to NYTAC (Table {@tbl:corpora_stats}).
 The Kullback–Leibler divergence measures the extent to which two distributions, but not the specific entities that comprise those distributions, differ.
@@ -510,7 +514,7 @@ C. A word cloud visualization of PC2, which separated bioinformatics from neuros
 D. Examining PC1 values for each article by category created a continuum from informatics-related fields on the top through cell biology on the bottom.
 Certain article categories (neuroscience, genetics) were spread throughout PC1 values.
 E. Examining PC2 values for each article by category revealed fields like genomics, bioinformatics, and genetics on the top and neuroscience and behavior on the bottom.
-](https://raw.githubusercontent.com/greenelab/annorxiver/472d9b2abd42aecff339fe21c8378f9a556b80d8/figure_generation/output/figure_two_panels.svg){#fig:topic_analysis_panels width="100%"}
+](https://raw.githubusercontent.com/danich1/annorxiver/e61dff8efe2216852a6b2a9ff0ec921a54356ad7/figure_generation/output/figure_two_panels.svg){#fig:topic_analysis_panels width="100%"}
 
 Document embeddings provide a means to categorize the language of documents in a way that takes into account the similarities between terms [@arxiv:1405.4053;@arxiv:1707.02377;@arxiv:2001.05727].
 We first trained word embeddings using a 300-dimensional word2vec continuous bag of words model.
@@ -534,19 +538,19 @@ The preprints with the highest five PC values [@doi:10.1101/197400;@doi:10.1101/
 The preprints with the lowest five PC values [@doi:10.1101/455048;@doi:10.1101/371922;@doi:10.1101/733162;@doi:10.1101/745943;@doi:10.1101/754572] were focused on signaling.
 We provide the top 50 PCs of bioRxiv embeddings within our online repository (see Software and Data Availability).
 
-| Title [citation]     | PC1  | License | Figure Thumbnail | Figure Link |
-|--------------------------------|-------------------|------------|----------|-------------|
-| Conditional Robust Calibration (CRC): a new computational Bayesian methodology for model parameters estimation and identifiability analysis [@doi:10.1101/197400] | 4.700554908074704 | None         | ![](images/paper-thumbnails/pc1/197400_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2017/10/02/197400/F1.large.jpg |
-| Machine learning of stochastic gene network phenotypes [@doi:10.1101/825943]                                                                                      | 4.410660604449826 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc1/825943_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2019/10/31/825943/F5.large.jpg |
-| Notions of similarity for computational biology models [@doi:10.1101/044818]                                                                                      | 4.355295926618207 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc1/044818_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2016/03/21/044818/F1.large.jpg |
-| GpABC: a Julia package for approximate Bayesian computation with Gaussian process emulation [@doi:10.1101/769299]                                                 | 4.351517618262304 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc1/769299_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2019/09/18/769299/F1.large.jpg |
-| SBpipe: a collection of pipelines for automating repetitive simulation and analysis tasks [@doi:10.1101/107250]                                                   | 4.321847854182741 |  CC-BY-NC-ND |  ![](images/paper-thumbnails/pc1/107250_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2017/02/09/107250/F1.large.jpg |
-| | | | | |
-| Spatiotemporal proteomics uncovers cathepsin-dependent host cell death during bacterial infection [@doi:10.1101/455048]                                           | -4.263964235099807 |  CC-BY-ND   | ![](images/paper-thumbnails/pc1/455048_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2018/11/07/455048/F1.large.jpg |
-| Systems analysis by mass cytometry identifies susceptibility of latent HIV-infected T cells to targeting of p38 and mTOR pathways [@doi:10.1101/371922]           | -4.279016673409032 | CC-BY-NC-ND | ![](images/paper-thumbnails/pc1/371922_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2018/07/19/371922/F1.large.jpg |
-| NADPH consumption by L-cystine reduction creates a metabolic vulnerability upon glucose deprivation [@doi:10.1101/733162]                                         | -4.592209988884236 | None        | ![](images/paper-thumbnails/pc1/733162_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2019/08/13/733162/F1.large.jpg |
-| Inhibition of Bruton's tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease [@doi:10.1101/745943] | -4.736613689905791 | None        |  ![](images/paper-thumbnails/pc1/745943_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2019/08/28/745943/F1.large.jpg |
-| AKT but not MYC promotes reactive oxygen species-mediated cell death in oxidative culture [@doi:10.1101/754572]                                                   | -4.826793742506695 | None        |  ![](images/paper-thumbnails/pc1/754572_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2019/09/01/754572/F1.large.jpg |
+| Title [citation]     | PC1  | License | Figure Thumbnail |
+|--------------------------------|-------------------|------------|----------|
+| Conditional Robust Calibration (CRC): a new computational Bayesian methodology for model parameters estimation and identifiability analysis [@doi:10.1101/197400] | 4.700554908074704 | None         | ![](images/paper-thumbnails/pc1/197400_thumbnail.png) |
+| Machine learning of stochastic gene network phenotypes [@doi:10.1101/825943]                                                                                      | 4.410660604449826 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc1/825943_thumbnail.png) |
+| Notions of similarity for computational biology models [@doi:10.1101/044818]                                                                                      | 4.355295926618207 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc1/044818_thumbnail.png) |
+| GpABC: a Julia package for approximate Bayesian computation with Gaussian process emulation [@doi:10.1101/769299]                                                 | 4.351517618262304 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc1/769299_thumbnail.png) |
+| SBpipe: a collection of pipelines for automating repetitive simulation and analysis tasks [@doi:10.1101/107250]                                                   | 4.321847854182741 |  CC-BY-NC-ND |  ![](images/paper-thumbnails/pc1/107250_thumbnail.png) |
+| | | | |
+| Spatiotemporal proteomics uncovers cathepsin-dependent host cell death during bacterial infection [@doi:10.1101/455048]                                           | -4.263964235099807 |  CC-BY-ND   | ![](images/paper-thumbnails/pc1/455048_thumbnail.png) |
+| Systems analysis by mass cytometry identifies susceptibility of latent HIV-infected T cells to targeting of p38 and mTOR pathways [@doi:10.1101/371922]           | -4.279016673409032 | CC-BY-NC-ND | ![](images/paper-thumbnails/pc1/371922_thumbnail.png) |
+| NADPH consumption by L-cystine reduction creates a metabolic vulnerability upon glucose deprivation [@doi:10.1101/733162]                                         | -4.592209988884236 | None        | ![](images/paper-thumbnails/pc1/733162_thumbnail.png) |
+| Inhibition of Bruton’s tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease [@doi:10.1101/745943] | -4.736613689905791 | None        |  ![](images/paper-thumbnails/pc1/745943_thumbnail.png) |
+| AKT but not MYC promotes reactive oxygen species-mediated cell death in oxidative culture [@doi:10.1101/754572]                                                   | -4.826793742506695 | None        |  ![](images/paper-thumbnails/pc1/754572_thumbnail.png) |
 
 Table: PC1 divided the author-selected category of systems biology preprints along an axis from computational to molecular approaches. {#tbl:five_pc1_table}
 
@@ -608,7 +612,7 @@ C. Author-selected categories were associated with modest differences in the tim
 Categories are shown on the y-axis.
 The x-axis shows the median time-to-publish for each category.
 Error bars represent 95% confidence intervals for each preprint category's median time to publication.
-](https://raw.githubusercontent.com/danich1/annorxiver/232ab6f9f29f283070ed08b88a421b3bedaf5cbd/figure_generation/output/figure_four_panels.svg){#fig:publication_delay_panels width="100%"}
+](https://raw.githubusercontent.com/danich1/annorxiver/e61dff8efe2216852a6b2a9ff0ec921a54356ad7/figure_generation/output/figure_four_panels.svg){#fig:publication_delay_panels width="100%"}
 
 The process of peer review includes a number of steps which take variable amounts of time [@doi:10.1002/nop2.51].
 Comparing bioRxiv preprints with their corresponding published version provides an opportunity to better understand peer review and publishing.
@@ -650,7 +654,6 @@ Users can also explore the terms associated with the top 50 PCs derived from the
 ![
 The journal similarity search app workflow allows users to examine where an individual preprint falls in the overall document landscape.
 A. Starting with the home screen, users can paste in a bioRxiv or medRxiv DOI, which sends a request to bioRxiv or medRxiv.
-
 Next the app preprocesses the requested preprint and returns a listing of (B) the top ten most similar papers and (C) the ten closest journals.
 D. The app also displays the location of the query preprint in PMC.
 E. Users can select a square within the landscape to examine statistics associated with the square including the top journals by article count in that square and the odds ratio of tokens.
@@ -719,7 +722,7 @@ The plot on the left (A) is a point range plot of the odds ratio with respect to
 Values greater than one indicate a high association with bioRxiv whereas values less than one indicate high association with the New York Times.
 The dotted line provides a breaking point between both categories.
 The plot on the right (B) is a bar chart of token frequency appearing in bioRxiv and New York Times respectively.
-](https://raw.githubusercontent.com/danich1/annorxiver/2a121a2a7db820467c6c5c15fffd697b234b5a50/biorxiv/corpora_comparison/output/figures/biorxiv_vs_reference.png){#fig:biorxiv_v_reference tag="S2"}
+](https://raw.githubusercontent.com/danich1/annorxiver/e61dff8efe2216852a6b2a9ff0ec921a54356ad7/biorxiv/corpora_comparison/output/figures/biorxiv_vs_reference.png){#fig:biorxiv_v_reference tag="S2"}
 
 ![
 Typesetting symbols and biologically relevant tokens are highly enriched when comparing PubMed Central (PMC) to the New York Times.
@@ -727,29 +730,29 @@ The plot on the left (A) is a point range plot of the odds ratio with respect to
 Values greater than one indicate a high association with PMC whereas values less than one indicate high association with the New York Times.
 The dotted line provides a breaking point between both categories.
 The plot on the right (B) is a bar chart of token frequency appearing in PMC and New York Times respectively.
-](https://raw.githubusercontent.com/danich1/annorxiver/2a121a2a7db820467c6c5c15fffd697b234b5a50/biorxiv/corpora_comparison/output/figures/pmc_vs_reference.png){#fig:pmc_v_reference tag="S3"}
+](https://raw.githubusercontent.com/danich1/annorxiver/a13cc22c1474071dee45602502ceb3d6fb71ab2d/biorxiv/corpora_comparison/output/figures/pmc_vs_reference.png){#fig:pmc_v_reference tag="S3"}
 
 ![
 Both classifiers outperform the randomized baseline when predicting a paper's journal endpoint.
 This bargraph shows each model's accuracy in respect to predicting the training and test set.
-](https://raw.githubusercontent.com/greenelab/annorxiver/472d9b2abd42aecff339fe21c8378f9a556b80d8/pmc/journal_recommendation/output/figures/knn_result.svg){#fig:knn_auc tag="S4" width="100%"}
+](https://raw.githubusercontent.com/danich1/annorxiver/a13cc22c1474071dee45602502ceb3d6fb71ab2d/pmc/journal_recommendation/output/figures/knn_result.svg){#fig:knn_auc tag="S4" width="100%"}
 
 <!-- Commenting this out for now unless we get asked for it. The first table is probably comprehensive enough to show that our approach also works within a field and then we don't have to go too deep into a second one.
 ## Supplemental Tables
 
-| Title [citation]   | PC_2  | License  | Figure Thumbnail | Figure Link |
-|--------------------------------|--------------|-------------------|----------|----------|
-| Pangenome Analysis of Enterobacteria Reveals Richness of Secondary Metabolite Gene Clusters and their Associated Gene Sets [@doi:10.1101/781328]                                                           | 3.5865702659438883 |  CC-BY-ND    | ![](images/paper-thumbnails/pc2/781328_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2019/09/25/781328/F1.large.jpg |
-| QTG-Finder: a machine-learning based algorithm to prioritize causal genes of quantitative trait loci [@doi:10.1101/484204]                                                                                 | 3.470388383023157  | None         |  ![](images/paper-thumbnails/pc2/484204_thumbnail.png)  | https://www.biorxiv.org/content/biorxiv/early/2019/04/29/484204/F1.large.jpg |
-| Identification of candidate genes underlying nodulation-specific phenotypes in Medicago truncotula through integration of genome-wide association studies and co-expression networks [@doi:10.1101/392779] | 3.3814906334073953 |  CC-BY-NC-ND |  ![](images/paper-thumbnails/pc2/392779_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2018/08/16/392779/F1.large.jpg |
-| Raw sequence to target gene prediction: An integrated inference pipeline for ChIP-seq and RNA-seq datasets [@doi:10.1101/220152]                                                                           | 3.3632576028389742 | None         |  ![](images/paper-thumbnails/pc2/220152_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2017/11/16/220152/F3.large.jpg |
-| The y-ome defines the thirty-four percent of Escherichia coli genes that lack experimental evidence of function [@doi:10.1101/328591]                                                                      | 3.28742786641417   | CC-BY        | ![](images/paper-thumbnails/pc2/328591_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2018/12/03/328591/F1.large.jpg |
+| Title [citation]   | PC_2  | License  | Figure Thumbnail |
+|--------------------------------|--------------|-------------------|----------|
+| Pangenome Analysis of Enterobacteria Reveals Richness of Secondary Metabolite Gene Clusters and their Associated Gene Sets [@doi:10.1101/781328]                                                           | 3.5865702659438883 |  CC-BY-ND    | ![](images/paper-thumbnails/pc2/781328_thumbnail.png) |
+| QTG-Finder: a machine-learning based algorithm to prioritize causal genes of quantitative trait loci [@doi:10.1101/484204]                                                                                 | 3.470388383023157  | None         |  ![](images/paper-thumbnails/pc2/484204_thumbnail.png)  |
+| Identification of candidate genes underlying nodulation-specific phenotypes in Medicago truncotula through integration of genome-wide association studies and co-expression networks [@doi:10.1101/392779] | 3.3814906334073953 |  CC-BY-NC-ND |  ![](images/paper-thumbnails/pc2/392779_thumbnail.png) |
+| Raw sequence to target gene prediction: An integrated inference pipeline for ChIP-seq and RNA-seq datasets [@doi:10.1101/220152]                                                                           | 3.3632576028389742 | None         |  ![](images/paper-thumbnails/pc2/220152_thumbnail.png) |
+| The y-ome defines the thirty-four percent of Escherichia coli genes that lack experimental evidence of function [@doi:10.1101/328591]                                                                      | 3.28742786641417   | CC-BY        | ![](images/paper-thumbnails/pc2/328591_thumbnail.png) |
 | | | | | |
-| The effects of time-varying temperature on delays in genetic networks [@doi:10.1101/019687]                                                                                                    | -2.7047102478958056 | None          | ![](images/paper-thumbnails/pc2/019687_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2015/09/24/019687/F1.large.jpg |
-| An analog to digital converter creates nuclear localization pulses in yeast calcium signaling [@doi:10.1101/357939]                                                                            | -2.775745000260895  | None          | ![](images/paper-thumbnails/pc2/357939_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2018/06/28/357939/F1.large.jpg |
-| Nicotinic modulation of hierarchal inhibitory control over prefrontal cortex resting state dynamics: modeling of genetic modification and schizophreniarelated pathology [@doi:10.1101/301051] | -3.047342382798414  | None          | ![](images/paper-thumbnails/pc2/301051_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2018/04/13/301051/F1.large.jpg |
-| Electrical propagation of vasodilatory signals in capillary networks [@doi:10.1101/840280]                                                                                                     | -3.107715578793087  |  CC-BY-NC-ND  | ![](images/paper-thumbnails/pc2/840280_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2019/11/13/840280/F1.large.jpg |
-| Dendritic spine geometry and spine apparatus organization govern the spatiotemporal dynamics of calcium [@doi:10.1101/386367]                                                                  | -3.21533499072831   |  CC-BY-NC-ND  | ![](images/paper-thumbnails/pc2/386367_thumbnail.png) | https://www.biorxiv.org/content/biorxiv/early/2019/05/29/386367/F1.large.jpg |
+| The effects of time-varying temperature on delays in genetic networks [@doi:10.1101/019687]                                                                                                    | -2.7047102478958056 | None          | ![](images/paper-thumbnails/pc2/019687_thumbnail.png) |
+| An analog to digital converter creates nuclear localization pulses in yeast calcium signaling [@doi:10.1101/357939]                                                                            | -2.775745000260895  | None          | ![](images/paper-thumbnails/pc2/357939_thumbnail.png) |
+| Nicotinic modulation of hierarchal inhibitory control over prefrontal cortex resting state dynamics: modeling of genetic modification and schizophreniarelated pathology [@doi:10.1101/301051] | -3.047342382798414  | None          | ![](images/paper-thumbnails/pc2/301051_thumbnail.png) |
+| Electrical propagation of vasodilatory signals in capillary networks [@doi:10.1101/840280]                                                                                                     | -3.107715578793087  |  CC-BY-NC-ND  | ![](images/paper-thumbnails/pc2/840280_thumbnail.png) |
+| Dendritic spine geometry and spine apparatus organization govern the spatiotemporal dynamics of calcium [@doi:10.1101/386367]                                                                  | -3.21533499072831   |  CC-BY-NC-ND  | ![](images/paper-thumbnails/pc2/386367_thumbnail.png) |
 
 Table: Top and bottom five systems biology preprints projected onto the PC2 direction. These preprints contain bioinformatis and neuroscience concepts respectively. {#tbl:five_pc2_table}
 -->
