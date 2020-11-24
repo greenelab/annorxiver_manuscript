@@ -70,3 +70,15 @@ pdfminer
 sharded
 autoencoder
 stopword
+neuroscience
+genomic
+interquartile
+png
+AKT
+MYC
+inflammasome
+quantile
+quantiles
+Abdill
+hexbin
+boxplot
