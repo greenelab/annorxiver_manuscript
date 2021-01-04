@@ -8,7 +8,7 @@ author-meta:
 - Casey S. Greene
 bibliography:
 - content/manual-references.json
-date-meta: '2020-11-24'
+date-meta: '2021-01-04'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2020-11-24" />
+  <meta name="dc.date" content="2021-01-04" />
 
-  <meta name="citation_publication_date" content="2020-11-24" />
+  <meta name="citation_publication_date" content="2021-01-04" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -105,11 +105,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/76314f03bb34b969362f054c9940ba062d2ab5e2/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/abf40b8c930e5f68b6fca6394933bb84c406b5f5/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/76314f03bb34b969362f054c9940ba062d2ab5e2/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/abf40b8c930e5f68b6fca6394933bb84c406b5f5/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/76314f03bb34b969362f054c9940ba062d2ab5e2/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/abf40b8c930e5f68b6fca6394933bb84c406b5f5/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -143,10 +143,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/76314f03bb34b969362f054c9940ba062d2ab5e2/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/abf40b8c930e5f68b6fca6394933bb84c406b5f5/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@76314f0](https://github.com/greenelab/annorxiver_manuscript/tree/76314f03bb34b969362f054c9940ba062d2ab5e2)
-on November 24, 2020.
+from [greenelab/annorxiver_manuscript@abf40b8](https://github.com/greenelab/annorxiver_manuscript/tree/abf40b8c930e5f68b6fca6394933bb84c406b5f5)
+on January 4, 2021.
 </em></small>
 
 ## Authors
@@ -701,7 +701,7 @@ This work was supported by grants from the Gordon Betty Moore Foundation (GBMF45
 
 ## Competing Interests
 
-Need to note Marvin's employer here.
+Marvin Thielk receives a salary from Elsevier Inc. where he contributes NLP expertise to health content operations. Elsevier and Marvin provided no restrictions on results or interpretations that could be published in this manuscript. The opinions expressed here do not reflect the official policy or positions held by Elsevier Inc.
 
 
 ## References {.page_break_before}

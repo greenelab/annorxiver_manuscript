@@ -1,3 +1,8 @@
 content/03.methods.md:40:invovled
 content/04.results.md:128:Metaresearch
+content/06.acknowledgements.md:21:Elsevier
+content/06.acknowledgements.md:21:Elsevier
+content/06.acknowledgements.md:21:Elsevier
+content/06.acknowledgements.md:21:NLP
+content/06.acknowledgements.md:21:Thielk
 content/90.back-matter.md:31:bargraph
