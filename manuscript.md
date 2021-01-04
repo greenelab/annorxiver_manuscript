@@ -105,11 +105,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/abf40b8c930e5f68b6fca6394933bb84c406b5f5/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/fc17cce406f7b0b02a443a45103d40d74bfb9faf/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/abf40b8c930e5f68b6fca6394933bb84c406b5f5/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/fc17cce406f7b0b02a443a45103d40d74bfb9faf/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/abf40b8c930e5f68b6fca6394933bb84c406b5f5/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/fc17cce406f7b0b02a443a45103d40d74bfb9faf/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -143,9 +143,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/abf40b8c930e5f68b6fca6394933bb84c406b5f5/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/fc17cce406f7b0b02a443a45103d40d74bfb9faf/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@abf40b8](https://github.com/greenelab/annorxiver_manuscript/tree/abf40b8c930e5f68b6fca6394933bb84c406b5f5)
+from [greenelab/annorxiver_manuscript@fc17cce](https://github.com/greenelab/annorxiver_manuscript/tree/fc17cce406f7b0b02a443a45103d40d74bfb9faf)
 on January 4, 2021.
 </em></small>
 
@@ -260,7 +260,7 @@ Examining this shift will provide a unique opportunity to ascertain parts of the
 Neural-network derived document embeddings provide a useful space for determining the textual similarity of preprints, which enables us to extend this work beyond word frequencies.
 Examining articles with particularly close proximity in this space reveals unannotated preprint-publication pairs that earlier analyses could not consider.
 In this space a preprint's nearest neighbors are also more likely than distant articles to share an eventual publishing venue with the preprint itself.
-We provide a webserver that will displays neighboring journals and articles for any preprint on bioRxiv or medRxiv, which can help authors identify similar papers or suitable journals.
+We provide a webserver that will display neighboring journals and articles for any preprint on bioRxiv or medRxiv, which can help authors identify similar papers or suitable journals.
 Our linguistic analysis, the first of the bioRxiv corpus, reveals the impact of the life sciences publishing process, introduces a method to identify matching preprint-published article pairs, demonstrates that the text content of preprints is related to their eventual publication venue, and provides a more complete picture of the fraction of preprints that are eventually published.
 
 
@@ -287,7 +287,7 @@ PMC articles can be closed access ones from research funded by the United States
 Paper availability within PMC is largely dependent on the journal's participation level [@url:https://www.ncbi.nlm.nih.gov/pmc/about/submission-methods/].
 Individual journals can fully participate in submitting articles to PMC, selectively participate sending only a few papers to PMC, only submit papers according to NIH's public access policy [@url:https://grants.nih.gov/grants/policy/nihgps/html5/section_8/8.2.2_nih_public_access_policy.htm], or not participate at all.
 As of September 2019, PMC had 5,725,819 articles available [@url:https://www.ncbi.nlm.nih.gov/pmc/about/intro/].
-Out of these 5 million articles, about 3 million were open access and available for text processing systems [@doi:10.1093/bioinformatics/btz070; @doi:10.1093/nar/gkz389].
+Out of these 5.7 million articles, about 3 million were open access and available for text processing systems [@doi:10.1093/bioinformatics/btz070; @doi:10.1093/nar/gkz389].
 We downloaded a snapshot of this open access subset on January 31, 2020.
 This snapshot contained many types of papers: literature reviews, book reviews, editorials, case reports, research articles and more.
 We used only research articles, which aligns with the intended role of bioRxiv, and we refer to these articles as the PMC Corpus.
@@ -302,8 +302,8 @@ We downloaded this collection on August 3rd, 2020 from the Linguistic Data Conso
 
 We used CrossRef [@doi:10.1629/uksg.233] to identify bioRxiv preprints that were linked to a corresponding published article.
 We accessed CrossRef on July 7th, 2020 and were able to successfully link 23,271 preprint to their published counterparts.
-Out of those 23,271 preprint-published pairs only 17,952 pairs had a published version present within the PMC open access corpus. 
-For our analyses that invovled published links we only focused on the subset of preprints-published pairs that contained a published article within PMC. 
+Out of those 23,271 preprint-published pairs only 17,952 pairs had a published version present within the PMC open access corpus.
+For our analyses that involved published links we only focused on the subset of preprints-published pairs that contained a published article within PMC.
 
 ### Comparing Corpora
 
@@ -311,7 +311,7 @@ We compared the bioRxiv, PMC, and NYTAC corpora to assess the similarities and d
 We use the NYTAC as an out-group to assess the similarity of two life sciences repositories when compared with non-life sciences text.
 The corpora contain both words and non-word symbols (e.g., $\pm$), which we refer to together as tokens to avoid confusion.
 We calculated the following statistics for each corpus: the number of documents, the number of sentences, the total number of tokens, the number of stopwords, the average length of a document, the average length of a sentence, the number of negations, the number of coordinating conjunctions, the number of pronouns and the number of past tense verbs.
-Next, we used spaCy's "en_core_web_sm" model [@spacy2] (version 2.2.3) to preprocess all corpora and filtered out 326 spaCy-provided stopwords.  
+Next, we used spaCy's "en_core_web_sm" model [@spacy2] (version 2.2.3) to preprocess all corpora and filtered out 326 spaCy-provided stopwords.
 
 Following cleaning, we calculated the frequency of every token across all corpora.
 Because many tokens were unique to one set or the other and observed at low frequency, we used the union of the top 100 most frequent tokens from each pair of corpora to compare them.
@@ -403,7 +403,7 @@ However, journals that publish more papers are more frequently recommended in th
 
 For the journal-based approach, we identified the ten most similar journals by constructing a journal representation in the same embedding space.
 We computed journal centroids as the average embedding of all published papers in the journal.
-We then project a query article into the same space and return the ten closest journal centroids by Euclidean distance.
+We then projected a query article into the same space and returned the ten closest journal centroids by Euclidean distance.
 This technique guaranteed that at least ten distinct journals were returned and prevented journals that publish many papers from being heavily overrepresented.
 
 In both cases, we set the number of neighbors for each model to be 10 and then evaluated both models via 10-fold cross validation.
@@ -417,14 +417,14 @@ We use pdfminer [@url:https://pdfminersix.readthedocs.io/en/latest/index.html] t
 The extracted text is then fed into our word2vec model to construct a document embedding representation.
 We pass this representation onto our journal and manuscript search to identify journals based on the ten closest neighbors of individual papers as well as journal centroids.
 We implemented this search using the scikit-learn implementation of k-d trees.
-To run cost effectively on Amazon Web Services, we sharded the k-d trees into four trees.
+To run it more cost effectively on cloud computing environment, we sharded the k-d trees into four trees.
 
-Accompanying these recommendations, we also provide a neural network derived visualization of our training set and the article's position within it.
+Accompanying these recommendations, we also provided a neural network derived visualization of our training set and the article's position within it.
 We used SAUCIE [@doi:10.1101/2020.03.04.975177], an autoencoder designed to cluster single cell RNA-seq data, to build a two-dimensional embedding space that could be applied to newly generated preprints without retraining, a limitation of other approaches that we explored for visualizing entities expected to lie on a nonlinear manifold.
 We trained this model on document embeddings of PMC articles that did not contain a matching preprint version.
 We used the following parameters to train the model: a hidden size of 2, a learning rate of 0.001, lambda_b of 0, lambda_c of 0.001, and lambda_d of 0.001 for 2000 iterations.
 When a user requests a new document, we can then project the document on the pretrained model to generate a visualization in two-dimensional space.
-We illustrate our recommendations as a short list and provide access to our network visualization at [https://greenelab.github.io/annorxiver-journal-recommender/](https://greenelab.github.io/annorxiver-journal-recommender/).
+We illustrate our recommendations as a short list and provide access to our network visualization at [https://greenelab.github.io/preprint-similarity-search/](https://greenelab.github.io/preprint-similarity-search/).
 
 We used the fully trained model to project user-requested bioRxiv preprints onto the generated landscape to enable users to see where their preprint falls along the landscape.
 
@@ -479,7 +479,7 @@ Documents on bioRxiv were slightly longer than those on PMC, but both were much 
 Other than length, both corpora were otherwise quite similar.
 The average sentence length, fraction of pronouns, and the use of the passive voice were all more similar between bioRxiv and PMC than they were to NYTAC (Table {@tbl:corpora_stats}).
 The Kullback–Leibler divergence measures the extent to which two distributions, but not the specific entities that comprise those distributions, differ.
-The distribution of term frequencies in bioRxiv and PMC were low, especially among the top few hundred tokens (Figure {@fig:corpora_comparison_panels}A).
+The distribution of term frequencies in bioRxiv and PMC was low, especially among the top few hundred tokens (Figure {@fig:corpora_comparison_panels}A).
 Differences began to emerge over more terms, but remained much lower than when the biomedical corpora are compared with NYTAC.
 
 Examining the frequencies of individual terms revealed differences between the biomedical corpora.
@@ -495,7 +495,7 @@ Certain changes appeared to be related to journal styles: "figure" was more comm
 Other changes appeared to be associated with an increasing reference to content external to the manuscript itself: the tokens "supplementary", "additional" and "file" were all more common in PMC than bioRxiv suggesting that journals are not simply replacing one token with another but that there are more mentions of such content after peer review.
 
 Taken together these results suggested that the structure of the text in documents on bioRxiv was similar to that on PMC.
-The differences in uptake across fields is supported not only by differences in authors' categorization of their articles but also in the text of the articles themselves.
+The differences in uptake across fields are supported not only by differences in authors' categorization of their articles but also in the text of the articles themselves.
 At the level of individual manuscripts, the terms that change the most appear to be associated with typesetting, journal style, and an increasing reliance on additional materials after peer review.
 
 ### Document embeddings derived from bioRxiv reveal fields and subfields
@@ -652,7 +652,7 @@ The user-requested preprint's location in this space is then displayed and users
 Users can also explore the terms associated with the top 50 PCs derived from the document embeddings and those PCs vary across the document landscape.
 
 ![
-The journal similarity search app workflow allows users to examine where an individual preprint falls in the overall document landscape.
+The preprint similarity search app workflow allows users to examine where an individual preprint falls in the overall document landscape.
 A. Starting with the home screen, users can paste in a bioRxiv or medRxiv DOI, which sends a request to bioRxiv or medRxiv.
 Next the app preprocesses the requested preprint and returns a listing of (B) the top ten most similar papers and (C) the ten closest journals.
 D. The app also displays the location of the query preprint in PMC.
@@ -667,7 +667,7 @@ A benefit of analyzing bioRxiv text is that we can compare preprint and publishe
 Token-level analyses suggest that differences between corpora are driven by fields, while comparisons of preprints with their corresponding publication reveals differences in typesetting and supplementary materials.
 
 Previous analyses have focused on article metadata, including which papers are heavily downloaded and discussed [@doi:10.7554/eLife.45133] and by which communities discuss them [@doi:10.1371/journal.pbio.3000860].
-We found that some preprints are high similar to published articles within the PMC open access corpus, and a detailed examination revealed that many preprints were published but not previously annotated.
+We found that some preprints are highly similar to published articles within the PMC open access corpus, and a detailed examination revealed that many preprints were published but not previously annotated.
 Using the full text of documents to correct these missing annotations provides a comprehensive understanding of the extent to which preprints are published and this correction resulted in a publication rate that is higher than previously estimated.
 Importantly, this only accounts for papers that are published open access, so our analysis should be considered to raise the lower bound but the truly published fraction is likely to be higher.
 
@@ -685,7 +685,7 @@ Based on this observation, we supply a web application that returns the papers a
 
 An online version of this manuscript is available under a Creative Commons Attribution License at [https://greenelab.github.io/annorxiver_manuscript/](https://greenelab.github.io/annorxiver_manuscript/).
 Source for the research portions of this project is dual licensed under the BSD 3-Clause and Creative Commons Public Domain Dedication Licenses at [https://github.com/greenelab/annorxiver](https://github.com/greenelab/annorxiver).
-The journal recommendation website can be found at [https://greenelab.github.io/annorxiver-journal-recommender/](https://greenelab.github.io/annorxiver-journal-recommender/), and code for the website is available under a BSD-2-Clause Plus Patent License at [https://github.com/greenelab/annorxiver-journal-recommender](https://github.com/greenelab/annorxiver-journal-recommender).
+The journal recommendation website can be found at [https://greenelab.github.io/annorxiver-journal-recommender/](https://greenelab.github.io/preprint-similarity-search/), and code for the website is available under a BSD-2-Clause Plus Patent License at [https://github.com/greenelab/preprint-similarity-search](https://github.com/greenelab/preprint-similarity-search).
 Full text access for the bioRxiv repository is available at [https://www.biorxiv.org/tdm](https://www.biorxiv.org/tdm).
 Access to PubMed Central's Open Access subset is available on NCBI's FTP server at [https://www.ncbi.nlm.nih.gov/pmc/tools/ftp/](https://www.ncbi.nlm.nih.gov/pmc/tools/ftp/).
 Access to the New York Times Annotated Corpus (NYTAC) is available upon request with the Linguistic Data Consortium at [https://catalog.ldc.upenn.edu/LDC2008T19](https://catalog.ldc.upenn.edu/LDC2008T19).
@@ -734,7 +734,7 @@ The plot on the right (B) is a bar chart of token frequency appearing in PMC and
 
 ![
 Both classifiers outperform the randomized baseline when predicting a paper's journal endpoint.
-This bargraph shows each model's accuracy in respect to predicting the training and test set.
+This bargraph shows each model's accuracy in respect to predicting the training and test sets.
 ](https://raw.githubusercontent.com/danich1/annorxiver/a13cc22c1474071dee45602502ceb3d6fb71ab2d/pmc/journal_recommendation/output/figures/knn_result.svg){#fig:knn_auc tag="S4" width="100%"}
 
 <!-- Commenting this out for now unless we get asked for it. The first table is probably comprehensive enough to show that our approach also works within a field and then we don't have to go too deep into a second one.
