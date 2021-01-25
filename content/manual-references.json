@@ -22,6 +22,51 @@
   {
     "author": [
       {
+        "family": "Smith",
+        "given": "Richard"
+      }
+    ],
+    "container-title": "Journal of the Royal Society of Medicine",
+    "id": "smith2006trouble",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          2006
+        ]
+      ]
+    },
+    "page": "115-119",
+    "publisher": "SAGE Publications Sage UK: London, England",
+    "title": "The trouble with medical journals",
+    "type": "article-journal",
+    "volume": "99"
+  },
+  {
+    "URL": "https://medium.com/@OmnesRes/the-biorxiv-wall-of-shame-aa3d9cfc4cd7",
+    "author": [
+      {
+        "family": "Anaya",
+        "given": "Jordan"
+      }
+    ],
+    "container-title": "Medium",
+    "id": "anaya_2018",
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          8
+        ]
+      ]
+    },
+    "publisher": "Medium",
+    "title": "The bioRxiv wall of shame",
+    "type": "no-type"
+  },
+  {
+    "author": [
+      {
         "family": "Pedregosa",
         "given": "F."
       },
