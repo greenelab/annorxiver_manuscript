@@ -9,6 +9,7 @@ GBMF
 greenescientist
 Hu
 knn
+learn’s
 LEHunter
 lifecycle
 MarvinT
