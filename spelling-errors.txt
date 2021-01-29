@@ -10,8 +10,10 @@ greenescientist
 Hu
 knn
 LEHunter
+lifecycle
 MarvinT
 Metaresearch
+NLM
 NLP
 NLRP
 ProfLHunter

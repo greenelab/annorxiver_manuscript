@@ -8,7 +8,7 @@ author-meta:
 - Casey S. Greene
 bibliography:
 - content/manual-references.json
-date-meta: '2021-01-25'
+date-meta: '2021-01-29'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2021-01-25" />
+  <meta name="dc.date" content="2021-01-29" />
 
-  <meta name="citation_publication_date" content="2021-01-25" />
+  <meta name="citation_publication_date" content="2021-01-29" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -105,11 +105,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/7a9669efe6f93666c9122b97748cfa27427d3b49/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/84a2c3c12340c905a2342441bdeb69cb8fe7d276/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/7a9669efe6f93666c9122b97748cfa27427d3b49/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/84a2c3c12340c905a2342441bdeb69cb8fe7d276/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/7a9669efe6f93666c9122b97748cfa27427d3b49/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/84a2c3c12340c905a2342441bdeb69cb8fe7d276/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -143,10 +143,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/7a9669efe6f93666c9122b97748cfa27427d3b49/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/84a2c3c12340c905a2342441bdeb69cb8fe7d276/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@7a9669e](https://github.com/greenelab/annorxiver_manuscript/tree/7a9669efe6f93666c9122b97748cfa27427d3b49)
-on January 25, 2021.
+from [greenelab/annorxiver_manuscript@84a2c3c](https://github.com/greenelab/annorxiver_manuscript/tree/84a2c3c12340c905a2342441bdeb69cb8fe7d276)
+on January 29, 2021.
 </em></small>
 
 ## Authors
@@ -288,33 +288,35 @@ Preprints on bioRxiv are versioned, and in our snapshot 26,905 out of 98,023 con
 When preprints had multiple versions, we used the latest one unless otherwise noted.
 Authors submitting preprints to bioRxiv select one of twenty-nine different categories.
 Researchers also select an article type, which can be a new result, confirmatory finding, or contradictory finding.
-Some preprints in this snapshot were withdrawn from bioRxiv: when this happens their content is replaced with the reason for withdrawal.
+Some preprints in this snapshot were withdrawn from bioRxiv: when this happens, their content is replaced with the reason for withdrawal.
 As there were very few withdrawn preprints, we did not treat these as a special case.
 
 #### PubMed Central Open Access Corpus
 
-PubMed Central (PMC) [@doi:10.1073/pnas.98.2.381] is a repository that contains free-to-read articles.
-PMC articles can be closed access ones from research funded by the United States National Institutes of Health (NIH) appearing after an embargo period or those published under Gold Open Access [@doi:10.1007/s12471-017-1064-2] publishing schemes.
+PubMed Central (PMC) is a digital archive for the United States National Institute of Health's Library of Medicine (NIH/NLM) that contains full text biomedical and life science articles [@doi:10.1073/pnas.98.2.381].
+PMC articles can be closed access ones from research funded by the NIH appearing after an embargo period or those published under Gold Open Access [@doi:10.1007/s12471-017-1064-2] publishing schemes.
 Paper availability within PMC is largely dependent on the journal's participation level [@url:https://www.ncbi.nlm.nih.gov/pmc/about/submission-methods/].
 Individual journals can fully participate in submitting articles to PMC, selectively participate sending only a few papers to PMC, only submit papers according to NIH's public access policy [@url:https://grants.nih.gov/grants/policy/nihgps/html5/section_8/8.2.2_nih_public_access_policy.htm], or not participate at all.
 As of September 2019, PMC had 5,725,819 articles available [@url:https://www.ncbi.nlm.nih.gov/pmc/about/intro/].
-Out of these 5.7 million articles, about 3 million were open access and available for text processing systems [@doi:10.1093/bioinformatics/btz070; @doi:10.1093/nar/gkz389].
-We downloaded a snapshot of this open access subset on January 31, 2020.
+Out of these 5 million articles, about 3 million were open access (PMCOA) and available for text processing systems [@doi:10.1093/bioinformatics/btz070; @doi:10.1093/nar/gkz389].
+PMC also contains a resource that holds author manuscripts that have already passed the peer review process [@url:https://www.ncbi.nlm.nih.gov/pmc/about/authorms/].
+Since these manuscripts have already been peer reviewed, we kept them out of our analysis as the scope of our work is solely focused on examining the beginning and endpoints of a preprint's lifecycle.
+We downloaded a snapshot of the PMCOA corpus on January 31, 2020.
 This snapshot contained many types of papers: literature reviews, book reviews, editorials, case reports, research articles and more.
-We used only research articles, which aligns with the intended role of bioRxiv, and we refer to these articles as the PMC Corpus.
+We used only research articles, which aligns with the intended role of bioRxiv, and we refer to these articles as the PMCOA Corpus.
 
 #### The New York Times Annotated Corpus
 
 The New York Times Annotated Corpus (NYTAC) is [@sandhaus2008new] is collection of newspaper articles from the New York Times dating from January 1, 1987  to June 19, 2007.
 This collection contains over 1.8 million articles where 1.5 million of those articles have undergone manual entity tagged by library scientists [@sandhaus2008new].
-We downloaded this collection on August 3rd, 2020 from the Linguistic Data Consortium (see Software and Data Availability section) and used the entire collection for our corpora comparison analysis.
+We downloaded this collection on August 3rd, 2020 from the Linguistic Data Consortium (see Software and Data Availability section) and used the entire collection as a negative control for our corpora comparison analysis.
 
 ### Mapping bioRxiv preprints to their published counterparts
 
 We used CrossRef [@doi:10.1629/uksg.233] to identify bioRxiv preprints that were linked to a corresponding published article.
-We accessed CrossRef on July 7th, 2020 and were able to successfully link 23,271 preprint to their published counterparts.
-Out of those 23,271 preprint-published pairs only 17,952 pairs had a published version present within the PMC open access corpus.
-For our analyses that involved published links we only focused on the subset of preprints-published pairs that contained a published article within PMC.
+We accessed CrossRef on July 7th, 2020 and were able to successfully link 23,271 preprints to their published counterparts.
+Out of those 23,271 preprint-published pairs only 17,952 pairs had a published version present within the PMCOA corpus. 
+For our analyses that involved published links we only focused on the subset of preprints-published pairs that contained a published article within PMCOA.
 
 ### Comparing Corpora
 
