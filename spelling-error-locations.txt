@@ -5,7 +5,7 @@ content/03.methods.md:25:nlm
 content/03.methods.md:26:lifecycle
 content/03.methods.md:55:nlm
 content/03.methods.md:80:learn's
-content/04.results.md:128:Metaresearch
+content/04.results.md:119:Metaresearch
 content/06.acknowledgements.md:7:nlm
 content/06.acknowledgements.md:7:nlm
 content/06.acknowledgements.md:21:Elsevier
@@ -13,4 +13,4 @@ content/06.acknowledgements.md:21:Elsevier
 content/06.acknowledgements.md:21:Elsevier
 content/06.acknowledgements.md:21:NLP
 content/06.acknowledgements.md:21:Thielk
-content/90.back-matter.md:31:bargraph
+content/90.back-matter.md:35:bargraph

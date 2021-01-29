@@ -105,11 +105,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/97a4403fb7cc5e50932c98de71448c66d989796b/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/7bd0c0190d91afa4b80a73fc08ff04ebf54caa61/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/97a4403fb7cc5e50932c98de71448c66d989796b/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/7bd0c0190d91afa4b80a73fc08ff04ebf54caa61/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/97a4403fb7cc5e50932c98de71448c66d989796b/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/7bd0c0190d91afa4b80a73fc08ff04ebf54caa61/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -143,9 +143,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/97a4403fb7cc5e50932c98de71448c66d989796b/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/7bd0c0190d91afa4b80a73fc08ff04ebf54caa61/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@97a4403](https://github.com/greenelab/annorxiver_manuscript/tree/97a4403fb7cc5e50932c98de71448c66d989796b)
+from [greenelab/annorxiver_manuscript@7bd0c01](https://github.com/greenelab/annorxiver_manuscript/tree/7bd0c0190d91afa4b80a73fc08ff04ebf54caa61)
 on January 29, 2021.
 </em></small>
 
@@ -237,8 +237,8 @@ We provide a web application with which users can explore how a bioRxiv or medRx
 
 The dissemination of research findings is key to science, and initially much of this communication happened orally [@doi:10.1021/ci00050a001].
 During the 17th century, the predominate form of communication shifted to personal letters that were shared from one scientist to another [@doi:10.1021/ci00050a001].
-Scientific journals didn't become a predominant mode of communication until the 19th and 20th centuries when the first journal abstract was created [@doi:10.1021/ci00050a001; @raw:smith2006trouble; @doi:10.1300/J123v41n01_04].
-Although scientific journals became the primary method of communication, they added high maintenance costs and long publication times to scientific discourse [@raw:smith2006trouble; @doi:10.1300/J123v41n01_04].
+Scientific journals didn't become a predominant mode of communication until the 19th and 20th centuries when the first journal abstract was created [@doi:10.1021/ci00050a001; @smith2006trouble; @doi:10.1300/J123v41n01_04].
+Although scientific journals became the primary method of communication, they added high maintenance costs and long publication times to scientific discourse [@smith2006trouble; @doi:10.1300/J123v41n01_04].
 Scientists' solution to some of these issues was to communicate through preprints, which are scholarly works that have yet to undergo peer review process [@doi:10.1177/0192623318767322; @doi:10.1371/journal.pbio.2003995].
 
 Preprints are commonly hosted on online repositories, where users have open and easy access to these works.
@@ -485,38 +485,29 @@ Taken together, the results suggest that while bioRxiv has experienced dramatic 
 Table: Summary statistics for the bioRxiv, PMC, and NYTAC corpora. {#tbl:corpora_stats}
 
 ![
-A. The Kullback–Leibler divergence measures the extent to which the distributions, not specific tokens, differ from each other.
+**A.** The Kullback–Leibler divergence measures the extent to which the distributions, not specific tokens, differ from each other.
 The token distribution of bioRxiv and PMC corpora is more similar than these biomedical corpora are to the NYTAC one.
-B. The major differences in token frequencies for the corpora appear to be driven by the fields that have had the highest uptake of bioRxiv, as terms from neuroscience and genomics are relatively more abundant in bioRxiv.
-Points indicate the log_2(OR) for each token and error bars indicate the 95% confidence intervals.
-C. Of the terms that differ between bioRxiv and PMC, the most abundant in bioRxiv are "et" and "al" while the most abundant in PMC is "study."
-D. The major differences in token frequencies for preprints and their corresponding published version often appear to be associated with typesetting and supplementary or additional materials.
-Points indicate the log_2(OR) for each token and error bars indicate the 95% confidence intervals.
-E. The tokens with the largest absolute differences in abundance appear to be stylistic.
-](https://raw.githubusercontent.com/danich1/annorxiver/e61dff8efe2216852a6b2a9ff0ec921a54356ad7/figure_generation/output/figure_one_panels.svg){#fig:corpora_comparison_panels width="100%"}
+**B.** The major differences in token frequencies for the corpora appear to be driven by the fields that have had the highest uptake of bioRxiv, as terms from neuroscience and genomics are relatively more abundant in bioRxiv.
+We plotted the 95% confidence interval for each reported token.
+**C.** Of the terms that differ between bioRxiv and PMC, the most abundant in bioRxiv are "et" and "al" while the most abundant in PMC is "study."
+**D.** The major differences in token frequencies for preprints and their corresponding published version often appear to be associated with typesetting and supplementary or additional materials.
+We plotted the 95% confidence interval for each reported token.
+**E.** The tokens with the largest absolute differences in abundance appear to be stylistic.
+](https://raw.githubusercontent.com/greenelab/annorxiver/1069a5ef739d6362b0d70b1bd1dd8ab5b59725a4/figure_generation/output/figure_one_panels.svg){#fig:corpora_comparison_panels width="100%"}
 
-We first compared the overall text of bioRxiv with PMC, adding a corpus of professionally written but non-biomedical text (NYTAC) as a control.
-Documents on bioRxiv were slightly longer than those on PMC, but both were much longer than those from NYTAC (Table {@tbl:corpora_stats}).
-Other than length, both corpora were otherwise quite similar.
-The average sentence length, fraction of pronouns, and the use of the passive voice were all more similar between bioRxiv and PMC than they were to NYTAC (Table {@tbl:corpora_stats}).
-The Kullback–Leibler divergence measures the extent to which two distributions, but not the specific entities that comprise those distributions, differ.
-The distribution of term frequencies in bioRxiv and PMC was low, especially among the top few hundred tokens (Figure {@fig:corpora_comparison_panels}A).
-Differences began to emerge over more terms, but remained much lower than when the biomedical corpora are compared with NYTAC.
+Documents within bioRxiv were slightly longer than those within PMCOA, but both were much longer than those from our control (NYTAC) (Table {@tbl:corpora_stats}).
+The average sentence length, fraction of pronouns, and the use of the passive voice were all more similar between bioRxiv and PMC than they were to NYTAC(Table {@tbl:corpora_stats}).
+The Kullback–Leibler (KL) divergence of term frequency distributions between bioRxiv and PMCOA were low, especially among the top few hundred tokens (Figure {@fig:corpora_comparison_panels}A).
+As more tokens were incorporated the KL divergence started to increase, but remained much lower than the biomedical corpora compared against NYTAC.
+These findings support our notion that bioRxiv is linguistically similar to the PMCOA repository.
 
-Examining the frequencies of individual terms revealed differences between the biomedical corpora.
-Previous work examining author-selected categories has reported that fields appear to have preprinted unevenly, with certain life sciences research fields having more uptake than others [@doi:10.7554/eLife.45133].
-However, it was possible that authors simply selected certain fields preferentially but that the content was similar to the broader corpus of life sciences text.
-We directly examined this by comparing term frequencies between bioRxiv and PMC.
-We found that among the terms that differed the most many were associated with certain life sciences research fields.
-Terms like "neurons" "genome" and "genetic", which are common in genomics and neuroscience, were more common in bioRxiv than PMC while others associated with clinical research, such as "clinical" "patients" and "treatment" were more common in PMC (Figure {@fig:corpora_comparison_panels}B and {@fig:corpora_comparison_panels}C).
+Terms like "neurons" "genome" and "genetic", which are common in genomics and neuroscience, were more common in bioRxiv than PMCOA while others associated with clinical research, such as "clinical" "patients" and "treatment" were more common in PMCOA (Figure {@fig:corpora_comparison_panels}B and {@fig:corpora_comparison_panels}C).
+When controlling for the differences in the body of documents to identify textual changes associated with the publication process, we found that tokens such as "et" "al" were enriched for biorxiv while "$\pm$", "–" were enriched for PMCOA (Figure {@fig:corpora_comparison_panels}D and {@fig:corpora_comparison_panels}E).
+Furthermore, we found that certain changes appeared to be related to journal styles: "figure" was more common in bioRxiv while "fig" was relatively more common in PMCOA.
+Other changes appeared to be associated with an increasing reference to content external to the manuscript itself: the tokens "supplementary", "additional" and "file" were all more common in PMCOA than bioRxiv suggesting that journals are not simply replacing one token with another but that there are more mentions of such content after peer review.
 
-We next controlled for differences in the body of documents to identify term-level changes associated with the publication process itself by examining only pairs of preprints and their corresponding publication (Figure {@fig:corpora_comparison_panels}D and {@fig:corpora_comparison_panels}E).
-The tokens that differed included "et" "al", "$\pm$", "–" and others that appeared to be typesetting related.
-Certain changes appeared to be related to journal styles: "figure" was more common in bioRxiv while "fig" was relatively more common in PMC.
-Other changes appeared to be associated with an increasing reference to content external to the manuscript itself: the tokens "supplementary", "additional" and "file" were all more common in PMC than bioRxiv suggesting that journals are not simply replacing one token with another but that there are more mentions of such content after peer review.
-
-Taken together these results suggested that the structure of the text in documents on bioRxiv was similar to that on PMC.
-The differences in uptake across fields are supported not only by differences in authors' categorization of their articles but also in the text of the articles themselves.
+Taken together these results suggest that the structure of the text within preprints on bioRxiv are similar to published articles within PMCOA.
+The differences in uptake across fields is supported not only by differences in authors' categorization of their articles but also in the text of the articles themselves.
 At the level of individual manuscripts, the terms that change the most appear to be associated with typesetting, journal style, and an increasing reliance on additional materials after peer review.
 
 ### Document embeddings derived from bioRxiv reveal fields and subfields
@@ -737,13 +728,16 @@ Marvin Thielk receives a salary from Elsevier Inc. where he contributes NLP expe
 Neuroscience and bioinformatics are the two most common author-selected topics for bioRxiv preprints.
 ](https://raw.githubusercontent.com/danich1/annorxiver/e61b10ad5fc0d23db4c6599b460ddd510ae433a5/biorxiv/exploratory_data_analysis/output/figures/preprint_category.png){#fig:biorxiv_categories tag="S1"}
 
+<!--
+Commenting this out for now unless we get asked for it. 
+
 ![
 Topic associated tokens are highly enriched when comparing bioRxiv to the New York Times.
 The plot on the left (A) is a point range plot of the odds ratio with respect to bioRxiv.
 Values greater than one indicate a high association with bioRxiv whereas values less than one indicate high association with the New York Times.
 The dotted line provides a breaking point between both categories.
 The plot on the right (B) is a bar chart of token frequency appearing in bioRxiv and New York Times respectively.
-](https://raw.githubusercontent.com/danich1/annorxiver/e61dff8efe2216852a6b2a9ff0ec921a54356ad7/biorxiv/corpora_comparison/output/figures/biorxiv_vs_reference.png){#fig:biorxiv_v_reference tag="S2"}
+](https://raw.githubusercontent.com/greenelab/annorxiver/master/biorxiv/corpora_comparison/output/figures/biorxiv_vs_reference.png){#fig:biorxiv_v_reference tag="S2"}
 
 ![
 Typesetting symbols and biologically relevant tokens are highly enriched when comparing PubMed Central (PMC) to the New York Times.
@@ -751,14 +745,17 @@ The plot on the left (A) is a point range plot of the odds ratio with respect to
 Values greater than one indicate a high association with PMC whereas values less than one indicate high association with the New York Times.
 The dotted line provides a breaking point between both categories.
 The plot on the right (B) is a bar chart of token frequency appearing in PMC and New York Times respectively.
-](https://raw.githubusercontent.com/danich1/annorxiver/a13cc22c1474071dee45602502ceb3d6fb71ab2d/biorxiv/corpora_comparison/output/figures/pmc_vs_reference.png){#fig:pmc_v_reference tag="S3"}
+](https://raw.githubusercontent.com/greenelab/annorxiver/master/biorxiv/corpora_comparison/output/figures/pmc_vs_reference.png){#fig:pmc_v_reference tag="S3"}
+-->
 
 ![
 Both classifiers outperform the randomized baseline when predicting a paper's journal endpoint.
-This bargraph shows each model's accuracy in respect to predicting the training and test sets.
-](https://raw.githubusercontent.com/danich1/annorxiver/a13cc22c1474071dee45602502ceb3d6fb71ab2d/pmc/journal_recommendation/output/figures/knn_result.svg){#fig:knn_auc tag="S4" width="100%"}
+This bargraph shows each model's accuracy in respect to predicting the training and test set.
+](https://raw.githubusercontent.com/danich1/annorxiver/a13cc22c1474071dee45602502ceb3d6fb71ab2d/pmc/journal_recommendation/output/figures/knn_result.svg){#fig:knn_auc tag="S2" width="100%"}
 
-<!-- Commenting this out for now unless we get asked for it. The first table is probably comprehensive enough to show that our approach also works within a field and then we don't have to go too deep into a second one.
+<!-- 
+Commenting this out for now unless we get asked for it.
+
 ## Supplemental Tables
 
 | Title [citation]   | PC_2  | License  | Figure Thumbnail |

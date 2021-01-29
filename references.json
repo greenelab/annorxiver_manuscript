@@ -2770,6 +2770,30 @@
   {
     "author": [
       {
+        "family": "Smith",
+        "given": "Richard"
+      }
+    ],
+    "container-title": "Journal of the Royal Society of Medicine",
+    "id": "u6LNiV2V",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          2006
+        ]
+      ]
+    },
+    "page": "115-119",
+    "publisher": "SAGE Publications Sage UK: London, England",
+    "title": "The trouble with medical journals",
+    "type": "article-journal",
+    "volume": "99",
+    "note": "This CSL JSON Item was loaded by Manubot v0.4.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: smith2006trouble"
+  },
+  {
+    "author": [
+      {
         "family": "Honnibal",
         "given": "Matthew"
       },
