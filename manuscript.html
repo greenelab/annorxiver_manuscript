@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/84a2c3c12340c905a2342441bdeb69cb8fe7d276/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/84a2c3c12340c905a2342441bdeb69cb8fe7d276/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/84a2c3c12340c905a2342441bdeb69cb8fe7d276/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/ec10d9d69d6cd2dbc204cbbc739cd3b222f157a5/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/ec10d9d69d6cd2dbc204cbbc739cd3b222f157a5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/ec10d9d69d6cd2dbc204cbbc739cd3b222f157a5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -88,9 +88,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/annorxiver_manuscript/v/84a2c3c12340c905a2342441bdeb69cb8fe7d276/">permalink</a>)
+(<a href="https://greenelab.github.io/annorxiver_manuscript/v/ec10d9d69d6cd2dbc204cbbc739cd3b222f157a5/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/84a2c3c12340c905a2342441bdeb69cb8fe7d276">greenelab/annorxiver_manuscript@84a2c3c</a>
+from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/ec10d9d69d6cd2dbc204cbbc739cd3b222f157a5">greenelab/annorxiver_manuscript@ec10d9d</a>
 on January 29, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -234,15 +234,19 @@ We accessed CrossRef on July 7th, 2020 and were able to successfully link 23,271
 Out of those 23,271 preprint-published pairs only 17,952 pairs had a published version present within the PMCOA corpus.
 For our analyses that involved published links we only focused on the subset of preprints-published pairs that contained a published article within PMCOA.</p>
 <h3 id="comparing-corpora">Comparing Corpora</h3>
-<p>We compared the bioRxiv, PMC, and NYTAC corpora to assess the similarities and differences between them.
-We use the NYTAC as an out-group to assess the similarity of two life sciences repositories when compared with non-life sciences text.
-The corpora contain both words and non-word symbols (e.g., <span class="math inline">\(\pm\)</span>), which we refer to together as tokens to avoid confusion.
-We calculated the following statistics for each corpus: the number of documents, the number of sentences, the total number of tokens, the number of stopwords, the average length of a document, the average length of a sentence, the number of negations, the number of coordinating conjunctions, the number of pronouns and the number of past tense verbs.
-Next, we used spaCy’s “en_core_web_sm” model <span class="citation" data-cites="q2fFAZTG">[<a href="#ref-q2fFAZTG" role="doc-biblioref">44</a>]</span> (version 2.2.3) to preprocess all corpora and filtered out 326 spaCy-provided stopwords.</p>
-<p>Following cleaning, we calculated the frequency of every token across all corpora.
-Because many tokens were unique to one set or the other and observed at low frequency, we used the union of the top 100 most frequent tokens from each pair of corpora to compare them.
-We generated a contingency table for each token in this union and calculated the odds ratio and 95% confidence interval <span class="citation" data-cites="Lgm5q6mO">[<a href="#ref-Lgm5q6mO" role="doc-biblioref">45</a>]</span>.
-We measured corpus similarity by calculating the Kullback–Leibler divergence across all three corpora, which focuses on token distribution differences as opposed to token-level differences.</p>
+<p>We compared the bioRxiv, PMCOA, and NYTAC corpora to assess the similarities and differences between them.
+We used the NYTAC corpus as a negative control to assess the similarity between two life sciences repositories when compared with non-life sciences text.
+All corpora contain both words and non-word symbols (e.g., <span class="math inline">\(\pm\)</span>), which we refer to together as tokens to avoid confusion.
+We calculated the following characteristic metrics for each corpus: the number of documents, the number of sentences, the total number of tokens, the number of stopwords, the average length of a document, the average length of a sentence, the number of negations, the number of coordinating conjunctions, the number of pronouns and the number of past tense verbs.
+Spacy is a lightweight and easy to use python package designed to preprocess and filter out text <span class="citation" data-cites="q2fFAZTG">[<a href="#ref-q2fFAZTG" role="doc-biblioref">44</a>]</span>.
+Due to the potency of this package, we used spaCy’s “en_core_web_sm” model <span class="citation" data-cites="q2fFAZTG">[<a href="#ref-q2fFAZTG" role="doc-biblioref">44</a>]</span> (version 2.2.3) to preprocess all corpora and filtered out 326 spaCy-provided stopwords.</p>
+<p>Following our cleaning process, we calculated the frequency of every token across all corpora.
+Because many tokens were unique to one set or the other and observed at low frequency, we focused on the union of the top 0.05% (~100) most frequently occurring tokens within each individual corpus.
+For each token in this union, we generated a contingency table and calculated the odds ratio along with the 95% confidence interval <span class="citation" data-cites="Lgm5q6mO">[<a href="#ref-Lgm5q6mO" role="doc-biblioref">45</a>]</span>.
+Along with token enrichment analysis, we measured corpora similarity by calculating the Kullback–Leibler (KL) divergence across all corpora.
+This metric measures the extent to which two distributions, but not the specific entities that comprise those distributions, differ.
+A low value of KL divergence implicates that two distributions are similar as opposed to the alternative.
+The optimal number of tokens used to calculate the KL divergence is unknown, so we calculated this metric using a spectrum of 100 most frequently occurring tokens between two corpora to 5000 most frequently occurring tokens.</p>
 <h3 id="constructing-a-document-representation-for-life-sciences-text">Constructing a Document Representation for Life Sciences Text</h3>
 <p>We sought to build a model that would capture the linguistic similarity of articles.
 Word2vec is a suite of neural networks designed to model linguistic features of words based on their appearance in text.
