@@ -105,11 +105,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/fe8ba586b69456ea78cd2b7e8bfa17fff5ae32db/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/38acb9feef76141623f31242b84fead5ae561a9c/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/fe8ba586b69456ea78cd2b7e8bfa17fff5ae32db/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/38acb9feef76141623f31242b84fead5ae561a9c/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/fe8ba586b69456ea78cd2b7e8bfa17fff5ae32db/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/38acb9feef76141623f31242b84fead5ae561a9c/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -143,9 +143,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/fe8ba586b69456ea78cd2b7e8bfa17fff5ae32db/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/38acb9feef76141623f31242b84fead5ae561a9c/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@fe8ba58](https://github.com/greenelab/annorxiver_manuscript/tree/fe8ba586b69456ea78cd2b7e8bfa17fff5ae32db)
+from [greenelab/annorxiver_manuscript@38acb9f](https://github.com/greenelab/annorxiver_manuscript/tree/38acb9feef76141623f31242b84fead5ae561a9c)
 on February 2, 2021.
 </em></small>
 
@@ -285,7 +285,7 @@ This snapshot contained the full text and image content of 98,023 preprints.
 Preprints on bioRxiv are versioned, and in our snapshot 26,905 out of 98,023 contained more than one version.
 When preprints had multiple versions, we used the latest one unless otherwise noted.
 Authors submitting preprints to bioRxiv can select one of twenty-nine different categories.
-Furhtermore, researchers can also select the type of article: a new result, confirmatory finding, or contradictory finding.
+Furthermore, researchers can also select the type of article: a new result, confirmatory finding, or contradictory finding.
 Some preprints in this snapshot were withdrawn from bioRxiv and when this happens their content is replaced with the reason for withdrawal.
 As there were very few withdrawn preprints, we did not treat these as a special case.
 
@@ -364,14 +364,14 @@ We report the top 100 positive and negative scoring tokens in the form of word c
 The bioRxiv maintainers have automated procedures to link preprints to peer reviewed versions and many journals require authors to update preprints with a link to the published version.
 However, this automation is largely based on exact matching of certain preprint attributes.
 If authors change the title between a preprint and published version (e.g., [@doi:10.1101/376665] and [@doi:10.1242/bio.038232]), then this change will prevent bioRxiv from automatically establishing a link.
-Furhtermore, if the authors do not report the publication to bioRxiv, the preprint and its correspondiong published version are treated as distinct entities despite representing the same underlying research.
-We hypotheize that close proximity in the document embedding space could match preprints with their corrsponding published version. 
+Furthermore, if the authors do not report the publication to bioRxiv, the preprint and its corresponding published version are treated as distinct entities despite representing the same underlying research.
+We hypothesize that close proximity in the document embedding space could match preprints with their corresponding published version. 
 If this finding holds, then we could use this embedding space to fill in links that were missed by existing automated processes.
 We used the subset of paper-preprint pairs annotated in CrossRef as described above to calculate the distribution of known preprint to published distances.
 This distribution was calculated by taking the Euclidean distance between the preprint's embedding coordinates and the coordinates of its corresponding published version.
 We also calculated a background distribution, which consisted of the distance between each preprint with an annotated publication and a randomly selected article from the same journal.
 We compared both distributions to determine if there was difference between both groups as a large difference would indicate that this embedding method can parse preprint-published pairs apart.
-Following the comparison of the two distrubutions, we calculated distances between preprints without a published version link with PMCOA articles that weren't matched with a corresponding preprint.
+Following the comparison of the two distrbutions, we calculated distances between preprints without a published version link with PMCOA articles that weren't matched with a corresponding preprint.
 We filtered any potential links with distances that were greater than the minimum value of the background distribution as we considered these pairs to be true negatives.
 Lastly, we binned the remaining pairs based on percentiles from the annotated pairs distribution at the [0,25th percentile), [25th percentile, 50th percentile), [50th percentile, 75th percentile), and [75th percentile, minimum background distance).
 We randomly sampled 50 articles from each bin and shuffled these four sets to produce a list of 200 potential preprint-published pairs with a randomized order.
@@ -382,25 +382,27 @@ Using this curated set, we evaluated the extent to which distance in the embeddi
 
 ### Measuring Time Duration for Preprint Publication Process
 
-Preprints can take varying amount of time to becomed published.
-We sought to measure the time required for preprints to be published in the peer reviewed literature.
-We compared this time measurement across all preprint fields as well as individual preprints.
-We queried bioRxiv’s application programming interface (API) to obtain the date a preprint was posted onto bioRxiv as well as the date a preprint was accepted for publication.
-We calculated the difference between the date at which a preprint was first posted and its publication date to provide a publication interval, and we also recorded the number of different preprint versions posted onto bioRxiv.
+Preprints can take varying amount of time to become published.
+We sought to measure the time required for preprints to be published in the peer reviewed literature and compared this time measurement across author selected preprint categories as well as individual preprints.
+First, we queried bioRxiv’s application programming interface (API) to obtain the date a preprint was posted onto bioRxiv as well as the date a preprint was accepted for publication.
+We measured time elapsed as the difference between the date at which a preprint was first posted on bioRxiv and its publication date.
+Along with calculating the amount of time elapsed, we also recorded the number of different preprint versions posted onto bioRxiv.
 
-Using this captured data, we used the Kaplan-Meier estimator [@doi:10.4103/0974-7788.76794] via the KaplanMeierFitter function from the lifelines [@doi:10.5281/zenodo.4136578] (version 0.25.6) python package to calculate the halflife of preprints across all preprint topic areas within bioRxiv.
-Preprints not yet published we considered survival events.
-We observed a limited number of cases in which authors appeared to post preprints after the date of publication, which results in preprints receiving a negative time difference, as previously reported [@url:https://medium.com/@OmnesRes/the-biorxiv-wall-of-shame-aa3d9cfc4cd7].
-We removed preprints that had a negative time publication in this analysis as they were incompatible with our analytical approach. 
+Using this captured data, we used the Kaplan-Meier estimator [@doi:10.4103/0974-7788.76794] via the KaplanMeierFitter function from the lifelines [@doi:10.5281/zenodo.4136578] (version 0.25.6) python package to calculate the halflife of preprints across all preprint categories within bioRxiv.
+We considered survival events as preprints that have yet to be published.
+There were a limited number of cases in which authors appeared to post preprints after the date of publication, which results in preprints receiving a negative time difference, as previously reported [@url:https://medium.com/@OmnesRes/the-biorxiv-wall-of-shame-aa3d9cfc4cd7].
+We removed these preprints for this analysis as they were incompatible with our analytical approach.
 
-Following halflife calculation, we measured the amount of textual difference between preprints and their corresponding published version by calculating Euclidean distance.
-This metric can be difficult to understand, so we sought to contextualize the meaning of a distance unit.
-We randomly sampled with replacement a pair of preprints from the Bioinformatics topic area as this area was well represented within bioRxiv and contains a diverse set of research articles.
-We calculated the distance between two preprints 1000 times and reported the mean.
-Any distance greater than or at the mean represents substantial textual changes as this indicates two randomly selected preprints.
-Folowing this contexutalization, we performed linear regression to model the relationship between preprint version count and a preprint's time to publication as well as the relationship between document representation distances and a preprint's time to publication.
-For this analysis, we retained preprints with negative time within our linear regression model as these preperints had minimal impact on results.
-We visualize our regression model results as square bin plots.
+Following our halflife calculation, we measured the textual difference between preprints and their corresponding published version by calculating the Euclidean distance for their respective embedding representation.
+This metric can be difficult to understand within the context of textual differences, so we sought to contextualize the meaning of a distance unit.
+We accomplish this by first randomly sampled with replacement a pair of preprints from the Bioinformatics topic area as this was well represented within bioRxiv and contains a diverse set of research articles.
+Next, we calculated the distance between two preprints 1000 times and reported the mean.
+We repeated the above procedure using every preprint within bioRxiv as a whole.
+The percent change between these two means represents the amount of textual changes a single Euclidean distance unit represents.
+Folowing our contexutalization approach, we performed linear regression to model the relationship between preprint version count with a preprint's time to publication. 
+We also performed linear regression to measure the relationship between document embedding distance and a preprint's time to publication.
+For this part of our analysis, we retained preprints with negative time within our linear regression model as these preperints had minimal impact on results.
+We visualize our version count regressio model as a violin plot and our document embeddings regression model as a square bin plot.
 
 ### Building Classifiers to Detect Lingusitcally Similar Journal Venues and Published Articles
 
@@ -539,7 +541,7 @@ A similar analysis for PC2 suggested that neuroscience and bioinformatics presen
 This result supports the notion that bioRxiv contains an influx of neuroscience and bioinformatics related research results. 
 For both of the top two PCs, the submitter-selected category of systems biology preprints was near the middle of the distribution and had a relatively large interquartile range when compared with other categories (Figure {@fig:topic_analysis_panels}D and {@fig:topic_analysis_panels}E), suggesting that systems biology is a broader subfield containing both informatics and cellular biology approaches. 
 
-Examining the top five and bottom five preprints within the systems biology field reinforcess PC1's dichotomous theme (Table {@tbl:five_pc1_table}).
+Examining the top five and bottom five preprints within the systems biology field reinforces PC1's dichotomous theme (Table {@tbl:five_pc1_table}).
 Preprints with the highest values [@doi:10.1101/197400;@doi:10.1101/825943;@doi:10.1101/044818;@doi:10.1101/769299;@doi:10.1101/107250] included software packages, machine learning analyses, and other computational biology manuscripts, while preprints with the lowest values [@doi:10.1101/455048;@doi:10.1101/371922;@doi:10.1101/733162;@doi:10.1101/745943;@doi:10.1101/754572] were focused on cellular signaling and protein activity.
 We provide the rest of our 50 generated PCs in our online repository (see Software and Data Availability).
 
@@ -585,39 +587,32 @@ Overall, these results suggest that as the number of preprints posted on bioRxiv
 ### Preprints with more versions or more text changes took longer to publish
 
 ![
-A. Preprints with more substantial text changes took longer to be published.
+**A.** Author-selected categories were associated with modest differences in respect to publication halflife.
+Author selected preprint categories are shown on the y-axis, while the x-axis shows the median time-to-publish for each category.
+Error bars represent 95% confidence intervals for each median measurement.
+**B.** Preprints with more versions were associated with a longer time to publish.
+The x-axis shows the number of versions of a preprint that were posted on bioRxiv and the y-axis shows the number of days that elapsed between when the first version of a preprint was posted on bioRxiv and the date at which the peer reviewed publication appeared.
+The density of observations are depicted in the violin plot with an embedded boxplot.
+**C.** Preprints with more substantial text changes took longer to be published.
 The x-axis shows the Euclidean distance between document representations of the first version of a preprint and it's peer reviewed form.
 The y-axis shows the number of days elapsed between when the first version of a preprint posted on bioRxiv and the time a preprint is published.
-The color bar on the right represents the density of each hexbin in this plot: more dense regions are shown in a brighter color.
-B. Preprints with more versions were associated with a longer time to publish.
-The x-axis shows the number of versions of a preprint that were posted on bioRxiv.
-The y-axis shows the number of days that elapsed between when the first version of a preprint was posted on bioRxiv and the date at which the peer reviewed publication appeared.
-The density of observations are depicted with the violin plot with an embedded boxplot.
-C. Author-selected categories were associated with modest differences in the time to publish.
-Categories are shown on the y-axis.
-The x-axis shows the median time-to-publish for each category.
-Error bars represent 95% confidence intervals for each preprint category's median time to publication.
+The color bar on the right represents the density of each hexbin in this plot where more dense regions are shown in a brighter color.
 ](https://raw.githubusercontent.com/danich1/annorxiver/e61dff8efe2216852a6b2a9ff0ec921a54356ad7/figure_generation/output/figure_four_panels.svg){#fig:publication_delay_panels width="100%"}
 
-The process of peer review includes a number of steps which take variable amounts of time [@doi:10.1002/nop2.51].
-Comparing bioRxiv preprints with their corresponding published version provides an opportunity to better understand peer review and publishing.
-We examined how long it took to publish preprints in their peer reviewed form for each author-selected category (Figure {@fig:publication_delay_panels}C).
-We considered a preprint's endpoint to be publication and used the Kaplan-Meier estimator to estimate how much time has elapsed.
-Of the most abundant preprint categories microbiology was the fastest to publish (140 days, (137, 145 days) [95% CI]) and genomics was the slowest (190 days, (185, 195 days) [95% CI]).
-Though we did observe category-specific differences, these differences were generally modest.
+The process of peer review includes a number of steps which take variable amounts of time [@doi:10.1002/nop2.51] and we sought to measure if there is a difference in publication time between author-selected categories of preprints (Figure {@fig:publication_delay_panels}A).
+Of the most abundant preprint categories microbiology was the fastest to publish (140 days, (137, 145 days) [95% CI]) and genomics was the slowest (190 days, (185, 195 days) [95% CI]) (Figure {@fig:publication_delay_panels}A).
+We did observe category-specific differences; however, these differences were generally modest, suggesting that the peer review process did not differ dramatically between preprint categories. 
 One exception was the Scientific Communication and Education category, which took substantially longer to be peer reviewed and published (373 days, (373, 398 days) [95% CI]).
+This hints that there is a key step or steps within the peer review process that greatly halts preprints in this category.
 
-Preprint authors have the opportunity to update their preprint at any point until the peer reviewed publication appears.
-We examined whether or not the number of versions of a preprint was associated with a change in the time to publish.
-We found that preprints with more versions generally took longer to publish (Figure {@fig:publication_delay_panels}B).
-Linear regression comparing the time to publish with the number of versions revealed an increasing relationship, with each version being associated with an additional 51 days before publication.
-This time period seems broadly compatible with the amount of time it would take to receive reviews and revise a manuscript, suggesting that many authors may be updating their preprints in response to peer reviews or other external feedback.
-
-We next used the full text content to examine the extent to which the magnitude of change to the text between the preprint and peer reviewed publication was associated with a change in the time to publication.
-We used distance in the document embedding space to quantify the amount of change to the text.
-We first established a baseline by selecting pairs of random preprints in the author-selected bioinformatics category and found a mean embedding distance between random pairs of 5.068.
-Preprints that were further in the embedding space from their corresponding peer reviewed publication took longer to publish, with each unit in the embedding space corresponding to approximately sixteen additional days (Figure {@fig:publication_delay_panels}A).
-The number of version and document distance effects, taken together, support a model where preprints that are reviewed more or that require larger revisions take longer to publish.
+Examining peer review's affect on individual preprints, we found a positive correlation between preprints with multiple versions and the time elapsed until publication (Figure {@fig:publication_delay_panels}B). 
+Each new version adds additional 51 days before a preprint is published.
+This time duration seems broadly compatible with the amount of time it would take to receive reviews and revise a manuscript, suggesting that many authors may be updating their preprints in response to peer reviews or other external feedback.
+Furthermore, we found that preprints with large embedding space distances from their corresponding peer reviewed publication took longer to publish (Figure {@fig:publication_delay_panels}C).
+Each unit of ditances in the embedding space corresponds to approximately sixteen additional days to make textual changes (Figure {@fig:publication_delay_panels}C).
+We found that that average distance of two randomly selected papers from the bioinformatics category in bioRxiv is 5.068, while the average distance of two randomly selected papers from bioRxiv is 6.210.
+The percent change between these two means results in 18%, suggesting that a single distance unit represents changing 18%% of a preprint's total textual content.
+Overall, our findings support a notion that preprints reviewed multiple times or require larger revisions take longer to publish.
 
 ### Preprints with similar document embeddings share publication venues
 
