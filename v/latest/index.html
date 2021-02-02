@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/5193797f03005f34a89ad41f0876a5e20c4376d2/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/5193797f03005f34a89ad41f0876a5e20c4376d2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/5193797f03005f34a89ad41f0876a5e20c4376d2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/5687d7560c84d958c96e041818c59358978c38da/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/5687d7560c84d958c96e041818c59358978c38da/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/5687d7560c84d958c96e041818c59358978c38da/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -88,9 +88,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/annorxiver_manuscript/v/5193797f03005f34a89ad41f0876a5e20c4376d2/">permalink</a>)
+(<a href="https://greenelab.github.io/annorxiver_manuscript/v/5687d7560c84d958c96e041818c59358978c38da/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/5193797f03005f34a89ad41f0876a5e20c4376d2">greenelab/annorxiver_manuscript@5193797</a>
+from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/5687d7560c84d958c96e041818c59358978c38da">greenelab/annorxiver_manuscript@5687d75</a>
 on February 2, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -469,39 +469,36 @@ At the level of individual manuscripts, the terms that change the most appear to
 <h3 id="document-embeddings-derived-from-biorxiv-reveal-fields-and-subfields">Document embeddings derived from bioRxiv reveal fields and subfields</h3>
 <div id="fig:topic_analysis_panels" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/danich1/annorxiver/e61dff8efe2216852a6b2a9ff0ec921a54356ad7/figure_generation/output/figure_two_panels.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 2:</span> A. Principal components (PC) analysis of bioRxiv word2vec embeddings groups documents by author-selected categories.
+<img src="https://raw.githubusercontent.com/danich1/annorxiver/e61dff8efe2216852a6b2a9ff0ec921a54356ad7/figure_generation/output/figure_two_panels.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 2:</span> <strong>A.</strong> Principal components (PC) analysis of bioRxiv word2vec embeddings groups documents based on author-selected categories.
 We visualized documents from key categories on a scatterplot for the first two PCs.
-The first PC separated cell biology from informatics-related fields.
-The second PC separated bioinformatics from neuroscience.
-Certain neuroscience papers appeared to be more associated with the cellular biology direction of PC1, while others appeared to be more associated with the informatics-related direction, which suggested that the concepts captured by PCs were not exclusively related to field.
-B. A word cloud visualization of PC1, which separated informatics disciplines (positive direction) from cell biology (negative direction) showed that tokens “empirical” “estimates” and “statistics” characterized the positive direction while “cultured” and “overexpressing” characterized the negative one.
-Each word cloud depicts the cosine similarity score between tokens and the second PC.
+The first PC separated cell biology from informatics-related fields and the second PC separated bioinformatics from neuroscience fields.
+<strong>B.</strong> A word cloud visualization of PC1.
+Each word cloud depicts the cosine similarity score between tokens and the first PC.
 Tokens in orange were most similar to the PC’s positive direction while tokens in blue were most similar to the PC’s negative direction.
 The size of each token indicates the magnitude of the similarity.
-C. A word cloud visualization of PC2, which separated bioinformatics from neuroscience, showed that tokens “genomic” “genome” and “genomes” characterized the positive direction while “evoked” “stimulus” and “stimulation” characterized the negative one.
-D. Examining PC1 values for each article by category created a continuum from informatics-related fields on the top through cell biology on the bottom.
+<strong>C.</strong> A word cloud visualization of PC2, which separated bioinformatics from neuroscience.
+Similar to the first PC, tokens in orange were most similar to the PC’s positive direction while tokens in blue were most similar to the PC’s negative direction.
+The size of each token indicates the magnitude of the similarity.
+<strong>D.</strong> Examining PC1 values for each article by category created a continuum from informatics-related fields on the top through cell biology on the bottom.
 Certain article categories (neuroscience, genetics) were spread throughout PC1 values.
-E. Examining PC2 values for each article by category revealed fields like genomics, bioinformatics, and genetics on the top and neuroscience and behavior on the bottom.</figcaption>
+<strong>E.</strong> Examining PC2 values for each article by category revealed fields like genomics, bioinformatics, and genetics on the top and neuroscience and behavior on the bottom.</figcaption>
 </figure>
 </div>
 <p>Document embeddings provide a means to categorize the language of documents in a way that takes into account the similarities between terms <span class="citation" data-cites="SdcIDSwR 17IHBAq05 14k28UnQN">[<a href="#ref-SdcIDSwR" role="doc-biblioref">34</a>,<a href="#ref-17IHBAq05" role="doc-biblioref">62</a>,<a href="#ref-14k28UnQN" role="doc-biblioref">63</a>]</span>.
-We first trained word embeddings using a 300-dimensional word2vec continuous bag of words model.
-We combined word embeddings to produce an embedding for each bioRxiv or PMC document by calculating the average of all words present in each respective document.
-This placed each document in a 300-dimensional space where each individual dimension is arbitrary.
-To provide more structure to the dataset, we examined the predominant patterns in these embeddings by performing principal components analysis of bioRxiv.
-The principal components (PCs) are ordered by the proportion of the variance explained.
-We found that the first two PCs separated articles from different author-selected categories (Figure <a href="#fig:topic_analysis_panels">2</a>A).</p>
-<p>We sought to understand the token patterns that drove these overall differences between documents.
-We identified the tokens most similar to a PC by calculating the cosine similarity score between tokens’ embeddings in the word2vec space and each PC.
-Visualizing token-PC similarity revealed tokens associated with certain research approaches (Figures <a href="#fig:topic_analysis_panels">2</a>B and <a href="#fig:topic_analysis_panels">2</a>C).
-Examining the value for PC1 across all author-selected categories revealed an ordering of fields from cell biology to informatics-related disciplines (Figure <a href="#fig:topic_analysis_panels">2</a>D).</p>
-<p>While the PC1 value range for each author-selected category was high, these results suggested that a primary driver in the variability of language use on bioRxiv could be the divide between data science approaches and cell biology ones.
-A similar analysis for PC2 suggested that neuroscience and genomics present a similar language continuum (Figure <a href="#fig:topic_analysis_panels">2</a>E).
-For both of the top two PCs, the submitter-selected category of systems biology preprints was near the middle of the distribution and had a relatively large interquartile range when compared with other categories (Figure <a href="#fig:topic_analysis_panels">2</a>D and <a href="#fig:topic_analysis_panels">2</a>E).</p>
-<p>We examined the preprints that had the highest and lowest values for PC1 within systems biology (Table {#tbl:five_pc1_table}).
-The preprints with the highest five PC values <span class="citation" data-cites="ddvF5sXo 18dTP7Wfc 16tWubqOj 6gfAR2hM">[<a href="#ref-ddvF5sXo" role="doc-biblioref">64</a>,<a href="#ref-18dTP7Wfc" role="doc-biblioref">65</a>,<a href="#ref-16tWubqOj" role="doc-biblioref">66</a>,<a href="#ref-6gfAR2hM" role="doc-biblioref">67</a>]</span> included software packages, machine learning analyses, and other computational biology manuscripts.
-The preprints with the lowest five PC values <span class="citation" data-cites="2V2BJL87 4BUSt1jK nzDb3Lvn 1CM9H3mFb jmFU2eta">[<a href="#ref-2V2BJL87" role="doc-biblioref">68</a>,<a href="#ref-4BUSt1jK" role="doc-biblioref">69</a>,<a href="#ref-nzDb3Lvn" role="doc-biblioref">70</a>,<a href="#ref-1CM9H3mFb" role="doc-biblioref">71</a>,<a href="#ref-jmFU2eta" role="doc-biblioref">72</a>]</span> were focused on signaling.
-We provide the top 50 PCs of bioRxiv embeddings within our online repository (see Software and Data Availability).</p>
+We found that the first two PCs separated articles from different author-selected categories (Figure <a href="#fig:topic_analysis_panels">2</a>A).
+Certain neuroscience papers appeared to be more associated with the cellular biology direction of PC1, while others appeared to be more associated with the informatics-related direction Figure <a href="#fig:topic_analysis_panels">2</a>A).
+This suggests that the concepts captured by PCs were not exclusively related to field.</p>
+<p>Visualizing token-PC similarity revealed tokens associated with certain research approaches (Figures <a href="#fig:topic_analysis_panels">2</a>B and <a href="#fig:topic_analysis_panels">2</a>C).
+Token association of PC1 shows the separation of cell biology and informatics related fields through tokens: “empirical”, “estimates” and “statistics” depicted in orange and “cultured” and “overexpressing” depicted in blue (Figure <a href="#fig:topic_analysis_panels">2</a>B).
+Association for PC2 shows the separation of bioinformatics and neuroscience via tokens: “genomic”, “genome” and “genomes” depicted in orange and “evoked”, “stimulus” and “stimulation” depicted in blue (Figure <a href="#fig:topic_analysis_panels">2</a>C).</p>
+<p>Examining the value for PC1 across all author-selected categories revealed an ordering of fields from cell biology to informatics-related disciplines (Figure <a href="#fig:topic_analysis_panels">2</a>D).
+These results suggest that a primary driver of the variability within the language used in bioRxiv could be the divide between informatics and cell biology approaches.
+A similar analysis for PC2 suggested that neuroscience and bioinformatics present a similar language continuum (Figure <a href="#fig:topic_analysis_panels">2</a>E).
+This result supports the notion that bioRxiv contains an influx of neuroscience and bioinformatics related research results.
+For both of the top two PCs, the submitter-selected category of systems biology preprints was near the middle of the distribution and had a relatively large interquartile range when compared with other categories (Figure <a href="#fig:topic_analysis_panels">2</a>D and <a href="#fig:topic_analysis_panels">2</a>E), suggesting that systems biology is a broader subfield containing both informatics and cellular biology approaches.</p>
+<p>Examining the top five and bottom five preprints within the systems biology field reinforcess PC1’s dichotomous theme (Table <a href="#tbl:five_pc1_table">2</a>).
+Preprints with the highest values <span class="citation" data-cites="ddvF5sXo 18dTP7Wfc UmFNlo8W 16tWubqOj 6gfAR2hM">[<a href="#ref-ddvF5sXo" role="doc-biblioref">64</a>,<a href="#ref-18dTP7Wfc" role="doc-biblioref">65</a>,<a href="#ref-UmFNlo8W" role="doc-biblioref">66</a>,<a href="#ref-16tWubqOj" role="doc-biblioref">67</a>,<a href="#ref-6gfAR2hM" role="doc-biblioref">68</a>]</span> included software packages, machine learning analyses, and other computational biology manuscripts, while preprints with the lowest values <span class="citation" data-cites="2V2BJL87 4BUSt1jK nzDb3Lvn 1CM9H3mFb jmFU2eta">[<a href="#ref-2V2BJL87" role="doc-biblioref">69</a>,<a href="#ref-4BUSt1jK" role="doc-biblioref">70</a>,<a href="#ref-nzDb3Lvn" role="doc-biblioref">71</a>,<a href="#ref-1CM9H3mFb" role="doc-biblioref">72</a>,<a href="#ref-jmFU2eta" role="doc-biblioref">73</a>]</span> were focused on cellular signaling and protein activity.
+We provide the rest of our 50 generated PCs in our online repository (see Software and Data Availability).</p>
 <div id="tbl:five_pc1_table" class="tablenos">
 <table style="width:100%;">
 <caption><span>Table 2:</span> PC1 divided the author-selected category of systems biology preprints along an axis from computational to molecular approaches. </caption>
@@ -533,19 +530,19 @@ We provide the top 50 PCs of bioRxiv embeddings within our online repository (se
 <td><img src="images/paper-thumbnails/pc1/825943_thumbnail.png" title="fig:" /></td>
 </tr>
 <tr class="odd">
-<td>Notions of similarity for computational biology models <span class="citation" data-cites="UmFNlo8W">[<a href="#ref-UmFNlo8W" role="doc-biblioref">73</a>]</span></td>
+<td>Notions of similarity for computational biology models <span class="citation" data-cites="UmFNlo8W">[<a href="#ref-UmFNlo8W" role="doc-biblioref">66</a>]</span></td>
 <td>4.355295926618207</td>
 <td>CC-BY-NC-ND</td>
 <td><img src="images/paper-thumbnails/pc1/044818_thumbnail.png" title="fig:" /></td>
 </tr>
 <tr class="even">
-<td>GpABC: a Julia package for approximate Bayesian computation with Gaussian process emulation <span class="citation" data-cites="16tWubqOj">[<a href="#ref-16tWubqOj" role="doc-biblioref">66</a>]</span></td>
+<td>GpABC: a Julia package for approximate Bayesian computation with Gaussian process emulation <span class="citation" data-cites="16tWubqOj">[<a href="#ref-16tWubqOj" role="doc-biblioref">67</a>]</span></td>
 <td>4.351517618262304</td>
 <td>CC-BY-NC-ND</td>
 <td><img src="images/paper-thumbnails/pc1/769299_thumbnail.png" title="fig:" /></td>
 </tr>
 <tr class="odd">
-<td>SBpipe: a collection of pipelines for automating repetitive simulation and analysis tasks <span class="citation" data-cites="6gfAR2hM">[<a href="#ref-6gfAR2hM" role="doc-biblioref">67</a>]</span></td>
+<td>SBpipe: a collection of pipelines for automating repetitive simulation and analysis tasks <span class="citation" data-cites="6gfAR2hM">[<a href="#ref-6gfAR2hM" role="doc-biblioref">68</a>]</span></td>
 <td>4.321847854182741</td>
 <td>CC-BY-NC-ND</td>
 <td><img src="images/paper-thumbnails/pc1/107250_thumbnail.png" title="fig:" /></td>
@@ -557,31 +554,31 @@ We provide the top 50 PCs of bioRxiv embeddings within our online repository (se
 <td></td>
 </tr>
 <tr class="odd">
-<td>Spatiotemporal proteomics uncovers cathepsin-dependent host cell death during bacterial infection <span class="citation" data-cites="2V2BJL87">[<a href="#ref-2V2BJL87" role="doc-biblioref">68</a>]</span></td>
+<td>Spatiotemporal proteomics uncovers cathepsin-dependent host cell death during bacterial infection <span class="citation" data-cites="2V2BJL87">[<a href="#ref-2V2BJL87" role="doc-biblioref">69</a>]</span></td>
 <td>-4.263964235099807</td>
 <td>CC-BY-ND</td>
 <td><img src="images/paper-thumbnails/pc1/455048_thumbnail.png" title="fig:" /></td>
 </tr>
 <tr class="even">
-<td>Systems analysis by mass cytometry identifies susceptibility of latent HIV-infected T cells to targeting of p38 and mTOR pathways <span class="citation" data-cites="4BUSt1jK">[<a href="#ref-4BUSt1jK" role="doc-biblioref">69</a>]</span></td>
+<td>Systems analysis by mass cytometry identifies susceptibility of latent HIV-infected T cells to targeting of p38 and mTOR pathways <span class="citation" data-cites="4BUSt1jK">[<a href="#ref-4BUSt1jK" role="doc-biblioref">70</a>]</span></td>
 <td>-4.279016673409032</td>
 <td>CC-BY-NC-ND</td>
 <td><img src="images/paper-thumbnails/pc1/371922_thumbnail.png" title="fig:" /></td>
 </tr>
 <tr class="odd">
-<td>NADPH consumption by L-cystine reduction creates a metabolic vulnerability upon glucose deprivation <span class="citation" data-cites="nzDb3Lvn">[<a href="#ref-nzDb3Lvn" role="doc-biblioref">70</a>]</span></td>
+<td>NADPH consumption by L-cystine reduction creates a metabolic vulnerability upon glucose deprivation <span class="citation" data-cites="nzDb3Lvn">[<a href="#ref-nzDb3Lvn" role="doc-biblioref">71</a>]</span></td>
 <td>-4.592209988884236</td>
 <td>None</td>
 <td><img src="images/paper-thumbnails/pc1/733162_thumbnail.png" title="fig:" /></td>
 </tr>
 <tr class="even">
-<td>Inhibition of Bruton’s tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease <span class="citation" data-cites="1CM9H3mFb">[<a href="#ref-1CM9H3mFb" role="doc-biblioref">71</a>]</span></td>
+<td>Inhibition of Bruton’s tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease <span class="citation" data-cites="1CM9H3mFb">[<a href="#ref-1CM9H3mFb" role="doc-biblioref">72</a>]</span></td>
 <td>-4.736613689905791</td>
 <td>None</td>
 <td><img src="images/paper-thumbnails/pc1/745943_thumbnail.png" title="fig:" /></td>
 </tr>
 <tr class="odd">
-<td>AKT but not MYC promotes reactive oxygen species-mediated cell death in oxidative culture <span class="citation" data-cites="jmFU2eta">[<a href="#ref-jmFU2eta" role="doc-biblioref">72</a>]</span></td>
+<td>AKT but not MYC promotes reactive oxygen species-mediated cell death in oxidative culture <span class="citation" data-cites="jmFU2eta">[<a href="#ref-jmFU2eta" role="doc-biblioref">73</a>]</span></td>
 <td>-4.826793742506695</td>
 <td>None</td>
 <td><img src="images/paper-thumbnails/pc1/754572_thumbnail.png" title="fig:" /></td>
@@ -1072,53 +1069,53 @@ Kyemyung Park, Thorsten Prüstel, Yong Lu, John S. Tsang<br />
 <em>Cold Spring Harbor Laboratory</em> (2019-10-31) <a href="https://doi.org/gg94bm">https://doi.org/gg94bm</a> <br />
 DOI: <a href="https://doi.org/10.1101/825943">10.1101/825943</a></p>
 </div>
+<div id="ref-UmFNlo8W">
+<p>66. <strong>Notions of similarity for computational biology models</strong> <br />
+Ron Henkel, Robert Hoehndorf, Tim Kacprowski, Christian Knüpfer, Wolfram Liebermeister, Dagmar Waltemath<br />
+<em>Cold Spring Harbor Laboratory</em> (2016-03-21) <a href="https://doi.org/gg939z">https://doi.org/gg939z</a> <br />
+DOI: <a href="https://doi.org/10.1101/044818">10.1101/044818</a></p>
+</div>
 <div id="ref-16tWubqOj">
-<p>66. <strong>GpABC: a Julia package for approximate Bayesian computation with Gaussian process emulation</strong> <br />
+<p>67. <strong>GpABC: a Julia package for approximate Bayesian computation with Gaussian process emulation</strong> <br />
 Evgeny Tankhilevich, Jonathan Ish-Horowicz, Tara Hameed, Elisabeth Roesch, Istvan Kleijn, Michael PH Stumpf, Fei He<br />
 <em>Cold Spring Harbor Laboratory</em> (2019-09-18) <a href="https://doi.org/gg94bj">https://doi.org/gg94bj</a> <br />
 DOI: <a href="https://doi.org/10.1101/769299">10.1101/769299</a></p>
 </div>
 <div id="ref-6gfAR2hM">
-<p>67. <strong>SBpipe: a collection of pipelines for automating repetitive simulation and analysis tasks</strong> <br />
+<p>68. <strong>SBpipe: a collection of pipelines for automating repetitive simulation and analysis tasks</strong> <br />
 Piero Dalle Pezze, Nicolas Le Novère<br />
 <em>Cold Spring Harbor Laboratory</em> (2017-02-09) <a href="https://doi.org/gg9392">https://doi.org/gg9392</a> <br />
 DOI: <a href="https://doi.org/10.1101/107250">10.1101/107250</a></p>
 </div>
 <div id="ref-2V2BJL87">
-<p>68. <strong>Spatiotemporal proteomics uncovers cathepsin-dependent host cell death during bacterial infection</strong> <br />
+<p>69. <strong>Spatiotemporal proteomics uncovers cathepsin-dependent host cell death during bacterial infection</strong> <br />
 Joel Selkrig, Nan Li, Jacob Bobonis, Annika Hausmann, Anna Sueki, Haruna Imamura, Bachir El Debs, Gianluca Sigismondo, Bogdan I. Florea, Herman S. Overkleeft, … Athanasios Typas<br />
 <em>Cold Spring Harbor Laboratory</em> (2018-11-07) <a href="https://doi.org/gg94bc">https://doi.org/gg94bc</a> <br />
 DOI: <a href="https://doi.org/10.1101/455048">10.1101/455048</a></p>
 </div>
 <div id="ref-4BUSt1jK">
-<p>69. <strong>Systems analysis by mass cytometry identifies susceptibility of latent HIV-infected T cells to targeting of p38 and mTOR pathways</strong> <br />
+<p>70. <strong>Systems analysis by mass cytometry identifies susceptibility of latent HIV-infected T cells to targeting of p38 and mTOR pathways</strong> <br />
 Linda E. Fong, Victor L. Bass, Serena Spudich, Kathryn Miller-Jensen<br />
 <em>Cold Spring Harbor Laboratory</em> (2018-07-19) <a href="https://doi.org/gg9398">https://doi.org/gg9398</a> <br />
 DOI: <a href="https://doi.org/10.1101/371922">10.1101/371922</a></p>
 </div>
 <div id="ref-nzDb3Lvn">
-<p>70. <strong>NADPH consumption by L-cystine reduction creates a metabolic vulnerability upon glucose deprivation</strong> <br />
+<p>71. <strong>NADPH consumption by L-cystine reduction creates a metabolic vulnerability upon glucose deprivation</strong> <br />
 James H. Joly, Alireza Delfarah, Philip S. Phung, Sydney Parrish, Nicholas A. Graham<br />
 <em>Cold Spring Harbor Laboratory</em> (2019-08-13) <a href="https://doi.org/gg94bf">https://doi.org/gg94bf</a> <br />
 DOI: <a href="https://doi.org/10.1101/733162">10.1101/733162</a></p>
 </div>
 <div id="ref-1CM9H3mFb">
-<p>71. <strong>Inhibition of Bruton’s tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease</strong> <br />
+<p>72. <strong>Inhibition of Bruton’s tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease</strong> <br />
 Gareth S. D. Purvis, Massimo Collino, Haidee M. A. Tavio, Fausto Chiazza, Caroline E. O’Riodan, Lynda Zeboudj, Nick Guisot, Peter Bunyard, David R. Greaves, Christoph Thiemermann<br />
 <em>Cold Spring Harbor Laboratory</em> (2019-08-28) <a href="https://doi.org/gg94bg">https://doi.org/gg94bg</a> <br />
 DOI: <a href="https://doi.org/10.1101/745943">10.1101/745943</a></p>
 </div>
 <div id="ref-jmFU2eta">
-<p>72. <strong>AKT but not MYC promotes reactive oxygen species-mediated cell death in oxidative culture</strong> <br />
+<p>73. <strong>AKT but not MYC promotes reactive oxygen species-mediated cell death in oxidative culture</strong> <br />
 Dongqing Zheng, Jonathan H. Sussman, Matthew P. Jeon, Sydney T. Parrish, Alireza Delfarah, Nicholas A. Graham<br />
 <em>Cold Spring Harbor Laboratory</em> (2019-09-01) <a href="https://doi.org/gg94bh">https://doi.org/gg94bh</a> <br />
 DOI: <a href="https://doi.org/10.1101/754572">10.1101/754572</a></p>
-</div>
-<div id="ref-UmFNlo8W">
-<p>73. <strong>Notions of similarity for computational biology models</strong> <br />
-Ron Henkel, Robert Hoehndorf, Tim Kacprowski, Christian Knüpfer, Wolfram Liebermeister, Dagmar Waltemath<br />
-<em>Cold Spring Harbor Laboratory</em> (2016-03-21) <a href="https://doi.org/gg939z">https://doi.org/gg939z</a> <br />
-DOI: <a href="https://doi.org/10.1101/044818">10.1101/044818</a></p>
 </div>
 <div id="ref-oeGSw37I">
 <p>74. <strong>A Coefficient of Agreement for Nominal Scales</strong> <br />
