@@ -105,11 +105,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/5687d7560c84d958c96e041818c59358978c38da/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/fe8ba586b69456ea78cd2b7e8bfa17fff5ae32db/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/5687d7560c84d958c96e041818c59358978c38da/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/fe8ba586b69456ea78cd2b7e8bfa17fff5ae32db/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/5687d7560c84d958c96e041818c59358978c38da/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/fe8ba586b69456ea78cd2b7e8bfa17fff5ae32db/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -143,9 +143,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/5687d7560c84d958c96e041818c59358978c38da/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/fe8ba586b69456ea78cd2b7e8bfa17fff5ae32db/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@5687d75](https://github.com/greenelab/annorxiver_manuscript/tree/5687d7560c84d958c96e041818c59358978c38da)
+from [greenelab/annorxiver_manuscript@fe8ba58](https://github.com/greenelab/annorxiver_manuscript/tree/fe8ba586b69456ea78cd2b7e8bfa17fff5ae32db)
 on February 2, 2021.
 </em></small>
 
@@ -561,46 +561,26 @@ Table: PC1 divided the author-selected category of systems biology preprints alo
 
 ### Document embedding similarities reveal unannotated preprint-publication pairs
 
-Metaresearch into bioRxiv, including our own, relies on annotations of preprints that have been published to their corresponding peer reviewed publication.
-Many journals require that authors update preprints with links to the published version of their article.
-This is accomplished in two ways: bioRxiv may detect the link and automatically add it or authors may notify bioRxiv that their preprint was published.
-However, bioRxiv establishes these links based on consistency in metadata (i.e., title, author names, etc).
-Article titles, author lists, and other elements may change as a result of the peer review process. In these cases, if authors do not notify bioRxiv that the preprint has since been published then the scientific record remains incomplete.
-
-Based on our finding that document embeddings captured fields and subfields, we expected that preprint-publication pairs with similar embedding values may represent the same document.
-We examined the extent to which annotated preprint-publication pairs were closer in this space that preprints were to a random paper published in the same journal in which the preprint was eventually published using already annotated pairs.
-We found that distances between preprints and their corresponding published versions were nearly always lower than preprints paired with a random article published in the same journal (Figure {@fig:preprint_links_panels}A).
-
 ![
-A. Preprints are closer in document embedding space to their corresponding peer reviewed publication than they are to random papers published in the same journal.
-B. Potential preprint-publication pairs that are unannotated but within the 50th percentile of all preprint-publication pairs in the document embedding space are likely represent true preprint-publication pairs.
+**A.** Preprints are closer in document embedding space to their corresponding peer reviewed publication than they are to random papers published in the same journal.
+**B.** Potential preprint-publication pairs that are unannotated but within the 50th percentile of all preprint-publication pairs in the document embedding space are likely represent true preprint-publication pairs.
 We depict the fraction of true positives over the total number of pairs in each bin.
 Accuracy is derived from curation of a randomized list of 200 potential pairs (50 per quantile) performed in duplicate with a third rater used in the case of disagreement.
-C. Most preprints are eventually published.
+**C.** Most preprints are eventually published.
 We show the publication rate of preprints since bioRxiv first started.
-The x-axis represents months since bioRxiv started and the y-axis represents the proportion of preprints published.
-The light blue line represents the publication rate estimated by Abdill et al. [@doi:10.7554/eLife.45133].
-The dark blue line represents the updated publication rate using only CrossRef-derived annotations while the dark green line includes annotations derived from similarity in the embedding space.
+The x-axis represents months since bioRxiv started and the y-axis represents the proportion of preprints published given the month they were posted.
+The light blue line represents the publication rate previously estimated by Abdill et al. [@doi:10.7554/eLife.45133].
+The dark blue line represents the updated publication rate using only CrossRef-derived annotations, while the dark green line includes annotations derived from our embedding space approach.
 The horizontal lines represent the overall proportion of preprints that are were published as of the time of the annotation snapshot.
 ](https://raw.githubusercontent.com/danich1/annorxiver/f9d8861e3d60afa878c5d0088b7502adae15ebe3/figure_generation/output/figure_three_panels.svg){#fig:preprint_links_panels width="100%"}
 
-Based on this finding, we analyzed preprint-publication pairs that were close in document space but not annotated as such.
-We separated these pairs into four quantiles with the first three based on the distribution of preprint-publication distances and the fourth going from the 75th percentile in the preprint-publication pair space to the smallest value observed for the preprint-random set.
-We then selected 50 preprint-publication pairs from each of these sets and shuffled them to create a random list of 200 possible pairs.
-Two scientists then examined the pairs in these randomized lists determining if an preprint-publication pair represented the peer reviewed publication of the primary content described in the preprint.
-Across the entire list we found a high inter-rater reliability of with a Cohen's Kappa [@doi:10.1177/001316446002000104] of 0.92.
-In the case of disagreements, a third scientist more carefully examined the pairs and made a final determination.
-Of the 200 pairs that we examined, approximately 98% of pairs with an embedding distance in the 0-25th and 25th-50th percentile bins were scored as true matches (Figure {@fig:preprint_links_panels}B).
-These two bins contained 1,720 preprint-article pairs, suggesting that many preprints have been published but not previously connected with their published versions.
-
-We overlaid these new annotations onto existing annotations to reassess the overall preprint publication rate reported by Abdill et al. [@doi:10.7554/eLife.45133].
-Our filtering criteria were intentionally stringent, so the increased estimate of publication rate amounts to a few percent (Figure {@fig:preprint_links_panels}C).
-We noticed that there was a particular enrichment of unannotated but published preprints in the 2017-2018 interval.
-We would expect a higher proportion of such preprints before the year 2019 (many of which may not have been published yet); however, we did not expect to observe relatively few missed annotations before 2017.
-It is possible that as the number of preprints grows, it has become harder to establish links.
-Alternatively, authors now adopting preprinting practices may be less likely to notify the preprint server upon publication if the links are not automatically detected.
-In any case, future work, especially that which aims to assess the fraction of preprints that are eventually published, should account for the possibility of missed annotations.
-We supplied our set of 1720 high-confidence annotations to the bioRxiv staff.
+Distances between preprints and their corresponding published versions were nearly always lower than preprints paired with a random article published in the same journal (Figure {@fig:preprint_links_panels}A).
+This suggests that embedding distances can identify documents with similar textual content. 
+Approximately 98% of our 200 pairs with an embedding distance in the 0-25th and 25th-50th percentile bins were scored as true matches (Figure {@fig:preprint_links_panels}B).
+These two bins contained 1,720 preprint-article pairs, suggesting that many preprints may have been published but not previously connected with their published versions.
+There is a particular enrichment for preprints published but unlinked within the 2017-2018 interval (Figure {@fig:preprint_links_panels}C).
+We expected a higher proportion of such preprints before the year 2019 (many of which may not have been published yet); however, observing relatively few missed annotations before 2017 was against our expectations.
+Overall, these results suggest that as the number of preprints posted on bioRxiv grows, it becomes harder to establish a link between preprints and their published counterparts.
 
 ### Preprints with more versions or more text changes took longer to publish
 

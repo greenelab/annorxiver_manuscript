@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/5687d7560c84d958c96e041818c59358978c38da/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/5687d7560c84d958c96e041818c59358978c38da/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/5687d7560c84d958c96e041818c59358978c38da/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/fe8ba586b69456ea78cd2b7e8bfa17fff5ae32db/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/fe8ba586b69456ea78cd2b7e8bfa17fff5ae32db/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/fe8ba586b69456ea78cd2b7e8bfa17fff5ae32db/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -88,9 +88,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/annorxiver_manuscript/v/5687d7560c84d958c96e041818c59358978c38da/">permalink</a>)
+(<a href="https://greenelab.github.io/annorxiver_manuscript/v/fe8ba586b69456ea78cd2b7e8bfa17fff5ae32db/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/5687d7560c84d958c96e041818c59358978c38da">greenelab/annorxiver_manuscript@5687d75</a>
+from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/fe8ba586b69456ea78cd2b7e8bfa17fff5ae32db">greenelab/annorxiver_manuscript@fe8ba58</a>
 on February 2, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -587,44 +587,27 @@ We provide the rest of our 50 generated PCs in our online repository (see Softwa
 </table>
 </div>
 <h3 id="document-embedding-similarities-reveal-unannotated-preprint-publication-pairs">Document embedding similarities reveal unannotated preprint-publication pairs</h3>
-<p>Metaresearch into bioRxiv, including our own, relies on annotations of preprints that have been published to their corresponding peer reviewed publication.
-Many journals require that authors update preprints with links to the published version of their article.
-This is accomplished in two ways: bioRxiv may detect the link and automatically add it or authors may notify bioRxiv that their preprint was published.
-However, bioRxiv establishes these links based on consistency in metadata (i.e., title, author names, etc).
-Article titles, author lists, and other elements may change as a result of the peer review process. In these cases, if authors do not notify bioRxiv that the preprint has since been published then the scientific record remains incomplete.</p>
-<p>Based on our finding that document embeddings captured fields and subfields, we expected that preprint-publication pairs with similar embedding values may represent the same document.
-We examined the extent to which annotated preprint-publication pairs were closer in this space that preprints were to a random paper published in the same journal in which the preprint was eventually published using already annotated pairs.
-We found that distances between preprints and their corresponding published versions were nearly always lower than preprints paired with a random article published in the same journal (Figure <a href="#fig:preprint_links_panels">3</a>A).</p>
 <div id="fig:preprint_links_panels" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/danich1/annorxiver/f9d8861e3d60afa878c5d0088b7502adae15ebe3/figure_generation/output/figure_three_panels.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 3:</span> A. Preprints are closer in document embedding space to their corresponding peer reviewed publication than they are to random papers published in the same journal.
-B. Potential preprint-publication pairs that are unannotated but within the 50th percentile of all preprint-publication pairs in the document embedding space are likely represent true preprint-publication pairs.
+<img src="https://raw.githubusercontent.com/danich1/annorxiver/f9d8861e3d60afa878c5d0088b7502adae15ebe3/figure_generation/output/figure_three_panels.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 3:</span> <strong>A.</strong> Preprints are closer in document embedding space to their corresponding peer reviewed publication than they are to random papers published in the same journal.
+<strong>B.</strong> Potential preprint-publication pairs that are unannotated but within the 50th percentile of all preprint-publication pairs in the document embedding space are likely represent true preprint-publication pairs.
 We depict the fraction of true positives over the total number of pairs in each bin.
 Accuracy is derived from curation of a randomized list of 200 potential pairs (50 per quantile) performed in duplicate with a third rater used in the case of disagreement.
-C. Most preprints are eventually published.
+<strong>C.</strong> Most preprints are eventually published.
 We show the publication rate of preprints since bioRxiv first started.
-The x-axis represents months since bioRxiv started and the y-axis represents the proportion of preprints published.
-The light blue line represents the publication rate estimated by Abdill et al. <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">60</a>]</span>.
-The dark blue line represents the updated publication rate using only CrossRef-derived annotations while the dark green line includes annotations derived from similarity in the embedding space.
+The x-axis represents months since bioRxiv started and the y-axis represents the proportion of preprints published given the month they were posted.
+The light blue line represents the publication rate previously estimated by Abdill et al. <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">60</a>]</span>.
+The dark blue line represents the updated publication rate using only CrossRef-derived annotations, while the dark green line includes annotations derived from our embedding space approach.
 The horizontal lines represent the overall proportion of preprints that are were published as of the time of the annotation snapshot.</figcaption>
 </figure>
 </div>
-<p>Based on this finding, we analyzed preprint-publication pairs that were close in document space but not annotated as such.
-We separated these pairs into four quantiles with the first three based on the distribution of preprint-publication distances and the fourth going from the 75th percentile in the preprint-publication pair space to the smallest value observed for the preprint-random set.
-We then selected 50 preprint-publication pairs from each of these sets and shuffled them to create a random list of 200 possible pairs.
-Two scientists then examined the pairs in these randomized lists determining if an preprint-publication pair represented the peer reviewed publication of the primary content described in the preprint.
-Across the entire list we found a high inter-rater reliability of with a Cohen’s Kappa <span class="citation" data-cites="oeGSw37I">[<a href="#ref-oeGSw37I" role="doc-biblioref">74</a>]</span> of 0.92.
-In the case of disagreements, a third scientist more carefully examined the pairs and made a final determination.
-Of the 200 pairs that we examined, approximately 98% of pairs with an embedding distance in the 0-25th and 25th-50th percentile bins were scored as true matches (Figure <a href="#fig:preprint_links_panels">3</a>B).
-These two bins contained 1,720 preprint-article pairs, suggesting that many preprints have been published but not previously connected with their published versions.</p>
-<p>We overlaid these new annotations onto existing annotations to reassess the overall preprint publication rate reported by Abdill et al. <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">60</a>]</span>.
-Our filtering criteria were intentionally stringent, so the increased estimate of publication rate amounts to a few percent (Figure <a href="#fig:preprint_links_panels">3</a>C).
-We noticed that there was a particular enrichment of unannotated but published preprints in the 2017-2018 interval.
-We would expect a higher proportion of such preprints before the year 2019 (many of which may not have been published yet); however, we did not expect to observe relatively few missed annotations before 2017.
-It is possible that as the number of preprints grows, it has become harder to establish links.
-Alternatively, authors now adopting preprinting practices may be less likely to notify the preprint server upon publication if the links are not automatically detected.
-In any case, future work, especially that which aims to assess the fraction of preprints that are eventually published, should account for the possibility of missed annotations.
-We supplied our set of 1720 high-confidence annotations to the bioRxiv staff.</p>
+<p>Distances between preprints and their corresponding published versions were nearly always lower than preprints paired with a random article published in the same journal (Figure <a href="#fig:preprint_links_panels">3</a>A).
+This suggests that embedding distances can identify documents with similar textual content.
+Approximately 98% of our 200 pairs with an embedding distance in the 0-25th and 25th-50th percentile bins were scored as true matches (Figure <a href="#fig:preprint_links_panels">3</a>B).
+These two bins contained 1,720 preprint-article pairs, suggesting that many preprints may have been published but not previously connected with their published versions.
+There is a particular enrichment for preprints published but unlinked within the 2017-2018 interval (Figure <a href="#fig:preprint_links_panels">3</a>C).
+We expected a higher proportion of such preprints before the year 2019 (many of which may not have been published yet); however, observing relatively few missed annotations before 2017 was against our expectations.
+Overall, these results suggest that as the number of preprints posted on bioRxiv grows, it becomes harder to establish a link between preprints and their published counterparts.</p>
 <h3 id="preprints-with-more-versions-or-more-text-changes-took-longer-to-publish">Preprints with more versions or more text changes took longer to publish</h3>
 <div id="fig:publication_delay_panels" class="fignos">
 <figure>
@@ -642,7 +625,7 @@ The x-axis shows the median time-to-publish for each category.
 Error bars represent 95% confidence intervals for each preprint category’s median time to publication.</figcaption>
 </figure>
 </div>
-<p>The process of peer review includes a number of steps which take variable amounts of time <span class="citation" data-cites="TMxQYqVE">[<a href="#ref-TMxQYqVE" role="doc-biblioref">75</a>]</span>.
+<p>The process of peer review includes a number of steps which take variable amounts of time <span class="citation" data-cites="TMxQYqVE">[<a href="#ref-TMxQYqVE" role="doc-biblioref">74</a>]</span>.
 Comparing bioRxiv preprints with their corresponding published version provides an opportunity to better understand peer review and publishing.
 We examined how long it took to publish preprints in their peer reviewed form for each author-selected category (Figure <a href="#fig:publication_delay_panels">4</a>C).
 We considered a preprint’s endpoint to be publication and used the Kaplan-Meier estimator to estimate how much time has elapsed.
@@ -670,7 +653,7 @@ We found an enrichment of papers published within the same journal among the nei
 Users supply digital object identifiers (DOIs) from bioRxiv or medRxiv.
 The application downloads the article from the preprint repository, converts the PDF to text, calculates a document embedding score, and returns the ten papers and journals with the most similar representations in the embedding space (Figure <a href="#fig:journal_rec_workflow">5</a>).
 We also sought to display the position of each preprint in the overall landscape.
-We required an embedding that could be rapidly calculated for new documents, so we used the Sparse Autoencoder for Unsupervised Clustering, Imputation, and Embedding (SAUCIE) approach previously described for the analysis of single-cell gene expression data <span class="citation" data-cites="1CPSh19Mn">[<a href="#ref-1CPSh19Mn" role="doc-biblioref">76</a>]</span>.
+We required an embedding that could be rapidly calculated for new documents, so we used the Sparse Autoencoder for Unsupervised Clustering, Imputation, and Embedding (SAUCIE) approach previously described for the analysis of single-cell gene expression data <span class="citation" data-cites="1CPSh19Mn">[<a href="#ref-1CPSh19Mn" role="doc-biblioref">75</a>]</span>.
 The user-requested preprint’s location in this space is then displayed and users can select regions to identify the terms most associated with those regions.
 Users can also explore the terms associated with the top 50 PCs derived from the document embeddings and those PCs vary across the document landscape.</p>
 <div id="fig:journal_rec_workflow" class="fignos">
@@ -686,7 +669,7 @@ E. Users can select a square within the landscape to examine statistics associat
 <p>We analyzed the full text of bioRxiv, comparing it with the open access portion of PMC, and found that the overall manner of writing is consistent with the biomedical literature.
 A benefit of analyzing bioRxiv text is that we can compare preprint and published versions to examine the influence of the publication process.
 Token-level analyses suggest that differences between corpora are driven by fields, while comparisons of preprints with their corresponding publication reveals differences in typesetting and supplementary materials.</p>
-<p>Previous analyses have focused on article metadata, including which papers are heavily downloaded and discussed <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">60</a>]</span> and by which communities discuss them <span class="citation" data-cites="QM87Cg3q">[<a href="#ref-QM87Cg3q" role="doc-biblioref">77</a>]</span>.
+<p>Previous analyses have focused on article metadata, including which papers are heavily downloaded and discussed <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">60</a>]</span> and by which communities discuss them <span class="citation" data-cites="QM87Cg3q">[<a href="#ref-QM87Cg3q" role="doc-biblioref">76</a>]</span>.
 We found that some preprints are highly similar to published articles within the PMC open access corpus, and a detailed examination revealed that many preprints were published but not previously annotated.
 Using the full text of documents to correct these missing annotations provides a comprehensive understanding of the extent to which preprints are published and this correction resulted in a publication rate that is higher than previously estimated.
 Importantly, this only accounts for papers that are published open access, so our analysis should be considered to raise the lower bound but the truly published fraction is likely to be higher.</p>
@@ -1117,26 +1100,20 @@ Dongqing Zheng, Jonathan H. Sussman, Matthew P. Jeon, Sydney T. Parrish, Alireza
 <em>Cold Spring Harbor Laboratory</em> (2019-09-01) <a href="https://doi.org/gg94bh">https://doi.org/gg94bh</a> <br />
 DOI: <a href="https://doi.org/10.1101/754572">10.1101/754572</a></p>
 </div>
-<div id="ref-oeGSw37I">
-<p>74. <strong>A Coefficient of Agreement for Nominal Scales</strong> <br />
-Jacob Cohen<br />
-<em>Educational and Psychological Measurement</em> (2016-07-02) <a href="https://doi.org/dghsrr">https://doi.org/dghsrr</a> <br />
-DOI: <a href="https://doi.org/10.1177/001316446002000104">10.1177/001316446002000104</a></p>
-</div>
 <div id="ref-TMxQYqVE">
-<p>75. <strong>Peer review and the publication process</strong> <br />
+<p>74. <strong>Peer review and the publication process</strong> <br />
 Parveen Azam Ali, Roger Watson<br />
 <em>Nursing Open</em> (2016-03-16) <a href="https://doi.org/c4g8">https://doi.org/c4g8</a> <br />
 DOI: <a href="https://doi.org/10.1002/nop2.51">10.1002/nop2.51</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27708830">27708830</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5050543">PMC5050543</a></p>
 </div>
 <div id="ref-1CPSh19Mn">
-<p>76. <strong>Exploring single-cell data with deep multitasking neural networks</strong> <br />
+<p>75. <strong>Exploring single-cell data with deep multitasking neural networks</strong> <br />
 Matthew Amodio, David van Dijk, Krishnan Srinivasan, William S. Chen, Hussein Mohsen, Kevin R. Moon, Allison Campbell, Yujiao Zhao, Xiaomei Wang, Manjunatha Venkataswamy, … Smita Krishnaswamy<br />
 <em>Nature Methods</em> (2019-10-07) <a href="https://doi.org/gf9rsg">https://doi.org/gf9rsg</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41592-019-0576-7">10.1038/s41592-019-0576-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31591579">31591579</a></p>
 </div>
 <div id="ref-QM87Cg3q">
-<p>77. <strong>Quantifying and contextualizing the impact of bioRxiv preprints through automated social media audience segmentation</strong> <br />
+<p>76. <strong>Quantifying and contextualizing the impact of bioRxiv preprints through automated social media audience segmentation</strong> <br />
 Jedidiah Carlson, Kelley Harris<br />
 <em>PLOS Biology</em> (2020-09-22) <a href="https://doi.org/ghk53x">https://doi.org/ghk53x</a> <br />
 DOI: <a href="https://doi.org/10.1371/journal.pbio.3000860">10.1371/journal.pbio.3000860</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32960891">32960891</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7508356">PMC7508356</a></p>
