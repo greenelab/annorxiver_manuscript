@@ -18,7 +18,9 @@ content/03.methods.md:126:contexutalization
 content/03.methods.md:126:Folowing
 content/03.methods.md:127:preperints
 content/03.methods.md:130:Lingusitcally
-content/04.results.md:119:Metaresearch
+content/04.results.md:92:subfield
+content/04.results.md:94:reinforcess
+content/04.results.md:116:Metaresearch
 content/06.acknowledgements.md:7:nlm
 content/06.acknowledgements.md:7:nlm
 content/06.acknowledgements.md:21:Elsevier
