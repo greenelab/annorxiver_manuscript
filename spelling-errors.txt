@@ -3,12 +3,9 @@ bargraph
 cgreene
 contexutalization
 danich
-distrbutions
-ditances
 Dongbo
 dongbohu
 Elsevier
-Folowing
 GBMF
 greenescientist
 halflife
@@ -24,7 +21,6 @@ NLP
 NLRP
 preperints
 ProfLHunter
-regressio
 Rubinetti
 subfield
 TheNeuralCoder

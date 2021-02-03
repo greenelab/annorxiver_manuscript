@@ -10,7 +10,7 @@
   <meta name="author" content="Marvin Thielk" />
   <meta name="author" content="Lawrence E. Hunter" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2021-02-02" />
+  <meta name="dcterms.date" content="2021-02-03" />
   <meta name="keywords" content="biorxiv, preprints, pubmed-central, natural-language-processing, descriptive-linguistics" />
   <title>Linguistic Analysis of the bioRxiv Preprint Landscape</title>
   <style>
@@ -33,8 +33,8 @@
   <meta name="citation_title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
   <meta property="og:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
-  <meta name="dc.date" content="2021-02-02" />
-  <meta name="citation_publication_date" content="2021-02-02" />
+  <meta name="dc.date" content="2021-02-03" />
+  <meta name="citation_publication_date" content="2021-02-03" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/38acb9feef76141623f31242b84fead5ae561a9c/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/38acb9feef76141623f31242b84fead5ae561a9c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/38acb9feef76141623f31242b84fead5ae561a9c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/cf97d7f66a2df1e28536b39dfa4df457e44071fa/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/cf97d7f66a2df1e28536b39dfa4df457e44071fa/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/cf97d7f66a2df1e28536b39dfa4df457e44071fa/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -88,10 +88,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/annorxiver_manuscript/v/38acb9feef76141623f31242b84fead5ae561a9c/">permalink</a>)
+(<a href="https://greenelab.github.io/annorxiver_manuscript/v/cf97d7f66a2df1e28536b39dfa4df457e44071fa/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/38acb9feef76141623f31242b84fead5ae561a9c">greenelab/annorxiver_manuscript@38acb9f</a>
-on February 2, 2021.
+from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/cf97d7f66a2df1e28536b39dfa4df457e44071fa">greenelab/annorxiver_manuscript@cf97d7f</a>
+on February 3, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -278,7 +278,7 @@ We used the subset of paper-preprint pairs annotated in CrossRef as described ab
 This distribution was calculated by taking the Euclidean distance between the preprint’s embedding coordinates and the coordinates of its corresponding published version.
 We also calculated a background distribution, which consisted of the distance between each preprint with an annotated publication and a randomly selected article from the same journal.
 We compared both distributions to determine if there was difference between both groups as a large difference would indicate that this embedding method can parse preprint-published pairs apart.
-Following the comparison of the two distrbutions, we calculated distances between preprints without a published version link with PMCOA articles that weren’t matched with a corresponding preprint.
+Following the comparison of the two distributions, we calculated distances between preprints without a published version link with PMCOA articles that weren’t matched with a corresponding preprint.
 We filtered any potential links with distances that were greater than the minimum value of the background distribution as we considered these pairs to be true negatives.
 Lastly, we binned the remaining pairs based on percentiles from the annotated pairs distribution at the [0,25th percentile), [25th percentile, 50th percentile), [50th percentile, 75th percentile), and [75th percentile, minimum background distance).
 We randomly sampled 50 articles from each bin and shuffled these four sets to produce a list of 200 potential preprint-published pairs with a randomized order.
@@ -302,10 +302,10 @@ We accomplish this by first randomly sampled with replacement a pair of preprint
 Next, we calculated the distance between two preprints 1000 times and reported the mean.
 We repeated the above procedure using every preprint within bioRxiv as a whole.
 The percent change between these two means represents the amount of textual changes a single Euclidean distance unit represents.
-Folowing our contexutalization approach, we performed linear regression to model the relationship between preprint version count with a preprint’s time to publication.
+Following our contexutalization approach, we performed linear regression to model the relationship between preprint version count with a preprint’s time to publication.
 We also performed linear regression to measure the relationship between document embedding distance and a preprint’s time to publication.
 For this part of our analysis, we retained preprints with negative time within our linear regression model as these preperints had minimal impact on results.
-We visualize our version count regressio model as a violin plot and our document embeddings regression model as a square bin plot.</p>
+We visualize our version count regression model as a violin plot and our document embeddings regression model as a square bin plot.</p>
 <h3 id="building-classifiers-to-detect-lingusitcally-similar-journal-venues-and-published-articles">Building Classifiers to Detect Lingusitcally Similar Journal Venues and Published Articles</h3>
 <p>Preprints are more likely to be published in journals that contained similar content to the work in question.
 We assess this claim by building classifiers based on document and journal representations.
@@ -446,7 +446,7 @@ Taken together, the results suggest that while bioRxiv has experienced dramatic 
 </div>
 <div id="fig:corpora_comparison_panels" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/greenelab/annorxiver/1069a5ef739d6362b0d70b1bd1dd8ab5b59725a4/figure_generation/output/figure_one_panels.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 1:</span> <strong>A.</strong> The Kullback–Leibler divergence measures the extent to which the distributions, not specific tokens, differ from each other.
+<img src="https://raw.githubusercontent.com/danich1/annorxiver/77e9d6437069bafec7f0291b9a6c09ad50374b58/figure_generation/output/figure_one_panels.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 1:</span> <strong>A.</strong> The Kullback–Leibler divergence measures the extent to which the distributions, not specific tokens, differ from each other.
 The token distribution of bioRxiv and PMC corpora is more similar than these biomedical corpora are to the NYTAC one.
 <strong>B.</strong> The major differences in token frequencies for the corpora appear to be driven by the fields that have had the highest uptake of bioRxiv, as terms from neuroscience and genomics are relatively more abundant in bioRxiv.
 We plotted the 95% confidence interval for each reported token.
@@ -634,38 +634,32 @@ This hints that there is a key step or steps within the peer review process that
 Each new version adds additional 51 days before a preprint is published.
 This time duration seems broadly compatible with the amount of time it would take to receive reviews and revise a manuscript, suggesting that many authors may be updating their preprints in response to peer reviews or other external feedback.
 Furthermore, we found that preprints with large embedding space distances from their corresponding peer reviewed publication took longer to publish (Figure <a href="#fig:publication_delay_panels">4</a>C).
-Each unit of ditances in the embedding space corresponds to approximately sixteen additional days to make textual changes (Figure <a href="#fig:publication_delay_panels">4</a>C).
+Each unit of distances in the embedding space corresponds to approximately sixteen additional days to make textual changes (Figure <a href="#fig:publication_delay_panels">4</a>C).
 We found that that average distance of two randomly selected papers from the bioinformatics category in bioRxiv is 5.068, while the average distance of two randomly selected papers from bioRxiv is 6.210.
-The percent change between these two means results in 18%, suggesting that a single distance unit represents changing 18%% of a preprint’s total textual content.
+The percent change between these two means is 18%, suggesting that a single distance unit represents changing roughly 18%% of a preprint’s total text.
 Overall, our findings support a notion that preprints reviewed multiple times or require larger revisions take longer to publish.</p>
 <h3 id="preprints-with-similar-document-embeddings-share-publication-venues">Preprints with similar document embeddings share publication venues</h3>
-<p>We hypothesized that document embedding might capture information associated with the eventual publication venue.
-We used the annotated preprint-publication pairs as a fully held out test set.
-We embedded all PMC papers except those annotated to have a corresponding preprint into the bioRxiv embedding space.
-For journals, we averaged the document representation of all papers in the journal to produce a journal centroid.
-We used a k-nearest neighbor classifier trained on the remaining PMC documents to identify the most similar published papers and assessed performance - the extent to which the journal a paper appeared in the returned list of ten neighbors - through cross validation and the held out test set (Supplemental Figure <a href="#fig:knn_auc">S2</a>).
-We found an enrichment of papers published within the same journal among the neighbors of the target paper.</p>
-<p>We developed an online app that returns the nearest published papers and journals that are nearest to a preprint.
-Users supply digital object identifiers (DOIs) from bioRxiv or medRxiv.
-The application downloads the article from the preprint repository, converts the PDF to text, calculates a document embedding score, and returns the ten papers and journals with the most similar representations in the embedding space (Figure <a href="#fig:journal_rec_workflow">5</a>).
-We also sought to display the position of each preprint in the overall landscape.
-We required an embedding that could be rapidly calculated for new documents, so we used the Sparse Autoencoder for Unsupervised Clustering, Imputation, and Embedding (SAUCIE) approach previously described for the analysis of single-cell gene expression data <span class="citation" data-cites="1CPSh19Mn">[<a href="#ref-1CPSh19Mn" role="doc-biblioref">75</a>]</span>.
-The user-requested preprint’s location in this space is then displayed and users can select regions to identify the terms most associated with those regions.
+<p>We developed an online application that returns a listing of published papers and journals that are closest to a query preprint in document embedding space.
+This application uses two k-nearest neighbor classifiers that achieved better performance than our baseline model (Supplemental Figure <a href="#fig:knn_auc">S2</a>) to identify these entities.
+Users supply our app with digital object identifiers (DOIs) from bioRxiv or medRxiv and the corresponding preprint is downloaded from the repository.
+Next the preprint’s PDF is converted to text and this text is used to construct a document embedding representation.
+This representation is supplied to our classifiers to generate a listing of the ten papers and journals with the most similar representations in the embedding space (Figures <a href="#fig:journal_rec_workflow">5</a>A, <a href="#fig:journal_rec_workflow">5</a>B and <a href="#fig:journal_rec_workflow">5</a>C).
+Furthermore, the user-requested preprint’s location in this embedding space is then displayed on our interactive map and users can select regions to identify the terms most associated with those regions (Figures <a href="#fig:journal_rec_workflow">5</a>D and <a href="#fig:journal_rec_workflow">5</a>E).
 Users can also explore the terms associated with the top 50 PCs derived from the document embeddings and those PCs vary across the document landscape.</p>
 <div id="fig:journal_rec_workflow" class="fignos">
 <figure>
 <img src="images/journal_recommender_workflow.png" style="width:100.0%" alt="" /><figcaption><span>Figure 5:</span> The preprint similarity search app workflow allows users to examine where an individual preprint falls in the overall document landscape.
-A. Starting with the home screen, users can paste in a bioRxiv or medRxiv DOI, which sends a request to bioRxiv or medRxiv.
-Next the app preprocesses the requested preprint and returns a listing of (B) the top ten most similar papers and (C) the ten closest journals.
-D. The app also displays the location of the query preprint in PMC.
-E. Users can select a square within the landscape to examine statistics associated with the square including the top journals by article count in that square and the odds ratio of tokens.</figcaption>
+<strong>A.</strong> Starting with the home screen, users can paste in a bioRxiv or medRxiv DOI, which sends a request to bioRxiv or medRxiv.
+Next the app preprocesses the requested preprint and returns a listing of (<strong>B</strong>) the top ten most similar papers and (<strong>C</strong>) the ten closest journals.
+<strong>D.</strong> The app also displays the location of the query preprint in PMC.
+<strong>E.</strong> Users can select a square within the landscape to examine statistics associated with the square including the top journals by article count in that square and the odds ratio of tokens.</figcaption>
 </figure>
 </div>
 <h2 id="conclusions">Conclusions</h2>
 <p>We analyzed the full text of bioRxiv, comparing it with the open access portion of PMC, and found that the overall manner of writing is consistent with the biomedical literature.
 A benefit of analyzing bioRxiv text is that we can compare preprint and published versions to examine the influence of the publication process.
 Token-level analyses suggest that differences between corpora are driven by fields, while comparisons of preprints with their corresponding publication reveals differences in typesetting and supplementary materials.</p>
-<p>Previous analyses have focused on article metadata, including which papers are heavily downloaded and discussed <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">60</a>]</span> and by which communities discuss them <span class="citation" data-cites="QM87Cg3q">[<a href="#ref-QM87Cg3q" role="doc-biblioref">76</a>]</span>.
+<p>Previous analyses have focused on article metadata, including which papers are heavily downloaded and discussed <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">60</a>]</span> and by which communities discuss them <span class="citation" data-cites="QM87Cg3q">[<a href="#ref-QM87Cg3q" role="doc-biblioref">75</a>]</span>.
 We found that some preprints are highly similar to published articles within the PMC open access corpus, and a detailed examination revealed that many preprints were published but not previously annotated.
 Using the full text of documents to correct these missing annotations provides a comprehensive understanding of the extent to which preprints are published and this correction resulted in a publication rate that is higher than previously estimated.
 Importantly, this only accounts for papers that are published open access, so our analysis should be considered to raise the lower bound but the truly published fraction is likely to be higher.</p>
@@ -1102,14 +1096,8 @@ Parveen Azam Ali, Roger Watson<br />
 <em>Nursing Open</em> (2016-03-16) <a href="https://doi.org/c4g8">https://doi.org/c4g8</a> <br />
 DOI: <a href="https://doi.org/10.1002/nop2.51">10.1002/nop2.51</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27708830">27708830</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5050543">PMC5050543</a></p>
 </div>
-<div id="ref-1CPSh19Mn">
-<p>75. <strong>Exploring single-cell data with deep multitasking neural networks</strong> <br />
-Matthew Amodio, David van Dijk, Krishnan Srinivasan, William S. Chen, Hussein Mohsen, Kevin R. Moon, Allison Campbell, Yujiao Zhao, Xiaomei Wang, Manjunatha Venkataswamy, … Smita Krishnaswamy<br />
-<em>Nature Methods</em> (2019-10-07) <a href="https://doi.org/gf9rsg">https://doi.org/gf9rsg</a> <br />
-DOI: <a href="https://doi.org/10.1038/s41592-019-0576-7">10.1038/s41592-019-0576-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31591579">31591579</a></p>
-</div>
 <div id="ref-QM87Cg3q">
-<p>76. <strong>Quantifying and contextualizing the impact of bioRxiv preprints through automated social media audience segmentation</strong> <br />
+<p>75. <strong>Quantifying and contextualizing the impact of bioRxiv preprints through automated social media audience segmentation</strong> <br />
 Jedidiah Carlson, Kelley Harris<br />
 <em>PLOS Biology</em> (2020-09-22) <a href="https://doi.org/ghk53x">https://doi.org/ghk53x</a> <br />
 DOI: <a href="https://doi.org/10.1371/journal.pbio.3000860">10.1371/journal.pbio.3000860</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32960891">32960891</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7508356">PMC7508356</a></p>
