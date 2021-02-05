@@ -8,7 +8,7 @@ author-meta:
 - Casey S. Greene
 bibliography:
 - content/manual-references.json
-date-meta: '2021-02-03'
+date-meta: '2021-02-05'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2021-02-03" />
+  <meta name="dc.date" content="2021-02-05" />
 
-  <meta name="citation_publication_date" content="2021-02-03" />
+  <meta name="citation_publication_date" content="2021-02-05" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -105,11 +105,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/cf97d7f66a2df1e28536b39dfa4df457e44071fa/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/a6c88ba8fbf397e96a3876bb521bf6a37a777283/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/cf97d7f66a2df1e28536b39dfa4df457e44071fa/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/a6c88ba8fbf397e96a3876bb521bf6a37a777283/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/cf97d7f66a2df1e28536b39dfa4df457e44071fa/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/a6c88ba8fbf397e96a3876bb521bf6a37a777283/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -143,10 +143,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/cf97d7f66a2df1e28536b39dfa4df457e44071fa/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/a6c88ba8fbf397e96a3876bb521bf6a37a777283/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@cf97d7f](https://github.com/greenelab/annorxiver_manuscript/tree/cf97d7f66a2df1e28536b39dfa4df457e44071fa)
-on February 3, 2021.
+from [greenelab/annorxiver_manuscript@a6c88ba](https://github.com/greenelab/annorxiver_manuscript/tree/a6c88ba8fbf397e96a3876bb521bf6a37a777283)
+on February 5, 2021.
 </em></small>
 
 ## Authors
@@ -298,7 +298,7 @@ Individual journals have the option to fully participate in submitting articles 
 As of September 2019, PMC had 5,725,819 articles available [@url:https://www.ncbi.nlm.nih.gov/pmc/about/intro/].
 Out of these 5 million articles, about 3 million were open access (PMCOA) and available for text processing systems [@doi:10.1093/bioinformatics/btz070; @doi:10.1093/nar/gkz389].
 PMC also contains a resource that holds author manuscripts that have already passed the peer review process [@url:https://www.ncbi.nlm.nih.gov/pmc/about/authorms/].
-Since these manuscripts have already been peer reviewed, we kept them out of our analysis as the scope of our work is solely focused on examining the beginning and end of a preprint's lifecycle.
+Since these manuscripts have already been peer reviewed, we kept them out of our analysis as the scope of our work is solely focused on examining the beginning and end of a preprint's life cycle.
 We downloaded a snapshot of the PMCOA corpus on January 31, 2020.
 This snapshot contained many types of articles: literature reviews, book reviews, editorials, case reports, research articles and more.
 We used only research articles, which aligns with the intended role of bioRxiv, and we refer to these articles as the PMCOA corpus.
@@ -388,23 +388,23 @@ First, we queried bioRxiv’s application programming interface (API) to obtain 
 We measured time elapsed as the difference between the date at which a preprint was first posted on bioRxiv and its publication date.
 Along with calculating the amount of time elapsed, we also recorded the number of different preprint versions posted onto bioRxiv.
 
-Using this captured data, we used the Kaplan-Meier estimator [@doi:10.4103/0974-7788.76794] via the KaplanMeierFitter function from the lifelines [@doi:10.5281/zenodo.4136578] (version 0.25.6) python package to calculate the halflife of preprints across all preprint categories within bioRxiv.
+Using this captured data, we used the Kaplan-Meier estimator [@doi:10.4103/0974-7788.76794] via the KaplanMeierFitter function from the lifelines [@doi:10.5281/zenodo.4136578] (version 0.25.6) python package to calculate the half-life of preprints across all preprint categories within bioRxiv.
 We considered survival events as preprints that have yet to be published.
 There were a limited number of cases in which authors appeared to post preprints after the date of publication, which results in preprints receiving a negative time difference, as previously reported [@url:https://medium.com/@OmnesRes/the-biorxiv-wall-of-shame-aa3d9cfc4cd7].
 We removed these preprints for this analysis as they were incompatible with our analytical approach.
 
-Following our halflife calculation, we measured the textual difference between preprints and their corresponding published version by calculating the Euclidean distance for their respective embedding representation.
+Following our half-life calculation, we measured the textual difference between preprints and their corresponding published version by calculating the Euclidean distance for their respective embedding representation.
 This metric can be difficult to understand within the context of textual differences, so we sought to contextualize the meaning of a distance unit.
 We accomplish this by first randomly sampled with replacement a pair of preprints from the Bioinformatics topic area as this was well represented within bioRxiv and contains a diverse set of research articles.
 Next, we calculated the distance between two preprints 1000 times and reported the mean.
 We repeated the above procedure using every preprint within bioRxiv as a whole.
 The percent change between these two means represents the amount of textual changes a single Euclidean distance unit represents.
-Following our contexutalization approach, we performed linear regression to model the relationship between preprint version count with a preprint's time to publication. 
+Following our contextualization approach, we performed linear regression to model the relationship between preprint version count with a preprint's time to publication. 
 We also performed linear regression to measure the relationship between document embedding distance and a preprint's time to publication.
-For this part of our analysis, we retained preprints with negative time within our linear regression model as these preperints had minimal impact on results.
+For this part of our analysis, we retained preprints with negative time within our linear regression model as these preprints had minimal impact on results.
 We visualize our version count regression model as a violin plot and our document embeddings regression model as a square bin plot.
 
-### Building Classifiers to Detect Lingusitcally Similar Journal Venues and Published Articles
+### Building Classifiers to Detect Linguistically Similar Journal Venues and Published Articles
 
 Preprints are more likely to be published in journals that contained similar content to the work in question.
 We assess this claim by building classifiers based on document and journal representations.
@@ -587,7 +587,7 @@ Overall, these results suggest that as the number of preprints posted on bioRxiv
 ### Preprints with more versions or more text changes took longer to publish
 
 ![
-**A.** Author-selected categories were associated with modest differences in respect to publication halflife.
+**A.** Author-selected categories were associated with modest differences in respect to publication half-life.
 Author selected preprint categories are shown on the y-axis, while the x-axis shows the median time-to-publish for each category.
 Error bars represent 95% confidence intervals for each median measurement.
 **B.** Preprints with more versions were associated with a longer time to publish.
@@ -633,25 +633,35 @@ Next the app preprocesses the requested preprint and returns a listing of (**B**
 ](images/journal_recommender_workflow.png){#fig:journal_rec_workflow width="100%"}
 
 
-## Conclusions
+## Discussion and Conclusions
 
-We analyzed the full text of bioRxiv, comparing it with the open access portion of PMC, and found that the overall manner of writing is consistent with the biomedical literature.
-A benefit of analyzing bioRxiv text is that we can compare preprint and published versions to examine the influence of the publication process.
-Token-level analyses suggest that differences between corpora are driven by fields, while comparisons of preprints with their corresponding publication reveals differences in typesetting and supplementary materials.
+BioRxiv is a constantly growing repository that contains life science preprints.
+The majority of research involving bioRxiv focuses on the metadata of preprints; however, the language contained within these preprints has yet to be systematically examined.
+Throughout this work we sought to analyze the language contained within these preprints and understand how it changes in response to peer review.
+Through our global corpora analysis, we found that writing within bioRxiv is consistent with the biomedical literature contained in the PMCOA repository, suggesting that bioRxiv is linguistically similar to PMCOA.
+Token-level analyses between bioRxiv and PMCOA suggested that major differences are driven by research fields where more patient related research is prevalent in PMCOA than bioRxiv.
+This observation is expected as patient preprints are funneled from bioRxiv into the medRxiv repository [@url:https://www.medrxiv.org/].
+Token-level analyses for preprints and their corresponding published version suggests that peer review may focus on data availability and incorporating extra sections for published papers; however, future analyses are needed to ascertain individual token level changes as preprints venture through the publication process.
 
-Previous analyses have focused on article metadata, including which papers are heavily downloaded and discussed [@doi:10.7554/eLife.45133] and by which communities discuss them [@doi:10.1371/journal.pbio.3000860].
-We found that some preprints are highly similar to published articles within the PMC open access corpus, and a detailed examination revealed that many preprints were published but not previously annotated.
-Using the full text of documents to correct these missing annotations provides a comprehensive understanding of the extent to which preprints are published and this correction resulted in a publication rate that is higher than previously estimated.
-Importantly, this only accounts for papers that are published open access, so our analysis should be considered to raise the lower bound but the truly published fraction is likely to be higher.
+Document embeddings are a versatile way to examine language contained within preprints, understanding peer review's effect on preprints, and provide extra functionality for preprint repositories.
+Examining linguistic variance contained within document embeddings of life science preprints revealed that the largest source of variability was informatics vs cellular biology.
+This observation bisects majority of life science research as research analysis can be from either or both concept types.
+Preprints are typically linked with their published articles via bioRxiv manually establishing a link or authors self-reporting that their preprint has been published; however, gaps can occur as preprints change their appearance through multiple versions or authors do not notify bioRxiv. 
+Our work utilized document embeddings to fill in these missing links within bioRxiv, suggesting that these embeddings provide an extensive way to establish preprint-published links.
+Furthermore, our analysis suggests that the publication rate for preprints is in fact higher than previously estimated; however, our analysis only accounts for papers that are published open access.
+This means our results should only be considered to raise the lower bound of the total preprint publication fraction; however, the true fraction is likely to be much higher.
+Future work, especially that which aims to assess the fraction of preprints that are eventually published, should account for the possibility of missed annotations.
 
-Our work presents a first step towards understanding the process by which peer review alters life sciences papers through an analysis of the full text of preprints and their corresponding publication.
-Our broad-based examination suggests certain changes, but the scale of changes appears modest.
-We lay the groundwork for future work that aims to identify sentences and claims that are altered during review.
-Our finding that document embeddings reveal manuscripts with similar outcomes is likely to be important to new tools that accelerate publishing, including those that automatically perform integrity checks and other critically important contributions.
-We also found that document embeddings captured many elements of how authors use language in preprints.
-Fields were separated first on an informatics / molecular axis, and author-selected categories could be distinguished based on embeddings.
-Document embeddings were also associated with the eventual journal at which the work was published.
-Based on this observation, we supply a web application that returns the papers and journals that are most similar to a bioRxiv or medRxiv preprint.
+Preprints take variable amount of time to become published and our work sought to provide more insight on a preprints time to publication.
+Our half-life analysis on preprint categories revealed that majority of categories take the same amount of time for preprints to be published.
+Exception towards this trend is the scientific communication and education category, suggesting that some part of the peer review process greatly halts preprints within this category.
+In respect to individual preprints, each substantial change adds an additional 16 days for a preprint to become published; however, an additional 51 days are added in cases where a preprint has to have a completely new version constructed.
+Future direction would be to examine the types of changes requested by the peer review process that results in long delay times.
+
+Lastly, we found that document embeddings were associated with the eventual journal at which the work was published.
+We trained two machine learning models to identify which journals publish linguistically similar papers towards a query preprint.
+Our models achieved a considerably higher fold change over the baseline model; however, future models should include more information than solely textual content to improve performance.
+Following model training, we constructed a web application that makes our models available to the public and returns a list of the papers and journals that are linguistically similar to a bioRxiv or medRxiv preprint.
 
 
 ## Software and Data Availability
