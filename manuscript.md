@@ -8,7 +8,7 @@ author-meta:
 - Casey S. Greene
 bibliography:
 - content/manual-references.json
-date-meta: '2021-02-08'
+date-meta: '2021-02-24'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2021-02-08" />
+  <meta name="dc.date" content="2021-02-24" />
 
-  <meta name="citation_publication_date" content="2021-02-08" />
+  <meta name="citation_publication_date" content="2021-02-24" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -49,7 +49,7 @@ header-includes: '<!--
 
   <meta name="citation_author_orcid" content="0000-0003-0002-5761" />
 
-  <meta name="twitter:creator" content="@None" />
+  <meta name="twitter:creator" content="@dnicholson329" />
 
   <meta name="citation_author" content="Vincent Rubinetti" />
 
@@ -69,7 +69,7 @@ header-includes: '<!--
 
   <meta name="citation_author" content="Marvin Thielk" />
 
-  <meta name="citation_author_institution" content="Elsevier" />
+  <meta name="citation_author_institution" content="Elsevier, Philadelphia PA, USA" />
 
   <meta name="citation_author_orcid" content="0000-0002-0751-3664" />
 
@@ -105,11 +105,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/495cd48241c48b4659c66e04721db533f0c30b38/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/ecc3788b6fdfbd0f439df307768ada7053d2eb68/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/495cd48241c48b4659c66e04721db533f0c30b38/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/ecc3788b6fdfbd0f439df307768ada7053d2eb68/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/495cd48241c48b4659c66e04721db533f0c30b38/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/ecc3788b6fdfbd0f439df307768ada7053d2eb68/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -143,10 +143,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/495cd48241c48b4659c66e04721db533f0c30b38/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/ecc3788b6fdfbd0f439df307768ada7053d2eb68/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@495cd48](https://github.com/greenelab/annorxiver_manuscript/tree/495cd48241c48b4659c66e04721db533f0c30b38)
-on February 8, 2021.
+from [greenelab/annorxiver_manuscript@ecc3788](https://github.com/greenelab/annorxiver_manuscript/tree/ecc3788b6fdfbd0f439df307768ada7053d2eb68)
+on February 24, 2021.
 </em></small>
 
 ## Authors
@@ -157,7 +157,9 @@ on February 8, 2021.
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [0000-0003-0002-5761](https://orcid.org/0000-0003-0002-5761)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [danich1](https://github.com/danich1)<br>
+    [danich1](https://github.com/danich1)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [dnicholson329](https://twitter.com/dnicholson329)<br>
   <small>
      Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA
      · Funded by The Gordon and Betty Moore Foundation (GBMF4552); The National Institutes of Health (T32 HG000046)
@@ -189,7 +191,7 @@ on February 8, 2021.
     · ![Twitter icon](images/twitter.svg){.inline_icon}
     [TheNeuralCoder](https://twitter.com/TheNeuralCoder)<br>
   <small>
-     Elsevier
+     Elsevier, Philadelphia PA, USA
   </small>
 
 + **Lawrence E. Hunter**<br>
@@ -229,45 +231,44 @@ In addition to text comparison, we created document embeddings derived from a pr
 We found that these embeddings are able to parse out different scientific approaches and concepts, link unannotated preprint-peer reviewed article pairs, and identify journals that publish linguistically similar papers to a given preprint.
 We also used these embeddings to examine factors associated with the time elapsed between the posting of a first preprint and the appearance of a peer reviewed publication.
 We found that preprints with more versions posted and more textual changes took longer to publish.
-Lastly, we constructed a web application that allows users to identify which journals and articles that are most linguistically similar to a bioRxiv or medRxiv preprint as well as observe where the preprint would be positioned within a published article landscape. 
+Lastly, we constructed a web application (https://greenelab.github.io/preprint-similarity-search/) that allows users to identify which journals and articles that are most linguistically similar to a bioRxiv or medRxiv preprint as well as observe where the preprint would be positioned within a published article landscape. 
 
 
 ## Introduction
 
-The dissemination of research findings is key to science, and initially much of this communication happened orally [@doi:10.1021/ci00050a001].
+The dissemination of research findings is key to science.
+Initially much of this communication happened orally [@doi:10.1021/ci00050a001].
 During the 17th century, the predominate form of communication shifted to personal letters that were shared from one scientist to another [@doi:10.1021/ci00050a001].
-Scientific journals didn't become a predominant mode of communication until the 19th and 20th centuries when the first journal abstract was created [@doi:10.1021/ci00050a001; @smith2006trouble; @doi:10.1300/J123v41n01_04].
+Scientific journals didn't become a predominant mode of communication until the 19th and 20th centuries when the first journal was created [@doi:10.1021/ci00050a001; @smith2006trouble; @doi:10.1300/J123v41n01_04].
 Although scientific journals became the primary method of communication, they added high maintenance costs and long publication times to scientific discourse [@smith2006trouble; @doi:10.1300/J123v41n01_04].
-Scientists' solution to some of these issues was to communicate through preprints, which are scholarly works that have yet to undergo peer review process [@doi:10.1177/0192623318767322; @doi:10.1371/journal.pbio.2003995].
+Some scientists’ solution to these issues has been to also communicate through preprints, which are scholarly works that have yet to undergo peer review process [@doi:10.1177/0192623318767322; @doi:10.1371/journal.pbio.2003995].
 
 Preprints are commonly hosted on online repositories, where users have open and easy access to these works.
 Notable repositories include arXiv [@doi:10.1108/14666180010345564], bioRxiv [@doi:10.1101/833400] and medRxiv [@url:https://www.medrxiv.org/]; however, there are over 60 different repositories available [@url:https://scholarlykitchen.sspnet.org/2019/10/16/the-second-wave-of-preprint-servers-how-can-publishers-keep-afloat/].
 The burgeoning uptake of preprints in life sciences has been examined through research focused on metadata from the bioRxiv repository.
-For example, scientists found that life science preprints are being posted at an increasingly high rate [@doi:10.1371/journal.pbio.3000269].
+For example, life science preprints are being posted at an increasing rate  [@doi:10.1371/journal.pbio.3000269].
 Furthermore, these preprints are being rapidly shared on social media, routinely downloaded, and cited [@doi:10.1371/journal.pone.0047523].
 Certain preprint categories are read and shared by both scientists and non-scientists alike [@doi:10.1101/2020.03.06.981589].
-Overall, about two-thirds to three-quarters of preprints are eventually published [@doi:10.7554/eLife.45133.001; @doi:10.1002/pra2.175] and life science articles that have a corresponding preprint version are cited and discussed more often than articles without them [@doi:10.1162/qss_a_00043; @doi:10.7554/eLife.52646; @doi:10.12688/f1000research.19619.2].
-Preprints take an average of 160 days to become published [@doi:10.2139/ssrn.3455146], and those with multiple versions take longer to publish [@doi:10.2139/ssrn.3455146].
+About two-thirds to three-quarters of preprints are eventually published [@doi:10.7554/eLife.45133.001; @doi:10.1002/pra2.175] and life science articles that have a corresponding preprint version are cited and discussed more often than articles without them [@doi:10.1162/qss_a_00043; @doi:10.7554/eLife.52646; @doi:10.12688/f1000research.19619.2].
+Preprints take an average of 160 days to be published in the peer reviewed literature [@doi:10.2139/ssrn.3455146], and those with multiple versions take longer to publish[@doi:10.2139/ssrn.3455146].
 
-In spite of the success and excitement of preprints, there are number of issues that arose from their constant use.
-Preprint repositories receive a growing number of submissions, which pose challenges for this mode of communication [@doi:10.1371/journal.pgen.1008565].
-For example, repositories have a hard time searching and linking preprints with their published counterparts [@doi:10.1038/530265a; @doi:10.7554/eLife.52646], which results in missing links and consequently erroneous metadata.
-Furthermore, these repositories lack tools to show how textual content of preprints are altered due to the peer review process [@doi:10.1371/journal.pgen.1008565].
-These repositories are open access for all to view preprints, which results in concern from scientists that they could be scooped by competitors [@doi:10.1371/journal.pgen.1008565; @doi:10.1371/journal.pbio.3000151].
-Plus, preprint repositories do not have in-depth peer review which can result in posted preprints containing inconsistent results or conclusions [@doi:10.12688/f1000research.19619.2; @doi:10.1007/s10393-018-1352-3; @doi:10.1038/530265a; @doi:10.1016/j.bpj.2016.06.035].
+The rapid uptake of preprints in the life sciences also poses challenges. 
+Preprint repositories receive a growing number of submissions [@doi:10.1371/journal.pgen.1008565].
+Linking preprints with their published counterparts is a key part in maintaining consistency of scholarly discourse but is challenging to perform manually [@doi:10.1038/530265a; @doi:10.7554/eLife.52646].
+Errors and omissions in linkage result in missing links and consequently erroneous metadata.
+Furthermore, repositories based on standard publishing tools are not designed to show how textual content of preprints are altered due to the peer review process [@doi:10.1371/journal.pgen.1008565].
+Certain scientists have expressed concern that they could be scooped by competitors by making results available before publication [@doi:10.1371/journal.pgen.1008565; @doi:10.1371/journal.pbio.3000151].
+Preprint repositories by definition do not perform in-depth peer review, which can result in posted preprints containing inconsistent results or conclusions [@doi:10.12688/f1000research.19619.2; @doi:10.1007/s10393-018-1352-3; @doi:10.1038/530265a; @doi:10.1016/j.bpj.2016.06.035].
 Despite a growing emphasis on using the study of preprints to examine the publishing process in the life sciences, how these findings relate to the text of documents within bioRxiv has not been examined.
 
-Textual analysis is a methodology that uses linguistic, statistical and machine learning techniques to analyze and extract information from text [@doi:10.1111/1475-679X.12123]. 
-This set of techniques have made a sizable impact within the life science community by providing valuable insight on biomedical text.
+Textual analysis uses linguistic, statistical and machine learning techniques to analyze and extract information from text [@doi:10.1111/1475-679X.12123]. 
 For instance, scientists analyzed linguistic similarities and differences of biomedical corpora [@doi:10.1186/1471-2105-10-183;10.1186/1471-2105-9-S3-S6; @pmc:PMC442180].
 Scientists have provided the community with a number of tools that aide future text mining systems [@doi:10.1093/bib/bbs084; @doi:10.1093/nar/gkz389; @doi:10.1186/s12859-017-1775-9] as well as advice on how to train and test future text processing systems [@doi:10.1186/1471-2105-11-492; @doi:10.1186/1471-2105-13-207; @doi:10.1186/s12859-019-2604-0].
-We use textual analysis to examine the bioRxiv repository, placing a particular emphasis on understanding the extent to which full text analysis can address hypotheses derived from the analysis of metadata alone.
+Here, we use textual analysis to examine the bioRxiv repository, placing a particular emphasis on understanding the extent to which full text analysis can address hypotheses derived from the analysis of metadata alone.
 
-Preprints are still an emerging method of scientific communication in the life sciences.
-To understand how they relate to the traditional publishing ecosystem, we examine the linguistic similarities and differences between preprints and peer reviewed text and observe how linguistic features change during the peer review and publishing process.
-We theorize that preprints and biomedical text would be quite similar, especially when controlling for the differential uptake of preprints across fields.
-In other contexts, neural networks trained in certain ways can produce a representation of words and documents that has useful properties for many tasks - termed word or document embeddings [@arxiv:1301.3781; @arxiv:1405.4053].
-Here, we hypothesize that using these networks to embedded preprints provides a versatile way to disentangle linguistic features along with serving as a practical medium for improving preprint repository functionality.
+To understand how preprints relate to the traditional publishing ecosystem, we examine the linguistic similarities and differences between preprints and peer reviewed text and observe how linguistic features change during the peer review and publishing process.
+We hypothesize that preprints and biomedical text are quite similar, especially when controlling for the differential uptake of preprints across fields.
+Furthermore, we hypothesize that document embeddings [@arxiv:1301.3781; @arxiv:1405.4053] provide a versatile way to disentangle linguistic features along with serving as a practical medium for improving preprint repository functionality.
 We test this hypothesis by producing a linguistic landscape of bioRxiv preprints, detecting preprints that change substantially during publication, and identify journals that publish manuscripts that are linguistically similar to a target preprint.
 We encapsulate our findings through a web-app that projects a user-selected preprint onto this landscape and suggests journals and articles that are linguistically similar.
 Taken together, our work reveals how linguistically similar and dissimilar preprints are to peer reviewed text, quantifies linguistic changes that occur during the peer review process and highlights the feasibility of document embeddings in respect to preprint repository functionality and peer review's affect on publication time.
@@ -277,6 +278,8 @@ Taken together, our work reveals how linguistically similar and dissimilar prepr
 
 ### Corpora Examined
 
+Text analytics is generally comparative in nature, so we selected three relevant text corpora for analysis: The BioRxiv corpus, which is the target of the investigation; the PubMedCentral Open Access corpus, which represents the peer reviewed biomedical literature; and the New York Times Annotated corpus, which is used a representative of general English text.
+
 #### BioRxiv Corpus
 
 BioRxiv [@doi:10.1101/833400] is a repository for life sciences preprints.
@@ -284,21 +287,20 @@ We downloaded an xml snapshot of this repository on February 3, 2020 from bioRxi
 This snapshot contained the full text and image content of 98,023 preprints.
 Preprints on bioRxiv are versioned, and in our snapshot 26,905 out of 98,023 contained more than one version.
 When preprints had multiple versions, we used the latest one unless otherwise noted.
-Authors submitting preprints to bioRxiv can select one of twenty-nine different categories.
-Furthermore, researchers can also select the type of article: a new result, confirmatory finding, or contradictory finding.
-Some preprints in this snapshot were withdrawn from bioRxiv and when this happens their content is replaced with the reason for withdrawal.
+Authors submitting preprints to bioRxiv can select one of twenty-nine different categories as well as tag the type of article: a new result, confirmatory finding, or contradictory finding.
+A few preprints in this snapshot were later withdrawn from bioRxiv; when this happens their content is replaced with the reason for withdrawal.
 As there were very few withdrawn preprints, we did not treat these as a special case.
 
 #### PubMed Central Open Access Corpus
 
 PubMed Central (PMC) is a digital archive for the United States National Institute of Health's Library of Medicine (NIH/NLM) that contains full text biomedical and life science articles [@doi:10.1073/pnas.98.2.381].
-PMC articles can be closed access ones from research funded by the NIH appearing after an embargo period or be published under Gold Open Access [@doi:10.1007/s12471-017-1064-2] publishing schemes.
 Paper availability within PMC is largely dependent on the journal's participation level [@url:https://www.ncbi.nlm.nih.gov/pmc/about/submission-methods/].
+PMC articles can be closed access ones from research funded by the NIH appearing after an embargo period or be published under Gold Open Access [@doi:10.1007/s12471-017-1064-2] publishing schemes.
 Individual journals have the option to fully participate in submitting articles to PMC, selectively participate sending only a few papers to PMC, only submit papers according to NIH's public access policy [@url:https://grants.nih.gov/grants/policy/nihgps/html5/section_8/8.2.2_nih_public_access_policy.htm], or not participate at all.
 As of September 2019, PMC had 5,725,819 articles available [@url:https://www.ncbi.nlm.nih.gov/pmc/about/intro/].
 Out of these 5 million articles, about 3 million were open access (PMCOA) and available for text processing systems [@doi:10.1093/bioinformatics/btz070; @doi:10.1093/nar/gkz389].
 PMC also contains a resource that holds author manuscripts that have already passed the peer review process [@url:https://www.ncbi.nlm.nih.gov/pmc/about/authorms/].
-Since these manuscripts have already been peer reviewed, we kept them out of our analysis as the scope of our work is solely focused on examining the beginning and end of a preprint's life cycle.
+Since these manuscripts have already been peer reviewed, we excluded them from  our analysis as the scope of our work is focused on examining the beginning and end of a preprint's life cycle.
 We downloaded a snapshot of the PMCOA corpus on January 31, 2020.
 This snapshot contained many types of articles: literature reviews, book reviews, editorials, case reports, research articles and more.
 We used only research articles, which aligns with the intended role of bioRxiv, and we refer to these articles as the PMCOA corpus.
@@ -320,22 +322,22 @@ For our analyses that involved published links we only focused on this subset of
 
 We compared the bioRxiv, PMCOA, and NYTAC corpora to assess the similarities and differences between them.
 We used the NYTAC corpus as a negative control to assess the similarity between two life sciences repositories when compared with non-life sciences text.
-All corpora contain both words and non-word symbols (e.g., $\pm$), which we refer to together as tokens to avoid confusion.
+All corpora contain both words and non-word entities (e.g., numbers or symbols like $\pm$), which we refer to together as tokens to avoid confusion.
 We calculated the following characteristic metrics for each corpus: the number of documents, the number of sentences, the total number of tokens, the number of stopwords, the average length of a document, the average length of a sentence, the number of negations, the number of coordinating conjunctions, the number of pronouns and the number of past tense verbs.
-Spacy is a lightweight and easy to use python package designed to preprocess and filter out text [@spacy2].
-Due to its processing power, we used spaCy's "en_core_web_sm" model [@spacy2] (version 2.2.3) to preprocess all corpora and filtered out 326 spaCy-provided stopwords.
+Spacy is a lightweight and easy to use python package designed to preprocess and filter text [@spacy2].
+We used spaCy's "en_core_web_sm" model [@spacy2] (version 2.2.3) to preprocess all corpora and filter out 326 spaCy-provided stopwords.
 
-Following our cleaning process, we calculated the frequency of every token across all corpora.
+Following that cleaning process, we calculated the frequency of every token across all corpora.
 Because many tokens were unique to one set or the other and observed at low frequency, we focused on the union of the top 0.05% (~100) most frequently occurring tokens within each individual corpus.
 For each token in this union, we generated a contingency table  and calculated the odds ratio along with the 95% confidence interval [@url:https://www.ncbi.nlm.nih.gov/books/NBK431098/].
 Along with token enrichment analysis, we measured corpora similarity by calculating the Kullback–Leibler (KL) divergence across all corpora.
-This metric measures the extent to which two distributions, but not the specific entities that comprise those distributions, differ.
+This metric measures the extent to which two distributions differ.
 A low value of KL divergence implicates that two distributions are similar and vice versa for high values.
-The optimal number of tokens used to calculate the KL divergence is unknown, so we calculated this metric using a spectrum of 100 most frequently occurring tokens between two corpora to 5000 most frequently occurring tokens.
+The optimal number of tokens used to calculate the KL divergence is unknown, so we calculated this metric using a range of the 100 most frequently occurring tokens between two corpora to the 5000 most frequently occurring tokens.
 
 ### Constructing a Document Representation for Life Sciences Text
 
-We sought to build a model that would capture the linguistic similarities of biomedical preprint and articles.
+We sought to build a language model to quantify linguistic similarities of biomedical preprint and articles. 
 Word2vec is a suite of neural networks designed to model linguistic features of words based on their appearance in text.
 These models are trained to either predict a word based on its sentence context, called a continuous bag of words (CBOW) model, or predict the context based on a given word, called a skipgram model [@arxiv:1301.3781].
 Through these prediction tasks both networks learn latent linguistic features that can be used for downstream tasks such as identifying similar words.
@@ -382,7 +384,7 @@ Using this curated set, we evaluated the extent to which distance in the embeddi
 
 ### Measuring Time Duration for Preprint Publication Process
 
-Preprints can take varying amount of time to become published.
+Preprints that are published can take varying amounts of time to be published.
 We sought to measure the time required for preprints to be published in the peer reviewed literature and compared this time measurement across author selected preprint categories as well as individual preprints.
 First, we queried bioRxiv’s application programming interface (API) to obtain the date a preprint was posted onto bioRxiv as well as the date a preprint was accepted for publication.
 We measured time elapsed as the difference between the date at which a preprint was first posted on bioRxiv and its publication date.
@@ -391,25 +393,25 @@ Along with calculating the amount of time elapsed, we also recorded the number o
 Using this captured data, we used the Kaplan-Meier estimator [@doi:10.4103/0974-7788.76794] via the KaplanMeierFitter function from the lifelines [@doi:10.5281/zenodo.4136578] (version 0.25.6) python package to calculate the half-life of preprints across all preprint categories within bioRxiv.
 We considered survival events as preprints that have yet to be published.
 There were a limited number of cases in which authors appeared to post preprints after the date of publication, which results in preprints receiving a negative time difference, as previously reported [@url:https://medium.com/@OmnesRes/the-biorxiv-wall-of-shame-aa3d9cfc4cd7].
-We removed these preprints for this analysis as they were incompatible with our analytical approach.
+We removed these preprints for this analysis as they were incompatible with the rules of the bioRxiv repository.
 
 Following our half-life calculation, we measured the textual difference between preprints and their corresponding published version by calculating the Euclidean distance for their respective embedding representation.
 This metric can be difficult to understand within the context of textual differences, so we sought to contextualize the meaning of a distance unit.
 We accomplish this by first randomly sampled with replacement a pair of preprints from the Bioinformatics topic area as this was well represented within bioRxiv and contains a diverse set of research articles.
 Next, we calculated the distance between two preprints 1000 times and reported the mean.
 We repeated the above procedure using every preprint within bioRxiv as a whole.
-The percent change between these two means represents the amount of textual changes a single Euclidean distance unit represents.
+These two means serve as normalized benchmarks to compare against as distance units are only meaningful when compared to other distances within the same space.
 Following our contextualization approach, we performed linear regression to model the relationship between preprint version count with a preprint's time to publication. 
-We also performed linear regression to measure the relationship between document embedding distance and a preprint's time to publication.
-For this part of our analysis, we retained preprints with negative time within our linear regression model as these preprints had minimal impact on results.
+We also performed linear regression to measure the relationship between document embedding distance and a preprint’s time to publication.
+For this analysis, we retained preprints with negative time within our linear regression model, and we observed that these preprints had minimal impact on results.
 We visualize our version count regression model as a violin plot and our document embeddings regression model as a square bin plot.
 
 ### Building Classifiers to Detect Linguistically Similar Journal Venues and Published Articles
 
 Preprints are more likely to be published in journals that contained similar content to the work in question.
-We assess this claim by building classifiers based on document and journal representations.
+We assessed this claim by building classifiers based on document and journal representations.
 First, we removed all journals that had fewer than 100 papers in the PMC corpus.
-We held our preprint-published subset (see Mapping bioRxiv preprints to their published counterparts) and treated it as a gold standard test set.
+We held our preprint-published subset (see above section 'Mapping bioRxiv preprints to their published counterparts') and treated it as a gold standard test set.
 We used the remainder of the PMCOA corpus for training and initial evaluation for our models.
 
 Certain journals publish articles in a focused topic area, while others publish articles that cover many topics.
@@ -417,7 +419,7 @@ Likewise, some journals have a publication rate of at most hundreds of papers pe
 Accounting for these characteristics, we designed two approaches - one centered on manuscripts and another centered on journals.
 
 For the manuscript-based approach, we identified manuscripts that were most similar to the preprint query and evaluated where these documents were published.
-We embedded each query article into the space defined by the word2vec model (see Constructing a Document Representation for Life Sciences Text).
+We embedded each query article into the space defined by the word2vec model (see above section ‘Constructing a Document Representation for Life Sciences Text’).
 We selected manuscripts in close proximity of the query via Euclidean distance in the embedding space.
 Once identified we return the journal in which these articles were published.
 We also return the articles that led to each journal being reported as this approach allows for journals that frequently publish papers to engulf our results.
@@ -432,15 +434,13 @@ We consider a prediction to be a true positive if the correct journal appears wi
 
 ### Web Application for Discovering Similar Preprints and Journals
 
-We developed a web application that identifies similar papers and journals for any bioRxiv and medRxiv preprint and that places the preprint into the overall document landscape.
-Our web application downloads a pdf version of a preprint hosted on the  bioRxiv or medRxiv server.
-We use pdfminer [@url:https://pdfminersix.readthedocs.io/en/latest/index.html] to extract text from the downloaded pdf.
-The extracted text is then fed into our CBOW model to construct a document embedding representation.
+We developed a web application that places any bioRxiv or medRxiv preprint into the overall document landscape, and identifies similar papers and journals.
+The application downloads a pdf version of any preprint hosted on the bioRxiv or medRxiv server, uses PyMuPDF [@url:https://pymupdf.readthedocs.io/en/latest/intro.html] to extract text from the downloaded pdf, and feeds the extracted text is then fed into our CBOW model to construct a document embedding representation.
 We pass this representation onto our journal and manuscript search to identify journals based on the ten closest neighbors of individual papers as well as journal centroids.
 We implemented this search using the scikit-learn implementation of k-d trees.
-To run it more cost effectively on cloud computing environment, we sharded the k-d trees into four trees.
+To run it more cost effectively in a cloud computing environment with limited available memory, we sharded the k-d trees into four trees.
 
-Accompanying these recommendations, we also provided a neural network derived visualization of our training set and the article's position within it.
+To illustrate the local publication landscape, the app provides a visualization of the article’s position within our training data.
 We used SAUCIE [@doi:10.1101/2020.03.04.975177], an autoencoder designed to cluster single cell RNA-seq data, to build a two-dimensional embedding space that could be applied to newly generated preprints without retraining, a limitation of other approaches that we explored for visualizing entities expected to lie on a nonlinear manifold.
 We trained this model on document embeddings of PMC articles that did not contain a matching preprint version.
 We used the following parameters to train the model: a hidden size of 2, a learning rate of 0.001, lambda_b of 0, lambda_c of 0.001, and lambda_d of 0.001 for 2000 iterations.

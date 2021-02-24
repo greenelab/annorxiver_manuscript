@@ -1,7 +1,9 @@
+analytics
 auc
 bargraph
 cgreene
 danich
+dnicholson
 Dongbo
 dongbohu
 Elsevier
@@ -16,6 +18,8 @@ NLM
 NLP
 NLRP
 ProfLHunter
+PubMedCentral
+PyMuPDF
 Rubinetti
 subfield
 TheNeuralCoder
