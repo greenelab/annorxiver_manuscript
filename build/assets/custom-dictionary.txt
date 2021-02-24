@@ -114,3 +114,7 @@ PyMuPDF
 subfield
 learn's
 unlinked
+Elsevier
+NLP
+PubMedCentral
+bargraph
