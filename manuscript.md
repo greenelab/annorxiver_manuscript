@@ -105,11 +105,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/cb810e1b5a5bf47f31d2ae247e616acc68e8f614/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/e83ac8168c228a42c7cc950ec2caf9f04396a454/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/cb810e1b5a5bf47f31d2ae247e616acc68e8f614/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/e83ac8168c228a42c7cc950ec2caf9f04396a454/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/cb810e1b5a5bf47f31d2ae247e616acc68e8f614/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/e83ac8168c228a42c7cc950ec2caf9f04396a454/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -143,9 +143,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/cb810e1b5a5bf47f31d2ae247e616acc68e8f614/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/e83ac8168c228a42c7cc950ec2caf9f04396a454/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@cb810e1](https://github.com/greenelab/annorxiver_manuscript/tree/cb810e1b5a5bf47f31d2ae247e616acc68e8f614)
+from [greenelab/annorxiver_manuscript@e83ac81](https://github.com/greenelab/annorxiver_manuscript/tree/e83ac8168c228a42c7cc950ec2caf9f04396a454)
 on February 25, 2021.
 </em></small>
 
@@ -258,8 +258,8 @@ Linking preprints with their published counterparts is a key part in maintaining
 Errors and omissions in linkage result in missing links and consequently erroneous metadata.
 Furthermore, repositories based on standard publishing tools are not designed to show how textual content of preprints are altered due to the peer review process [@doi:10.1371/journal.pgen.1008565].
 Certain scientists have expressed concern that they could be scooped by competitors by making results available before publication [@doi:10.1371/journal.pgen.1008565; @doi:10.1371/journal.pbio.3000151].
-Preprint repositories by definition do not perform in-depth peer review, which can result in posted preprints containing inconsistent results or conclusions [@doi:10.12688/f1000research.19619.2; @doi:10.1007/s10393-018-1352-3; @doi:10.1038/530265a; @doi:10.1016/j.bpj.2016.06.035].
-Despite a growing emphasis on using the study of preprints to examine the publishing process in the life sciences, how these findings relate to the text of documents within bioRxiv has not been examined.
+Preprint repositories by definition do not perform in-depth peer review, which can result in posted preprints containing inconsistent results or conclusions [@doi:10.12688/f1000research.19619.2; @doi:10.1007/s10393-018-1352-3; @doi:10.1038/530265a; @doi:10.1016/j.bpj.2016.06.035]; however, an analysis of preprints posted at the beginning of 2020 revealed that most underwent minor changes as they were published [@doi:10.1101/2021.02.20.432090].
+Despite a growing emphasis on using the study of preprints to examine the publishing process in the life sciences, how these findings relate to the text of all documents in bioRxiv has yet to be examined.
 
 Textual analysis uses linguistic, statistical and machine learning techniques to analyze and extract information from text [@doi:10.1111/1475-679X.12123]. 
 For instance, scientists analyzed linguistic similarities and differences of biomedical corpora [@doi:10.1186/1471-2105-10-183;10.1186/1471-2105-9-S3-S6; @pmc:PMC442180].
