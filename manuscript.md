@@ -8,7 +8,7 @@ author-meta:
 - Casey S. Greene
 bibliography:
 - content/manual-references.json
-date-meta: '2021-02-25'
+date-meta: '2021-02-26'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2021-02-25" />
+  <meta name="dc.date" content="2021-02-26" />
 
-  <meta name="citation_publication_date" content="2021-02-25" />
+  <meta name="citation_publication_date" content="2021-02-26" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -105,11 +105,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/e83ac8168c228a42c7cc950ec2caf9f04396a454/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/77442212a2b18f6ade27faf1d2967ec5a10c8d42/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/e83ac8168c228a42c7cc950ec2caf9f04396a454/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/77442212a2b18f6ade27faf1d2967ec5a10c8d42/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/e83ac8168c228a42c7cc950ec2caf9f04396a454/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/77442212a2b18f6ade27faf1d2967ec5a10c8d42/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -143,10 +143,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/e83ac8168c228a42c7cc950ec2caf9f04396a454/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/77442212a2b18f6ade27faf1d2967ec5a10c8d42/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@e83ac81](https://github.com/greenelab/annorxiver_manuscript/tree/e83ac8168c228a42c7cc950ec2caf9f04396a454)
-on February 25, 2021.
+from [greenelab/annorxiver_manuscript@7744221](https://github.com/greenelab/annorxiver_manuscript/tree/77442212a2b18f6ade27faf1d2967ec5a10c8d42)
+on February 26, 2021.
 </em></small>
 
 ## Authors
@@ -249,7 +249,7 @@ The burgeoning uptake of preprints in life sciences has been examined through re
 For example, life science preprints are being posted at an increasing rate  [@doi:10.1371/journal.pbio.3000269].
 Furthermore, these preprints are being rapidly shared on social media, routinely downloaded, and cited [@doi:10.1371/journal.pone.0047523].
 Certain preprint categories are read and shared by both scientists and non-scientists alike [@doi:10.1101/2020.03.06.981589].
-About two-thirds to three-quarters of preprints are eventually published [@doi:10.7554/eLife.45133.001; @doi:10.1002/pra2.175] and life science articles that have a corresponding preprint version are cited and discussed more often than articles without them [@doi:10.1162/qss_a_00043; @doi:10.7554/eLife.52646; @doi:10.12688/f1000research.19619.2].
+About two-thirds to three-quarters of preprints are eventually published [@doi:10.7554/eLife.45133; @doi:10.1002/pra2.175] and life science articles that have a corresponding preprint version are cited and discussed more often than articles without them [@doi:10.1162/qss_a_00043; @doi:10.7554/eLife.52646; @doi:10.12688/f1000research.19619.2].
 Preprints take an average of 160 days to be published in the peer reviewed literature [@doi:10.2139/ssrn.3455146], and those with multiple versions take longer to publish[@doi:10.2139/ssrn.3455146].
 
 The rapid uptake of preprints in the life sciences also poses challenges. 
