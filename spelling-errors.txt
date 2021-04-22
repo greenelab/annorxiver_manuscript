@@ -9,6 +9,8 @@ greenescientist
 Hu
 knn
 LEHunter
+lemmatize
+lemmatized
 MarvinT
 NLRP
 ProfLHunter
