@@ -72,9 +72,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/695cdf3e1a4e888852ace54e782cb789d0664fe6/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/695cdf3e1a4e888852ace54e782cb789d0664fe6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/695cdf3e1a4e888852ace54e782cb789d0664fe6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/f356fe73f9e803c8b68b7de034efb942b5cb3f40/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/f356fe73f9e803c8b68b7de034efb942b5cb3f40/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/f356fe73f9e803c8b68b7de034efb942b5cb3f40/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -88,9 +88,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/annorxiver_manuscript/v/695cdf3e1a4e888852ace54e782cb789d0664fe6/">permalink</a>)
+(<a href="https://greenelab.github.io/annorxiver_manuscript/v/f356fe73f9e803c8b68b7de034efb942b5cb3f40/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/695cdf3e1a4e888852ace54e782cb789d0664fe6">greenelab/annorxiver_manuscript@695cdf3</a>
+from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/f356fe73f9e803c8b68b7de034efb942b5cb3f40">greenelab/annorxiver_manuscript@f356fe7</a>
 on April 22, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -201,10 +201,10 @@ We encapsulate our findings through a web app that projects a user-selected prep
 Taken together, our work reveals how linguistically similar and dissimilar preprints are to peer-reviewed text, quantifies linguistic changes that occur during the peer review process, and highlights the feasibility of document embeddings with respect to preprint repository functionality and peer review’s effect on publication time.</p>
 <h2 id="materials-and-methods">Materials and Methods</h2>
 <h3 id="corpora-examined">Corpora Examined</h3>
-<p>Text analytics is generally comparative in nature, so we selected three relevant text corpora for analysis: The BioRxiv corpus, which is the target of the investigation; the PubMedCentral Open Access corpus, which represents the peer reviewed biomedical literature; and the New York Times Annotated corpus, which is used a representative of general English text.</p>
+<p>Text analytics is generally comparative in nature, so we selected three relevant text corpora for analysis: The BioRxiv corpus, which is the target of the investigation; the PubMedCentral Open Access corpus, which represents the peer-reviewed biomedical literature; and the New York Times Annotated Corpus, which is used a representative of general English text.</p>
 <h4 id="biorxiv-corpus">BioRxiv Corpus</h4>
 <p>BioRxiv <span class="citation" data-cites="i9BKPuqb">[<a href="#ref-i9BKPuqb" role="doc-biblioref">7</a>]</span> is a repository for life sciences preprints.
-We downloaded an xml snapshot of this repository on February 3, 2020 from bioRxiv’s Amazon S3 bucket <span class="citation" data-cites="9gVmEi52">[<a href="#ref-9gVmEi52" role="doc-biblioref">37</a>]</span>.
+We downloaded an XML snapshot of this repository on February 3, 2020, from bioRxiv’s Amazon S3 bucket <span class="citation" data-cites="9gVmEi52">[<a href="#ref-9gVmEi52" role="doc-biblioref">37</a>]</span>.
 This snapshot contained the full text and image content of 98,023 preprints.
 Preprints on bioRxiv are versioned, and in our snapshot 26,905 out of 98,023 contained more than one version.
 When preprints had multiple versions, we used the latest one unless otherwise noted.
@@ -219,28 +219,28 @@ Individual journals have the option to fully participate in submitting articles 
 As of September 2019, PMC had 5,725,819 articles available <span class="citation" data-cites="rzmpIYmn">[<a href="#ref-rzmpIYmn" role="doc-biblioref">42</a>]</span>.
 Out of these 5 million articles, about 3 million were open access (PMCOA) and available for text processing systems <span class="citation" data-cites="rURwqquJ 18ZyyTcTe">[<a href="#ref-18ZyyTcTe" role="doc-biblioref">30</a>,<a href="#ref-rURwqquJ" role="doc-biblioref">43</a>]</span>.
 PMC also contains a resource that holds author manuscripts that have already passed the peer review process <span class="citation" data-cites="12qFW0Wyn">[<a href="#ref-12qFW0Wyn" role="doc-biblioref">44</a>]</span>.
-Since these manuscripts have already been peer reviewed, we excluded them from our analysis as the scope of our work is focused on examining the beginning and end of a preprint’s life cycle.
+Since these manuscripts have already been peer-reviewed, we excluded them from our analysis as the scope of our work is focused on examining the beginning and end of a preprint’s life cycle.
 We downloaded a snapshot of the PMCOA corpus on January 31, 2020.
-This snapshot contained many types of articles: literature reviews, book reviews, editorials, case reports, research articles and more.
+This snapshot contained many types of articles: literature reviews, book reviews, editorials, case reports, research articles, and more.
 We used only research articles, which aligns with the intended role of bioRxiv, and we refer to these articles as the PMCOA corpus.</p>
 <h4 id="the-new-york-times-annotated-corpus">The New York Times Annotated Corpus</h4>
-<p>The New York Times Annotated Corpus (NYTAC) is <span class="citation" data-cites="18JcY2okY">[<a href="#ref-18JcY2okY" role="doc-biblioref">45</a>]</span> is collection of newspaper articles from the New York Times dating from January 1, 1987 to June 19, 2007.
+<p>The New York Times Annotated Corpus (NYTAC) is <span class="citation" data-cites="18JcY2okY">[<a href="#ref-18JcY2okY" role="doc-biblioref">45</a>]</span> is a collection of newspaper articles from the New York Times dating from January 1, 1987, to June 19, 2007.
 This collection contains over 1.8 million articles where 1.5 million of those articles have undergone manual entity tagged by library scientists <span class="citation" data-cites="18JcY2okY">[<a href="#ref-18JcY2okY" role="doc-biblioref">45</a>]</span>.
 We downloaded this collection on August 3rd, 2020 from the Linguistic Data Consortium (see Software and Data Availability section) and used the entire collection as a negative control for our corpora comparison analysis.</p>
 <h3 id="mapping-biorxiv-preprints-to-their-published-counterparts">Mapping bioRxiv preprints to their published counterparts</h3>
 <p>We used CrossRef <span class="citation" data-cites="XnHb341s">[<a href="#ref-XnHb341s" role="doc-biblioref">46</a>]</span> to identify bioRxiv preprints that were linked to a corresponding published article.
-We accessed CrossRef on July 7th, 2020 and were able to successfully link 23,271 preprints to their published counterparts.
+We accessed CrossRef on July 7th, 2020, and were able to successfully link 23,271 preprints to their published counterparts.
 Out of those 23,271 preprint-published pairs only 17,952 pairs had a published version present within the PMCOA corpus.
-For our analyses that involved published links we only focused on this subset of preprints-published pairs.</p>
+For our analyses that involved published links, we only focused on this subset of preprints-published pairs.</p>
 <h3 id="comparing-corpora">Comparing Corpora</h3>
 <p>We compared the bioRxiv, PMCOA, and NYTAC corpora to assess the similarities and differences between them.
 We used the NYTAC corpus as a negative control to assess the similarity between two life sciences repositories when compared with non-life sciences text.
 All corpora contain both words and non-word entities (e.g., numbers or symbols like <span class="math inline">\(\pm\)</span>), which we refer to together as tokens to avoid confusion.
 We calculated the following characteristic metrics for each corpus: the number of documents, the number of sentences, the total number of tokens, the number of stopwords, the average length of a document, the average length of a sentence, the number of negations, the number of coordinating conjunctions, the number of pronouns and the number of past tense verbs.
-Spacy is a lightweight and easy to use python package designed to preprocess and filter text <span class="citation" data-cites="q2fFAZTG">[<a href="#ref-q2fFAZTG" role="doc-biblioref">47</a>]</span>.
+Spacy is a lightweight and easy-to-use python package designed to preprocess and filter text <span class="citation" data-cites="q2fFAZTG">[<a href="#ref-q2fFAZTG" role="doc-biblioref">47</a>]</span>.
 We used spaCy’s “en_core_web_sm” model <span class="citation" data-cites="q2fFAZTG">[<a href="#ref-q2fFAZTG" role="doc-biblioref">47</a>]</span> (version 2.2.3) to preprocess all corpora and filter out 326 spaCy-provided stopwords.</p>
 <p>Following that cleaning process, we calculated the frequency of every token across all corpora.
-Because many tokens were unique to one set or the other and observed at low frequency, we focused on the union of the top 0.05% (~100) most frequently occurring tokens within each individual corpus.
+Because many tokens were unique to one set or the other and observed at low frequency, we focused on the union of the top 0.05% (~100) most frequently occurring tokens within each corpus.
 For each token in this union, we generated a contingency table and calculated the odds ratio along with the 95% confidence interval <span class="citation" data-cites="Lgm5q6mO">[<a href="#ref-Lgm5q6mO" role="doc-biblioref">48</a>]</span>.
 Along with token enrichment analysis, we measured corpora similarity by calculating the Kullback–Leibler (KL) divergence across all corpora.
 This metric measures the extent to which two distributions differ.

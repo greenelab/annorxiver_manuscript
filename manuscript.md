@@ -105,11 +105,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/695cdf3e1a4e888852ace54e782cb789d0664fe6/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/f356fe73f9e803c8b68b7de034efb942b5cb3f40/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/695cdf3e1a4e888852ace54e782cb789d0664fe6/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/f356fe73f9e803c8b68b7de034efb942b5cb3f40/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/695cdf3e1a4e888852ace54e782cb789d0664fe6/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/f356fe73f9e803c8b68b7de034efb942b5cb3f40/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -143,9 +143,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/695cdf3e1a4e888852ace54e782cb789d0664fe6/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/f356fe73f9e803c8b68b7de034efb942b5cb3f40/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@695cdf3](https://github.com/greenelab/annorxiver_manuscript/tree/695cdf3e1a4e888852ace54e782cb789d0664fe6)
+from [greenelab/annorxiver_manuscript@f356fe7](https://github.com/greenelab/annorxiver_manuscript/tree/f356fe73f9e803c8b68b7de034efb942b5cb3f40)
 on April 22, 2021.
 </em></small>
 
@@ -278,12 +278,12 @@ Taken together, our work reveals how linguistically similar and dissimilar prepr
 
 ### Corpora Examined
 
-Text analytics is generally comparative in nature, so we selected three relevant text corpora for analysis: The BioRxiv corpus, which is the target of the investigation; the PubMedCentral Open Access corpus, which represents the peer reviewed biomedical literature; and the New York Times Annotated corpus, which is used a representative of general English text.
+Text analytics is generally comparative in nature, so we selected three relevant text corpora for analysis: The BioRxiv corpus, which is the target of the investigation; the PubMedCentral Open Access corpus, which represents the peer-reviewed biomedical literature; and the New York Times Annotated Corpus, which is used a representative of general English text.
 
 #### BioRxiv Corpus
 
 BioRxiv [@doi:10.1101/833400] is a repository for life sciences preprints.
-We downloaded an xml snapshot of this repository on February 3, 2020 from bioRxiv's Amazon S3 bucket [@url:https://www.biorxiv.org/tdm].
+We downloaded an XML snapshot of this repository on February 3, 2020, from bioRxiv's Amazon S3 bucket [@url:https://www.biorxiv.org/tdm].
 This snapshot contained the full text and image content of 98,023 preprints.
 Preprints on bioRxiv are versioned, and in our snapshot 26,905 out of 98,023 contained more than one version.
 When preprints had multiple versions, we used the latest one unless otherwise noted.
@@ -300,23 +300,23 @@ Individual journals have the option to fully participate in submitting articles 
 As of September 2019, PMC had 5,725,819 articles available [@url:https://www.ncbi.nlm.nih.gov/pmc/about/intro/].
 Out of these 5 million articles, about 3 million were open access (PMCOA) and available for text processing systems [@doi:10.1093/bioinformatics/btz070; @doi:10.1093/nar/gkz389].
 PMC also contains a resource that holds author manuscripts that have already passed the peer review process [@url:https://www.ncbi.nlm.nih.gov/pmc/about/authorms/].
-Since these manuscripts have already been peer reviewed, we excluded them from  our analysis as the scope of our work is focused on examining the beginning and end of a preprint's life cycle.
+Since these manuscripts have already been peer-reviewed, we excluded them from our analysis as the scope of our work is focused on examining the beginning and end of a preprint's life cycle.
 We downloaded a snapshot of the PMCOA corpus on January 31, 2020.
-This snapshot contained many types of articles: literature reviews, book reviews, editorials, case reports, research articles and more.
+This snapshot contained many types of articles: literature reviews, book reviews, editorials, case reports, research articles, and more.
 We used only research articles, which aligns with the intended role of bioRxiv, and we refer to these articles as the PMCOA corpus.
 
 #### The New York Times Annotated Corpus
 
-The New York Times Annotated Corpus (NYTAC) is [@sandhaus2008new] is collection of newspaper articles from the New York Times dating from January 1, 1987  to June 19, 2007.
+The New York Times Annotated Corpus (NYTAC) is [@sandhaus2008new] is a collection of newspaper articles from the New York Times dating from January 1, 1987, to June 19, 2007.
 This collection contains over 1.8 million articles where 1.5 million of those articles have undergone manual entity tagged by library scientists [@sandhaus2008new].
 We downloaded this collection on August 3rd, 2020 from the Linguistic Data Consortium (see Software and Data Availability section) and used the entire collection as a negative control for our corpora comparison analysis.
 
 ### Mapping bioRxiv preprints to their published counterparts
 
 We used CrossRef [@doi:10.1629/uksg.233] to identify bioRxiv preprints that were linked to a corresponding published article.
-We accessed CrossRef on July 7th, 2020 and were able to successfully link 23,271 preprints to their published counterparts.
+We accessed CrossRef on July 7th, 2020, and were able to successfully link 23,271 preprints to their published counterparts.
 Out of those 23,271 preprint-published pairs only 17,952 pairs had a published version present within the PMCOA corpus. 
-For our analyses that involved published links we only focused on this subset of preprints-published pairs.
+For our analyses that involved published links, we only focused on this subset of preprints-published pairs.
 
 ### Comparing Corpora
 
@@ -324,12 +324,12 @@ We compared the bioRxiv, PMCOA, and NYTAC corpora to assess the similarities and
 We used the NYTAC corpus as a negative control to assess the similarity between two life sciences repositories when compared with non-life sciences text.
 All corpora contain both words and non-word entities (e.g., numbers or symbols like $\pm$), which we refer to together as tokens to avoid confusion.
 We calculated the following characteristic metrics for each corpus: the number of documents, the number of sentences, the total number of tokens, the number of stopwords, the average length of a document, the average length of a sentence, the number of negations, the number of coordinating conjunctions, the number of pronouns and the number of past tense verbs.
-Spacy is a lightweight and easy to use python package designed to preprocess and filter text [@spacy2].
+Spacy is a lightweight and easy-to-use python package designed to preprocess and filter text [@spacy2].
 We used spaCy's "en_core_web_sm" model [@spacy2] (version 2.2.3) to preprocess all corpora and filter out 326 spaCy-provided stopwords.
 
 Following that cleaning process, we calculated the frequency of every token across all corpora.
-Because many tokens were unique to one set or the other and observed at low frequency, we focused on the union of the top 0.05% (~100) most frequently occurring tokens within each individual corpus.
-For each token in this union, we generated a contingency table  and calculated the odds ratio along with the 95% confidence interval [@url:https://www.ncbi.nlm.nih.gov/books/NBK431098/].
+Because many tokens were unique to one set or the other and observed at low frequency, we focused on the union of the top 0.05% (~100) most frequently occurring tokens within each corpus.
+For each token in this union, we generated a contingency table and calculated the odds ratio along with the 95% confidence interval [@url:https://www.ncbi.nlm.nih.gov/books/NBK431098/].
 Along with token enrichment analysis, we measured corpora similarity by calculating the Kullback–Leibler (KL) divergence across all corpora.
 This metric measures the extent to which two distributions differ.
 A low value of KL divergence implicates that two distributions are similar and vice versa for high values.
