@@ -1,10 +1,15 @@
 auc
+Bromodomain
 cgreene
 danich
 dnicholson
 Dongbo
 dongbohu
+epigenetic
+FGF
+FPtool
 GBMF
+genotype
 greenescientist
 Hu
 knn
@@ -15,6 +20,7 @@ MarvinT
 NLRP
 ProfLHunter
 Rubinetti
+silico
 TheNeuralCoder
 Translational
 vec

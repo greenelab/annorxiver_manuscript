@@ -1,2 +1,7 @@
 content/03.methods.md:74:lemmatize
 content/03.methods.md:74:lemmatized
+content/04.results.md:101:FPtool
+content/04.results.md:101:genotype
+content/04.results.md:101:silico
+content/04.results.md:106:Bromodomain
+content/04.results.md:106:epigenetic

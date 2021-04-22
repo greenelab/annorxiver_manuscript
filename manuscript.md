@@ -105,11 +105,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/a78df3ff0a91eb9892178165b81c75cb16449244/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/452f32b43444d0952e8476ea6b7cf280c780c66e/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/a78df3ff0a91eb9892178165b81c75cb16449244/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/452f32b43444d0952e8476ea6b7cf280c780c66e/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/a78df3ff0a91eb9892178165b81c75cb16449244/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/452f32b43444d0952e8476ea6b7cf280c780c66e/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -143,9 +143,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/a78df3ff0a91eb9892178165b81c75cb16449244/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/452f32b43444d0952e8476ea6b7cf280c780c66e/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@a78df3f](https://github.com/greenelab/annorxiver_manuscript/tree/a78df3ff0a91eb9892178165b81c75cb16449244)
+from [greenelab/annorxiver_manuscript@452f32b](https://github.com/greenelab/annorxiver_manuscript/tree/452f32b43444d0952e8476ea6b7cf280c780c66e)
 on April 22, 2021.
 </em></small>
 
@@ -524,21 +524,21 @@ The size of each token indicates the magnitude of the similarity.
 **D.** Examining PC1 values for each article by category created a continuum from informatics-related fields on the top through cell biology on the bottom.
 Certain article categories (neuroscience, genetics) were spread throughout PC1 values.
 **E.** Examining PC2 values for each article by category revealed fields like genomics, bioinformatics, and genetics on the top and neuroscience and behavior on the bottom.
-](https://raw.githubusercontent.com/danich1/annorxiver/e61dff8efe2216852a6b2a9ff0ec921a54356ad7/figure_generation/output/figure_two_panels.svg){#fig:topic_analysis_panels width="100%"}
+](https://raw.githubusercontent.com/danich1/annorxiver/392ae9765362437116efe3250317f41cddbb3232/figure_generation/output/figure_two_panels.svg){#fig:topic_analysis_panels width="100%"}
 
 Document embeddings provide a means to categorize the language of documents in a way that takes into account the similarities between terms [@arxiv:1405.4053; @arxiv:1707.02377; @arxiv:2001.05727].
 We found that the first two PCs separated articles from different author-selected categories (Figure {@fig:topic_analysis_panels}A).
 Certain neuroscience papers appeared to be more associated with the cellular biology direction of PC1, while others appeared to be more associated with the informatics-related direction Figure {@fig:topic_analysis_panels}A).
-This suggests that the concepts captured by PCs were not exclusively related to field.
+This suggests that the concepts captured by PCs were not exclusively related to their field.
 
 Visualizing token-PC similarity revealed tokens associated with certain research approaches (Figures {@fig:topic_analysis_panels}B and {@fig:topic_analysis_panels}C).
-Token association of PC1 shows the separation of cell biology and informatics related fields through tokens: "empirical", "estimates" and "statistics" depicted in orange and "cultured" and "overexpressing" depicted in blue (Figure {@fig:topic_analysis_panels}B).
+Token association of PC1 shows the separation of cell biology and informatics-related fields through tokens: "empirical", "estimates" and "statistics" depicted in orange and "cultured" and "overexpressing" depicted in blue (Figure {@fig:topic_analysis_panels}B).
 Association for PC2 shows the separation of bioinformatics and neuroscience via tokens: "genomic", "genome" and "genomes" depicted in orange and "evoked", "stimulus" and "stimulation" depicted in blue (Figure {@fig:topic_analysis_panels}C).
 
 Examining the value for PC1 across all author-selected categories revealed an ordering of fields from cell biology to informatics-related disciplines (Figure {@fig:topic_analysis_panels}D).
 These results suggest that a primary driver of the variability within the language used in bioRxiv could be the divide between informatics and cell biology approaches.
 A similar analysis for PC2 suggested that neuroscience and bioinformatics present a similar language continuum (Figure {@fig:topic_analysis_panels}E).
-This result supports the notion that bioRxiv contains an influx of neuroscience and bioinformatics related research results. 
+This result supports the notion that bioRxiv contains an influx of neuroscience and bioinformatics-related research results. 
 For both of the top two PCs, the submitter-selected category of systems biology preprints was near the middle of the distribution and had a relatively large interquartile range when compared with other categories (Figure {@fig:topic_analysis_panels}D and {@fig:topic_analysis_panels}E), suggesting that systems biology is a broader subfield containing both informatics and cellular biology approaches. 
 
 Examining the top five and bottom five preprints within the systems biology field reinforces PC1's dichotomous theme (Table {@tbl:five_pc1_table}).
@@ -547,42 +547,42 @@ We provide the rest of our 50 generated PCs in our online repository (see Softwa
 
 | Title [citation]     | PC1  | License | Figure Thumbnail |
 |--------------------------------|-------------------|------------|----------|
-| Conditional Robust Calibration (CRC): a new computational Bayesian methodology for model parameters estimation and identifiability analysis [@doi:10.1101/197400] | 4.700554908074704 | None         | ![](images/paper-thumbnails/pc1/197400_thumbnail.png) |
-| Machine learning of stochastic gene network phenotypes [@doi:10.1101/825943]                                                                                      | 4.410660604449826 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc1/825943_thumbnail.png) |
-| Notions of similarity for computational biology models [@doi:10.1101/044818]                                                                                      | 4.355295926618207 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc1/044818_thumbnail.png) |
-| GpABC: a Julia package for approximate Bayesian computation with Gaussian process emulation [@doi:10.1101/769299]                                                 | 4.351517618262304 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc1/769299_thumbnail.png) |
-| SBpipe: a collection of pipelines for automating repetitive simulation and analysis tasks [@doi:10.1101/107250]                                                   | 4.321847854182741 |  CC-BY-NC-ND |  ![](images/paper-thumbnails/pc1/107250_thumbnail.png) |
+| Conditional Robust Calibration (CRC): a new computational Bayesian methodology for model parameters estimation and identifiability analysis [@doi:10.1101/197400] | 4.522818390064091 | None         | ![](images/paper-thumbnails/pc1/197400_thumbnail.png) | 
+| FPtool a software tool to obtain in silico genotype-phenotype signatures and fingerprints based on massive model simulations [@doi:10.1101/266775]                | 4.348956760251298 | CC-BY        | ![](images/paper-thumbnails/pc1/266775_thumbnail.png)               | 
+| GpABC: a Julia package for approximate Bayesian computation with Gaussian process emulation [@doi:10.1101/769299]                                                 | 4.259104249060651 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc1/769299_thumbnail.png) | 
+| Notions of similarity for computational biology models [@doi:10.1101/044818]                                                                                      | 4.079855550647664 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc1/044818_thumbnail.png) | 
+| SBpipe: a collection of pipelines for automating repetitive simulation and analysis tasks [@doi:10.1101/107250]                                                   | 4.022240241143516 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc1/107250_thumbnail.png) | 
 | | | | |
-| Spatiotemporal proteomics uncovers cathepsin-dependent host cell death during bacterial infection [@doi:10.1101/455048]                                           | -4.263964235099807 |  CC-BY-ND   | ![](images/paper-thumbnails/pc1/455048_thumbnail.png) |
-| Systems analysis by mass cytometry identifies susceptibility of latent HIV-infected T cells to targeting of p38 and mTOR pathways [@doi:10.1101/371922]           | -4.279016673409032 | CC-BY-NC-ND | ![](images/paper-thumbnails/pc1/371922_thumbnail.png) |
-| NADPH consumption by L-cystine reduction creates a metabolic vulnerability upon glucose deprivation [@doi:10.1101/733162]                                         | -4.592209988884236 | None        | ![](images/paper-thumbnails/pc1/733162_thumbnail.png) |
-| Inhibition of Bruton’s tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease [@doi:10.1101/745943] | -4.736613689905791 | None        |  ![](images/paper-thumbnails/pc1/745943_thumbnail.png) |
-| AKT but not MYC promotes reactive oxygen species-mediated cell death in oxidative culture [@doi:10.1101/754572]                                                   | -4.826793742506695 | None        |  ![](images/paper-thumbnails/pc1/754572_thumbnail.png) |
+| Bromodomain inhibition reveals FGF15/19 as a target of epigenetic regulation and metabolic control [@doi:10.1101/2019.12.11.872887]                                                                                                                                   | -3.4783803547922414 | None     | ![](images/paper-thumbnails/pc1/2019.12.11.872887_thumbnail.png) | 
+| Inhibition of Bruton’s tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease [@doi:10.1101/745943] | -3.6926161167521476 | None     | ![](images/paper-thumbnails/pc1/745943_thumbnail.png)            | 
+| Spatiotemporal proteomics uncovers cathepsin-dependent host cell death during bacterial infection [@doi:10.1101/455048]                                            | -3.728443135960558  | CC-BY-ND | ![](images/paper-thumbnails/pc1/455048_thumbnail.png)            | 
+| NADPH consumption by L-cystine reduction creates a metabolic vulnerability upon glucose deprivation [@doi:10.1101/733162]                                          | -3.7363965062637288 | None     | ![](images/paper-thumbnails/pc1/733162_thumbnail.png)            | 
+| AKT but not MYC promotes reactive oxygen species-mediated cell death in oxidative culture [@doi:10.1101/754572]                                                    | -3.8769231933681176 | None     | ![](images/paper-thumbnails/pc1/754572_thumbnail.png)            | 
 
 Table: PC1 divided the author-selected category of systems biology preprints along an axis from computational to molecular approaches. {#tbl:five_pc1_table}
 
 ### Document embedding similarities reveal unannotated preprint-publication pairs
 
 ![
-**A.** Preprints are closer in document embedding space to their corresponding peer reviewed publication than they are to random papers published in the same journal.
-**B.** Potential preprint-publication pairs that are unannotated but within the 50th percentile of all preprint-publication pairs in the document embedding space are likely represent true preprint-publication pairs.
+**A.** Preprints are closer in document embedding space to their corresponding peer-reviewed publication than they are to random papers published in the same journal.
+**B.** Potential preprint-publication pairs that are unannotated but within the 50th percentile of all preprint-publication pairs in the document embedding space are likely to represent true preprint-publication pairs.
 We depict the fraction of true positives over the total number of pairs in each bin.
-Accuracy is derived from curation of a randomized list of 200 potential pairs (50 per quantile) performed in duplicate with a third rater used in the case of disagreement.
+Accuracy is derived from the curation of a randomized list of 200 potential pairs (50 per quantile) performed in duplicate with a third rater used in the case of disagreement.
 **C.** Most preprints are eventually published.
 We show the publication rate of preprints since bioRxiv first started.
 The x-axis represents months since bioRxiv started and the y-axis represents the proportion of preprints published given the month they were posted.
 The light blue line represents the publication rate previously estimated by Abdill et al. [@doi:10.7554/eLife.45133].
 The dark blue line represents the updated publication rate using only CrossRef-derived annotations, while the dark green line includes annotations derived from our embedding space approach.
 The horizontal lines represent the overall proportion of preprints that are were published as of the time of the annotation snapshot.
-](https://raw.githubusercontent.com/danich1/annorxiver/f9d8861e3d60afa878c5d0088b7502adae15ebe3/figure_generation/output/figure_three_panels.svg){#fig:preprint_links_panels width="100%"}
+](https://raw.githubusercontent.com/danich1/annorxiver/392ae9765362437116efe3250317f41cddbb3232/figure_generation/output/figure_three_panels.svg){#fig:preprint_links_panels width="100%"}
 
 Distances between preprints and their corresponding published versions were nearly always lower than preprints paired with a random article published in the same journal (Figure {@fig:preprint_links_panels}A).
 This suggests that embedding distances can identify documents with similar textual content. 
 Approximately 98% of our 200 pairs with an embedding distance in the 0-25th and 25th-50th percentile bins were scored as true matches (Figure {@fig:preprint_links_panels}B).
-These two bins contained 1,720 preprint-article pairs, suggesting that many preprints may have been published but not previously connected with their published versions.
+These two bins contained 1,542 preprint-article pairs, suggesting that many preprints may have been published but not previously connected with their published versions.
 There is a particular enrichment for preprints published but unlinked within the 2017-2018 interval (Figure {@fig:preprint_links_panels}C).
 We expected a higher proportion of such preprints before the year 2019 (many of which may not have been published yet); however, observing relatively few missed annotations before 2017 was against our expectations.
-There are a number of possible explanations for this increasing fraction of missed annotations.
+There are several possible explanations for this increasing fraction of missed annotations.
 As the number of preprints posted on bioRxiv grows, it may be harder for bioRxiv to establish a link between preprints and their published counterparts simply due to the scale of the challenge.
 It is possible that the set of authors participating in the preprint ecosystem is changing and that new participants may be less likely to report missed publications to bioRxiv.
 Finally, as familiarity with preprinting grows it is possible that authors are posting preprints earlier in the process and that metadata fields that bioRxiv uses to establish a link may be less stable.
@@ -739,17 +739,17 @@ Commenting this out for now unless we get asked for it.
 
 | Title [citation]   | PC_2  | License  | Figure Thumbnail |
 |--------------------------------|--------------|-------------------|----------|
-| Pangenome Analysis of Enterobacteria Reveals Richness of Secondary Metabolite Gene Clusters and their Associated Gene Sets [@doi:10.1101/781328]                                                           | 3.5865702659438883 |  CC-BY-ND    | ![](images/paper-thumbnails/pc2/781328_thumbnail.png) |
-| QTG-Finder: a machine-learning based algorithm to prioritize causal genes of quantitative trait loci [@doi:10.1101/484204]                                                                                 | 3.470388383023157  | None         |  ![](images/paper-thumbnails/pc2/484204_thumbnail.png)  |
-| Identification of candidate genes underlying nodulation-specific phenotypes in Medicago truncotula through integration of genome-wide association studies and co-expression networks [@doi:10.1101/392779] | 3.3814906334073953 |  CC-BY-NC-ND |  ![](images/paper-thumbnails/pc2/392779_thumbnail.png) |
-| Raw sequence to target gene prediction: An integrated inference pipeline for ChIP-seq and RNA-seq datasets [@doi:10.1101/220152]                                                                           | 3.3632576028389742 | None         |  ![](images/paper-thumbnails/pc2/220152_thumbnail.png) |
-| The y-ome defines the thirty-four percent of Escherichia coli genes that lack experimental evidence of function [@doi:10.1101/328591]                                                                      | 3.28742786641417   | CC-BY        | ![](images/paper-thumbnails/pc2/328591_thumbnail.png) |
+| Pangenome Analysis of Enterobacteria Reveals Richness of Secondary Metabolite Gene Clusters and their Associated Gene Sets [@doi:10.1101/781328] | 3.2324188285918978 | CC-BY-ND | ![](images/paper-thumbnails/pc2/781328_thumbnail.png)  | 
+| The y-ome defines the thirty-four percent of Escherichia coli genes that lack experimental evidence of function [@doi:10.1101/328591]            | 2.9927461425956734 | CC-BY    | ![](images/paper-thumbnails/pc2/328591_thumbnail.png)  | 
+| History of rare diseases and their genetic causes - a data driven approach [@doi:10.1101/595819]                                                 | 2.991601530225049  | CC-BY    | ![](images/paper-thumbnails/pc2/595819_thumbnail.png)  | 
+| Raw sequence to target gene prediction: An integrated inference pipeline for ChIP-seq and RNA-seq datasets [@doi:10.1101/220152]                 | 2.8891250760798535 | None     | ![](images/paper-thumbnails/pc2/220152_thumbnail.png)  | 
+| QTG-Finder: a machine-learning based algorithm to prioritize causal genes of quantitative trait loci [@doi:10.1101/484204]                       | 2.884473743041575  | None     | !![](images/paper-thumbnails/pc2/484204_thumbnail.png) | 
 | | | | | |
-| The effects of time-varying temperature on delays in genetic networks [@doi:10.1101/019687]                                                                                                    | -2.7047102478958056 | None          | ![](images/paper-thumbnails/pc2/019687_thumbnail.png) |
-| An analog to digital converter creates nuclear localization pulses in yeast calcium signaling [@doi:10.1101/357939]                                                                            | -2.775745000260895  | None          | ![](images/paper-thumbnails/pc2/357939_thumbnail.png) |
-| Nicotinic modulation of hierarchal inhibitory control over prefrontal cortex resting state dynamics: modeling of genetic modification and schizophreniarelated pathology [@doi:10.1101/301051] | -3.047342382798414  | None          | ![](images/paper-thumbnails/pc2/301051_thumbnail.png) |
-| Electrical propagation of vasodilatory signals in capillary networks [@doi:10.1101/840280]                                                                                                     | -3.107715578793087  |  CC-BY-NC-ND  | ![](images/paper-thumbnails/pc2/840280_thumbnail.png) |
-| Dendritic spine geometry and spine apparatus organization govern the spatiotemporal dynamics of calcium [@doi:10.1101/386367]                                                                  | -3.21533499072831   |  CC-BY-NC-ND  | ![](images/paper-thumbnails/pc2/386367_thumbnail.png) |
+| The effects of time-varying temperature on delays in genetic networks [@doi:10.1101/019687]                                                                                                    | -2.512047640539022  | None         | ![](images/paper-thumbnails/pc2/019687_thumbnail.png) | 
+| Nicotinic modulation of hierarchal inhibitory control over prefrontal cortex resting state dynamics: modeling of genetic modification and schizophreniarelated pathology [@doi:10.1101/301051] | -2.547393499209389  | None         | ![](images/paper-thumbnails/pc2/301051_thumbnail.png) | 
+| An analog to digital converter creates nuclear localization pulses in yeast calcium signaling [@doi:10.1101/357939]                                                                            | -2.5561246453120976 | None         | ![](images/paper-thumbnails/pc2/357939_thumbnail.png) | 
+| Electrical propagation of vasodilatory signals in capillary networks [@doi:10.1101/840280]                                                                                                     | -2.903422991868243  | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc2/840280_thumbnail.png) | 
+| Dendritic spine geometry and spine apparatus organization govern the spatiotemporal dynamics of calcium [@doi:10.1101/386367]                                                                  | -3.1061160163276282 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc2/386367_thumbnail.png) | 
 
 Table: Top and bottom five systems biology preprints projected onto the PC2 direction. These preprints contain bioinformatis and neuroscience concepts respectively. {#tbl:five_pc2_table}
 -->
