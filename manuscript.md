@@ -105,11 +105,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/fee9e1241e7ded365f2739d7d1b3dc696e6d1b87/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/a78df3ff0a91eb9892178165b81c75cb16449244/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/fee9e1241e7ded365f2739d7d1b3dc696e6d1b87/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/a78df3ff0a91eb9892178165b81c75cb16449244/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/fee9e1241e7ded365f2739d7d1b3dc696e6d1b87/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/a78df3ff0a91eb9892178165b81c75cb16449244/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -143,9 +143,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/fee9e1241e7ded365f2739d7d1b3dc696e6d1b87/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/a78df3ff0a91eb9892178165b81c75cb16449244/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@fee9e12](https://github.com/greenelab/annorxiver_manuscript/tree/fee9e1241e7ded365f2739d7d1b3dc696e6d1b87)
+from [greenelab/annorxiver_manuscript@a78df3f](https://github.com/greenelab/annorxiver_manuscript/tree/a78df3ff0a91eb9892178165b81c75cb16449244)
 on April 22, 2021.
 </em></small>
 
@@ -458,7 +458,7 @@ The preprint landscape is rapidly changing, and the number of bioRxiv preprints 
 Because the rate of change is rapid, we first analyzed category data and compared our results with previous findings.
 As in previous reports [@doi:10.7554/eLife.45133], neuroscience remains the most common category of preprint followed by bioinformatics (Supplemental Figure {@fig:biorxiv_categories}).
 Microbiology, which was fifth in the most recent report [@doi:10.7554/eLife.45133], has now surpassed evolutionary biology and genomics to move into third.
-When authors upload their preprints, they select from three result category types: new results, confirmatory results or contradictory results.
+When authors upload their preprints, they select from three result category types: new results, confirmatory results, or contradictory results.
 We found that nearly all preprints (97.5%) were categorized as new results, which is consistent with reports on a smaller set [@doi:10.1001/jama.2017.21168].
 Taken together, the results suggest that while bioRxiv has experienced dramatic growth, the way in which it is being used appears to have remained consistent in recent years.
 
@@ -494,9 +494,9 @@ We plotted the 95% confidence interval for each reported token.
 ](https://raw.githubusercontent.com/danich1/annorxiver/77e9d6437069bafec7f0291b9a6c09ad50374b58/figure_generation/output/figure_one_panels.svg){#fig:corpora_comparison_panels width="100%"}
 
 Documents within bioRxiv were slightly longer than those within PMCOA, but both were much longer than those from the control (NYTAC) (Table {@tbl:corpora_stats}).
-The average sentence length, fraction of pronouns, and the use of the passive voice were all more similar between bioRxiv and PMC than they were to NYTAC(Table {@tbl:corpora_stats}).
+The average sentence length, the fraction of pronouns, and the use of the passive voice were all more similar between bioRxiv and PMC than they were to NYTAC(Table {@tbl:corpora_stats}).
 The Kullback–Leibler (KL) divergence of term frequency distributions between bioRxiv and PMCOA were low, especially among the top few hundred tokens (Figure {@fig:corpora_comparison_panels}A).
-As more tokens were incorporated the KL divergence started to increase, but remained much lower than the biomedical corpora compared against NYTAC.
+As more tokens were incorporated the KL divergence started to increase but remained much lower than the biomedical corpora compared against NYTAC.
 These findings support our notion that bioRxiv is linguistically similar to the PMCOA repository.
 
 Terms like "neurons" "genome" and "genetic", which are common in genomics and neuroscience, were more common in bioRxiv than PMCOA while others associated with clinical research, such as "clinical" "patients" and "treatment" were more common in PMCOA (Figure {@fig:corpora_comparison_panels}B and {@fig:corpora_comparison_panels}C).
@@ -505,7 +505,7 @@ Furthermore, we found that certain changes appeared to be related to journal sty
 Other changes appeared to be associated with an increasing reference to content external to the manuscript itself: the tokens "supplementary", "additional" and "file" were all more common in PMCOA than bioRxiv suggesting that journals are not simply replacing one token with another but that there are more mentions of such content after peer review.
 
 Taken together these results suggest that the structure of the text within preprints on bioRxiv are similar to published articles within PMCOA.
-The differences in uptake across fields is supported not only by differences in authors' categorization of their articles but also in the text of the articles themselves.
+The differences in uptake across fields are supported not only by differences in authors' categorization of their articles but also in the text of the articles themselves.
 At the level of individual manuscripts, the terms that change the most appear to be associated with typesetting, journal style, and an increasing reliance on additional materials after peer review.
 
 ### Document embeddings derived from bioRxiv reveal fields and subfields
