@@ -105,11 +105,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/1982eb284c4c49a0acc1bd32a4419f0a0d049b2d/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/ed7d30f0e9ef68ab32fc60391218c162f8058ed6/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/1982eb284c4c49a0acc1bd32a4419f0a0d049b2d/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/ed7d30f0e9ef68ab32fc60391218c162f8058ed6/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/1982eb284c4c49a0acc1bd32a4419f0a0d049b2d/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/ed7d30f0e9ef68ab32fc60391218c162f8058ed6/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -143,9 +143,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/1982eb284c4c49a0acc1bd32a4419f0a0d049b2d/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/ed7d30f0e9ef68ab32fc60391218c162f8058ed6/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@1982eb2](https://github.com/greenelab/annorxiver_manuscript/tree/1982eb284c4c49a0acc1bd32a4419f0a0d049b2d)
+from [greenelab/annorxiver_manuscript@ed7d30f](https://github.com/greenelab/annorxiver_manuscript/tree/ed7d30f0e9ef68ab32fc60391218c162f8058ed6)
 on April 23, 2021.
 </em></small>
 
@@ -591,32 +591,32 @@ Finally, as familiarity with preprinting grows it is possible that authors are p
 
 ![
 **A.** Author-selected categories were associated with modest differences in respect to publication half-life.
-Author selected preprint categories are shown on the y-axis, while the x-axis shows the median time-to-publish for each category.
+Author-selected preprint categories are shown on the y-axis, while the x-axis shows the median time-to-publish for each category.
 Error bars represent 95% confidence intervals for each median measurement.
 **B.** Preprints with more versions were associated with a longer time to publish.
-The x-axis shows the number of versions of a preprint that were posted on bioRxiv and the y-axis shows the number of days that elapsed between when the first version of a preprint was posted on bioRxiv and the date at which the peer reviewed publication appeared.
-The density of observations are depicted in the violin plot with an embedded boxplot.
+The x-axis shows the number of versions of a preprint that were posted on bioRxiv and the y-axis shows the number of days that elapsed between when the first version of a preprint was posted on bioRxiv and the date at which the peer-reviewed publication appeared.
+The density of observations is depicted in the violin plot with an embedded boxplot.
 **C.** Preprints with more substantial text changes took longer to be published.
-The x-axis shows the Euclidean distance between document representations of the first version of a preprint and it's peer reviewed form.
-The y-axis shows the number of days elapsed between when the first version of a preprint posted on bioRxiv and the time a preprint is published.
+The x-axis shows the Euclidean distance between document representations of the first version of a preprint and its peer-reviewed form.
+The y-axis shows the number of days elapsed between when the first version of a preprint is posted on bioRxiv and the time a preprint is published.
 The color bar on the right represents the density of each hexbin in this plot where more dense regions are shown in a brighter color.
-](https://raw.githubusercontent.com/danich1/annorxiver/e61dff8efe2216852a6b2a9ff0ec921a54356ad7/figure_generation/output/figure_four_panels.svg){#fig:publication_delay_panels width="100%"}
+](https://raw.githubusercontent.com/danich1/annorxiver/392ae9765362437116efe3250317f41cddbb3232/figure_generation/output/figure_four_panels.svg){#fig:publication_delay_panels width="100%"}
 
-The process of peer review includes a number of steps which take variable amounts of time [@doi:10.1002/nop2.51] and we sought to measure if there is a difference in publication time between author-selected categories of preprints (Figure {@fig:publication_delay_panels}A).
+The process of peer review includes several steps which take variable amounts of time [@doi:10.1002/nop2.51] and we sought to measure if there is a difference in publication time between author-selected categories of preprints (Figure {@fig:publication_delay_panels}A).
 Of the most abundant preprint categories microbiology was the fastest to publish (140 days, (137, 145 days) [95% CI]) and genomics was the slowest (190 days, (185, 195 days) [95% CI]) (Figure {@fig:publication_delay_panels}A).
 We did observe category-specific differences; however, these differences were generally modest, suggesting that the peer review process did not differ dramatically between preprint categories. 
-One exception was the Scientific Communication and Education category, which took substantially longer to be peer reviewed and published (373 days, (373, 398 days) [95% CI]).
+One exception was the Scientific Communication and Education category, which took substantially longer to be peer-reviewed and published (373 days, (373, 398 days) [95% CI]).
 This hints that there may be differences in the publication or peer review process or culture that apply to preprints in this category.
 
-Examining peer review's affect on individual preprints, we found a positive correlation between preprints with multiple versions and the time elapsed until publication (Figure {@fig:publication_delay_panels}B). 
+Examining peer review's effect on individual preprints, we found a positive correlation between preprints with multiple versions and the time elapsed until publication (Figure {@fig:publication_delay_panels}B). 
 Each new version adds additional 51 days before a preprint is published.
 This time duration seems broadly compatible with the amount of time it would take to receive reviews and revise a manuscript, suggesting that many authors may be updating their preprints in response to peer reviews or other external feedback.
 The embedding space allows us to compare preprint and published documents to determine if the level of change that documents undergo relates to the time that it takes them to be published.
 Distances in this space are arbitrary and must be compared to reference distances.
-We found that that average distance of two randomly selected papers from the bioinformatics category was 5.068, while the average distance of two randomly selected papers from bioRxiv was 6.210.
-Preprints with large embedding space distances from their corresponding peer reviewed publication took longer to publish (Figure {@fig:publication_delay_panels}C): each additional unit of distance corresponded to roughly sixteen additional days.
+We found that the average distance of two randomly selected papers from the bioinformatics category was 4.470, while the average distance of two randomly selected papers from bioRxiv was 5.343.
+Preprints with large embedding space distances from their corresponding peer-reviewed publication took longer to publish (Figure {@fig:publication_delay_panels}C): each additional unit of distance corresponded to roughly forty-three additional days.
 
-Overall, our findings support a model where preprints reviewed multiple times or those that require larger revisions take longer to publish.
+Overall, our findings support a model where preprints are reviewed multiple times or those that require larger revisions take longer to publish.
 
 
 ### Preprints with similar document embeddings share publication venues
@@ -624,7 +624,7 @@ Overall, our findings support a model where preprints reviewed multiple times or
 We developed an online application that returns a listing of published papers and journals that are closest to a query preprint in document embedding space.
 This application uses two k-nearest neighbor classifiers that achieved better performance than our baseline model (Supplemental Figure {@fig:knn_auc}) to identify these entities.
 Users supply our app with digital object identifiers (DOIs) from bioRxiv or medRxiv and the corresponding preprint is downloaded from the repository.
-Next the preprint's PDF is converted to text and this text is used to construct a document embedding representation.
+Next, the preprint's PDF is converted to text, and this text is used to construct a document embedding representation.
 This representation is supplied to our classifiers to generate a listing of the ten papers and journals with the most similar representations in the embedding space (Figures {@fig:journal_rec_workflow}A,  {@fig:journal_rec_workflow}B and {@fig:journal_rec_workflow}C).
 Furthermore, the user-requested preprint's location in this embedding space is then displayed on our interactive map and users can select regions to identify the terms most associated with those regions (Figures {@fig:journal_rec_workflow}D and {@fig:journal_rec_workflow}E).
 Users can also explore the terms associated with the top 50 PCs derived from the document embeddings and those PCs vary across the document landscape.
@@ -632,7 +632,7 @@ Users can also explore the terms associated with the top 50 PCs derived from the
 ![
 The preprint similarity search app workflow allows users to examine where an individual preprint falls in the overall document landscape.
 **A.** Starting with the home screen, users can paste in a bioRxiv or medRxiv DOI, which sends a request to bioRxiv or medRxiv.
-Next the app preprocesses the requested preprint and returns a listing of (**B**) the top ten most similar papers and (**C**) the ten closest journals.
+Next, the app preprocesses the requested preprint and returns a listing of (**B**) the top ten most similar papers and (**C**) the ten closest journals.
 **D.** The app also displays the location of the query preprint in PMC.
 **E.** Users can select a square within the landscape to examine statistics associated with the square including the top journals by article count in that square and the odds ratio of tokens.
 ](images/journal_recommender_workflow.png){#fig:journal_rec_workflow width="100%"}
@@ -728,7 +728,7 @@ The plot on the right (B) is a bar chart of token frequency appearing in PMC and
 ![
 Both classifiers outperform the randomized baseline when predicting a paper's journal endpoint.
 This bargraph shows each model's accuracy in respect to predicting the training and test set.
-](https://raw.githubusercontent.com/danich1/annorxiver/a13cc22c1474071dee45602502ceb3d6fb71ab2d/pmc/journal_recommendation/output/figures/knn_result.svg){#fig:knn_auc tag="S2" width="100%"}
+](https://raw.githubusercontent.com/danich1/annorxiver/be0b818e2fd57af809b52bbbb5647761d170b6f7/pmc/journal_recommendation/output/figures/knn_result.svg){#fig:knn_auc tag="S2" width="100%"}
 
 <!-- 
 Commenting this out for now unless we get asked for it.
