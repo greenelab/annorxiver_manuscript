@@ -8,7 +8,7 @@ author-meta:
 - Casey S. Greene
 bibliography:
 - content/manual-references.json
-date-meta: '2021-04-22'
+date-meta: '2021-04-23'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2021-04-22" />
+  <meta name="dc.date" content="2021-04-23" />
 
-  <meta name="citation_publication_date" content="2021-04-22" />
+  <meta name="citation_publication_date" content="2021-04-23" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -105,11 +105,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/452f32b43444d0952e8476ea6b7cf280c780c66e/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/1982eb284c4c49a0acc1bd32a4419f0a0d049b2d/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/452f32b43444d0952e8476ea6b7cf280c780c66e/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/1982eb284c4c49a0acc1bd32a4419f0a0d049b2d/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/452f32b43444d0952e8476ea6b7cf280c780c66e/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/1982eb284c4c49a0acc1bd32a4419f0a0d049b2d/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -143,10 +143,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/452f32b43444d0952e8476ea6b7cf280c780c66e/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/1982eb284c4c49a0acc1bd32a4419f0a0d049b2d/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@452f32b](https://github.com/greenelab/annorxiver_manuscript/tree/452f32b43444d0952e8476ea6b7cf280c780c66e)
-on April 22, 2021.
+from [greenelab/annorxiver_manuscript@1982eb2](https://github.com/greenelab/annorxiver_manuscript/tree/1982eb284c4c49a0acc1bd32a4419f0a0d049b2d)
+on April 23, 2021.
 </em></small>
 
 ## Authors
@@ -642,11 +642,11 @@ Next the app preprocesses the requested preprint and returns a listing of (**B**
 
 BioRxiv is a constantly growing repository that contains life science preprints.
 The majority of research involving bioRxiv focuses on the metadata of preprints; however, the language contained within these preprints has not previously been systematically examined.
-Throughout this work we sought to analyze the language contained within these preprints and understand how it changes in response to peer review.
+Throughout this work, we sought to analyze the language contained within these preprints and understand how it changes in response to peer review.
 Through our global corpora analysis, we found that writing within bioRxiv is consistent with the biomedical literature contained in the PMCOA repository, suggesting that bioRxiv is linguistically similar to PMCOA.
-Token-level analyses between bioRxiv and PMCOA suggested that major differences are driven by research fields; e.g., more patient related research is prevalent in PMCOA than bioRxiv
+Token-level analyses between bioRxiv and PMCOA suggested that major differences are driven by research fields; e.g., more patient-related research is prevalent in PMCOA than bioRxiv
 This observation is expected as preprints focused on medicine are supported by the complementary medRxiv repository [@url:https://www.medrxiv.org/].
-Token-level analyses for preprints and their corresponding published version suggests that peer review may focus on data availability and incorporating extra sections for published papers; however, future analyses are needed to ascertain individual token level changes as preprints venture through the publication process.
+Token-level analyses for preprints and their corresponding published version suggest that peer review may focus on data availability and incorporating extra sections for published papers; however, future analyses are needed to ascertain individual token level changes as preprints venture through the publication process.
 
 Document embeddings are a versatile way to examine language contained within preprints, understanding peer review's effect on preprints, and provide extra functionality for preprint repositories.
 Examining linguistic variance contained within document embeddings of life science preprints revealed that the largest source of variability was informatics vs cellular biology.
@@ -657,13 +657,11 @@ Furthermore, our analysis reveals that the publication rate for preprints is hig
 Our results raise the lower bound of the total preprint publication fraction; however, the true fraction is necessarily higher.
 Future work, especially that which aims to assess the fraction of preprints that are eventually published, should account for the possibility of missed annotations.
 
-Future work, especially that which aims to assess the fraction of preprints that are eventually published, should account for the possibility of missed annotations.
-
-Preprints take variable amount of time to become published, and we examined factors that influence a preprint’s time to publication.
+Preprints take a variable amount of time to become published, and we examined factors that influence a preprint’s time to publication.
 Our half-life analysis on preprint categories revealed that preprints in most bioRxiv categories take similar amounts of time to be published.
 A clear exception is the scientific communication and education category, which contained preprints that took much longer to publish.
 In respect to individual preprints, each new version adds several weeks to a preprints time to publication, which is roughly aligned with authors making changes after a round of peer review; furthermore, preprints that undergo substantial changes take longer to publish.
-Overall these results illustrate that bioRxiv is a practical resource for obtaining insight into the peer review process.
+Overall these results illustrate that bioRxiv is a practical resource for obtaining insight into the peer-review process.
 
 Lastly, we found that document embeddings were associated with the eventual journal at which the work was published.
 We trained two machine learning models to identify which journals publish linguistically similar papers towards a query preprint.
