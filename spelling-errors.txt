@@ -1,7 +1,11 @@
 auc
 Bromodomain
 cgreene
+colocalized
+cov
+COVID
 danich
+dependences
 dnicholson
 Dongbo
 dongbohu
@@ -17,6 +21,7 @@ LEHunter
 lemmatize
 lemmatized
 MarvinT
+nCoV
 NLRP
 ProfLHunter
 Rubinetti

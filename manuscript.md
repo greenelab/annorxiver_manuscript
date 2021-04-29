@@ -8,7 +8,7 @@ author-meta:
 - Casey S. Greene
 bibliography:
 - content/manual-references.json
-date-meta: '2021-04-23'
+date-meta: '2021-04-29'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2021-04-23" />
+  <meta name="dc.date" content="2021-04-29" />
 
-  <meta name="citation_publication_date" content="2021-04-23" />
+  <meta name="citation_publication_date" content="2021-04-29" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -105,11 +105,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/ed7d30f0e9ef68ab32fc60391218c162f8058ed6/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/8517aeb7dbf73e85619dffed71b207e804550186/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/ed7d30f0e9ef68ab32fc60391218c162f8058ed6/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8517aeb7dbf73e85619dffed71b207e804550186/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/ed7d30f0e9ef68ab32fc60391218c162f8058ed6/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8517aeb7dbf73e85619dffed71b207e804550186/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -143,10 +143,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/ed7d30f0e9ef68ab32fc60391218c162f8058ed6/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/8517aeb7dbf73e85619dffed71b207e804550186/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@ed7d30f](https://github.com/greenelab/annorxiver_manuscript/tree/ed7d30f0e9ef68ab32fc60391218c162f8058ed6)
-on April 23, 2021.
+from [greenelab/annorxiver_manuscript@8517aeb](https://github.com/greenelab/annorxiver_manuscript/tree/8517aeb7dbf73e85619dffed71b207e804550186)
+on April 29, 2021.
 </em></small>
 
 ## Authors
@@ -447,6 +447,20 @@ We used the following parameters to train the model: a hidden size of 2, a learn
 When a user requests a new document, we can then project that document onto our generated two-dimensional space; thereby, allowing the user to see where their preprint falls along the landscape.
 We illustrate our recommendations as a shortlist and provide access to our network visualization at our website (see Software and Data Availability).
 
+### Analysis of the Preprints in Motion Collection
+
+Our manuscript describes the large-scale analysis of bioRxiv.
+Concurrent with our work, another set of authors performed a detailed curation and analysis of a subset of bioRxiv [@doi:10.1101/2021.02.20.432090] that was focused on preprints posted during the initial stages of the COVID-19 pandemic.
+The curated analysis was designed to examine preprints at a time of increased readership [@doi:10.1101/2020.05.22.111294] and includes certain preprints posted from January 1st, 2020 to April 30th, 2020 [@doi:10.1101/2021.02.20.432090]. 
+We sought to contextualize this subset, which we term "Preprints in Motion" after the title of the preprint [@doi:10.1101/2021.02.20.432090], within our global picture of the bioRxiv preprint landscape.
+We extracted all preprints from the set reported in Preprints in Motion [@doi:10.1101/2021.02.20.432090] and retained any entries in the bioRxiv repository.
+We manually downloaded the XML version of these preprints and mapped them to their published counterparts as described above. 
+We used Pubmed Central's DOI converter [@url:https://www.ncbi.nlm.nih.gov/pmc/pmctopmid/] to map the published article DOIs with their respective PubMed Central IDs.
+We retained articles that were included in the PMCOA corpus and performed a token analysis as described to compare these preprints with their published versions.
+As above, we generated document embeddings for every obtained preprint and published article.
+We projected these preprint embeddings onto our publication landscape to visually observe the dispersion of this subset.
+Finally, we performed a time analysis that paralleled our approach for the full set of preprint-publication pairs to examine relationships between linguistic changes and the time to publication.   
+
 
 ## Results
 
@@ -636,6 +650,38 @@ Next, the app preprocesses the requested preprint and returns a listing of (**B*
 **D.** The app also displays the location of the query preprint in PMC.
 **E.** Users can select a square within the landscape to examine statistics associated with the square including the top journals by article count in that square and the odds ratio of tokens.
 ](images/journal_recommender_workflow.png){#fig:journal_rec_workflow width="100%"}
+
+### Contextualizing the Preprints in Motion Collection
+
+![
+The Preprints in Motion Collection results are similar to all preprint results, except that their time to publication was independent of the number of preprint versions and amount of linguistic change.
+**A.** Tokens that differed included those associated with typesetting and those associated with the nomenclature of the virus that causes COVID-19.
+Error bars show 95% confidence intervals for each token.
+**B.** Of the tokens that differ between Preprints in Motion and their published counterparts, the most abundant were associated with the nomenclature of the virus.
+**C.** The Preprints in Motion fall across the landscape of PMCOA with respect to linguistic properties.
+This square bin plot depicts the binning of all published papers within the PMCOA corpus.
+High-density regions are depicted in yellow while low-density regions are in dark blue.
+Red dots represent the Preprints in Motion Collection.
+**D.** The Preprints in Motion were published faster than other bioRxiv preprints and the number of versions was not associated with an increase in time to publication.
+The x-axis shows the number of versions of a preprint that were posted on bioRxiv and the y-axis shows the number of days that elapsed between when the first version of a preprint was posted on bioRxiv and the date at which the peer-reviewed publication appeared.
+The density of observations is depicted in the violin plot with an embedded boxplot.
+The red dots and red regression line represent Preprints in Motion.
+**D.** The Preprints in Motion were published faster than other bioRxiv preprints and no dependence between the amount of linguistic change and time to publish was observed.
+The x-axis shows the Euclidean distance between document representations of the first version of a preprint and its peer-reviewed form.
+The y-axis shows the number of days elapsed between when the first version of a preprint is posted on bioRxiv and the time a preprint is published.
+The color bar on the right represents the density of each hexbin in this plot where more dense regions are shown in a brighter color.
+The red dots and red regression line represent Preprints in Motion.
+](https://raw.githubusercontent.com/danich1/annorxiver/392ae9765362437116efe3250317f41cddbb3232/figure_generation/output/figure_five_panels.svg){#fig:covid_19_preprints width="100%"}
+
+The Preprints in Motion collection included a set of preprints posted during the first four months of 2020.
+We examined the extent to which preprints in this set were representative of the patterns that we identified from our analysis of all of bioRxiv.
+As with all of bioRxiv, typesetting tokens changed between preprints and their paired publications.
+Our token-level analysis identified certain patterns consistent with our findings across bioRxiv (Figure {@fig:covid_19_preprints}A and {@fig:covid_19_preprints}B).
+However, in this set we also observe changes likely associated with the fast-moving nature of COVID-19 research: the token "2019-ncov" became less frequently represented while "sars" and "cov-2" became more represented, likely due to a shift in nomenclature from "2019-nCoV" to "SARS-CoV-2".
+The Preprints in Motion were not strongly colocalized in the linguistic landscape, suggesting that the collection covers a diverse set of research approaches (Figure {@fig:covid_19_preprints}C).
+Preprints in this collection were published faster than the broader set of bioRxiv preprints (Figure {@fig:covid_19_preprints}D and {@fig:covid_19_preprints}E).
+The relationship between time to publication and the number of versions (Figure {@fig:covid_19_preprints}D) and the relationship between time to publication and the amount of linguistic change (Figure {@fig:covid_19_preprints}E) were both lost in the Preprints in Motion set.
+Taken together, our findings suggest that Preprints in Motion changed during publication in ways that were aligned with changes in the full preprint set but that peer review was accelerated in ways that broke the time dependences observed with the full bioRxiv set.
 
 
 ## Discussion and Conclusions

@@ -1,7 +1,16 @@
 content/03.methods.md:74:lemmatize
 content/03.methods.md:74:lemmatized
+content/03.methods.md:177:COVID
 content/04.results.md:101:FPtool
 content/04.results.md:101:genotype
 content/04.results.md:101:silico
 content/04.results.md:106:Bromodomain
 content/04.results.md:106:epigenetic
+content/04.results.md:194:COVID
+content/04.results.md:216:cov
+content/04.results.md:216:CoV
+content/04.results.md:216:COVID
+content/04.results.md:216:ncov
+content/04.results.md:216:nCoV
+content/04.results.md:217:colocalized
+content/04.results.md:220:dependences
