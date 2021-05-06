@@ -2,7 +2,7 @@ auc
 Bromodomain
 cgreene
 colocalized
-cov
+CoV
 COVID
 danich
 dependences
