@@ -1,6 +1,6 @@
 content/03.methods.md:74:lemmatize
 content/03.methods.md:74:lemmatized
-content/03.methods.md:177:COVID
+content/03.methods.md:178:COVID
 content/04.results.md:101:FPtool
 content/04.results.md:101:genotype
 content/04.results.md:101:silico

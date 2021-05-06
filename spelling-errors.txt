@@ -21,7 +21,7 @@ LEHunter
 lemmatize
 lemmatized
 MarvinT
-nCoV
+ncov
 NLRP
 ProfLHunter
 Rubinetti
