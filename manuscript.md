@@ -8,7 +8,7 @@ author-meta:
 - Casey S. Greene
 bibliography:
 - content/manual-references.json
-date-meta: '2021-05-06'
+date-meta: '2021-05-12'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2021-05-06" />
+  <meta name="dc.date" content="2021-05-12" />
 
-  <meta name="citation_publication_date" content="2021-05-06" />
+  <meta name="citation_publication_date" content="2021-05-12" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -54,6 +54,8 @@ header-includes: '<!--
   <meta name="citation_author" content="Vincent Rubinetti" />
 
   <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA" />
+
+  <meta name="citation_author_institution" content="Center for Health AI, University of Colorado School of Medicine, Aurora, CO, USA" />
 
   <meta name="citation_author_orcid" content="None" />
 
@@ -89,6 +91,8 @@ header-includes: '<!--
 
   <meta name="citation_author_institution" content="Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora CO, USA" />
 
+  <meta name="citation_author_institution" content="Center for Health AI, University of Colorado School of Medicine, Aurora, CO, USA" />
+
   <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
 
   <meta name="twitter:creator" content="@greenescientist" />
@@ -105,11 +109,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/d933398df6a007f9531f40996d1497acfdc82f73/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/2034e4513079e49d4df3c0f5909544c94e654b95/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/d933398df6a007f9531f40996d1497acfdc82f73/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/2034e4513079e49d4df3c0f5909544c94e654b95/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/d933398df6a007f9531f40996d1497acfdc82f73/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/2034e4513079e49d4df3c0f5909544c94e654b95/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -143,10 +147,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/d933398df6a007f9531f40996d1497acfdc82f73/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/2034e4513079e49d4df3c0f5909544c94e654b95/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@d933398](https://github.com/greenelab/annorxiver_manuscript/tree/d933398df6a007f9531f40996d1497acfdc82f73)
-on May 6, 2021.
+from [greenelab/annorxiver_manuscript@2034e45](https://github.com/greenelab/annorxiver_manuscript/tree/2034e4513079e49d4df3c0f5909544c94e654b95)
+on May 12, 2021.
 </em></small>
 
 ## Authors
@@ -171,8 +175,8 @@ on May 6, 2021.
     · ![Twitter icon](images/twitter.svg){.inline_icon}
     [vincerubinetti](https://twitter.com/vincerubinetti)<br>
   <small>
-     Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA
-     · Funded by The Gordon and Betty Moore Foundation (GBMF4552); The National Institutes of Health (T32 HG010067)
+     Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA; Center for Health AI, University of Colorado School of Medicine, Aurora, CO, USA
+     · Funded by The Gordon and Betty Moore Foundation (GBMF4552); The National Institutes of Health (R01 HG010067)
   </small>
 
 + **Dongbo Hu**<br>
@@ -180,7 +184,7 @@ on May 6, 2021.
     [dongbohu](https://github.com/dongbohu)<br>
   <small>
      Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA
-     · Funded by The Gordon and Betty Moore Foundation (GBMF4552); The National Institutes of Health (T32 HG010067)
+     · Funded by The Gordon and Betty Moore Foundation (GBMF4552); The National Institutes of Health (R01 HG010067)
   </small>
 
 + **Marvin Thielk**<br>
@@ -214,8 +218,8 @@ on May 6, 2021.
     · ![Twitter icon](images/twitter.svg){.inline_icon}
     [greenescientist](https://twitter.com/greenescientist)<br>
   <small>
-     Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA; Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora CO, USA
-     · Funded by The Gordon and Betty Moore Foundation (GBMF4552); The National Institutes of Health (T32 HG010067)
+     Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA; Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora CO, USA; Center for Health AI, University of Colorado School of Medicine, Aurora, CO, USA
+     · Funded by The Gordon and Betty Moore Foundation (GBMF4552); The National Institutes of Health (R01 HG010067)
   </small>
 
 

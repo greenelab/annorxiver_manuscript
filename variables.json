@@ -9,7 +9,7 @@
       "descriptive-linguistics"
     ],
     "lang": "en-US",
-    "date-meta": "2021-05-06",
+    "date-meta": "2021-05-12",
     "author-meta": [
       "David N. Nicholson",
       "Vincent Rubinetti",
@@ -18,7 +18,7 @@
       "Lawrence E. Hunter",
       "Casey S. Greene"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Linguistic Analysis of the bioRxiv Preprint Landscape\" />\n<meta name=\"citation_title\" content=\"Linguistic Analysis of the bioRxiv Preprint Landscape\" />\n<meta property=\"og:title\" content=\"Linguistic Analysis of the bioRxiv Preprint Landscape\" />\n<meta property=\"twitter:title\" content=\"Linguistic Analysis of the bioRxiv Preprint Landscape\" />\n<meta name=\"dc.date\" content=\"2021-05-06\" />\n<meta name=\"citation_publication_date\" content=\"2021-05-06\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"David N. Nicholson\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0002-5761\" />\n<meta name=\"twitter:creator\" content=\"@dnicholson329\" />\n<meta name=\"citation_author\" content=\"Vincent Rubinetti\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA\" />\n<meta name=\"citation_author_orcid\" content=\"None\" />\n<meta name=\"twitter:creator\" content=\"@vincerubinetti\" />\n<meta name=\"citation_author\" content=\"Dongbo Hu\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA\" />\n<meta name=\"citation_author_orcid\" content=\"None\" />\n<meta name=\"twitter:creator\" content=\"@None\" />\n<meta name=\"citation_author\" content=\"Marvin Thielk\" />\n<meta name=\"citation_author_institution\" content=\"Elsevier, Philadelphia PA, USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-0751-3664\" />\n<meta name=\"twitter:creator\" content=\"@TheNeuralCoder\" />\n<meta name=\"citation_author\" content=\"Lawrence E. Hunter\" />\n<meta name=\"citation_author_institution\" content=\"Center for Computational Pharmacology, University of Colorado School of Medicine, Aurora CO, USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1455-3370\" />\n<meta name=\"twitter:creator\" content=\"@ProfLHunter\" />\n<meta name=\"citation_author\" content=\"Casey S. Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora CO, USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<meta name=\"twitter:creator\" content=\"@greenescientist\" />\n<link rel=\"canonical\" href=\"https://greenelab.github.io/annorxiver_manuscript/\" />\n<meta property=\"og:url\" content=\"https://greenelab.github.io/annorxiver_manuscript/\" />\n<meta property=\"twitter:url\" content=\"https://greenelab.github.io/annorxiver_manuscript/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://greenelab.github.io/annorxiver_manuscript/\" />\n<meta name=\"citation_pdf_url\" content=\"https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://greenelab.github.io/annorxiver_manuscript/v/d933398df6a007f9531f40996d1497acfdc82f73/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://greenelab.github.io/annorxiver_manuscript/v/d933398df6a007f9531f40996d1497acfdc82f73/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://greenelab.github.io/annorxiver_manuscript/v/d933398df6a007f9531f40996d1497acfdc82f73/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Linguistic Analysis of the bioRxiv Preprint Landscape\" />\n<meta name=\"citation_title\" content=\"Linguistic Analysis of the bioRxiv Preprint Landscape\" />\n<meta property=\"og:title\" content=\"Linguistic Analysis of the bioRxiv Preprint Landscape\" />\n<meta property=\"twitter:title\" content=\"Linguistic Analysis of the bioRxiv Preprint Landscape\" />\n<meta name=\"dc.date\" content=\"2021-05-12\" />\n<meta name=\"citation_publication_date\" content=\"2021-05-12\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"David N. Nicholson\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0002-5761\" />\n<meta name=\"twitter:creator\" content=\"@dnicholson329\" />\n<meta name=\"citation_author\" content=\"Vincent Rubinetti\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA\" />\n<meta name=\"citation_author_institution\" content=\"Center for Health AI, University of Colorado School of Medicine, Aurora, CO, USA\" />\n<meta name=\"citation_author_orcid\" content=\"None\" />\n<meta name=\"twitter:creator\" content=\"@vincerubinetti\" />\n<meta name=\"citation_author\" content=\"Dongbo Hu\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA\" />\n<meta name=\"citation_author_orcid\" content=\"None\" />\n<meta name=\"twitter:creator\" content=\"@None\" />\n<meta name=\"citation_author\" content=\"Marvin Thielk\" />\n<meta name=\"citation_author_institution\" content=\"Elsevier, Philadelphia PA, USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-0751-3664\" />\n<meta name=\"twitter:creator\" content=\"@TheNeuralCoder\" />\n<meta name=\"citation_author\" content=\"Lawrence E. Hunter\" />\n<meta name=\"citation_author_institution\" content=\"Center for Computational Pharmacology, University of Colorado School of Medicine, Aurora CO, USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1455-3370\" />\n<meta name=\"twitter:creator\" content=\"@ProfLHunter\" />\n<meta name=\"citation_author\" content=\"Casey S. Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora CO, USA\" />\n<meta name=\"citation_author_institution\" content=\"Center for Health AI, University of Colorado School of Medicine, Aurora, CO, USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<meta name=\"twitter:creator\" content=\"@greenescientist\" />\n<link rel=\"canonical\" href=\"https://greenelab.github.io/annorxiver_manuscript/\" />\n<meta property=\"og:url\" content=\"https://greenelab.github.io/annorxiver_manuscript/\" />\n<meta property=\"twitter:url\" content=\"https://greenelab.github.io/annorxiver_manuscript/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://greenelab.github.io/annorxiver_manuscript/\" />\n<meta name=\"citation_pdf_url\" content=\"https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://greenelab.github.io/annorxiver_manuscript/v/2034e4513079e49d4df3c0f5909544c94e654b95/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://greenelab.github.io/annorxiver_manuscript/v/2034e4513079e49d4df3c0f5909544c94e654b95/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://greenelab.github.io/annorxiver_manuscript/v/2034e4513079e49d4df3c0f5909544c94e654b95/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -28,7 +28,7 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "May 6, 2021",
+    "date": "May 12, 2021",
     "authors": [
       {
         "github": "danich1",
@@ -47,12 +47,15 @@
         "contributions": [
           "Conceptualization",
           "Data Curation",
+          "Formal Analysis",
           "Funding Acquisition",
           "Investigation",
           "Methodology",
+          "Software",
           "Validation",
           "Visualization",
-          "Writing - Original Draft"
+          "Writing - Original Draft",
+          "Writing - Review and Editing"
         ],
         "affiliation_numbers": [
           1
@@ -66,7 +69,8 @@
         "twitter": "vincerubinetti",
         "email": "vince@vincentrubinetti.com",
         "affiliations": [
-          "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA"
+          "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA",
+          "Center for Health AI, University of Colorado School of Medicine, Aurora, CO, USA"
         ],
         "contributions": [
           "Resources",
@@ -76,10 +80,11 @@
         ],
         "funders": [
           "The Gordon and Betty Moore Foundation (GBMF4552)",
-          "The National Institutes of Health (T32 HG010067)"
+          "The National Institutes of Health (R01 HG010067)"
         ],
         "affiliation_numbers": [
-          1
+          1,
+          2
         ]
       },
       {
@@ -93,6 +98,7 @@
           "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA"
         ],
         "contributions": [
+          "Investigation",
           "Resources",
           "Software",
           "Visualization",
@@ -100,7 +106,7 @@
         ],
         "funders": [
           "The Gordon and Betty Moore Foundation (GBMF4552)",
-          "The National Institutes of Health (T32 HG010067)"
+          "The National Institutes of Health (R01 HG010067)"
         ],
         "affiliation_numbers": [
           1
@@ -124,7 +130,7 @@
           "Writing - Review and Editing"
         ],
         "affiliation_numbers": [
-          2
+          3
         ]
       },
       {
@@ -145,7 +151,7 @@
           "The Gordon and Betty Moore Foundation (GBMF4552)"
         ],
         "affiliation_numbers": [
-          3
+          4
         ]
       },
       {
@@ -157,21 +163,25 @@
         "email": "casey@greenelab.com",
         "affiliations": [
           "Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA",
-          "Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora CO, USA"
+          "Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora CO, USA",
+          "Center for Health AI, University of Colorado School of Medicine, Aurora, CO, USA"
         ],
         "contributions": [
           "Conceptualization",
+          "Data Curation",
           "Funding Acquisition",
+          "Project Administration",
           "Supervision",
-          "Writing - Review & Editing"
+          "Writing - Review and Editing"
         ],
         "funders": [
           "The Gordon and Betty Moore Foundation (GBMF4552)",
-          "The National Institutes of Health (T32 HG010067)"
+          "The National Institutes of Health (R01 HG010067)"
         ],
         "affiliation_numbers": [
           1,
-          4
+          2,
+          5
         ]
       }
     ],
@@ -181,16 +191,20 @@
         "affiliation_number": 1
       },
       {
-        "affiliation": "Elsevier, Philadelphia PA, USA",
+        "affiliation": "Center for Health AI, University of Colorado School of Medicine, Aurora, CO, USA",
         "affiliation_number": 2
       },
       {
-        "affiliation": "Center for Computational Pharmacology, University of Colorado School of Medicine, Aurora CO, USA",
+        "affiliation": "Elsevier, Philadelphia PA, USA",
         "affiliation_number": 3
       },
       {
-        "affiliation": "Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora CO, USA",
+        "affiliation": "Center for Computational Pharmacology, University of Colorado School of Medicine, Aurora CO, USA",
         "affiliation_number": 4
+      },
+      {
+        "affiliation": "Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora CO, USA",
+        "affiliation_number": 5
       }
     ],
     "ci_source": {
@@ -198,15 +212,15 @@
       "repo_slug": "greenelab/annorxiver_manuscript",
       "repo_owner": "greenelab",
       "repo_name": "annorxiver_manuscript",
-      "commit": "d933398df6a007f9531f40996d1497acfdc82f73",
-      "triggering_commit": "d933398df6a007f9531f40996d1497acfdc82f73",
-      "build_url": "https://github.com/greenelab/annorxiver_manuscript/commit/d933398df6a007f9531f40996d1497acfdc82f73/checks",
+      "commit": "2034e4513079e49d4df3c0f5909544c94e654b95",
+      "triggering_commit": "2034e4513079e49d4df3c0f5909544c94e654b95",
+      "build_url": "https://github.com/greenelab/annorxiver_manuscript/commit/2034e4513079e49d4df3c0f5909544c94e654b95/checks",
       "job_url": "https://github.com/greenelab/annorxiver_manuscript/runs/run3"
     },
     "html_url": "https://greenelab.github.io/annorxiver_manuscript/",
     "pdf_url": "https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf",
-    "html_url_versioned": "https://greenelab.github.io/annorxiver_manuscript/v/d933398df6a007f9531f40996d1497acfdc82f73/",
-    "pdf_url_versioned": "https://greenelab.github.io/annorxiver_manuscript/v/d933398df6a007f9531f40996d1497acfdc82f73/manuscript.pdf",
+    "html_url_versioned": "https://greenelab.github.io/annorxiver_manuscript/v/2034e4513079e49d4df3c0f5909544c94e654b95/",
+    "pdf_url_versioned": "https://greenelab.github.io/annorxiver_manuscript/v/2034e4513079e49d4df3c0f5909544c94e654b95/manuscript.pdf",
     "manubot_version": "0.4.1",
     "rootstock_commit": "97b294802ffcd39071b6e5b8ab59f60faf4be118",
     "manuscript_stats": {
