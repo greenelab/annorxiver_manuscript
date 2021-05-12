@@ -22,12 +22,15 @@ authors:
     contributions:
       - Conceptualization
       - Data Curation
+      - Formal Analysis
       - Funding Acquisition
       - Investigation
       - Methodology
+      - Software
       - Validation
       - Visualization
       - Writing - Original Draft
+      - Writing - Review and Editing
 
   - github: vincerubinetti
     name: Vincent Rubinetti
@@ -37,6 +40,7 @@ authors:
     email: vince@vincentrubinetti.com
     affiliations:
       - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA
+      - Center for Health AI, University of Colorado School of Medicine, Aurora, CO, USA
     contributions:
       - Resources
       - Software
@@ -44,7 +48,7 @@ authors:
       - Writing - Review and Editing
     funders:
       - The Gordon and Betty Moore Foundation (GBMF4552)
-      - The National Institutes of Health (T32 HG010067)
+      - The National Institutes of Health (R01 HG010067)
 
   - github: dongbohu
     name: Dongbo Hu
@@ -55,13 +59,14 @@ authors:
     affiliations:
       - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA
     contributions:
+      - Investigation
       - Resources
       - Software
       - Visualization
       - Writing - Review and Editing
     funders:
       - The Gordon and Betty Moore Foundation (GBMF4552)
-      - The National Institutes of Health (T32 HG010067)
+      - The National Institutes of Health (R01 HG010067)
 
   - github: MarvinT
     name: Marvin Thielk
@@ -101,11 +106,14 @@ authors:
     affiliations:
       - Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA
       - Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora CO, USA
+      - Center for Health AI, University of Colorado School of Medicine, Aurora, CO, USA
     contributions:
       - Conceptualization
+      - Data Curation
       - Funding Acquisition
+      - Project Administration
       - Supervision
-      - Writing - Review & Editing
+      - Writing - Review and Editing
     funders:
       - The Gordon and Betty Moore Foundation (GBMF4552)
-      - The National Institutes of Health (T32 HG010067)
+      - The National Institutes of Health (R01 HG010067)
