@@ -59,7 +59,10 @@ You should also cite any additional relevant literature that has been published 
 >  
 > See: "Please note, if data have been obtained from a third-party source, we require that other researchers would be able to access the data set in the same manner as the authors" https://journals.plos.org/plosone/s/data-availability despite that URL indicating just PLOS ONE, the policy applies to all PLOS journals, unless otherwise noted.
 
-Overall Response for reviewer 1 goes here
+Overall Response for reviewer 1 goes here. 
+Points will be aded when I get the chance.
+Basically take each link, reproduce the text and then respond to it here
+
 
 > Reviewer #2:
 > 
@@ -117,8 +120,29 @@ Overall Response for reviewer 1 goes here
 > Seeing Figure 6D and 6E, I would enjoy the authors showing or discussing more explicitly, whether textual differences increase with the number of revisions (and/or if there were some more complex changes such as reversions to earlier versions).
 
 
-Overall Response for reviewer 2 goes here
-
+Overall Response for reviewer 2 goes here. 
+Points should contain:
+1. Selected average of word vectors for interpretability need to find paper that talks about neural network interpretability 
+2. Need to figure out reason for why not using pretrained word vectors? Not sure about this one. I may have to retrain word2vec with a starting point for the vectors
+3. Switched to cosine distance for metrics. Will mention in the response
+4. Glad you like the application
+5. No statistics given because we report the values in confidence intervals. Given our numbers each CI has a p-value of asymptotically zero
+6. Added supplemental figures
+7. Provided numbers within the supplmental figures for paper
+8. We have updated text to make true matches more explicit
+9. Is this 4A or 4C? I dont follow this point
+10. We are glad to hear figure 4b etc.
+11. The preprint issue found within "Preprints in Motion Collection" doesn't affect our results as we only used preprints within bioRxiv. Majority of date issues is with medRxiv.
+12. We agree and have made labels bigger
+13. Need to look into ambigious matches we mentioned
+14. We chose to use PCA to highlight the concepts captured via our principal components. We agree UMAP could aide in capturing non-linear relationships, but the goal was to highlight our PCA results.
+15. I think our website visualization encompasses the idea the reviewer is suggesting.
+16. Need to confirm the outliers within 2A
+17. Made text more explicit
+18. We added these suggestions into our discussion
+19. Tshitoyan et al. Nature 2019
+20. Repeating the link to the web app in the main text would be convenient.
+21. Add point towards discussion
 
 > Reviewer #3:
 > 
@@ -149,6 +173,7 @@ Overall Response for reviewer 2 goes here
 > Section "Preprints with more versions or more text changes took longer to publish":
 > Fig. 4: can the longer publication times for scicomm/education papers (Fig 4a) be explained by a tendency to go through more versions (Fig 4b)?
 > It might be worthwhile to explore what happens post-publication to papers that go through more preprint revisions and take longer to publish, as this could have practical implications for authors as they decide when/if to submit/revise their preprints. Do these papers ultimately receive more citations, end up in journals with higher impact factors, or receive more attention on social media?
+> 
 > Section "Preprints with similar document embeddings share publication venues":
 > From personal experience, converting bioRxiv PDFs to text sometimes introduces weird noise and artifacts. Since bioRxiv and medRxiv both offer full-text HTML for many (if not all?) articles, is it possible to modify the application to use this cleaner data source?
 > 
@@ -173,4 +198,15 @@ Overall Response for reviewer 2 goes here
 > "Each new version adds additional 51 days before a preprint is published."
 
 
-Overall Response for reviewer 3 goes here
+Overall Response for reviewer 3 goes here. Main points are as follows:
+1. Check to see if abstract matching hurts results. If not, then changing to abstract only matching would be incredibly useful
+2. Updated text to unpack the confusing text on multi model approach
+3. We looked into classifier agreement and found...
+4. We incorproated the citation
+5. we defined stopwords
+6. We changed to only use tokens
+7. Only contains preprints prior to our matching method
+8. Could perform a quick manually inspection on this, but rather just leave it as an open ended question
+9. We switched to using xml as our main source fo data while this paper was under review. we updated text to incorporate that change
+10. We have updated that
+11. Lastly, we have updated these sentences as requested.
