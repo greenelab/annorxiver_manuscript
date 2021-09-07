@@ -211,11 +211,14 @@ I may have to retrain word2vec with a starting point for the vectors.
 > 
 > The mapping of similarity seems to be based on individual pairs of text and as such it would seem vulnerable of shifting distributions (e.g.: if published articles were somewhat different from preprints, as implied in Figure 1A). I would suspect that the authors would be able to improve their performance even further by doing global matching between many pairs (… again see their adherence to a weaker approach as something that ultimately strengthens their findings). Again, a comment on the rationale of their chosen approach could convey additional non-evident considerations.
 
-Switched to cosine distance for metrics. 
+Switched to proxy of cosine distance for journal recommendation.
+Chose to stick with euclidean distance for document matching because it is a continuous spectrum and doesn't allow for the potential of surpious matches
+Euclidean distance for time to publication because we want to be in a space that highlights changes for documents rather than how similar or dissimilar they are 
+capture magnitude
 
 > I love the web application!
 
-Glad you like the application,
+Glad you like the application.
 
 > No statistics are given for the enrichments in Figure 1B-E.
 
