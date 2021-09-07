@@ -8,7 +8,7 @@ author-meta:
 - Casey S. Greene
 bibliography:
 - content/manual-references.json
-date-meta: '2021-05-12'
+date-meta: '2021-09-07'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2021-05-12" />
+  <meta name="dc.date" content="2021-09-07" />
 
-  <meta name="citation_publication_date" content="2021-05-12" />
+  <meta name="citation_publication_date" content="2021-09-07" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -109,11 +109,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/2034e4513079e49d4df3c0f5909544c94e654b95/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/c3d7b6603f60395b0794a022599d8bb65fd87862/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/2034e4513079e49d4df3c0f5909544c94e654b95/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/c3d7b6603f60395b0794a022599d8bb65fd87862/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/2034e4513079e49d4df3c0f5909544c94e654b95/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/c3d7b6603f60395b0794a022599d8bb65fd87862/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -147,10 +147,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/2034e4513079e49d4df3c0f5909544c94e654b95/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/c3d7b6603f60395b0794a022599d8bb65fd87862/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@2034e45](https://github.com/greenelab/annorxiver_manuscript/tree/2034e4513079e49d4df3c0f5909544c94e654b95)
-on May 12, 2021.
+from [greenelab/annorxiver_manuscript@c3d7b66](https://github.com/greenelab/annorxiver_manuscript/tree/c3d7b6603f60395b0794a022599d8bb65fd87862)
+on September 7, 2021.
 </em></small>
 
 ## Authors
@@ -242,10 +242,10 @@ Lastly, we constructed a web application (https://greenelab.github.io/preprint-s
 
 The dissemination of research findings is key to science.
 Initially, much of this communication happened orally [@doi:10.1021/ci00050a001].
-During the 17th century, the predominant form of communication shifted to personal letters that were shared from one scientist to another [@doi:10.1021/ci00050a001].
-Scientific journals didn't become a predominant mode of communication until the 19th and 20th centuries, when the first journal was created [@doi:10.1021/ci00050a001; @smith2006trouble; @doi:10.1300/J123v41n01_04].
+During the 17th century, the predominant form of communication shifted to personal letters shared from one scientist to another [@doi:10.1021/ci00050a001].
+Scientific journals didn't become a predominant mode of communication until the 19th and 20th centuries when the first journal was created [@doi:10.1021/ci00050a001; @smith2006trouble; @doi:10.1300/J123v41n01_04].
 Although scientific journals became the primary method of communication, they added high maintenance costs and long publication times to scientific discourse [@smith2006trouble; @doi:10.1300/J123v41n01_04].
-Some scientists' solutions to these issues has been to communicate through preprints, which are scholarly works that have yet to undergo peer review process [@doi:10.1177/0192623318767322; @doi:10.1371/journal.pbio.2003995].
+Some scientists' solutions to these issues have been to communicate through preprints, which are scholarly works that have yet to undergo peer review process [@doi:10.1177/0192623318767322; @doi:10.1371/journal.pbio.2003995].
 
 Preprints are commonly hosted on online repositories, where users have open and easy access to these works.
 Notable repositories include arXiv [@doi:10.1108/14666180010345564], bioRxiv [@doi:10.1101/833400] and medRxiv [@url:https://www.medrxiv.org/]; however, there are over 60 different repositories available [@url:https://scholarlykitchen.sspnet.org/2019/10/16/the-second-wave-of-preprint-servers-how-can-publishers-keep-afloat/].
@@ -258,24 +258,24 @@ Preprints take an average of 160 days to be published in the peer-reviewed liter
 
 The rapid uptake of preprints in the life sciences also poses challenges. 
 Preprint repositories receive a growing number of submissions [@doi:10.1371/journal.pgen.1008565].
-Linking preprints with their published counterparts is vital to maintaining scholarly discourse consistency but is challenging to perform manually [@doi:10.1038/530265a; @doi:10.7554/eLife.52646; @doi:10.1007/s11192-021-03900-7].
+Linking preprints with their published counterparts is vital to maintaining scholarly discourse consistency, but this task is challenging to perform manually [@doi:10.1038/530265a; @doi:10.7554/eLife.52646; @doi:10.1007/s11192-021-03900-7].
 Errors and omissions in linkage result in missing links and consequently erroneous metadata.
-Furthermore, repositories based on standard publishing tools are not designed to show how textual content of preprints is altered due to the peer review process [@doi:10.1371/journal.pgen.1008565].
+Furthermore, repositories based on standard publishing tools are not designed to show how the textual content of preprints is altered due to the peer review process [@doi:10.1371/journal.pgen.1008565].
 Certain scientists have expressed concern that competitors could scoop them by making results available before publication [@doi:10.1371/journal.pgen.1008565; @doi:10.1371/journal.pbio.3000151].
-Preprint repositories by definition do not perform in-depth peer review, which can result in posted preprints containing inconsistent results or conclusions [@doi:10.12688/f1000research.19619.2; @doi:10.1007/s10393-018-1352-3; @doi:10.1038/530265a; @doi:10.1016/j.bpj.2016.06.035]; however, an analysis of preprints posted at the beginning of 2020 revealed that most underwent minor changes as they were published [@doi:10.1101/2021.02.20.432090].
+Preprint repositories by definition do not perform in-depth peer review, which can result in posted preprints containing inconsistent results or conclusions [@doi:10.12688/f1000research.19619.2; @doi:10.1007/s10393-018-1352-3; @doi:10.1038/530265a; @doi:10.1016/j.bpj.2016.06.035]; however, an analysis of preprints posted at the beginning of 2020 revealed that over 50% underwent minor changes in the abstract text as they were published, but over 70% did not change or only had simple rearrangements to panels and tables [@doi:10.1101/2021.02.20.432090].
 Despite a growing emphasis on using preprints to examine the publishing process within life sciences, how these findings relate to the text of all documents in bioRxiv has yet to be examined.
 
-Textual analysis uses linguistic, statistical, and machine learning techniques to analyze and extract information from text [@doi:10.1111/1475-679X.12123]. 
+Textual analysis uses linguistic, statistical, and machine learning techniques to analyze and extract information from text [@doi:10.1111/1475-679X.12123; @doi:10.1101/333922]. 
 For instance, scientists analyzed linguistic similarities and differences of biomedical corpora [@doi:10.1186/1471-2105-10-183;10.1186/1471-2105-9-S3-S6; @pmc:PMC442180].
 Scientists have provided the community with a number of tools that aide future text mining systems [@doi:10.1093/bib/bbs084; @doi:10.1093/nar/gkz389; @doi:10.1186/s12859-017-1775-9] as well as advice on how to train and test future text processing systems [@doi:10.1186/1471-2105-11-492; @doi:10.1186/1471-2105-13-207; @doi:10.1186/s12859-019-2604-0].
 Here, we use textual analysis to examine the bioRxiv repository, placing a particular emphasis on understanding the extent to which full-text research can address hypotheses derived from the study of metadata alone.
 
 To understand how preprints relate to the traditional publishing ecosystem, we examine the linguistic similarities and differences between preprints and peer-reviewed text and observe how linguistic features change during the peer review and publishing process.
-We hypothesize that preprints and biomedical text are pretty similar, especially when controlling for the differential uptake of preprints across fields.
+We hypothesize that preprints and biomedical text will appear to have similar characteristics, especially when controlling for the differential uptake of preprints across fields.
 Furthermore, we hypothesize that document embeddings [@arxiv:1301.3781; @arxiv:1405.4053] provide a versatile way to disentangle linguistic features along with serving as a suitable medium for improving preprint repository functionality.
 We test this hypothesis by producing a linguistic landscape of bioRxiv preprints, detecting preprints that change substantially during publication, and identify journals that publish manuscripts that are linguistically similar to a target preprint.
 We encapsulate our findings through a web app that projects a user-selected preprint onto this landscape and suggests journals and articles that are linguistically similar.
-Our work reveals how linguistically similar and dissimilar preprints are to peer-reviewed text, quantifies linguistic changes that occur during the peer review process, and highlights the feasibility of document embeddings with respect to preprint repository functionality and peer review's effect on publication time.
+Our work reveals how linguistically similar and dissimilar preprints are to peer-reviewed text, quantifies linguistic changes that occur during the peer review process, and highlights the feasibility of document embeddings concerning preprint repository functionality and peer review's effect on publication time.
 
 
 ## Materials and Methods
