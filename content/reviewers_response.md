@@ -4,7 +4,10 @@
 You should also cite any additional relevant literature that has been published since the original submission and mention any additional citations in your response. 
 </div>
 
-# Reviewer #1
+# Response to Reviewers
+
+## Reviewer #1
+
 > [identifies himself as Ross Mounce]
 > 
 > This manuscript 'Linguistic Analysis of the bioRxiv Preprint Landscape' presents an analysis of bioRxiv fulltexts and metadata, relative to journal-published versions of the same preprints (n= 17,952 pairs), and the New York Times Annotated Corpus.
@@ -25,11 +28,11 @@ You should also cite any additional relevant literature that has been published 
 > 
 > b) perhaps preprinters are more publishing 'savvy' and want to achieve more impact/citations and thus strive harder to ensure that the eventual journal-published version of their work is open access (reflected in being in PMCOA).
 
-Response here about their hypothesis
+**Response here about their hypothesis**
  
 > If it were my choice I would cut the entire subsection 'Document embeddings derived from bioRxiv reveal fields and subfields'. It is already known that document embeddings can reveal fields and subfields. Being 'preprints' or 'biorxiv preprints' rather than say published journal articles won't change that. I found this section very uninteresting and extremely un-novel. It is descriptive and accurate, but in the context of an already long manuscript, I feel it is unnecessary.
 
-Response here about moving the section towards the supplement
+**Response here about moving the section towards the supplement**
 
 > Aside from the manuscript, I have some brief comments on the actual web application.
 > 
@@ -38,7 +41,7 @@ Response here about moving the section towards the supplement
 > 
 > But I realise that PMCOA isn't exactly great training date for interpreting palaeontology articles -- fringe content from PMC's perspective(?)
 
-Reponse here I guess
+**Reponse here I guess**
  
 > Specific comments:
 > 
@@ -58,13 +61,20 @@ Reponse here I guess
 >
 >an analysis of preprints posted at the beginning of 2020 revealed that over 50% underwent minor changes in the abstract text as they were published, but over 70% had 'no change' or only superficial rearrangements to panels and tables [25].
 
-Response here
+**We thank you for the suggested change and have incorporated the following change within our revised manuscript**
+
+```diff
+-Preprint repositories by definition do not perform in-depth peer review, which can result in posted preprints containing inconsistent results or conclusions [@doi:10.12688/f1000research.19619.2; @doi:10.1007/s10393-018-1352-3; @doi:10.1038/530265a; @doi:10.1016/j.bpj.2016.06.035]; however, an analysis of preprints posted at the beginning of 2020 revealed that most underwent minor changes as they were published [@doi:10.1101/2021.02.20.432090].
+
++Preprint repositories by definition do not perform in-depth peer review, which can result in posted preprints containing inconsistent results or conclusions [@doi:10.12688/f1000research.19619.2; @doi:10.1007/s10393-018-1352-3; @doi:10.1038/530265a; @doi:10.1016/j.bpj.2016.06.035]; however, an analysis of preprints posted at the beginning of 2020 revealed that over 50% underwent minor changes in the abstract text as they were published, but over 70% did not change or only had simple rearrangements to panels and tables [@doi:10.1101/2021.02.20.432090].
+```
 
 > 2.) https://hypothes.is/a/djNirNLcEeu2YxNM5WBxvA
 > 
 >but to clarify, you did remove these from the analysis, right? It would just be good to clarify that. They are easy to identify and should just be removed. I can't see how they would add anything but noise to this analysis. What is the total number of preprints after withdrawn preprints are removed from the sample?
  
-Reponse here
+**Yes.
+We removed these withdrawn preprints from our analysis.**
 
 > 3.) https://hypothes.is/a/bmdkpNLeEeuZ0k8oLqyeWQ
 > 
@@ -91,13 +101,15 @@ Reponse here
 > 
 > Hmmm… this is a pity. Accepted Author Manuscripts (AAMs) in one sense do represent the 'end' of a preprint's life cycle - they are the final version after peer review but before minor copyediting and journal re-styling. A comparison between preprints and AAMs would more closely/strictly measure the contribution of the peer-review process, independent of the copy-editing and minor re-styling. But hey, too late to change that decision. One for future analyses perhaps?
 
-Reponse here
+**We recognize that author manuscripts have the potential to remove some of the journal stylistic changes in our token analysis of preprints compared to finalized published versions.
+However, we believe it's best to leave that for future analyses**
 
 > 7.) https://hypothes.is/a/Bsv68tLkEeugHEfCZMUGag
 > 
 > minor typo: tagging surely
 
-We updated text to fix this typo.
+**Thank you for pointing this out.
+We updated text to fix this typo.**
 
 > 8.) https://hypothes.is/a/aWmt3tLlEeuh3M-Ku8ThvQ
 > 
@@ -111,7 +123,8 @@ We updated text to fix this typo.
 >
 >** with no doubt many other caveats such as cases where the author could do it without help from the journal, but does not for some unknown reason
 
-Response here?
+**We appreciate you point out this interesting fact.
+We have updated our discussion to mention it**
 
 > 9.) https://hypothes.is/a/dkIurtLmEeuqkU-qTN4dtg
 > 
@@ -119,13 +132,13 @@ Response here?
 >
 >Interestingly 'ca' is one of those 326 stopwords. I would have thought that one might actually be significant in a life sciences context e.g. calcium channels "Ca2+"
 
-Yes, 326 stopwords are the default setting. 
+**Yes, 326 stopwords are the default setting.**
 
 > 10.) https://hypothes.is/a/-2AU8tLmEeu6swvY4jN5Mw
 > 
 > I'm sure you've got this in the github, but just to make the manuscript more readily understandable without digging around in github, do you think you could provide as a supplementary file a list of those 100 most frequently occurring tokens, so that people can get a better feel for what the data is here?
 
-We added a supplementary table to fufill this request.
+**We have added a supplementary file that provides a listing of 100 tokens for our corpora KL analysis**
 
 > 11.) https://hypothes.is/a/dhGbgNLnEeuYkkfUNqKwgA
 > 
@@ -133,13 +146,14 @@ We added a supplementary table to fufill this request.
 > 
 > oh okay, you did actually do that. Nice :)
 
-We are glad you like the website.
+**We are glad that you like our document matching solution.**
 
 > 12.) https://hypothes.is/a/DzrzGtLtEeuJlcdOlUfUBA
 > 
 > I don't suppose you could possibly be precise about this rather than just 'a limited number'? Is it 5, 50, or 500?
 
-We updated the text to account for this change
+**We agree that line is a bit vague.
+We have updated our text to be more explicit.**
 
 > 13.) https://hypothes.is/a/eJ7-DtLpEeuh0A8OL8WAWw
 > 
@@ -151,7 +165,8 @@ We updated the text to account for this change
 >
 >The 'find journals' functionality of JANE appears somewhat similar to the discovering similar journals functionality here.
 
-We have added this citation in our manuscript.
+**Thank you for pointing this citation out. 
+We have incorporated it into our revised manuscript**
 
 > 14.) https://hypothes.is/a/-ixA_NLqEeuv6YviR-lI0A
 > 
@@ -159,7 +174,7 @@ We have added this citation in our manuscript.
 >
 >There is change but is change from figure to 'fig.' to suit journal style actually helpful/valuable? In my opinion it is not!
 
-Reponse here.
+**We recognize the limitation of our design choice and mention an alternative for future analyses** 
 
 > 15.) https://hypothes.is/a/V2wj3NLqEeuZ9idQ44yS4Q
 > 
@@ -167,37 +182,45 @@ Reponse here.
 >
 >Don't we already know that if one uses full texts we can determine the subfield of the paper? It's not that interesting in my opinion and not relevant to the main hypotheses of the paper -- comparing between preprints and the journal published version.
 
-We moved this section to the supplement.
+**We believe this section is needed when performing a descriptive analysis on the bioRxiv corpus.
+However, we moved this section to the supplement.**
 
 > 16.) https://hypothes.is/a/N8cKltLrEeuZ-iPc5lrP5g
 > 
 > adjusting for recency? i.e. not sampling 2019 preprints? in figure C the line indicates (if I'm interpreting correctly) that overall only 46.55% are published but that's because it includes very recent preprints that haven't had time to be journal published yet. Just be explicit that you are adjusting for recency (i.e. excluding 2019 and newer preprints) when you say that most preprints are eventually published.
 
-Response here
+**We didn't account for recency when calculating the overall proportions of preprints published. 
+The total mentioned within the publication rate graph considers all preprints in its total.**
 
 > 17.) https://hypothes.is/a/z4r5ztLgEeupmPfOPmlVbw
 > 
 > text changes relative to the journal published version? You might want to make that more explicit. Text changes alone is not adequately specific in my opinion.
 
-We updated this title to reflect requested changes.
+**We agree that text changes was a bit vauge and have updated the title accordingly.**
 
 > is using a proprietary data set that charges for access congruent with the PLOS data availability policy?
 >  
 > See: "Please note, if data have been obtained from a third-party source, we require that other researchers would be able to access the data set in the same manner as the authors" https://journals.plos.org/plosone/s/data-availability despite that URL indicating just PLOS ONE, the policy applies to all PLOS journals, unless otherwise noted.
 
-We believe that this is appropriate with PLOS's data availability policy.
+**We believe that this is appropriate with PLOS's data availability policy.**
 
 
 # Reviewer #2
 
 > Overall, I enjoyed this manuscript for offering a way to quantify the transition of preprints to manuscripts within the biological sciences. Further, the authors develop an approach that could also more generally be useful for classifying biomedical literature, and they even provide as an example a web-based program to find potential publication avenues.
-> 
+
+**We are glad you enjoyed our manuscript.**
+
 > The methodological approach of the authors is quite unexpected. While I do not see a fundamental flaw in their approach, I would anticipate it to be biased toward the most frequent phrases. When performing computational research there is a risk to pursue analyses through well-intended "improvements" or "customizations" whenever the approach does not seem to yield the expected outcome. As some people could be tempted to interpret parts of the analysis of the authors as warning flags for above having happened, I would recommend adding some additional control analyses and explicit statements about their chosen rationales.
 > 
 > Particularly, I would be very curious about the discussion, or main text commenting on why the authors created a custom scheme of classifying documents and their similarity based on vectors of words instead of using existing approaches that provide vectors of documents - including doc2vec that is included in the software package that the authors used for word2vec. Do the results change according to the approach?
 > 
 
-Selected average of word vectors for interpretability need to find paper that talks about neural network interpretability 
+**We chose to use a linear approach as our goal was interpretability.
+Neural networks are impressive black box models in terms of performance; however, interepretability still remains a challenge.
+We have tested Doc2Vec against our pca plots and found that there is a significant difference in the way concepts are captured.**
+![Word2vec](https://raw.githubusercontent.com/danich1/annorxiver/3bcac4ca2e9249359361525a7e5f3ae36c71d4a5/biorxiv/pca_association_experiment/output/word_pca_similarity/figure_pieces/pca_01_cossim_word_cloud.png)
+![Doc2vec](https://raw.githubusercontent.com/danich1/annorxiver/3bcac4ca2e9249359361525a7e5f3ae36c71d4a5/biorxiv/pca_association_experiment/output/word_pca_similarity/figure_pieces/pca_01_cossim_word_cloud_doc2vec.png)
 
 > Further, word2vec often seems to work even better when first trained on a larger corpus before then being applied or transferred to more specialized corpora. Personally, I also made this experience when following an example tutorial provided by the creators of the package that the authors used - which too suggests starting with existing pre-trained models. While the more restricted training done by the authors might have reduced the sensitivity of their approach (… which would likely only strengthen their claims), I would be curious whether there was an additional rationale for avoiding the former strategy that might be missed by readers (e.g.: different meanings such as "abstract" that has different meanings for scientists and non-scientists?).
 
@@ -208,90 +231,105 @@ I may have to retrain word2vec with a starting point for the vectors.
 > Likewise, I'm wondering why the authors used a Euclidean distance for word embeddings instead of a Cosine similarity (which if I recall correctly would also be default in the similarity module of the package which the authors used). Cosine similarity should also allow the authors to make statements about the similarity of words without imposing assumptions on similar text lengths or usage frequencies.
 >
 > Similarly, I was wondering how the "journal-based" approach, which the authors mention briefly against the influence of high publication frequency journals, was implemented. Further, if it could have been avoided by avoiding the Euclidean space.
-> 
-> The mapping of similarity seems to be based on individual pairs of text and as such it would seem vulnerable of shifting distributions (e.g.: if published articles were somewhat different from preprints, as implied in Figure 1A). I would suspect that the authors would be able to improve their performance even further by doing global matching between many pairs (… again see their adherence to a weaker approach as something that ultimately strengthens their findings). Again, a comment on the rationale of their chosen approach could convey additional non-evident considerations.
 
-Switched to proxy of cosine distance for journal recommendation.
+**Switched to proxy of cosine distance for journal recommendation.
 Chose to stick with euclidean distance for document matching because it is a continuous spectrum and doesn't allow for the potential of surpious matches
 Euclidean distance for time to publication because we want to be in a space that highlights changes for documents rather than how similar or dissimilar they are 
-capture magnitude
+capture magnitude**
+
+> The mapping of similarity seems to be based on individual pairs of text and as such it would seem vulnerable of shifting distributions (e.g.: if published articles were somewhat different from preprints, as implied in Figure 1A). I would suspect that the authors would be able to improve their performance even further by doing global matching between many pairs (… again see their adherence to a weaker approach as something that ultimately strengthens their findings). Again, a comment on the rationale of their chosen approach could convey additional non-evident considerations.
+
+Response here
 
 > I love the web application!
 
-Glad you like the application.
+**We are happy you like the application.**
 
 > No statistics are given for the enrichments in Figure 1B-E.
 
-No statistics given because we report the values in confidence intervals (CI). 
-Given our numbers each CI has a p-value close to or exactly zero.
+**We report each token with a 95% confidence interval (CI). 
+Our frequency counts are sufficiently large that nearly all pvalues for each is approximately or exactly zero.**
 
 > I would welcome a supplemental analysis, that removes single letters and special characters from the analysis of Figure 1B-E as they might change the baseline.
 
-Added supplemental figures
+**We have added the results of this request to the supplement**
 
 > The word cloud of Figure 2B, C is somewhat nice as it shows the main words. However, this information could also be conveyed in the text. Would personally favor to quantitatively see loadings of first few principal components for different terms.
 
-Provided numbers within the supplmental figures for paper
+**We have provided a table for the following request in our supplemental section**
 
 > The definition of "True matches" could be more explicit in within the main text as the preceding figure 3A could for some people set up a different anticipation.
 
-We have updated text to make true matches more explicit
+**We agree this term is too vauge and we have updated text to be  more explicit**
 
 > The association given in Figure 4A seems to mainly stem from a few papers with large distances. Would an association be present when using the rank-based Spearman correlation instead of a linear regression? Would, for visualization, a logarithmic relationship describe the data better than a linear one?
 
-Is this 4A or 4C? I dont follow this point
+**We would like to claify if the reviewer is talking about 4C rather than A.
+Under this assumption we found that there is a weakly positive correlation when using rank-based Spearman correlation on our dataset.
+When using the logarithmic relationship our visualization highlights papers that are quick to publish; however, our intend goal is to view papers that took longer instead.
+We believe our orignal figure is more approaciate for this case.**
 
 > I believe that the analysis of Figure 4 B is quite clever as it would seem to address the thinkable concern of preprints with no delay and changes mainly stemming from those manuscripts that were already essentially accepted by manuscripts at the time of posting.
 
-We are glad to hear figure 4b etc.
+**We are glad you found our analysis insightful**
 
 > The analysis remarks that for the "Preprints in Motion Collection" the relationship between textual distance and time to publication disappears, and supports this through Figure 6E. However, the background trend in figure 6E includes publications that have been published at a time that exceeds a year. Hence a more faithful comparison would be to censor the background data by a distribution of durations that would correspond to the distribution of durations that would be possible for the "Preprint in Motions Collection" (taking distribution corresponding to interval between their dates on bioRxiv and the time at which authors assessed whether manuscripts were published).
 
-The preprint issue found within "Preprints in Motion Collection" doesn't affect our results as we only used preprints within bioRxiv. 
-Majority of date issues is with medRxiv.
+**We agree that our background distribution is a bit misleading and have corrected our analysis to only include papers feasible for "Preprint in Motions Collection" timeframe.**
 
 > Other:
 > 
 > Labels within figures could often be increased in size to improve readability.
 
-We agree and have made labels bigger
+**We have the size of our labels for this manuscript.**
  
 > The methods section briefly comments on some ambiguous cases for the matching. Would these cases be the result of modifications that defy a 1:1 mapping, e.g.: multiple stories getting fused, or one story getting split?
 
-Need to look into ambigious matches we mentioned
+**Some of these ambigious cases involve abstract or main text changes which could evade our detection method.
+Other cases result in drastically different paper that share similar research context, but are completely different overall.** 
 
 > The results of Figure 2A could possibly be strengthened by avoiding Principal Components and replacing them by UMAP projects to account for non-linearity.
 
-We chose to use PCA to highlight the concepts captured via our principal components. 
-We agree UMAP could aide in capturing non-linear relationships, but the goal was to highlight our PCA results.
+**We chose to use PCA for figure 2A as this model is easy to interpret compared to non-linear methods such as UMAP.
+We have provided a umap visualization here, but we believe PCA is be more appropriate for our manuscript.**
+
+![Umap of BioRxiv](https://raw.githubusercontent.com/danich1/annorxiver/3bcac4ca2e9249359361525a7e5f3ae36c71d4a5/biorxiv/word_vector_experiment/output/embedding_output/umap/figures/biorxiv_umap_300.png)
 
 > Although peripheral to the current manuscript, their approach and data would also seem capable to providing an update-able map of the biomedical sciences, by applying their approach of Figure 2 to the PMC corpus data which the authors access too. Such a map could be interesting for those trying to obtain an overview about biology. In case that the authors do not hold plans to publish this elsewhere, and in case that it would be less than a day of work, I would recommend adding such a map to the supplement or as a web service.
 
-I think our website visualization encompasses the idea the reviewer is suggesting.
+**We accomplish this idea with our web application as we provided a 2D visualization of PMC's open access corpus.
+This visualziation uses SAUCIE, a autoencoder designed for RNA-seq, instead of UMAP or PCA to generate the landscape.
+We construct an auto-updater pipeline for this tool so every month new papers are incorporated into our website and visualization updates appropriately.
+**
 
 > Are the few publications in Figure 2A, which lie outside of the space that is generally occupied by their respective article categories, somewhat different when doing a superficial manual inspection (e.g.: misclassified by authors, or interdisciplinary research)
 
-Need to confirm the outliers within 2A
+**Those papers are mainly interdisciplinary research. but will add more description to this.**
 
 > Adding a few words to "examining the top five and bottom five preprints" could avoid misunderstanding (e.g.: while I suspect that it is the position in Figure 2A, I was first thinking about the most/least successful/downloaded…)
 
-Made text more explicit
+**We have updated the text to be more explicit.**
+```diff
+```
 
 > The vector representation of words and documents should allow the authors to quantify shifts that appear between preprints and published manuscripts. Though not necessary from my perspective, many interesting analyses could be done in vector space (e.g.: does language get more positive, or start to refer to more established concepts…?). Maybe there is something small that could be done. Alternatively, the discussion could possibly be extended to demonstrate the implications of vector space, and thus their own work, for future research into preprints and peer review.
 
-We added these suggestions into our discussion.
+**Thank you for pointing out potential extensions to our vector space.
+We incorporated these suggestions into our discussion as potential avenues of future work.**
+```diff
+```
 
 > Along above, the discussion could be extended toward prior uses of Word2vec in the studies of science, such as Tshitoyan et al. Nature 2019.
 
-We have added this citation into our dicussion. 
+**We have added this citation into our dicussion.**
 
 > Repeating the link to the web app in the main text would be convenient.
 
-We have updated the text to include the web app link throughout our website section.
+**We have updated the text to include the web app link throughout our website section.**
 
 > Seeing Figure 6D and 6E, I would enjoy the authors showing or discussing more explicitly, whether textual differences increase with the number of revisions (and/or if there were some more complex changes such as reversions to earlier versions).
 
-Add point towards discussion
+**Add point towards discussion**
 
 # Reviewer #3
  
@@ -301,17 +339,26 @@ Add point towards discussion
 > 
 > The method for discovering unannotated preprint-publication relationships is very neat, but I imagine it's rather unwieldy to match a novel publication against the full-text bioRxiv corpus in downstream applications (e.g., bioRxiv's automation)--could this be optimized by reducing the search space to preprints that share some or all of the same authors, within a reasonable date range, and/or only considering paper/preprint metadata (e.g., abstract, title, references)? Such an approach might also enable annotation of preprints that are eventually published as non-OA peer reviewed articles for which such metadata are available.
 
-Check to see if abstract matching hurts results. If not, then changing to abstract only matching would be incredibly useful
+**We have checked to see if document matching is possible with abstracts and determine that matching documents based on abstracts is indeed possible to undego.
+We have added a supplemental figure to highlight the potential of this new approach.**
+
  
 > Section "Building Classifiers to Detect Linguistically Similar Journal Venues and Published Articles":
 > 
 > "Specific journals publish articles in a focused topic area, while others publish articles that cover many topics. Likewise, some journals have a publication rate of at most hundreds of papers per year, while others publish at a rate of at least ten thousand papers per year. Accounting for these characteristics, we designed two approaches - one centered on manuscripts and another centered on journals."  << this could use some unpacking and/or reorganizing of details found later in this section--as I understand it, the variation in journals' topical breadth motivates the development of a manuscript-focused classifier (so that topically similar papers appearing in generalist journals do not get obscured) and the variation in journals' publication rates motivates a journal-focused classifier (so that high-output journals do not overwhelm more selective or less popular journals).
 
-We have updated our manuscript to unpack this explanation on our various models. 
+**We recognize that this section is a bit dense.
+We have have updated our manuscript to unpack this explanation so rationale for our models is a bit more lucid.**
+
+```diff
+```
 
 > I'm also curious how often these two classifiers agree--are the top matching papers typically found in the top matching journals? In cases where the two classifiers tend to disagree, are there any common characteristics of the preprints the application is trying to classify?
 
-Response to this here.
+**Using the overlap coefficient our classifiers' predictions overlap about 24% of the time.
+The highest overlap was for a paper that was published within BMC bioinformatics.
+**
+
 
 > Minor Comments (by section):
 > 
@@ -319,35 +366,39 @@ Response to this here.
 > 
 > The references of text mining on biomedical corpora should include Desai et al (2018) [https://www.biorxiv.org/content/10.1101/333922v1.abstract], which describes a similar recommendation engine.
 
-We have added this reference to our manuscript.
+**We have added this reference to our manuscript.**
 
 > Section "Comparing Corpora":
 > 
 > Inconsistent formatting of "spaCy"
 
-We updated our manuscript to fix this formatting issue.
+**We updated our manuscript to make sure spaCy is properly formatted.**
 
 > Define "stopwords," since many readers may be unfamiliar with this term
 
-We updated our manuscript to have an explanation of "stopwords".
+**We updated our manuscript to have an explanation of "stopwords".**
+
+```diff
+```
 
 > Section "Constructing a Document Representation for Life Sciences Text":
 > 
 > This switches back to using "words" instead of "tokens" as in the previous section
 
-We have carefully edited this manuscript to remain consisted with using "tokens" instead of "words".
+**Thank you for pointing this out.
+We have carefully edited our manuscript to make sure "tokens" was consistently used instead of "words".**
  
 > Section "Measuring Time Duration for Preprint Publication Process":
 > 
 > Does this include the new preprint-publication pairs discovered in the previous section, or only those annotated in the data provided by the bioRxiv API?
 
-This section only contains preprints pairs established prior to our matching approach.
+**This section only contains preprints pairs that have been established prior to our matching approach.**
 
 > Section "Preprints with more versions or more text changes took longer to publish":
 > 
 > Fig. 4: can the longer publication times for scicomm/education papers (Fig 4a) be explained by a tendency to go through more versions (Fig 4b)?
 
-Response here, but I may have to quickly look at papers for scicomm etc.
+**Response here, but I may have to quickly look at papers for scicomm etc.**
 
 > It might be worthwhile to explore what happens post-publication to papers that go through more preprint revisions and take longer to publish, as this could have practical implications for authors as they decide when/if to submit/revise their preprints. Do these papers ultimately receive more citations, end up in journals with higher impact factors, or receive more attention on social media?
 
@@ -357,14 +408,16 @@ Reponse here
 > 
 > From personal experience, converting bioRxiv PDFs to text sometimes introduces weird noise and artifacts. Since bioRxiv and medRxiv both offer full-text HTML for many (if not all?) articles, is it possible to modify the application to use this cleaner data source?
 
-At the time of submission we recognize that using xml is better than solely pdf parser.
-We updated our website to use xml first, then resort to the pdf parser if the xml version is not available.
+**At the time of submission we recognize that using xml is better than solely pdf parser.
+We updated our website to use xml first, then resort to the pdf parser if the xml version is not available.**
 
 > Section "Contextualizing the Preprints in Motion Collection":
 > 
 > Figure description for Fig 6E is mislabeled as D
 
-We updated our text to fix this label mismatch.
+**We updated our text to fix this label mismatch.**
+```diff
+```
 
 > There are several casually/awkwardly-worded or grammatically incorrect sentences throughout that could use some finesse:
 > 
@@ -390,4 +443,7 @@ We updated our text to fix this label mismatch.
 > 
 > "Each new version adds additional 51 days before a preprint is published."
 
-We have updated these sentences to be more clear within our manuscript.
+**We have updated these sentences to be more clear within our manuscript.**
+
+```diff
+```
