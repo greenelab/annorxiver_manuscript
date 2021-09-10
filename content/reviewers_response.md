@@ -1,9 +1,3 @@
-<div style="color:red">
-1. A 'Response to Reviewers' file - this should detail your responses to the editorial requests, present a point-by-point response to all of the reviewers' comments, and  indicate the changes made to the manuscript.
-*NOTE: In your point by point response to the reviewers, please provide the full context of each review. Do not selectively quote paragraphs or sentences to reply to. The entire set of reviewer comments should be present in full and each specific point should be responded to individually.
-You should also cite any additional relevant literature that has been published since the original submission and mention any additional citations in your response. 
-</div>
-
 # Response to Reviewers
 
 ## Reviewer #1
@@ -299,8 +293,7 @@ We have provided a umap visualization here, but we believe PCA is be more approp
 
 **We accomplish this idea with our web application as we provided a 2D visualization of PMC's open access corpus.
 This visualziation uses SAUCIE, a autoencoder designed for RNA-seq, instead of UMAP or PCA to generate the landscape.
-We construct an auto-updater pipeline for this tool so every month new papers are incorporated into our website and visualization updates appropriately.
-**
+We construct an auto-updater pipeline for this tool so every month new papers are incorporated into our website and visualization updates appropriately.**
 
 > Are the few publications in Figure 2A, which lie outside of the space that is generally occupied by their respective article categories, somewhat different when doing a superficial manual inspection (e.g.: misclassified by authors, or interdisciplinary research)
 
@@ -402,7 +395,7 @@ We have carefully edited our manuscript to make sure "tokens" was consistently u
 
 > It might be worthwhile to explore what happens post-publication to papers that go through more preprint revisions and take longer to publish, as this could have practical implications for authors as they decide when/if to submit/revise their preprints. Do these papers ultimately receive more citations, end up in journals with higher impact factors, or receive more attention on social media?
 
-Reponse here
+**We have provided a supplemental file that contains preprints and their corresponding published information for anyone to easily inspect these changes themselves.**
 
 > Section "Preprints with similar document embeddings share publication venues":
 > 
@@ -444,6 +437,21 @@ We updated our website to use xml first, then resort to the pdf parser if the xm
 > "Each new version adds additional 51 days before a preprint is published."
 
 **We have updated these sentences to be more clear within our manuscript.**
+
+```diff
+```
+
+```diff
+```
+
+```diff
+```
+
+```diff
+```
+
+```diff
+```
 
 ```diff
 ```
