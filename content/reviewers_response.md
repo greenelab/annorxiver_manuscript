@@ -22,11 +22,12 @@
 > 
 > b) perhaps preprinters are more publishing 'savvy' and want to achieve more impact/citations and thus strive harder to ensure that the eventual journal-published version of their work is open access (reflected in being in PMCOA).
 
-**Response here about their hypothesis**
+**We appreciate your positive viewpoint on our manuscript.
+The increasing open access article is an interesting point and we have updated our manuscript to include it within our discussion.**
  
 > If it were my choice I would cut the entire subsection 'Document embeddings derived from bioRxiv reveal fields and subfields'. It is already known that document embeddings can reveal fields and subfields. Being 'preprints' or 'biorxiv preprints' rather than say published journal articles won't change that. I found this section very uninteresting and extremely un-novel. It is descriptive and accurate, but in the context of an already long manuscript, I feel it is unnecessary.
 
-**Response here about moving the section towards the supplement**
+**We believe this analysis is necessary when describing a resouce via our methodology; however, we did move this section into our supplemental section.**
 
 > Aside from the manuscript, I have some brief comments on the actual web application.
 > 
@@ -35,7 +36,9 @@
 > 
 > But I realise that PMCOA isn't exactly great training date for interpreting palaeontology articles -- fringe content from PMC's perspective(?)
 
-**Reponse here I guess**
+**Thank you for pointing this fact out.
+We agree that this issue is related to the published articles contained within PMCOA.
+We have implemented an auto updater to incorporate new resources every month as PMCOA grows, so this issue may be resolved as PMCOA incorporates new documents.**
  
 > Specific comments:
 > 
@@ -67,8 +70,8 @@
 > 
 >but to clarify, you did remove these from the analysis, right? It would just be good to clarify that. They are easy to identify and should just be removed. I can't see how they would add anything but noise to this analysis. What is the total number of preprints after withdrawn preprints are removed from the sample?
  
-**Yes.
-We removed these withdrawn preprints from our analysis.**
+**No.
+We kept these withdrawn preprints within our analysis as the amount wasn't high enough to significantly affect our results.**
 
 > 3.) https://hypothes.is/a/bmdkpNLeEeuZ0k8oLqyeWQ
 > 
@@ -78,35 +81,43 @@ We removed these withdrawn preprints from our analysis.**
 >
 >BTW, I resent calling it a 'closed access' [article?] if the accepted manuscript is fully freely available -- that would seem to give undue primacy to the journal published version. It's an article with different versions - one freely accessible at a repository e.g. PMC, without publisher branding and another behind a paywall at the publisher website with publisher branding
 
-Reponse here
+**We agree that 'closed access' my not be appropriate for this description.
+We have have changed this section in the manuscript to accomodate this fact.**
+
+```diff
+- PMC articles can be closed access ones from research funded by the NIH appearing after an embargo period or be published under Gold Open Access [@doi:10.1007/s12471-017-1064-2] publishing schemes.
+
++ Articles appear in PMC as either accepted author manuscripts (Green Open Access) or via open access publishing at the journal (Gold Open Access [@doi:10.1007/s12471-017-1064-2]).
+```
 
 > 4.) https://hypothes.is/a/-v_PbtLeEeu8Rw8afgzT5g
 > 
 > presuming a journal allows individual articles to be published with a CC BY licence under a so-called 'hybrid-OA' option, can a journal really NOT participate for those CC BY licenced articles? If biomedically relevant and CC BY licensed surely PMC takes that content at the article level and thus its debatable as to whether journals really have the power to actually 100% not participate.
 
-Reponse here
+**We have updated our manuscript to take this point into account.**
+
+```diff
+- Individual journals have the option to fully participate in submitting articles to PMC, selectively participate sending only a few papers to PMC, only submit papers according to NIH's public access policy [@url:https://grants.nih.gov/grants/policy/nihgps/html5/section_8/8.2.2_nih_public_access_policy.htm], or not participate at all.
+
+
++ Individual journals have the option to fully participate in submitting articles to PMC, selectively participate sending only a few papers to PMC, only submit papers according to NIH's public access policy [@url:https://grants.nih.gov/grants/policy/nihgps/html5/section_8/8.2.2_nih_public_access_policy.htm], or not participate at all; however, individual articles published with the CC BY license may be incorporated.
+```
 
 > 5.) https://hypothes.is/a/vekhYNLfEeuxGm9i6MkLqw
 > it's a real pity you chose not to compare preprints to author manuscripts. As your results demonstrated, lots of the word changes were just journal-style related e.g. "figure" -> "fig." . An analysis of just preprints matched to author manuscripts would get more closely and cleanly to what the textual difference between pre-peer-review and post-peer-review (without minor stylistic changes).
 
-Reponse here
+**We recognize that author manuscripts have the potential to remove some of the journal stylistic changes in our token analysis of preprints compared to finalized published versions.
+However, we believe it's best to leave that for future analyses.**
 
 > 6.) https://hypothes.is/a/YkqPKNLgEeucPGc1_W-jzA
-> 
-> Hmmm… this is a pity. Accepted Author Manuscripts (AAMs) in one sense do represent the 'end' of a preprint's life cycle - they are the final version after peer review but before minor copyediting and journal re-styling. A comparison between preprints and AAMs would more closely/strictly measure the contribution of the peer-review process, independent of the copy-editing and minor re-styling. But hey, too late to change that decision. One for future analyses perhaps?
-
-**We recognize that author manuscripts have the potential to remove some of the journal stylistic changes in our token analysis of preprints compared to finalized published versions.
-However, we believe it's best to leave that for future analyses**
-
-> 7.) https://hypothes.is/a/Bsv68tLkEeugHEfCZMUGag
 > 
 > minor typo: tagging surely
 
 **Thank you for pointing this out.
 We updated text to fix this typo.**
 
-> 8.) https://hypothes.is/a/aWmt3tLlEeuh3M-Ku8ThvQ
-> 
+
+> 7.) https://hypothes.is/a/Bsv68tLkEeugHEfCZMUGag
 > From the perspective of a person (me!) interested in open access to ('final') peer-reviewed research outputs this is a super interesting result in itself, which should perhaps be remarked upon more in this manuscript.
 >
 >It implies that over 77% (17,952/23,271) of biomedical preprints that are detectably linked to a journal published paper, that subsequent journal published paper became open access in the PMCOA corpus (regardless of specific means/route). That's great news. The subset of works from biomedical researchers that do preprinting have a much higher level of open access (to the eventual journal published version) than biomedical research overall (including works that don't have a preprint version)
@@ -120,21 +131,22 @@ We updated text to fix this typo.**
 **We appreciate you point out this interesting fact.
 We have updated our discussion to mention it**
 
-> 9.) https://hypothes.is/a/dkIurtLmEeuqkU-qTN4dtg
+> 8.) https://hypothes.is/a/aWmt3tLlEeuh3M-Ku8ThvQ
 > 
 > To be clear 326 stopwords is the default setting?
 >
 >Interestingly 'ca' is one of those 326 stopwords. I would have thought that one might actually be significant in a life sciences context e.g. calcium channels "Ca2+"
 
-**Yes, 326 stopwords are the default setting.**
+**Yes, 326 stopwords are the default setting.** 
 
-> 10.) https://hypothes.is/a/-2AU8tLmEeu6swvY4jN5Mw
+
+> 9.) https://hypothes.is/a/dkIurtLmEeuqkU-qTN4dtg
 > 
 > I'm sure you've got this in the github, but just to make the manuscript more readily understandable without digging around in github, do you think you could provide as a supplementary file a list of those 100 most frequently occurring tokens, so that people can get a better feel for what the data is here?
 
 **We have added a supplementary file that provides a listing of 100 tokens for our corpora KL analysis**
 
-> 11.) https://hypothes.is/a/dhGbgNLnEeuYkkfUNqKwgA
+> 10.) https://hypothes.is/a/-2AU8tLmEeu6swvY4jN5Mw
 > 
 > hmmm… not a problem of this manuscript, but that's really not good enough from bioRxiv is it? Change one word of a long and complex title and suddenly 'oh, we can't do it'. A comment to suggest that bioRxiv could do better would be fun, no(?) i.e. look at author names AND title and if both are similar enough, then do auto-linking.
 > 
@@ -142,16 +154,16 @@ We have updated our discussion to mention it**
 
 **We are glad that you like our document matching solution.**
 
-> 12.) https://hypothes.is/a/DzrzGtLtEeuJlcdOlUfUBA
+> 11.) https://hypothes.is/a/dhGbgNLnEeuYkkfUNqKwgA
 > 
 > I don't suppose you could possibly be precise about this rather than just 'a limited number'? Is it 5, 50, or 500?
 
 **We agree that line is a bit vague.
 We have updated our text to be more explicit.**
 
-> 13.) https://hypothes.is/a/eJ7-DtLpEeuh0A8OL8WAWw
+> 12.) https://hypothes.is/a/DzrzGtLtEeuJlcdOlUfUBA
 > 
-> 'm surprised to see no citation given to JANE: https://jane.biosemantics.org/
+> I'm surprised to see no citation given to JANE: https://jane.biosemantics.org/
 >
 >https://academic.oup.com/bioinformatics/article/24/5/727/202224
 >
@@ -162,7 +174,7 @@ We have updated our text to be more explicit.**
 **Thank you for pointing this citation out. 
 We have incorporated it into our revised manuscript**
 
-> 14.) https://hypothes.is/a/-ixA_NLqEeuv6YviR-lI0A
+> 13.) https://hypothes.is/a/eJ7-DtLpEeuh0A8OL8WAWw
 > 
 > This is the kind of journal-faff difference that I hypothesise would not be visible or less visible if one did an analysis of preprints vs author manuscripts.
 >
@@ -170,7 +182,7 @@ We have incorporated it into our revised manuscript**
 
 **We recognize the limitation of our design choice and mention an alternative for future analyses** 
 
-> 15.) https://hypothes.is/a/V2wj3NLqEeuZ9idQ44yS4Q
+> 14.) https://hypothes.is/a/-ixA_NLqEeuv6YviR-lI0A
 > 
 > I would cut this entire subsection from the manuscript to make it shorter (or relegate it to a supplementary section).
 >
@@ -179,24 +191,37 @@ We have incorporated it into our revised manuscript**
 **We believe this section is needed when performing a descriptive analysis on the bioRxiv corpus.
 However, we moved this section to the supplement.**
 
-> 16.) https://hypothes.is/a/N8cKltLrEeuZ-iPc5lrP5g
+> 15.) https://hypothes.is/a/V2wj3NLqEeuZ9idQ44yS4Q
 > 
 > adjusting for recency? i.e. not sampling 2019 preprints? in figure C the line indicates (if I'm interpreting correctly) that overall only 46.55% are published but that's because it includes very recent preprints that haven't had time to be journal published yet. Just be explicit that you are adjusting for recency (i.e. excluding 2019 and newer preprints) when you say that most preprints are eventually published.
 
 **We didn't account for recency when calculating the overall proportions of preprints published. 
 The total mentioned within the publication rate graph considers all preprints in its total.**
 
-> 17.) https://hypothes.is/a/z4r5ztLgEeupmPfOPmlVbw
+> 16.) https://hypothes.is/a/N8cKltLrEeuZ-iPc5lrP5g
 > 
 > text changes relative to the journal published version? You might want to make that more explicit. Text changes alone is not adequately specific in my opinion.
 
 **We agree that text changes was a bit vauge and have updated the title accordingly.**
 
+> 17.) https://hypothes.is/a/z4r5ztLgEeupmPfOPmlVbw
+> think this is insufficient information.
+>
+>It should be more clearly highlighted that the NYTAC is proprietary data and it may require a fee of $150-300 to be paid to access, if a non-member of the Linguistic Data Consortium. To say merely “is available upon request” and nothing else is not quite true to my eyes - please warn that it may require payment to access, depending on one's institutional affiliation (or lack thereof). 
+
+**We have updated text to make the fees accessing NYTAC more appearent.**
+
+```diff
+- Access to the New York Times Annotated Corpus (NYTAC) is available upon request with the Linguistic Data Consortium at [https://catalog.ldc.upenn.edu/LDC2008T19](https://catalog.ldc.upenn.edu/LDC2008T19).
+
++ New York Times Annotated Corpus (NYTAC) can be accessed from the Linguistic Data Consortium at [https://catalog.ldc.upenn.edu/LDC2008T19](https://catalog.ldc.upenn.edu/LDC2008T19) where there may be a \$150 to \$300 fee depending on membership status.
+```
+
 > is using a proprietary data set that charges for access congruent with the PLOS data availability policy?
 >  
 > See: "Please note, if data have been obtained from a third-party source, we require that other researchers would be able to access the data set in the same manner as the authors" https://journals.plos.org/plosone/s/data-availability despite that URL indicating just PLOS ONE, the policy applies to all PLOS journals, unless otherwise noted.
 
-**We believe that this is appropriate with PLOS's data availability policy.**
+**We believe that the NYTAC dataset doesan't violate PLOS's data availability policy.**
 
 
 # Reviewer #2
