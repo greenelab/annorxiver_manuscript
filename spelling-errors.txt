@@ -3,7 +3,7 @@ Bromodomain
 cgreene
 colocalized
 cov
-covid
+COVID
 danich
 dependences
 dnicholson
