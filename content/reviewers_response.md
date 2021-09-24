@@ -23,8 +23,8 @@
 > b) perhaps preprinters are more publishing 'savvy' and want to achieve more impact/citations and thus strive harder to ensure that the eventual journal-published version of their work is open access (reflected in being in PMCOA).
 
 **We appreciate your optimistic viewpoint on our manuscript.
-The increasing amount of open access articles is an interesting point.
-We have updated our discussion to emphasize this point.**
+We agree that 77% of preprint-published pairs found in PMCOA is a surprising discovery.
+We updated our discussion in our manuscript to emphasize this point.**
  
 > If it were my choice I would cut the entire subsection 'Document embeddings derived from bioRxiv reveal fields and subfields'. It is already known that document embeddings can reveal fields and subfields. Being 'preprints' or 'biorxiv preprints' rather than say published journal articles won't change that. I found this section very uninteresting and extremely un-novel. It is descriptive and accurate, but in the context of an already long manuscript, I feel it is unnecessary.
 
@@ -41,7 +41,7 @@ However, we did move this section into our supplement.**
 **Thank you for pointing this fact out.
 We agree that these results highlight a subtle limitation when using PMCOA to train our classifiers.
 We want to point out that our resource has an auto-updater that monthly incorporates new papers posted to PMCOA.
-Over time this problem could be remedied when PMC posts more published articles related to this area.**
+This suggests that over time if PMCOA incorporates more articles related to this example, then the issue will be resolved.**
  
 > Specific comments:
 > 
@@ -64,17 +64,25 @@ Over time this problem could be remedied when PMC posts more published articles 
 **We thank you for the suggested change and have incorporated the following change within our revised manuscript.**
 
 ```diff
-- Preprint repositories by definition do not perform in-depth peer review, which can result in posted preprints containing inconsistent results or conclusions [@doi:10.12688/f1000research.19619.2; @doi:10.1007/s10393-018-1352-3; @doi:10.1038/530265a; @doi:10.1016/j.bpj.2016.06.035]; however, an analysis of preprints posted at the beginning of 2020 revealed that most underwent minor changes as they were published [@doi:10.1101/2021.02.20.432090].
+- Preprint repositories by definition do not perform in-depth peer review, which can result in posted preprints containing inconsistent results or conclusions [...]; however, an analysis of preprints posted at the beginning of 2020 revealed that most underwent minor changes as they were published [...].
 
-+ Preprint repositories by definition do not perform in-depth peer review, which can result in posted preprints containing inconsistent results or conclusions [@doi:10.12688/f1000research.19619.2; @doi:10.1007/s10393-018-1352-3; @doi:10.1038/530265a; @doi:10.1016/j.bpj.2016.06.035]; however, an analysis of preprints posted at the beginning of 2020 revealed that over 50% underwent minor changes in the abstract text as they were published, but over 70% did not change or only had simple rearrangements to panels and tables [@doi:10.1101/2021.02.20.432090].
++ Preprint repositories by definition do not perform in-depth peer review, which can result in posted preprints containing inconsistent results or conclusions [...]; however, an analysis of preprints posted at the beginning of 2020 revealed that over 50% underwent minor changes in the abstract text as they were published, but over 70% did not change or only had simple rearrangements to panels and tables [...].
 ```
 
 > 2.) https://hypothes.is/a/djNirNLcEeu2YxNM5WBxvA
 > 
 >but to clarify, you did remove these from the analysis, right? It would just be good to clarify that. They are easy to identify and should just be removed. I can't see how they would add anything but noise to this analysis. What is the total number of preprints after withdrawn preprints are removed from the sample?
  
-**No.
-We kept these withdrawn preprints within our analysis as the amount wasn't high enough to significantly affect our results.**
+**Initally, we did not remove these preprints from our analysis.
+We decided removeing these preprints from our analysis was a better approach and we updated our text to reflect this change.**
+
+```diff
+- As there were very few withdrawn preprints, we did not treat these as a special case.
+
++ We encountered a total of 72 withdrawn preprints within our snapshot. 
++ After removal, we were left with 97,951 preprints for our downstream analyses.
+```
+
 
 > 3.) https://hypothes.is/a/bmdkpNLeEeuZ0k8oLqyeWQ
 > 
@@ -85,12 +93,12 @@ We kept these withdrawn preprints within our analysis as the amount wasn't high 
 >BTW, I resent calling it a 'closed access' [article?] if the accepted manuscript is fully freely available -- that would seem to give undue primacy to the journal published version. It's an article with different versions - one freely accessible at a repository e.g. PMC, without publisher branding and another behind a paywall at the publisher website with publisher branding
 
 **We agree that 'closed access' may not be appropriate for this description.
-We have changed this section in our manuscript.**
+We have updated this section in our manuscript.**
 
 ```diff
-- PMC articles can be closed access ones from research funded by the NIH appearing after an embargo period or be published under Gold Open Access [@doi:10.1007/s12471-017-1064-2] publishing schemes.
+- PMC articles can be closed access ones from research funded by the NIH appearing after an embargo period or be published under Gold Open Access [...] publishing schemes.
 
-+ Articles appear in PMC as either accepted author manuscripts (Green Open Access) or via open access publishing at the journal (Gold Open Access [@doi:10.1007/s12471-017-1064-2]).
++ Articles appear in PMC as either accepted author manuscripts (Green Open Access) or via open access publishing at the journal (Gold Open Access [...]).
 ```
 
 > 4.) https://hypothes.is/a/-v_PbtLeEeu8Rw8afgzT5g
@@ -100,16 +108,16 @@ We have changed this section in our manuscript.**
 **We have updated our manuscript to take this point into account.**
 
 ```diff
-- Individual journals have the option to fully participate in submitting articles to PMC, selectively participate sending only a few papers to PMC, only submit papers according to NIH's public access policy [@url:https://grants.nih.gov/grants/policy/nihgps/html5/section_8/8.2.2_nih_public_access_policy.htm], or not participate at all.
+- Individual journals have the option to fully participate in submitting articles to PMC, selectively participate sending only a few papers to PMC, only submit papers according to NIH's public access policy [...], or not participate at all.
 
-+ Individual journals have the option to fully participate in submitting articles to PMC, selectively participate sending only a few papers to PMC, only submit papers according to NIH's public access policy [@url:https://grants.nih.gov/grants/policy/nihgps/html5/section_8/8.2.2_nih_public_access_policy.htm], or not participate at all; however, individual articles published with the CC BY license may be incorporated.
++ Individual journals have the option to fully participate in submitting articles to PMC, selectively participate sending only a few papers to PMC, only submit papers according to NIH's public access policy [...], or not participate at all; however, individual articles published with the CC BY license may be incorporated.
 ```
 
 > 5.) https://hypothes.is/a/vekhYNLfEeuxGm9i6MkLqw
 > it's a real pity you chose not to compare preprints to author manuscripts. As your results demonstrated, lots of the word changes were just journal-style related e.g. "figure" -> "fig." . An analysis of just preprints matched to author manuscripts would get more closely and cleanly to what the textual difference between pre-peer-review and post-peer-review (without minor stylistic changes).
 
 **We recognize that author manuscripts have the potential to remove some of the journal-related stylistic changes revealed in our token analysis.
-However, we leave this potential of this analysis for future endeavors.**
+However, we leave this analysis for future endeavors.**
 
 > 6.) https://hypothes.is/a/YkqPKNLgEeucPGc1_W-jzA
 > 
@@ -119,10 +127,9 @@ However, we leave this potential of this analysis for future endeavors.**
 We updated text to fix this typo.**
 
 ```diff
+- This collection contains over 1.8 million articles where 1.5 million of those articles have undergone manual entity tagged by library scientists [...].
 
-- This collection contains over 1.8 million articles where 1.5 million of those articles have undergone manual entity tagged by library scientists [@sandhaus2008new].
-
-+This collection contains over 1.8 million articles where 1.5 million of those articles have undergone manual entity tagging by library scientists [@sandhaus2008new].
++ This collection contains over 1.8 million articles where 1.5 million of those articles have undergone manual entity tagging by library scientists [...].
 ```
 
 > 7.) https://hypothes.is/a/Bsv68tLkEeugHEfCZMUGag
@@ -139,8 +146,11 @@ We updated text to fix this typo.**
 **We appreciate you point out this interesting fact, and we have updated our discussion accordingly.**
 
 ```diff
-+ Over 77% of bioRxiv preprints that were published ended up within Pubmed Central's Open Access Corpus (PMCOA) which is a significant improvement compared to the earlier years [@doi:10.7287/peerj.preprints.3520v1].
-+ This highlights a beneficial shift towards more preprint authors publishing their work in an open access format.
+- The majority of research involving bioRxiv focuses on the metadata of preprints; however, the language contained within these preprints has not previously been systematically examined.
+
++ Over 77% of bioRxiv preprints with a corresponding publication in our snapshot were successfully detected within Pubmed Central's Open Access Corpus (PMCOA).
++ This suggests that most work from groups participating in the preprint ecosystem is now available in final form for literature mining and other applications.
++ Most research on bioRxiv preprints has examined their metadata; we examine the text content as well.
 ```
 
 > 8.) https://hypothes.is/a/aWmt3tLlEeuh3M-Ku8ThvQ
@@ -164,7 +174,7 @@ We updated text to fix this typo.**
 > 
 > oh okay, you did actually do that. Nice :)
 
-**We are glad that you like our document matching solution.**
+**We are glad that you liked our document matching solution.**
 
 > 11.) https://hypothes.is/a/dhGbgNLnEeuYkkfUNqKwgA
 > 
@@ -173,10 +183,9 @@ We updated text to fix this typo.**
 **We agree that this line is vague and have updated our text to be more explicit.**
 
 ```diff
+- There were a limited number of cases in which authors appeared to post preprints after the publication date, which results in preprints receiving a negative time difference, as previously reported [...]
 
-- There were a limited number of cases in which authors appeared to post preprints after the publication date, which results in preprints receiving a negative time difference, as previously reported [@url:https://medium.com/@OmnesRes/the-biorxiv-wall-of-shame-aa3d9cfc4cd7]
-
-+ We encountered 123 cases where the preprint posting date was subsequent to the publication date, resulting in a negative time difference, as previously reported [@url:https://medium.com/@OmnesRes/the-biorxiv-wall-of-shame-aa3d9cfc4cd7].
++ We encountered 123 cases where the preprint posting date was subsequent to the publication date, resulting in a negative time difference, as previously reported [...].
 ```
 
 > 12.) https://hypothes.is/a/DzrzGtLtEeuJlcdOlUfUBA
@@ -195,7 +204,7 @@ We have incorporated it into our manuscript.**
 ```diff
 - We developed a web application that places any bioRxiv or medRxiv preprint into the overall document landscape and identifies similar papers and journals.
 
-+ We developed a web application that places any bioRxiv or medRxiv preprint into the overall document landscape and identifies topically similar papers and journals (similar to [@doi:10.5195/jmla.2019.598]).
++ We developed a web application that places any bioRxiv or medRxiv preprint into the overall document landscape and identifies topically similar papers and journals (similar to [..]).
 ```
 
 > 13.) https://hypothes.is/a/eJ7-DtLpEeuh0A8OL8WAWw
@@ -218,7 +227,7 @@ We have incorporated it into our manuscript.**
 > 
 > adjusting for recency? i.e. not sampling 2019 preprints? in figure C the line indicates (if I'm interpreting correctly) that overall only 46.55% are published but that's because it includes very recent preprints that haven't had time to be journal published yet. Just be explicit that you are adjusting for recency (i.e. excluding 2019 and newer preprints) when you say that most preprints are eventually published.
 
-**We included all preprints (from 2013 to 2019 and newer) posted onto biorxiv when calculating the overall proportion of preprints published.**
+**We included all preprints (from 2013 to 2019/early 2020) posted onto biorxiv when calculating this proportion.**
 
 > 16.) https://hypothes.is/a/N8cKltLrEeuZ-iPc5lrP5g
 > 
@@ -262,16 +271,14 @@ We have incorporated it into our manuscript.**
 > 
 > Particularly, I would be very curious about the discussion, or main text commenting on why the authors created a custom scheme of classifying documents and their similarity based on vectors of words instead of using existing approaches that provide vectors of documents - including doc2vec that is included in the software package that the authors used for word2vec. Do the results change according to the approach?
 
-**Our 'Document embeddings derived from bioRxiv reveal fields and subfields' section was part of our motivation for using a linear approach to generate document embeddings.
-We wanted to maximize the interpretability of the document embedding space when characterizing preprints within bioRxiv.
-We provided word clouds generated from the first principal component to see the differences between our linear approach and doc2vec visually.
-Following this analysis, we sought to measure the practicality of this embedding space by extending to other applications such as preprint published matching and journal recommendations.
-Conversely, we noticed that Doc2Vec had a positive performance outcome for our journal recommendation approach.
-We first evaluated these two models using our training dataset, which randomly held out published articles and then predicted this held-out set.
-Our subsequent evaluation was comparing these two models for our test set, which consisted of using bioRxiv preprints to predict the journal that published their corresponding published counterparts.
-We provided the bar chart visualization below.
-Regarding our test set, Doc2vec outperforms our approach for the centroid model but performs evenly for our paper-paper model.
-**
+**Our goal was to maximize the interpretability of the document embedding space when characterizing preprints within the bioRxiv landscape.
+Neural networks are challenging to interpret due to their non-linear activation layers.
+We empirically show this challenge by providing word clouds generated from the first principal component between our approach and doc2vec.
+Our approach teases out quantitative vs. cellular biology concepts while Doc2Vec is hard to discern. 
+Conversely, we noticed that Doc2Vec significantly improves our centroid classifier for our journal recommendation analysis.
+We discovered this improvement by first evaluating Doc2Vec against our linear approach by randomly holding out published articles from our dataset and using the rest to predict the holdout set.
+Our subsequent evaluation was comparing these two models against our test set, which consisted of using bioRxiv preprints to predict the journal that published their corresponding published counterparts.
+Overall, methods such as Doc2Vec does improve performance at the cost of interpretability.**
 
 **Word2Vec 1st Prinicpal Component WordCloud**
 ![Word2vec](https://raw.githubusercontent.com/danich1/annorxiver/3bcac4ca2e9249359361525a7e5f3ae36c71d4a5/biorxiv/pca_association_experiment/output/word_pca_similarity/figure_pieces/pca_01_cossim_word_cloud.png)
@@ -285,29 +292,27 @@ Regarding our test set, Doc2vec outperforms our approach for the centroid model 
 
 > Further, word2vec often seems to work even better when first trained on a larger corpus before then being applied or transferred to more specialized corpora. Personally, I also made this experience when following an example tutorial provided by the creators of the package that the authors used - which too suggests starting with existing pre-trained models. While the more restricted training done by the authors might have reduced the sensitivity of their approach (… which would likely only strengthen their claims), I would be curious whether there was an additional rationale for avoiding the former strategy that might be missed by readers (e.g.: different meanings such as "abstract" that has different meanings for scientists and non-scientists?). 
  
-**We chose to use a randomly initialized model to take an unbiased approach for generating our document embedding space.
-Through this approach, preprints are the only main factor when analyzing the linguistic variation contained within each preprint embedding.**
+**We chose to use an unbiased approach for training our word2vec model as our goal was to preseve latent definitions contained within preprints.
+For example, under a pretrained model the word paper could have a preexisting context relating to newspapers or wikipedia articles, rather than a conext relating to scientific articles.**
 
 > Likewise, I'm wondering why the authors used a Euclidean distance for word embeddings instead of a Cosine similarity (which if I recall correctly would also be default in the similarity module of the package which the authors used). Cosine similarity should also allow the authors to make statements about the similarity of words without imposing assumptions on similar text lengths or usage frequencies.
 
-**We are using cosine similarity within our principal component analysis (Figure 2).
-We used Euclidean distance for our missing link analysis (Figure 3) to highlight that the difference between preprints-published pairs and preprints with a random pair remains regardless of a weaker approach.
-Regarding our website, we found that using a euclidean distance version of cosine similarity improved our results.
-We are updating our web resource to reflect these new changes.
-**
+**We are using cosine similarity within our linguistic variation analysis.
+Regarding our missing preprint publish link analysis, pure euclidean distance has the same performance as cosing similarity.
+Under this task, preprints and their published counterparts have significantly lower distances regardless of the distance metric used (comparison figure provided below).**
+
+![Distance comparison](https://github.com/greenelab/annorxiver/blob/ff456c5c5cb7cddd16400f6e5b74422e1b33d349/biorxiv/article_distances/output/figures/distance_metrics_top_k_precision.png)
 
 > Similarly, I was wondering how the "journal-based" approach, which the authors mention briefly against the influence of high publication frequency journals, was implemented. Further, if it could have been avoided by avoiding the Euclidean space.
-
-**Our journal-based approach is still required as cosine/euclidean distance only improves journal matching, whereas the problem of journal overrepresentation will persist regardless of the change.
-We handle the issue by calculating a centroid for each journal.
-We calculate the centroid by taking the average of every published document present within each journal.
-This way, every journal has an equal representation for our classifier.**
-
+>
 > The mapping of similarity seems to be based on individual pairs of text and as such it would seem vulnerable of shifting distributions (e.g.: if published articles were somewhat different from preprints, as implied in Figure 1A). I would suspect that the authors would be able to improve their performance even further by doing global matching between many pairs (… again see their adherence to a weaker approach as something that ultimately strengthens their findings). Again, a comment on the rationale of their chosen approach could convey additional non-evident considerations.
 
-**We would like to confirm that we performed a global matching approach when finding missing preprint-published pairs within our missing link analysis (Figure 3).
-In regards to our website, our classifier compares a query document with all other documents within PMCOA.
-This analysis could be considered a global matching approach.**
+**Our journal-based approach is still required as cosine/euclidean distance does not combat the issue of journal overrepresentation.
+We control for this issue by calculating a centroid for each journal.
+This centroid is constructed by taking the average of every published document present within each journal.
+This way, every journal will have an equal representation for our classifier.
+The shift in distribution could affect our paper-paper classifier which is why we provided top 10 results instead of best paper.
+Another way to combat this issue is to use a technique called orthogonal procrustes, which is a linear algebra techique designed to align two vector spaces.**
 
 > I love the web application!
 
@@ -320,27 +325,26 @@ Our frequency counts are sufficiently large that all calculated p-values are app
 
 > I would welcome a supplemental analysis, that removes single letters and special characters from the analysis of Figure 1B-E as they might change the baseline.
 
-**We have added the results of this request to the supplement.**
+**We have added this analysis to our supplement.**
 
 > The word cloud of Figure 2B, C is somewhat nice as it shows the main words. However, this information could also be conveyed in the text. Would personally favor to quantitatively see loadings of first few principal components for different terms.
 
-**We have provided a table for the following request in our supplemental section.**
+**We have provided a table in our supplemental section.**
 
 > The definition of "True matches" could be more explicit in within the main text as the preceding figure 3A could for some people set up a different anticipation.
 
 **We agree this term is too vague, and we have updated the text to be more explicit.**
 
 ```diff
--Approximately 98% of our 200 pairs with an embedding distance in the 0-25th and 25th-50th percentile bins were scored as true matches (Figure 3B).
+- Approximately 98% of our 200 pairs with an embedding distance in the 0-25th and 25th-50th percentile bins were scored as true matches (Figure 3B).
 
-+Approximately 98% of our 200 pairs with an embedding distance in the 0-25th and 25th-50th percentile bins were successfully matched with their published counterpart (Figure 2B).
++ Approximately 98% of our 200 pairs with an embedding distance in the 0-25th and 25th-50th percentile bins were successfully matched with their published counterpart (Figure 2B)
 ```
 
 > The association given in Figure 4A seems to mainly stem from a few papers with large distances. Would an association be present when using the rank-based Spearman correlation instead of a linear regression? Would, for visualization, a logarithmic relationship describe the data better than a linear one?
 
 **We believe there is a misconception about our figure. 
-This figure depicts the median half-life publication time for each preprint category within bioRxiv.
-**
+This figure depicts the median half-life publication time for each preprint category within bioRxiv.**
 
 > I believe that the analysis of Figure 4 B is quite clever as it would seem to address the thinkable concern of preprints with no delay and changes mainly stemming from those manuscripts that were already essentially accepted by manuscripts at the time of posting.
 
@@ -353,14 +357,13 @@ This figure depicts the median half-life publication time for each preprint cate
 > Other:
 > 
 > Labels within figures could often be increased in size to improve readability.
-
 **We have updated the size of our labels for this manuscript.**
+
  
 > The methods section briefly comments on some ambiguous cases for the matching. Would these cases be the result of modifications that defy a 1:1 mapping, e.g.: multiple stories getting fused, or one story getting split?
 
-**Some of these ambiguous cases involve abstract or main text changes.
-Other cases result in drastically different papers that share similar research content but are entirely different overall.
-We provide a table of the ambiguous cases we encountered below.**
+**Some of these ambiguous cases involve abstract or main text changes, while other cases result in drastically different papers that share similar research content.
+We provide a table of these ambiguous cases below.**
 
 | biorxiv_doi_url                           | pmcid_url                                   | 
 |-------------------------------------------|---------------------------------------------| 
@@ -383,15 +386,13 @@ You can find a umap version of bioRxiv in [this notebook](https://github.com/gre
 
 **We accomplished this idea with our web application as we provided a 2D visualization of PMC's open-access corpus.
 This visualization uses SAUCIE, an autoencoder designed for RNA-seq, instead of UMAP or PCA to generate the landscape.
-We also constructed an auto-updater pipeline for this tool, incorporating new papers into our website every month.
-We updated our landscape visualization with every update.**
+We also constructed an auto-updater pipeline for this tool, incorporating new papers into our website and visualization every month.**
 
 > Are the few publications in Figure 2A, which lie outside of the space that is generally occupied by their respective article categories, somewhat different when doing a superficial manual inspection (e.g.: misclassified by authors, or interdisciplinary research)
 
-**We sampled a select number of preprints from the neuroscience and bioinformatic category that were closer to the left side of the figure (PC1 <= -2.5 and -2<PC2<2).
+**We sampled a select number of preprints from the neuroscience and bioinformatic category that were closer to the left side of the figure (PC1 <= -2.5 and -2 < PC2 < 2).
 We found that these outliers mainly consisted of interdisciplinary research (e.g., a bioinformatic paper analyzing fluorescence micrographs or a cell biology approach used to explore a neuroscience concept).
-We provide a table below of preprint dois that fall into this situation.
-**
+We provide a table below of preprint dois that fall into this situation.**
 
 ![PCA plot](https://raw.githubusercontent.com/greenelab/annorxiver/51e602d9c4863e1314ed5f01bc483901894ed705/biorxiv/pca_association_experiment/output/pca_plots/svg_files/scatterplot_files/pca01_v_pca02_reversed.svg)
 
@@ -413,18 +414,19 @@ We provide a table below of preprint dois that fall into this situation.
 **We have updated the text to be more explicit.**
 
 ```diff
-- Examining the top five and bottom five preprints within the systems biology field reinforces PC1's dichotomous theme (Table {@tbl:five_pc1_table}).
+- Examining the top five and bottom five preprints within the systems biology field reinforces PC1's dichotomous theme (Table ...).
 
-+ Examining the top five highest-scoring and bottom five lowest-scoring systems biology preprints along PC1 reinforces its dichotomous theme (Supplementary Table {@tbl:five_pc1_table}).
++ Examining the top five highest-scoring and bottom five lowest-scoring systems biology preprints along PC1 reinforces its dichotomous theme (Supplementary Table ...).
 ```
 
 > The vector representation of words and documents should allow the authors to quantify shifts that appear between preprints and published manuscripts. Though not necessary from my perspective, many interesting analyses could be done in vector space (e.g.: does language get more positive, or start to refer to more established concepts…?). Maybe there is something small that could be done. Alternatively, the discussion could possibly be extended to demonstrate the implications of vector space, and thus their own work, for future research into preprints and peer review.
 
 **Thank you for pointing out potential extensions to our vector space.
-We incorporated these suggestions into our discussion as potential avenues of future work.**
+We incorporated these suggestions into our discussion/conclusion section.**
 
 ```diff
-+ Along with anaylyzing lingusitic variation, future work could utilize this embedding space to quantify sentiment trends such as authors writing preprints with a more positive language over time.
++ This embedding space could also be used to quantify sentiment trends or other linguistic features.
++ Furthermore, methodologies for uncovering latent scientific knowledge [...] may be applicable in this embedding space.
 ```
 
 > Along above, the discussion could be extended toward prior uses of Word2vec in the studies of science, such as Tshitoyan et al. Nature 2019.
@@ -432,7 +434,7 @@ We incorporated these suggestions into our discussion as potential avenues of fu
 **We have added this citation into our discussion.**
 
 ```diff
-+ Furthermore, future applications similar to [@doi:10.1038/s41586-019-1335-8] could be applied to this embedding space.
++ Furthermore, methodologies for uncovering latent scientific knowledge [...] may be applicable in this embedding space.
 ```
 
 > Repeating the link to the web app in the main text would be convenient.
@@ -455,21 +457,18 @@ However, this positive slope is not significant enough to include in our manuscr
 > 
 > The method for discovering unannotated preprint-publication relationships is very neat, but I imagine it's rather unwieldy to match a novel publication against the full-text bioRxiv corpus in downstream applications (e.g., bioRxiv's automation)--could this be optimized by reducing the search space to preprints that share some or all of the same authors, within a reasonable date range, and/or only considering paper/preprint metadata (e.g., abstract, title, references)? Such an approach might also enable annotation of preprints that are eventually published as non-OA peer reviewed articles for which such metadata are available.
 
-**We can identify known preprint-published pairs using abstracts alone.
-We generated document embeddings using abstracts alone for every preprint and published article.
-We calculated distances between known preprint-published pairs and preprints with a randomly sampled article from the same journal.
-We generated receiver operating curves by treating known publication pairs as true positives and preprints with a randomly sampled article as true negatives.
-We found that our abstracts only approach achieved an AUROC score of 0.997, while our full-text model achieved an AUROC of 0.994 (curves figure generated below).
-This slight increase in performance suggests that abstracts alone can suffice when matching preprints with their corresponding publication pair.**
+**It is possible to identify preprint-published pairs using abstracts alone.
+We generated document embeddings using solely abstracts and calculated distances between known preprint-published pairs and preprints with a randomly sampled article from the same journal.
+Looking at the precision of the top k predictions for both approaches, we found that abstracts performed slightly better than full text (figure produced below).
+This suggests that abstracts can be used to establish preprint and published links.**
 
-![Abstracts vs Full Text](https://raw.githubusercontent.com/danich1/annorxiver/7e8f37f0fbfe072304ee2b72dd10f4764adf43b9/biorxiv/article_distances/output/figures/abstract_vs_full_text_roc.png)
+![Abstracts vs Full Text](https://raw.githubusercontent.com/greenelab/annorxiver/ff456c5c5cb7cddd16400f6e5b74422e1b33d349/biorxiv/article_distances/output/figures/abstract_vs_full_text_top_k_precision.png)
  
 > Section "Building Classifiers to Detect Linguistically Similar Journal Venues and Published Articles":
 > 
 > "Specific journals publish articles in a focused topic area, while others publish articles that cover many topics. Likewise, some journals have a publication rate of at most hundreds of papers per year, while others publish at a rate of at least ten thousand papers per year. Accounting for these characteristics, we designed two approaches - one centered on manuscripts and another centered on journals."  << this could use some unpacking and/or reorganizing of details found later in this section--as I understand it, the variation in journals' topical breadth motivates the development of a manuscript-focused classifier (so that topically similar papers appearing in generalist journals do not get obscured) and the variation in journals' publication rates motivates a journal-focused classifier (so that high-output journals do not overwhelm more selective or less popular journals).
 
-**We recognize that this section is a bit dense.
-We have updated our manuscript to unpack this explanation, so the rationale for our models is a bit more lucid.**
+**We recognize that this section is a bit dense and have updated our manuscript to unpack this explanation.**
 
 ```diff
 + Training models to identify which journal publishes similar articles is challenging as not all journals are the same. 
@@ -484,18 +483,17 @@ We have updated our manuscript to unpack this explanation, so the rationale for 
 
 > I'm also curious how often these two classifiers agree--are the top matching papers typically found in the top matching journals? In cases where the two classifiers tend to disagree, are there any common characteristics of the preprints the application is trying to classify?
 
-**We evaluated our classifier agreement by calculating the overlap coefficient between our journal centroid classifier and our paper-paper classifier.
-This coefficient measures the overlap between two sets, which is recommendations in this context.
-We randomly sampled 1700 known preprint-published pairs from our golden set.
+**We evaluated our classifier agreement by calculating the overlap coefficient, which is designed to measure the overlap between two sets.
+We randomly sampled 1700 out of 20232 known preprint-published pairs from our test dataset.
 We generated ten recommendations from our centroid classifier and ten unique journal recommendations from our paper-paper model for every sampled pair. 
-Our average overlap across all pairs was 0.21.
+This model achieved an average overlap coefficient of 0.21.
 Along with this calculation, we generated two random baselines for both our models.
 Our first baseline was designed for our journal centroid model.
 We subsetted our preprint-published pairs to contain a distinct listing of each unique journal, then randomly sampled ten journals without replacement for each preprint-published pair.
 We compared this random listing against our original journal centroid recommendation list and achieved an average score of 0.0184.
 Our other baseline was designed for our paper-paper classifier.
-We randomly sampled without filtering ten unique journals for each preprint-published pair and compared this sampling to the original paper-paper recommendation list. 
-This approach achieved an average overlap coefficient of 0.009.
+We randomly sampled without filtering ten unique journals for each preprint-published pair and compared this sample to the original paper-paper recommendation list. 
+This baseline resulted in an average overlap coefficient of 0.009.
 Overall, our approach has better recommendation agreement compared to our randomly sampled baseline.**
 
 > Minor Comments (by section):
@@ -506,9 +504,9 @@ Overall, our approach has better recommendation agreement compared to our random
 
 **We have added this reference to our manuscript.**
 ```diff
-- Textual analysis uses linguistic, statistical, and machine learning techniques to analyze and extract information from text [@doi:10.1111/1475-679X.12123].
+- Textual analysis uses linguistic, statistical, and machine learning techniques to analyze and extract information from text [...].
 
-+ Textual analysis uses linguistic, statistical, and machine learning techniques to analyze and extract information from text [@doi:10.1111/1475-679X.12123; @doi:10.1101/333922].
++ Textual analysis uses linguistic, statistical, and machine learning techniques to analyze and extract information from text [...].
 ```
 
 > Section "Comparing Corpora":
@@ -550,8 +548,7 @@ We have carefully edited our manuscript to make sure "tokens" was consistently u
 > Fig. 4: can the longer publication times for scicomm/education papers (Fig 4a) be explained by a tendency to go through more versions (Fig 4b)?
 
 **We cannot accurately answer this question as most published articles in this category aren't contained in Pubmed Central's Open Access Corpus (PMCOA).
-However, the preprints that do have a matching counterpart in PMCOA are in our supplemental files.
-**
+However, the preprints that do have a matching counterpart in PMCOA are in our supplemental files.**
 
 > It might be worthwhile to explore what happens post-publication to papers that go through more preprint revisions and take longer to publish, as this could have practical implications for authors as they decide when/if to submit/revise their preprints. Do these papers ultimately receive more citations, end up in journals with higher impact factors, or receive more attention on social media?
 
