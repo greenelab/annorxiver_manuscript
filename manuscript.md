@@ -8,7 +8,7 @@ author-meta:
 - Casey S. Greene
 bibliography:
 - content/manual-references.json
-date-meta: '2021-09-22'
+date-meta: '2021-09-25'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2021-09-22" />
+  <meta name="dc.date" content="2021-09-25" />
 
-  <meta name="citation_publication_date" content="2021-09-22" />
+  <meta name="citation_publication_date" content="2021-09-25" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -109,11 +109,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/bc3fc5d5b37cd47e19fe728ec7ea8a06426c70cd/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/8525a05405c457e2b20e5b383c986cb8d66752f7/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/bc3fc5d5b37cd47e19fe728ec7ea8a06426c70cd/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8525a05405c457e2b20e5b383c986cb8d66752f7/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/bc3fc5d5b37cd47e19fe728ec7ea8a06426c70cd/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8525a05405c457e2b20e5b383c986cb8d66752f7/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -147,10 +147,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/bc3fc5d5b37cd47e19fe728ec7ea8a06426c70cd/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/8525a05405c457e2b20e5b383c986cb8d66752f7/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@bc3fc5d](https://github.com/greenelab/annorxiver_manuscript/tree/bc3fc5d5b37cd47e19fe728ec7ea8a06426c70cd)
-on September 22, 2021.
+from [greenelab/annorxiver_manuscript@8525a05](https://github.com/greenelab/annorxiver_manuscript/tree/8525a05405c457e2b20e5b383c986cb8d66752f7)
+on September 25, 2021.
 </em></small>
 
 ## Authors
@@ -344,17 +344,17 @@ The optimal number of tokens used to calculate the KL divergence is unknown, so 
 
 ### Constructing a Document Representation for Life Sciences Text
 
-We sought to build a language model to quantify linguistic similarities of biomedical preprint and articles. 
-Word2vec is a suite of neural networks designed to model linguistic features of words based on their appearance in the text.
-These models are trained to either predict a word based on its sentence context, called a continuous bag of words (CBOW) model, or predict the context based on a given word, called a skipgram model [@arxiv:1301.3781].
-Through these prediction tasks, both networks learn latent linguistic features that can be used for downstream tasks, such as identifying similar words.
+We sought to build a language model to quantify linguistic similarities of biomedical preprints and articles. 
+Word2vec is a suite of neural networks designed to model linguistic features of tokens based on their appearance in the text.
+These models are trained to either predict a token based on its sentence context, called a continuous bag of words (CBOW) model, or predict the context based on a given token, called a skipgram model [@arxiv:1301.3781].
+Through these prediction tasks, both networks learn latent linguistic features which are helpful for downstream tasks, such as identifying similar tokens.
 We used gensim [@rehurek_lrec] (version 3.8.1) to train a CBOW  [@arxiv:1301.3781] model over all the main text within each preprint in the bioRxiv corpus.
-Determining the best number of dimensions for word embeddings can be a non-trivial task; however, it has been shown that optimal performance is between 100-1000 dimensions [@arxiv:1812.04224].
-We chose to train the CBOW model using 300 hidden nodes, a batch size of 10000 words, and for 20 epochs.
+Determining the best number of dimensions for token embeddings can be a non-trivial task; however, it has been shown that optimal performance is between 100-1000 dimensions [@arxiv:1812.04224].
+We chose to train the CBOW model using 300 hidden nodes, a batch size of 10000 tokens, and for 20 epochs.
 We set a fixed random seed and used gensim's default settings for all other hyperparameters.
 Once trained, every token present within the CBOW model is associated with a dense vector representing latent features captured by the network.
-We used these word vectors to generate a document representation for every article within the bioRxiv and PMCOA corpora.
-For each document, we used spaCy to lemmatize each token and then took the average of every lemmatized token present within the CBOW model and the individual document [@arxiv:1405.4053].
+We used these token vectors to generate a document representation for every article within the bioRxiv and PMCOA corpora.
+We used spaCy to lemmatize each token for each document and then took the average of every lemmatized token present within the CBOW model and the individual document [@arxiv:1405.4053].
 Any token present within the document but not in the CBOW model is ignored during this calculation process.
 
 ### Visualizing and Characterizing Preprint Representations
@@ -362,12 +362,12 @@ Any token present within the document but not in the CBOW model is ignored durin
 We sought to visualize the landscape of preprints and determine the extent to which their representation as document vectors corresponded to author-supplied document labels.
 We used principal component analysis (PCA) [@doi:10.1111/1467-9868.00196] to project bioRxiv document vectors into a low-dimensional space.
 We trained this model using scikit-learn's [@scikit-learn] implementation of a randomized solver [@arxiv:0909.4061] with a random seed of 100, an output of 50 principal components (PCs), and default settings for all other hyperparameters.
-After training the model, every preprint within the bioRxiv corpus is assigned a score for each generated PC.
-We sought to uncover concepts captured the generated PCs and used the cosine similarity metric to examine these concepts.
+After training the model, every preprint within the bioRxiv corpus receives a score for each generated PC.
+We sought to uncover concepts captured within generated PCs and used the cosine similarity metric to examine these concepts.
 This metric takes two vectors as input and outputs a score between -1 (most dissimilar) and 1 (most similar).
 We used this metric to score the similarity between all generated PCs and every token within our CBOW model for our use case.
 We report the top 100 positive and negative scoring tokens as word clouds.
-The size of each word corresponds to the magnitude of similarity, and color represents positive (orange) or negative (blue) association.
+The size of each word corresponds to the magnitude of similarity, and color represents a positive (orange) or negative (blue) association.
 
 ### Discovering Unannotated Preprint-Publication Relationships
 
@@ -378,34 +378,35 @@ Furthermore, if the authors do not report the publication to bioRxiv, the prepri
 We hypothesize that close proximity in the document embedding space could match preprints with their corresponding published version. 
 If this finding holds, we could use this embedding space to fill in links missed by existing automated processes.
 We used the subset of paper-preprint pairs annotated in CrossRef as described above to calculate the distribution of available preprint to published distances.
-This distribution was calculated by taking the Euclidean distance between the preprint's embedding coordinates and the coordinates of its corresponding published version.
+We calculated this distribution by taking the Euclidean distance between the preprint's embedding coordinates and the coordinates of its corresponding published version.
 We also calculated a background distribution, which consisted of the distance between each preprint with an annotated publication and a randomly selected article from the same journal.
 We compared both distributions to determine if there was a difference between both groups as a significant difference would indicate that this embedding method can parse preprint-published pairs apart.
-Following the comparison of the two distributions, we calculated distances between preprints without a published version link with PMCOA articles that weren't matched with a corresponding preprint.
+After comparing the two distributions, we calculated distances between preprints without a published version link with PMCOA articles that weren't matched with a corresponding preprint.
 We filtered any potential links with distances greater than the minimum value of the background distribution as we considered these pairs to be true negatives.
 Lastly, we binned the remaining pairs based on percentiles from the annotated pairs distribution at the [0,25th percentile), [25th percentile, 50th percentile), [50th percentile, 75th percentile), and [75th percentile, minimum background distance).
 We randomly sampled 50 articles from each bin and shuffled these four sets to produce a list of 200 potential preprint-published pairs with a randomized order.
 We supplied these pairs to two co-authors to manually determine if each link between a preprint and a putative matched version was correct or incorrect.
 After the curation process, we encountered eight disagreements between the reviewers.
-We supplied these pairs to a third scientist, who carefully reviewed each case and made a final determination.
+We supplied these pairs to a third scientist, who carefully reviewed each case and made a final decision.
 Using this curated set, we evaluated the extent to which distance in the embedding space revealed valid but unannotated links between preprints and their published versions.
 
 ### Measuring Time Duration for Preprint Publication Process
 
-Preprints that are published can take varying amounts of time to be published.
+Preprints can take varying amounts of time to be published.
 We sought to measure the time required for preprints to be published in the peer-reviewed literature and compared this time measurement across author-selected preprint categories as well as individual preprints.
 First, we queried bioRxiv's application programming interface (API) to obtain the date a preprint was posted onto bioRxiv as well as the date a preprint was accepted for publication.
-We measured time elapsed as the difference between the date at which a preprint was first posted on bioRxiv and its publication date.
-Along with calculating the amount of time elapsed, we also recorded the number of different preprint versions posted onto bioRxiv.
+We did not include preprint matches found by our paper matching approach (see 'Discovering Unannotated Preprint-Publication Relationships').
+We measured time elapsed as the difference between the date a preprint was first posted on bioRxiv and its publication date.
+Along with calculating the time elapsed, we also recorded the number of different preprint versions posted onto bioRxiv.
 
-Using this captured data, we used the Kaplan-Meier estimator [@doi:10.4103/0974-7788.76794] via the KaplanMeierFitter function from the lifelines [@doi:10.5281/zenodo.4136578] (version 0.25.6) python package to calculate the half-life of preprints across all preprint categories within bioRxiv.
+We used this captured data to apply the Kaplan-Meier estimator [@doi:10.4103/0974-7788.76794] via the KaplanMeierFitter function from the lifelines [@doi:10.5281/zenodo.4136578] (version 0.25.6) python package to calculate the half-life of preprints across all preprint categories within bioRxiv.
 We considered survival events as preprints that have yet to be published.
-There were a limited number of cases in which authors appeared to post preprints after the publication date, which results in preprints receiving a negative time difference, as previously reported [@url:https://medium.com/@OmnesRes/the-biorxiv-wall-of-shame-aa3d9cfc4cd7].
+We encountered 123 cases where the preprint posting date was subsequent to the publication date, resulting in a negative time difference, as previously reported [@url:https://medium.com/@OmnesRes/the-biorxiv-wall-of-shame-aa3d9cfc4cd7].
 We removed these preprints for this analysis as they were incompatible with the rules of the bioRxiv repository.
 
-Following our half-life calculation, we measured the textual difference between preprints and their corresponding published version by calculating the Euclidean distance for their respective embedding representation.
+We measured the textual difference between preprints and their corresponding published version after our half-life calculation by calculating the Euclidean distance for their respective embedding representation.
 This metric can be difficult to understand within the context of textual differences, so we sought to contextualize the meaning of a distance unit.
-We accomplish this by first randomly sampled with replacement a pair of preprints from the Bioinformatics topic area as this was well represented within bioRxiv and contains a diverse set of research articles.
+We first randomly sampled with replacement a pair of preprints from the Bioinformatics topic area as this was well represented within bioRxiv and contains a diverse set of research articles.
 Next, we calculated the distance between two preprints 1000 times and reported the mean.
 We repeated the above procedure using every preprint within bioRxiv as a whole.
 These two means serve as normalized benchmarks to compare against as distance units are only meaningful when compared to other distances within the same space.
@@ -416,44 +417,51 @@ We visualize our version count regression model as a violin plot and our documen
 
 ### Building Classifiers to Detect Linguistically Similar Journal Venues and Published Articles
 
-Preprints are more likely to be published in journals that contained similar content to work in question.
+Preprints are more likely to be published in journals that publish articles with similar content.
 We assessed this claim by building classifiers based on document and journal representations.
 First, we removed all journals that had fewer than 100 papers in the PMC corpus.
 We held our preprint-published subset (see above section 'Mapping bioRxiv preprints to their published counterparts') and treated it as a gold standard test set.
 We used the remainder of the PMCOA corpus for training and initial evaluation for our models.
 
-Specific journals publish articles in a focused topic area, while others publish articles that cover many topics.
-Likewise, some journals have a publication rate of at most hundreds of papers per year, while others publish at a rate of at least ten thousand papers per year.
-Accounting for these characteristics, we designed two approaches - one centered on manuscripts and another centered on journals.
+Training models to identify which journal publishes similar articles is challenging as not all journals are the same. 
+Some journals have a publication rate of at most hundreds of papers per year, while others publish at a rate of at least ten thousand papers per year.
+Furthermore, some journals focus on publishing articles within a concentrated topic area, while others cover many dispersive topics.
+Therefore, we designed two approaches to account for these characteristics.
+Our first approach focuses on articles that account for a journal's variation of publication topics.
+This approach allows for topically similar papers to be retrieved independently of their respective journal.
+Our second approach is centered on journals to account for varying publication rates.
+This approach allows more selective or less popular journals to have equal representation to their high publishing counterparts.
 
-We identified manuscripts that were most similar to the preprint query for the manuscript-based approach and evaluated where these documents were published.
+Our article-based approach identifies most similar manuscripts to the preprint query, and we evaluated the journals that published these identified manuscripts.
 We embedded each query article into the space defined by the word2vec model (see above section 'Constructing a Document Representation for Life Sciences Text').
-We selected manuscripts close to the query via Euclidean distance in the embedding space.
-Once identified, we return the journal in which these articles were published.
-We also return the articles that led to each journal being reported as this approach allows for journals that frequently publish papers to engulf our results.
+Once embedded, we normalized each article into unit vectors and selected articles close to the query via Euclidean distance in the embedding space.
+This normalization step allows our classifier to provide the same rankings as the cosine distance metric.
+Once identified, we return articles along with journals that published these identified articles.
 
-We constructed a journal-based approach to accompany the manuscript-based process to account for the overrepresentation of these high publishing frequency journals.
+We constructed a journal-based approach to accompany the article-based classifier while accounting for the overrepresentation of these high publishing frequency journals.
 We identified the most similar journals for this approach by constructing a journal representation in the same embedding space.
 We computed this representation by taking the average embedding of all published papers within a given journal.
-We then projected a query article into the same space and returned journals close to the query. 
+We then projected a query article into the same space and returned journals closest to the query using the same distance calculation described above. 
 
 Both models were constructed using the scikit-learn k-Nearest Neighbors implementation [@arXiv:1201.0490] with the number of neighbors set to 10 as this is an appropriate number for our use case.
 We consider a prediction to be a true positive if the correct journal appears within our reported list of neighbors and evaluate our performance using 10-fold cross-validation on the training set along with test set evaluation.
 
 ### Web Application for Discovering Similar Preprints and Journals
 
-We developed a web application that places any bioRxiv or medRxiv preprint into the overall document landscape and identifies similar papers and journals.
-The application downloads a pdf version of any preprint hosted on the bioRxiv or medRxiv server uses PyMuPDF [@url:https://pymupdf.readthedocs.io/en/latest/intro.html] to extract text from the downloaded pdf and feeds the extracted text into our CBOW model to construct a document embedding representation.
-We pass this representation onto our journal and manuscript search to identify journals based on the ten closest neighbors of individual papers and journal centroids.
+We developed a web application that places any bioRxiv or medRxiv preprint into the overall document landscape and identifies topically similar papers and journals (similar to [@doi:10.5195/jmla.2019.598]).
+Our application attempts to download the full text xml version of any preprint hosted on the bioRxiv or medRxiv server and uses the lxml package (version num) to extract text.
+If the xml version isn't available our application defaults to downloading the pdf version and uses PyMuPDF [@url:https://pymupdf.readthedocs.io/en/latest/intro.html] to extract text from the pdf. 
+The extracted text is fed into our CBOW model to construct a document embedding representation.
+We pass this representation onto our journal and article classifiers to identify journals based on the ten closest neighbors of individual papers and journal centroids.
 We implemented this search using the scikit-learn implementation of k-d trees.
 To run it more cost-effectively in a cloud computing environment with limited available memory, we sharded the k-d trees into four trees.
 
- The app provides a visualization of the article's position within our training data to illustrate the local publication landscape,
+The app provides a visualization of the article's position within our training data to illustrate the local publication landscape,
 We used SAUCIE [@doi:10.1101/2020.03.04.975177], an autoencoder designed to cluster single-cell RNA-seq data, to build a two-dimensional embedding space that could be applied to newly generated preprints without retraining, a limitation of other approaches that we explored for visualizing entities expected to lie on a nonlinear manifold.
 We trained this model on document embeddings of PMC articles that did not contain a matching preprint version.
 We used the following parameters to train the model: a hidden size of 2, a learning rate of 0.001, lambda_b of 0, lambda_c of 0.001, and lambda_d of 0.001 for 5000 iterations.
 When a user requests a new document, we can then project that document onto our generated two-dimensional space; thereby, allowing the user to see where their preprint falls along the landscape.
-We illustrate our recommendations as a shortlist and provide access to our network visualization at our website (see Software and Data Availability).
+We illustrate our recommendations as a shortlist and provide access to our network visualization at our website (https://greenelab.github.io/preprint-similarity-search/).
 
 ### Analysis of the Preprints in Motion Collection
 
@@ -467,7 +475,12 @@ We used Pubmed Central's DOI converter [@url:https://www.ncbi.nlm.nih.gov/pmc/pm
 We retained articles that were included in the PMCOA corpus and performed a token analysis as described to compare these preprints with their published versions.
 As above, we generated document embeddings for every obtained preprint and published article.
 We projected these preprint embeddings onto our publication landscape to visually observe the dispersion of this subset.
-Finally, we performed a time analysis that paralleled our approach for the full set of preprint-publication pairs to examine relationships between linguistic changes and the time to publication.   
+We performed a time analysis that paralleled our approach for the full set of preprint-publication pairs to examine relationships between linguistic changes and the time to publication.
+The "Preprints in Motion" subset includes recent papers, and the longest time to publish in that set was 195 days; however, our bioRxiv snapshot contains both older preprint-published pairs and many with publication times longer than this timepoint.
+The optimum comparison would be to consider only preprints posted on the same days as preprints with the "Preprints in Motion" collection.
+However, based on our results examining publication rate over time, these preprints may not have made it entirely through the publication process.
+We performed a secondary analysis to control for the time since posting, where we filtered the bioRxiv snapshot to only contain publication pairs with publication time of less than or equal to 195 days.
+
 
 
 ## Results

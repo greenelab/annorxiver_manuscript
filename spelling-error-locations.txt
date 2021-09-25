@@ -1,6 +1,10 @@
 content/03.methods.md:77:lemmatize
 content/03.methods.md:77:lemmatized
-content/03.methods.md:181:COVID
+content/03.methods.md:148:dispersive
+content/03.methods.md:172:lxml
+content/03.methods.md:172:num
+content/03.methods.md:189:COVID
+content/03.methods.md:199:timepoint
 content/04.results.md:101:FPtool
 content/04.results.md:101:genotype
 content/04.results.md:101:silico
