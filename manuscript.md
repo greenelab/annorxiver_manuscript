@@ -109,11 +109,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/8525a05405c457e2b20e5b383c986cb8d66752f7/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/14382461b900b00ba13489dcd31ea0d48eec3a90/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8525a05405c457e2b20e5b383c986cb8d66752f7/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/14382461b900b00ba13489dcd31ea0d48eec3a90/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8525a05405c457e2b20e5b383c986cb8d66752f7/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/14382461b900b00ba13489dcd31ea0d48eec3a90/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -147,9 +147,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/8525a05405c457e2b20e5b383c986cb8d66752f7/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/14382461b900b00ba13489dcd31ea0d48eec3a90/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@8525a05](https://github.com/greenelab/annorxiver_manuscript/tree/8525a05405c457e2b20e5b383c986cb8d66752f7)
+from [greenelab/annorxiver_manuscript@1438246](https://github.com/greenelab/annorxiver_manuscript/tree/14382461b900b00ba13489dcd31ea0d48eec3a90)
 on September 25, 2021.
 </em></small>
 
@@ -526,7 +526,7 @@ We plotted the 95% confidence interval for each reported token.
 **D.** The significant differences in token frequencies for preprints and their corresponding published version often appear to be associated with typesetting and supplementary or additional materials.
 We plotted the 95% confidence interval for each reported token.
 **E.** The tokens with the largest absolute differences in abundance appear to be stylistic.
-](https://raw.githubusercontent.com/danich1/annorxiver/77e9d6437069bafec7f0291b9a6c09ad50374b58/figure_generation/output/figure_one_panels.svg){#fig:corpora_comparison_panels width="100%"}
+](https://raw.githubusercontent.com/danich1/annorxiver/b8d20a1e7f59e43817cfdb8a5b0156b607b2c900/figure_generation/output/figure_one_panels.png){#fig:corpora_comparison_panels width="100%"}
 
 Documents within bioRxiv were slightly longer than those within PMCOA, but both were much longer than those from the control (NYTAC) (Table {@tbl:corpora_stats}).
 The average sentence length, the fraction of pronouns, and the use of the passive voice were all more similar between bioRxiv and PMC than they were to NYTAC(Table {@tbl:corpora_stats}).
@@ -534,67 +534,19 @@ The Kullback–Leibler (KL) divergence of term frequency distributions between b
 As more tokens were incorporated, the KL divergence started to increase but remained much lower than the biomedical corpora compared against NYTAC.
 These findings support our notion that bioRxiv is linguistically similar to the PMCOA repository.
 
-Terms like "neurons", "genome", and "genetic", which are common in genomics and neuroscience, were more common in bioRxiv than PMCOA while others associated with clinical research, such as "clinical" "patients" and "treatment" were more common in PMCOA (Figure {@fig:corpora_comparison_panels}B and {@fig:corpora_comparison_panels}C).
-When controlling for the differences in the body of documents to identify textual changes associated with the publication process, we found that tokens such as "et" "al" were enriched for bioRxiv while "$\pm$", "–" were enriched for PMCOA (Figure {@fig:corpora_comparison_panels}D and {@fig:corpora_comparison_panels}E).
+The terms "neurons", "genome", and "genetic", which are common in genomics and neuroscience, were more common in bioRxiv than PMCOA while others associated with clinical research, such as "clinical" "patients" and "treatment" were more common in PMCOA (Figure {@fig:corpora_comparison_panels}B, {@fig:corpora_comparison_panels}C and Supplementary Figure {@fig:corpora_comparison_panels_bio_v_pmid}).
+When controlling for the differences in the body of documents to identify textual changes associated with the publication process, we found that tokens such as "et" "al" were enriched for bioRxiv while "$\pm$", "–" were enriched for PMCOA (Figure {@fig:corpora_comparison_panels}D, {@fig:corpora_comparison_panels}E). 
+When removing special and single-character tokens, data availability and presentation related terms "fle", "supplementary", "fig"  appeared enriched for published articles, and research related terms "mice", "activity", "neurons" appeared enriched for bioRxiv (Supplementary Figure {@fig:corpora_comparison_panels_pre_v_pub}).
 Furthermore, we found that specific changes appeared to be related to journal styles: "figure" was more common in bioRxiv while "fig" was relatively more common in PMCOA.
 Other changes appeared to be associated with an increasing reference to content external to the manuscript itself: the tokens "supplementary", "additional" and "file" were all more common in PMCOA than bioRxiv, suggesting that journals are not simply replacing one token with another but that there are more mentions of such content after peer review.
 
-These results taken together suggest that the structure of the text within preprints on bioRxiv are similar to published articles within PMCOA.
-The differences in uptake across fields are supported by differences in authors' categorization of their articles and by the text within the articles themselves.
-At the level of individual manuscripts, the terms that change the most appear to be associated with typesetting, journal style, and an increasing reliance on additional materials after peer review.
+These results suggest that the text structure within preprints on bioRxiv is similar to published articles within PMCOA.
+The differences in uptake across fields are supported by the authors' categorization of their articles and the text within the articles themselves.
+At the level of individual manuscripts, the most change terms appear to be associated with typesetting, journal style, and an increasing reliance on additional materials after peer review.
 
-### Document embeddings derived from bioRxiv reveal fields and subfields
-
-![
-**A.** Principal components (PC) analysis of bioRxiv word2vec embeddings groups documents based on author-selected categories.
-We visualized documents from key categories on a scatterplot for the first two PCs.
-The first PC separated cell biology from informatics-related fields, and the second PC separated bioinformatics from neuroscience fields.
-**B.** A word cloud visualization of PC1.
-Each word cloud depicts the cosine similarity score between tokens and the first PC.
-Tokens in orange were most similar to the PC's positive direction, while tokens in blue were most similar to the PC's negative direction.
-The size of each token indicates the magnitude of the similarity.
-**C.** A word cloud visualization of PC2, which separated bioinformatics from neuroscience.
-Similar to the first PC, tokens in orange were most similar to the PC's positive direction, while tokens in blue were most similar to the PC's negative direction.
-The size of each token indicates the magnitude of the similarity.
-**D.** Examining PC1 values for each article by category created a continuum from informatics-related fields on the top through cell biology on the bottom.
-Specific article categories (neuroscience, genetics) were spread throughout PC1 values.
-**E.** Examining PC2 values for each article by category revealed fields like genomics, bioinformatics, and genetics on the top and neuroscience and behavior on the bottom.
-](https://raw.githubusercontent.com/danich1/annorxiver/392ae9765362437116efe3250317f41cddbb3232/figure_generation/output/figure_two_panels.svg){#fig:topic_analysis_panels width="100%"}
-
-Document embeddings provide a means to categorize the language of documents in a way that takes into account the similarities between terms [@arxiv:1405.4053; @arxiv:1707.02377; @arxiv:2001.05727].
-We found that the first two PCs separated articles from different author-selected categories (Figure {@fig:topic_analysis_panels}A).
-Certain neuroscience papers appeared to be more associated with the cellular biology direction of PC1, while others seemed to be more associated with the informatics-related direction Figure {@fig:topic_analysis_panels}A).
-This suggests that the concepts captured by PCs were not exclusively related to their field.
-
-Visualizing token-PC similarity revealed tokens associated with certain research approaches (Figures {@fig:topic_analysis_panels}B and {@fig:topic_analysis_panels}C).
-Token association of PC1 shows the separation of cell biology and informatics-related fields through tokens: "empirical", "estimates" and "statistics" depicted in orange and "cultured" and "overexpressing" shown in blue (Figure {@fig:topic_analysis_panels}B).
-Association for PC2 shows the separation of bioinformatics and neuroscience via tokens: "genomic", "genome" and "genomes" depicted in orange and "evoked", "stimulus" and "stimulation" shown in blue (Figure {@fig:topic_analysis_panels}C).
-
-Examining the value for PC1 across all author-selected categories revealed an ordering of fields from cell biology to informatics-related disciplines (Figure {@fig:topic_analysis_panels}D).
-These results suggest that a primary driver of the variability within the language used in bioRxiv could be the divide between informatics and cell biology approaches.
-A similar analysis for PC2 suggested that neuroscience and bioinformatics present a similar language continuum (Figure {@fig:topic_analysis_panels}E).
-This result supports the notion that bioRxiv contains an influx of neuroscience and bioinformatics-related research results. 
-For both of the top two PCs, the submitter-selected category of systems biology preprints was near the middle of the distribution and had a relatively large interquartile range when compared with other categories (Figure {@fig:topic_analysis_panels}D and {@fig:topic_analysis_panels}E), suggesting that systems biology is a broader subfield containing both informatics and cellular biology approaches. 
-
-Examining the top five and bottom five preprints within the systems biology field reinforces PC1's dichotomous theme (Table {@tbl:five_pc1_table}).
-Preprints with the highest values [@doi:10.1101/197400;@doi:10.1101/825943;@doi:10.1101/044818;@doi:10.1101/769299;@doi:10.1101/107250] included software packages, machine learning analyses, and other computational biology manuscripts, while preprints with the lowest values [@doi:10.1101/455048;@doi:10.1101/371922;@doi:10.1101/733162;@doi:10.1101/745943;@doi:10.1101/754572] were focused on cellular signaling and protein activity.
-We provide the rest of our 50 generated PCs in our online repository (see Software and Data Availability).
-
-| Title [citation]     | PC1  | License | Figure Thumbnail |
-|--------------------------------|-------------------|------------|----------|
-| Conditional Robust Calibration (CRC): a new computational Bayesian methodology for model parameters estimation and identifiability analysis [@doi:10.1101/197400] | 4.522818390064091 | None         | ![](images/paper-thumbnails/pc1/197400_thumbnail.png) | 
-| FPtool a software tool to obtain in silico genotype-phenotype signatures and fingerprints based on massive model simulations [@doi:10.1101/266775]                | 4.348956760251298 | CC-BY        | ![](images/paper-thumbnails/pc1/266775_thumbnail.png)               | 
-| GpABC: a Julia package for approximate Bayesian computation with Gaussian process emulation [@doi:10.1101/769299]                                                 | 4.259104249060651 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc1/769299_thumbnail.png) | 
-| Notions of similarity for computational biology models [@doi:10.1101/044818]                                                                                      | 4.079855550647664 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc1/044818_thumbnail.png) | 
-| SBpipe: a collection of pipelines for automating repetitive simulation and analysis tasks [@doi:10.1101/107250]                                                   | 4.022240241143516 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc1/107250_thumbnail.png) | 
-| | | | |
-| Bromodomain inhibition reveals FGF15/19 as a target of epigenetic regulation and metabolic control [@doi:10.1101/2019.12.11.872887]                                                                                                                                   | -3.4783803547922414 | None     | ![](images/paper-thumbnails/pc1/2019.12.11.872887_thumbnail.png) | 
-| Inhibition of Bruton’s tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease [@doi:10.1101/745943] | -3.6926161167521476 | None     | ![](images/paper-thumbnails/pc1/745943_thumbnail.png)            | 
-| Spatiotemporal proteomics uncovers cathepsin-dependent host cell death during bacterial infection [@doi:10.1101/455048]                                            | -3.728443135960558  | CC-BY-ND | ![](images/paper-thumbnails/pc1/455048_thumbnail.png)            | 
-| NADPH consumption by L-cystine reduction creates a metabolic vulnerability upon glucose deprivation [@doi:10.1101/733162]                                          | -3.7363965062637288 | None     | ![](images/paper-thumbnails/pc1/733162_thumbnail.png)            | 
-| AKT but not MYC promotes reactive oxygen species-mediated cell death in oxidative culture [@doi:10.1101/754572]                                                    | -3.8769231933681176 | None     | ![](images/paper-thumbnails/pc1/754572_thumbnail.png)            | 
-
-Table: PC1 divided the author-selected category of systems biology preprints along an axis from computational to molecular approaches. {#tbl:five_pc1_table}
+Following our analysis of tokens, we examined the principal components of document embeddings derived from bioRxiv.
+We found that the top principal components separated methodological approaches and research fields.
+Preprints from certain topic areas that spanned approaches from informatics-related to cell biology could be distinguished using these principal components (see Supplementary Results).
 
 ### Document embedding similarities reveal unannotated preprint-publication pairs
 
@@ -767,56 +719,132 @@ The opinions expressed here do not reflect the official policy or positions of E
 <!-- Explicitly insert bibliography here -->
 <div id="refs"></div>
 
+## Supplemental Section
+
+### Document embeddings derived from bioRxiv reveal fields and subfields
+
+![
+**A.** Principal components (PC) analysis of bioRxiv word2vec embeddings groups documents based on author-selected categories.
+We visualized documents from key categories on a scatterplot for the first two PCs.
+The first PC separated cell biology from informatics-related fields, and the second PC separated bioinformatics from neuroscience fields.
+**B.** A word cloud visualization of PC1.
+Each word cloud depicts the cosine similarity score between tokens and the first PC.
+Tokens in orange were most similar to the PC's positive direction, while tokens in blue were most similar to the PC's negative direction.
+The size of each token indicates the magnitude of the similarity.
+**C.** A word cloud visualization of PC2, which separated bioinformatics from neuroscience.
+Similar to the first PC, tokens in orange were most similar to the PC's positive direction, while tokens in blue were most similar to the PC's negative direction.
+The size of each token indicates the magnitude of the similarity.
+**D.** Examining PC1 values for each article by category created a continuum from informatics-related fields on the top through cell biology on the bottom.
+Specific article categories (neuroscience, genetics) were spread throughout PC1 values.
+**E.** Examining PC2 values for each article by category revealed fields like genomics, bioinformatics, and genetics on the top and neuroscience and behavior on the bottom.
+](https://raw.githubusercontent.com/danich1/annorxiver/5a593f0250886192650dd329e6968069b13e4fcb/figure_generation/output/figure_two_panels.png){#fig:topic_analysis_panels tag="S1" width="100%"}
+
+Document embeddings provide a means to categorize the language of documents in a way that takes into account the similarities between terms [@arxiv:1405.4053; @arxiv:1707.02377; @arxiv:2001.05727].
+We found that the first two PCs separated articles from different author-selected categories (Supplementary Figure {@fig:topic_analysis_panels}A).
+Certain neuroscience papers appeared to be more associated with the cellular biology direction of PC1, while others seemed to be more associated with the informatics-related direction (Supplementary Figure {@fig:topic_analysis_panels}A).
+This suggests that the concepts captured by PCs were not exclusively related to their field.
+
+Visualizing token-PC similarity revealed tokens associated with certain research approaches (Supplementary Figures {@fig:topic_analysis_panels}B and {@fig:topic_analysis_panels}C).
+Token association of PC1 shows the separation of cell biology and informatics-related fields through tokens: "empirical", "estimates" and "statistics" depicted in orange and "cultured" and "overexpressing" shown in blue (Supplementary Figure {@fig:topic_analysis_panels}B and Supplementary Table {@tbl:pc1_loadings_table}).
+Association for PC2 shows the separation of bioinformatics and neuroscience via tokens: "genomic", "genome" and "genomes" depicted in orange and "evoked", "stimulus" and "stimulation" shown in blue (Supplementary Figure {@fig:topic_analysis_panels}C and Supplementary Table {@tbl:pc2_loadings_table}).
+
+Examining the value for PC1 across all author-selected categories revealed an ordering of fields from cell biology to informatics-related disciplines (Supplementary Figure {@fig:topic_analysis_panels}D).
+These results suggest that a primary driver of the variability within the language used in bioRxiv could be the divide between informatics and cell biology approaches.
+A similar analysis for PC2 suggested that neuroscience and bioinformatics present a similar language continuum (Supplementary Figure {@fig:topic_analysis_panels}E).
+This result supports the notion that bioRxiv contains an influx of neuroscience and bioinformatics-related research results. 
+For both of the top two PCs, the submitter-selected category of systems biology preprints was near the middle of the distribution and had a relatively large interquartile range when compared with other categories (Supplementary Figures {@fig:topic_analysis_panels}D and {@fig:topic_analysis_panels}E), suggesting that systems biology is a broader subfield containing both informatics and cellular biology approaches. 
+
+Examining the top five highest-scoring and bottom five lowest-scoring systems biology preprints along PC1 reinforces its dichotomous theme (Supplementary Table {@tbl:five_pc1_table}).
+Preprints with the highest values [@doi:10.1101/197400;@doi:10.1101/825943;@doi:10.1101/044818;@doi:10.1101/769299;@doi:10.1101/107250] included software packages, machine learning analyses, and other computational biology manuscripts, while preprints with the lowest values [@doi:10.1101/455048;@doi:10.1101/371922;@doi:10.1101/733162;@doi:10.1101/745943;@doi:10.1101/754572] were focused on cellular signaling and protein activity.
+We provide the rest of our 50 generated PCs in our online repository (see Software and Data Availability).
+
+| Title [citation]     | PC1  | License | Figure Thumbnail |
+|--------------------------------|-------------------|------------|----------|
+| Conditional Robust Calibration (CRC): a new computational Bayesian methodology for model parameters estimation and identifiability analysis [@doi:10.1101/197400] | 4.522818390064091 | None         | ![](images/paper-thumbnails/pc1/197400_thumbnail.png) | 
+| FPtool a software tool to obtain in silico genotype-phenotype signatures and fingerprints based on massive model simulations [@doi:10.1101/266775]                | 4.348956760251298 | CC-BY        | ![](images/paper-thumbnails/pc1/266775_thumbnail.png)               | 
+| GpABC: a Julia package for approximate Bayesian computation with Gaussian process emulation [@doi:10.1101/769299]                                                 | 4.259104249060651 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc1/769299_thumbnail.png) | 
+| Notions of similarity for computational biology models [@doi:10.1101/044818]                                                                                      | 4.079855550647664 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc1/044818_thumbnail.png) | 
+| SBpipe: a collection of pipelines for automating repetitive simulation and analysis tasks [@doi:10.1101/107250]                                                   | 4.022240241143516 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc1/107250_thumbnail.png) | 
+| | | | |
+| Bromodomain inhibition reveals FGF15/19 as a target of epigenetic regulation and metabolic control [@doi:10.1101/2019.12.11.872887]                                                                                                                                   | -3.4783803547922414 | None     | ![](images/paper-thumbnails/pc1/2019.12.11.872887_thumbnail.png) | 
+| Inhibition of Bruton’s tyrosine kinase reduces NF-kB and NLRP3 inflammasome activity preventing insulin resistance and microvascular disease [@doi:10.1101/745943] | -3.6926161167521476 | None     | ![](images/paper-thumbnails/pc1/745943_thumbnail.png)            | 
+| Spatiotemporal proteomics uncovers cathepsin-dependent host cell death during bacterial infection [@doi:10.1101/455048]                                            | -3.728443135960558  | CC-BY-ND | ![](images/paper-thumbnails/pc1/455048_thumbnail.png)            | 
+| NADPH consumption by L-cystine reduction creates a metabolic vulnerability upon glucose deprivation [@doi:10.1101/733162]                                          | -3.7363965062637288 | None     | ![](images/paper-thumbnails/pc1/733162_thumbnail.png)            | 
+| AKT but not MYC promotes reactive oxygen species-mediated cell death in oxidative culture [@doi:10.1101/754572]                                                    | -3.8769231933681176 | None     | ![](images/paper-thumbnails/pc1/754572_thumbnail.png)            | 
+
+Table: PC1 divided the author-selected category of systems biology preprints along an axis from computational to molecular approaches. {#tbl:five_pc1_table}
+
+| Cosine Simulairty (PC1, word)  | word           | 
+|--------------------------------|----------------| 
+| 0.6399154807185836             | empirical      | 
+| 0.5995356000266072             | estimates      | 
+| 0.5918321530159384             | choice         | 
+| 0.5905550757923625             | statistics     | 
+| 0.5832932491448216             | performance    | 
+| 0.5803836474390357             | accuracy       | 
+| 0.5757250459195589             | weighting      | 
+| 0.5753027342288192             | estimation     | 
+| 0.5730092178610916             | uncertainty    | 
+| 0.5720493442813257             | task           |
+|									   |		          | 
+| -0.4484093198386865            | abrogated      | 
+| -0.4490583645152233            | transfected    | 
+| -0.4500847285921068            | incubating     | 
+| -0.4531550791501111            | inhibited      | 
+| -0.4585422153514687            | co-incubated   | 
+| -0.4774721756292901            | pre-incubated  | 
+| -0.4793057689825842            | overexpressing | 
+| -0.4839313193713342            | purified       | 
+| -0.4869885872803974            | incubated      | 
+| -0.5040798110023075            | cultured       | 
+
+Table: Top and bottom five cosine simularity scores between tokens and the PC1 axis. {#tbl:pc1_loadings_table}
+
+| Cosine Simulairty (PC2, word) | word          | 
+|-------------------------------|---------------| 
+| 0.65930201597598              | genomic       | 
+| 0.6333515216782134            | genome        | 
+| 0.5974018685580009            | gene          | 
+| 0.5796531207938461            | genomes       | 
+| 0.5353687686155728            | annotation    | 
+| 0.5310140161149529            | sequencing    | 
+| 0.5197350376908197            | sequencesM.   | 
+| 0.5181781615670665            | genome,       | 
+| 0.5168781637087506            | bioinformatic | 
+| 0.513853407439108             | WGS           | 
+|									  |			        |
+| -0.4589201401582101           | duration      | 
+| -0.4690482252758019           | stimuli       | 
+| -0.4712875761979691           | amplitudes    | 
+| -0.4772723570301678           | contralateral | 
+| -0.4813219679071856           | stimulation:  | 
+| -0.4946709932017581           | delay         | 
+| -0.5111990014804086           | stimulus      | 
+| -0.5251288188682695           | amplitude     | 
+| -0.543586881182879            | stimulation   | 
+| -0.5467022203294039           | evoked        | 
+
+Table: Top and bottom five cosine simularity scores between tokens and the PC2 axis. {#tbl:pc2_loadings_table}
 
 ## Supplemental Figures
 
 ![
 Neuroscience and bioinformatics are the two most common author-selected topics for bioRxiv preprints.
-](https://raw.githubusercontent.com/danich1/annorxiver/e61b10ad5fc0d23db4c6599b460ddd510ae433a5/biorxiv/exploratory_data_analysis/output/figures/preprint_category.png){#fig:biorxiv_categories tag="S1"}
-
-<!--
-Commenting this out for now unless we get asked for it. 
+](https://raw.githubusercontent.com/danich1/annorxiver/e61b10ad5fc0d23db4c6599b460ddd510ae433a5/biorxiv/exploratory_data_analysis/output/figures/preprint_category.png){#fig:biorxiv_categories tag="S2"}
 
 ![
-Topic associated tokens are highly enriched when comparing bioRxiv to the New York Times.
-The plot on the left (A) is a point range plot of the odds ratio with respect to bioRxiv.
-Values greater than one indicate a high association with bioRxiv whereas values less than one indicate high association with the New York Times.
-The dotted line provides a breaking point between both categories.
-The plot on the right (B) is a bar chart of token frequency appearing in bioRxiv and New York Times respectively.
-](https://raw.githubusercontent.com/greenelab/annorxiver/master/biorxiv/corpora_comparison/output/figures/biorxiv_vs_reference.png){#fig:biorxiv_v_reference tag="S2"}
+**A.** The significant differences in token frequencies for the corpora appear to be driven by the fields with the highest uptake of bioRxiv, as terms from neuroscience and genomics are relatively more abundant in bioRxiv.
+We plotted the 95% confidence interval for each reported token.
+**B.** Of the tokens that differ between bioRxiv and PMC, the most abundant in bioRxiv are "gene", "genes" and "model" while the most abundant in PMC is "study."
+](https://raw.githubusercontent.com/danich1/annorxiver/1a9fc8d536536703bf23e557a54ccb70cb384171/biorxiv/corpora_comparison/output/figures/biorxiv_vs_pubmed_central_special_char_removed.png){#fig:corpora_comparison_panels_bio_v_pmid tag="S3"}
 
 ![
-Typesetting symbols and biologically relevant tokens are highly enriched when comparing PubMed Central (PMC) to the New York Times.
-The plot on the left (A) is a point range plot of the odds ratio with respect to PMC.
-Values greater than one indicate a high association with PMC whereas values less than one indicate high association with the New York Times.
-The dotted line provides a breaking point between both categories.
-The plot on the right (B) is a bar chart of token frequency appearing in PMC and New York Times respectively.
-](https://raw.githubusercontent.com/greenelab/annorxiver/master/biorxiv/corpora_comparison/output/figures/pmc_vs_reference.png){#fig:pmc_v_reference tag="S3"}
--->
+**A.** The significant differences in token frequencies for preprints and their corresponding published version often appear to be associated with data availability and supplementary or additional materials.
+We plotted the 95% confidence interval for each reported token.
+**B.** The tokens with the largest absolute differences in abundance appear related to scientific figures and data availability.
+](https://raw.githubusercontent.com/danich1/annorxiver/1a9fc8d536536703bf23e557a54ccb70cb384171/biorxiv/corpora_comparison/output/figures/preprint_published_comparison_special_char_removed.png){#fig:corpora_comparison_panels_pre_v_pub tag="S4"}
 
 ![
 Both classifiers outperform the randomized baseline when predicting a paper's journal endpoint.
 This bargraph shows each model's accuracy in respect to predicting the training and test set.
-](https://raw.githubusercontent.com/danich1/annorxiver/be0b818e2fd57af809b52bbbb5647761d170b6f7/pmc/journal_recommendation/output/figures/knn_result.svg){#fig:knn_auc tag="S2" width="100%"}
-
-<!-- 
-Commenting this out for now unless we get asked for it.
-
-## Supplemental Tables
-
-| Title [citation]   | PC_2  | License  | Figure Thumbnail |
-|--------------------------------|--------------|-------------------|----------|
-| Pangenome Analysis of Enterobacteria Reveals Richness of Secondary Metabolite Gene Clusters and their Associated Gene Sets [@doi:10.1101/781328] | 3.2324188285918978 | CC-BY-ND | ![](images/paper-thumbnails/pc2/781328_thumbnail.png)  | 
-| The y-ome defines the thirty-four percent of Escherichia coli genes that lack experimental evidence of function [@doi:10.1101/328591]            | 2.9927461425956734 | CC-BY    | ![](images/paper-thumbnails/pc2/328591_thumbnail.png)  | 
-| History of rare diseases and their genetic causes - a data driven approach [@doi:10.1101/595819]                                                 | 2.991601530225049  | CC-BY    | ![](images/paper-thumbnails/pc2/595819_thumbnail.png)  | 
-| Raw sequence to target gene prediction: An integrated inference pipeline for ChIP-seq and RNA-seq datasets [@doi:10.1101/220152]                 | 2.8891250760798535 | None     | ![](images/paper-thumbnails/pc2/220152_thumbnail.png)  | 
-| QTG-Finder: a machine-learning based algorithm to prioritize causal genes of quantitative trait loci [@doi:10.1101/484204]                       | 2.884473743041575  | None     | !![](images/paper-thumbnails/pc2/484204_thumbnail.png) | 
-| | | | | |
-| The effects of time-varying temperature on delays in genetic networks [@doi:10.1101/019687]                                                                                                    | -2.512047640539022  | None         | ![](images/paper-thumbnails/pc2/019687_thumbnail.png) | 
-| Nicotinic modulation of hierarchal inhibitory control over prefrontal cortex resting state dynamics: modeling of genetic modification and schizophreniarelated pathology [@doi:10.1101/301051] | -2.547393499209389  | None         | ![](images/paper-thumbnails/pc2/301051_thumbnail.png) | 
-| An analog to digital converter creates nuclear localization pulses in yeast calcium signaling [@doi:10.1101/357939]                                                                            | -2.5561246453120976 | None         | ![](images/paper-thumbnails/pc2/357939_thumbnail.png) | 
-| Electrical propagation of vasodilatory signals in capillary networks [@doi:10.1101/840280]                                                                                                     | -2.903422991868243  | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc2/840280_thumbnail.png) | 
-| Dendritic spine geometry and spine apparatus organization govern the spatiotemporal dynamics of calcium [@doi:10.1101/386367]                                                                  | -3.1061160163276282 | CC-BY-NC-ND  | ![](images/paper-thumbnails/pc2/386367_thumbnail.png) | 
-
-Table: Top and bottom five systems biology preprints projected onto the PC2 direction. These preprints contain bioinformatis and neuroscience concepts respectively. {#tbl:five_pc2_table}
--->
+](https://raw.githubusercontent.com/danich1/annorxiver/be0b818e2fd57af809b52bbbb5647761d170b6f7/pmc/journal_recommendation/output/figures/knn_result.svg){#fig:knn_auc tag="S5" width="100%"}
