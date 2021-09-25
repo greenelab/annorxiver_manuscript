@@ -4,8 +4,8 @@ Bromodomain
 cgreene
 colocalized
 contralateral
-CoV
-covid
+cov
+COVID
 danich
 dependences
 dispersive
@@ -21,6 +21,7 @@ GBMF
 genotype
 greenescientist
 Hu
+interpretability
 knn
 LEHunter
 lemmatize
@@ -28,7 +29,7 @@ lemmatized
 loadings
 lxml
 MarvinT
-ncov
+nCoV
 NLRP
 num
 pre

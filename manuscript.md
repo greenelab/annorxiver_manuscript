@@ -109,11 +109,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/573889fe3b50012c043e0ca681080650291a2763/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/d20a2e10fd7b13b28c6fea76b60d93d2b9c22dfa/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/573889fe3b50012c043e0ca681080650291a2763/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/d20a2e10fd7b13b28c6fea76b60d93d2b9c22dfa/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/573889fe3b50012c043e0ca681080650291a2763/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/d20a2e10fd7b13b28c6fea76b60d93d2b9c22dfa/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -147,9 +147,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/573889fe3b50012c043e0ca681080650291a2763/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/d20a2e10fd7b13b28c6fea76b60d93d2b9c22dfa/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@573889f](https://github.com/greenelab/annorxiver_manuscript/tree/573889fe3b50012c043e0ca681080650291a2763)
+from [greenelab/annorxiver_manuscript@d20a2e1](https://github.com/greenelab/annorxiver_manuscript/tree/d20a2e10fd7b13b28c6fea76b60d93d2b9c22dfa)
 on September 25, 2021.
 </em></small>
 
@@ -665,18 +665,26 @@ Our findings suggest that Preprints in Motion changed during publication in ways
 ## Discussion and Conclusions
 
 BioRxiv is a constantly growing repository that contains life science preprints.
-The majority of research involving bioRxiv focuses on the metadata of preprints; however, the language contained within these preprints has not previously been systematically examined.
+Over 77% of bioRxiv preprints with a corresponding publication in our snapshot were successfully detected within Pubmed Central's Open Access Corpus (PMCOA).
+This suggests that most work from groups participating in the preprint ecosystem is now available in final form for literature mining and other applications.
+Most research on bioRxiv preprints has examined their metadata; we examine the text content as well.
 Throughout this work, we sought to analyze the language within these preprints and understand how it changes in response to peer review.
+
 Our global corpora analysis found that writing within bioRxiv is consistent with the biomedical literature in the PMCOA repository, suggesting that bioRxiv is linguistically similar to PMCOA.
 Token-level analyses between bioRxiv and PMCOA suggested that research fields drive significant differences; e.g., more patient-related research is prevalent in PMCOA than bioRxiv.
 This observation is expected as preprints focused on medicine are supported by the complementary medRxiv repository [@url:https://www.medrxiv.org/].
 Token-level analyses for preprints and their corresponding published version suggest that peer review may focus on data availability and incorporating extra sections for published papers; however, future studies are needed to ascertain individual token level changes as preprints venture through the publication process.
+One future avenue of research could examine the differences between only preprints and accepted author manuscripts within Pubmed Central to identify changes prior to journal publication. 
 
 Document embeddings are a versatile way to examine language contained within preprints, understanding peer review's effect on preprints, and provide extra functionality for preprint repositories.
+Our approach to generate document embeddings was focused on interpretability instead of predictive performance; however, using more advanced strategies to generate document vectors such as Doc2Vec[@arxiv:arXiv:1405.4053] or BERT [@doi:10.1093/bioinformatics/btz682] should increase predictive performance.
 Examining linguistic variance within document embeddings of life science preprints revealed that the largest source of variability was informatics.
 This observation bisects the majority of life science research categories that have integrated preprints within their publication workflow.
+This embedding space could also be used to quantify sentiment trends or other linguistic features.
+Furthermore, methodologies for uncovering latent scientific knowledge [@doi:10.1038/s41586-019-1335-8] may be applicable in this embedding space.
+
 Preprints are typically linked with their published articles via bioRxiv manually establishing links or authors self-reporting that their preprint has been published; however, gaps can occur as preprints change their appearance through multiple versions or authors do not notify bioRxiv. 
-Our work suggests that document embeddings can help fill in missing links within bioRxiv.
+Our work suggests that document embeddings can help fill in missing links within bioRxiv.  
 Furthermore, our analysis reveals that the publication rate for preprints is higher than previously estimated, even though our analysis can only account for published open access papers.
 Our results raise the lower bound of the total preprint publication fraction; however, the true fraction is necessarily higher.
 Future work, especially that which aims to assess the fraction of preprints that are eventually published, should account for the possibility of missed annotations.
@@ -699,7 +707,8 @@ Source for the research portions of this project is dual licensed under the BSD 
 The preprint similarity search website can be found at [https://greenelab.github.io/preprint-similarity-search/](https://greenelab.github.io/preprint-similarity-search/), and code for the website is available under a BSD-2-Clause Plus Patent License at [https://github.com/greenelab/preprint-similarity-search](https://github.com/greenelab/preprint-similarity-search).
 Full text access for the bioRxiv repository is available at [https://www.biorxiv.org/tdm](https://www.biorxiv.org/tdm).
 Access to PubMed Central's Open Access subset is available on NCBI's FTP server at [https://www.ncbi.nlm.nih.gov/pmc/tools/ftp/](https://www.ncbi.nlm.nih.gov/pmc/tools/ftp/).
-Access to the New York Times Annotated Corpus (NYTAC) is available upon request with the Linguistic Data Consortium at [https://catalog.ldc.upenn.edu/LDC2008T19](https://catalog.ldc.upenn.edu/LDC2008T19).
+New York Times Annotated Corpus (NYTAC) can be accessed from the Linguistic Data Consortium at [https://catalog.ldc.upenn.edu/LDC2008T19](https://catalog.ldc.upenn.edu/LDC2008T19) where there may be a \$150 to \$300 fee depending on membership status.
+
 
 ## Acknowledgments
 
