@@ -109,11 +109,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/14382461b900b00ba13489dcd31ea0d48eec3a90/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/573889fe3b50012c043e0ca681080650291a2763/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/14382461b900b00ba13489dcd31ea0d48eec3a90/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/573889fe3b50012c043e0ca681080650291a2763/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/14382461b900b00ba13489dcd31ea0d48eec3a90/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/573889fe3b50012c043e0ca681080650291a2763/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -147,9 +147,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/14382461b900b00ba13489dcd31ea0d48eec3a90/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/573889fe3b50012c043e0ca681080650291a2763/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@1438246](https://github.com/greenelab/annorxiver_manuscript/tree/14382461b900b00ba13489dcd31ea0d48eec3a90)
+from [greenelab/annorxiver_manuscript@573889f](https://github.com/greenelab/annorxiver_manuscript/tree/573889fe3b50012c043e0ca681080650291a2763)
 on September 25, 2021.
 </em></small>
 
@@ -560,12 +560,13 @@ We show the publication rate of preprints since bioRxiv first started.
 The x-axis represents months since bioRxiv started, and the y-axis represents the proportion of preprints published given the month they were posted.
 The light blue line represents the publication rate previously estimated by Abdill et al. [@doi:10.7554/eLife.45133].
 The dark blue line represents the updated publication rate using only CrossRef-derived annotations, while the dark green line includes annotations derived from our embedding space approach.
-The horizontal lines represent the overall proportion of preprints published as of the time of the annotation snapshot.
+The horizontal lines represent the overall proportion of preprints published as of the time of the annotated snapshot.
 ](https://raw.githubusercontent.com/danich1/annorxiver/392ae9765362437116efe3250317f41cddbb3232/figure_generation/output/figure_three_panels.svg){#fig:preprint_links_panels width="100%"}
 
-Distances between preprints and their corresponding published versions were nearly always lower than preprints paired with a random article published in the same journal (Figure {@fig:preprint_links_panels}A).
-This suggests that embedding distances can identify documents with similar textual content. 
-Approximately 98% of our 200 pairs with an embedding distance in the 0-25th and 25th-50th percentile bins were scored as true matches (Figure {@fig:preprint_links_panels}B).
+Distances between preprints and their corresponding published versions were nearly always lower than preprints paired with a random article published in the same journal (Figure {@fig:preprint_links_panels}A) and the same was true using abstracts alone (Supplemental Figure {@fig:abstract_only_distance}).
+This suggested that embedding distances may predict the published form of preprints. 
+We directly tested this by selecting low-distance but unannotated preprint-publication pairs and curating the extent to which they represented matching documents.
+Approximately 98% of our 200 pairs with an embedding distance in the 0-25th and 25th-50th percentile bins were successfully matched with their published counterpart (Figure {@fig:preprint_links_panels}B).
 These two bins contained 1,542 preprint-article pairs, suggesting that many preprints may have been published but not previously connected with their published versions.
 There is a particular enrichment for preprints published but unlinked within the 2017-2018 interval (Figure {@fig:preprint_links_panels}C).
 We expected a higher proportion of such preprints before 2019 (many of which may not have been published yet); however, observing relatively few missed annotations before 2017 was against our expectations.
@@ -574,7 +575,7 @@ As the number of preprints posted on bioRxiv grows, it may be harder for bioRxiv
 It is possible that the set of authors participating in the preprint ecosystem is changing and that new participants may be less likely to report missed publications to bioRxiv.
 Finally, as familiarity with preprinting grows, it is possible that authors are posting preprints earlier in the process and that metadata fields that bioRxiv uses to establish a link may be less stable.
 
-### Preprints with more versions or more text changes took longer to publish
+### Preprints with more versions or more text changes relative to their published counterpart took longer to publish
 
 ![
 **A.** Author-selected categories were associated with modest differences in respect to publication half-life.
@@ -588,7 +589,7 @@ The density of observations is depicted in the violin plot with an embedded boxp
 The x-axis shows the Euclidean distance between document representations of the first version of a preprint and its peer-reviewed form.
 The y-axis shows the number of days elapsed between the first version of a preprint posted on bioRxiv and when a preprint is published.
 The color bar on the right represents the density of each hexbin in this plot, where more dense regions are shown in a brighter color.
-](https://raw.githubusercontent.com/danich1/annorxiver/392ae9765362437116efe3250317f41cddbb3232/figure_generation/output/figure_four_panels.svg){#fig:publication_delay_panels width="100%"}
+](https://raw.githubusercontent.com/danich1/annorxiver/5a593f0250886192650dd329e6968069b13e4fcb/figure_generation/output/figure_four_panels.png){#fig:publication_delay_panels width="100%"}
 
 The process of peer review includes several steps, which take variable amounts of time [@doi:10.1002/nop2.51], and we sought to measure if there is a difference in publication time between author-selected categories of preprints (Figure {@fig:publication_delay_panels}A).
 Of the most abundant preprint categories microbiology was the fastest to publish (140 days, (137, 145 days) [95% CI]) and genomics was the slowest (190 days, (185, 195 days) [95% CI]) (Figure {@fig:publication_delay_panels}A).
@@ -597,7 +598,7 @@ One exception was the Scientific Communication and Education category, which too
 This hints that there may be differences in the publication or peer review process or culture that apply to preprints in this category.
 
 Examining peer review's effect on individual preprints, we found a positive correlation between preprints with multiple versions and the time elapsed until publication (Figure {@fig:publication_delay_panels}B). 
-Each new version adds additional 51 days before a preprint is published.
+Every additional preprint version was associated with an increase of 51 days before a preprint was published.
 This time duration seems broadly compatible with the amount of time it would take to receive reviews and revise a manuscript, suggesting that many authors may be updating their preprints in response to peer reviews or other external feedback.
 The embedding space allows us to compare preprint and published documents to determine if the level of change that documents undergo relates to the time it takes them to be published.
 Distances in this space are arbitrary and must be compared to reference distances.
@@ -613,9 +614,10 @@ We developed an online application that returns a listing of published papers an
 This application uses two k-nearest neighbor classifiers that achieved better performance than our baseline model (Supplemental Figure {@fig:knn_auc}) to identify these entities.
 Users supply our app with digital object identifiers (DOIs) from bioRxiv or medRxiv, and the corresponding preprint is downloaded from the repository.
 Next, the preprint's PDF is converted to text, and this text is used to construct a document embedding representation.
-This representation is supplied to our classifiers to generate a listing of the ten papers and journals with the most similar representations in the embedding space (Figures {@fig:journal_rec_workflow}A,  {@fig:journal_rec_workflow}B and {@fig:journal_rec_workflow}C).
+This representation is supplied to our classifiers to generate a listing of the ten papers and journals with the most similar representations in the embedding space (Figures {@fig:journal_rec_workflow}A, {@fig:journal_rec_workflow}B and {@fig:journal_rec_workflow}C).
 Furthermore, the user-requested preprint's location in this embedding space is then displayed on our interactive map, and users can select regions to identify the terms most associated with those regions (Figures {@fig:journal_rec_workflow}D and {@fig:journal_rec_workflow}E).
 Users can also explore the terms associated with the top 50 PCs derived from the document embeddings, and those PCs vary across the document landscape.
+You can access this application using the following url: https://greenelab.github.io/preprint-similarity-search/
 
 ![
 The preprint-similarity-search app workflow allows users to examine where an individual preprint falls in the overall document landscape.
@@ -632,21 +634,21 @@ The Preprints in Motion Collection results are similar to all preprint results, 
 **A.** Tokens that differed included those associated with typesetting and those related to the nomenclature of the virus that causes COVID-19.
 Error bars show 95% confidence intervals for each token.
 **B.** Of the tokens that differ between Preprints in Motion and their published counterparts, the most abundant were associated with the nomenclature of the virus.
-**C.** The Preprints in Motion fall across the landscape of PMCOA with respect to linguistic properties.
+**C.** The Preprints in Motion collection fall across the landscape of PMCOA with respect to linguistic properties.
 This square bin plot depicts the binning of all published papers within the PMCOA corpus.
 High-density regions are depicted in yellow, while low-density regions are in dark blue.
 Red dots represent the Preprints in Motion Collection.
-**D.** The Preprints in Motion were published faster than other bioRxiv preprints, and the number of versions was not associated with an increase in time to publication.
+**D.** The Preprints in Motion collection were published faster than other bioRxiv preprints, and the number of versions was not associated with an increase in time to publication.
 The x-axis shows the number of versions of a preprint posted on bioRxiv.
 The y-axis indicates the number of days that elapsed between the first version of a preprint posted on bioRxiv and the date at which the peer-reviewed publication appeared.
 The density of observations is depicted in the violin plot with an embedded boxplot.
 The red dots and red regression line represent Preprints in Motion.
-**D.** The Preprints in Motion were published faster than other bioRxiv preprints, and no dependence between the amount of linguistic change and time to publish was observed.
+**E.** The Preprints in Motion collection were published faster than other bioRxiv preprints, and no dependence between the amount of linguistic change and time to publish was observed.
 The x-axis shows the Euclidean distance between document representations of the first version of a preprint and its peer-reviewed form.
 The y-axis shows the number of days elapsed between the first version of a preprint posted on bioRxiv and when a preprint is published.
 The color bar on the right represents the density of each hexbin in this plot, where more dense regions are shown in a brighter color.
 The red dots and red regression line represent Preprints in Motion.
-](https://raw.githubusercontent.com/danich1/annorxiver/392ae9765362437116efe3250317f41cddbb3232/figure_generation/output/figure_five_panels.svg){#fig:covid_19_preprints width="100%"}
+](https://raw.githubusercontent.com/danich1/annorxiver/00b826fcaf348596bd97fa8daa5f346c766b1790/figure_generation/output/figure_five_panels.png){#fig:covid_19_preprints width="100%"}
 
 The Preprints in Motion collection included a set of preprints posted during the first four months of 2020.
 We examined the extent to which preprints in this set were representative of the patterns that we identified from our analysis on all of bioRxiv.
@@ -655,7 +657,8 @@ Our token-level analysis identified certain patterns consistent with our finding
 However, in this set, we also observe changes likely associated with the fast-moving nature of COVID-19 research: the token "2019-ncov" became less frequently represented while "sars" and "cov-2" became more represented, likely due to a shift in nomenclature from "2019-nCoV" to "SARS-CoV-2".
 The Preprints in Motion were not strongly colocalized in the linguistic landscape, suggesting that the collection covers a diverse set of research approaches (Figure {@fig:covid_19_preprints}C).
 Preprints in this collection were published faster than the broader set of bioRxiv preprints (Figure {@fig:covid_19_preprints}D and {@fig:covid_19_preprints}E).
-The relationship between time to publication and the number of versions (Figure {@fig:covid_19_preprints}D) and the relationship between time to publication and the amount of linguistic change (Figure {@fig:covid_19_preprints}E) were both lost in the Preprints in Motion set.
+We see the same trend when filtering the broader bioRxiv set to only contain preprints published within the same timeframe as this collection (Supplemental Figures {@fig:filterd_polka_analysis}A and {@fig:filterd_polka_analysis}B).
+The relationship between time to publication and the number of versions (Figure {@fig:covid_19_preprints}D and Supplemental Figure {@fig:filterd_polka_analysis}A) and the relationship between time to publication and the amount of linguistic change (Figure {@fig:covid_19_preprints}E and Supplemental Figure {@fig:filterd_polka_analysis}B) were both lost in the Preprints in Motion set.
 Our findings suggest that Preprints in Motion changed during publication in ways aligned with changes in the full preprint set but that peer review was accelerated in ways that broke the time dependences observed with the full bioRxiv set.
 
 
@@ -847,4 +850,17 @@ We plotted the 95% confidence interval for each reported token.
 ![
 Both classifiers outperform the randomized baseline when predicting a paper's journal endpoint.
 This bargraph shows each model's accuracy in respect to predicting the training and test set.
-](https://raw.githubusercontent.com/danich1/annorxiver/be0b818e2fd57af809b52bbbb5647761d170b6f7/pmc/journal_recommendation/output/figures/knn_result.svg){#fig:knn_auc tag="S5" width="100%"}
+](https://raw.githubusercontent.com/danich1/annorxiver/13d9789370900a1d04fb296457fd1faf2d76818a/pmc/journal_recommendation/output/figures/knn_result_cosine_fix.png){#fig:knn_auc tag="S5" width="100%"}
+
+![
+**A.** The Preprints in Motion were published faster than other bioRxiv preprints, and the number of versions was not associated with an increase in time to publication.
+The x-axis shows the number of versions of a preprint posted on bioRxiv.
+The y-axis indicates the number of days that elapsed between the first version of a preprint posted on bioRxiv and the date at which the peer-reviewed publication appeared.
+The density of observations is depicted in the violin plot with an embedded boxplot.
+The red dots and red regression line represent Preprints in Motion.
+**B.** The Preprints in Motion collection were published faster than other bioRxiv preprints, and no dependence between the amount of linguistic change and time to publish was observed.
+The x-axis shows the Euclidean distance between document representations of the first version of a preprint and its peer-reviewed form.
+The y-axis shows the number of days elapsed between the first version of a preprint posted on bioRxiv and when a preprint is published.
+The color bar on the right represents the density of each hexbin in this plot, where more dense regions are shown in a brighter color.
+The red dots and red regression line represent Preprints in Motion.
+](https://raw.githubusercontent.com/danich1/annorxiver/3950d1a173adcfb263d0260ce29bc62432a53c6e/biorxiv/polka_subset_experiment/output/figures/polka_filtered_background_panels.png){#fig:filterd_polka_analysis tag="S6" width="100%"}
