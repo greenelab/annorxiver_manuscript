@@ -22,14 +22,17 @@
 > 
 > b) perhaps preprinters are more publishing 'savvy' and want to achieve more impact/citations and thus strive harder to ensure that the eventual journal-published version of their work is open access (reflected in being in PMCOA).
 
-**We appreciate your optimistic viewpoint on our manuscript.
-We agree that 77% of preprint-published pairs found in PMCOA is a surprising discovery.
-We updated our discussion in our manuscript to emphasize this point.**
+**We appreciate the reviewer's positive comments on our manuscript.
+The reviewer is corrected that we did not realize that the finding of 77% of preprint-published pairs being present in PMCOA is a surprising discovery, and we thank this reviewer for bringing this to our attention.
+We now include the following in our discussion section to emphasize this point:**
+
+ADD IN THE TEXT FROM THE DISCUSSION SECTION HERE IN ITALICS.
  
 > If it were my choice I would cut the entire subsection 'Document embeddings derived from bioRxiv reveal fields and subfields'. It is already known that document embeddings can reveal fields and subfields. Being 'preprints' or 'biorxiv preprints' rather than say published journal articles won't change that. I found this section very uninteresting and extremely un-novel. It is descriptive and accurate, but in the context of an already long manuscript, I feel it is unnecessary.
 
-**We decided that this analysis is necessary for our manuscript.
-However, we did move this section into our supplement.**
+**We felt that this analysis also included other findings that were less obvious: namely the principal components that separated fields and the finding that certain fields like systems biology were spread across certain components that distinguished quantitative systems biology from cellular systems biology papers.
+We think that this lays the groundwork for a number of future research efforts.
+However, we agree with the reviewer that this manuscript does present a broad examination of the full text content of _bioRxiv_ and is somewhat lengthy, so we did move this section into the supplement.**
 
 > Aside from the manuscript, I have some brief comments on the actual web application.
 > 
@@ -38,10 +41,10 @@ However, we did move this section into our supplement.**
 > 
 > But I realise that PMCOA isn't exactly great training date for interpreting palaeontology articles -- fringe content from PMC's perspective(?)
 
-**Thank you for pointing this fact out.
-We agree that these results highlight a subtle limitation when using PMCOA to train our classifiers.
-We want to point out that our resource has an auto-updater that monthly incorporates new papers posted to PMCOA.
-This suggests that over time if PMCOA incorporates more articles related to this example, then the issue will be resolved.**
+**We agree that using PMCOA as a training set will limit the fields to which the website can be applied.
+We felt that PMCOA was likely to be appropriate for much _bioRxiv_ and _medRxiv_ content, which are the servers our tool supports.
+We have also implemented a system to automatically update to bring in new PMCOA papers.
+If PMCOA begins to include more journals that publish articles in these fields or author-contributed manuscripts in these fields, then the tool would be more likely to identify appropriate matches.**
  
 > Specific comments:
 > 
@@ -61,7 +64,7 @@ This suggests that over time if PMCOA incorporates more articles related to this
 >
 >an analysis of preprints posted at the beginning of 2020 revealed that over 50% underwent minor changes in the abstract text as they were published, but over 70% had 'no change' or only superficial rearrangements to panels and tables [25].
 
-**We thank you for the suggested change and have incorporated the following change within our revised manuscript.**
+**We agree with the reviewer that the proposed phrasing is better. We now write:**
 
 ```diff
 - Preprint repositories by definition do not perform in-depth peer review, which can result in posted preprints containing inconsistent results or conclusions [...]; however, an analysis of preprints posted at the beginning of 2020 revealed that most underwent minor changes as they were published [...].
@@ -73,8 +76,9 @@ This suggests that over time if PMCOA incorporates more articles related to this
 > 
 >but to clarify, you did remove these from the analysis, right? It would just be good to clarify that. They are easy to identify and should just be removed. I can't see how they would add anything but noise to this analysis. What is the total number of preprints after withdrawn preprints are removed from the sample?
  
-**Initally, we did not remove these preprints from our analysis.
-We decided removeing these preprints from our analysis was a better approach and we updated our text to reflect this change.**
+**In the version of the manuscript that the reviewer saw, we did not remove these preprints from our analysis as we felt their impact would be minimal.
+Based on the reviewer's comments, we have now rerun all of the analyses with these withdrawn articles removed.
+This did not lead to substantive changes in the article or figures, but we agree it was the most rigorous analysis and are happy that the reviewer brought up this point.**
 
 ```diff
 - As there were very few withdrawn preprints, we did not treat these as a special case.
@@ -92,7 +96,7 @@ We decided removeing these preprints from our analysis was a better approach and
 >
 >BTW, I resent calling it a 'closed access' [article?] if the accepted manuscript is fully freely available -- that would seem to give undue primacy to the journal published version. It's an article with different versions - one freely accessible at a repository e.g. PMC, without publisher branding and another behind a paywall at the publisher website with publisher branding
 
-**We agree that 'closed access' may not be appropriate for this description.
+**We agree that 'closed access' was imprecise phrasing.
 We have updated this section in our manuscript.**
 
 ```diff
@@ -105,7 +109,7 @@ We have updated this section in our manuscript.**
 > 
 > presuming a journal allows individual articles to be published with a CC BY licence under a so-called 'hybrid-OA' option, can a journal really NOT participate for those CC BY licenced articles? If biomedically relevant and CC BY licensed surely PMC takes that content at the article level and thus its debatable as to whether journals really have the power to actually 100% not participate.
 
-**We have updated our manuscript to take this point into account.**
+**We agree with the reviewer that this is an important distinction and have adjusted our text:**
 
 ```diff
 - Individual journals have the option to fully participate in submitting articles to PMC, selectively participate sending only a few papers to PMC, only submit papers according to NIH's public access policy [...], or not participate at all.
@@ -116,7 +120,8 @@ We have updated this section in our manuscript.**
 > 5.) https://hypothes.is/a/vekhYNLfEeuxGm9i6MkLqw
 > it's a real pity you chose not to compare preprints to author manuscripts. As your results demonstrated, lots of the word changes were just journal-style related e.g. "figure" -> "fig." . An analysis of just preprints matched to author manuscripts would get more closely and cleanly to what the textual difference between pre-peer-review and post-peer-review (without minor stylistic changes).
 
-**We recognize that author manuscripts have the potential to remove some of the journal-related stylistic changes revealed in our token analysis.
+**We agree that contrasting differences in bioRxiv to author-supplied vs journal-supplied manuscripts have the potential to remove some of the journal-related stylistic changes revealed in our token analysis.
+We felt that this would be an interesting manuscript in its own right and that we would not be able to give it an appropriate treatment within this manuscript.
 However, we leave this analysis for future endeavors.**
 
 > 6.) https://hypothes.is/a/YkqPKNLgEeucPGc1_W-jzA
@@ -143,7 +148,7 @@ We updated text to fix this typo.**
 >
 >** with no doubt many other caveats such as cases where the author could do it without help from the journal, but does not for some unknown reason
 
-**We appreciate you point out this interesting fact, and we have updated our discussion accordingly.**
+**We appreciate that the reviewer pointed out this interesting finding in our results that we had missed, and we have updated our discussion accordingly.**
 
 ```diff
 - The majority of research involving bioRxiv focuses on the metadata of preprints; however, the language contained within these preprints has not previously been systematically examined.
@@ -159,14 +164,19 @@ We updated text to fix this typo.**
 >
 >Interestingly 'ca' is one of those 326 stopwords. I would have thought that one might actually be significant in a life sciences context e.g. calcium channels "Ca2+"
 
-**Yes, 326 stopwords are the default setting.** 
+**We used the 326 stopwords provided by default.
+We agree that the stopwords are not precisely tuned for life sciences research.
+We have adjusted our text to say:**
+
+ ADD TEXT CHANGE HERE NOTING IT IS THE DEFAULT 
 
 
 > 9.) https://hypothes.is/a/dkIurtLmEeuqkU-qTN4dtg
 > 
 > I'm sure you've got this in the github, but just to make the manuscript more readily understandable without digging around in github, do you think you could provide as a supplementary file a list of those 100 most frequently occurring tokens, so that people can get a better feel for what the data is here?
 
-**We have added a supplementary file that provides a listing of 100 tokens for our corpora KL analysis.**
+**We agree with the reviewer that this is a convenient table to have at hand.
+This is now Supplementary Table INSERT TABLE NUMBER.**
 
 > 10.) https://hypothes.is/a/-2AU8tLmEeu6swvY4jN5Mw
 > 
@@ -213,7 +223,7 @@ We have incorporated it into our manuscript.**
 >
 >There is change but is change from figure to 'fig.' to suit journal style actually helpful/valuable? In my opinion it is not!
 
-**We recognize the limitation of our design choice and have mentioned using accepted author manuscripts as an alternative for future analyses.**
+**We recognize the limitation of our design choice and agree it would be interesting to compare journal-supplied vs author-supplied manuscripts in a future study.**
 
 > 14.) https://hypothes.is/a/-ixA_NLqEeuv6YviR-lI0A
 > 
@@ -221,7 +231,7 @@ We have incorporated it into our manuscript.**
 >
 >Don't we already know that if one uses full texts we can determine the subfield of the paper? It's not that interesting in my opinion and not relevant to the main hypotheses of the paper -- comparing between preprints and the journal published version.
 
-**We believe this section is needed when performing a descriptive analysis on the bioRxiv corpus; however, we moved this section to the supplement.**
+**We believe this section is needed to describe the landscape of the bioRxiv corpus; however, we agree the manuscript is long and has many results, so we moved this section to the supplement.**
 
 > 15.) https://hypothes.is/a/V2wj3NLqEeuZ9idQ44yS4Q
 > 
@@ -246,7 +256,7 @@ We have incorporated it into our manuscript.**
 >
 >It should be more clearly highlighted that the NYTAC is proprietary data and it may require a fee of $150-300 to be paid to access, if a non-member of the Linguistic Data Consortium. To say merely “is available upon request” and nothing else is not quite true to my eyes - please warn that it may require payment to access, depending on one's institutional affiliation (or lack thereof). 
 
-**We have updated text to make the fees accessing NYTAC more apparent.**
+**We agree and have updated this text to make the fees accessing NYTAC more apparent.**
 
 ```diff
 - Access to the New York Times Annotated Corpus (NYTAC) is available upon request with the Linguistic Data Consortium at [https://catalog.ldc.upenn.edu/LDC2008T19](https://catalog.ldc.upenn.edu/LDC2008T19).
@@ -258,14 +268,14 @@ We have incorporated it into our manuscript.**
 >  
 > See: "Please note, if data have been obtained from a third-party source, we require that other researchers would be able to access the data set in the same manner as the authors" https://journals.plos.org/plosone/s/data-availability despite that URL indicating just PLOS ONE, the policy applies to all PLOS journals, unless otherwise noted.
 
-**We believe that using the NYTAC dataset does not violate PLOS's data availability policy.**
+**We believe that using the NYTAC dataset does not violate PLOS's data availability policy. We accessed the dataset in accordance with this policy.**
 
 
 # Reviewer #2
 
 > Overall, I enjoyed this manuscript for offering a way to quantify the transition of preprints to manuscripts within the biological sciences. Further, the authors develop an approach that could also more generally be useful for classifying biomedical literature, and they even provide as an example a web-based program to find potential publication avenues.
 
-**We are glad you enjoyed reading our manuscript.**
+**We appreciate the reviewer's positive sentiment about our work.**
 
 > The methodological approach of the authors is quite unexpected. While I do not see a fundamental flaw in their approach, I would anticipate it to be biased toward the most frequent phrases. When performing computational research there is a risk to pursue analyses through well-intended "improvements" or "customizations" whenever the approach does not seem to yield the expected outcome. As some people could be tempted to interpret parts of the analysis of the authors as warning flags for above having happened, I would recommend adding some additional control analyses and explicit statements about their chosen rationales.
 > 
