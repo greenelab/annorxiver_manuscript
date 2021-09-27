@@ -281,7 +281,20 @@ We have incorporated it into our manuscript.**
 > 
 > Particularly, I would be very curious about the discussion, or main text commenting on why the authors created a custom scheme of classifying documents and their similarity based on vectors of words instead of using existing approaches that provide vectors of documents - including doc2vec that is included in the software package that the authors used for word2vec. Do the results change according to the approach?
 
-**Our goal was to maximize the interpretability of the document embedding space when characterizing preprints within the bioRxiv landscape.
+**We agree with the reviewer that there are a number of possible approaches to both explore the linguistic landscape of bioRxiv and to predict the ultimate publication venue of preprints.
+Our first goal was to examine the linguistic landscape, so we prioritized strategies that led to interpretable embedding spaces.
+Our primary strategy was to use word embeddings, which we could use to explore topics and language.
+We combined those same word embeddings to produce document embeddings as the average of the word embeddings.
+This lets us use the same underlying embeddings through the manuscript from the exploration of language through the journal prediction.
+We also agree with the reviewer that Doc2Vec would be likely to produce embeddings that would improve performance on the prediction task.
+
+For this revision, we directly compared both methods for their interpretability and predictive performance.
+We find that the Word2Vec model's first principal component (shown below) was more interpretable than the one from the Doc2Vec model (also below).
+On the other hand, we find that the Doc2Vec model's predictive accuracy is better for the journal classification task (also below).
+On balance, we think including multiple embedding models within this paper, which aims to characterize the linguistic landscape of bioRxiv, would be confusing.
+For this revision, we have elected to retain the Word2Vec model.
+We debated changing the journal prediction server and results to use Doc2Vec, but also considering the feedback from reviewer #1 about the complexity of the paper decided against at this time.
+We could easily imagine an improvement to the server in the future that moves to Doc2Vec.
 Neural networks are challenging to interpret due to their non-linear activation layers.
 We empirically show this challenge by providing word clouds generated from the first principal component between our approach and doc2vec.
 Our approach teases out quantitative vs. cellular biology concepts while Doc2Vec is hard to discern. 
@@ -302,14 +315,16 @@ Overall, methods such as Doc2Vec does improve performance at the cost of interpr
 
 > Further, word2vec often seems to work even better when first trained on a larger corpus before then being applied or transferred to more specialized corpora. Personally, I also made this experience when following an example tutorial provided by the creators of the package that the authors used - which too suggests starting with existing pre-trained models. While the more restricted training done by the authors might have reduced the sensitivity of their approach (… which would likely only strengthen their claims), I would be curious whether there was an additional rationale for avoiding the former strategy that might be missed by readers (e.g.: different meanings such as "abstract" that has different meanings for scientists and non-scientists?). 
  
-**We chose to use an unbiased approach for training our word2vec model as our goal was to preseve latent definitions contained within preprints.
-For example, under a pretrained model the word paper could have a preexisting context relating to newspapers or wikipedia articles, rather than a conext relating to scientific articles.**
+**We did consider using a pretraining step, but we were worried that then it might be hard to differentiate the effect of pretraining from the text content of bioRxiv.
+Since our goal was to explore the linguistic landscape of bioRxiv itself, we elected not to do this.
+We agree with the reviewer that if the goal is to enhance the predictive performance of the similarity search webserver, this would be a good step to take.
+As with above, we may consider this in a future iteration of the server, but at this point we want to make sure the work continues to characterize the linguistic landscape of bioRxiv.
 
 > Likewise, I'm wondering why the authors used a Euclidean distance for word embeddings instead of a Cosine similarity (which if I recall correctly would also be default in the similarity module of the package which the authors used). Cosine similarity should also allow the authors to make statements about the similarity of words without imposing assumptions on similar text lengths or usage frequencies.
 
-**We are using cosine similarity within our linguistic variation analysis.
-Regarding our missing preprint publish link analysis, pure euclidean distance has the same performance as cosing similarity.
-Under this task, preprints and their published counterparts have significantly lower distances regardless of the distance metric used (comparison figure provided below).**
+**We used Euclidean distance because it satisfied the triangle inequality, which let us use the sklearn implementation of k-d tree for preprint similarity search.
+This allowed us to perform search efficiently with a minimum of development time, and also provided a framework that we could use to shard the search across nodes in the event that we needed to further accelerate performance.
+We didn't find the distance metric to be a substantial driver of performance: preprints and their published counterparts have significantly lower distances regardless of the distance metric used (comparison figure provided below).**
 
 ![Distance comparison](https://github.com/greenelab/annorxiver/blob/ff456c5c5cb7cddd16400f6e5b74422e1b33d349/biorxiv/article_distances/output/figures/distance_metrics_top_k_precision.png)
 
@@ -317,12 +332,11 @@ Under this task, preprints and their published counterparts have significantly l
 >
 > The mapping of similarity seems to be based on individual pairs of text and as such it would seem vulnerable of shifting distributions (e.g.: if published articles were somewhat different from preprints, as implied in Figure 1A). I would suspect that the authors would be able to improve their performance even further by doing global matching between many pairs (… again see their adherence to a weaker approach as something that ultimately strengthens their findings). Again, a comment on the rationale of their chosen approach could convey additional non-evident considerations.
 
-**Our journal-based approach is still required as cosine/euclidean distance does not combat the issue of journal overrepresentation.
-We control for this issue by calculating a centroid for each journal.
-This centroid is constructed by taking the average of every published document present within each journal.
-This way, every journal will have an equal representation for our classifier.
-The shift in distribution could affect our paper-paper classifier which is why we provided top 10 results instead of best paper.
-Another way to combat this issue is to use a technique called orthogonal procrustes, which is a linear algebra techique designed to align two vector spaces.**
+**While a more optimal distance metric could make some difference in performance, it wouldn't substantially change the issue of the background frequency whereby some mega journals have published orders of magnitude more manuscripts than others.
+We feel that the two approaches together (nearest publications, nearest centroids) provide a reasonable solution that can be effectively integrated into a web interface.
+The reviewer's additional comment about implementing an explicit adjustment for the distributional shift is quite insightful and would likely be a path to improved performance.
+We could imagine using something like orthogonal Procrustes to align the preprint-publication vector spaces before performing search.
+We also recently added the capability to automatically update the search indices, which makes implementing this more challenging (we'd want to check the alignments each time), so we didn't implement this at this time but we agree with the reviewer that this is an important path to explore for improved performance in the future.**
 
 > I love the web application!
 
@@ -331,7 +345,7 @@ Another way to combat this issue is to use a technique called orthogonal procrus
 > No statistics are given for the enrichments in Figure 1B-E.
 
 **We report each token with a 95% confidence interval (CI). 
-Our frequency counts are sufficiently large that all calculated p-values are approximately or exactly zero.**
+The underlying frequency counts are sufficiently large that the confidence intervals are difficult to discern on the plot.**
 
 > I would welcome a supplemental analysis, that removes single letters and special characters from the analysis of Figure 1B-E as they might change the baseline.
 
@@ -353,20 +367,25 @@ Our frequency counts are sufficiently large that all calculated p-values are app
 
 > The association given in Figure 4A seems to mainly stem from a few papers with large distances. Would an association be present when using the rank-based Spearman correlation instead of a linear regression? Would, for visualization, a logarithmic relationship describe the data better than a linear one?
 
-**We believe there is a misconception about our figure. 
-This figure depicts the median half-life publication time for each preprint category within bioRxiv.**
+**This figure depicts the median half-life publication time for each preprint category within bioRxiv, so we don't think that it is driven by outliers within categories.
+We have adjusted the figure legend to more clearly note what we plotted.**
 
 > I believe that the analysis of Figure 4 B is quite clever as it would seem to address the thinkable concern of preprints with no delay and changes mainly stemming from those manuscripts that were already essentially accepted by manuscripts at the time of posting.
 
-**We are glad you found our analysis insightful.**
+**We are glad the reviewer found our analysis insightful.**
 
 > The analysis remarks that for the "Preprints in Motion Collection" the relationship between textual distance and time to publication disappears, and supports this through Figure 6E. However, the background trend in figure 6E includes publications that have been published at a time that exceeds a year. Hence a more faithful comparison would be to censor the background data by a distribution of durations that would correspond to the distribution of durations that would be possible for the "Preprint in Motions Collection" (taking distribution corresponding to interval between their dates on bioRxiv and the time at which authors assessed whether manuscripts were published).
 
-**We have provided a supplemental analysis within our manuscript that shows results after filtering the background distribution based on publication time.**
+**This point is very interesting!
+The preprints in motion selection included preprints that were both posted within a specific time interval and then subsequently published.
+We think the best comparison set would be with preprints posted on the same dates as preprint in motion preprints, but where the analysis is conducted on the set after enough years have passed for those that will be published to have been published.
+Since we don't have this set, we did conduct the analysis proposed by the reviewer.
+The results of this analysis are available in Supplemental Figure XYZ.**
 
 > Other:
 > 
 > Labels within figures could often be increased in size to improve readability.
+
 **We have updated the size of our labels for this manuscript.**
 
  
@@ -390,13 +409,17 @@ We provide a table of these ambiguous cases below.**
 > The results of Figure 2A could possibly be strengthened by avoiding Principal Components and replacing them by UMAP projects to account for non-linearity.
 
 **We chose to use PCA for figure 2A as our goal was to visually highlight the concepts captured by our generated principal components.
-You can find a umap version of bioRxiv in [this notebook](https://github.com/greenelab/annorxiver/blob/b120488de2c197d93072678f80fce68d11d9e08d/biorxiv/word_vector_experiment/02_biorxiv_visualize_embeddings.ipynb).**
+We did also perform a UMAP embedding, which we included in [this notebook](https://github.com/greenelab/annorxiver/blob/b120488de2c197d93072678f80fce68d11d9e08d/biorxiv/word_vector_experiment/02_biorxiv_visualize_embeddings.ipynb) but not the manuscript itself.**
 
 > Although peripheral to the current manuscript, their approach and data would also seem capable to providing an update-able map of the biomedical sciences, by applying their approach of Figure 2 to the PMC corpus data which the authors access too. Such a map could be interesting for those trying to obtain an overview about biology. In case that the authors do not hold plans to publish this elsewhere, and in case that it would be less than a day of work, I would recommend adding such a map to the supplement or as a web service.
 
-**We accomplished this idea with our web application as we provided a 2D visualization of PMC's open-access corpus.
+**Our web application provides 2D visualization of PMC's open-access corpus.
 This visualization uses SAUCIE, an autoencoder designed for RNA-seq, instead of UMAP or PCA to generate the landscape.
-We also constructed an auto-updater pipeline for this tool, incorporating new papers into our website and visualization every month.**
+We also constructed an auto-updater pipeline for this tool, incorporating new papers into our website and visualization every month.
+We think that the map is now in place in our server, and that others could produce their own map using either our API or the underlying SAUCIE models.
+SENTENCE HERE ABOUT HOW TO GET THE SAUCIE MODELS.**
+
+Can you add the sentence about where to get them?
 
 > Are the few publications in Figure 2A, which lie outside of the space that is generally occupied by their respective article categories, somewhat different when doing a superficial manual inspection (e.g.: misclassified by authors, or interdisciplinary research)
 
