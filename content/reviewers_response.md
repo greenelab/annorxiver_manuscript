@@ -419,13 +419,12 @@ We also constructed an auto-updater pipeline for this tool, incorporating new pa
 We think that the map is now in place in our server, and that others could produce their own map using either our API or the underlying SAUCIE models.
 SENTENCE HERE ABOUT HOW TO GET THE SAUCIE MODELS.**
 
-Can you add the sentence about where to get them?
 
 > Are the few publications in Figure 2A, which lie outside of the space that is generally occupied by their respective article categories, somewhat different when doing a superficial manual inspection (e.g.: misclassified by authors, or interdisciplinary research)
 
 **We sampled a select number of preprints from the neuroscience and bioinformatic category that were closer to the left side of the figure (PC1 <= -2.5 and -2 < PC2 < 2).
 We found that these outliers mainly consisted of interdisciplinary research (e.g., a bioinformatic paper analyzing fluorescence micrographs or a cell biology approach used to explore a neuroscience concept).
-We provide a table below of preprint dois that fall into this situation.**
+We provide a table below of preprint DOIs that fall into this situation.**
 
 ![PCA plot](https://raw.githubusercontent.com/greenelab/annorxiver/51e602d9c4863e1314ed5f01bc483901894ed705/biorxiv/pca_association_experiment/output/pca_plots/svg_files/scatterplot_files/pca01_v_pca02_reversed.svg)
 
@@ -476,24 +475,28 @@ We incorporated these suggestions into our discussion/conclusion section.**
 
 > Seeing Figure 6D and 6E, I would enjoy the authors showing or discussing more explicitly, whether textual differences increase with the number of revisions (and/or if there were some more complex changes such as reversions to earlier versions).
 
-**We performed a linear regression analysis to determine how preprint version counts are associated with textual changes using all preprint-published pairs within bioRxiv.
-We found a positive slope between version count and document distance, indicating preprints undergo small textual changes through every new version posted onto bioRxiv.
-However, this positive slope is not significant enough to include in our manuscript.**
+**We agree with the reviewer that this would be interesting to examine.
+We performed a linear regression analysis to examine relationships between preprint version counts and the amount of change using all preprint-published pairs within bioRxiv.
+We found a small positive slope between version count and document distance (see below), but given the caveats involved with respect to small sample size at the extremes we elected not to include this analysis in the revised manuscript.
 
 ![Version Count vs Document distance Linear regression](https://raw.githubusercontent.com/danich1/annorxiver/bc7761c4db132f1287205680a1e2e5f220a85755/biorxiv/publication_delay_experiment/output/version_count_doc_distances.png)
 
 # Reviewer #3
  
 > This study asks an important question: (how) do preprints change between their initial release on a preprint server and their eventual publication in a peer-reviewed journal? While the analysis of the linguistic changes doesn't reveal anything particularly exciting (mostly typesetting and references to supplementary information included in response to reviewer requests), this is an incredibly useful result in demonstrating that preprints are typically of high quality, which has broad implications for how researchers and their work are assessed in career, funding, and publishing decisions. The authors have developed some very promising deliverables based on document embeddings that should be broadly applicable to readers, authors, journal editors, and other stakeholders navigating the complex landscape of preprinted and published literature.
->
+
+We appreciate the reviewer's positive comments on the value of our manuscript.
+We agree that the linguistic changes aren't particularly exciting and with the reviewer's sentiment that that finding, in itself, is exciting.
+
 > Major Comments:
 > 
 > The method for discovering unannotated preprint-publication relationships is very neat, but I imagine it's rather unwieldy to match a novel publication against the full-text bioRxiv corpus in downstream applications (e.g., bioRxiv's automation)--could this be optimized by reducing the search space to preprints that share some or all of the same authors, within a reasonable date range, and/or only considering paper/preprint metadata (e.g., abstract, title, references)? Such an approach might also enable annotation of preprints that are eventually published as non-OA peer reviewed articles for which such metadata are available.
 
-**It is possible to identify preprint-published pairs using abstracts alone.
+**We investigated this based on the reviewer's question.
+Our results suggest that it is likely to be feasible to identify preprint-published pairs using abstracts alone.
 We generated document embeddings using solely abstracts and calculated distances between known preprint-published pairs and preprints with a randomly sampled article from the same journal.
-Looking at the precision of the top k predictions for both approaches, we found that abstracts performed slightly better than full text (figure produced below).
-This suggests that abstracts can be used to establish preprint and published links.**
+We found that the ranking by abstract distances was slightly better than full text (figure below) for matching preprints with their published pair.
+This indicates that abstracts can be used to establish preprint and published links, and while the evidence is relatively weak (as the difference between full text and abstract is small) it suggests that perhaps abstracts undergo less change than full text.**
 
 ![Abstracts vs Full Text](https://raw.githubusercontent.com/greenelab/annorxiver/ff456c5c5cb7cddd16400f6e5b74422e1b33d349/biorxiv/article_distances/output/figures/abstract_vs_full_text_top_k_precision.png)
  
@@ -501,7 +504,7 @@ This suggests that abstracts can be used to establish preprint and published lin
 > 
 > "Specific journals publish articles in a focused topic area, while others publish articles that cover many topics. Likewise, some journals have a publication rate of at most hundreds of papers per year, while others publish at a rate of at least ten thousand papers per year. Accounting for these characteristics, we designed two approaches - one centered on manuscripts and another centered on journals."  << this could use some unpacking and/or reorganizing of details found later in this section--as I understand it, the variation in journals' topical breadth motivates the development of a manuscript-focused classifier (so that topically similar papers appearing in generalist journals do not get obscured) and the variation in journals' publication rates motivates a journal-focused classifier (so that high-output journals do not overwhelm more selective or less popular journals).
 
-**We recognize that this section is a bit dense and have updated our manuscript to unpack this explanation.**
+**We agree with the reviewer that this section was unduly dense, and we have revised the manuscript to more clearly unpack this explanation.**
 
 ```diff
 + Training models to identify which journal publishes similar articles is challenging as not all journals are the same. 
@@ -518,16 +521,17 @@ This suggests that abstracts can be used to establish preprint and published lin
 
 **We evaluated our classifier agreement by calculating the overlap coefficient, which is designed to measure the overlap between two sets.
 We randomly sampled 1700 out of 20232 known preprint-published pairs from our test dataset.
-We generated ten recommendations from our centroid classifier and ten unique journal recommendations from our paper-paper model for every sampled pair. 
-This model achieved an average overlap coefficient of 0.21.
-Along with this calculation, we generated two random baselines for both our models.
+We generated ten recommendations from our centroid classifier and ten unique journal recommendations from our paper-paper model for every sampled pair (as the paper classifier can return papers from the same journal, this means we are examining ten or more manuscripts until we reach ten unique journals). 
+This resulted in an average overlap coefficient of 0.21.
+Along with this calculation, we generated baselines for each model.
 Our first baseline was designed for our journal centroid model.
-We subsetted our preprint-published pairs to contain a distinct listing of each unique journal, then randomly sampled ten journals without replacement for each preprint-published pair.
-We compared this random listing against our original journal centroid recommendation list and achieved an average score of 0.0184.
+We randomly sampled ten journals without replacement for each preprint-published pair.
+We compared this random listing against our original journal centroid recommendation list and found an average score of 0.0184.
 Our other baseline was designed for our paper-paper classifier.
 We randomly sampled without filtering ten unique journals for each preprint-published pair and compared this sample to the original paper-paper recommendation list. 
-This baseline resulted in an average overlap coefficient of 0.009.
-Overall, our approach has better recommendation agreement compared to our randomly sampled baseline.**
+This baseline overlap coefficient was 0.009.
+Our takeaway from this analysis is that both approaches agree much more than they would due to random overlap, but the overlap coefficient remains modest.
+Because of the relatively large number of discrepancies between the resulting sets, we were not able to identify a practical way to answer the characteristics of preprints that led to differences vs common predictions.**
 
 > Minor Comments (by section):
 > 
@@ -535,7 +539,7 @@ Overall, our approach has better recommendation agreement compared to our random
 > 
 > The references of text mining on biomedical corpora should include Desai et al (2018) [https://www.biorxiv.org/content/10.1101/333922v1.abstract], which describes a similar recommendation engine.
 
-**We have added this reference to our manuscript.**
+**We agree and have added this reference.**
 ```diff
 - Textual analysis uses linguistic, statistical, and machine learning techniques to analyze and extract information from text [...].
 
@@ -556,7 +560,7 @@ Overall, our approach has better recommendation agreement compared to our random
 
 > Define "stopwords," since many readers may be unfamiliar with this term
 
-**We updated our manuscript to have an explanation of "stopwords".**
+**We added an explanation of "stopwords" to the manuscript.**
 
 ```diff
 + All corpora contain multiple words that do not have any meaning (e.g. conjunctions, prepositions, etc.) or occur with a high frequency.
@@ -567,7 +571,7 @@ Overall, our approach has better recommendation agreement compared to our random
 > 
 > This switches back to using "words" instead of "tokens" as in the previous section
 
-**Thank you for pointing this out.
+**Thank you for pointing out this inconsistency.
 We have carefully edited our manuscript to make sure "tokens" was consistently used instead of "words".**
  
 > Section "Measuring Time Duration for Preprint Publication Process":
@@ -580,19 +584,22 @@ We have carefully edited our manuscript to make sure "tokens" was consistently u
 > 
 > Fig. 4: can the longer publication times for scicomm/education papers (Fig 4a) be explained by a tendency to go through more versions (Fig 4b)?
 
-**We cannot accurately answer this question as most published articles in this category aren't contained in Pubmed Central's Open Access Corpus (PMCOA).
-However, the preprints that do have a matching counterpart in PMCOA are in our supplemental files.**
+**We investigated this.
+Unfortunately, we were not able to provide a detailed answer to this question as most published articles in this category weren't contained in Pubmed Central's Open Access Corpus (PMCOA).
+We do provide a table of preprints that have a matching counterpart in PMCOA in our supplemental files, which provides the ingredients for further investigations.**
 
 > It might be worthwhile to explore what happens post-publication to papers that go through more preprint revisions and take longer to publish, as this could have practical implications for authors as they decide when/if to submit/revise their preprints. Do these papers ultimately receive more citations, end up in journals with higher impact factors, or receive more attention on social media?
 
-**We have provided a supplemental file containing preprints and corresponding published information for anyone to inspect these changes themselves.**
+**We agree that this is an interesting question.
+We thought that this work would be outside the scope of this manuscript, but we wanted to make it as easy as possible for this to be tackled in the future.
+We provide a supplemental file (NAME OF FILE HERE) containing preprints and corresponding publication to enable these future studies.**
 
 > Section "Preprints with similar document embeddings share publication venues":
 > 
 > From personal experience, converting bioRxiv PDFs to text sometimes introduces weird noise and artifacts. Since bioRxiv and medRxiv both offer full-text HTML for many (if not all?) articles, is it possible to modify the application to use this cleaner data source?
 
-**At the time of submission, we recognize that using XML is better than solely relying on the pdf parser.
-We updated our website to attempt to retrieve the XML version first, then resort to the pdf parser if the XML version is unavailable.**
+**At the time of submission, we recognized that using XML was better than solely relying on a pdf parser.
+We have now updated the webserver to attempt to retrieve the XML version first, then resort to the pdf parser if the XML version is unavailable.**
 
 > Section "Contextualizing the Preprints in Motion Collection":
 > 
@@ -624,7 +631,8 @@ We updated our website to attempt to retrieve the XML version first, then resort
 > 
 > "Each new version adds additional 51 days before a preprint is published."
 
-**We have updated these sentences to be more transparent within our manuscript.**
+**We have updated these sentences in the manuscript.
+We thank the reviewer for providing these corrections.**
 
 ```diff
 - We hypothesize that preprints and biomedical text are pretty similar, especially when controlling for the differential uptake of preprints across fields.
