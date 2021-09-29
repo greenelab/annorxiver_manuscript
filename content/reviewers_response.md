@@ -26,7 +26,10 @@
 The reviewer is corrected that we did not realize that the finding of 77% of preprint-published pairs being present in PMCOA is a surprising discovery, and we thank this reviewer for bringing this to our attention.
 We now include the following in our discussion section to emphasize this point:**
 
-ADD IN THE TEXT FROM THE DISCUSSION SECTION HERE IN ITALICS.
+```diff
++ Over 77% of bioRxiv preprints with a corresponding publication in our snapshot were successfully detected within Pubmed Central’s Open Access Corpus (PMCOA). 
++ This suggests that most work from groups participating in the preprint ecosystem is now available in final form for literature mining and other applications.
+```
  
 > If it were my choice I would cut the entire subsection 'Document embeddings derived from bioRxiv reveal fields and subfields'. It is already known that document embeddings can reveal fields and subfields. Being 'preprints' or 'biorxiv preprints' rather than say published journal articles won't change that. I found this section very uninteresting and extremely un-novel. It is descriptive and accurate, but in the context of an already long manuscript, I feel it is unnecessary.
 
@@ -64,7 +67,8 @@ If PMCOA begins to include more journals that publish articles in these fields o
 >
 >an analysis of preprints posted at the beginning of 2020 revealed that over 50% underwent minor changes in the abstract text as they were published, but over 70% had 'no change' or only superficial rearrangements to panels and tables [25].
 
-**We agree with the reviewer that the proposed phrasing is better. We now write:**
+**We agree with the reviewer that the proposed phrasing is better. 
+We now write:**
 
 ```diff
 - Preprint repositories by definition do not perform in-depth peer review, which can result in posted preprints containing inconsistent results or conclusions [...]; however, an analysis of preprints posted at the beginning of 2020 revealed that most underwent minor changes as they were published [...].
@@ -86,7 +90,6 @@ This did not lead to substantive changes in the article or figures, but we agree
 + We encountered a total of 72 withdrawn preprints within our snapshot. 
 + After removal, we were left with 97,951 preprints for our downstream analyses.
 ```
-
 
 > 3.) https://hypothes.is/a/bmdkpNLeEeuZ0k8oLqyeWQ
 > 
@@ -168,15 +171,18 @@ We updated text to fix this typo.**
 We agree that the stopwords are not precisely tuned for life sciences research.
 We have adjusted our text to say:**
 
- ADD TEXT CHANGE HERE NOTING IT IS THE DEFAULT 
+```diff
+- We used spaCy's "en_core_web_sm" model [@spacy2] (version 2.2.3) to preprocess all corpora and filter out 326 spaCy-provided stopwords.
 
++ We used spaCy's "en_core_web_sm" model [@spacy2] (version 2.2.3) to preprocess all corpora and filter out 326 stopwords using spaCy's default settings.
+```
 
 > 9.) https://hypothes.is/a/dkIurtLmEeuqkU-qTN4dtg
 > 
 > I'm sure you've got this in the github, but just to make the manuscript more readily understandable without digging around in github, do you think you could provide as a supplementary file a list of those 100 most frequently occurring tokens, so that people can get a better feel for what the data is here?
 
 **We agree with the reviewer that this is a convenient table to have at hand.
-This is now Supplementary Table INSERT TABLE NUMBER.**
+This is now Supplementary Table 5.**
 
 > 10.) https://hypothes.is/a/-2AU8tLmEeu6swvY4jN5Mw
 > 
@@ -237,7 +243,12 @@ We have incorporated it into our manuscript.**
 > 
 > adjusting for recency? i.e. not sampling 2019 preprints? in figure C the line indicates (if I'm interpreting correctly) that overall only 46.55% are published but that's because it includes very recent preprints that haven't had time to be journal published yet. Just be explicit that you are adjusting for recency (i.e. excluding 2019 and newer preprints) when you say that most preprints are eventually published.
 
-**We included all preprints (from 2013 to 2019/early 2020) posted onto biorxiv when calculating this proportion.**
+**Initially, we incorporated all preprints (2013 to early 2020) when calculating the overall proportion of preprints published.
+We agree that adjusting for recency is a better approach.
+We updated our proportion estimate by filtering out preprints posted in 2019 and 2020, then used the remaining set to take the fraction of preprints published over every preprint posted on bioRxiv (before 2019).
+Our updated estimate is in Figure 2 in our manuscript (reproduced below).**
+
+![updated overall proportion calculation](https://raw.githubusercontent.com/danich1/annorxiver/5d389dc65c0e860b6896cda2125902ba025fda43/biorxiv/article_distances/output/figures/publication_rate_reviewer_request.png)
 
 > 16.) https://hypothes.is/a/N8cKltLrEeuZ-iPc5lrP5g
 > 
@@ -268,7 +279,8 @@ We have incorporated it into our manuscript.**
 >  
 > See: "Please note, if data have been obtained from a third-party source, we require that other researchers would be able to access the data set in the same manner as the authors" https://journals.plos.org/plosone/s/data-availability despite that URL indicating just PLOS ONE, the policy applies to all PLOS journals, unless otherwise noted.
 
-**We believe that using the NYTAC dataset does not violate PLOS's data availability policy. We accessed the dataset in accordance with this policy.**
+**We believe that using the NYTAC dataset does not violate PLOS's data availability policy.
+We accessed the dataset in accordance with this policy.**
 
 
 # Reviewer #2
@@ -286,22 +298,14 @@ Our first goal was to examine the linguistic landscape, so we prioritized strate
 Our primary strategy was to use word embeddings, which we could use to explore topics and language.
 We combined those same word embeddings to produce document embeddings as the average of the word embeddings.
 This lets us use the same underlying embeddings through the manuscript from the exploration of language through the journal prediction.
-We also agree with the reviewer that Doc2Vec would be likely to produce embeddings that would improve performance on the prediction task.
-
+We also agree with the reviewer that Doc2Vec would be likely to produce embeddings that would improve performance on the prediction task.  
 For this revision, we directly compared both methods for their interpretability and predictive performance.
 We find that the Word2Vec model's first principal component (shown below) was more interpretable than the one from the Doc2Vec model (also below).
 On the other hand, we find that the Doc2Vec model's predictive accuracy is better for the journal classification task (also below).
 On balance, we think including multiple embedding models within this paper, which aims to characterize the linguistic landscape of bioRxiv, would be confusing.
 For this revision, we have elected to retain the Word2Vec model.
 We debated changing the journal prediction server and results to use Doc2Vec, but also considering the feedback from reviewer #1 about the complexity of the paper decided against at this time.
-We could easily imagine an improvement to the server in the future that moves to Doc2Vec.
-Neural networks are challenging to interpret due to their non-linear activation layers.
-We empirically show this challenge by providing word clouds generated from the first principal component between our approach and doc2vec.
-Our approach teases out quantitative vs. cellular biology concepts while Doc2Vec is hard to discern. 
-Conversely, we noticed that Doc2Vec significantly improves our centroid classifier for our journal recommendation analysis.
-We discovered this improvement by first evaluating Doc2Vec against our linear approach by randomly holding out published articles from our dataset and using the rest to predict the holdout set.
-Our subsequent evaluation was comparing these two models against our test set, which consisted of using bioRxiv preprints to predict the journal that published their corresponding published counterparts.
-Overall, methods such as Doc2Vec does improve performance at the cost of interpretability.**
+We could easily imagine an improvement to the server in the future that moves to Doc2Vec.**
 
 **Word2Vec 1st Prinicpal Component WordCloud**
 ![Word2vec](https://raw.githubusercontent.com/danich1/annorxiver/3bcac4ca2e9249359361525a7e5f3ae36c71d4a5/biorxiv/pca_association_experiment/output/word_pca_similarity/figure_pieces/pca_01_cossim_word_cloud.png)
@@ -318,7 +322,7 @@ Overall, methods such as Doc2Vec does improve performance at the cost of interpr
 **We did consider using a pretraining step, but we were worried that then it might be hard to differentiate the effect of pretraining from the text content of bioRxiv.
 Since our goal was to explore the linguistic landscape of bioRxiv itself, we elected not to do this.
 We agree with the reviewer that if the goal is to enhance the predictive performance of the similarity search webserver, this would be a good step to take.
-As with above, we may consider this in a future iteration of the server, but at this point we want to make sure the work continues to characterize the linguistic landscape of bioRxiv.
+As with above, we may consider this in a future iteration of the server, but at this point we want to make sure the work continues to characterize the linguistic landscape of bioRxiv.**
 
 > Likewise, I'm wondering why the authors used a Euclidean distance for word embeddings instead of a Cosine similarity (which if I recall correctly would also be default in the similarity module of the package which the authors used). Cosine similarity should also allow the authors to make statements about the similarity of words without imposing assumptions on similar text lengths or usage frequencies.
 
@@ -335,7 +339,7 @@ We didn't find the distance metric to be a substantial driver of performance: pr
 **While a more optimal distance metric could make some difference in performance, it wouldn't substantially change the issue of the background frequency whereby some mega journals have published orders of magnitude more manuscripts than others.
 We feel that the two approaches together (nearest publications, nearest centroids) provide a reasonable solution that can be effectively integrated into a web interface.
 The reviewer's additional comment about implementing an explicit adjustment for the distributional shift is quite insightful and would likely be a path to improved performance.
-We could imagine using something like orthogonal Procrustes to align the preprint-publication vector spaces before performing search.
+We could imagine using something like Orthogonal Procrustes to align the preprint-publication vector spaces before performing search.
 We also recently added the capability to automatically update the search indices, which makes implementing this more challenging (we'd want to check the alignments each time), so we didn't implement this at this time but we agree with the reviewer that this is an important path to explore for improved performance in the future.**
 
 > I love the web application!
@@ -345,15 +349,80 @@ We also recently added the capability to automatically update the search indices
 > No statistics are given for the enrichments in Figure 1B-E.
 
 **We report each token with a 95% confidence interval (CI). 
-The underlying frequency counts are sufficiently large that the confidence intervals are difficult to discern on the plot.**
+The underlying frequency counts are sufficiently large that the confidence intervals are difficult to discern on the plot.
+We have adjusted our plot style to make the confidence intervals more apparent.**
 
 > I would welcome a supplemental analysis, that removes single letters and special characters from the analysis of Figure 1B-E as they might change the baseline.
 
-**We have added this analysis to our supplement.**
+**We have added this analysis to our supplement (Supplemental Figures S3 and S4).
+We reproduced these figures below.**
+
+BioRxiv vs Pubmed Central 
+Supplemental Figure S3
+![](https://raw.githubusercontent.com/greenelab/annorxiver/ff456c5c5cb7cddd16400f6e5b74422e1b33d349/biorxiv/corpora_comparison/output/figures/biorxiv_vs_pubmed_central_special_char_removed.png)
+
+
+Preprints vs their Published Counterparts
+Supplemental Figure S4
+![](https://raw.githubusercontent.com/greenelab/annorxiver/ff456c5c5cb7cddd16400f6e5b74422e1b33d349/biorxiv/corpora_comparison/output/figures/preprint_published_comparison_special_char_removed.png)
 
 > The word cloud of Figure 2B, C is somewhat nice as it shows the main words. However, this information could also be conveyed in the text. Would personally favor to quantitatively see loadings of first few principal components for different terms.
 
-**We have provided a table in our supplemental section.**
+**We have provided a table in our supplemental section (Supplemental Table 3 and 4).
+We also provide these tables below:**
+
+Supplementary Table 3: Top and bottom five cosine simularity scores between tokens and the PC1 axis. 
+
+| Cosine Simularity (PC1, word)  | word           | 
+|--------------------------------|----------------| 
+| 0.6399154807185836             | empirical      | 
+| 0.5995356000266072             | estimates      | 
+| 0.5918321530159384             | choice         | 
+| 0.5905550757923625             | statistics     | 
+| 0.5832932491448216             | performance    | 
+| 0.5803836474390357             | accuracy       | 
+| 0.5757250459195589             | weighting      | 
+| 0.5753027342288192             | estimation     | 
+| 0.5730092178610916             | uncertainty    | 
+| 0.5720493442813257             | task           |
+|                                |                  | 
+| -0.4484093198386865            | abrogated      | 
+| -0.4490583645152233            | transfected    | 
+| -0.4500847285921068            | incubating     | 
+| -0.4531550791501111            | inhibited      | 
+| -0.4585422153514687            | co-incubated   | 
+| -0.4774721756292901            | pre-incubated  | 
+| -0.4793057689825842            | overexpressing | 
+| -0.4839313193713342            | purified       | 
+| -0.4869885872803974            | incubated      | 
+| -0.5040798110023075            | cultured       | 
+
+Supplementary Table 4: Top and bottom five cosine simularity scores between tokens and the PC2 axis.
+
+| Cosine Simularity (PC2, word) | word          | 
+|-------------------------------|---------------| 
+| 0.65930201597598              | genomic       | 
+| 0.6333515216782134            | genome        | 
+| 0.5974018685580009            | gene          | 
+| 0.5796531207938461            | genomes       | 
+| 0.5353687686155728            | annotation    | 
+| 0.5310140161149529            | sequencing    | 
+| 0.5197350376908197            | sequencesM.   | 
+| 0.5181781615670665            | genome,       | 
+| 0.5168781637087506            | bioinformatic | 
+| 0.513853407439108             | WGS           | 
+|                               |                |
+| -0.4589201401582101           | duration      | 
+| -0.4690482252758019           | stimuli       | 
+| -0.4712875761979691           | amplitudes    | 
+| -0.4772723570301678           | contralateral | 
+| -0.4813219679071856           | stimulation:  | 
+| -0.4946709932017581           | delay         | 
+| -0.5111990014804086           | stimulus      | 
+| -0.5251288188682695           | amplitude     | 
+| -0.543586881182879            | stimulation   | 
+| -0.5467022203294039           | evoked        | 
+
 
 > The definition of "True matches" could be more explicit in within the main text as the preceding figure 3A could for some people set up a different anticipation.
 
@@ -380,7 +449,9 @@ We have adjusted the figure legend to more clearly note what we plotted.**
 The preprints in motion selection included preprints that were both posted within a specific time interval and then subsequently published.
 We think the best comparison set would be with preprints posted on the same dates as preprint in motion preprints, but where the analysis is conducted on the set after enough years have passed for those that will be published to have been published.
 Since we don't have this set, we did conduct the analysis proposed by the reviewer.
-The results of this analysis are available in Supplemental Figure XYZ.**
+The results of this analysis are available in Supplemental Figure S6 (reproduced below).**
+
+![Adjusct Background Analysis](https://raw.githubusercontent.com/greenelab/annorxiver/ff456c5c5cb7cddd16400f6e5b74422e1b33d349/biorxiv/polka_subset_experiment/output/figures/polka_filtered_background_panels.png)
 
 > Other:
 > 
@@ -391,19 +462,21 @@ The results of this analysis are available in Supplemental Figure XYZ.**
  
 > The methods section briefly comments on some ambiguous cases for the matching. Would these cases be the result of modifications that defy a 1:1 mapping, e.g.: multiple stories getting fused, or one story getting split?
 
-**Some of these ambiguous cases involve abstract or main text changes, while other cases result in drastically different papers that share similar research content.
-We provide a table of these ambiguous cases below.**
+**Out of our small set of disagreements, we encountered a variety of reasons for annotation mismatches.
+Some of these cases involved entirely different papers, which are clearly false positives.
+Other cases involved title, abstract or main text changes, while the remaining cases consisted of papers sharing similar research topics.
+We provide a table of these disagreements below along with short description about each pair.**
 
-| biorxiv_doi_url                           | pmcid_url                                   | 
-|-------------------------------------------|---------------------------------------------| 
-| https://doi.org/10.1101/413450            | https://www.ncbi.nlm.nih.gov/pmc/PMC2967545 | 
-| https://doi.org/10.1101/776930            | https://www.ncbi.nlm.nih.gov/pmc/PMC6210049 | 
-| https://doi.org/10.1101/2020.01.13.905521 | https://www.ncbi.nlm.nih.gov/pmc/PMC4171638 | 
-| https://doi.org/10.1101/352963            | https://www.ncbi.nlm.nih.gov/pmc/PMC6116183 | 
-| https://doi.org/10.1101/513002            | https://www.ncbi.nlm.nih.gov/pmc/PMC3545240 | 
-| https://doi.org/10.1101/680843            | https://www.ncbi.nlm.nih.gov/pmc/PMC6379322 | 
-| https://doi.org/10.1101/074450            | https://www.ncbi.nlm.nih.gov/pmc/PMC5776756 | 
-| https://doi.org/10.1101/530758            | https://www.ncbi.nlm.nih.gov/pmc/PMC6663035 | 
+| biorxiv_doi_url                           | pmcid_url                                   | Description      |
+|-------------------------------------------|---------------------------------------------| ---------------- |
+| https://doi.org/10.1101/413450            | https://www.ncbi.nlm.nih.gov/pmc/PMC2967545 | Entirely different papers. |
+| https://doi.org/10.1101/776930            | https://www.ncbi.nlm.nih.gov/pmc/PMC6210049 | Entirely different papers. |
+| https://doi.org/10.1101/2020.01.13.905521 | https://www.ncbi.nlm.nih.gov/pmc/PMC4171638 | Text changes but same paper. |
+| https://doi.org/10.1101/352963            | https://www.ncbi.nlm.nih.gov/pmc/PMC6116183 | Text changes but same paper |
+| https://doi.org/10.1101/513002            | https://www.ncbi.nlm.nih.gov/pmc/PMC3545240 | Similar aspects of research (liver studies) but different papers. |
+| https://doi.org/10.1101/680843            | https://www.ncbi.nlm.nih.gov/pmc/PMC6379322 | Similar aspects of research (taxonomy studies) but different papers. |
+| https://doi.org/10.1101/074450            | https://www.ncbi.nlm.nih.gov/pmc/PMC5776756 | Significant text changes but arguably same paper. |
+| https://doi.org/10.1101/530758            | https://www.ncbi.nlm.nih.gov/pmc/PMC6663035 | Significant text changes but same paper. |
 
 
 > The results of Figure 2A could possibly be strengthened by avoiding Principal Components and replacing them by UMAP projects to account for non-linearity.
@@ -417,7 +490,7 @@ We did also perform a UMAP embedding, which we included in [this notebook](https
 This visualization uses SAUCIE, an autoencoder designed for RNA-seq, instead of UMAP or PCA to generate the landscape.
 We also constructed an auto-updater pipeline for this tool, incorporating new papers into our website and visualization every month.
 We think that the map is now in place in our server, and that others could produce their own map using either our API or the underlying SAUCIE models.
-SENTENCE HERE ABOUT HOW TO GET THE SAUCIE MODELS.**
+Code to train our SAUCIE model can be found in [this notebook](https://github.com/greenelab/annorxiver/blob/master/pmc/journal_recommendation/03_journal_recommendation_figure_generator.ipynb) and our fully trained model can be found using [this link](https://github.com/greenelab/preprint-similarity-search/tree/master/server/saucie_model).**
 
 
 > Are the few publications in Figure 2A, which lie outside of the space that is generally occupied by their respective article categories, somewhat different when doing a superficial manual inspection (e.g.: misclassified by authors, or interdisciplinary research)
@@ -477,7 +550,7 @@ We incorporated these suggestions into our discussion/conclusion section.**
 
 **We agree with the reviewer that this would be interesting to examine.
 We performed a linear regression analysis to examine relationships between preprint version counts and the amount of change using all preprint-published pairs within bioRxiv.
-We found a small positive slope between version count and document distance (see below), but given the caveats involved with respect to small sample size at the extremes we elected not to include this analysis in the revised manuscript.
+We found a small positive slope between version count and document distance (see below), but given the caveats involved with respect to small sample size at the extremes we elected not to include this analysis in the revised manuscript.**
 
 ![Version Count vs Document distance Linear regression](https://raw.githubusercontent.com/danich1/annorxiver/bc7761c4db132f1287205680a1e2e5f220a85755/biorxiv/publication_delay_experiment/output/version_count_doc_distances.png)
 
@@ -592,7 +665,7 @@ We do provide a table of preprints that have a matching counterpart in PMCOA in 
 
 **We agree that this is an interesting question.
 We thought that this work would be outside the scope of this manuscript, but we wanted to make it as easy as possible for this to be tackled in the future.
-We provide a supplemental file (NAME OF FILE HERE) containing preprints and corresponding publication to enable these future studies.**
+We provide a supplemental file (published_preprints_information.xlsx) containing preprints and corresponding publication to enable these future studies.**
 
 > Section "Preprints with similar document embeddings share publication venues":
 > 
@@ -659,10 +732,10 @@ We thank the reviewer for providing these corrections.**
 ```
 
 ```diff
-- The application downloads a pdf version of any preprint hosted on the bioRxiv or medRxiv server uses PyMuPDF [@url:https://pymupdf.readthedocs.io/en/latest/intro.html] to extract text from the downloaded pdf and feeds the extracted text into our CBOW model to construct a document embedding representation.
+- The application downloads a pdf version of any preprint hosted on the bioRxiv or medRxiv server uses PyMuPDF [...] to extract text from the downloaded pdf and feeds the extracted text into our CBOW model to construct a document embedding representation.
 
 + Our application attempts to download the full text xml version of any preprint hosted on the bioRxiv or medRxiv server and uses the lxml package (version num) to extract text.
-+ If the xml version isn't available our application defaults to downloading the pdf version and uses PyMuPDF [@url:https://pymupdf.readthedocs.io/en/latest/intro.html] to extract text from the pdf. 
++ If the xml version isn't available our application defaults to downloading the pdf version and uses PyMuPDF [...] to extract text from the pdf. 
 + The extracted text is fed into our CBOW model to construct a document embedding representation.
 ```
 
