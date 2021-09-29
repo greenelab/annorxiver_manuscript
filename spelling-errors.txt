@@ -7,7 +7,6 @@ contralateral
 cov
 COVID
 danich
-dependences
 dispersive
 dnicholson
 Dongbo
@@ -37,8 +36,6 @@ ProfLHunter
 Rubinetti
 sequencesM
 silico
-Simulairty
-simularity
 TheNeuralCoder
 timeframe
 timepoint
@@ -47,3 +44,5 @@ Translational
 Vec
 vincerubinetti
 WGS
+xa
+xb

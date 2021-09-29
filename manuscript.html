@@ -74,9 +74,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/d50983452bdfc0cc25c3cd2f72f5c0f184bbe2b5/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/d50983452bdfc0cc25c3cd2f72f5c0f184bbe2b5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/d50983452bdfc0cc25c3cd2f72f5c0f184bbe2b5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/32a8d1f3956320b97400f43b98500ec191b5a1d0/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/32a8d1f3956320b97400f43b98500ec191b5a1d0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/32a8d1f3956320b97400f43b98500ec191b5a1d0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -90,9 +90,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/annorxiver_manuscript/v/d50983452bdfc0cc25c3cd2f72f5c0f184bbe2b5/">permalink</a>)
+(<a href="https://greenelab.github.io/annorxiver_manuscript/v/32a8d1f3956320b97400f43b98500ec191b5a1d0/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/d50983452bdfc0cc25c3cd2f72f5c0f184bbe2b5">greenelab/annorxiver_manuscript@d509834</a>
+from <a href="https://github.com/greenelab/annorxiver_manuscript/tree/32a8d1f3956320b97400f43b98500ec191b5a1d0">greenelab/annorxiver_manuscript@32a8d1f</a>
 on September 29, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -330,8 +330,7 @@ Our second approach is centered on journals to account for varying publication r
 This approach allows more selective or less popular journals to have equal representation to their high publishing counterparts.</p>
 <p>Our article-based approach identifies most similar manuscripts to the preprint query, and we evaluated the journals that published these identified manuscripts.
 We embedded each query article into the space defined by the word2vec model (see above section ‘Constructing a Document Representation for Life Sciences Text’).
-Once embedded, we normalized each article into unit vectors and selected articles close to the query via Euclidean distance in the embedding space.
-This normalization step allows our classifier to provide the same rankings as the cosine distance metric.
+Once embedded, we selected manuscripts close to the query via Euclidean distance in the embedding space.
 Once identified, we return articles along with journals that published these identified articles.</p>
 <p>We constructed a journal-based approach to accompany the article-based classifier while accounting for the overrepresentation of these high publishing frequency journals.
 We identified the most similar journals for this approach by constructing a journal representation in the same embedding space.
@@ -352,7 +351,7 @@ We used SAUCIE <span class="citation" data-cites="LxhnWcbN">[<a href="#ref-LxhnW
 We trained this model on document embeddings of PMC articles that did not contain a matching preprint version.
 We used the following parameters to train the model: a hidden size of 2, a learning rate of 0.001, lambda_b of 0, lambda_c of 0.001, and lambda_d of 0.001 for 5000 iterations.
 When a user requests a new document, we can then project that document onto our generated two-dimensional space; thereby, allowing the user to see where their preprint falls along the landscape.
-We illustrate our recommendations as a shortlist and provide access to our network visualization at our website (https://greenelab.github.io/preprint-similarity-search/).</p>
+We illustrate our recommendations as a shortlist and provide access to our network visualization at our website (<a href="https://greenelab.github.io/preprint-similarity-search/">https://greenelab.github.io/preprint-similarity-search/</a>).</p>
 <h3 id="analysis-of-the-preprints-in-motion-collection">Analysis of the Preprints in Motion Collection</h3>
 <p>Our manuscript describes the large-scale analysis of bioRxiv.
 Concurrent with our work, another set of authors performed a detailed curation and analysis of a subset of bioRxiv <span class="citation" data-cites="DgTUHUNP">[<a href="#ref-DgTUHUNP" role="doc-biblioref">25</a>]</span> that was focused on preprints posted during the initial stages of the COVID-19 pandemic.
@@ -475,7 +474,7 @@ The results taken together suggest that while bioRxiv has experienced dramatic g
 </div>
 <div id="fig:corpora_comparison_panels" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/danich1/annorxiver/b8d20a1e7f59e43817cfdb8a5b0156b607b2c900/figure_generation/output/figure_one_panels.png" style="width:100.0%" alt="" /><figcaption><span>Figure 1:</span> <strong>A.</strong> The Kullback–Leibler divergence measures the extent to which the distributions, not specific tokens, differ from each other.
+<img src="https://raw.githubusercontent.com/danich1/annorxiver/f32dbc67288d39afbbc4811155a92f74256aa27e/figure_generation/output/figure_one_panels.png" style="width:100.0%" alt="" /><figcaption><span>Figure 1:</span> <strong>A.</strong> The Kullback–Leibler divergence measures the extent to which the distributions, not specific tokens, differ from each other.
 The token distribution of bioRxiv and PMC corpora is more similar than these biomedical corpora are to the NYTAC one.
 <strong>B.</strong> The significant differences in token frequencies for the corpora appear to be driven by the fields with the highest uptake of bioRxiv, as terms from neuroscience and genomics are relatively more abundant in bioRxiv.
 We plotted the 95% confidence interval for each reported token.
@@ -489,6 +488,7 @@ We plotted the 95% confidence interval for each reported token.
 The average sentence length, the fraction of pronouns, and the use of the passive voice were all more similar between bioRxiv and PMC than they were to NYTAC(Table <a href="#tbl:corpora_stats">1</a>).
 The Kullback–Leibler (KL) divergence of term frequency distributions between bioRxiv and PMCOA were low, especially among the top few hundred tokens (Figure <a href="#fig:corpora_comparison_panels">1</a>A).
 As more tokens were incorporated, the KL divergence started to increase but remained much lower than the biomedical corpora compared against NYTAC.
+We provide a listing of the top 100 most frequently occurring tokens from all three corpora in our supplement (Supplemental Table <a href="#tbl:token_table">S4</a>).
 These findings support our notion that bioRxiv is linguistically similar to the PMCOA repository.</p>
 <p>The terms “neurons”, “genome”, and “genetic”, which are common in genomics and neuroscience, were more common in bioRxiv than PMCOA while others associated with clinical research, such as “clinical” “patients” and “treatment” were more common in PMCOA (Figure <a href="#fig:corpora_comparison_panels">1</a>B, <a href="#fig:corpora_comparison_panels">1</a>C and Supplementary Figure <a href="#fig:corpora_comparison_panels_bio_v_pmid">S3</a>).
 When controlling for the differences in the body of documents to identify textual changes associated with the publication process, we found that tokens such as “et” “al” were enriched for bioRxiv while “<span class="math inline">\(\pm\)</span>”, “–” were enriched for PMCOA (Figure <a href="#fig:corpora_comparison_panels">1</a>D, <a href="#fig:corpora_comparison_panels">1</a>E).
@@ -504,7 +504,7 @@ Preprints from certain topic areas that spanned approaches from informatics-rela
 <h3 id="document-embedding-similarities-reveal-unannotated-preprint-publication-pairs">Document embedding similarities reveal unannotated preprint-publication pairs</h3>
 <div id="fig:preprint_links_panels" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/danich1/annorxiver/392ae9765362437116efe3250317f41cddbb3232/figure_generation/output/figure_three_panels.svg" style="width:100.0%" alt="" /><figcaption><span>Figure 2:</span> <strong>A.</strong> Preprints are closer in document embedding space to their corresponding peer-reviewed publication than they are to random papers published in the same journal.
+<img src="https://raw.githubusercontent.com/danich1/annorxiver/d46c859638544b6e388aa79ebb870375f62a81c5/figure_generation/output/figure_three_panels.png" style="width:100.0%" alt="" /><figcaption><span>Figure 2:</span> <strong>A.</strong> Preprints are closer in document embedding space to their corresponding peer-reviewed publication than they are to random papers published in the same journal.
 <strong>B.</strong> Potential preprint-publication pairs that are unannotated but within the 50th percentile of all preprint-publication pairs in the document embedding space are likely to represent true preprint-publication pairs.
 We depict the fraction of true positives over the total number of pairs in each bin.
 Accuracy is derived from the curation of a randomized list of 200 potential pairs (50 per quantile) performed in duplicate with a third rater used in the case of disagreement.
@@ -513,10 +513,11 @@ We show the publication rate of preprints since bioRxiv first started.
 The x-axis represents months since bioRxiv started, and the y-axis represents the proportion of preprints published given the month they were posted.
 The light blue line represents the publication rate previously estimated by Abdill et al. <span class="citation" data-cites="iPnRRJya">[<a href="#ref-iPnRRJya" role="doc-biblioref">13</a>]</span>.
 The dark blue line represents the updated publication rate using only CrossRef-derived annotations, while the dark green line includes annotations derived from our embedding space approach.
-The horizontal lines represent the overall proportion of preprints published as of the time of the annotated snapshot.</figcaption>
+The horizontal lines represent the overall proportion of preprints published as of the time of the annotated snapshot.
+The dashed horizontal line represents the overall proportion of preprints published after adjusting for preprints posted in 2019 and early 2020.</figcaption>
 </figure>
 </div>
-<p>Distances between preprints and their corresponding published versions were nearly always lower than preprints paired with a random article published in the same journal (Figure <a href="#fig:preprint_links_panels">2</a>A) and the same was true using abstracts alone (Supplemental Figure ??).
+<p>Distances between preprints and their corresponding published versions were nearly always lower than preprints paired with a random article published in the same journal (Figure <a href="#fig:preprint_links_panels">2</a>A).
 This suggested that embedding distances may predict the published form of preprints.
 We directly tested this by selecting low-distance but unannotated preprint-publication pairs and curating the extent to which they represented matching documents.
 Approximately 98% of our 200 pairs with an embedding distance in the 0-25th and 25th-50th percentile bins were successfully matched with their published counterpart (Figure <a href="#fig:preprint_links_panels">2</a>B).
@@ -530,7 +531,7 @@ Finally, as familiarity with preprinting grows, it is possible that authors are 
 <h3 id="preprints-with-more-versions-or-more-text-changes-relative-to-their-published-counterpart-took-longer-to-publish">Preprints with more versions or more text changes relative to their published counterpart took longer to publish</h3>
 <div id="fig:publication_delay_panels" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/danich1/annorxiver/5a593f0250886192650dd329e6968069b13e4fcb/figure_generation/output/figure_four_panels.png" style="width:100.0%" alt="" /><figcaption><span>Figure 3:</span> <strong>A.</strong> Author-selected categories were associated with modest differences in respect to publication half-life.
+<img src="https://raw.githubusercontent.com/danich1/annorxiver/f32dbc67288d39afbbc4811155a92f74256aa27e/figure_generation/output/figure_four_panels.png" style="width:100.0%" alt="" /><figcaption><span>Figure 3:</span> <strong>A.</strong> Author-selected categories were associated with modest differences in the median time to publish.
 Author-selected preprint categories are shown on the y-axis, while the x-axis shows the median time-to-publish for each category.
 Error bars represent 95% confidence intervals for each median measurement.
 <strong>B.</strong> Preprints with more versions were associated with a longer time to publish.
@@ -564,7 +565,7 @@ Next, the preprint’s PDF is converted to text, and this text is used to constr
 This representation is supplied to our classifiers to generate a listing of the ten papers and journals with the most similar representations in the embedding space (Figures <a href="#fig:journal_rec_workflow">4</a>A, <a href="#fig:journal_rec_workflow">4</a>B and <a href="#fig:journal_rec_workflow">4</a>C).
 Furthermore, the user-requested preprint’s location in this embedding space is then displayed on our interactive map, and users can select regions to identify the terms most associated with those regions (Figures <a href="#fig:journal_rec_workflow">4</a>D and <a href="#fig:journal_rec_workflow">4</a>E).
 Users can also explore the terms associated with the top 50 PCs derived from the document embeddings, and those PCs vary across the document landscape.
-You can access this application using the following url: https://greenelab.github.io/preprint-similarity-search/</p>
+You can access this application using the following url: <a href="https://greenelab.github.io/preprint-similarity-search/">https://greenelab.github.io/preprint-similarity-search/</a></p>
 <div id="fig:journal_rec_workflow" class="fignos">
 <figure>
 <img src="images/journal_recommender_workflow.png" style="width:100.0%" alt="" /><figcaption><span>Figure 4:</span> The preprint-similarity-search app workflow allows users to examine where an individual preprint falls in the overall document landscape.
@@ -577,7 +578,7 @@ Next, the app preprocesses the requested preprint and returns a listing of (<str
 <h3 id="contextualizing-the-preprints-in-motion-collection">Contextualizing the Preprints in Motion Collection</h3>
 <div id="fig:covid_19_preprints" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/danich1/annorxiver/00b826fcaf348596bd97fa8daa5f346c766b1790/figure_generation/output/figure_five_panels.png" style="width:100.0%" alt="" /><figcaption><span>Figure 5:</span> The Preprints in Motion Collection results are similar to all preprint results, except that their time to publication was independent of the number of preprint versions and amount of linguistic change.
+<img src="https://raw.githubusercontent.com/danich1/annorxiver/f32dbc67288d39afbbc4811155a92f74256aa27e/figure_generation/output/figure_five_panels.png" style="width:100.0%" alt="" /><figcaption><span>Figure 5:</span> The Preprints in Motion Collection results are similar to all preprint results, except that their time to publication was independent of the number of preprint versions and amount of linguistic change.
 <strong>A.</strong> Tokens that differed included those associated with typesetting and those related to the nomenclature of the virus that causes COVID-19.
 Error bars show 95% confidence intervals for each token.
 <strong>B.</strong> Of the tokens that differ between Preprints in Motion and their published counterparts, the most abundant were associated with the nomenclature of the virus.
@@ -606,7 +607,7 @@ The Preprints in Motion were not strongly colocalized in the linguistic landscap
 Preprints in this collection were published faster than the broader set of bioRxiv preprints (Figure <a href="#fig:covid_19_preprints">5</a>D and <a href="#fig:covid_19_preprints">5</a>E).
 We see the same trend when filtering the broader bioRxiv set to only contain preprints published within the same timeframe as this collection (Supplemental Figures <a href="#fig:filterd_polka_analysis">S6</a>A and <a href="#fig:filterd_polka_analysis">S6</a>B).
 The relationship between time to publication and the number of versions (Figure <a href="#fig:covid_19_preprints">5</a>D and Supplemental Figure <a href="#fig:filterd_polka_analysis">S6</a>A) and the relationship between time to publication and the amount of linguistic change (Figure <a href="#fig:covid_19_preprints">5</a>E and Supplemental Figure <a href="#fig:filterd_polka_analysis">S6</a>B) were both lost in the Preprints in Motion set.
-Our findings suggest that Preprints in Motion changed during publication in ways aligned with changes in the full preprint set but that peer review was accelerated in ways that broke the time dependences observed with the full bioRxiv set.</p>
+Our findings suggest that Preprints in Motion changed during publication in ways aligned with changes in the full preprint set but that peer review was accelerated in ways that broke the time dependencies observed with the full bioRxiv set.</p>
 <h2 id="discussion-and-conclusions">Discussion and Conclusions</h2>
 <p>BioRxiv is a constantly growing repository that contains life science preprints.
 Over 77% of bioRxiv preprints with a corresponding publication in our snapshot were successfully detected within Pubmed Central’s Open Access Corpus (PMCOA).
@@ -619,7 +620,7 @@ This observation is expected as preprints focused on medicine are supported by t
 Token-level analyses for preprints and their corresponding published version suggest that peer review may focus on data availability and incorporating extra sections for published papers; however, future studies are needed to ascertain individual token level changes as preprints venture through the publication process.
 One future avenue of research could examine the differences between only preprints and accepted author manuscripts within Pubmed Central to identify changes prior to journal publication.</p>
 <p>Document embeddings are a versatile way to examine language contained within preprints, understanding peer review’s effect on preprints, and provide extra functionality for preprint repositories.
-Our approach to generate document embeddings was focused on interpretability instead of predictive performance; however, using more advanced strategies to generate document vectors such as Doc2Vec<span class="citation" data-cites="arxiv:arXiv:1405.4053">[<span class="citeproc-not-found" data-reference-id="arxiv:arXiv:1405.4053"><strong>???</strong></span>]</span> or BERT <span class="citation" data-cites="SkPpj3hW">[<a href="#ref-SkPpj3hW" role="doc-biblioref">68</a>]</span> should increase predictive performance.
+Our approach to generate document embeddings was focused on interpretability instead of predictive performance; however, using more advanced strategies to generate document vectors such as Doc2Vec <span class="citation" data-cites="SdcIDSwR">[<a href="#ref-SdcIDSwR" role="doc-biblioref">37</a>]</span> or BERT <span class="citation" data-cites="SkPpj3hW">[<a href="#ref-SkPpj3hW" role="doc-biblioref">68</a>]</span> should increase predictive performance.
 Examining linguistic variance within document embeddings of life science preprints revealed that the largest source of variability was informatics.
 This observation bisects the majority of life science research categories that have integrated preprints within their publication workflow.
 This embedding space could also be used to quantify sentiment trends or other linguistic features.
@@ -1120,7 +1121,7 @@ DOI: <a href="https://doi.org/10.1101/2019.12.11.872887">10.1101/2019.12.11.8728
 <h3 id="document-embeddings-derived-from-biorxiv-reveal-fields-and-subfields">Document embeddings derived from bioRxiv reveal fields and subfields</h3>
 <div id="fig:topic_analysis_panels" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/danich1/annorxiver/5a593f0250886192650dd329e6968069b13e4fcb/figure_generation/output/figure_two_panels.png" data-tag="S1" style="width:100.0%" alt="" /><figcaption><span>Figure S1:</span> <strong>A.</strong> Principal components (PC) analysis of bioRxiv word2vec embeddings groups documents based on author-selected categories.
+<img src="https://raw.githubusercontent.com/danich1/annorxiver/f32dbc67288d39afbbc4811155a92f74256aa27e/figure_generation/output/figure_two_panels.png" data-tag="S1" style="width:100.0%" alt="" /><figcaption><span>Figure S1:</span> <strong>A.</strong> Principal components (PC) analysis of bioRxiv word2vec embeddings groups documents based on author-selected categories.
 We visualized documents from key categories on a scatterplot for the first two PCs.
 The first PC separated cell biology from informatics-related fields, and the second PC separated bioinformatics from neuroscience fields.
 <strong>B.</strong> A word cloud visualization of PC1.
@@ -1140,19 +1141,19 @@ We found that the first two PCs separated articles from different author-selecte
 Certain neuroscience papers appeared to be more associated with the cellular biology direction of PC1, while others seemed to be more associated with the informatics-related direction (Supplementary Figure <a href="#fig:topic_analysis_panels">S1</a>A).
 This suggests that the concepts captured by PCs were not exclusively related to their field.</p>
 <p>Visualizing token-PC similarity revealed tokens associated with certain research approaches (Supplementary Figures <a href="#fig:topic_analysis_panels">S1</a>B and <a href="#fig:topic_analysis_panels">S1</a>C).
-Token association of PC1 shows the separation of cell biology and informatics-related fields through tokens: “empirical”, “estimates” and “statistics” depicted in orange and “cultured” and “overexpressing” shown in blue (Supplementary Figure <a href="#fig:topic_analysis_panels">S1</a>B and Supplementary Table <a href="#tbl:pc1_loadings_table">3</a>).
-Association for PC2 shows the separation of bioinformatics and neuroscience via tokens: “genomic”, “genome” and “genomes” depicted in orange and “evoked”, “stimulus” and “stimulation” shown in blue (Supplementary Figure <a href="#fig:topic_analysis_panels">S1</a>C and Supplementary Table <a href="#tbl:pc2_loadings_table">4</a>).</p>
+Token association of PC1 shows the separation of cell biology and informatics-related fields through tokens: “empirical”, “estimates” and “statistics” depicted in orange and “cultured” and “overexpressing” shown in blue (Supplementary Figure <a href="#fig:topic_analysis_panels">S1</a>B and Supplementary Table <a href="#tbl:pc1_loadings_table">S2</a>).
+Association for PC2 shows the separation of bioinformatics and neuroscience via tokens: “genomic”, “genome” and “genomes” depicted in orange and “evoked”, “stimulus” and “stimulation” shown in blue (Supplementary Figure <a href="#fig:topic_analysis_panels">S1</a>C and Supplementary Table <a href="#tbl:pc2_loadings_table">S3</a>).</p>
 <p>Examining the value for PC1 across all author-selected categories revealed an ordering of fields from cell biology to informatics-related disciplines (Supplementary Figure <a href="#fig:topic_analysis_panels">S1</a>D).
 These results suggest that a primary driver of the variability within the language used in bioRxiv could be the divide between informatics and cell biology approaches.
 A similar analysis for PC2 suggested that neuroscience and bioinformatics present a similar language continuum (Supplementary Figure <a href="#fig:topic_analysis_panels">S1</a>E).
 This result supports the notion that bioRxiv contains an influx of neuroscience and bioinformatics-related research results.
 For both of the top two PCs, the submitter-selected category of systems biology preprints was near the middle of the distribution and had a relatively large interquartile range when compared with other categories (Supplementary Figures <a href="#fig:topic_analysis_panels">S1</a>D and <a href="#fig:topic_analysis_panels">S1</a>E), suggesting that systems biology is a broader subfield containing both informatics and cellular biology approaches.</p>
-<p>Examining the top five highest-scoring and bottom five lowest-scoring systems biology preprints along PC1 reinforces its dichotomous theme (Supplementary Table <a href="#tbl:five_pc1_table">2</a>).
+<p>Examining the top five highest-scoring and bottom five lowest-scoring systems biology preprints along PC1 reinforces its dichotomous theme (Supplementary Table <a href="#tbl:five_pc1_table">S1</a>).
 Preprints with the highest values <span class="citation" data-cites="ddvF5sXo 18dTP7Wfc UmFNlo8W 16tWubqOj 6gfAR2hM">[<a href="#ref-ddvF5sXo" role="doc-biblioref">72</a>,<a href="#ref-18dTP7Wfc" role="doc-biblioref">73</a>,<a href="#ref-UmFNlo8W" role="doc-biblioref">74</a>,<a href="#ref-16tWubqOj" role="doc-biblioref">75</a>,<a href="#ref-6gfAR2hM" role="doc-biblioref">76</a>]</span> included software packages, machine learning analyses, and other computational biology manuscripts, while preprints with the lowest values <span class="citation" data-cites="2V2BJL87 4BUSt1jK nzDb3Lvn 1CM9H3mFb jmFU2eta">[<a href="#ref-2V2BJL87" role="doc-biblioref">77</a>,<a href="#ref-4BUSt1jK" role="doc-biblioref">78</a>,<a href="#ref-nzDb3Lvn" role="doc-biblioref">79</a>,<a href="#ref-1CM9H3mFb" role="doc-biblioref">80</a>,<a href="#ref-jmFU2eta" role="doc-biblioref">81</a>]</span> were focused on cellular signaling and protein activity.
 We provide the rest of our 50 generated PCs in our online repository (see Software and Data Availability).</p>
 <div id="tbl:five_pc1_table" class="tablenos">
 <table style="width:100%;">
-<caption><span>Table 2:</span> PC1 divided the author-selected category of systems biology preprints along an axis from computational to molecular approaches. </caption>
+<caption><span>Table S1:</span> PC1 divided the author-selected category of systems biology preprints along an axis from computational to molecular approaches. </caption>
 <colgroup>
 <col style="width: 43%" />
 <col style="width: 26%" />
@@ -1239,10 +1240,10 @@ We provide the rest of our 50 generated PCs in our online repository (see Softwa
 </div>
 <div id="tbl:pc1_loadings_table" class="tablenos">
 <table>
-<caption><span>Table 3:</span> Top and bottom five cosine simularity scores between tokens and the PC1 axis. </caption>
+<caption><span>Table S2:</span> Top and bottom five cosine similarity scores between tokens and the PC1 axis. </caption>
 <thead>
 <tr class="header">
-<th>Cosine Simulairty (PC1, word)</th>
+<th>Cosine Similarity (PC1, word)</th>
 <th>word</th>
 </tr>
 </thead>
@@ -1336,10 +1337,10 @@ We provide the rest of our 50 generated PCs in our online repository (see Softwa
 </div>
 <div id="tbl:pc2_loadings_table" class="tablenos">
 <table>
-<caption><span>Table 4:</span> Top and bottom five cosine simularity scores between tokens and the PC2 axis. </caption>
+<caption><span>Table S3:</span> Top and bottom five cosine similarity scores between tokens and the PC2 axis. </caption>
 <thead>
 <tr class="header">
-<th>Cosine Simulairty (PC2, word)</th>
+<th>Cosine Similarity (PC2, word)</th>
 <th>word</th>
 </tr>
 </thead>
@@ -1431,11 +1432,525 @@ We provide the rest of our 50 generated PCs in our online repository (see Softwa
 </tbody>
 </table>
 </div>
-<h2 id="supplemental-figures">Supplemental Figures</h2>
+<h2 id="supplemental-figures-and-tables">Supplemental Figures and Tables</h2>
 <div id="fig:biorxiv_categories" class="fignos">
 <figure>
 <img src="https://raw.githubusercontent.com/danich1/annorxiver/e61b10ad5fc0d23db4c6599b460ddd510ae433a5/biorxiv/exploratory_data_analysis/output/figures/preprint_category.png" data-tag="S2" alt="" /><figcaption><span>Figure S2:</span> Neuroscience and bioinformatics are the two most common author-selected topics for bioRxiv preprints.</figcaption>
 </figure>
+</div>
+<div id="tbl:token_table" class="tablenos">
+<table>
+<caption><span>Table S4:</span> The top 100 frequently occurring tokens across our three corpora. </caption>
+<thead>
+<tr class="header">
+<th>bioRxiv Tokens</th>
+<th>PMCOA Tokens</th>
+<th>NYTAC Tokens</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>‘et’</td>
+<td>‘\\u2009’</td>
+<td>‘said’</td>
+</tr>
+<tr class="even">
+<td>‘al’</td>
+<td>‘\xa0’</td>
+<td>‘mr.’</td>
+</tr>
+<tr class="odd">
+<td>‘cell’</td>
+<td>‘\t\t\t\t’</td>
+<td>’ ’</td>
+</tr>
+<tr class="even">
+<td>‘cells’</td>
+<td>‘et’</td>
+<td>‘–’</td>
+</tr>
+<tr class="odd">
+<td>‘1’</td>
+<td>‘1’</td>
+<td>‘new’</td>
+</tr>
+<tr class="even">
+<td>‘different’</td>
+<td>‘cells’</td>
+<td>‘new’</td>
+</tr>
+<tr class="odd">
+<td>‘2’</td>
+<td>‘al’</td>
+<td>‘like’</td>
+</tr>
+<tr class="even">
+<td>‘high’</td>
+<td>‘cell’</td>
+<td>‘year’</td>
+</tr>
+<tr class="odd">
+<td>‘genes’</td>
+<td>‘patients’</td>
+<td>‘years’</td>
+</tr>
+<tr class="even">
+<td>‘gene’</td>
+<td>‘study’</td>
+<td>‘united’</td>
+</tr>
+<tr class="odd">
+<td>‘3’</td>
+<td>‘2’</td>
+<td>‘ms.’</td>
+</tr>
+<tr class="even">
+<td>‘specific’</td>
+<td>‘different’</td>
+<td>‘today’</td>
+</tr>
+<tr class="odd">
+<td>‘figure’</td>
+<td>‘high’</td>
+<td>‘york’</td>
+</tr>
+<tr class="even">
+<td>‘single’</td>
+<td>‘3’</td>
+<td>‘old’</td>
+</tr>
+<tr class="odd">
+<td>‘non’</td>
+<td>‘\\u2013’</td>
+<td>‘american’</td>
+</tr>
+<tr class="even">
+<td>‘5’</td>
+<td>‘significant’</td>
+<td>‘yesterday’</td>
+</tr>
+<tr class="odd">
+<td>‘\\u201d’</td>
+<td>‘10’</td>
+<td>‘time’</td>
+</tr>
+<tr class="even">
+<td>‘\\u201c’</td>
+<td>‘5’</td>
+<td>‘lead’</td>
+</tr>
+<tr class="odd">
+<td>‘data’</td>
+<td>‘significantly’</td>
+<td>‘people’</td>
+</tr>
+<tr class="even">
+<td>‘10’</td>
+<td>‘group’</td>
+<td>‘dr.’</td>
+</tr>
+<tr class="odd">
+<td>‘4’</td>
+<td>‘4’</td>
+<td>‘years’</td>
+</tr>
+<tr class="even">
+<td>‘significant’</td>
+<td>‘non’</td>
+<td>‘york’</td>
+</tr>
+<tr class="odd">
+<td>‘\\u2019’</td>
+<td>‘compared’</td>
+<td>‘week’</td>
+</tr>
+<tr class="even">
+<td>‘found’</td>
+<td>‘\\u201c’</td>
+<td>‘officials’</td>
+</tr>
+<tr class="odd">
+<td>‘protein’</td>
+<td>‘\\u201d’</td>
+<td>‘ago’</td>
+</tr>
+<tr class="even">
+<td>‘model’</td>
+<td>‘found’</td>
+<td>‘including’</td>
+</tr>
+<tr class="odd">
+<td>‘performed’</td>
+<td>‘performed’</td>
+<td>‘10’</td>
+</tr>
+<tr class="even">
+<td>‘figure’</td>
+<td>‘specific’</td>
+<td>‘people’</td>
+</tr>
+<tr class="odd">
+<td>‘analysis’</td>
+<td>‘respectively’</td>
+<td>‘high’</td>
+</tr>
+<tr class="even">
+<td>‘study’</td>
+<td>‘\\u200a’</td>
+<td>‘john’</td>
+</tr>
+<tr class="odd">
+<td>‘genetic’</td>
+<td>‘showed’</td>
+<td>‘public’</td>
+</tr>
+<tr class="even">
+<td>‘significantly’</td>
+<td>‘analysis’</td>
+<td>‘good’</td>
+</tr>
+<tr class="odd">
+<td>‘species’</td>
+<td>‘including’</td>
+<td>‘political’</td>
+</tr>
+<tr class="even">
+<td>‘low’</td>
+<td>‘low’</td>
+<td>‘1’</td>
+</tr>
+<tr class="odd">
+<td>‘human’</td>
+<td>‘higher’</td>
+<td>‘said’</td>
+</tr>
+<tr class="even">
+<td>‘time’</td>
+<td>‘clinical’</td>
+<td>‘president’</td>
+</tr>
+<tr class="odd">
+<td>‘including’</td>
+<td>‘results’</td>
+<td>‘year’</td>
+</tr>
+<tr class="even">
+<td>‘respectively’</td>
+<td>‘groups’</td>
+<td>‘national’</td>
+</tr>
+<tr class="odd">
+<td>‘time’</td>
+<td>‘shown’</td>
+<td>‘second’</td>
+</tr>
+<tr class="even">
+<td>‘compared’</td>
+<td>‘time’</td>
+<td>‘million’</td>
+</tr>
+<tr class="odd">
+<td>‘previously’</td>
+<td>‘\xb0’</td>
+<td>‘university’</td>
+</tr>
+<tr class="even">
+<td>‘results’</td>
+<td>‘total’</td>
+<td>‘recent’</td>
+</tr>
+<tr class="odd">
+<td>‘shown’</td>
+<td>‘treatment’</td>
+<td>‘small’</td>
+</tr>
+<tr class="even">
+<td>‘fig’</td>
+<td>‘protein’</td>
+<td>‘percent’</td>
+</tr>
+<tr class="odd">
+<td>‘multiple’</td>
+<td>‘additional’</td>
+<td>‘2’</td>
+</tr>
+<tr class="even">
+<td>‘large’</td>
+<td>‘studies’</td>
+<td>‘long’</td>
+</tr>
+<tr class="odd">
+<td>‘similar’</td>
+<td>‘genes’</td>
+<td>‘far’</td>
+</tr>
+<tr class="even">
+<td>‘\\u2013’</td>
+<td>‘positive’</td>
+<td>‘big’</td>
+</tr>
+<tr class="odd">
+<td>‘higher’</td>
+<td>‘figure’</td>
+<td>‘major’</td>
+</tr>
+<tr class="even">
+<td>‘expression’</td>
+<td>‘cells’</td>
+<td>‘later’</td>
+</tr>
+<tr class="odd">
+<td>‘expression’</td>
+<td>‘gene’</td>
+<td>‘west’</td>
+</tr>
+<tr class="even">
+<td>‘samples’</td>
+<td>‘data’</td>
+<td>‘great’</td>
+</tr>
+<tr class="odd">
+<td>‘i.e.’</td>
+<td>‘anti’</td>
+<td>‘30’</td>
+</tr>
+<tr class="even">
+<td>‘fig’</td>
+<td>‘previous’</td>
+<td>‘little’</td>
+</tr>
+<tr class="odd">
+<td>‘individual’</td>
+<td>‘data’</td>
+<td>‘million’</td>
+</tr>
+<tr class="even">
+<td>‘\xb0’</td>
+<td>‘addition’</td>
+<td>‘3’</td>
+</tr>
+<tr class="odd">
+<td>‘dna’</td>
+<td>‘human’</td>
+<td>‘mrs.’</td>
+</tr>
+<tr class="even">
+<td>‘average’</td>
+<td>‘health’</td>
+<td>‘states’</td>
+</tr>
+<tr class="odd">
+<td>‘supplementary’</td>
+<td>‘observed’</td>
+<td>‘says’</td>
+</tr>
+<tr class="even">
+<td>‘previous’</td>
+<td>‘according’</td>
+<td>‘according’</td>
+</tr>
+<tr class="odd">
+<td>‘total’</td>
+<td>‘single’</td>
+<td>‘late’</td>
+</tr>
+<tr class="even">
+<td>‘showed’</td>
+<td>‘reported’</td>
+<td>‘young’</td>
+</tr>
+<tr class="odd">
+<td>‘data’</td>
+<td>‘previously’</td>
+<td>‘away’</td>
+</tr>
+<tr class="even">
+<td>‘observed’</td>
+<td>‘mice’</td>
+<td>‘life’</td>
+</tr>
+<tr class="odd">
+<td>‘functional’</td>
+<td>‘20’</td>
+<td>‘american’</td>
+</tr>
+<tr class="even">
+<td>‘number’</td>
+<td>‘\\u2003’</td>
+<td>‘month’</td>
+</tr>
+<tr class="odd">
+<td>‘based’</td>
+<td>‘6’</td>
+<td>‘large’</td>
+</tr>
+<tr class="even">
+<td>‘\\u2018’</td>
+<td>‘c’</td>
+<td>‘company’</td>
+</tr>
+<tr class="odd">
+<td>‘small’</td>
+<td>‘study’</td>
+<td>‘way’</td>
+</tr>
+<tr class="even">
+<td>‘cells’</td>
+<td>‘control’</td>
+<td>‘black’</td>
+</tr>
+<tr class="odd">
+<td>‘positive’</td>
+<td>‘similar’</td>
+<td>‘early’</td>
+</tr>
+<tr class="even">
+<td>‘conditions’</td>
+<td>‘studies’</td>
+<td>‘east’</td>
+</tr>
+<tr class="odd">
+<td>‘20’</td>
+<td>‘expression’</td>
+<td>‘real’</td>
+</tr>
+<tr class="even">
+<td>‘data’</td>
+<td>‘data’</td>
+<td>‘3’</td>
+</tr>
+<tr class="odd">
+<td>‘regions’</td>
+<td>‘time’</td>
+<td>‘11’</td>
+</tr>
+<tr class="even">
+<td>‘data’</td>
+<td>‘30’</td>
+<td>‘state’</td>
+</tr>
+<tr class="odd">
+<td>‘proteins’</td>
+<td>‘fig’</td>
+<td>‘20’</td>
+</tr>
+<tr class="even">
+<td>‘new’</td>
+<td>‘95’</td>
+<td>‘world’</td>
+</tr>
+<tr class="odd">
+<td>‘mice’</td>
+<td>‘\\u2019’</td>
+<td>‘net’</td>
+</tr>
+<tr class="even">
+<td>‘relative’</td>
+<td>‘model’</td>
+<td>‘j.’</td>
+</tr>
+<tr class="odd">
+<td>‘addition’</td>
+<td>‘levels’</td>
+<td>‘street’</td>
+</tr>
+<tr class="even">
+<td>‘6’</td>
+<td>‘primary’</td>
+<td>‘end’</td>
+</tr>
+<tr class="odd">
+<td>‘neurons’</td>
+<td>‘samples’</td>
+<td>‘think’</td>
+</tr>
+<tr class="even">
+<td>‘studies’</td>
+<td>‘large’</td>
+<td>‘day’</td>
+</tr>
+<tr class="odd">
+<td>‘c’</td>
+<td>‘small’</td>
+<td>‘long’</td>
+</tr>
+<tr class="even">
+<td>‘cells’</td>
+<td>‘lower’</td>
+<td>‘state’</td>
+</tr>
+<tr class="odd">
+<td>‘100’</td>
+<td>’ ’</td>
+<td>‘david’</td>
+</tr>
+<tr class="even">
+<td>‘function’</td>
+<td>‘increased’</td>
+<td>‘best’</td>
+</tr>
+<tr class="odd">
+<td>‘activity’</td>
+<td>‘100’</td>
+<td>‘robert’</td>
+</tr>
+<tr class="even">
+<td>‘highly’</td>
+<td>‘patients’</td>
+<td>‘local’</td>
+</tr>
+<tr class="odd">
+<td>‘experimental’</td>
+<td>‘based’</td>
+<td>‘city’</td>
+</tr>
+<tr class="even">
+<td>‘standard’</td>
+<td>‘figure’</td>
+<td>‘million’</td>
+</tr>
+<tr class="odd">
+<td>‘30’</td>
+<td>‘blood’</td>
+<td>‘5’</td>
+</tr>
+<tr class="even">
+<td>‘levels’</td>
+<td>‘50’</td>
+<td>‘earns’</td>
+</tr>
+<tr class="odd">
+<td>‘brain’</td>
+<td>‘effect’</td>
+<td>‘st.’</td>
+</tr>
+<tr class="even">
+<td>‘rna’</td>
+<td>‘normal’</td>
+<td>‘president’</td>
+</tr>
+<tr class="odd">
+<td>‘models’</td>
+<td>‘standard’</td>
+<td>‘world’</td>
+</tr>
+<tr class="even">
+<td>‘identified’</td>
+<td>‘conditions’</td>
+<td>‘nearly’</td>
+</tr>
+<tr class="odd">
+<td>‘binding’</td>
+<td>‘level’</td>
+<td>‘4’</td>
+</tr>
+<tr class="even">
+<td>‘50’</td>
+<td>‘important’</td>
+<td>‘home’</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="fig:corpora_comparison_panels_bio_v_pmid" class="fignos">
 <figure>
