@@ -29,7 +29,7 @@ lemmatized
 loadings
 lxml
 MarvinT
-nCoV
+ncov
 NLRP
 num
 pre
@@ -44,6 +44,6 @@ timeframe
 timepoint
 transfected
 Translational
-vec
+Vec
 vincerubinetti
 WGS

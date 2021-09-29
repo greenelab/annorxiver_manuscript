@@ -8,7 +8,7 @@ author-meta:
 - Casey S. Greene
 bibliography:
 - content/manual-references.json
-date-meta: '2021-09-25'
+date-meta: '2021-09-29'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2021-09-25" />
+  <meta name="dc.date" content="2021-09-29" />
 
-  <meta name="citation_publication_date" content="2021-09-25" />
+  <meta name="citation_publication_date" content="2021-09-29" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -109,11 +109,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/d20a2e10fd7b13b28c6fea76b60d93d2b9c22dfa/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/d50983452bdfc0cc25c3cd2f72f5c0f184bbe2b5/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/d20a2e10fd7b13b28c6fea76b60d93d2b9c22dfa/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/d50983452bdfc0cc25c3cd2f72f5c0f184bbe2b5/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/d20a2e10fd7b13b28c6fea76b60d93d2b9c22dfa/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/d50983452bdfc0cc25c3cd2f72f5c0f184bbe2b5/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -147,10 +147,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/d20a2e10fd7b13b28c6fea76b60d93d2b9c22dfa/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/d50983452bdfc0cc25c3cd2f72f5c0f184bbe2b5/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@d20a2e1](https://github.com/greenelab/annorxiver_manuscript/tree/d20a2e10fd7b13b28c6fea76b60d93d2b9c22dfa)
-on September 25, 2021.
+from [greenelab/annorxiver_manuscript@d509834](https://github.com/greenelab/annorxiver_manuscript/tree/d50983452bdfc0cc25c3cd2f72f5c0f184bbe2b5)
+on September 29, 2021.
 </em></small>
 
 ## Authors
