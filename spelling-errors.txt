@@ -41,7 +41,7 @@ timeframe
 timepoint
 transfected
 Translational
-Vec
+vec
 vincerubinetti
 WGS
 xa

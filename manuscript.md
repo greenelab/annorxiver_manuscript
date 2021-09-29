@@ -109,11 +109,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/32a8d1f3956320b97400f43b98500ec191b5a1d0/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/fb18b08f9f8dffabfe1419e01438d101a5df3d1f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/32a8d1f3956320b97400f43b98500ec191b5a1d0/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/fb18b08f9f8dffabfe1419e01438d101a5df3d1f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/32a8d1f3956320b97400f43b98500ec191b5a1d0/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/fb18b08f9f8dffabfe1419e01438d101a5df3d1f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -147,9 +147,9 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/32a8d1f3956320b97400f43b98500ec191b5a1d0/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/fb18b08f9f8dffabfe1419e01438d101a5df3d1f/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@32a8d1f](https://github.com/greenelab/annorxiver_manuscript/tree/32a8d1f3956320b97400f43b98500ec191b5a1d0)
+from [greenelab/annorxiver_manuscript@fb18b08](https://github.com/greenelab/annorxiver_manuscript/tree/fb18b08f9f8dffabfe1419e01438d101a5df3d1f)
 on September 29, 2021.
 </em></small>
 
@@ -955,13 +955,13 @@ Table: The top 100 frequently occurring tokens across our three corpora. {#tbl:t
 **A.** The significant differences in token frequencies for the corpora appear to be driven by the fields with the highest uptake of bioRxiv, as terms from neuroscience and genomics are relatively more abundant in bioRxiv.
 We plotted the 95% confidence interval for each reported token.
 **B.** Of the tokens that differ between bioRxiv and PMC, the most abundant in bioRxiv are "gene", "genes" and "model" while the most abundant in PMC is "study."
-](https://raw.githubusercontent.com/danich1/annorxiver/1a9fc8d536536703bf23e557a54ccb70cb384171/biorxiv/corpora_comparison/output/figures/biorxiv_vs_pubmed_central_special_char_removed.png){#fig:corpora_comparison_panels_bio_v_pmid tag="S3"}
+](https://raw.githubusercontent.com/danich1/annorxiver/cfa1b151ee91e36d72d6f6ec0cdd5378e6105fc4/biorxiv/corpora_comparison/output/figures/biorxiv_vs_pubmed_central_special_char_removed.png){#fig:corpora_comparison_panels_bio_v_pmid tag="S3"}
 
 ![
 **A.** The significant differences in token frequencies for preprints and their corresponding published version often appear to be associated with data availability and supplementary or additional materials.
 We plotted the 95% confidence interval for each reported token.
 **B.** The tokens with the largest absolute differences in abundance appear related to scientific figures and data availability.
-](https://raw.githubusercontent.com/danich1/annorxiver/1a9fc8d536536703bf23e557a54ccb70cb384171/biorxiv/corpora_comparison/output/figures/preprint_published_comparison_special_char_removed.png){#fig:corpora_comparison_panels_pre_v_pub tag="S4"}
+](https://raw.githubusercontent.com/danich1/annorxiver/cfa1b151ee91e36d72d6f6ec0cdd5378e6105fc4/biorxiv/corpora_comparison/output/figures/preprint_published_comparison_special_char_removed.png){#fig:corpora_comparison_panels_pre_v_pub tag="S4"}
 
 ![
 Both classifiers outperform the randomized baseline when predicting a paper's journal endpoint.
