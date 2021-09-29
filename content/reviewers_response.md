@@ -244,11 +244,13 @@ We have incorporated it into our manuscript.**
 > adjusting for recency? i.e. not sampling 2019 preprints? in figure C the line indicates (if I'm interpreting correctly) that overall only 46.55% are published but that's because it includes very recent preprints that haven't had time to be journal published yet. Just be explicit that you are adjusting for recency (i.e. excluding 2019 and newer preprints) when you say that most preprints are eventually published.
 
 **Initially, we incorporated all preprints (2013 to early 2020) when calculating the overall proportion of preprints published.
-We agree that adjusting for recency is a better approach.
-We updated our proportion estimate by filtering out preprints posted in 2019 and 2020, then used the remaining set to take the fraction of preprints published over every preprint posted on bioRxiv (before 2019).
-Our updated estimate is in Figure 2 in our manuscript (reproduced below).**
+We agree that adjusting for recency is a better approach; however, we need to incorporate all preprints to have a fair comparison against Abdill et al. estimate.
+The authors' estimate incorporated all preprints at the time of their study.
+Therefore, we updated our analysis to include two proportion estimates. 
+Our first estimate included all preprints posted onto bioRxiv, while the second estimate adjusts for recency.
+These two estimates are found in Figure 2 in our updated manuscript (reproduced below), where the first estimate is the solid green line and our second estimate is the dashed line.**
 
-![updated overall proportion calculation](https://raw.githubusercontent.com/danich1/annorxiver/5d389dc65c0e860b6896cda2125902ba025fda43/biorxiv/article_distances/output/figures/publication_rate_reviewer_request.png)
+![updated overall proportion calculation](https://raw.githubusercontent.com/danich1/annorxiver/cfa1b151ee91e36d72d6f6ec0cdd5378e6105fc4/biorxiv/article_distances/output/figures/publication_rate_reviewer_request.png)
 
 > 16.) https://hypothes.is/a/N8cKltLrEeuZ-iPc5lrP5g
 > 
@@ -371,7 +373,7 @@ Supplemental Figure S4
 **We have provided a table in our supplemental section (Supplemental Table 3 and 4).
 We also provide these tables below:**
 
-Supplementary Table 3: Top and bottom five cosine simularity scores between tokens and the PC1 axis. 
+Supplementary Table S1: Top and bottom five cosine simularity scores between tokens and the PC1 axis. 
 
 | Cosine Simularity (PC1, word)  | word           | 
 |--------------------------------|----------------| 
@@ -397,7 +399,7 @@ Supplementary Table 3: Top and bottom five cosine simularity scores between toke
 | -0.4869885872803974            | incubated      | 
 | -0.5040798110023075            | cultured       | 
 
-Supplementary Table 4: Top and bottom five cosine simularity scores between tokens and the PC2 axis.
+Supplementary Table S2: Top and bottom five cosine simularity scores between tokens and the PC2 axis.
 
 | Cosine Simularity (PC2, word) | word          | 
 |-------------------------------|---------------| 
@@ -458,7 +460,6 @@ The results of this analysis are available in Supplemental Figure S6 (reproduced
 > Labels within figures could often be increased in size to improve readability.
 
 **We have updated the size of our labels for this manuscript.**
-
  
 > The methods section briefly comments on some ambiguous cases for the matching. Would these cases be the result of modifications that defy a 1:1 mapping, e.g.: multiple stories getting fused, or one story getting split?
 
@@ -472,7 +473,7 @@ We provide a table of these disagreements below along with short description abo
 | https://doi.org/10.1101/413450            | https://www.ncbi.nlm.nih.gov/pmc/PMC2967545 | Entirely different papers. |
 | https://doi.org/10.1101/776930            | https://www.ncbi.nlm.nih.gov/pmc/PMC6210049 | Entirely different papers. |
 | https://doi.org/10.1101/2020.01.13.905521 | https://www.ncbi.nlm.nih.gov/pmc/PMC4171638 | Text changes but same paper. |
-| https://doi.org/10.1101/352963            | https://www.ncbi.nlm.nih.gov/pmc/PMC6116183 | Text changes but same paper |
+| https://doi.org/10.1101/352963            | https://www.ncbi.nlm.nih.gov/pmc/PMC6116183 | Text changes but same paper. |
 | https://doi.org/10.1101/513002            | https://www.ncbi.nlm.nih.gov/pmc/PMC3545240 | Similar aspects of research (liver studies) but different papers. |
 | https://doi.org/10.1101/680843            | https://www.ncbi.nlm.nih.gov/pmc/PMC6379322 | Similar aspects of research (taxonomy studies) but different papers. |
 | https://doi.org/10.1101/074450            | https://www.ncbi.nlm.nih.gov/pmc/PMC5776756 | Significant text changes but arguably same paper. |
@@ -558,8 +559,8 @@ We found a small positive slope between version count and document distance (see
  
 > This study asks an important question: (how) do preprints change between their initial release on a preprint server and their eventual publication in a peer-reviewed journal? While the analysis of the linguistic changes doesn't reveal anything particularly exciting (mostly typesetting and references to supplementary information included in response to reviewer requests), this is an incredibly useful result in demonstrating that preprints are typically of high quality, which has broad implications for how researchers and their work are assessed in career, funding, and publishing decisions. The authors have developed some very promising deliverables based on document embeddings that should be broadly applicable to readers, authors, journal editors, and other stakeholders navigating the complex landscape of preprinted and published literature.
 
-We appreciate the reviewer's positive comments on the value of our manuscript.
-We agree that the linguistic changes aren't particularly exciting and with the reviewer's sentiment that that finding, in itself, is exciting.
+**We appreciate the reviewer's positive comments on the value of our manuscript.
+We agree that the linguistic changes aren't particularly exciting and with the reviewer's sentiment that that finding, in itself, is exciting.**
 
 > Major Comments:
 > 
@@ -613,6 +614,7 @@ Because of the relatively large number of discrepancies between the resulting se
 > The references of text mining on biomedical corpora should include Desai et al (2018) [https://www.biorxiv.org/content/10.1101/333922v1.abstract], which describes a similar recommendation engine.
 
 **We agree and have added this reference.**
+
 ```diff
 - Textual analysis uses linguistic, statistical, and machine learning techniques to analyze and extract information from text [...].
 
