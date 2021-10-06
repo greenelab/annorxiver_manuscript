@@ -9,7 +9,7 @@ cgreene
 colocalized
 comparator
 contralateral
-cov
+CoV
 covid
 customizations
 danich
@@ -75,7 +75,7 @@ Rubinetti
 scicomm
 sequencesM
 silico
-simularity
+Simularity
 sklearn
 Spearman
 TheNeuralCoder

@@ -8,7 +8,7 @@ author-meta:
 - Casey S. Greene
 bibliography:
 - content/manual-references.json
-date-meta: '2021-09-30'
+date-meta: '2021-10-06'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2021-09-30" />
+  <meta name="dc.date" content="2021-10-06" />
 
-  <meta name="citation_publication_date" content="2021-09-30" />
+  <meta name="citation_publication_date" content="2021-10-06" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -109,11 +109,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/88659570d1a5740c28bc40c58e36d203ab02008f/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/741fa9d5238cfb84d8c782a18352934420b81e55/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/88659570d1a5740c28bc40c58e36d203ab02008f/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/741fa9d5238cfb84d8c782a18352934420b81e55/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/88659570d1a5740c28bc40c58e36d203ab02008f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/741fa9d5238cfb84d8c782a18352934420b81e55/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -147,10 +147,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/88659570d1a5740c28bc40c58e36d203ab02008f/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/741fa9d5238cfb84d8c782a18352934420b81e55/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@8865957](https://github.com/greenelab/annorxiver_manuscript/tree/88659570d1a5740c28bc40c58e36d203ab02008f)
-on September 30, 2021.
+from [greenelab/annorxiver_manuscript@741fa9d](https://github.com/greenelab/annorxiver_manuscript/tree/741fa9d5238cfb84d8c782a18352934420b81e55)
+on October 6, 2021.
 </em></small>
 
 ## Authors
@@ -525,7 +525,7 @@ We plotted the 95% confidence interval for each reported token.
 **D.** The significant differences in token frequencies for preprints and their corresponding published version often appear to be associated with typesetting and supplementary or additional materials.
 We plotted the 95% confidence interval for each reported token.
 **E.** The tokens with the largest absolute differences in abundance appear to be stylistic.
-](https://raw.githubusercontent.com/danich1/annorxiver/f32dbc67288d39afbbc4811155a92f74256aa27e/figure_generation/output/figure_one_panels.png){#fig:corpora_comparison_panels width="100%"}
+](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_1.png){#fig:corpora_comparison_panels width="100%"}
 
 Documents within bioRxiv were slightly longer than those within PMCOA, but both were much longer than those from the control (NYTAC) (Table {@tbl:corpora_stats}).
 The average sentence length, the fraction of pronouns, and the use of the passive voice were all more similar between bioRxiv and PMC than they were to NYTAC(Table {@tbl:corpora_stats}).
@@ -562,7 +562,7 @@ The light blue line represents the publication rate previously estimated by Abdi
 The dark blue line represents the updated publication rate using only CrossRef-derived annotations, while the dark green line includes annotations derived from our embedding space approach.
 The horizontal lines represent the overall proportion of preprints published as of the time of the annotated snapshot.
 The dashed horizontal line represents the overall proportion of preprints published after adjusting for preprints posted in 2019 and early 2020.
-](https://raw.githubusercontent.com/danich1/annorxiver/d46c859638544b6e388aa79ebb870375f62a81c5/figure_generation/output/figure_three_panels.png){#fig:preprint_links_panels width="100%"}
+](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_2.png){#fig:preprint_links_panels width="100%"}
 
 Distances between preprints and their corresponding published versions were nearly always lower than preprints paired with a random article published in the same journal (Figure {@fig:preprint_links_panels}A).
 This suggested that embedding distances may predict the published form of preprints. 
@@ -590,7 +590,7 @@ The density of observations is depicted in the violin plot with an embedded boxp
 The x-axis shows the Euclidean distance between document representations of the first version of a preprint and its peer-reviewed form.
 The y-axis shows the number of days elapsed between the first version of a preprint posted on bioRxiv and when a preprint is published.
 The color bar on the right represents the density of each hexbin in this plot, where more dense regions are shown in a brighter color.
-](https://raw.githubusercontent.com/danich1/annorxiver/f32dbc67288d39afbbc4811155a92f74256aa27e/figure_generation/output/figure_four_panels.png){#fig:publication_delay_panels width="100%"}
+](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_3.png){#fig:publication_delay_panels width="100%"}
 
 The process of peer review includes several steps, which take variable amounts of time [@doi:10.1002/nop2.51], and we sought to measure if there is a difference in publication time between author-selected categories of preprints (Figure {@fig:publication_delay_panels}A).
 Of the most abundant preprint categories microbiology was the fastest to publish (140 days, (137, 145 days) [95% CI]) and genomics was the slowest (190 days, (185, 195 days) [95% CI]) (Figure {@fig:publication_delay_panels}A).
@@ -626,7 +626,7 @@ The preprint-similarity-search app workflow allows users to examine where an ind
 Next, the app preprocesses the requested preprint and returns a listing of (**B**) the top ten most similar papers and (**C**) the ten closest journals.
 **D.** The app also displays the location of the query preprint in PMC.
 **E.** Users can select a square within the landscape to examine statistics associated with the square, including the top journals by article count in that square and the odds ratio of tokens.
-](images/journal_recommender_workflow.png){#fig:journal_rec_workflow width="100%"}
+](images/Figure_4.png){#fig:journal_rec_workflow width="100%"}
 
 ### Contextualizing the Preprints in Motion Collection
 
@@ -649,7 +649,7 @@ The x-axis shows the Euclidean distance between document representations of the 
 The y-axis shows the number of days elapsed between the first version of a preprint posted on bioRxiv and when a preprint is published.
 The color bar on the right represents the density of each hexbin in this plot, where more dense regions are shown in a brighter color.
 The red dots and red regression line represent Preprints in Motion.
-](https://raw.githubusercontent.com/danich1/annorxiver/f32dbc67288d39afbbc4811155a92f74256aa27e/figure_generation/output/figure_five_panels.png){#fig:covid_19_preprints width="100%"}
+](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_5.png){#fig:covid_19_preprints width="100%"}
 
 The Preprints in Motion collection included a set of preprints posted during the first four months of 2020.
 We examined the extent to which preprints in this set were representative of the patterns that we identified from our analysis on all of bioRxiv.
@@ -750,7 +750,7 @@ The size of each token indicates the magnitude of the similarity.
 **D.** Examining PC1 values for each article by category created a continuum from informatics-related fields on the top through cell biology on the bottom.
 Specific article categories (neuroscience, genetics) were spread throughout PC1 values.
 **E.** Examining PC2 values for each article by category revealed fields like genomics, bioinformatics, and genetics on the top and neuroscience and behavior on the bottom.
-](https://raw.githubusercontent.com/danich1/annorxiver/f32dbc67288d39afbbc4811155a92f74256aa27e/figure_generation/output/figure_two_panels.png){#fig:topic_analysis_panels tag="S1" width="100%"}
+](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_S1.png){#fig:topic_analysis_panels tag="S1" width="100%"}
 
 Document embeddings provide a means to categorize the language of documents in a way that takes into account the similarities between terms [@arxiv:1405.4053; @arxiv:1707.02377; @arxiv:2001.05727].
 We found that the first two PCs separated articles from different author-selected categories (Supplementary Figure {@fig:topic_analysis_panels}A).
@@ -844,7 +844,7 @@ Table: Top and bottom five cosine similarity scores between tokens and the PC2 a
 
 ![
 Neuroscience and bioinformatics are the two most common author-selected topics for bioRxiv preprints.
-](https://raw.githubusercontent.com/danich1/annorxiver/e61b10ad5fc0d23db4c6599b460ddd510ae433a5/biorxiv/exploratory_data_analysis/output/figures/preprint_category.png){#fig:biorxiv_categories tag="S2"}
+](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_S2.png){#fig:biorxiv_categories tag="S2"}
 
 | bioRxiv Tokens  | PMCOA Tokens    | NYTAC Tokens | 
 |-----------------|-----------------|--------------| 
@@ -955,18 +955,18 @@ Table: The top 100 frequently occurring tokens across our three corpora. {#tbl:t
 **A.** The significant differences in token frequencies for the corpora appear to be driven by the fields with the highest uptake of bioRxiv, as terms from neuroscience and genomics are relatively more abundant in bioRxiv.
 We plotted the 95% confidence interval for each reported token.
 **B.** Of the tokens that differ between bioRxiv and PMC, the most abundant in bioRxiv are "gene", "genes" and "model" while the most abundant in PMC is "study."
-](https://raw.githubusercontent.com/danich1/annorxiver/cfa1b151ee91e36d72d6f6ec0cdd5378e6105fc4/biorxiv/corpora_comparison/output/figures/biorxiv_vs_pubmed_central_special_char_removed.png){#fig:corpora_comparison_panels_bio_v_pmid tag="S3"}
+](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_S3.png){#fig:corpora_comparison_panels_bio_v_pmid tag="S3"}
 
 ![
 **A.** The significant differences in token frequencies for preprints and their corresponding published version often appear to be associated with data availability and supplementary or additional materials.
 We plotted the 95% confidence interval for each reported token.
 **B.** The tokens with the largest absolute differences in abundance appear related to scientific figures and data availability.
-](https://raw.githubusercontent.com/danich1/annorxiver/cfa1b151ee91e36d72d6f6ec0cdd5378e6105fc4/biorxiv/corpora_comparison/output/figures/preprint_published_comparison_special_char_removed.png){#fig:corpora_comparison_panels_pre_v_pub tag="S4"}
+](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_S4.png){#fig:corpora_comparison_panels_pre_v_pub tag="S4"}
 
 ![
 Both classifiers outperform the randomized baseline when predicting a paper's journal endpoint.
 This bargraph shows each model's accuracy in respect to predicting the training and test set.
-](https://raw.githubusercontent.com/danich1/annorxiver/13d9789370900a1d04fb296457fd1faf2d76818a/pmc/journal_recommendation/output/figures/knn_result_cosine_fix.png){#fig:knn_auc tag="S5" width="100%"}
+](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_S5.png){#fig:knn_auc tag="S5" width="100%"}
 
 ![
 **A.** The Preprints in Motion were published faster than other bioRxiv preprints, and the number of versions was not associated with an increase in time to publication.
@@ -979,7 +979,7 @@ The x-axis shows the Euclidean distance between document representations of the 
 The y-axis shows the number of days elapsed between the first version of a preprint posted on bioRxiv and when a preprint is published.
 The color bar on the right represents the density of each hexbin in this plot, where more dense regions are shown in a brighter color.
 The red dots and red regression line represent Preprints in Motion.
-](https://raw.githubusercontent.com/danich1/annorxiver/3950d1a173adcfb263d0260ce29bc62432a53c6e/biorxiv/polka_subset_experiment/output/figures/polka_filtered_background_panels.png){#fig:filterd_polka_analysis tag="S6" width="100%"}
+](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_S6.png){#fig:filterd_polka_analysis tag="S6" width="100%"}
 
 
 
@@ -1236,7 +1236,7 @@ Therefore, we updated our analysis to include two proportion estimates.
 Our first estimate included all preprints posted onto bioRxiv, while the second estimate adjusts for recency.
 These two estimates are found in Figure 2 in our updated manuscript (reproduced below), where the first estimate is the solid green line and our second estimate is the dashed line.**
 
-![updated overall proportion calculation](https://raw.githubusercontent.com/danich1/annorxiver/cfa1b151ee91e36d72d6f6ec0cdd5378e6105fc4/biorxiv/article_distances/output/figures/publication_rate_reviewer_request.png)
+![updated overall proportion calculation](https://raw.githubusercontent.com/danich1/annorxiver/cfa1b151ee91e36d72d6f6ec0cdd5378e6105fc4/biorxiv/article_distances/output/figures/publication_rate_reviewer_request.png){width="680px"}
 
 > 16.) https://hypothes.is/a/N8cKltLrEeuZ-iPc5lrP5g
 > 
@@ -1296,13 +1296,13 @@ We debated changing the journal prediction server and results to use Doc2Vec, bu
 We could easily imagine an improvement to the server in the future that moves to Doc2Vec.**
 
 **Word2Vec 1st Prinicpal Component WordCloud**
-![Word2vec](https://raw.githubusercontent.com/danich1/annorxiver/3bcac4ca2e9249359361525a7e5f3ae36c71d4a5/biorxiv/pca_association_experiment/output/word_pca_similarity/figure_pieces/pca_01_cossim_word_cloud.png)
+![Word2vec](https://raw.githubusercontent.com/danich1/annorxiver/3bcac4ca2e9249359361525a7e5f3ae36c71d4a5/biorxiv/pca_association_experiment/output/word_pca_similarity/figure_pieces/pca_01_cossim_word_cloud.png){width="680px"}
 
 **Doc2Vec 1st Prinicpal Component WordCloud**
-![Doc2vec](https://raw.githubusercontent.com/danich1/annorxiver/3bcac4ca2e9249359361525a7e5f3ae36c71d4a5/biorxiv/pca_association_experiment/output/word_pca_similarity/figure_pieces/pca_01_cossim_word_cloud_doc2vec.png)
+![Doc2vec](https://raw.githubusercontent.com/danich1/annorxiver/3bcac4ca2e9249359361525a7e5f3ae36c71d4a5/biorxiv/pca_association_experiment/output/word_pca_similarity/figure_pieces/pca_01_cossim_word_cloud_doc2vec.png){width="680px"}
 
 **Doc2vec vs Word2vec in Journal Recommendations**
-![Doc2vec vs Word2vec Journal Recommendation](https://raw.githubusercontent.com/danich1/annorxiver/13d9789370900a1d04fb296457fd1faf2d76818a/pmc/journal_recommendation/output/figures/doc2vec_word2vec_comparison.png)
+![Doc2vec vs Word2vec Journal Recommendation](https://raw.githubusercontent.com/danich1/annorxiver/13d9789370900a1d04fb296457fd1faf2d76818a/pmc/journal_recommendation/output/figures/doc2vec_word2vec_comparison.png){width="680px"}
 
 
 > Further, word2vec often seems to work even better when first trained on a larger corpus before then being applied or transferred to more specialized corpora. Personally, I also made this experience when following an example tutorial provided by the creators of the package that the authors used - which too suggests starting with existing pre-trained models. While the more restricted training done by the authors might have reduced the sensitivity of their approach (… which would likely only strengthen their claims), I would be curious whether there was an additional rationale for avoiding the former strategy that might be missed by readers (e.g.: different meanings such as "abstract" that has different meanings for scientists and non-scientists?). 
@@ -1318,7 +1318,7 @@ As with above, we may consider this in a future iteration of the server, but at 
 This allowed us to perform search efficiently with a minimum of development time, and also provided a framework that we could use to shard the search across nodes in the event that we needed to further accelerate performance.
 We didn't find the distance metric to be a substantial driver of performance: preprints and their published counterparts have significantly lower distances regardless of the distance metric used (comparison figure provided below).**
 
-![Distance comparison](https://github.com/greenelab/annorxiver/blob/ff456c5c5cb7cddd16400f6e5b74422e1b33d349/biorxiv/article_distances/output/figures/distance_metrics_top_k_precision.png)
+![Distance comparison](https://github.com/greenelab/annorxiver/blob/ff456c5c5cb7cddd16400f6e5b74422e1b33d349/biorxiv/article_distances/output/figures/distance_metrics_top_k_precision.png){width="680px"}
 
 > Similarly, I was wondering how the "journal-based" approach, which the authors mention briefly against the influence of high publication frequency journals, was implemented. Further, if it could have been avoided by avoiding the Euclidean space.
 >
@@ -1347,12 +1347,12 @@ We reproduced these figures below.**
 
 BioRxiv vs Pubmed Central 
 Supplemental Figure S3
-![](https://raw.githubusercontent.com/greenelab/annorxiver/ff456c5c5cb7cddd16400f6e5b74422e1b33d349/biorxiv/corpora_comparison/output/figures/biorxiv_vs_pubmed_central_special_char_removed.png)
+![](https://raw.githubusercontent.com/greenelab/annorxiver/ff456c5c5cb7cddd16400f6e5b74422e1b33d349/biorxiv/corpora_comparison/output/figures/biorxiv_vs_pubmed_central_special_char_removed.png){width="680px"}
 
 
 Preprints vs their Published Counterparts
 Supplemental Figure S4
-![](https://raw.githubusercontent.com/greenelab/annorxiver/ff456c5c5cb7cddd16400f6e5b74422e1b33d349/biorxiv/corpora_comparison/output/figures/preprint_published_comparison_special_char_removed.png)
+![](https://raw.githubusercontent.com/greenelab/annorxiver/ff456c5c5cb7cddd16400f6e5b74422e1b33d349/biorxiv/corpora_comparison/output/figures/preprint_published_comparison_special_char_removed.png){width="680px"}
 
 > The word cloud of Figure 2B, C is somewhat nice as it shows the main words. However, this information could also be conveyed in the text. Would personally favor to quantitatively see loadings of first few principal components for different terms.
 
@@ -1439,7 +1439,7 @@ We think the best comparison set would be with preprints posted on the same date
 Since we don't have this set, we did conduct the analysis proposed by the reviewer.
 The results of this analysis are available in Supplemental Figure S6 (reproduced below).**
 
-![Adjusct Background Analysis](https://raw.githubusercontent.com/greenelab/annorxiver/ff456c5c5cb7cddd16400f6e5b74422e1b33d349/biorxiv/polka_subset_experiment/output/figures/polka_filtered_background_panels.png)
+![Adjusct Background Analysis](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_S6.png){width="680px"}
 
 > Other:
 > 
@@ -1539,7 +1539,7 @@ We incorporated these suggestions into our discussion/conclusion section.**
 We performed a linear regression analysis to examine relationships between preprint version counts and the amount of change using all preprint-published pairs within bioRxiv.
 We found a small positive slope between version count and document distance (see below), but given the caveats involved with respect to small sample size at the extremes we elected not to include this analysis in the revised manuscript.**
 
-![Version Count vs Document distance Linear regression](https://raw.githubusercontent.com/danich1/annorxiver/bc7761c4db132f1287205680a1e2e5f220a85755/biorxiv/publication_delay_experiment/output/version_count_doc_distances.png)
+![Version Count vs Document distance Linear regression](https://raw.githubusercontent.com/danich1/annorxiver/bc7761c4db132f1287205680a1e2e5f220a85755/biorxiv/publication_delay_experiment/output/version_count_doc_distances.png){width="680px"}
 
 # Reviewer #3
  
@@ -1558,7 +1558,7 @@ We generated document embeddings using solely abstracts and calculated distances
 We found that the ranking by abstract distances was slightly better than full text (figure below) for matching preprints with their published pair.
 This indicates that abstracts can be used to establish preprint and published links, and while the evidence is relatively weak (as the difference between full text and abstract is small) it suggests that perhaps abstracts undergo less change than full text.**
 
-![Abstracts vs Full Text](https://raw.githubusercontent.com/greenelab/annorxiver/ff456c5c5cb7cddd16400f6e5b74422e1b33d349/biorxiv/article_distances/output/figures/abstract_vs_full_text_top_k_precision.png)
+![Abstracts vs Full Text](https://raw.githubusercontent.com/greenelab/annorxiver/ff456c5c5cb7cddd16400f6e5b74422e1b33d349/biorxiv/article_distances/output/figures/abstract_vs_full_text_top_k_precision.png){width="680px"}
  
 > Section "Building Classifiers to Detect Linguistically Similar Journal Venues and Published Articles":
 > 
