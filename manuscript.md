@@ -8,7 +8,7 @@ author-meta:
 - Casey S. Greene
 bibliography:
 - content/manual-references.json
-date-meta: '2021-10-06'
+date-meta: '2021-10-07'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
 
-  <meta name="dc.date" content="2021-10-06" />
+  <meta name="dc.date" content="2021-10-07" />
 
-  <meta name="citation_publication_date" content="2021-10-06" />
+  <meta name="citation_publication_date" content="2021-10-07" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -109,11 +109,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/741fa9d5238cfb84d8c782a18352934420b81e55/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/1e82ef76a6173b46f469f9ea25b7a635a0995c2b/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/741fa9d5238cfb84d8c782a18352934420b81e55/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/1e82ef76a6173b46f469f9ea25b7a635a0995c2b/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/741fa9d5238cfb84d8c782a18352934420b81e55/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/1e82ef76a6173b46f469f9ea25b7a635a0995c2b/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -147,10 +147,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/741fa9d5238cfb84d8c782a18352934420b81e55/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/1e82ef76a6173b46f469f9ea25b7a635a0995c2b/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@741fa9d](https://github.com/greenelab/annorxiver_manuscript/tree/741fa9d5238cfb84d8c782a18352934420b81e55)
-on October 6, 2021.
+from [greenelab/annorxiver_manuscript@1e82ef7](https://github.com/greenelab/annorxiver_manuscript/tree/1e82ef76a6173b46f469f9ea25b7a635a0995c2b)
+on October 7, 2021.
 </em></small>
 
 ## Authors
@@ -561,7 +561,7 @@ The x-axis represents months since bioRxiv started, and the y-axis represents th
 The light blue line represents the publication rate previously estimated by Abdill et al. [@doi:10.7554/eLife.45133].
 The dark blue line represents the updated publication rate using only CrossRef-derived annotations, while the dark green line includes annotations derived from our embedding space approach.
 The horizontal lines represent the overall proportion of preprints published as of the time of the annotated snapshot.
-The dashed horizontal line represents the overall proportion of preprints published after adjusting for preprints posted in 2019 and early 2020.
+The dashed horizontal line represents the overall proportion published preprints for preprints posted before 2019.
 ](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_2.png){#fig:preprint_links_panels width="100%"}
 
 Distances between preprints and their corresponding published versions were nearly always lower than preprints paired with a random article published in the same journal (Figure {@fig:preprint_links_panels}A).
@@ -718,11 +718,12 @@ We also would like to thank Richard Sever and the bioRxiv team for their assista
 
 ## Funding
 
-This work was supported by grants from the Gordon Betty Moore Foundation (GBMF4552) and the National Institutes of Health's National Human Genome Research Institute (NHGRI) under awards T32 HG00046 and R01 HG010067.
+This work was supported by grants from the Gordon Betty Moore Foundation (GBMF4552) and the National Institutes of Health’s National Human Genome Research Institute (NHGRI) under award R01 HG010067 to CSG and the National Institutes of Health’s NHGRI under award T32 HG00046 to DNN. 
+The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
 
 ## Competing Interests
 
-Marvin Thielk receives a salary from Elsevier Inc. where he contributes NLP expertise to health content operations. 
+I have read the journal's policy and the authors of this manuscript have the following competing interests: Marvin Thielk receives a salary from Elsevier Inc. where he contributes NLP expertise to health content operations. 
 Elsevier did not restrict the results or interpretations that could be published in this manuscript. 
 The opinions expressed here do not reflect the official policy or positions of Elsevier Inc.
 
