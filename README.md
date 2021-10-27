@@ -6,6 +6,7 @@
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf)
 [![GitHub Actions Status](https://github.com/greenelab/annorxiver_manuscript/workflows/Manubot/badge.svg)](https://github.com/greenelab/annorxiver_manuscript/actions)
 [![Travis Build Status](https://travis-ci.com/greenelab/annorxiver_manuscript.svg?branch=master)](https://travis-ci.com/greenelab/annorxiver_manuscript)
+
 <!-- usage note: delete CI badges above for services not used by your manuscript -->
 
 ## Manuscript description
@@ -80,6 +81,7 @@ The build process aims to detect common errors, such as invalid citations.
 If your pull request build fails, see the CI logs for the cause of failure and revise your pull request accordingly.
 
 When a commit to the `master` branch occurs (for example, when a pull request is merged), CI builds the manuscript and writes the results to the [`gh-pages`](https://github.com/greenelab/annorxiver_manuscript/tree/gh-pages) and [`output`](https://github.com/greenelab/annorxiver_manuscript/tree/output) branches.
+
 The `gh-pages` branch uses [GitHub Pages](https://pages.github.com/) to host the following URLs:
 
 + **HTML manuscript** at https://greenelab.github.io/annorxiver_manuscript/
