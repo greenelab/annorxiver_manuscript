@@ -9,7 +9,7 @@ cgreene
 colocalized
 comparator
 contralateral
-cov
+CoV
 COVID
 CSG
 customizations
@@ -55,7 +55,7 @@ micrographs
 minorly
 misclassified
 Mounce
-nCoV
+ncov
 NLRP
 num
 OA
@@ -78,7 +78,7 @@ Rubinetti
 scicomm
 sequencesM
 silico
-Simularity
+simularity
 sklearn
 Spearman
 TheNeuralCoder

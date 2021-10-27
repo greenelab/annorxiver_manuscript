@@ -8,7 +8,7 @@ author-meta:
 - Casey S. Greene
 bibliography:
 - content/manual-references.json
-date-meta: '2021-10-07'
+date-meta: '2021-10-27'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -19,17 +19,17 @@ header-includes: '<!--
 
   <meta name="dc.format" content="text/html" />
 
-  <meta name="dc.title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
+  <meta name="dc.title" content="How things change: examining linguistic shifts between preprints and publications" />
 
-  <meta name="citation_title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
+  <meta name="citation_title" content="How things change: examining linguistic shifts between preprints and publications" />
 
-  <meta property="og:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
+  <meta property="og:title" content="How things change: examining linguistic shifts between preprints and publications" />
 
-  <meta property="twitter:title" content="Linguistic Analysis of the bioRxiv Preprint Landscape" />
+  <meta property="twitter:title" content="How things change: examining linguistic shifts between preprints and publications" />
 
-  <meta name="dc.date" content="2021-10-07" />
+  <meta name="dc.date" content="2021-10-27" />
 
-  <meta name="citation_publication_date" content="2021-10-07" />
+  <meta name="citation_publication_date" content="2021-10-27" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -109,11 +109,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/1e82ef76a6173b46f469f9ea25b7a635a0995c2b/" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/4cb3dd3eec006e985b1424db080d05c803219208/" />
 
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/1e82ef76a6173b46f469f9ea25b7a635a0995c2b/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/4cb3dd3eec006e985b1424db080d05c803219208/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/1e82ef76a6173b46f469f9ea25b7a635a0995c2b/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/4cb3dd3eec006e985b1424db080d05c803219208/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -137,7 +137,7 @@ manubot-clear-requests-cache: false
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
 manubot-requests-cache-path: ci/cache/requests-cache
-title: Linguistic Analysis of the bioRxiv Preprint Landscape
+title: 'How things change: examining linguistic shifts between preprints and publications'
 ...
 
 
@@ -147,10 +147,10 @@ title: Linguistic Analysis of the bioRxiv Preprint Landscape
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/1e82ef76a6173b46f469f9ea25b7a635a0995c2b/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/4cb3dd3eec006e985b1424db080d05c803219208/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@1e82ef7](https://github.com/greenelab/annorxiver_manuscript/tree/1e82ef76a6173b46f469f9ea25b7a635a0995c2b)
-on October 7, 2021.
+from [greenelab/annorxiver_manuscript@4cb3dd3](https://github.com/greenelab/annorxiver_manuscript/tree/4cb3dd3eec006e985b1424db080d05c803219208)
+on October 27, 2021.
 </em></small>
 
 ## Authors
@@ -252,7 +252,7 @@ Notable repositories include arXiv [@doi:10.1108/14666180010345564], bioRxiv [@d
 The burgeoning uptake of preprints in life sciences has been examined through research focused on metadata from the bioRxiv repository.
 For example, life science preprints are being posted at an increasing rate  [@doi:10.1371/journal.pbio.3000269].
 Furthermore, these preprints are being rapidly shared on social media, routinely downloaded, and cited [@doi:10.1371/journal.pone.0047523].
-Some preprint categories are shared on social media by both scientists and non-scientists [@doi:10.1101/2020.03.06.981589].
+Some preprint categories are shared on social media by both scientists and non-scientists [@doi:10.1371/journal.pbio.3000860].
 About two-thirds to three-quarters of preprints are eventually published [@doi:10.7554/eLife.45133; @doi:10.1002/pra2.175] and life science articles that have a corresponding preprint version are cited and discussed more often than articles without them [@doi:10.1162/qss_a_00043; @doi:10.7554/eLife.52646; @doi:10.12688/f1000research.19619.2].
 Preprints take an average of 160 days to be published in the peer-reviewed literature [@doi:10.2139/ssrn.3455146], and those with multiple versions take longer to publish[@doi:10.2139/ssrn.3455146].
 
@@ -348,7 +348,7 @@ We sought to build a language model to quantify linguistic similarities of biome
 Word2vec is a suite of neural networks designed to model linguistic features of tokens based on their appearance in the text.
 These models are trained to either predict a token based on its sentence context, called a continuous bag of words (CBOW) model, or predict the context based on a given token, called a skipgram model [@arxiv:1301.3781].
 Through these prediction tasks, both networks learn latent linguistic features which are helpful for downstream tasks, such as identifying similar tokens.
-We used gensim [@rehurek_lrec] (version 3.8.1) to train a CBOW  [@arxiv:1301.3781] model over all the main text within each preprint in the bioRxiv corpus.
+We used gensim [@rehurek2011gensim] (version 3.8.1) to train a CBOW  [@arxiv:1301.3781] model over all the main text within each preprint in the bioRxiv corpus.
 Determining the best number of dimensions for token embeddings can be a non-trivial task; however, it has been shown that optimal performance is between 100-1000 dimensions [@arxiv:1812.04224].
 We chose to train the CBOW model using 300 hidden nodes, a batch size of 10000 tokens, and for 20 epochs.
 We set a fixed random seed and used gensim's default settings for all other hyperparameters.
@@ -361,7 +361,7 @@ Any token present within the document but not in the CBOW model is ignored durin
 
 We sought to visualize the landscape of preprints and determine the extent to which their representation as document vectors corresponded to author-supplied document labels.
 We used principal component analysis (PCA) [@doi:10.1111/1467-9868.00196] to project bioRxiv document vectors into a low-dimensional space.
-We trained this model using scikit-learn's [@scikit-learn] implementation of a randomized solver [@arxiv:0909.4061] with a random seed of 100, an output of 50 principal components (PCs), and default settings for all other hyperparameters.
+We trained this model using scikit-learn's [@arXiv:1201.0490] implementation of a randomized solver [@arxiv:0909.4061] with a random seed of 100, an output of 50 principal components (PCs), and default settings for all other hyperparameters.
 After training the model, every preprint within the bioRxiv corpus receives a score for each generated PC.
 We sought to uncover concepts captured within generated PCs and used the cosine similarity metric to examine these concepts.
 This metric takes two vectors as input and outputs a score between -1 (most dissimilar) and 1 (most similar).
@@ -401,7 +401,7 @@ Along with calculating the time elapsed, we also recorded the number of differen
 
 We used this captured data to apply the Kaplan-Meier estimator [@doi:10.4103/0974-7788.76794] via the KaplanMeierFitter function from the lifelines [@doi:10.5281/zenodo.4136578] (version 0.25.6) python package to calculate the half-life of preprints across all preprint categories within bioRxiv.
 We considered survival events as preprints that have yet to be published.
-We encountered 123 cases where the preprint posting date was subsequent to the publication date, resulting in a negative time difference, as previously reported [@url:https://medium.com/@OmnesRes/the-biorxiv-wall-of-shame-aa3d9cfc4cd7].
+We encountered 123 cases where the preprint posting date was subsequent to the publication date, resulting in a negative time difference, as previously reported [@iW41Mebx].
 We removed these preprints for this analysis as they were incompatible with the rules of the bioRxiv repository.
 
 We measured the textual difference between preprints and their corresponding published version after our half-life calculation by calculating the Euclidean distance for their respective embedding representation.
@@ -525,6 +525,7 @@ We plotted the 95% confidence interval for each reported token.
 **D.** The significant differences in token frequencies for preprints and their corresponding published version often appear to be associated with typesetting and supplementary or additional materials.
 We plotted the 95% confidence interval for each reported token.
 **E.** The tokens with the largest absolute differences in abundance appear to be stylistic.
+Data for the information depicted in this figure are available at [https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md#figure-one](https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md#figure-one).
 ](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_1.png){#fig:corpora_comparison_panels width="100%"}
 
 Documents within bioRxiv were slightly longer than those within PMCOA, but both were much longer than those from the control (NYTAC) (Table {@tbl:corpora_stats}).
@@ -562,6 +563,7 @@ The light blue line represents the publication rate previously estimated by Abdi
 The dark blue line represents the updated publication rate using only CrossRef-derived annotations, while the dark green line includes annotations derived from our embedding space approach.
 The horizontal lines represent the overall proportion of preprints published as of the time of the annotated snapshot.
 The dashed horizontal line represents the overall proportion published preprints for preprints posted before 2019.
+Data for the information depicted in this figure are available at [https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md#figure-two](https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md#figure-two).
 ](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_2.png){#fig:preprint_links_panels width="100%"}
 
 Distances between preprints and their corresponding published versions were nearly always lower than preprints paired with a random article published in the same journal (Figure {@fig:preprint_links_panels}A).
@@ -590,6 +592,7 @@ The density of observations is depicted in the violin plot with an embedded boxp
 The x-axis shows the Euclidean distance between document representations of the first version of a preprint and its peer-reviewed form.
 The y-axis shows the number of days elapsed between the first version of a preprint posted on bioRxiv and when a preprint is published.
 The color bar on the right represents the density of each hexbin in this plot, where more dense regions are shown in a brighter color.
+Data for the information depicted in this figure are available at [https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md#figure-three](https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md#figure-three).
 ](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_3.png){#fig:publication_delay_panels width="100%"}
 
 The process of peer review includes several steps, which take variable amounts of time [@doi:10.1002/nop2.51], and we sought to measure if there is a difference in publication time between author-selected categories of preprints (Figure {@fig:publication_delay_panels}A).
@@ -649,6 +652,7 @@ The x-axis shows the Euclidean distance between document representations of the 
 The y-axis shows the number of days elapsed between the first version of a preprint posted on bioRxiv and when a preprint is published.
 The color bar on the right represents the density of each hexbin in this plot, where more dense regions are shown in a brighter color.
 The red dots and red regression line represent Preprints in Motion.
+Data for the information depicted in this figure are available at [https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md#figure-five](https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md#figure-five).
 ](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_5.png){#fig:covid_19_preprints width="100%"}
 
 The Preprints in Motion collection included a set of preprints posted during the first four months of 2020.
@@ -705,6 +709,7 @@ Our models achieved a considerably higher fold change over the baseline model, s
 
 An online version of this manuscript is available under a Creative Commons Attribution License at [https://greenelab.github.io/annorxiver_manuscript/](https://greenelab.github.io/annorxiver_manuscript/).
 Source for the research portions of this project is dual licensed under the BSD 3-Clause and Creative Commons Public Domain Dedication Licenses at [https://github.com/greenelab/annorxiver](https://github.com/greenelab/annorxiver).
+All corresponding data for every figure in this manuscript is available at [https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md](https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md).
 The preprint similarity search website can be found at [https://greenelab.github.io/preprint-similarity-search/](https://greenelab.github.io/preprint-similarity-search/), and code for the website is available under a BSD-2-Clause Plus Patent License at [https://github.com/greenelab/preprint-similarity-search](https://github.com/greenelab/preprint-similarity-search).
 Full text access for the bioRxiv repository is available at [https://www.biorxiv.org/tdm](https://www.biorxiv.org/tdm).
 Access to PubMed Central's Open Access subset is available on NCBI's FTP server at [https://www.ncbi.nlm.nih.gov/pmc/tools/ftp/](https://www.ncbi.nlm.nih.gov/pmc/tools/ftp/).
@@ -751,6 +756,7 @@ The size of each token indicates the magnitude of the similarity.
 **D.** Examining PC1 values for each article by category created a continuum from informatics-related fields on the top through cell biology on the bottom.
 Specific article categories (neuroscience, genetics) were spread throughout PC1 values.
 **E.** Examining PC2 values for each article by category revealed fields like genomics, bioinformatics, and genetics on the top and neuroscience and behavior on the bottom.
+Data for the information depicted in this figure are available at [https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md#figure-s1](https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md#figure-s1).
 ](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_S1.png){#fig:topic_analysis_panels tag="S1" width="100%"}
 
 Document embeddings provide a means to categorize the language of documents in a way that takes into account the similarities between terms [@arxiv:1405.4053; @arxiv:1707.02377; @arxiv:2001.05727].
@@ -845,6 +851,7 @@ Table: Top and bottom five cosine similarity scores between tokens and the PC2 a
 
 ![
 Neuroscience and bioinformatics are the two most common author-selected topics for bioRxiv preprints.
+Data for the information depicted in this figure are available at [https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md#figure-s2](https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md#figure-s2).
 ](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_S2.png){#fig:biorxiv_categories tag="S2"}
 
 | bioRxiv Tokens  | PMCOA Tokens    | NYTAC Tokens | 
@@ -956,17 +963,20 @@ Table: The top 100 frequently occurring tokens across our three corpora. {#tbl:t
 **A.** The significant differences in token frequencies for the corpora appear to be driven by the fields with the highest uptake of bioRxiv, as terms from neuroscience and genomics are relatively more abundant in bioRxiv.
 We plotted the 95% confidence interval for each reported token.
 **B.** Of the tokens that differ between bioRxiv and PMC, the most abundant in bioRxiv are "gene", "genes" and "model" while the most abundant in PMC is "study."
+Data for the information depicted in this figure are available at [https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md#figure-s3](https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md#figure-s3).
 ](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_S3.png){#fig:corpora_comparison_panels_bio_v_pmid tag="S3"}
 
 ![
 **A.** The significant differences in token frequencies for preprints and their corresponding published version often appear to be associated with data availability and supplementary or additional materials.
 We plotted the 95% confidence interval for each reported token.
 **B.** The tokens with the largest absolute differences in abundance appear related to scientific figures and data availability.
+Data for the information depicted in this figure are available at [https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md#figure-s4](https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md#figure-s4).
 ](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_S4.png){#fig:corpora_comparison_panels_pre_v_pub tag="S4"}
 
 ![
 Both classifiers outperform the randomized baseline when predicting a paper's journal endpoint.
 This bargraph shows each model's accuracy in respect to predicting the training and test set.
+Data for the information depicted in this figure are available at [https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md#figure-s5](https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md#figure-s5).
 ](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_S5.png){#fig:knn_auc tag="S5" width="100%"}
 
 ![
@@ -980,6 +990,7 @@ The x-axis shows the Euclidean distance between document representations of the 
 The y-axis shows the number of days elapsed between the first version of a preprint posted on bioRxiv and when a preprint is published.
 The color bar on the right represents the density of each hexbin in this plot, where more dense regions are shown in a brighter color.
 The red dots and red regression line represent Preprints in Motion.
+Data for the information depicted in this figure are available at [https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md#figure-s6](https://github.com/greenelab/annorxiver/blob/master/FIGURE_DATA_SOURCE.md#figure-s6).
 ](https://raw.githubusercontent.com/danich1/annorxiver/65ee4a556ab69f2308e5e4d9192905e8cfec3728/figure_generation/output/Figure_S6.png){#fig:filterd_polka_analysis tag="S6" width="100%"}
 
 
