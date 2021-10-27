@@ -1,131 +1,5 @@
 ---
-author-meta:
-- David N. Nicholson
-- Vincent Rubinetti
-- Dongbo Hu
-- Marvin Thielk
-- Lawrence E. Hunter
-- Casey S. Greene
-bibliography:
-- content/manual-references.json
-date-meta: '2021-10-27'
-header-includes: '<!--
-
-  Manubot generated metadata rendered from header-includes-template.html.
-
-  Suggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html
-
-  -->
-
-  <meta name="dc.format" content="text/html" />
-
-  <meta name="dc.title" content="How things change: examining linguistic shifts between preprints and publications" />
-
-  <meta name="citation_title" content="How things change: examining linguistic shifts between preprints and publications" />
-
-  <meta property="og:title" content="How things change: examining linguistic shifts between preprints and publications" />
-
-  <meta property="twitter:title" content="How things change: examining linguistic shifts between preprints and publications" />
-
-  <meta name="dc.date" content="2021-10-27" />
-
-  <meta name="citation_publication_date" content="2021-10-27" />
-
-  <meta name="dc.language" content="en-US" />
-
-  <meta name="citation_language" content="en-US" />
-
-  <meta name="dc.relation.ispartof" content="Manubot" />
-
-  <meta name="dc.publisher" content="Manubot" />
-
-  <meta name="citation_journal_title" content="Manubot" />
-
-  <meta name="citation_technical_report_institution" content="Manubot" />
-
-  <meta name="citation_author" content="David N. Nicholson" />
-
-  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA" />
-
-  <meta name="citation_author_orcid" content="0000-0003-0002-5761" />
-
-  <meta name="twitter:creator" content="@dnicholson329" />
-
-  <meta name="citation_author" content="Vincent Rubinetti" />
-
-  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA" />
-
-  <meta name="citation_author_institution" content="Center for Health AI, University of Colorado School of Medicine, Aurora, CO, USA" />
-
-  <meta name="citation_author_orcid" content="None" />
-
-  <meta name="twitter:creator" content="@vincerubinetti" />
-
-  <meta name="citation_author" content="Dongbo Hu" />
-
-  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA" />
-
-  <meta name="citation_author_orcid" content="None" />
-
-  <meta name="twitter:creator" content="@None" />
-
-  <meta name="citation_author" content="Marvin Thielk" />
-
-  <meta name="citation_author_institution" content="Elsevier, Philadelphia PA, USA" />
-
-  <meta name="citation_author_orcid" content="0000-0002-0751-3664" />
-
-  <meta name="twitter:creator" content="@TheNeuralCoder" />
-
-  <meta name="citation_author" content="Lawrence E. Hunter" />
-
-  <meta name="citation_author_institution" content="Center for Computational Pharmacology, University of Colorado School of Medicine, Aurora CO, USA" />
-
-  <meta name="citation_author_orcid" content="0000-0003-1455-3370" />
-
-  <meta name="twitter:creator" content="@ProfLHunter" />
-
-  <meta name="citation_author" content="Casey S. Greene" />
-
-  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA" />
-
-  <meta name="citation_author_institution" content="Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora CO, USA" />
-
-  <meta name="citation_author_institution" content="Center for Health AI, University of Colorado School of Medicine, Aurora, CO, USA" />
-
-  <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
-
-  <meta name="twitter:creator" content="@greenescientist" />
-
-  <link rel="canonical" href="https://greenelab.github.io/annorxiver_manuscript/" />
-
-  <meta property="og:url" content="https://greenelab.github.io/annorxiver_manuscript/" />
-
-  <meta property="twitter:url" content="https://greenelab.github.io/annorxiver_manuscript/" />
-
-  <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
-
-  <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-
-  <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/4cb3dd3eec006e985b1424db080d05c803219208/" />
-
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/4cb3dd3eec006e985b1424db080d05c803219208/" />
-
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/4cb3dd3eec006e985b1424db080d05c803219208/manuscript.pdf" />
-
-  <meta property="og:type" content="article" />
-
-  <meta property="twitter:card" content="summary_large_image" />
-
-  <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
-
-  <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
-
-  <meta name="theme-color" content="#ad1457" />
-
-  <!-- end Manubot generated metadata -->'
+title: 'How things change: examining linguistic shifts between preprints and publications'
 keywords:
 - biorxiv
 - preprints
@@ -133,11 +7,80 @@ keywords:
 - natural-language-processing
 - descriptive-linguistics
 lang: en-US
-manubot-clear-requests-cache: false
+date-meta: '2021-10-27'
+author-meta:
+- David N. Nicholson
+- Vincent Rubinetti
+- Dongbo Hu
+- Marvin Thielk
+- Lawrence E. Hunter
+- Casey S. Greene
+header-includes: |-
+  <!--
+  Manubot generated metadata rendered from header-includes-template.html.
+  Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
+  -->
+  <meta name="dc.format" content="text/html" />
+  <meta name="dc.title" content="How things change: examining linguistic shifts between preprints and publications" />
+  <meta name="citation_title" content="How things change: examining linguistic shifts between preprints and publications" />
+  <meta property="og:title" content="How things change: examining linguistic shifts between preprints and publications" />
+  <meta property="twitter:title" content="How things change: examining linguistic shifts between preprints and publications" />
+  <meta name="dc.date" content="2021-10-27" />
+  <meta name="citation_publication_date" content="2021-10-27" />
+  <meta name="dc.language" content="en-US" />
+  <meta name="citation_language" content="en-US" />
+  <meta name="dc.relation.ispartof" content="Manubot" />
+  <meta name="dc.publisher" content="Manubot" />
+  <meta name="citation_journal_title" content="Manubot" />
+  <meta name="citation_technical_report_institution" content="Manubot" />
+  <meta name="citation_author" content="David N. Nicholson" />
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA" />
+  <meta name="citation_author_orcid" content="0000-0003-0002-5761" />
+  <meta name="twitter:creator" content="@dnicholson329" />
+  <meta name="citation_author" content="Vincent Rubinetti" />
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA" />
+  <meta name="citation_author_institution" content="Center for Health AI, University of Colorado School of Medicine, Aurora, CO, USA" />
+  <meta name="citation_author_orcid" content="None" />
+  <meta name="twitter:creator" content="@vincerubinetti" />
+  <meta name="citation_author" content="Dongbo Hu" />
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA" />
+  <meta name="citation_author_orcid" content="None" />
+  <meta name="twitter:creator" content="@None" />
+  <meta name="citation_author" content="Marvin Thielk" />
+  <meta name="citation_author_institution" content="Elsevier, Philadelphia PA, USA" />
+  <meta name="citation_author_orcid" content="0000-0002-0751-3664" />
+  <meta name="twitter:creator" content="@TheNeuralCoder" />
+  <meta name="citation_author" content="Lawrence E. Hunter" />
+  <meta name="citation_author_institution" content="Center for Computational Pharmacology, University of Colorado School of Medicine, Aurora CO, USA" />
+  <meta name="citation_author_orcid" content="0000-0003-1455-3370" />
+  <meta name="twitter:creator" content="@ProfLHunter" />
+  <meta name="citation_author" content="Casey S. Greene" />
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA" />
+  <meta name="citation_author_institution" content="Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora CO, USA" />
+  <meta name="citation_author_institution" content="Center for Health AI, University of Colorado School of Medicine, Aurora, CO, USA" />
+  <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
+  <meta name="twitter:creator" content="@greenescientist" />
+  <link rel="canonical" href="https://greenelab.github.io/annorxiver_manuscript/" />
+  <meta property="og:url" content="https://greenelab.github.io/annorxiver_manuscript/" />
+  <meta property="twitter:url" content="https://greenelab.github.io/annorxiver_manuscript/" />
+  <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
+  <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/ca59f6fdf66017134c61cebab0013c44f52fcc87/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/ca59f6fdf66017134c61cebab0013c44f52fcc87/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/ca59f6fdf66017134c61cebab0013c44f52fcc87/manuscript.pdf" />
+  <meta property="og:type" content="article" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
+  <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
+  <meta name="theme-color" content="#ad1457" />
+  <!-- end Manubot generated metadata -->
+bibliography:
+- content/manual-references.json
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
 manubot-requests-cache-path: ci/cache/requests-cache
-title: 'How things change: examining linguistic shifts between preprints and publications'
+manubot-clear-requests-cache: false
 ...
 
 
@@ -147,9 +90,9 @@ title: 'How things change: examining linguistic shifts between preprints and pub
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/4cb3dd3eec006e985b1424db080d05c803219208/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/ca59f6fdf66017134c61cebab0013c44f52fcc87/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@4cb3dd3](https://github.com/greenelab/annorxiver_manuscript/tree/4cb3dd3eec006e985b1424db080d05c803219208)
+from [greenelab/annorxiver_manuscript@ca59f6f](https://github.com/greenelab/annorxiver_manuscript/tree/ca59f6fdf66017134c61cebab0013c44f52fcc87)
 on October 27, 2021.
 </em></small>
 
@@ -158,11 +101,11 @@ on October 27, 2021.
 
 
 + **David N. Nicholson**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0003-0002-5761](https://orcid.org/0000-0003-0002-5761)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [danich1](https://github.com/danich1)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
     [dnicholson329](https://twitter.com/dnicholson329)<br>
   <small>
      Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA
@@ -170,9 +113,9 @@ on October 27, 2021.
   </small>
 
 + **Vincent Rubinetti**<br>
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [vincerubinetti](https://github.com/vincerubinetti)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
     [vincerubinetti](https://twitter.com/vincerubinetti)<br>
   <small>
      Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA; Center for Health AI, University of Colorado School of Medicine, Aurora, CO, USA
@@ -180,7 +123,7 @@ on October 27, 2021.
   </small>
 
 + **Dongbo Hu**<br>
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [dongbohu](https://github.com/dongbohu)<br>
   <small>
      Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA
@@ -188,22 +131,22 @@ on October 27, 2021.
   </small>
 
 + **Marvin Thielk**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-0751-3664](https://orcid.org/0000-0002-0751-3664)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [MarvinT](https://github.com/MarvinT)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
     [TheNeuralCoder](https://twitter.com/TheNeuralCoder)<br>
   <small>
      Elsevier, Philadelphia PA, USA
   </small>
 
 + **Lawrence E. Hunter**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0003-1455-3370](https://orcid.org/0000-0003-1455-3370)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [LEHunter](https://github.com/LEHunter)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
     [ProfLHunter](https://twitter.com/ProfLHunter)<br>
   <small>
      Center for Computational Pharmacology, University of Colorado School of Medicine, Aurora CO, USA
@@ -211,11 +154,11 @@ on October 27, 2021.
   </small>
 
 + **Casey S. Greene**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0001-8713-9213](https://orcid.org/0000-0001-8713-9213)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [cgreene](https://github.com/cgreene)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
     [greenescientist](https://twitter.com/greenescientist)<br>
   <small>
      Department of Systems Pharmacology and Translational Therapeutics, Perelman School of Medicine University of Pennsylvania, Philadelphia PA, USA; Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora CO, USA; Center for Health AI, University of Colorado School of Medicine, Aurora, CO, USA

@@ -55,7 +55,7 @@ micrographs
 minorly
 misclassified
 Mounce
-ncov
+nCoV
 NLRP
 num
 OA
@@ -78,7 +78,7 @@ Rubinetti
 scicomm
 sequencesM
 silico
-simularity
+Simularity
 sklearn
 Spearman
 TheNeuralCoder
@@ -88,7 +88,7 @@ transfected
 Translational
 Tshitoyan
 UMAP
-Vec
+vec
 vincerubinetti
 WGS
 WordCloud
