@@ -66,9 +66,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/ca59f6fdf66017134c61cebab0013c44f52fcc87/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/ca59f6fdf66017134c61cebab0013c44f52fcc87/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/ca59f6fdf66017134c61cebab0013c44f52fcc87/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/8992dcde9fb9a7a4e261742910c71e299fa46c23/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8992dcde9fb9a7a4e261742910c71e299fa46c23/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8992dcde9fb9a7a4e261742910c71e299fa46c23/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -90,9 +90,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/ca59f6fdf66017134c61cebab0013c44f52fcc87/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/8992dcde9fb9a7a4e261742910c71e299fa46c23/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@ca59f6f](https://github.com/greenelab/annorxiver_manuscript/tree/ca59f6fdf66017134c61cebab0013c44f52fcc87)
+from [greenelab/annorxiver_manuscript@8992dcd](https://github.com/greenelab/annorxiver_manuscript/tree/8992dcde9fb9a7a4e261742910c71e299fa46c23)
 on October 27, 2021.
 </em></small>
 

@@ -78,7 +78,7 @@ Rubinetti
 scicomm
 sequencesM
 silico
-Simularity
+simularity
 sklearn
 Spearman
 TheNeuralCoder
@@ -88,7 +88,7 @@ transfected
 Translational
 Tshitoyan
 UMAP
-vec
+Vec
 vincerubinetti
 WGS
 WordCloud

@@ -3002,8 +3002,8 @@
       ]
     },
     "note": "To appear\nLoaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: spacy2",
-    "title": "<span class=\"nocase\">spaCy 2</span>: Natural language understanding with Bloom embeddings, convolutional neural networks and incremental parsing",
-    "title-short": "<span class=\"nocase\">spaCy 2</span>",
+    "title": "spaCy 2: Natural language understanding with Bloom embeddings, convolutional neural networks and incremental parsing",
+    "title-short": "spaCy 2",
     "type": "manuscript"
   },
   {
