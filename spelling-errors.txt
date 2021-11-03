@@ -9,8 +9,8 @@ cgreene
 colocalized
 comparator
 contralateral
-CoV
-COVID
+cov
+covid
 CSG
 customizations
 danich
@@ -55,7 +55,7 @@ micrographs
 minorly
 misclassified
 Mounce
-nCoV
+ncov
 NLRP
 num
 OA
@@ -88,7 +88,7 @@ transfected
 Translational
 Tshitoyan
 UMAP
-Vec
+vec
 vincerubinetti
 WGS
 WordCloud

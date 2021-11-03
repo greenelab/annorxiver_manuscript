@@ -7,7 +7,7 @@ keywords:
 - natural-language-processing
 - descriptive-linguistics
 lang: en-US
-date-meta: '2021-10-27'
+date-meta: '2021-11-03'
 author-meta:
 - David N. Nicholson
 - Vincent Rubinetti
@@ -25,8 +25,8 @@ header-includes: |-
   <meta name="citation_title" content="How things change: examining linguistic shifts between preprints and publications" />
   <meta property="og:title" content="How things change: examining linguistic shifts between preprints and publications" />
   <meta property="twitter:title" content="How things change: examining linguistic shifts between preprints and publications" />
-  <meta name="dc.date" content="2021-10-27" />
-  <meta name="citation_publication_date" content="2021-10-27" />
+  <meta name="dc.date" content="2021-11-03" />
+  <meta name="citation_publication_date" content="2021-11-03" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -66,9 +66,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/8992dcde9fb9a7a4e261742910c71e299fa46c23/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8992dcde9fb9a7a4e261742910c71e299fa46c23/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/8992dcde9fb9a7a4e261742910c71e299fa46c23/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/70cd00ac6309d56567b58053b04468e071519f87/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/70cd00ac6309d56567b58053b04468e071519f87/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/70cd00ac6309d56567b58053b04468e071519f87/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -90,10 +90,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/8992dcde9fb9a7a4e261742910c71e299fa46c23/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/70cd00ac6309d56567b58053b04468e071519f87/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@8992dcd](https://github.com/greenelab/annorxiver_manuscript/tree/8992dcde9fb9a7a4e261742910c71e299fa46c23)
-on October 27, 2021.
+from [greenelab/annorxiver_manuscript@70cd00a](https://github.com/greenelab/annorxiver_manuscript/tree/70cd00ac6309d56567b58053b04468e071519f87)
+on November 3, 2021.
 </em></small>
 
 ## Authors
@@ -230,7 +230,7 @@ Text analytics is generally comparative in nature, so we selected three relevant
 #### BioRxiv Corpus
 
 BioRxiv [@doi:10.1101/833400] is a repository for life sciences preprints.
-We downloaded an XML snapshot of this repository on February 3rd, 2020, from bioRxiv's Amazon S3 bucket [@url:https://www.biorxiv.org/tdm].
+We downloaded an XML snapshot of this repository on February 3rd, 2020, from bioRxiv's Amazon S3 bucket [@biorxiv-snapshot].
 This snapshot contained the full text and image content of 98,023 preprints.
 Preprints on bioRxiv are versioned, and in our snapshot, 26,905 out of 98,023 contained more than one version.
 When preprints had multiple versions, we used the latest one unless otherwise noted.
@@ -344,7 +344,7 @@ Along with calculating the time elapsed, we also recorded the number of differen
 
 We used this captured data to apply the Kaplan-Meier estimator [@doi:10.4103/0974-7788.76794] via the KaplanMeierFitter function from the lifelines [@doi:10.5281/zenodo.4136578] (version 0.25.6) python package to calculate the half-life of preprints across all preprint categories within bioRxiv.
 We considered survival events as preprints that have yet to be published.
-We encountered 123 cases where the preprint posting date was subsequent to the publication date, resulting in a negative time difference, as previously reported [@iW41Mebx].
+We encountered 123 cases where the preprint posting date was subsequent to the publication date, resulting in a negative time difference, as previously reported [@medium].
 We removed these preprints for this analysis as they were incompatible with the rules of the bioRxiv repository.
 
 We measured the textual difference between preprints and their corresponding published version after our half-life calculation by calculating the Euclidean distance for their respective embedding representation.
