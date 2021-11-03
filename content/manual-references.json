@@ -43,28 +43,6 @@
     "volume": "99"
   },
   {
-    "URL": "https://medium.com/@OmnesRes/the-biorxiv-wall-of-shame-aa3d9cfc4cd7",
-    "author": [
-      {
-        "family": "Anaya",
-        "given": "Jordan"
-      }
-    ],
-    "container-title": "Medium",
-    "id": "anaya_2018",
-    "issued": {
-      "date-parts": [
-        [
-          2018,
-          8
-        ]
-      ]
-    },
-    "publisher": "Medium",
-    "title": "The bioRxiv wall of shame",
-    "type": "no-type"
-  },
-  {
     "author": [
       {
         "family": "Pedregosa",
@@ -218,7 +196,7 @@
     "volume": "3"
   },
   {
-    "id": "iW41Mebx",
+    "id": "anaya_2018",
     "type": "post-weblog",
     "abstract": "If bioRxiv’s relationship with their policies was on Facebook, it would be “It’s Complicated”. Sometimes bioRxiv allows reviews, sometimes…",
     "container-title": "Medium",
