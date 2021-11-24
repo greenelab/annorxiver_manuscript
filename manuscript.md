@@ -1,5 +1,5 @@
 ---
-title: 'How things change: examining linguistic shifts between preprints and publications'
+title: Examining linguistic shifts between preprints and publications
 keywords:
 - biorxiv
 - preprints
@@ -7,7 +7,7 @@ keywords:
 - natural-language-processing
 - descriptive-linguistics
 lang: en-US
-date-meta: '2021-11-03'
+date-meta: '2021-11-24'
 author-meta:
 - David N. Nicholson
 - Vincent Rubinetti
@@ -21,12 +21,12 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="How things change: examining linguistic shifts between preprints and publications" />
-  <meta name="citation_title" content="How things change: examining linguistic shifts between preprints and publications" />
-  <meta property="og:title" content="How things change: examining linguistic shifts between preprints and publications" />
-  <meta property="twitter:title" content="How things change: examining linguistic shifts between preprints and publications" />
-  <meta name="dc.date" content="2021-11-03" />
-  <meta name="citation_publication_date" content="2021-11-03" />
+  <meta name="dc.title" content="Examining linguistic shifts between preprints and publications" />
+  <meta name="citation_title" content="Examining linguistic shifts between preprints and publications" />
+  <meta property="og:title" content="Examining linguistic shifts between preprints and publications" />
+  <meta property="twitter:title" content="Examining linguistic shifts between preprints and publications" />
+  <meta name="dc.date" content="2021-11-24" />
+  <meta name="citation_publication_date" content="2021-11-24" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -66,9 +66,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/70cd00ac6309d56567b58053b04468e071519f87/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/70cd00ac6309d56567b58053b04468e071519f87/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/70cd00ac6309d56567b58053b04468e071519f87/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/428879e09d387ba7260d4e60713f714ed15a4bdf/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/428879e09d387ba7260d4e60713f714ed15a4bdf/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/428879e09d387ba7260d4e60713f714ed15a4bdf/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -90,10 +90,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/70cd00ac6309d56567b58053b04468e071519f87/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/428879e09d387ba7260d4e60713f714ed15a4bdf/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@70cd00a](https://github.com/greenelab/annorxiver_manuscript/tree/70cd00ac6309d56567b58053b04468e071519f87)
-on November 3, 2021.
+from [greenelab/annorxiver_manuscript@428879e](https://github.com/greenelab/annorxiver_manuscript/tree/428879e09d387ba7260d4e60713f714ed15a4bdf)
+on November 24, 2021.
 </em></small>
 
 ## Authors

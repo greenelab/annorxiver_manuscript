@@ -78,7 +78,7 @@ Rubinetti
 scicomm
 sequencesM
 silico
-simularity
+Simularity
 sklearn
 Spearman
 TheNeuralCoder
