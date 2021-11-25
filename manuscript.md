@@ -7,7 +7,7 @@ keywords:
 - natural-language-processing
 - descriptive-linguistics
 lang: en-US
-date-meta: '2021-11-24'
+date-meta: '2021-11-25'
 author-meta:
 - David N. Nicholson
 - Vincent Rubinetti
@@ -25,8 +25,8 @@ header-includes: |-
   <meta name="citation_title" content="Examining linguistic shifts between preprints and publications" />
   <meta property="og:title" content="Examining linguistic shifts between preprints and publications" />
   <meta property="twitter:title" content="Examining linguistic shifts between preprints and publications" />
-  <meta name="dc.date" content="2021-11-24" />
-  <meta name="citation_publication_date" content="2021-11-24" />
+  <meta name="dc.date" content="2021-11-25" />
+  <meta name="citation_publication_date" content="2021-11-25" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -66,9 +66,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/annorxiver_manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/annorxiver_manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/428879e09d387ba7260d4e60713f714ed15a4bdf/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/428879e09d387ba7260d4e60713f714ed15a4bdf/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/428879e09d387ba7260d4e60713f714ed15a4bdf/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/annorxiver_manuscript/v/7558071ad2da76adbf1938f361135ef9a90b04f4/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/7558071ad2da76adbf1938f361135ef9a90b04f4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/annorxiver_manuscript/v/7558071ad2da76adbf1938f361135ef9a90b04f4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -90,10 +90,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/annorxiver_manuscript/v/428879e09d387ba7260d4e60713f714ed15a4bdf/))
+([permalink](https://greenelab.github.io/annorxiver_manuscript/v/7558071ad2da76adbf1938f361135ef9a90b04f4/))
 was automatically generated
-from [greenelab/annorxiver_manuscript@428879e](https://github.com/greenelab/annorxiver_manuscript/tree/428879e09d387ba7260d4e60713f714ed15a4bdf)
-on November 24, 2021.
+from [greenelab/annorxiver_manuscript@7558071](https://github.com/greenelab/annorxiver_manuscript/tree/7558071ad2da76adbf1938f361135ef9a90b04f4)
+on November 25, 2021.
 </em></small>
 
 ## Authors
@@ -718,7 +718,7 @@ This result supports the notion that bioRxiv contains an influx of neuroscience 
 For both of the top two PCs, the submitter-selected category of systems biology preprints was near the middle of the distribution and had a relatively large interquartile range when compared with other categories (Supplementary Figures {@fig:topic_analysis_panels}D and {@fig:topic_analysis_panels}E), suggesting that systems biology is a broader subfield containing both informatics and cellular biology approaches. 
 
 Examining the top five highest-scoring and bottom five lowest-scoring systems biology preprints along PC1 reinforces its dichotomous theme (Supplementary Table {@tbl:five_pc1_table}).
-Preprints with the highest values [@doi:10.1101/197400;@doi:10.1101/825943;@doi:10.1101/044818;@doi:10.1101/769299;@doi:10.1101/107250] included software packages, machine learning analyses, and other computational biology manuscripts, while preprints with the lowest values [@doi:10.1101/455048;@doi:10.1101/371922;@doi:10.1101/733162;@doi:10.1101/745943;@doi:10.1101/754572] were focused on cellular signaling and protein activity.
+Preprints with the highest values [@doi:10.1101/197400;@doi:10.1101/266775;@doi:10.1101/769299;@doi:10.1101/044818;@doi:10.1101/107250] included software packages, machine learning analyses, and other computational biology manuscripts, while preprints with the lowest values [@doi:10.1101/2019.12.11.872887;@doi:10.1101/745943;@doi:10.1101/455048;@doi:10.1101/733162;@doi:10.1101/754572] were focused on cellular signaling and protein activity.
 We provide the rest of our 50 generated PCs in our online repository (see Software and Data Availability).
 
 | Title [citation]     | PC1  | License | Figure Thumbnail |
